@@ -57,6 +57,7 @@ struct Catalog {
 };
 
 [[nodiscard]] Catalog loadCatalog(const std::filesystem::path& contentRoot);
+[[nodiscard]] LevelDefinition loadLevelDefinition(const std::filesystem::path& path, const Catalog& catalog);
 [[nodiscard]] std::string utf8Path(const std::filesystem::path& path);
 
 }

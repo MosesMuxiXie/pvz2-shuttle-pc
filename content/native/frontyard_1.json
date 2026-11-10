@@ -1,0 +1,36 @@
+{
+  "id": "frontyard_1",
+  "world": "frontyard",
+  "index": 1,
+  "title": "Your House - Chapter 1 - Day 1",
+  "sun": 50,
+  "deck": ["sunflower", "peashooter", "wallnut", "potatomine"],
+  "flags": 1,
+  "seed_bank": 4,
+  "waves": [
+    {"delay": 12, "flag": false, "zombies": ["basic", "basic"]},
+    {"delay": 25, "flag": false, "zombies": ["conehead", "basic", "basic"]},
+    {"delay": 25, "flag": false, "zombies": ["conehead", "basic", "basic"]},
+    {"delay": 25, "flag": false, "zombies": [
+      {"type": "conehead", "row": 1}, "conehead", "basic", "conehead", {"type": "conehead", "row": 4}
+    ]},
+    {"delay": 25, "flag": false, "zombies": [
+      {"type": "conehead", "row": 4}, {"type": "basic", "row": 3},
+      {"type": "conehead", "row": 1}, {"type": "conehead", "row": 0},
+      "conehead", "conehead", "conehead", "basic", "basic", "basic", "basic"
+    ]},
+    {"delay": 45, "flag": true, "zombies": [
+      {"type": "conehead", "row": 0}, {"type": "basic", "row": 2},
+      {"type": "conehead", "row": 4}, "conehead", {"type": "conehead", "row": 3},
+      {"type": "conehead", "row": 1}, {"type": "basic", "row": 0}, "basic"
+    ]}
+  ],
+  "extra": {
+    "source": "obb",
+    "package": "pkg_1996",
+    "stage": "DayStage",
+    "first_sun": 2,
+    "sky_sun_interval": 6,
+    "additional_plantfood_wave_5": 1
+  }
+}

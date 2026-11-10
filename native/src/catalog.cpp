@@ -155,6 +155,10 @@ std::string utf8Path(const fs::path& path) {
     return {value.begin(), value.end()};
 }
 
+LevelDefinition loadLevelDefinition(const fs::path& path, const Catalog& catalog) {
+    return readDefinition(path, [&catalog](json data) { return decodeLevel(std::move(data), catalog); });
+}
+
 Catalog loadCatalog(const fs::path& contentRoot) {
     Catalog catalog;
     catalog.plants = readRegistry(contentRoot / "plants.json");
@@ -178,9 +182,7 @@ Catalog loadCatalog(const fs::path& contentRoot) {
     }
     std::sort(paths.begin(), paths.end());
     for (const auto& path : paths) {
-        auto level = readDefinition(path, [&catalog](json data) {
-            return decodeLevel(std::move(data), catalog);
-        });
+        auto level = loadLevelDefinition(path, catalog);
         const auto id = level.id;
         if (!catalog.levels.emplace(id, std::move(level)).second) {
             throw std::runtime_error(utf8Path(path) + ": duplicate level ID '" + id + "'");

@@ -1,0 +1,62 @@
+name: Build macOS development DMG
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/native-client]
+    paths:
+      - .github/workflows/macos-dmg.yml
+      - native/**
+      - content/**
+      - VERSION
+
+permissions:
+  contents: read
+
+jobs:
+  macos-dmg:
+    runs-on: macos-15
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Configure Universal 2 build
+        run: >-
+          cmake -S native -B build/macos
+          -DCMAKE_BUILD_TYPE=Release
+          -DCMAKE_OSX_DEPLOYMENT_TARGET=11.0
+          '-DCMAKE_OSX_ARCHITECTURES=arm64;x86_64'
+          -DPVZ_ENABLE_DESKTOP=ON -DBUILD_TESTING=OFF
+      - name: Build and package
+        run: |
+          cmake --build build/macos --config Release --parallel 3
+          cpack --config build/macos/CPackConfig.cmake -C Release -B build/macos
+      - name: Verify image and bundle structure
+        shell: bash
+        run: |
+          shopt -s nullglob
+          images=(build/macos/*.dmg)
+          test "${#images[@]}" -eq 1
+          image="${images[0]}"
+          hdiutil verify "$image"
+          mount_dir=$(mktemp -d)
+          hdiutil attach "$image" -readonly -nobrowse -mountpoint "$mount_dir"
+          trap 'hdiutil detach "$mount_dir" && rmdir "$mount_dir"' EXIT
+          bundle="$mount_dir/PvZ2SHUTTLE.app/Contents"
+          lipo -verify_arch arm64 x86_64 "$bundle/MacOS/PvZ2SHUTTLE"
+          test "$(/usr/libexec/PlistBuddy -c 'Print CFBundleExecutable' "$bundle/Info.plist")" = PvZ2SHUTTLE
+          test "$(readlink "$mount_dir/Applications")" = /Applications
+          diff -qr content "$bundle/Resources/content"
+          (
+            cd "$(dirname "$image")"
+            filename=$(basename "$image")
+            shasum -a 256 "$filename" > "$filename.sha256"
+          )
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: PvZ2SHUTTLE-macOS-universal-dev
+          path: |
+            build/macos/*.dmg
+            build/macos/*.dmg.sha256
+          if-no-files-found: error

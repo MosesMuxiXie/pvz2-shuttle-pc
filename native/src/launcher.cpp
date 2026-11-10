@@ -1,8 +1,8 @@
 #include "launcher.hpp"
 
 #include "catalog.hpp"
+#include "video.hpp"
 
-#include <SDL3/SDL.h>
 #include <SDL3_image/SDL_image.h>
 
 #include <algorithm>
@@ -16,22 +16,6 @@ namespace {
 
 constexpr int canvasWidth = 1280;
 constexpr int canvasHeight = 720;
-
-void requireSdl(bool success, const std::string& operation) {
-    if (!success) {
-        throw std::runtime_error(operation + ": " + SDL_GetError());
-    }
-}
-
-struct VideoSession {
-    VideoSession() {
-        requireSdl(SDL_Init(SDL_INIT_VIDEO), "initialize SDL video");
-    }
-
-    ~VideoSession() {
-        SDL_Quit();
-    }
-};
 
 void drawLauncher(SDL_Renderer* renderer, SDL_Texture* texture, const SDL_FRect& destination) {
     requireSdl(SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255), "set launcher background");
