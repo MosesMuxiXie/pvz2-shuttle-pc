@@ -44,7 +44,8 @@ jobs:
           hdiutil attach "$image" -readonly -nobrowse -mountpoint "$mount_dir"
           trap 'hdiutil detach "$mount_dir" && rmdir "$mount_dir"' EXIT
           bundle="$mount_dir/PvZ2SHUTTLE.app/Contents"
-          lipo -verify_arch arm64 x86_64 "$bundle/MacOS/PvZ2SHUTTLE"
+          lipo "$bundle/MacOS/PvZ2SHUTTLE" -verify_arch arm64 x86_64
+          lipo "$bundle/MacOS/PvZ2SHUTTLE" -archs
           test "$(/usr/libexec/PlistBuddy -c 'Print CFBundleExecutable' "$bundle/Info.plist")" = PvZ2SHUTTLE
           test "$(readlink "$mount_dir/Applications")" = /Applications
           diff -qr content "$bundle/Resources/content"

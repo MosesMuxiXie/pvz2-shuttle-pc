@@ -26,7 +26,7 @@ cmake --build build/desktop --config Release
 
 点击卡片选种子，按 Enter 开战。战斗中点击卡片或按 1–4 选卡，再点击草坪种植。点击阳光收集，X 选铲子，空格暂停。结算后按 R 重开。画面使用程序绘制的图形，无需额外素材。
 
-导入 Python 存档后，通关写入独立的原生档位。默认目录由 SDL 选取，导入和游玩也可分别传入相同的目标文件路径。导入会保留原文件和其他进度字段，目标已经存在时会报错。
+导入 Python 存档后，通关写入独立的原生档位。默认目录由 SDL 选取，导入和游玩也可分别传入相同的目标文件路径。导入会保留原文件和其他进度字段，目标已经存在时会报错。新档位使用硬链接进行原子创建，手动指定位置时请使用支持硬链接的文件系统，例如 NTFS 或 APFS。
 
 ```powershell
 ./build/desktop/Release/PvZ2SHUTTLE.exe --import-save 'D:/path/to/Python/save.json'

@@ -42,6 +42,11 @@ SDL_FRect square(int row, int col) {
     return {boardX + col * cellW, boardY + row * cellH, cellW, cellH};
 }
 
+SDL_FRect sunMarker(int row, int col) {
+    const auto tile = square(row, col);
+    return {tile.x + 32, tile.y + 3, 22, 16};
+}
+
 void drawCards(SDL_Renderer* renderer, const Battle& battle, int held) {
     for (int i = 0; i < static_cast<int>(battle.cards().size()); ++i) {
         const auto& card = battle.cards()[i];
@@ -92,9 +97,9 @@ void drawBoard(SDL_Renderer* renderer, const Battle& battle) {
              {207, 242, 102, 255});
     }
     for (const auto& sun : battle.suns()) {
-        const auto tile = square(sun.row, sun.col);
-        fill(renderer, {tile.x + 32, tile.y + 3, 22, 16}, {255, 221, 83, 255});
-        label(renderer, tile.x + 35, tile.y + 7, std::to_string(sun.value), ink);
+        const auto marker = sunMarker(sun.row, sun.col);
+        fill(renderer, marker, {255, 221, 83, 255});
+        label(renderer, marker.x + 3, marker.y + 4, std::to_string(sun.value), ink);
     }
 }
 
@@ -234,7 +239,8 @@ void runFirstBattle(const std::filesystem::path& content, const std::filesystem:
             if (!SDL_PointInRectFloat(&click, &lawn)) { continue; }
             const int row = static_cast<int>((click.y - boardY) / cellH);
             const int col = static_cast<int>((click.x - boardX) / cellW);
-            if (battle.collectSun(row, col)) { continue; }
+            const auto marker = sunMarker(row, col);
+            if (SDL_PointInRectFloat(&click, &marker) && battle.collectSun(row, col)) { continue; }
             if (shovel) { if (battle.shovel(row, col)) { shovel = false; } }
             else if (held >= 0 && battle.plant(held, row, col)) { held = -1; }
         }

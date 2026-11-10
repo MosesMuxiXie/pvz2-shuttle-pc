@@ -2,9 +2,11 @@
 #include "save.hpp"
 
 #include <algorithm>
+#include <barrier>
 #include <fstream>
 #include <iostream>
 #include <stdexcept>
+#include <thread>
 
 namespace fs = std::filesystem;
 using shuttle::Battle;
@@ -126,6 +128,29 @@ void checkSave(const fs::path& root) {
     require(rejected && !fs::exists(unused), "Import must reject an unsupported save");
     shuttle::recordFirstBattleWin(unused);
     require(read(unused).at("completed") == json::array({"frontyard:0"}), "Fresh win was not saved");
+
+    const auto concurrent = dir / "concurrent.json";
+    for (int attempt = 0; attempt < 32; ++attempt) {
+        fs::remove(concurrent);
+        std::barrier start(2);
+        bool imported = false;
+        std::jthread importer([&] {
+            start.arrive_and_wait();
+            try {
+                shuttle::importPythonSave(input, concurrent);
+                imported = true;
+            } catch (const std::exception&) {
+                // A win that publishes first takes ownership of the empty slot.
+            }
+        });
+        start.arrive_and_wait();
+        shuttle::recordFirstBattleWin(concurrent);
+        importer.join();
+        const auto result = read(concurrent);
+        require(std::ranges::find(result.at("completed"), "frontyard:0") != result.at("completed").end(),
+                "Concurrent save lost the win");
+        require(!imported || result == won, "A successful concurrent import lost its fields");
+    }
 }
 
 #ifdef _WIN32

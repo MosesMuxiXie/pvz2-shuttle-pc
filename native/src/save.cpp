@@ -67,7 +67,7 @@ private:
     fs::path directory_;
 };
 
-void writeSave(const fs::path& destination, const json& data, bool replace) {
+bool writeSave(const fs::path& destination, const json& data, bool replace) {
     try {
         const auto parent = destination.has_parent_path() ? destination.parent_path() : fs::path(".");
         const StagedSave staged(parent);
@@ -79,8 +79,16 @@ void writeSave(const fs::path& destination, const json& data, bool replace) {
         if (replace) {
             fs::rename(staged.path(), destination);
         } else {
-            fs::create_hard_link(staged.path(), destination);
+            std::error_code error;
+            fs::create_hard_link(staged.path(), destination, error);
+            if (error == std::errc::file_exists) {
+                return false;
+            }
+            if (error) {
+                throw std::system_error(error, "cannot publish save");
+            }
         }
+        return true;
     } catch (const std::exception& error) {
         throw std::runtime_error(utf8Path(destination) + ": " + error.what());
     }
@@ -89,17 +97,26 @@ void writeSave(const fs::path& destination, const json& data, bool replace) {
 }
 
 void importPythonSave(const std::filesystem::path& source, const std::filesystem::path& destination) {
-    writeSave(destination, readSave(source), false);
+    if (!writeSave(destination, readSave(source), false)) {
+        throw std::runtime_error(utf8Path(destination) + ": destination save already exists");
+    }
 }
 
 void recordFirstBattleWin(const std::filesystem::path& path) {
-    auto data = fs::exists(path) ? readSave(path) : json{{"version", 3}};
+    constexpr auto firstLevel = "frontyard:0";
+    if (!fs::exists(path)) {
+        const json fresh = {{"version", 3}, {"completed", json::array({firstLevel})}};
+        if (writeSave(path, fresh, false)) {
+            return;
+        }
+    }
+    auto data = readSave(path);
     auto& completed = data["completed"];
     if (completed.is_null()) {
         completed = json::array();
     }
-    if (std::ranges::find(completed, "frontyard:0") == completed.end()) {
-        completed.push_back("frontyard:0");
+    if (std::ranges::find(completed, firstLevel) == completed.end()) {
+        completed.push_back(firstLevel);
         writeSave(path, data, true);
     }
 }
