@@ -5,6 +5,7 @@ prompts: extracts every named file of an 1BSR (OBB) and decodes RTON to JSON.
 
 Usage: python work/obb_unpack.py <obb> <out_dir>
 """
+import os
 import sys
 import traceback
 from io import BytesIO
@@ -24,7 +25,7 @@ def uncompress(buf, want=0):
             return _zstd.stream_reader(BytesIO(buf)).read()
     return decompress(buf)
 
-sys.path.insert(0, r"D:\OneDrive\文档\pvz_shuttle\work\deps\pyvz2-main\OBBEdit")
+sys.path.insert(0, os.environ.get("PVZ2_PYVZ2_DIR", os.path.join(os.path.dirname(__file__), "..", "..", "..", "work", "deps", "pyvz2-main", "OBBEdit")))
 from libraries.pyvz2rijndael import RijndaelCBC  # noqa: E402
 from libraries.pyvz2rton import RTONDecoder  # noqa: E402
 

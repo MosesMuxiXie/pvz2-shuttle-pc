@@ -6,7 +6,7 @@ import os
 import sys
 import time
 
-sys.path.insert(0, r"D:\OneDrive\文档\pvz_shuttle\work\deps\pyvz2-main\OBBEdit\libraries")
+sys.path.insert(0, os.environ.get("PVZ2_PYVZ2_DIR", os.path.join(os.path.dirname(__file__), "..", "..", "..", "work", "deps", "pyvz2-main", "OBBEdit")))
 from pyvz2rton import RTONDecoder
 
 ROOT = r"D:\OneDrive\文档\pvz_shuttle\work\obb_raw"
