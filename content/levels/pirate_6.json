@@ -1,0 +1,283 @@
+{
+ "id": "pirate_6",
+ "world": "pirate",
+ "index": 6,
+ "title": "海盗港湾 - 第 6 天",
+ "sun": 350,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "bloomerang"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "pirate",
+     "row": 2
+    },
+    {
+     "type": "pirate",
+     "row": 3
+    },
+    {
+     "type": "pirate",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "pirate",
+     "row": 2
+    },
+    {
+     "type": "pirate",
+     "row": 3
+    },
+    {
+     "type": "pirate",
+     "row": 4
+    },
+    {
+     "type": "pirate",
+     "row": 3
+    },
+    {
+     "type": "pirate",
+     "row": 4
+    },
+    {
+     "type": "pirate",
+     "row": 2
+    },
+    {
+     "type": "pirate",
+     "row": 1
+    },
+    {
+     "type": "pirate",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "pirate_armor1",
+     "row": 3
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 2
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "pirate",
+     "row": 2
+    },
+    {
+     "type": "pirate",
+     "row": 3
+    },
+    {
+     "type": "pirate",
+     "row": 4
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 2
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 4
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 3
+    },
+    {
+     "type": "pirate",
+     "row": 1
+    },
+    {
+     "type": "pirate",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "pirate_armor1",
+     "row": 3
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 2
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 4
+    },
+    {
+     "type": "pirate",
+     "row": 2
+    },
+    {
+     "type": "pirate",
+     "row": 3
+    },
+    {
+     "type": "pirate",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "pirate_armor1",
+     "row": 2
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 3
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 4
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 1
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 4
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "pirate",
+     "row": 1
+    },
+    {
+     "type": "pirate",
+     "row": 1
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 2
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 4
+    },
+    {
+     "type": "pirate",
+     "row": 4
+    },
+    {
+     "type": "pirate",
+     "row": 1
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "pirate_armor1",
+     "row": 1
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 1
+    },
+    {
+     "type": "pirate",
+     "row": 1
+    },
+    {
+     "type": "pirate",
+     "row": 3
+    },
+    {
+     "type": "pirate",
+     "row": 2
+    },
+    {
+     "type": "pirate",
+     "row": 4
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 3
+    },
+    {
+     "type": "pirate",
+     "row": 3
+    },
+    {
+     "type": "buckethead",
+     "row": 4
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    },
+    {
+     "type": "buckethead",
+     "row": 2
+    }
+   ]
+  }
+ ],
+ "flags": 2,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_0537",
+  "stage": "PirateStage",
+  "name_key": "[PIRATE_LEVEL_NAME]",
+  "level_number": 5,
+  "wave_count": 8,
+  "original_waves": 8,
+  "night": false
+ }
+}

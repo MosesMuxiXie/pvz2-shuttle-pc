@@ -1,0 +1,615 @@
+{
+ "id": "mausoleum_21",
+ "world": "mausoleum",
+ "index": 21,
+ "title": "地宫遗迹 - 第 21 夜",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "bloomerang"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "dark",
+     "row": 1
+    },
+    {
+     "type": "dark",
+     "row": 1
+    },
+    {
+     "type": "dark",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "dark",
+     "row": 0
+    },
+    {
+     "type": "dark",
+     "row": 1
+    },
+    {
+     "type": "dark_armor1",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "dark",
+     "row": 0
+    },
+    {
+     "type": "dark",
+     "row": 1
+    },
+    {
+     "type": "dark",
+     "row": 1
+    },
+    {
+     "type": "dark_armor1",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "buckethead",
+     "row": 2
+    },
+    {
+     "type": "dark",
+     "row": 3
+    },
+    {
+     "type": "dark_armor1",
+     "row": 2
+    },
+    {
+     "type": "dark",
+     "row": 3
+    },
+    {
+     "type": "dark_armor1",
+     "row": 1
+    },
+    {
+     "type": "dark_armor1",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "buckethead",
+     "row": 4
+    },
+    {
+     "type": "dark",
+     "row": 4
+    },
+    {
+     "type": "dark",
+     "row": 2
+    },
+    {
+     "type": "dark",
+     "row": 3
+    },
+    {
+     "type": "dark",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "dark",
+     "row": 2
+    },
+    {
+     "type": "dark_armor1",
+     "row": 1
+    },
+    {
+     "type": "dark",
+     "row": 1
+    },
+    {
+     "type": "dark",
+     "row": 4
+    },
+    {
+     "type": "dark",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "dark_armor1",
+     "row": 4
+    },
+    {
+     "type": "dark",
+     "row": 3
+    },
+    {
+     "type": "dark",
+     "row": 2
+    },
+    {
+     "type": "dark",
+     "row": 4
+    },
+    {
+     "type": "dark",
+     "row": 2
+    },
+    {
+     "type": "dark_armor1",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "dark",
+     "row": 4
+    },
+    {
+     "type": "buckethead",
+     "row": 4
+    },
+    {
+     "type": "dark",
+     "row": 1
+    },
+    {
+     "type": "dark",
+     "row": 3
+    },
+    {
+     "type": "dark",
+     "row": 2
+    },
+    {
+     "type": "dark",
+     "row": 2
+    },
+    {
+     "type": "dark",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "dark",
+     "row": 0
+    },
+    {
+     "type": "dark",
+     "row": 1
+    },
+    {
+     "type": "dark_armor1",
+     "row": 2
+    },
+    {
+     "type": "dark",
+     "row": 3
+    },
+    {
+     "type": "dark",
+     "row": 4
+    },
+    {
+     "type": "dark",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "dark",
+     "row": 2
+    },
+    {
+     "type": "dark",
+     "row": 1
+    },
+    {
+     "type": "dark",
+     "row": 4
+    },
+    {
+     "type": "dark",
+     "row": 4
+    },
+    {
+     "type": "dark",
+     "row": 1
+    },
+    {
+     "type": "dark",
+     "row": 0
+    },
+    {
+     "type": "dark",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "dark",
+     "row": 3
+    },
+    {
+     "type": "dark",
+     "row": 4
+    },
+    {
+     "type": "dark_armor1",
+     "row": 2
+    },
+    {
+     "type": "dark_armor1",
+     "row": 3
+    },
+    {
+     "type": "dark",
+     "row": 1
+    },
+    {
+     "type": "dark_armor1",
+     "row": 2
+    },
+    {
+     "type": "dark",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "gargantuar",
+     "row": 0
+    },
+    {
+     "type": "dark_armor1",
+     "row": 2
+    },
+    {
+     "type": "dark",
+     "row": 2
+    },
+    {
+     "type": "dark",
+     "row": 1
+    },
+    {
+     "type": "dark",
+     "row": 1
+    },
+    {
+     "type": "dark_armor1",
+     "row": 4
+    },
+    {
+     "type": "dark",
+     "row": 2
+    },
+    {
+     "type": "dark",
+     "row": 3
+    },
+    {
+     "type": "dark",
+     "row": 2
+    },
+    {
+     "type": "dark_armor1",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "dark",
+     "row": 3
+    },
+    {
+     "type": "dark",
+     "row": 4
+    },
+    {
+     "type": "dark_armor1",
+     "row": 2
+    },
+    {
+     "type": "dark_armor1",
+     "row": 3
+    },
+    {
+     "type": "dark",
+     "row": 1
+    },
+    {
+     "type": "dark_armor1",
+     "row": 2
+    },
+    {
+     "type": "dark",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "dark_armor1",
+     "row": 2
+    },
+    {
+     "type": "gargantuar",
+     "row": 1
+    },
+    {
+     "type": "dark",
+     "row": 2
+    },
+    {
+     "type": "dark",
+     "row": 1
+    },
+    {
+     "type": "dark",
+     "row": 1
+    },
+    {
+     "type": "dark_armor1",
+     "row": 4
+    },
+    {
+     "type": "dark",
+     "row": 2
+    },
+    {
+     "type": "dark",
+     "row": 3
+    },
+    {
+     "type": "dark",
+     "row": 2
+    },
+    {
+     "type": "dark_armor1",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "dark",
+     "row": 3
+    },
+    {
+     "type": "dark",
+     "row": 4
+    },
+    {
+     "type": "dark_armor1",
+     "row": 2
+    },
+    {
+     "type": "dark_armor1",
+     "row": 3
+    },
+    {
+     "type": "dark",
+     "row": 1
+    },
+    {
+     "type": "dark_armor1",
+     "row": 2
+    },
+    {
+     "type": "dark",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "dark_armor1",
+     "row": 2
+    },
+    {
+     "type": "dark",
+     "row": 1
+    },
+    {
+     "type": "dark",
+     "row": 1
+    },
+    {
+     "type": "dark",
+     "row": 1
+    },
+    {
+     "type": "dark_armor1",
+     "row": 4
+    },
+    {
+     "type": "dark",
+     "row": 2
+    },
+    {
+     "type": "dark",
+     "row": 3
+    },
+    {
+     "type": "dark",
+     "row": 2
+    },
+    {
+     "type": "dark_armor1",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "dark",
+     "row": 3
+    },
+    {
+     "type": "dark",
+     "row": 4
+    },
+    {
+     "type": "dark_armor1",
+     "row": 2
+    },
+    {
+     "type": "dark_armor1",
+     "row": 3
+    },
+    {
+     "type": "dark",
+     "row": 1
+    },
+    {
+     "type": "dark_armor1",
+     "row": 2
+    },
+    {
+     "type": "dark",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "gargantuar",
+     "row": 3
+    },
+    {
+     "type": "gargantuar",
+     "row": 1
+    },
+    {
+     "type": "dark_armor1",
+     "row": 2
+    },
+    {
+     "type": "dark",
+     "row": 3
+    },
+    {
+     "type": "dark",
+     "row": 4
+    },
+    {
+     "type": "dark",
+     "row": 1
+    },
+    {
+     "type": "dark_armor1",
+     "row": 4
+    },
+    {
+     "type": "dark",
+     "row": 2
+    },
+    {
+     "type": "dark",
+     "row": 3
+    },
+    {
+     "type": "dark",
+     "row": 2
+    },
+    {
+     "type": "dark_armor1",
+     "row": 0
+    }
+   ]
+  }
+ ],
+ "flags": 3,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_1458",
+  "stage": "MausoleumStage",
+  "name_key": "[MAUSOLEUM_LEVEL_NAME]",
+  "level_number": 16,
+  "wave_count": 18,
+  "original_waves": 18,
+  "night": false
+ }
+}

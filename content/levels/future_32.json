@@ -1,0 +1,647 @@
+{
+ "id": "future_32",
+ "world": "future",
+ "index": 32,
+ "title": "第 32 关",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "bloomerang"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "future",
+     "row": 1
+    },
+    {
+     "type": "future",
+     "row": 2
+    },
+    {
+     "type": "future",
+     "row": 3
+    },
+    {
+     "type": "future",
+     "row": 4
+    },
+    {
+     "type": "future",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "future",
+     "row": 1
+    },
+    {
+     "type": "future",
+     "row": 2
+    },
+    {
+     "type": "future",
+     "row": 3
+    },
+    {
+     "type": "future",
+     "row": 4
+    },
+    {
+     "type": "future",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "future",
+     "row": 1
+    },
+    {
+     "type": "future",
+     "row": 2
+    },
+    {
+     "type": "future",
+     "row": 3
+    },
+    {
+     "type": "future",
+     "row": 4
+    },
+    {
+     "type": "future",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "future",
+     "row": 1
+    },
+    {
+     "type": "future",
+     "row": 1
+    },
+    {
+     "type": "future",
+     "row": 2
+    },
+    {
+     "type": "future",
+     "row": 2
+    },
+    {
+     "type": "future",
+     "row": 3
+    },
+    {
+     "type": "future",
+     "row": 3
+    },
+    {
+     "type": "future",
+     "row": 4
+    },
+    {
+     "type": "future",
+     "row": 4
+    },
+    {
+     "type": "future",
+     "row": 3
+    },
+    {
+     "type": "future",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "future_armor1",
+     "row": 1
+    },
+    {
+     "type": "future_armor1",
+     "row": 2
+    },
+    {
+     "type": "future_armor1",
+     "row": 3
+    },
+    {
+     "type": "future_armor1",
+     "row": 4
+    },
+    {
+     "type": "future_armor1",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "future_armor1",
+     "row": 1
+    },
+    {
+     "type": "future_armor1",
+     "row": 2
+    },
+    {
+     "type": "future_armor1",
+     "row": 3
+    },
+    {
+     "type": "future_armor1",
+     "row": 4
+    },
+    {
+     "type": "future_armor1",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "future_armor1",
+     "row": 1
+    },
+    {
+     "type": "future_armor1",
+     "row": 2
+    },
+    {
+     "type": "future_armor1",
+     "row": 3
+    },
+    {
+     "type": "future_armor1",
+     "row": 4
+    },
+    {
+     "type": "future_armor1",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "future_armor1",
+     "row": 1
+    },
+    {
+     "type": "future_armor1",
+     "row": 2
+    },
+    {
+     "type": "future_armor1",
+     "row": 3
+    },
+    {
+     "type": "future_armor1",
+     "row": 4
+    },
+    {
+     "type": "future_armor1",
+     "row": 4
+    },
+    {
+     "type": "future_armor1",
+     "row": 1
+    },
+    {
+     "type": "future_armor1",
+     "row": 2
+    },
+    {
+     "type": "future_armor1",
+     "row": 3
+    },
+    {
+     "type": "future_armor1",
+     "row": 4
+    },
+    {
+     "type": "future_armor1",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 2
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    },
+    {
+     "type": "buckethead",
+     "row": 4
+    },
+    {
+     "type": "buckethead",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 2
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    },
+    {
+     "type": "buckethead",
+     "row": 4
+    },
+    {
+     "type": "buckethead",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "football",
+     "row": 1
+    },
+    {
+     "type": "football",
+     "row": 2
+    },
+    {
+     "type": "football",
+     "row": 3
+    },
+    {
+     "type": "football",
+     "row": 4
+    },
+    {
+     "type": "football",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 2
+    },
+    {
+     "type": "buckethead",
+     "row": 2
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    },
+    {
+     "type": "buckethead",
+     "row": 4
+    },
+    {
+     "type": "buckethead",
+     "row": 4
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    },
+    {
+     "type": "buckethead",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "future",
+     "row": 1
+    },
+    {
+     "type": "future_armor1",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "future",
+     "row": 2
+    },
+    {
+     "type": "future_armor1",
+     "row": 2
+    },
+    {
+     "type": "buckethead",
+     "row": 2
+    },
+    {
+     "type": "future",
+     "row": 3
+    },
+    {
+     "type": "future_armor1",
+     "row": 3
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    },
+    {
+     "type": "future",
+     "row": 4
+    },
+    {
+     "type": "future_armor1",
+     "row": 4
+    },
+    {
+     "type": "buckethead",
+     "row": 4
+    },
+    {
+     "type": "future",
+     "row": 2
+    },
+    {
+     "type": "future_armor1",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "future",
+     "row": 1
+    },
+    {
+     "type": "future",
+     "row": 1
+    },
+    {
+     "type": "future_armor1",
+     "row": 1
+    },
+    {
+     "type": "future_armor1",
+     "row": 1
+    },
+    {
+     "type": "future_armor1",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "future",
+     "row": 2
+    },
+    {
+     "type": "future",
+     "row": 2
+    },
+    {
+     "type": "future_armor1",
+     "row": 2
+    },
+    {
+     "type": "future_armor1",
+     "row": 2
+    },
+    {
+     "type": "future_armor1",
+     "row": 2
+    },
+    {
+     "type": "buckethead",
+     "row": 2
+    },
+    {
+     "type": "future",
+     "row": 3
+    },
+    {
+     "type": "future",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "future",
+     "row": 1
+    },
+    {
+     "type": "future",
+     "row": 1
+    },
+    {
+     "type": "future",
+     "row": 1
+    },
+    {
+     "type": "future_armor1",
+     "row": 1
+    },
+    {
+     "type": "future_armor1",
+     "row": 1
+    },
+    {
+     "type": "future_armor1",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "future",
+     "row": 2
+    },
+    {
+     "type": "future",
+     "row": 2
+    },
+    {
+     "type": "future",
+     "row": 2
+    },
+    {
+     "type": "future_armor1",
+     "row": 2
+    },
+    {
+     "type": "future_armor1",
+     "row": 2
+    },
+    {
+     "type": "future_armor1",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "future",
+     "row": 1
+    },
+    {
+     "type": "future",
+     "row": 1
+    },
+    {
+     "type": "future",
+     "row": 1
+    },
+    {
+     "type": "future_armor1",
+     "row": 1
+    },
+    {
+     "type": "future_armor1",
+     "row": 1
+    },
+    {
+     "type": "future_armor1",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "future",
+     "row": 2
+    },
+    {
+     "type": "future",
+     "row": 2
+    },
+    {
+     "type": "future",
+     "row": 2
+    },
+    {
+     "type": "future_armor1",
+     "row": 2
+    },
+    {
+     "type": "future_armor1",
+     "row": 2
+    }
+   ]
+  }
+ ],
+ "flags": 4,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_0505",
+  "stage": "FutureStage",
+  "name_key": "Same Lanes Test",
+  "level_number": 1,
+  "wave_count": 16,
+  "original_waves": 16,
+  "night": false
+ }
+}

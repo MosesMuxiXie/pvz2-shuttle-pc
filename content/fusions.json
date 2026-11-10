@@ -1,0 +1,3594 @@
+{
+  "version": 1,
+  "source": "obb:PlantFusionConfig.FusionPairs",
+  "pairs": 85,
+  "unique_results": 46,
+  "recipes": [
+    {
+      "id": "fusion_wintergeddon",
+      "ingredients": [
+        "wintermelon",
+        "wintermelon"
+      ],
+      "ingredient_names": [
+        "冰西瓜",
+        "冰西瓜"
+      ],
+      "result": {
+        "id": "fused_wintergeddon",
+        "name_zh": "究极冰神西瓜",
+        "name_en": "Vortex Melon",
+        "cost": 500,
+        "cooldown": 18.0,
+        "hp": 300,
+        "family": "Cold",
+        "art": "plants/WinterMelonPLANT",
+        "behavior": "lob",
+        "damage": 30,
+        "interval": 2.7,
+        "projectile": "winter_melon",
+        "rows": [
+          -1,
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "lobber",
+          "splash",
+          "ice"
+        ],
+        "desc_zh": "究极冰神西瓜可以投出多个特殊冰西瓜攻击僵尸。",
+        "almanac_no": 63,
+        "plantfood": true,
+        "fused": true,
+        "slow": 0.5,
+        "splash": 40,
+        "extra": {
+          "splash_radius": 1.5
+        }
+      },
+      "unlock_cost": 730,
+      "plantfood_cost": 1,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_paradoxpult",
+      "ingredients": [
+        "kernelpult",
+        "kernelpult"
+      ],
+      "ingredient_names": [
+        "玉米投手",
+        "玉米投手"
+      ],
+      "result": {
+        "id": "fused_paradoxpult",
+        "name_zh": "究极超时空玉米·融合",
+        "name_en": "Paradox-pult (Fusion)",
+        "cost": 300,
+        "cooldown": 15.0,
+        "hp": 300,
+        "family": "Lobber",
+        "art": "art/plantagenet/paradoxpult.png",
+        "behavior": "lob",
+        "damage": 60,
+        "interval": 2.0,
+        "projectile": "cabbage",
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "lobber"
+        ],
+        "desc_zh": "究极超时空玉米可以投掷黄油或黑洞攻击僵尸。",
+        "almanac_no": 64,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 430,
+      "plantfood_cost": 1,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_repeater1",
+      "ingredients": [
+        "peashooter",
+        "peashooter"
+      ],
+      "ingredient_names": [
+        "豌豆射手",
+        "豌豆射手"
+      ],
+      "result": {
+        "id": "fused_repeater1",
+        "name_zh": "双重射手",
+        "name_en": "Repeater",
+        "cost": 160,
+        "cooldown": 5.0,
+        "hp": 405,
+        "family": "Peashooter",
+        "art": "plants/RepeaterPLANT",
+        "behavior": "shoot",
+        "damage": 38,
+        "interval": 1.35,
+        "projectile": "pea",
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "shooter",
+          "day"
+        ],
+        "desc_zh": "双重射手能一次发射两颗豌豆。",
+        "almanac_no": 65,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 280,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_primalsunflower",
+      "ingredients": [
+        "sunflower",
+        "sunflower"
+      ],
+      "ingredient_names": [
+        "向日葵",
+        "向日葵"
+      ],
+      "result": {
+        "id": "fused_primalsunflower",
+        "name_zh": "原始向日葵",
+        "name_en": "Primal Sunflower",
+        "cost": 75,
+        "cooldown": 5.0,
+        "hp": 300,
+        "family": "Sun",
+        "art": "plants/SunflowerPLANT",
+        "behavior": "produce",
+        "damage": 0,
+        "interval": 22.0,
+        "projectile": null,
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "sun",
+          "day"
+        ],
+        "desc_zh": "原始向日葵可以产生大号的阳光。",
+        "almanac_no": 66,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 200,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_snowpea",
+      "ingredients": [
+        "peashooter",
+        "iceburg"
+      ],
+      "ingredient_names": [
+        "豌豆射手",
+        "冰冻生菜"
+      ],
+      "result": {
+        "id": "fused_snowpea",
+        "name_zh": "寒冰豌豆·融合",
+        "name_en": "Snow Pea (Fusion)",
+        "cost": 150,
+        "cooldown": 5.0,
+        "hp": 300,
+        "family": "Cold",
+        "art": "plants/SnowPeaPLANT",
+        "behavior": "shoot",
+        "damage": 20,
+        "interval": 1.35,
+        "projectile": "pea_snow",
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "shooter",
+          "day",
+          "ice"
+        ],
+        "desc_zh": "寒冰豌豆可以发射冰冻豌豆，让僵尸难以前行。",
+        "almanac_no": 67,
+        "plantfood": true,
+        "fused": true,
+        "slow": 0.5
+      },
+      "unlock_cost": 240,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_snowpea_2",
+      "ingredients": [
+        "iceburg",
+        "peashooter"
+      ],
+      "ingredient_names": [
+        "冰冻生菜",
+        "豌豆射手"
+      ],
+      "result": {
+        "id": "fused_snowpea_2",
+        "name_zh": "寒冰豌豆·融合二式",
+        "name_en": "Snow Pea (Fusion Mk II)",
+        "cost": 150,
+        "cooldown": 5.0,
+        "hp": 300,
+        "family": "Cold",
+        "art": "plants/SnowPeaPLANT",
+        "behavior": "shoot",
+        "damage": 20,
+        "interval": 1.35,
+        "projectile": "pea_snow",
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "ice",
+          "shooter",
+          "day"
+        ],
+        "desc_zh": "寒冰豌豆可以发射冰冻豌豆，让僵尸难以前行。",
+        "almanac_no": 68,
+        "plantfood": true,
+        "fused": true,
+        "slow": 0.5
+      },
+      "unlock_cost": 240,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_wintermelon",
+      "ingredients": [
+        "melonpult",
+        "iceburg"
+      ],
+      "ingredient_names": [
+        "西瓜投手",
+        "冰冻生菜"
+      ],
+      "result": {
+        "id": "fused_wintermelon",
+        "name_zh": "冰瓜投手·融合",
+        "name_en": "Winter Melon (Fusion)",
+        "cost": 450,
+        "cooldown": 5.0,
+        "hp": 300,
+        "family": "Cold",
+        "art": "plants/WinterMelonPLANT",
+        "behavior": "lob",
+        "damage": 80,
+        "interval": 2.7,
+        "projectile": "winter_melon",
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "lobber",
+          "splash",
+          "ice"
+        ],
+        "desc_zh": "减速成群的僵尸并造成大量伤害。",
+        "almanac_no": 69,
+        "plantfood": true,
+        "fused": true,
+        "slow": 0.5,
+        "splash": 40,
+        "extra": {
+          "splash_radius": 1.5
+        }
+      },
+      "unlock_cost": 480,
+      "plantfood_cost": 1,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_wintermelon_2",
+      "ingredients": [
+        "iceburg",
+        "melonpult"
+      ],
+      "ingredient_names": [
+        "冰冻生菜",
+        "西瓜投手"
+      ],
+      "result": {
+        "id": "fused_wintermelon_2",
+        "name_zh": "冰瓜投手·融合二式",
+        "name_en": "Winter Melon (Fusion Mk II)",
+        "cost": 450,
+        "cooldown": 5.0,
+        "hp": 300,
+        "family": "Cold",
+        "art": "plants/WinterMelonPLANT",
+        "behavior": "lob",
+        "damage": 80,
+        "interval": 2.7,
+        "projectile": "winter_melon",
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "ice",
+          "lobber",
+          "splash"
+        ],
+        "desc_zh": "减速成群的僵尸并造成大量伤害。",
+        "almanac_no": 70,
+        "plantfood": true,
+        "fused": true,
+        "slow": 0.5,
+        "splash": 40,
+        "extra": {
+          "splash_radius": 1.5
+        }
+      },
+      "unlock_cost": 480,
+      "plantfood_cost": 1,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_punkshocker",
+      "ingredients": [
+        "lightningreed",
+        "lightningreed"
+      ],
+      "ingredient_names": [
+        "闪电芦苇",
+        "闪电芦苇"
+      ],
+      "result": {
+        "id": "fused_punkshocker",
+        "name_zh": "朋克电王",
+        "name_en": "Punk Shocker",
+        "cost": 225,
+        "cooldown": 8.0,
+        "hp": 300,
+        "family": "Peashooter",
+        "art": "plants/GatlingPeaPLANT",
+        "behavior": "shoot",
+        "damage": 22,
+        "interval": 1.4,
+        "projectile": "pea",
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "shooter"
+        ],
+        "desc_zh": "可以制造两道带有麻痹效果的闪电。",
+        "almanac_no": 71,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 230,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_headbutterlettuce",
+      "ingredients": [
+        "bonkchoy",
+        "buttercup"
+      ],
+      "ingredient_names": [
+        "菜问",
+        "黄油毛茛"
+      ],
+      "result": {
+        "id": "fused_headbutterlettuce",
+        "name_zh": "奶油生菜",
+        "name_en": "Headbutter Lettuce",
+        "cost": 120,
+        "cooldown": 5.0,
+        "hp": 405,
+        "family": "Sharp",
+        "art": "plants/BonkChoyPLANT",
+        "behavior": "spike",
+        "damage": 150,
+        "interval": 0.3,
+        "projectile": null,
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "melee",
+          "spike"
+        ],
+        "desc_zh": "奶油生菜可以在攻击的时候甩出奶油，将远处的僵尸糊住。",
+        "almanac_no": 72,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 240,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_headbutterlettuce_2",
+      "ingredients": [
+        "buttercup",
+        "bonkchoy"
+      ],
+      "ingredient_names": [
+        "黄油毛茛",
+        "菜问"
+      ],
+      "result": {
+        "id": "fused_headbutterlettuce_2",
+        "name_zh": "奶油生菜·二式",
+        "name_en": "Headbutter Lettuce Mk II",
+        "cost": 120,
+        "cooldown": 5.0,
+        "hp": 405,
+        "family": "Sharp",
+        "art": "plants/BonkChoyPLANT",
+        "behavior": "spike",
+        "damage": 150,
+        "interval": 0.3,
+        "projectile": null,
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "melee",
+          "spike"
+        ],
+        "desc_zh": "奶油生菜可以在攻击的时候甩出奶油，将远处的僵尸糊住。",
+        "almanac_no": 73,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 240,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_birthsunflower",
+      "ingredients": [
+        "primalsunflower",
+        "primalsunflower"
+      ],
+      "ingredient_names": [
+        "原始向日葵",
+        "原始向日葵"
+      ],
+      "result": {
+        "id": "fused_birthsunflower",
+        "name_zh": "向日葵歌手",
+        "name_en": "Sunflower Singer",
+        "cost": 125,
+        "cooldown": 10.0,
+        "hp": 300,
+        "family": "Sun",
+        "art": "plants/SunflowerPLANT",
+        "behavior": "produce",
+        "damage": 0,
+        "interval": 22.0,
+        "projectile": null,
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused"
+        ],
+        "desc_zh": "向日葵歌手可以通过演唱产出 100 阳光。",
+        "almanac_no": 74,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 180,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_suntower",
+      "ingredients": [
+        "birthsunflower",
+        "birthsunflower"
+      ],
+      "ingredient_names": [
+        "向日葵歌手",
+        "向日葵歌手"
+      ],
+      "result": {
+        "id": "fused_suntower",
+        "name_zh": "向日塔",
+        "name_en": "Sun Tower",
+        "cost": 200,
+        "cooldown": 10.0,
+        "hp": 300,
+        "family": "Sun",
+        "art": "plants/SunflowerPLANT",
+        "behavior": "produce",
+        "damage": 0,
+        "interval": 22.0,
+        "projectile": null,
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused"
+        ],
+        "desc_zh": "向日塔可以产生巨大量的阳光，并在产生阳光后暂时加强周围的植物。当她死亡时，造成阳光爆炸。",
+        "almanac_no": 75,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 220,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_sweetpotato1",
+      "ingredients": [
+        "wallnut",
+        "garlic"
+      ],
+      "ingredient_names": [
+        "坚果墙",
+        "大蒜"
+      ],
+      "result": {
+        "id": "fused_sweetpotato1",
+        "name_zh": "甜薯",
+        "name_en": "Sweetpotato1",
+        "cost": 40,
+        "cooldown": 20.0,
+        "hp": 5400,
+        "family": "Support",
+        "art": "plants/UmbrellaLeafPLANT",
+        "behavior": "support",
+        "damage": 0,
+        "interval": 0.0,
+        "projectile": null,
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "wall",
+          "day"
+        ],
+        "desc_zh": "甜薯由坚果墙与garlic融合而成，拥有独特的战斗方式。",
+        "almanac_no": 76,
+        "plantfood": false,
+        "fused": true
+      },
+      "unlock_cost": 160,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_sweetpotato1_2",
+      "ingredients": [
+        "garlic",
+        "wallnut"
+      ],
+      "ingredient_names": [
+        "大蒜",
+        "坚果墙"
+      ],
+      "result": {
+        "id": "fused_sweetpotato1_2",
+        "name_zh": "甜薯·二式",
+        "name_en": "Sweetpotato1 Mk II",
+        "cost": 40,
+        "cooldown": 20.0,
+        "hp": 5400,
+        "family": "Support",
+        "art": "plants/UmbrellaLeafPLANT",
+        "behavior": "support",
+        "damage": 0,
+        "interval": 0.0,
+        "projectile": null,
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "wall",
+          "day"
+        ],
+        "desc_zh": "甜薯·二式由garlic与坚果墙融合而成，拥有独特的战斗方式。",
+        "almanac_no": 77,
+        "plantfood": false,
+        "fused": true
+      },
+      "unlock_cost": 160,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_spikerock",
+      "ingredients": [
+        "spikeweed",
+        "spikeweed"
+      ],
+      "ingredient_names": [
+        "地刺",
+        "地刺"
+      ],
+      "result": {
+        "id": "fused_spikerock",
+        "name_zh": "石地刺",
+        "name_en": "Spikerock",
+        "cost": 250,
+        "cooldown": 5.0,
+        "hp": 300,
+        "family": "Sharp",
+        "art": "plants/SpikeweedPLANT",
+        "behavior": "spike",
+        "damage": 20,
+        "interval": 0.5,
+        "projectile": null,
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "spike",
+          "ground"
+        ],
+        "desc_zh": "石地刺可以击破多个滚动的僵尸容器并且伤害踩在他身上的僵尸。",
+        "almanac_no": 78,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 320,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_iceweed",
+      "ingredients": [
+        "spikeweed",
+        "iceburg"
+      ],
+      "ingredient_names": [
+        "地刺",
+        "冰冻生菜"
+      ],
+      "result": {
+        "id": "fused_iceweed",
+        "name_zh": "冰蔓草",
+        "name_en": "Iceweed",
+        "cost": 150,
+        "cooldown": 5.0,
+        "hp": 300,
+        "family": "Cold",
+        "art": "plants/SpikeweedPLANT",
+        "behavior": "spike",
+        "damage": 10,
+        "interval": 0.5,
+        "projectile": null,
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "spike",
+          "ground",
+          "ice"
+        ],
+        "desc_zh": "寒冰地刺可以冷缓并伤害踏在上面的僵尸。",
+        "almanac_no": 79,
+        "plantfood": true,
+        "fused": true,
+        "slow": 0.5
+      },
+      "unlock_cost": 240,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_iceweed_2",
+      "ingredients": [
+        "iceburg",
+        "spikeweed"
+      ],
+      "ingredient_names": [
+        "冰冻生菜",
+        "地刺"
+      ],
+      "result": {
+        "id": "fused_iceweed_2",
+        "name_zh": "冰蔓草·二式",
+        "name_en": "Iceweed Mk II",
+        "cost": 150,
+        "cooldown": 5.0,
+        "hp": 300,
+        "family": "Cold",
+        "art": "plants/SpikeweedPLANT",
+        "behavior": "spike",
+        "damage": 10,
+        "interval": 0.5,
+        "projectile": null,
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "ice",
+          "spike",
+          "ground"
+        ],
+        "desc_zh": "寒冰地刺可以冷缓并伤害踏在上面的僵尸。",
+        "almanac_no": 80,
+        "plantfood": true,
+        "fused": true,
+        "slow": 0.5
+      },
+      "unlock_cost": 240,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_rabbagepult",
+      "ingredients": [
+        "cabbagepult",
+        "solartomato"
+      ],
+      "ingredient_names": [
+        "卷心菜投手",
+        "阳光番茄"
+      ],
+      "result": {
+        "id": "fused_rabbagepult",
+        "name_zh": "究极太阳神卷心菜",
+        "name_en": "Helios Cabbage",
+        "cost": 275,
+        "cooldown": 8.0,
+        "hp": 300,
+        "family": "Lobber",
+        "art": "plants/CabbagePultPLANT",
+        "behavior": "lob",
+        "damage": 15,
+        "interval": 3.0,
+        "projectile": "cabbage",
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "lobber"
+        ],
+        "desc_zh": "究极太阳神卷心菜可以向敌人投掷充满阳光的卷心菜，在击中僵尸后掉落阳光。",
+        "almanac_no": 81,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 300,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_rabbagepult_2",
+      "ingredients": [
+        "solartomato",
+        "cabbagepult"
+      ],
+      "ingredient_names": [
+        "阳光番茄",
+        "卷心菜投手"
+      ],
+      "result": {
+        "id": "fused_rabbagepult_2",
+        "name_zh": "究极太阳神卷心菜·二式",
+        "name_en": "Helios Cabbage Mk II",
+        "cost": 275,
+        "cooldown": 8.0,
+        "hp": 300,
+        "family": "Lobber",
+        "art": "plants/CabbagePultPLANT",
+        "behavior": "lob",
+        "damage": 15,
+        "interval": 3.0,
+        "projectile": "cabbage",
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "lobber"
+        ],
+        "desc_zh": "究极太阳神卷心菜可以向敌人投掷充满阳光的卷心菜，在击中僵尸后掉落阳光。",
+        "almanac_no": 82,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 300,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_primalpeashooter",
+      "ingredients": [
+        "peashooter",
+        "springbean"
+      ],
+      "ingredient_names": [
+        "豌豆射手",
+        "弹簧豆"
+      ],
+      "result": {
+        "id": "fused_primalpeashooter",
+        "name_zh": "原始豌豆射手",
+        "name_en": "Primal Peashooter",
+        "cost": 175,
+        "cooldown": 5.0,
+        "hp": 300,
+        "family": "Peashooter",
+        "art": "plants/PeashooterPLANT",
+        "behavior": "shoot",
+        "damage": 50,
+        "interval": 1.35,
+        "projectile": "pea",
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "shooter",
+          "day"
+        ],
+        "desc_zh": "原始豌豆射手可以发射沉重的豌豆击晕或击退僵尸。",
+        "almanac_no": 83,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 250,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_primalpeashooter_2",
+      "ingredients": [
+        "springbean",
+        "peashooter"
+      ],
+      "ingredient_names": [
+        "弹簧豆",
+        "豌豆射手"
+      ],
+      "result": {
+        "id": "fused_primalpeashooter_2",
+        "name_zh": "原始豌豆射手·二式",
+        "name_en": "Primal Peashooter Mk II",
+        "cost": 175,
+        "cooldown": 5.0,
+        "hp": 300,
+        "family": "Peashooter",
+        "art": "plants/PeashooterPLANT",
+        "behavior": "shoot",
+        "damage": 50,
+        "interval": 1.35,
+        "projectile": "pea",
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "shooter",
+          "day"
+        ],
+        "desc_zh": "原始豌豆射手可以发射沉重的豌豆击晕或击退僵尸。",
+        "almanac_no": 84,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 250,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_magnetfruit",
+      "ingredients": [
+        "magnetshroom1",
+        "starfruit"
+      ],
+      "ingredient_names": [
+        "磁力菇",
+        "星星果"
+      ],
+      "result": {
+        "id": "fused_magnetfruit",
+        "name_zh": "究极杨桃大帝",
+        "name_en": "Astrofruit",
+        "cost": 425,
+        "cooldown": 25.0,
+        "hp": 300,
+        "family": "Support",
+        "art": "plants/UmbrellaLeafPLANT",
+        "behavior": "support",
+        "damage": 0,
+        "interval": 0.0,
+        "projectile": null,
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "shooter",
+          "multi_lane"
+        ],
+        "desc_zh": "究极杨桃大帝可以发射五颗追踪星星，命中后持续追踪并攻击僵尸。",
+        "almanac_no": 85,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 420,
+      "plantfood_cost": 1,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_magnetfruit_2",
+      "ingredients": [
+        "starfruit",
+        "magnetshroom1"
+      ],
+      "ingredient_names": [
+        "星星果",
+        "磁力菇"
+      ],
+      "result": {
+        "id": "fused_magnetfruit_2",
+        "name_zh": "究极杨桃大帝·二式",
+        "name_en": "Astrofruit Mk II",
+        "cost": 425,
+        "cooldown": 25.0,
+        "hp": 300,
+        "family": "Support",
+        "art": "plants/UmbrellaLeafPLANT",
+        "behavior": "support",
+        "damage": 0,
+        "interval": 0.0,
+        "projectile": null,
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "shooter",
+          "multi_lane"
+        ],
+        "desc_zh": "究极杨桃大帝可以发射五颗追踪星星，命中后持续追踪并攻击僵尸。",
+        "almanac_no": 86,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 420,
+      "plantfood_cost": 1,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_olivepit",
+      "ingredients": [
+        "draftodil",
+        "solarsage"
+      ],
+      "ingredient_names": [
+        "树灵护卫",
+        "圣光鼠尾草"
+      ],
+      "result": {
+        "id": "fused_olivepit",
+        "name_zh": "神灵橄榄木",
+        "name_en": "Olive Wood",
+        "cost": 200,
+        "cooldown": 15.0,
+        "hp": 300,
+        "family": "Mine",
+        "art": "plants/PotatoMinePLANT",
+        "behavior": "mine",
+        "damage": 1800,
+        "interval": 15.0,
+        "projectile": null,
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused"
+        ],
+        "desc_zh": "隔一段时间克死一个僵尸并转生成一个弱壮汉僵尸",
+        "almanac_no": 87,
+        "plantfood": false,
+        "fused": true
+      },
+      "unlock_cost": 220,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_olivepit_2",
+      "ingredients": [
+        "solarsage",
+        "draftodil"
+      ],
+      "ingredient_names": [
+        "圣光鼠尾草",
+        "树灵护卫"
+      ],
+      "result": {
+        "id": "fused_olivepit_2",
+        "name_zh": "神灵橄榄木·二式",
+        "name_en": "Olive Wood Mk II",
+        "cost": 200,
+        "cooldown": 15.0,
+        "hp": 300,
+        "family": "Mine",
+        "art": "plants/PotatoMinePLANT",
+        "behavior": "mine",
+        "damage": 1800,
+        "interval": 15.0,
+        "projectile": null,
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused"
+        ],
+        "desc_zh": "隔一段时间克死一个僵尸并转生成一个弱壮汉僵尸",
+        "almanac_no": 88,
+        "plantfood": false,
+        "fused": true
+      },
+      "unlock_cost": 220,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_magnetshroom",
+      "ingredients": [
+        "tigergrass",
+        "stallia"
+      ],
+      "ingredient_names": [
+        "虎草",
+        "大丽菊"
+      ],
+      "result": {
+        "id": "fused_magnetshroom",
+        "name_zh": "鸢尾花",
+        "name_en": "Iris",
+        "cost": 275,
+        "cooldown": 15.0,
+        "hp": 300,
+        "family": "Lobber",
+        "art": "plants/KernelPultPLANT",
+        "behavior": "lob",
+        "damage": 50,
+        "interval": 2.7,
+        "projectile": "cabbage",
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "lobber"
+        ],
+        "desc_zh": "可以从斗篷中放出魔法鸟，魔法鸟可以持续攻击僵尸，并对僵尸减速。",
+        "almanac_no": 89,
+        "plantfood": false,
+        "fused": true
+      },
+      "unlock_cost": 260,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_magnetshroom_2",
+      "ingredients": [
+        "stallia",
+        "tigergrass"
+      ],
+      "ingredient_names": [
+        "大丽菊",
+        "虎草"
+      ],
+      "result": {
+        "id": "fused_magnetshroom_2",
+        "name_zh": "鸢尾花·二式",
+        "name_en": "Iris Mk II",
+        "cost": 275,
+        "cooldown": 15.0,
+        "hp": 300,
+        "family": "Lobber",
+        "art": "plants/KernelPultPLANT",
+        "behavior": "lob",
+        "damage": 50,
+        "interval": 2.7,
+        "projectile": "cabbage",
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "lobber"
+        ],
+        "desc_zh": "可以从斗篷中放出魔法鸟，魔法鸟可以持续攻击僵尸，并对僵尸减速。",
+        "almanac_no": 90,
+        "plantfood": false,
+        "fused": true
+      },
+      "unlock_cost": 260,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_explodeonut1",
+      "ingredients": [
+        "wallnut",
+        "potatomine"
+      ],
+      "ingredient_names": [
+        "坚果墙",
+        "土豆地雷"
+      ],
+      "result": {
+        "id": "fused_explodeonut1",
+        "name_zh": "爆炸坚果",
+        "name_en": "Explode-O-Nut",
+        "cost": 60,
+        "cooldown": 20.0,
+        "hp": 5400,
+        "family": "Defence",
+        "art": "plants/WallnutPLANT",
+        "behavior": "wall",
+        "damage": 0,
+        "interval": 0.0,
+        "projectile": null,
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "wall",
+          "day",
+          "explosive"
+        ],
+        "desc_zh": "爆炸坚果可以保护他身后的植物，而在外壳被吃掉之后，还能炸飞僵尸。",
+        "almanac_no": 91,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 180,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_explodeonut1_2",
+      "ingredients": [
+        "potatomine",
+        "wallnut"
+      ],
+      "ingredient_names": [
+        "土豆地雷",
+        "坚果墙"
+      ],
+      "result": {
+        "id": "fused_explodeonut1_2",
+        "name_zh": "爆炸坚果·二式",
+        "name_en": "Explode-O-Nut Mk II",
+        "cost": 60,
+        "cooldown": 20.0,
+        "hp": 5400,
+        "family": "Defence",
+        "art": "plants/WallnutPLANT",
+        "behavior": "wall",
+        "damage": 0,
+        "interval": 0.0,
+        "projectile": null,
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "explosive",
+          "day",
+          "wall"
+        ],
+        "desc_zh": "爆炸坚果可以保护他身后的植物，而在外壳被吃掉之后，还能炸飞僵尸。",
+        "almanac_no": 92,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 180,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_reinforcemint",
+      "ingredients": [
+        "wallnut",
+        "sunflower"
+      ],
+      "ingredient_names": [
+        "坚果墙",
+        "向日葵"
+      ],
+      "result": {
+        "id": "fused_reinforcemint",
+        "name_zh": "路灯花",
+        "name_en": "Plantern",
+        "cost": 80,
+        "cooldown": 12.5,
+        "hp": 5400,
+        "family": "Sun",
+        "art": "plants/SunflowerPLANT",
+        "behavior": "produce",
+        "damage": 0,
+        "interval": 22.0,
+        "projectile": null,
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "wall",
+          "day",
+          "sun"
+        ],
+        "desc_zh": "路灯花阻碍僵尸并为你提供阳光。",
+        "almanac_no": 93,
+        "plantfood": false,
+        "fused": true
+      },
+      "unlock_cost": 200,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_reinforcemint_2",
+      "ingredients": [
+        "sunflower",
+        "wallnut"
+      ],
+      "ingredient_names": [
+        "向日葵",
+        "坚果墙"
+      ],
+      "result": {
+        "id": "fused_reinforcemint_2",
+        "name_zh": "路灯花·二式",
+        "name_en": "Plantern Mk II",
+        "cost": 80,
+        "cooldown": 12.5,
+        "hp": 5400,
+        "family": "Sun",
+        "art": "plants/SunflowerPLANT",
+        "behavior": "produce",
+        "damage": 0,
+        "interval": 22.0,
+        "projectile": null,
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "sun",
+          "day",
+          "wall"
+        ],
+        "desc_zh": "路灯花阻碍僵尸并为你提供阳光。",
+        "almanac_no": 94,
+        "plantfood": false,
+        "fused": true
+      },
+      "unlock_cost": 200,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_stickybombrice",
+      "ingredients": [
+        "kernelpult",
+        "potatomine"
+      ],
+      "ingredient_names": [
+        "玉米投手",
+        "土豆地雷"
+      ],
+      "result": {
+        "id": "fused_stickybombrice",
+        "name_zh": "黏弹糯米",
+        "name_en": "Stickybomb Rice",
+        "cost": 225,
+        "cooldown": 10.0,
+        "hp": 300,
+        "family": "Cold",
+        "art": "plants/CherryBombPLANT",
+        "behavior": "instant",
+        "damage": 1200,
+        "interval": 0.0,
+        "projectile": null,
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "lobber",
+          "explosive",
+          "day",
+          "ice"
+        ],
+        "desc_zh": "黏弹糯米可以向僵尸投掷糯米炸弹。",
+        "almanac_no": 95,
+        "plantfood": true,
+        "fused": true,
+        "slow": 0.5
+      },
+      "unlock_cost": 320,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_stickybombrice_2",
+      "ingredients": [
+        "potatomine",
+        "kernelpult"
+      ],
+      "ingredient_names": [
+        "土豆地雷",
+        "玉米投手"
+      ],
+      "result": {
+        "id": "fused_stickybombrice_2",
+        "name_zh": "黏弹糯米·二式",
+        "name_en": "Stickybomb Rice Mk II",
+        "cost": 225,
+        "cooldown": 10.0,
+        "hp": 300,
+        "family": "Cold",
+        "art": "plants/CherryBombPLANT",
+        "behavior": "instant",
+        "damage": 1200,
+        "interval": 0.0,
+        "projectile": null,
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "explosive",
+          "day",
+          "lobber",
+          "ice"
+        ],
+        "desc_zh": "黏弹糯米可以向僵尸投掷糯米炸弹。",
+        "almanac_no": 96,
+        "plantfood": true,
+        "fused": true,
+        "slow": 0.5
+      },
+      "unlock_cost": 320,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_chardguard",
+      "ingredients": [
+        "wallnut",
+        "springbean"
+      ],
+      "ingredient_names": [
+        "坚果墙",
+        "弹簧豆"
+      ],
+      "result": {
+        "id": "fused_chardguard",
+        "name_zh": "甜菜护卫",
+        "name_en": "Chard Guard",
+        "cost": 75,
+        "cooldown": 15.0,
+        "hp": 1500,
+        "family": "Defence",
+        "art": "plants/WallnutPLANT",
+        "behavior": "wall",
+        "damage": 0,
+        "interval": 0.0,
+        "projectile": null,
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "wall",
+          "day"
+        ],
+        "desc_zh": "甜菜护卫擅长防御僵尸，可以把僵尸扔回去。",
+        "almanac_no": 97,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 180,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_chardguard_2",
+      "ingredients": [
+        "springbean",
+        "wallnut"
+      ],
+      "ingredient_names": [
+        "弹簧豆",
+        "坚果墙"
+      ],
+      "result": {
+        "id": "fused_chardguard_2",
+        "name_zh": "甜菜护卫·二式",
+        "name_en": "Chard Guard Mk II",
+        "cost": 75,
+        "cooldown": 15.0,
+        "hp": 1500,
+        "family": "Defence",
+        "art": "plants/WallnutPLANT",
+        "behavior": "wall",
+        "damage": 0,
+        "interval": 0.0,
+        "projectile": null,
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "wall",
+          "day"
+        ],
+        "desc_zh": "甜菜护卫擅长防御僵尸，可以把僵尸扔回去。",
+        "almanac_no": 98,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 180,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_puffball",
+      "ingredients": [
+        "phatbeet1",
+        "phatbeet1"
+      ],
+      "ingredient_names": [
+        "魔音甜菜",
+        "魔音甜菜"
+      ],
+      "result": {
+        "id": "fused_puffball",
+        "name_zh": "忧郁蘑菇",
+        "name_en": "Gloom-shroom",
+        "cost": 275,
+        "cooldown": 12.0,
+        "hp": 300,
+        "family": "Explosive",
+        "art": "plants/CherryBombPLANT",
+        "behavior": "instant",
+        "damage": 1200,
+        "interval": 0.0,
+        "projectile": null,
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused"
+        ],
+        "desc_zh": "忧郁蘑菇可以向自己周围的区域喷射浓烟",
+        "almanac_no": 99,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 260,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_darktwinsunflower",
+      "ingredients": [
+        "sunflower",
+        "firepeashooter1"
+      ],
+      "ingredient_names": [
+        "向日葵",
+        "火焰豌豆射手"
+      ],
+      "result": {
+        "id": "fused_darktwinsunflower",
+        "name_zh": "黑暗双子葵",
+        "name_en": "Dark Twin Sunflower",
+        "cost": 200,
+        "cooldown": 15.0,
+        "hp": 300,
+        "family": "Sun",
+        "art": "plants/SunflowerPLANT",
+        "behavior": "produce",
+        "damage": 0,
+        "interval": 22.0,
+        "projectile": null,
+        "rows": [
+          -1,
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "sun",
+          "day"
+        ],
+        "desc_zh": "黑暗双子葵可以在生产阳光时召唤不可名状的紫色阳光炸弹攻击僵尸，像一个中世纪的...？",
+        "almanac_no": 100,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 240,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_darktwinsunflower_2",
+      "ingredients": [
+        "firepeashooter1",
+        "sunflower"
+      ],
+      "ingredient_names": [
+        "火焰豌豆射手",
+        "向日葵"
+      ],
+      "result": {
+        "id": "fused_darktwinsunflower_2",
+        "name_zh": "黑暗双子葵·二式",
+        "name_en": "Dark Twin Sunflower Mk II",
+        "cost": 200,
+        "cooldown": 15.0,
+        "hp": 300,
+        "family": "Sun",
+        "art": "plants/SunflowerPLANT",
+        "behavior": "produce",
+        "damage": 0,
+        "interval": 22.0,
+        "projectile": null,
+        "rows": [
+          -1,
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "sun",
+          "day"
+        ],
+        "desc_zh": "黑暗双子葵可以在生产阳光时召唤不可名状的紫色阳光炸弹攻击僵尸，像一个中世纪的...？",
+        "almanac_no": 101,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 240,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_cactus1",
+      "ingredients": [
+        "peashooter",
+        "spikeweed"
+      ],
+      "ingredient_names": [
+        "豌豆射手",
+        "地刺"
+      ],
+      "result": {
+        "id": "fused_cactus1",
+        "name_zh": "仙人掌",
+        "name_en": "Cactus",
+        "cost": 175,
+        "cooldown": 5.0,
+        "hp": 300,
+        "family": "Sharp",
+        "art": "plants/SpikeweedPLANT",
+        "behavior": "spike",
+        "damage": 30,
+        "interval": 0.93,
+        "projectile": null,
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "shooter",
+          "day",
+          "spike",
+          "ground"
+        ],
+        "desc_zh": "仙人掌可以发射穿透性尖刺，对多个敌人造成伤害！",
+        "almanac_no": 102,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 290,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_cactus1_2",
+      "ingredients": [
+        "spikeweed",
+        "peashooter"
+      ],
+      "ingredient_names": [
+        "地刺",
+        "豌豆射手"
+      ],
+      "result": {
+        "id": "fused_cactus1_2",
+        "name_zh": "仙人掌·二式",
+        "name_en": "Cactus Mk II",
+        "cost": 175,
+        "cooldown": 5.0,
+        "hp": 300,
+        "family": "Sharp",
+        "art": "plants/SpikeweedPLANT",
+        "behavior": "spike",
+        "damage": 30,
+        "interval": 0.93,
+        "projectile": null,
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "spike",
+          "ground",
+          "shooter",
+          "day"
+        ],
+        "desc_zh": "仙人掌可以发射穿透性尖刺，对多个敌人造成伤害！",
+        "almanac_no": 103,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 290,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_frozenpear",
+      "ingredients": [
+        "phatbeet1",
+        "iceburg"
+      ],
+      "ingredient_names": [
+        "魔音甜菜",
+        "冰冻生菜"
+      ],
+      "result": {
+        "id": "fused_frozenpear",
+        "name_zh": "冻梨·融合",
+        "name_en": "Frozen Pear (Fusion)",
+        "cost": 175,
+        "cooldown": 15.0,
+        "hp": 2500,
+        "family": "Cold",
+        "art": "art/others/frozenpear.png",
+        "behavior": "instant",
+        "damage": 1200,
+        "interval": 0.0,
+        "projectile": null,
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "ice"
+        ],
+        "desc_zh": "当冻梨将被僵尸啃食时，冻梨会在周围 3x3 范围内释放冲击波，对范围内的僵尸造成伤害，并对僵尸施加冻结和冷缓。",
+        "almanac_no": 104,
+        "plantfood": true,
+        "fused": true,
+        "slow": 0.5
+      },
+      "unlock_cost": 210,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_frozenpear_2",
+      "ingredients": [
+        "iceburg",
+        "phatbeet1"
+      ],
+      "ingredient_names": [
+        "冰冻生菜",
+        "魔音甜菜"
+      ],
+      "result": {
+        "id": "fused_frozenpear_2",
+        "name_zh": "冻梨·融合二式",
+        "name_en": "Frozen Pear (Fusion Mk II)",
+        "cost": 175,
+        "cooldown": 15.0,
+        "hp": 2500,
+        "family": "Cold",
+        "art": "art/others/frozenpear.png",
+        "behavior": "instant",
+        "damage": 1200,
+        "interval": 0.0,
+        "projectile": null,
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "ice"
+        ],
+        "desc_zh": "当冻梨将被僵尸啃食时，冻梨会在周围 3x3 范围内释放冲击波，对范围内的僵尸造成伤害，并对僵尸施加冻结和冷缓。",
+        "almanac_no": 105,
+        "plantfood": true,
+        "fused": true,
+        "slow": 0.5
+      },
+      "unlock_cost": 210,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_lemonaider",
+      "ingredients": [
+        "iceburg",
+        "dandelion"
+      ],
+      "ingredient_names": [
+        "冰冻生菜",
+        "强酸柠檬"
+      ],
+      "result": {
+        "id": "fused_lemonaider",
+        "name_zh": "冰汽青柠",
+        "name_en": "Lemonaider",
+        "cost": 0,
+        "cooldown": 20.0,
+        "hp": 405,
+        "family": "Lobber",
+        "art": "plants/KernelPultPLANT",
+        "behavior": "lob",
+        "damage": 30,
+        "interval": 2.7,
+        "projectile": "cabbage",
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "ice",
+          "lobber"
+        ],
+        "desc_zh": "随机投射整颗柠檬和柠檬汽水。",
+        "almanac_no": 106,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 150,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_lemonaider_2",
+      "ingredients": [
+        "dandelion",
+        "iceburg"
+      ],
+      "ingredient_names": [
+        "强酸柠檬",
+        "冰冻生菜"
+      ],
+      "result": {
+        "id": "fused_lemonaider_2",
+        "name_zh": "冰汽青柠·二式",
+        "name_en": "Lemonaider Mk II",
+        "cost": 0,
+        "cooldown": 20.0,
+        "hp": 405,
+        "family": "Lobber",
+        "art": "plants/KernelPultPLANT",
+        "behavior": "lob",
+        "damage": 30,
+        "interval": 2.7,
+        "projectile": "cabbage",
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "ice",
+          "lobber"
+        ],
+        "desc_zh": "随机投射整颗柠檬和柠檬汽水。",
+        "almanac_no": 107,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 150,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_poisonpeashooter",
+      "ingredients": [
+        "peashooter",
+        "shadowshroom"
+      ],
+      "ingredient_names": [
+        "豌豆射手",
+        "毒影菇"
+      ],
+      "result": {
+        "id": "fused_poisonpeashooter",
+        "name_zh": "毒液豌豆射手",
+        "name_en": "Goo Peashooter",
+        "cost": 125,
+        "cooldown": 5.0,
+        "hp": 300,
+        "family": "Peashooter",
+        "art": "plants/PeashooterPLANT",
+        "behavior": "shoot",
+        "damage": 30,
+        "interval": 1.35,
+        "projectile": "pea",
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "shooter",
+          "day"
+        ],
+        "desc_zh": "毒液豌豆射手可以向僵尸发射毒豌豆，让它们中毒并减速。",
+        "almanac_no": 108,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 220,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_poisonpeashooter_2",
+      "ingredients": [
+        "shadowshroom",
+        "peashooter"
+      ],
+      "ingredient_names": [
+        "毒影菇",
+        "豌豆射手"
+      ],
+      "result": {
+        "id": "fused_poisonpeashooter_2",
+        "name_zh": "毒液豌豆射手·二式",
+        "name_en": "Goo Peashooter Mk II",
+        "cost": 125,
+        "cooldown": 5.0,
+        "hp": 300,
+        "family": "Peashooter",
+        "art": "plants/PeashooterPLANT",
+        "behavior": "shoot",
+        "damage": 30,
+        "interval": 1.35,
+        "projectile": "pea",
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "shooter",
+          "day"
+        ],
+        "desc_zh": "毒液豌豆射手可以向僵尸发射毒豌豆，让它们中毒并减速。",
+        "almanac_no": 109,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 220,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_peppermint",
+      "ingredients": [
+        "shadowshroom",
+        "cabbagepult"
+      ],
+      "ingredient_names": [
+        "毒影菇",
+        "卷心菜投手"
+      ],
+      "result": {
+        "id": "fused_peppermint",
+        "name_zh": "芦藜药师",
+        "name_en": "Lily of Pharmacy",
+        "cost": 175,
+        "cooldown": 8.0,
+        "hp": 300,
+        "family": "Fire",
+        "art": "plants/CabbagePultPLANT",
+        "behavior": "lob",
+        "damage": 70,
+        "interval": 2.7,
+        "projectile": "cabbage",
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "lobber",
+          "fire"
+        ],
+        "desc_zh": "可对射程内的僵尸造成伤害并附加中毒效果",
+        "almanac_no": 110,
+        "plantfood": false,
+        "fused": true
+      },
+      "unlock_cost": 250,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_peppermint_2",
+      "ingredients": [
+        "cabbagepult",
+        "shadowshroom"
+      ],
+      "ingredient_names": [
+        "卷心菜投手",
+        "毒影菇"
+      ],
+      "result": {
+        "id": "fused_peppermint_2",
+        "name_zh": "芦藜药师·二式",
+        "name_en": "Lily of Pharmacy Mk II",
+        "cost": 175,
+        "cooldown": 8.0,
+        "hp": 300,
+        "family": "Fire",
+        "art": "plants/CabbagePultPLANT",
+        "behavior": "lob",
+        "damage": 70,
+        "interval": 2.7,
+        "projectile": "cabbage",
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "lobber",
+          "fire"
+        ],
+        "desc_zh": "可对射程内的僵尸造成伤害并附加中毒效果",
+        "almanac_no": 111,
+        "plantfood": false,
+        "fused": true
+      },
+      "unlock_cost": 250,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_shadowpeashooter",
+      "ingredients": [
+        "peashooter",
+        "nightshade"
+      ],
+      "ingredient_names": [
+        "豌豆射手",
+        "夜影龙葵"
+      ],
+      "result": {
+        "id": "fused_shadowpeashooter",
+        "name_zh": "暗影豌豆射手",
+        "name_en": "Shadow Peashooter",
+        "cost": 125,
+        "cooldown": 5.0,
+        "hp": 300,
+        "family": "Peashooter",
+        "art": "plants/SplitPeaPLANT",
+        "behavior": "shoot",
+        "damage": 30,
+        "interval": 1.35,
+        "projectile": "pea",
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "shooter",
+          "day"
+        ],
+        "desc_zh": "暗影豌豆射手是一株暗影植物，可以发射暗影豌豆攻击僵尸。",
+        "almanac_no": 112,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 220,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_shadowpeashooter_2",
+      "ingredients": [
+        "nightshade",
+        "peashooter"
+      ],
+      "ingredient_names": [
+        "夜影龙葵",
+        "豌豆射手"
+      ],
+      "result": {
+        "id": "fused_shadowpeashooter_2",
+        "name_zh": "暗影豌豆射手·二式",
+        "name_en": "Shadow Peashooter Mk II",
+        "cost": 125,
+        "cooldown": 5.0,
+        "hp": 300,
+        "family": "Peashooter",
+        "art": "plants/SplitPeaPLANT",
+        "behavior": "shoot",
+        "damage": 30,
+        "interval": 1.35,
+        "projectile": "pea",
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "shooter",
+          "day"
+        ],
+        "desc_zh": "暗影豌豆射手是一株暗影植物，可以发射暗影豌豆攻击僵尸。",
+        "almanac_no": 113,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 220,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_endurian",
+      "ingredients": [
+        "wallnut",
+        "spikeweed"
+      ],
+      "ingredient_names": [
+        "坚果墙",
+        "地刺"
+      ],
+      "result": {
+        "id": "fused_endurian",
+        "name_zh": "榴莲",
+        "name_en": "Endurian",
+        "cost": 100,
+        "cooldown": 15.0,
+        "hp": 3000,
+        "family": "Defence",
+        "art": "plants/WallnutPLANT",
+        "behavior": "wall",
+        "damage": 0,
+        "interval": 0.0,
+        "projectile": null,
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "wall",
+          "day",
+          "spike",
+          "ground"
+        ],
+        "desc_zh": "榴莲不仅可以作为防御性植物，还可以对攻击他的僵尸造成伤害。",
+        "almanac_no": 114,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 230,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_endurian_2",
+      "ingredients": [
+        "spikeweed",
+        "wallnut"
+      ],
+      "ingredient_names": [
+        "地刺",
+        "坚果墙"
+      ],
+      "result": {
+        "id": "fused_endurian_2",
+        "name_zh": "榴莲·二式",
+        "name_en": "Endurian Mk II",
+        "cost": 100,
+        "cooldown": 15.0,
+        "hp": 3000,
+        "family": "Defence",
+        "art": "plants/WallnutPLANT",
+        "behavior": "wall",
+        "damage": 0,
+        "interval": 0.0,
+        "projectile": null,
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "spike",
+          "ground",
+          "wall",
+          "day"
+        ],
+        "desc_zh": "榴莲不仅可以作为防御性植物，还可以对攻击他的僵尸造成伤害。",
+        "almanac_no": 115,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 230,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_strawburst",
+      "ingredients": [
+        "springbean",
+        "witchhazel"
+      ],
+      "ingredient_names": [
+        "弹簧豆",
+        "宝石商石榴"
+      ],
+      "result": {
+        "id": "fused_strawburst",
+        "name_zh": "公主弹簧草",
+        "name_en": "Princess Spring Grass",
+        "cost": 225,
+        "cooldown": 10.0,
+        "hp": 300,
+        "family": "Lobber",
+        "art": "plants/CabbagePultPLANT",
+        "behavior": "lob",
+        "damage": 60,
+        "interval": 2.7,
+        "projectile": "cabbage",
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "lobber"
+        ],
+        "desc_zh": "射出弹簧对僵尸造成伤害并将其弹开",
+        "almanac_no": 116,
+        "plantfood": false,
+        "fused": true
+      },
+      "unlock_cost": 230,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_strawburst_2",
+      "ingredients": [
+        "witchhazel",
+        "springbean"
+      ],
+      "ingredient_names": [
+        "宝石商石榴",
+        "弹簧豆"
+      ],
+      "result": {
+        "id": "fused_strawburst_2",
+        "name_zh": "公主弹簧草·二式",
+        "name_en": "Princess Spring Grass Mk II",
+        "cost": 225,
+        "cooldown": 10.0,
+        "hp": 300,
+        "family": "Lobber",
+        "art": "plants/CabbagePultPLANT",
+        "behavior": "lob",
+        "damage": 60,
+        "interval": 2.7,
+        "projectile": "cabbage",
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "lobber"
+        ],
+        "desc_zh": "射出弹簧对僵尸造成伤害并将其弹开",
+        "almanac_no": 117,
+        "plantfood": false,
+        "fused": true
+      },
+      "unlock_cost": 230,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_coldsnapdragon",
+      "ingredients": [
+        "snapdragon",
+        "iceburg"
+      ],
+      "ingredient_names": [
+        "火龙草",
+        "冰冻生菜"
+      ],
+      "result": {
+        "id": "fused_coldsnapdragon",
+        "name_zh": "冰龙草",
+        "name_en": "Cold Snapdragon",
+        "cost": 150,
+        "cooldown": 5.0,
+        "hp": 300,
+        "family": "Cold",
+        "art": "plants/FumeShroomPLANT",
+        "behavior": "chomp",
+        "damage": 30,
+        "interval": 1.2,
+        "projectile": null,
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "ice"
+        ],
+        "desc_zh": "冰龙草可以向六块地砖内的僵尸喷出冰雾。",
+        "almanac_no": 118,
+        "plantfood": true,
+        "fused": true,
+        "slow": 0.5
+      },
+      "unlock_cost": 200,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_coldsnapdragon_2",
+      "ingredients": [
+        "iceburg",
+        "snapdragon"
+      ],
+      "ingredient_names": [
+        "冰冻生菜",
+        "火龙草"
+      ],
+      "result": {
+        "id": "fused_coldsnapdragon_2",
+        "name_zh": "冰龙草·二式",
+        "name_en": "Cold Snapdragon Mk II",
+        "cost": 150,
+        "cooldown": 5.0,
+        "hp": 300,
+        "family": "Cold",
+        "art": "plants/FumeShroomPLANT",
+        "behavior": "chomp",
+        "damage": 30,
+        "interval": 1.2,
+        "projectile": null,
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "ice"
+        ],
+        "desc_zh": "冰龙草可以向六块地砖内的僵尸喷出冰雾。",
+        "almanac_no": 119,
+        "plantfood": true,
+        "fused": true,
+        "slow": 0.5
+      },
+      "unlock_cost": 200,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_snappea1",
+      "ingredients": [
+        "peashooter",
+        "chomper"
+      ],
+      "ingredient_names": [
+        "豌豆射手",
+        "大嘴花"
+      ],
+      "result": {
+        "id": "fused_snappea1",
+        "name_zh": "食人花豌豆",
+        "name_en": "Snap Pea",
+        "cost": 200,
+        "cooldown": 10.0,
+        "hp": 300,
+        "family": "Melee",
+        "art": "plants/ChomperPLANT",
+        "behavior": "chomp",
+        "damage": 30,
+        "interval": 9.18,
+        "projectile": null,
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "shooter",
+          "day",
+          "melee"
+        ],
+        "desc_zh": "食人花豌豆可以先钻入地下，跑到僵尸下面，一口吞下一只僵尸。然后会开始咀嚼僵尸，咀嚼完后会将僵尸的头吐出来攻击另一只僵尸。",
+        "almanac_no": 120,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 320,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_snappea1_2",
+      "ingredients": [
+        "chomper",
+        "peashooter"
+      ],
+      "ingredient_names": [
+        "大嘴花",
+        "豌豆射手"
+      ],
+      "result": {
+        "id": "fused_snappea1_2",
+        "name_zh": "食人花豌豆·二式",
+        "name_en": "Snap Pea Mk II",
+        "cost": 200,
+        "cooldown": 10.0,
+        "hp": 300,
+        "family": "Melee",
+        "art": "plants/ChomperPLANT",
+        "behavior": "chomp",
+        "damage": 30,
+        "interval": 9.18,
+        "projectile": null,
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "melee",
+          "shooter",
+          "day"
+        ],
+        "desc_zh": "食人花豌豆可以先钻入地下，跑到僵尸下面，一口吞下一只僵尸。然后会开始咀嚼僵尸，咀嚼完后会将僵尸的头吐出来攻击另一只僵尸。",
+        "almanac_no": 121,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 320,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_hollyknight",
+      "ingredients": [
+        "repeater1",
+        "peashooter"
+      ],
+      "ingredient_names": [
+        "双重射手",
+        "豌豆射手"
+      ],
+      "result": {
+        "id": "fused_hollyknight",
+        "name_zh": "机枪射手",
+        "name_en": "Gatling Pea",
+        "cost": 250,
+        "cooldown": 8.0,
+        "hp": 300,
+        "family": "Peashooter",
+        "art": "plants/GatlingPeaPLANT",
+        "behavior": "shoot",
+        "damage": 20,
+        "interval": 1.35,
+        "projectile": "pea",
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "shooter",
+          "day"
+        ],
+        "desc_zh": "同时发射四颗豌豆",
+        "almanac_no": 122,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 280,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_hollyknight_2",
+      "ingredients": [
+        "peashooter",
+        "repeater1"
+      ],
+      "ingredient_names": [
+        "豌豆射手",
+        "双重射手"
+      ],
+      "result": {
+        "id": "fused_hollyknight_2",
+        "name_zh": "机枪射手·二式",
+        "name_en": "Gatling Pea Mk II",
+        "cost": 250,
+        "cooldown": 8.0,
+        "hp": 300,
+        "family": "Peashooter",
+        "art": "plants/GatlingPeaPLANT",
+        "behavior": "shoot",
+        "damage": 20,
+        "interval": 1.35,
+        "projectile": "pea",
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "shooter",
+          "day"
+        ],
+        "desc_zh": "同时发射四颗豌豆",
+        "almanac_no": 123,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 280,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_megagatling",
+      "ingredients": [
+        "peashooter",
+        "hollyknight"
+      ],
+      "ingredient_names": [
+        "豌豆射手",
+        "机枪射手"
+      ],
+      "result": {
+        "id": "fused_megagatling",
+        "name_zh": "超级机枪豌豆",
+        "name_en": "Mega Gatling Pea",
+        "cost": 325,
+        "cooldown": 5.0,
+        "hp": 300,
+        "family": "Peashooter",
+        "art": "plants/GatlingPeaPLANT",
+        "behavior": "shoot",
+        "damage": 20,
+        "interval": 1.35,
+        "projectile": "pea",
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "shooter",
+          "day"
+        ],
+        "desc_zh": "超级机枪豌豆可以同时发射四颗豌豆，偶尔还会自己产生叶绿素效果。",
+        "almanac_no": 124,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 320,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_megagatling_2",
+      "ingredients": [
+        "hollyknight",
+        "peashooter"
+      ],
+      "ingredient_names": [
+        "机枪射手",
+        "豌豆射手"
+      ],
+      "result": {
+        "id": "fused_megagatling_2",
+        "name_zh": "超级机枪豌豆·二式",
+        "name_en": "Mega Gatling Pea Mk II",
+        "cost": 325,
+        "cooldown": 5.0,
+        "hp": 300,
+        "family": "Peashooter",
+        "art": "plants/GatlingPeaPLANT",
+        "behavior": "shoot",
+        "damage": 20,
+        "interval": 1.35,
+        "projectile": "pea",
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "shooter",
+          "day"
+        ],
+        "desc_zh": "超级机枪豌豆可以同时发射四颗豌豆，偶尔还会自己产生叶绿素效果。",
+        "almanac_no": 125,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 320,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_fusiongatling",
+      "ingredients": [
+        "megagatling",
+        "peashooter"
+      ],
+      "ingredient_names": [
+        "超级机枪豌豆",
+        "豌豆射手"
+      ],
+      "result": {
+        "id": "fused_fusiongatling",
+        "name_zh": "元素机枪豌豆",
+        "name_en": "Elemental Gatling Pea",
+        "cost": 300,
+        "cooldown": 8.0,
+        "hp": 300,
+        "family": "Peashooter",
+        "art": "plants/GatlingPeaPLANT",
+        "behavior": "shoot",
+        "damage": 60,
+        "interval": 1.35,
+        "projectile": "pea",
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "shooter",
+          "day"
+        ],
+        "desc_zh": "元素机枪豌豆可以同时散射多颗豌豆。如果已经获取了超级机枪豌豆，元素机枪豌豆会在种植一定时间后会升级为其他形态。",
+        "almanac_no": 126,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 310,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_fusiongatling_2",
+      "ingredients": [
+        "peashooter",
+        "megagatling"
+      ],
+      "ingredient_names": [
+        "豌豆射手",
+        "超级机枪豌豆"
+      ],
+      "result": {
+        "id": "fused_fusiongatling_2",
+        "name_zh": "元素机枪豌豆·二式",
+        "name_en": "Elemental Gatling Pea Mk II",
+        "cost": 300,
+        "cooldown": 8.0,
+        "hp": 300,
+        "family": "Peashooter",
+        "art": "plants/GatlingPeaPLANT",
+        "behavior": "shoot",
+        "damage": 60,
+        "interval": 1.35,
+        "projectile": "pea",
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "shooter",
+          "day"
+        ],
+        "desc_zh": "元素机枪豌豆可以同时散射多颗豌豆。如果已经获取了超级机枪豌豆，元素机枪豌豆会在种植一定时间后会升级为其他形态。",
+        "almanac_no": 127,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 310,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_hollybarrierleaf",
+      "ingredients": [
+        "cabbagepult",
+        "lavaguava"
+      ],
+      "ingredient_names": [
+        "卷心菜投手",
+        "岩浆番石榴"
+      ],
+      "result": {
+        "id": "fused_hollybarrierleaf",
+        "name_zh": "石榴投手",
+        "name_en": "Pomegranate-pult",
+        "cost": 175,
+        "cooldown": 10.0,
+        "hp": 300,
+        "family": "Lobber",
+        "art": "plants/KernelPultPLANT",
+        "behavior": "lob",
+        "damage": 80,
+        "interval": 2.7,
+        "projectile": "cabbage",
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "lobber"
+        ],
+        "desc_zh": "石榴投手练就了明锐的视觉能力，她总是能第一时间发现僵尸头上的防具并击打下来！",
+        "almanac_no": 128,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 250,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_hollybarrierleaf_2",
+      "ingredients": [
+        "lavaguava",
+        "cabbagepult"
+      ],
+      "ingredient_names": [
+        "岩浆番石榴",
+        "卷心菜投手"
+      ],
+      "result": {
+        "id": "fused_hollybarrierleaf_2",
+        "name_zh": "石榴投手·二式",
+        "name_en": "Pomegranate-pult Mk II",
+        "cost": 175,
+        "cooldown": 10.0,
+        "hp": 300,
+        "family": "Lobber",
+        "art": "plants/KernelPultPLANT",
+        "behavior": "lob",
+        "damage": 80,
+        "interval": 2.7,
+        "projectile": "cabbage",
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "lobber"
+        ],
+        "desc_zh": "石榴投手练就了明锐的视觉能力，她总是能第一时间发现僵尸头上的防具并击打下来！",
+        "almanac_no": 129,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 250,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_turkeypult",
+      "ingredients": [
+        "sunflower",
+        "cabbagepult"
+      ],
+      "ingredient_names": [
+        "向日葵",
+        "卷心菜投手"
+      ],
+      "result": {
+        "id": "fused_turkeypult",
+        "name_zh": "棒打鲜橙",
+        "name_en": "Tangerine Batter",
+        "cost": 225,
+        "cooldown": 5.0,
+        "hp": 300,
+        "family": "Lobber",
+        "art": "plants/CabbagePultPLANT",
+        "behavior": "lob",
+        "damage": 40,
+        "interval": 3.0,
+        "projectile": "cabbage",
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "sun",
+          "day",
+          "lobber"
+        ],
+        "desc_zh": "棒打鲜橙可以用棒子打出橙子，橙子命中的单格范围内僵尸会有短暂的眩晕，在一段时间内击杀命中的僵尸可掉落 50 阳光。",
+        "almanac_no": 130,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 290,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_turkeypult_2",
+      "ingredients": [
+        "cabbagepult",
+        "sunflower"
+      ],
+      "ingredient_names": [
+        "卷心菜投手",
+        "向日葵"
+      ],
+      "result": {
+        "id": "fused_turkeypult_2",
+        "name_zh": "棒打鲜橙·二式",
+        "name_en": "Tangerine Batter Mk II",
+        "cost": 225,
+        "cooldown": 5.0,
+        "hp": 300,
+        "family": "Lobber",
+        "art": "plants/CabbagePultPLANT",
+        "behavior": "lob",
+        "damage": 40,
+        "interval": 3.0,
+        "projectile": "cabbage",
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "lobber",
+          "sun",
+          "day"
+        ],
+        "desc_zh": "棒打鲜橙可以用棒子打出橙子，橙子命中的单格范围内僵尸会有短暂的眩晕，在一段时间内击杀命中的僵尸可掉落 50 阳光。",
+        "almanac_no": 131,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 290,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_slingpea",
+      "ingredients": [
+        "cabbagepult",
+        "peashooter"
+      ],
+      "ingredient_names": [
+        "卷心菜投手",
+        "豌豆射手"
+      ],
+      "result": {
+        "id": "fused_slingpea",
+        "name_zh": "豌豆迫击炮",
+        "name_en": "Sling Pea",
+        "cost": 125,
+        "cooldown": 5.0,
+        "hp": 300,
+        "family": "Peashooter",
+        "art": "plants/PeashooterPLANT",
+        "behavior": "shoot",
+        "damage": 20,
+        "interval": 2.03,
+        "projectile": "pea",
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "lobber",
+          "shooter",
+          "day"
+        ],
+        "desc_zh": "豌豆迫击炮可以一次发射五颗豌豆，每次都会瞄准离房子最近的僵尸。",
+        "almanac_no": 132,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 260,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_slingpea_2",
+      "ingredients": [
+        "peashooter",
+        "cabbagepult"
+      ],
+      "ingredient_names": [
+        "豌豆射手",
+        "卷心菜投手"
+      ],
+      "result": {
+        "id": "fused_slingpea_2",
+        "name_zh": "豌豆迫击炮·二式",
+        "name_en": "Sling Pea Mk II",
+        "cost": 125,
+        "cooldown": 5.0,
+        "hp": 300,
+        "family": "Peashooter",
+        "art": "plants/PeashooterPLANT",
+        "behavior": "shoot",
+        "damage": 20,
+        "interval": 2.03,
+        "projectile": "pea",
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "shooter",
+          "day",
+          "lobber"
+        ],
+        "desc_zh": "豌豆迫击炮可以一次发射五颗豌豆，每次都会瞄准离房子最近的僵尸。",
+        "almanac_no": 133,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 260,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_jasmine",
+      "ingredients": [
+        "chilibean",
+        "stunion"
+      ],
+      "ingredient_names": [
+        "巴豆",
+        "眩晕洋葱"
+      ],
+      "result": {
+        "id": "fused_jasmine",
+        "name_zh": "茉莉奶绿·融合",
+        "name_en": "Jasmine (Fusion)",
+        "cost": 125,
+        "cooldown": 25.0,
+        "hp": 300,
+        "family": "Jasmine",
+        "art": "art/chinesegarden/jasmine.png",
+        "behavior": "produce",
+        "damage": 0,
+        "interval": 22.0,
+        "projectile": null,
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused"
+        ],
+        "desc_zh": "可以释放香气使3x3范围内僵尸受到多种负面状态影响。",
+        "almanac_no": 134,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 180,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_jasmine_2",
+      "ingredients": [
+        "stunion",
+        "chilibean"
+      ],
+      "ingredient_names": [
+        "眩晕洋葱",
+        "巴豆"
+      ],
+      "result": {
+        "id": "fused_jasmine_2",
+        "name_zh": "茉莉奶绿·融合二式",
+        "name_en": "Jasmine (Fusion Mk II)",
+        "cost": 125,
+        "cooldown": 25.0,
+        "hp": 300,
+        "family": "Jasmine",
+        "art": "art/chinesegarden/jasmine.png",
+        "behavior": "produce",
+        "damage": 0,
+        "interval": 22.0,
+        "projectile": null,
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused"
+        ],
+        "desc_zh": "可以释放香气使3x3范围内僵尸受到多种负面状态影响。",
+        "almanac_no": 135,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 180,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_pokra1",
+      "ingredients": [
+        "bonkchoy",
+        "stallia"
+      ],
+      "ingredient_names": [
+        "菜问",
+        "大丽菊"
+      ],
+      "result": {
+        "id": "fused_pokra1",
+        "name_zh": "尖刺秋葵",
+        "name_en": "Pokra",
+        "cost": 175,
+        "cooldown": 7.0,
+        "hp": 300,
+        "family": "Sharp",
+        "art": "plants/SpikeweedPLANT",
+        "behavior": "spike",
+        "damage": 60,
+        "interval": 0.3,
+        "projectile": null,
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "melee",
+          "spike"
+        ],
+        "desc_zh": "尖刺秋葵可以连续穿透僵尸戳出刺拳，使其毒缓。多次刺拳叠加，可以发射强力毒刺。每次发射完都会休息片刻才能再次开始攻击。",
+        "almanac_no": 136,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 270,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_pokra1_2",
+      "ingredients": [
+        "stallia",
+        "bonkchoy"
+      ],
+      "ingredient_names": [
+        "大丽菊",
+        "菜问"
+      ],
+      "result": {
+        "id": "fused_pokra1_2",
+        "name_zh": "尖刺秋葵·二式",
+        "name_en": "Pokra Mk II",
+        "cost": 175,
+        "cooldown": 7.0,
+        "hp": 300,
+        "family": "Sharp",
+        "art": "plants/SpikeweedPLANT",
+        "behavior": "spike",
+        "damage": 60,
+        "interval": 0.3,
+        "projectile": null,
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "melee",
+          "spike"
+        ],
+        "desc_zh": "尖刺秋葵可以连续穿透僵尸戳出刺拳，使其毒缓。多次刺拳叠加，可以发射强力毒刺。每次发射完都会休息片刻才能再次开始攻击。",
+        "almanac_no": 137,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 270,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_draftodil1",
+      "ingredients": [
+        "sprout",
+        "akee"
+      ],
+      "ingredient_names": [
+        "吹风荚兰",
+        "水仙花射手"
+      ],
+      "result": {
+        "id": "fused_draftodil1",
+        "name_zh": "气流水仙花",
+        "name_en": "Draftodil",
+        "cost": 100,
+        "cooldown": 10.0,
+        "hp": 300,
+        "family": "Support",
+        "art": "plants/UmbrellaLeafPLANT",
+        "behavior": "support",
+        "damage": 0,
+        "interval": 0.0,
+        "projectile": null,
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused"
+        ],
+        "desc_zh": "发出气流短暂僵直不会飞行的僵尸，吹飞飞行和小鬼僵尸。",
+        "almanac_no": 138,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 170,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_draftodil1_2",
+      "ingredients": [
+        "akee",
+        "sprout"
+      ],
+      "ingredient_names": [
+        "水仙花射手",
+        "吹风荚兰"
+      ],
+      "result": {
+        "id": "fused_draftodil1_2",
+        "name_zh": "气流水仙花·二式",
+        "name_en": "Draftodil Mk II",
+        "cost": 100,
+        "cooldown": 10.0,
+        "hp": 300,
+        "family": "Support",
+        "art": "plants/UmbrellaLeafPLANT",
+        "behavior": "support",
+        "damage": 0,
+        "interval": 0.0,
+        "projectile": null,
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused"
+        ],
+        "desc_zh": "发出气流短暂僵直不会飞行的僵尸，吹飞飞行和小鬼僵尸。",
+        "almanac_no": 139,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 170,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_gumnut",
+      "ingredients": [
+        "bloomerang1",
+        "bloomerang1"
+      ],
+      "ingredient_names": [
+        "回旋镖射手",
+        "回旋镖射手"
+      ],
+      "result": {
+        "id": "fused_gumnut",
+        "name_zh": "刺眼花艺伎",
+        "name_en": "Boophone Geigi",
+        "cost": 100,
+        "cooldown": 10.0,
+        "hp": 300,
+        "family": "Defence",
+        "art": "plants/WallnutPLANT",
+        "behavior": "wall",
+        "damage": 0,
+        "interval": 0.0,
+        "projectile": null,
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused"
+        ],
+        "desc_zh": "飞回的花扇可以对攻击范围内的僵尸造成伤害。",
+        "almanac_no": 140,
+        "plantfood": false,
+        "fused": true
+      },
+      "unlock_cost": 170,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_tumbleweed",
+      "ingredients": [
+        "chardguard",
+        "springbean"
+      ],
+      "ingredient_names": [
+        "甜菜护卫",
+        "弹簧豆"
+      ],
+      "result": {
+        "id": "fused_tumbleweed",
+        "name_zh": "白瓜相扑手",
+        "name_en": "Sumo Melon",
+        "cost": 100,
+        "cooldown": 10.0,
+        "hp": 300,
+        "family": "Melee",
+        "art": "plants/PeashooterPLANT",
+        "behavior": "boomerang",
+        "damage": 30,
+        "interval": 1.5,
+        "projectile": "boomerang",
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused"
+        ],
+        "desc_zh": "白瓜相扑手以静制动，可以大力击退僵尸。",
+        "almanac_no": 141,
+        "plantfood": false,
+        "fused": true
+      },
+      "unlock_cost": 170,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_tumbleweed_2",
+      "ingredients": [
+        "springbean",
+        "chardguard"
+      ],
+      "ingredient_names": [
+        "弹簧豆",
+        "甜菜护卫"
+      ],
+      "result": {
+        "id": "fused_tumbleweed_2",
+        "name_zh": "白瓜相扑手·二式",
+        "name_en": "Sumo Melon Mk II",
+        "cost": 100,
+        "cooldown": 10.0,
+        "hp": 300,
+        "family": "Melee",
+        "art": "plants/PeashooterPLANT",
+        "behavior": "boomerang",
+        "damage": 30,
+        "interval": 1.5,
+        "projectile": "boomerang",
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused"
+        ],
+        "desc_zh": "白瓜相扑手以静制动，可以大力击退僵尸。",
+        "almanac_no": 142,
+        "plantfood": false,
+        "fused": true
+      },
+      "unlock_cost": 170,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_powervine",
+      "ingredients": [
+        "iceburg",
+        "chardguard"
+      ],
+      "ingredient_names": [
+        "冰冻生菜",
+        "甜菜护卫"
+      ],
+      "result": {
+        "id": "fused_powervine",
+        "name_zh": "庆典汽水椰",
+        "name_en": "Celebration Soda Palm",
+        "cost": 0,
+        "cooldown": 20.0,
+        "hp": 405,
+        "family": "Defence",
+        "art": "plants/WallnutPLANT",
+        "behavior": "wall",
+        "damage": 0,
+        "interval": 0.0,
+        "projectile": null,
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "ice"
+        ],
+        "desc_zh": "一段时间会喷射汽水将前方的僵尸击退",
+        "almanac_no": 143,
+        "plantfood": false,
+        "fused": true
+      },
+      "unlock_cost": 150,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_powervine_2",
+      "ingredients": [
+        "chardguard",
+        "iceburg"
+      ],
+      "ingredient_names": [
+        "甜菜护卫",
+        "冰冻生菜"
+      ],
+      "result": {
+        "id": "fused_powervine_2",
+        "name_zh": "庆典汽水椰·二式",
+        "name_en": "Celebration Soda Palm Mk II",
+        "cost": 0,
+        "cooldown": 20.0,
+        "hp": 405,
+        "family": "Defence",
+        "art": "plants/WallnutPLANT",
+        "behavior": "wall",
+        "damage": 0,
+        "interval": 0.0,
+        "projectile": null,
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "ice"
+        ],
+        "desc_zh": "一段时间会喷射汽水将前方的僵尸击退",
+        "almanac_no": 144,
+        "plantfood": false,
+        "fused": true
+      },
+      "unlock_cost": 150,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_fusiongatling_3",
+      "ingredients": [
+        "littlerepeater",
+        "littlerepeater"
+      ],
+      "ingredient_names": [
+        "迷你双重射手",
+        "迷你双重射手"
+      ],
+      "result": {
+        "id": "fused_fusiongatling_3",
+        "name_zh": "元素机枪豌豆·三式",
+        "name_en": "Elemental Gatling Pea Mk III",
+        "cost": 300,
+        "cooldown": 8.0,
+        "hp": 300,
+        "family": "Peashooter",
+        "art": "plants/GatlingPeaPLANT",
+        "behavior": "shoot",
+        "damage": 60,
+        "interval": 1.4,
+        "projectile": "pea",
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "shooter"
+        ],
+        "desc_zh": "元素机枪豌豆可以同时散射多颗豌豆。如果已经获取了超级机枪豌豆，元素机枪豌豆会在种植一定时间后会升级为其他形态。",
+        "almanac_no": 145,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 270,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_fusiongatling_4",
+      "ingredients": [
+        "peashooter",
+        "fusiongatling"
+      ],
+      "ingredient_names": [
+        "豌豆射手",
+        "元素机枪豌豆"
+      ],
+      "result": {
+        "id": "fused_fusiongatling_4",
+        "name_zh": "元素机枪豌豆·四式",
+        "name_en": "Elemental Gatling Pea Mk IV",
+        "cost": 300,
+        "cooldown": 8.0,
+        "hp": 300,
+        "family": "Peashooter",
+        "art": "plants/GatlingPeaPLANT",
+        "behavior": "shoot",
+        "damage": 60,
+        "interval": 1.35,
+        "projectile": "pea",
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "shooter",
+          "day"
+        ],
+        "desc_zh": "元素机枪豌豆可以同时散射多颗豌豆。如果已经获取了超级机枪豌豆，元素机枪豌豆会在种植一定时间后会升级为其他形态。",
+        "almanac_no": 146,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 310,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    },
+    {
+      "id": "fusion_fusiongatling_5",
+      "ingredients": [
+        "fusiongatling",
+        "peashooter"
+      ],
+      "ingredient_names": [
+        "元素机枪豌豆",
+        "豌豆射手"
+      ],
+      "result": {
+        "id": "fused_fusiongatling_5",
+        "name_zh": "元素机枪豌豆·五式",
+        "name_en": "Elemental Gatling Pea Mk V",
+        "cost": 300,
+        "cooldown": 8.0,
+        "hp": 300,
+        "family": "Peashooter",
+        "art": "plants/GatlingPeaPLANT",
+        "behavior": "shoot",
+        "damage": 60,
+        "interval": 1.35,
+        "projectile": "pea",
+        "rows": [
+          0
+        ],
+        "pierce": false,
+        "tags": [
+          "plant",
+          "fused",
+          "shooter",
+          "day"
+        ],
+        "desc_zh": "元素机枪豌豆可以同时散射多颗豌豆。如果已经获取了超级机枪豌豆，元素机枪豌豆会在种植一定时间后会升级为其他形态。",
+        "almanac_no": 147,
+        "plantfood": true,
+        "fused": true
+      },
+      "unlock_cost": 310,
+      "plantfood_cost": 0,
+      "unlock_condition": "在植物融合实验室消耗金币解锁"
+    }
+  ]
+}

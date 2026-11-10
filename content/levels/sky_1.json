@@ -1,0 +1,331 @@
+{
+ "id": "sky_1",
+ "world": "sky",
+ "index": 1,
+ "title": "SHUTTLE - SC - Day 1",
+ "sun": 150,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "bloomerang"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "beach",
+     "row": 4
+    },
+    {
+     "type": "beach",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "beach",
+     "row": 0
+    },
+    {
+     "type": "beach",
+     "row": 3
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "beach",
+     "row": 0
+    },
+    {
+     "type": "buckethead",
+     "row": 4
+    },
+    {
+     "type": "beach",
+     "row": 2
+    },
+    {
+     "type": "beach",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "beach",
+     "row": 4
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    },
+    {
+     "type": "buckethead",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "buckethead",
+     "row": 0
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 2
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "buckethead",
+     "row": 0
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 2
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "beach",
+     "row": 0
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 2
+    },
+    {
+     "type": "beach",
+     "row": 3
+    },
+    {
+     "type": "beach",
+     "row": 4
+    },
+    {
+     "type": "buckethead",
+     "row": 0
+    },
+    {
+     "type": "buckethead",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "buckethead",
+     "row": 0
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    },
+    {
+     "type": "buckethead",
+     "row": 4
+    },
+    {
+     "type": "beach",
+     "row": 3
+    },
+    {
+     "type": "beach",
+     "row": 3
+    },
+    {
+     "type": "beach",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "beach",
+     "row": 0
+    },
+    {
+     "type": "beach",
+     "row": 1
+    },
+    {
+     "type": "beach",
+     "row": 2
+    },
+    {
+     "type": "beach",
+     "row": 3
+    },
+    {
+     "type": "beach",
+     "row": 4
+    },
+    {
+     "type": "beach",
+     "row": 0
+    },
+    {
+     "type": "beach",
+     "row": 1
+    },
+    {
+     "type": "beach",
+     "row": 2
+    },
+    {
+     "type": "beach",
+     "row": 3
+    },
+    {
+     "type": "beach",
+     "row": 4
+    },
+    {
+     "type": "beach",
+     "row": 0
+    },
+    {
+     "type": "beach",
+     "row": 1
+    },
+    {
+     "type": "beach",
+     "row": 2
+    },
+    {
+     "type": "beach",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "buckethead",
+     "row": 0
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 2
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    },
+    {
+     "type": "buckethead",
+     "row": 4
+    },
+    {
+     "type": "buckethead",
+     "row": 4
+    },
+    {
+     "type": "buckethead",
+     "row": 4
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    },
+    {
+     "type": "buckethead",
+     "row": 2
+    },
+    {
+     "type": "buckethead",
+     "row": 2
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    }
+   ]
+  }
+ ],
+ "flags": 1,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_1825",
+  "stage": "SkyCityStage",
+  "name_key": "[SKYCITY_LEVEL_NAME]",
+  "level_number": 1,
+  "wave_count": 10,
+  "original_waves": 10,
+  "night": false
+ }
+}

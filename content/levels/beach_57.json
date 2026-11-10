@@ -1,0 +1,37 @@
+{
+ "id": "beach_57",
+ "world": "beach",
+ "index": 57,
+ "title": "海底世界 - 第 57 天",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "bloomerang"
+ ],
+ "waves": [
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "beach",
+     "row": 2
+    }
+   ]
+  }
+ ],
+ "flags": 1,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_0276",
+  "stage": "DeepseaLandStage",
+  "name_key": "[ATLANTIS_LEVEL_NAME]",
+  "level_number": 20,
+  "wave_count": 1,
+  "original_waves": 10,
+  "night": false
+ }
+}

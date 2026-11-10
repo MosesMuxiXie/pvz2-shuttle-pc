@@ -1,0 +1,133 @@
+{
+ "id": "modern_96",
+ "world": "modern",
+ "index": 96,
+ "title": "往镇异影 - 第 96 关",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "bloomerang"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "future",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "future",
+     "row": 0
+    },
+    {
+     "type": "future",
+     "row": 1
+    },
+    {
+     "type": "future",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 1
+    }
+   ]
+  }
+ ],
+ "flags": 1,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_1043",
+  "stage": "ChildStage",
+  "name_key": "[LTE_LEVEL_NAME_TIMESPACEECHOES_S6]",
+  "level_number": 3,
+  "wave_count": 9,
+  "original_waves": 9,
+  "night": false
+ }
+}

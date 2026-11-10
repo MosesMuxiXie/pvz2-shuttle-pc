@@ -1,0 +1,171 @@
+{
+ "id": "plantagenet_20",
+ "world": "plantagenet",
+ "index": 20,
+ "title": "第 20 关",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "iris",
+  "olivewood"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "future",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "future",
+     "row": 0
+    },
+    {
+     "type": "future",
+     "row": 1
+    },
+    {
+     "type": "future",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_noblewoman",
+     "row": 0
+    },
+    {
+     "type": "future",
+     "row": 1
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_noblewoman",
+     "row": 0
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 1
+    },
+    {
+     "type": "royal_winetasting",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_noblewoman",
+     "row": 0
+    },
+    {
+     "type": "royal_winetasting",
+     "row": 1
+    },
+    {
+     "type": "royal_winetasting",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_winetasting",
+     "row": 0
+    },
+    {
+     "type": "royal_winetasting",
+     "row": 1
+    },
+    {
+     "type": "royal_winetasting",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "future",
+     "row": 0
+    },
+    {
+     "type": "future",
+     "row": 1
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 2
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 3
+    },
+    {
+     "type": "royal_winetasting",
+     "row": 4
+    },
+    {
+     "type": "royal_winetasting",
+     "row": 0
+    },
+    {
+     "type": "royal_winetasting",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 2
+    }
+   ]
+  }
+ ],
+ "flags": 1,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_0509",
+  "stage": "JoustStage",
+  "name_key": "",
+  "level_number": 1,
+  "wave_count": 8,
+  "original_waves": 36,
+  "night": false
+ }
+}

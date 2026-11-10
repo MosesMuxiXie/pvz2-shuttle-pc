@@ -1,0 +1,235 @@
+{
+ "id": "kongfu_2",
+ "world": "kongfu",
+ "index": 2,
+ "title": "SHUTTLE - KF - Day 2",
+ "sun": 190,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "bonkchoy"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "buckethead",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "gargantuar",
+     "row": 0
+    },
+    {
+     "type": "gargantuar",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 4
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "gargantuar",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "gargantuar",
+     "row": 1
+    },
+    {
+     "type": "gargantuar",
+     "row": 2
+    },
+    {
+     "type": "gargantuar",
+     "row": 3
+    },
+    {
+     "type": "gargantuar",
+     "row": 4
+    },
+    {
+     "type": "gargantuar",
+     "row": 4
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 0
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 4
+    },
+    {
+     "type": "kongfu",
+     "row": 3
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 0
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    },
+    {
+     "type": "gargantuar",
+     "row": 3
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 0
+    },
+    {
+     "type": "kongfu",
+     "row": 3
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 0
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    },
+    {
+     "type": "kongfu",
+     "row": 3
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 3
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    },
+    {
+     "type": "gargantuar",
+     "row": 3
+    }
+   ]
+  }
+ ],
+ "flags": 2,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_1390",
+  "stage": "KongfuStage",
+  "name_key": "[KONGFU_LEVEL_NAME]",
+  "level_number": 5,
+  "wave_count": 10,
+  "original_waves": 10,
+  "night": false
+ }
+}

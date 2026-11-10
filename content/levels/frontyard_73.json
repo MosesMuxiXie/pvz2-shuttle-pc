@@ -1,0 +1,37 @@
+{
+ "id": "frontyard_73",
+ "world": "frontyard",
+ "index": 73,
+ "title": "元素！很奇妙吧？ - 第 73 关",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "potatomine"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "football",
+     "row": 2
+    }
+   ]
+  }
+ ],
+ "flags": 1,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_0410",
+  "stage": "NightLBStage",
+  "name_key": "[ELEMENT_LEVEL_NAME]",
+  "level_number": 20,
+  "wave_count": 1,
+  "original_waves": 1,
+  "night": true
+ }
+}

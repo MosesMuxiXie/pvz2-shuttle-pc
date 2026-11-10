@@ -1,0 +1,209 @@
+{
+ "id": "lostcity_41",
+ "world": "lostcity",
+ "index": 41,
+ "title": "Lost City Expand - Day 41",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "bloomerang"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "lostcity",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "lostcity",
+     "row": 2
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "lostcity",
+     "row": 4
+    },
+    {
+     "type": "lostcity",
+     "row": 0
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 4
+    },
+    {
+     "type": "lostcity",
+     "row": 0
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "lostcity",
+     "row": 0
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 4
+    },
+    {
+     "type": "lostcity",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "lostcity",
+     "row": 2
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 4
+    },
+    {
+     "type": "lostcity",
+     "row": 0
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "lostcity",
+     "row": 4
+    },
+    {
+     "type": "lostcity",
+     "row": 0
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 4
+    }
+   ]
+  }
+ ],
+ "flags": 1,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb-synth",
+  "package": "pkg_1196",
+  "stage": "LostCityNightsStage",
+  "name_key": "[LOSTCITY_EXPAND_LEVEL_NAME]",
+  "level_number": 7,
+  "wave_count": 8,
+  "original_waves": 0,
+  "night": true,
+  "boss": true,
+  "boss_zombie": "zomboss"
+ }
+}

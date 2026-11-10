@@ -1,0 +1,603 @@
+{
+ "id": "modern_67",
+ "world": "modern",
+ "index": 67,
+ "title": "第 67 关",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "bloomerang"
+ ],
+ "waves": [
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "conehead",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "gargantuar",
+     "row": 0
+    },
+    {
+     "type": "conehead",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "conehead",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "mummy",
+     "row": 0
+    },
+    {
+     "type": "mummy",
+     "row": 1
+    },
+    {
+     "type": "conehead",
+     "row": 2
+    },
+    {
+     "type": "conehead",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    },
+    {
+     "type": "buckethead",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "gargantuar",
+     "row": 0
+    },
+    {
+     "type": "conehead",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "iceage",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "gargantuar",
+     "row": 1
+    },
+    {
+     "type": "conehead",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "conehead",
+     "row": 4
+    },
+    {
+     "type": "conehead",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "mummy",
+     "row": 0
+    },
+    {
+     "type": "mummy",
+     "row": 1
+    },
+    {
+     "type": "gargantuar",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "gargantuar",
+     "row": 4
+    },
+    {
+     "type": "conehead",
+     "row": 0
+    },
+    {
+     "type": "iceage",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "mummy",
+     "row": 0
+    },
+    {
+     "type": "mummy",
+     "row": 1
+    },
+    {
+     "type": "gargantuar",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "mummy",
+     "row": 0
+    },
+    {
+     "type": "mummy",
+     "row": 1
+    },
+    {
+     "type": "mummy",
+     "row": 2
+    },
+    {
+     "type": "mummy",
+     "row": 3
+    },
+    {
+     "type": "conehead",
+     "row": 4
+    },
+    {
+     "type": "iceage",
+     "row": 0
+    },
+    {
+     "type": "gargantuar",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "iceage",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "mummy",
+     "row": 0
+    },
+    {
+     "type": "mummy",
+     "row": 1
+    },
+    {
+     "type": "gargantuar",
+     "row": 2
+    },
+    {
+     "type": "conehead",
+     "row": 3
+    },
+    {
+     "type": "gargantuar",
+     "row": 4
+    },
+    {
+     "type": "gargantuar",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "buckethead",
+     "row": 0
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "mummy",
+     "row": 0
+    },
+    {
+     "type": "mummy",
+     "row": 1
+    },
+    {
+     "type": "gargantuar",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "conehead",
+     "row": 4
+    },
+    {
+     "type": "conehead",
+     "row": 0
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "iceage",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "mummy",
+     "row": 0
+    },
+    {
+     "type": "mummy",
+     "row": 1
+    },
+    {
+     "type": "conehead",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "iceage",
+     "row": 4
+    },
+    {
+     "type": "gargantuar",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "iceage",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "mummy",
+     "row": 0
+    },
+    {
+     "type": "mummy",
+     "row": 1
+    },
+    {
+     "type": "mummy",
+     "row": 2
+    },
+    {
+     "type": "mummy",
+     "row": 3
+    },
+    {
+     "type": "gargantuar",
+     "row": 4
+    },
+    {
+     "type": "conehead",
+     "row": 0
+    },
+    {
+     "type": "gargantuar",
+     "row": 1
+    },
+    {
+     "type": "gargantuar",
+     "row": 2
+    },
+    {
+     "type": "conehead",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "iceage",
+     "row": 3
+    }
+   ]
+  }
+ ],
+ "flags": 5,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_0988",
+  "stage": "ZCorpStage",
+  "name_key": "公司竞标赛 - 第八幕",
+  "level_number": 8,
+  "wave_count": 14,
+  "original_waves": 15,
+  "night": false
+ }
+}

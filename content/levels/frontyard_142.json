@@ -1,0 +1,453 @@
+{
+ "id": "frontyard_142",
+ "world": "frontyard",
+ "index": 142,
+ "title": "永恒庭院传说 - 第 142 关",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "potatomine"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    }
+   ]
+  }
+ ],
+ "flags": 3,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_1129",
+  "stage": "PvZ2CRoofStage",
+  "name_key": "[LTE_LEVEL_NAME_TIMESPACEECHOES_S13]",
+  "level_number": 10,
+  "wave_count": 21,
+  "original_waves": 21,
+  "night": false
+ }
+}

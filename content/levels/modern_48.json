@@ -1,0 +1,483 @@
+{
+ "id": "modern_48",
+ "world": "modern",
+ "index": 48,
+ "title": "小镇奇兵 - 第 48 天",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "bloomerang"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "cowboy",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 1
+    }
+   ]
+  }
+ ],
+ "flags": 3,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_1854",
+  "stage": "ChildStage",
+  "name_key": "[TOWN_LEVEL_NAME]",
+  "level_number": 9,
+  "wave_count": 12,
+  "original_waves": 12,
+  "night": false
+ }
+}

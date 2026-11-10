@@ -1,0 +1,451 @@
+{
+ "id": "cowboy_38",
+ "world": "cowboy",
+ "index": 38,
+ "title": "以律法之名 - 第 38 关",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "bloomerang"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "cowboy_armor1",
+     "row": 1
+    },
+    {
+     "type": "cowboy_armor1",
+     "row": 2
+    },
+    {
+     "type": "cowboy_armor1",
+     "row": 3
+    },
+    {
+     "type": "cowboy_armor1",
+     "row": 4
+    },
+    {
+     "type": "cowboy_armor1",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "cowboy_armor1",
+     "row": 1
+    },
+    {
+     "type": "cowboy_armor1",
+     "row": 2
+    },
+    {
+     "type": "cowboy_armor1",
+     "row": 3
+    },
+    {
+     "type": "cowboy_armor1",
+     "row": 4
+    },
+    {
+     "type": "cowboy_armor1",
+     "row": 4
+    },
+    {
+     "type": "cowboy",
+     "row": 3
+    },
+    {
+     "type": "cowboy",
+     "row": 4
+    },
+    {
+     "type": "cowboy",
+     "row": 2
+    },
+    {
+     "type": "cowboy",
+     "row": 1
+    },
+    {
+     "type": "cowboy",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "cowboy",
+     "row": 1
+    },
+    {
+     "type": "cowboy",
+     "row": 1
+    },
+    {
+     "type": "cowboy",
+     "row": 3
+    },
+    {
+     "type": "cowboy",
+     "row": 3
+    },
+    {
+     "type": "cowboy",
+     "row": 1
+    },
+    {
+     "type": "cowboy",
+     "row": 3
+    },
+    {
+     "type": "cowboy_armor1",
+     "row": 2
+    },
+    {
+     "type": "cowboy_armor1",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "cowboy_armor1",
+     "row": 0
+    },
+    {
+     "type": "cowboy_armor1",
+     "row": 1
+    },
+    {
+     "type": "cowboy_armor1",
+     "row": 2
+    },
+    {
+     "type": "cowboy_armor1",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 4
+    },
+    {
+     "type": "cowboy",
+     "row": 0
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "cowboy",
+     "row": 2
+    },
+    {
+     "type": "cowboy_armor1",
+     "row": 3
+    },
+    {
+     "type": "cowboy",
+     "row": 2
+    },
+    {
+     "type": "cowboy",
+     "row": 3
+    },
+    {
+     "type": "cowboy",
+     "row": 1
+    },
+    {
+     "type": "cowboy_armor1",
+     "row": 0
+    },
+    {
+     "type": "buckethead",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "cowboy",
+     "row": 0
+    },
+    {
+     "type": "cowboy",
+     "row": 1
+    },
+    {
+     "type": "cowboy_armor1",
+     "row": 1
+    },
+    {
+     "type": "cowboy_armor1",
+     "row": 2
+    },
+    {
+     "type": "cowboy_armor1",
+     "row": 3
+    },
+    {
+     "type": "cowboy_armor1",
+     "row": 2
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "cowboy",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "cowboy",
+     "row": 1
+    },
+    {
+     "type": "cowboy",
+     "row": 1
+    },
+    {
+     "type": "cowboy",
+     "row": 2
+    },
+    {
+     "type": "cowboy_armor1",
+     "row": 3
+    },
+    {
+     "type": "buckethead",
+     "row": 4
+    },
+    {
+     "type": "cowboy",
+     "row": 0
+    },
+    {
+     "type": "cowboy",
+     "row": 1
+    },
+    {
+     "type": "cowboy",
+     "row": 2
+    },
+    {
+     "type": "cowboy",
+     "row": 3
+    },
+    {
+     "type": "buckethead",
+     "row": 4
+    },
+    {
+     "type": "cowboy_armor1",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "cowboy",
+     "row": 3
+    },
+    {
+     "type": "cowboy",
+     "row": 1
+    },
+    {
+     "type": "gargantuar",
+     "row": 4
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 2
+    },
+    {
+     "type": "cowboy_armor1",
+     "row": 0
+    },
+    {
+     "type": "cowboy",
+     "row": 1
+    },
+    {
+     "type": "cowboy",
+     "row": 2
+    },
+    {
+     "type": "cowboy_armor1",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "cowboy_armor1",
+     "row": 0
+    },
+    {
+     "type": "cowboy",
+     "row": 1
+    },
+    {
+     "type": "cowboy",
+     "row": 2
+    },
+    {
+     "type": "cowboy",
+     "row": 3
+    },
+    {
+     "type": "cowboy",
+     "row": 4
+    },
+    {
+     "type": "cowboy_armor1",
+     "row": 1
+    },
+    {
+     "type": "cowboy",
+     "row": 2
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    },
+    {
+     "type": "cowboy",
+     "row": 4
+    },
+    {
+     "type": "cowboy_armor1",
+     "row": 2
+    },
+    {
+     "type": "cowboy",
+     "row": 0
+    },
+    {
+     "type": "cowboy_armor1",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "cowboy",
+     "row": 2
+    },
+    {
+     "type": "cowboy",
+     "row": 4
+    },
+    {
+     "type": "cowboy",
+     "row": 1
+    },
+    {
+     "type": "cowboy",
+     "row": 3
+    },
+    {
+     "type": "buckethead",
+     "row": 4
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "cowboy_armor1",
+     "row": 4
+    },
+    {
+     "type": "cowboy",
+     "row": 2
+    },
+    {
+     "type": "gargantuar",
+     "row": 4
+    },
+    {
+     "type": "cowboy_armor1",
+     "row": 1
+    },
+    {
+     "type": "gargantuar",
+     "row": 4
+    },
+    {
+     "type": "cowboy",
+     "row": 3
+    },
+    {
+     "type": "cowboy",
+     "row": 2
+    }
+   ]
+  }
+ ],
+ "flags": 1,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_0653",
+  "stage": "WestUBStage",
+  "name_key": "[LTE_LEVEL_NAME_CERYDRA]",
+  "level_number": 3,
+  "wave_count": 10,
+  "original_waves": 10,
+  "night": false
+ }
+}

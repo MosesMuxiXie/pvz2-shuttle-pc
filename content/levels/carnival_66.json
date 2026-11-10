@@ -1,0 +1,41 @@
+{
+ "id": "carnival_66",
+ "world": "carnival",
+ "index": 66,
+ "title": "后院马戏团 - 第 66 关",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "bloomerang"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "eighties",
+     "row": 2
+    }
+   ]
+  }
+ ],
+ "flags": 1,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_0372",
+  "stage": "CarnivalStage",
+  "name_key": "[LTE_LEVEL_NAME_CIRCUS]",
+  "level_number": 9,
+  "wave_count": 1,
+  "original_waves": 1,
+  "night": false,
+  "special": [
+   "IsVasebreaker"
+  ],
+  "vasebreaker": true
+ }
+}

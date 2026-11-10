@@ -1,0 +1,221 @@
+{
+ "id": "sky_31",
+ "world": "sky",
+ "index": 31,
+ "title": "Sky City Expand - Day 31",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "bloomerang"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "buckethead",
+     "row": 0
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "beach",
+     "row": 4
+    },
+    {
+     "type": "beach",
+     "row": 3
+    },
+    {
+     "type": "beach",
+     "row": 2
+    },
+    {
+     "type": "beach",
+     "row": 1
+    },
+    {
+     "type": "beach",
+     "row": 4
+    },
+    {
+     "type": "beach",
+     "row": 4
+    },
+    {
+     "type": "beach",
+     "row": 1
+    },
+    {
+     "type": "beach",
+     "row": 3
+    },
+    {
+     "type": "beach",
+     "row": 2
+    },
+    {
+     "type": "beach",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "beach",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "gargantuar",
+     "row": 0
+    },
+    {
+     "type": "gargantuar",
+     "row": 1
+    },
+    {
+     "type": "gargantuar",
+     "row": 2
+    },
+    {
+     "type": "gargantuar",
+     "row": 3
+    },
+    {
+     "type": "gargantuar",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "beach",
+     "row": 0
+    },
+    {
+     "type": "beach",
+     "row": 1
+    },
+    {
+     "type": "beach",
+     "row": 2
+    },
+    {
+     "type": "beach",
+     "row": 3
+    },
+    {
+     "type": "beach",
+     "row": 4
+    },
+    {
+     "type": "beach",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "flag",
+     "row": 0
+    },
+    {
+     "type": "flag",
+     "row": 1
+    },
+    {
+     "type": "flag",
+     "row": 2
+    },
+    {
+     "type": "flag",
+     "row": 3
+    },
+    {
+     "type": "flag",
+     "row": 4
+    },
+    {
+     "type": "flag",
+     "row": 0
+    },
+    {
+     "type": "flag",
+     "row": 1
+    },
+    {
+     "type": "flag",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "beach",
+     "row": 4
+    },
+    {
+     "type": "beach",
+     "row": 1
+    },
+    {
+     "type": "beach",
+     "row": 3
+    },
+    {
+     "type": "beach",
+     "row": 2
+    },
+    {
+     "type": "beach",
+     "row": 1
+    }
+   ]
+  }
+ ],
+ "flags": 1,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_1214",
+  "stage": "SkyCityDMGStage",
+  "name_key": "[SKYCITY_EXPAND_LEVEL_NAME]",
+  "level_number": 10,
+  "wave_count": 7,
+  "original_waves": 7,
+  "night": false
+ }
+}

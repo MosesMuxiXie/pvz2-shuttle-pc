@@ -1,0 +1,625 @@
+{
+ "id": "lostcity_48",
+ "world": "lostcity",
+ "index": 48,
+ "title": "第 48 关",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "bloomerang"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "lostcity",
+     "row": 0
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 2
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "football",
+     "row": 0
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    },
+    {
+     "type": "football",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "lostcity",
+     "row": 0
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "pole_vaulter",
+     "row": 4
+    },
+    {
+     "type": "pole_vaulter",
+     "row": 0
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "pole_vaulter",
+     "row": 2
+    },
+    {
+     "type": "pole_vaulter",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 4
+    },
+    {
+     "type": "lostcity",
+     "row": 0
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "buckethead",
+     "row": 0
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 2
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    },
+    {
+     "type": "buckethead",
+     "row": 4
+    },
+    {
+     "type": "buckethead",
+     "row": 0
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "football",
+     "row": 0
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    },
+    {
+     "type": "football",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "lostcity",
+     "row": 0
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "gargantuar",
+     "row": 0
+    },
+    {
+     "type": "gargantuar",
+     "row": 1
+    },
+    {
+     "type": "pirate",
+     "row": 2
+    },
+    {
+     "type": "pirate",
+     "row": 3
+    },
+    {
+     "type": "buckethead",
+     "row": 4
+    },
+    {
+     "type": "buckethead",
+     "row": 0
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 4
+    },
+    {
+     "type": "lostcity",
+     "row": 0
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "lostcity",
+     "row": 0
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "pirate",
+     "row": 0
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 4
+    },
+    {
+     "type": "lostcity",
+     "row": 0
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "football",
+     "row": 0
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    },
+    {
+     "type": "football",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "lostcity",
+     "row": 0
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 4
+    },
+    {
+     "type": "lostcity",
+     "row": 0
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    },
+    {
+     "type": "pirate",
+     "row": 3
+    },
+    {
+     "type": "pirate",
+     "row": 4
+    },
+    {
+     "type": "pirate",
+     "row": 0
+    },
+    {
+     "type": "pirate",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "football",
+     "row": 0
+    },
+    {
+     "type": "football",
+     "row": 1
+    },
+    {
+     "type": "football",
+     "row": 2
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 4
+    },
+    {
+     "type": "lostcity",
+     "row": 0
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "lostcity",
+     "row": 0
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 4
+    },
+    {
+     "type": "gargantuar",
+     "row": 0
+    },
+    {
+     "type": "gargantuar",
+     "row": 1
+    },
+    {
+     "type": "gargantuar",
+     "row": 2
+    },
+    {
+     "type": "gargantuar",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 4
+    },
+    {
+     "type": "lostcity",
+     "row": 0
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "gargantuar",
+     "row": 2
+    },
+    {
+     "type": "gargantuar",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "lostcity",
+     "row": 0
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 4
+    },
+    {
+     "type": "lostcity",
+     "row": 0
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 2
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    },
+    {
+     "type": "buckethead",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "lostcity",
+     "row": 0
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 4
+    },
+    {
+     "type": "lostcity",
+     "row": 0
+    },
+    {
+     "type": "football",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 4
+    },
+    {
+     "type": "lostcity",
+     "row": 0
+    },
+    {
+     "type": "football",
+     "row": 1
+    },
+    {
+     "type": "football",
+     "row": 2
+    }
+   ]
+  }
+ ],
+ "flags": 3,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_0969",
+  "stage": "LostCityNightsStage",
+  "name_key": "三周年庆典 - 第二十九关 - 芝芝莓莓的丛林庆典",
+  "level_number": 29,
+  "wave_count": 15,
+  "original_waves": 15,
+  "night": true
+ }
+}

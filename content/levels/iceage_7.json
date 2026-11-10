@@ -1,0 +1,346 @@
+{
+ "id": "iceage_7",
+ "world": "iceage",
+ "index": 7,
+ "title": "极寒冰窟 - 第 7 天",
+ "sun": 390,
+ "deck": [
+  "sunflower",
+  "tallnut",
+  "spikeweed"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "iceage",
+     "row": 4
+    },
+    {
+     "type": "iceage",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "iceage",
+     "row": 4
+    },
+    {
+     "type": "iceage",
+     "row": 3
+    },
+    {
+     "type": "iceage",
+     "row": 3
+    },
+    {
+     "type": "iceage",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "iceage",
+     "row": 4
+    },
+    {
+     "type": "iceage",
+     "row": 3
+    },
+    {
+     "type": "iceage",
+     "row": 3
+    },
+    {
+     "type": "iceage",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "iceage",
+     "row": 0
+    },
+    {
+     "type": "iceage",
+     "row": 4
+    },
+    {
+     "type": "iceage",
+     "row": 2
+    },
+    {
+     "type": "iceage",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "iceage",
+     "row": 0
+    },
+    {
+     "type": "iceage",
+     "row": 1
+    },
+    {
+     "type": "iceage",
+     "row": 2
+    },
+    {
+     "type": "iceage",
+     "row": 4
+    },
+    {
+     "type": "iceage",
+     "row": 3
+    },
+    {
+     "type": "iceage",
+     "row": 2
+    },
+    {
+     "type": "iceage",
+     "row": 1
+    },
+    {
+     "type": "iceage",
+     "row": 1
+    },
+    {
+     "type": "iceage",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "iceage",
+     "row": 0
+    },
+    {
+     "type": "iceage",
+     "row": 4
+    },
+    {
+     "type": "iceage",
+     "row": 3
+    },
+    {
+     "type": "iceage",
+     "row": 2
+    },
+    {
+     "type": "iceage",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "iceage",
+     "row": 4
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    },
+    {
+     "type": "iceage",
+     "row": 3
+    },
+    {
+     "type": "iceage",
+     "row": 3
+    },
+    {
+     "type": "iceage",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "iceage",
+     "row": 0
+    },
+    {
+     "type": "iceage",
+     "row": 1
+    },
+    {
+     "type": "iceage",
+     "row": 2
+    },
+    {
+     "type": "iceage",
+     "row": 3
+    },
+    {
+     "type": "iceage",
+     "row": 4
+    },
+    {
+     "type": "iceage",
+     "row": 2
+    },
+    {
+     "type": "iceage",
+     "row": 1
+    },
+    {
+     "type": "iceage",
+     "row": 1
+    },
+    {
+     "type": "iceage",
+     "row": 1
+    },
+    {
+     "type": "iceage",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "iceage",
+     "row": 0
+    },
+    {
+     "type": "buckethead",
+     "row": 4
+    },
+    {
+     "type": "iceage",
+     "row": 4
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    },
+    {
+     "type": "iceage",
+     "row": 3
+    },
+    {
+     "type": "buckethead",
+     "row": 2
+    },
+    {
+     "type": "iceage",
+     "row": 2
+    },
+    {
+     "type": "iceage",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "iceage",
+     "row": 0
+    },
+    {
+     "type": "iceage",
+     "row": 4
+    },
+    {
+     "type": "iceage",
+     "row": 4
+    },
+    {
+     "type": "iceage",
+     "row": 4
+    },
+    {
+     "type": "iceage",
+     "row": 4
+    },
+    {
+     "type": "iceage",
+     "row": 3
+    },
+    {
+     "type": "iceage",
+     "row": 3
+    },
+    {
+     "type": "iceage",
+     "row": 3
+    },
+    {
+     "type": "iceage",
+     "row": 3
+    },
+    {
+     "type": "iceage",
+     "row": 2
+    },
+    {
+     "type": "iceage",
+     "row": 2
+    },
+    {
+     "type": "iceage",
+     "row": 2
+    },
+    {
+     "type": "iceage",
+     "row": 2
+    },
+    {
+     "type": "iceage",
+     "row": 1
+    }
+   ]
+  }
+ ],
+ "flags": 2,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_1364",
+  "stage": "IceageStage",
+  "name_key": "[ICEAGE_LEVEL_NAME]",
+  "level_number": 6,
+  "wave_count": 10,
+  "original_waves": 10,
+  "night": false
+ }
+}

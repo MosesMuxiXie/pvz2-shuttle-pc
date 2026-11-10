@@ -1,0 +1,239 @@
+{
+ "id": "modern_35",
+ "world": "modern",
+ "index": 35,
+ "title": "马舞东风 - 第 35 关",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "bloomerang"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "conehead",
+     "row": 2
+    },
+    {
+     "type": "conehead",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "conehead",
+     "row": 0
+    },
+    {
+     "type": "conehead",
+     "row": 4
+    },
+    {
+     "type": "conehead",
+     "row": 2
+    },
+    {
+     "type": "conehead",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "conehead",
+     "row": 1
+    },
+    {
+     "type": "conehead",
+     "row": 3
+    },
+    {
+     "type": "conehead",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "buckethead",
+     "row": 4
+    },
+    {
+     "type": "buckethead",
+     "row": 2
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "buckethead",
+     "row": 3
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    },
+    {
+     "type": "conehead",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "conehead",
+     "row": 0
+    },
+    {
+     "type": "buckethead",
+     "row": 4
+    },
+    {
+     "type": "conehead",
+     "row": 4
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    },
+    {
+     "type": "conehead",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "buckethead",
+     "row": 2
+    },
+    {
+     "type": "conehead",
+     "row": 1
+    }
+   ]
+  }
+ ],
+ "flags": 2,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_0802",
+  "stage": "ModernStage",
+  "name_key": "[LNY_2026_LEVEL_NAME]",
+  "level_number": 1,
+  "wave_count": 10,
+  "original_waves": 10,
+  "night": false
+ }
+}

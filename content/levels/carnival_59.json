@@ -1,0 +1,295 @@
+{
+ "id": "carnival_59",
+ "world": "carnival",
+ "index": 59,
+ "title": "被诅咒的丰收 - 第 59 步",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "bloomerang"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "eighties",
+     "row": 0
+    },
+    {
+     "type": "eighties",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "eighties",
+     "row": 0
+    },
+    {
+     "type": "eighties",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "eighties",
+     "row": 0
+    },
+    {
+     "type": "eighties",
+     "row": 1
+    },
+    {
+     "type": "eighties",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "eighties",
+     "row": 0
+    },
+    {
+     "type": "eighties",
+     "row": 1
+    },
+    {
+     "type": "eighties",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "eighties",
+     "row": 0
+    },
+    {
+     "type": "eighties",
+     "row": 1
+    },
+    {
+     "type": "eighties",
+     "row": 2
+    },
+    {
+     "type": "eighties",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "eighties",
+     "row": 0
+    },
+    {
+     "type": "eighties",
+     "row": 1
+    },
+    {
+     "type": "eighties",
+     "row": 2
+    },
+    {
+     "type": "eighties",
+     "row": 3
+    },
+    {
+     "type": "eighties",
+     "row": 4
+    },
+    {
+     "type": "eighties",
+     "row": 3
+    },
+    {
+     "type": "eighties",
+     "row": 1
+    },
+    {
+     "type": "eighties",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "eighties",
+     "row": 0
+    },
+    {
+     "type": "eighties",
+     "row": 1
+    },
+    {
+     "type": "eighties",
+     "row": 1
+    },
+    {
+     "type": "eighties",
+     "row": 2
+    },
+    {
+     "type": "eighties",
+     "row": 3
+    },
+    {
+     "type": "eighties",
+     "row": 4
+    },
+    {
+     "type": "eighties",
+     "row": 1
+    },
+    {
+     "type": "eighties",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "eighties",
+     "row": 0
+    },
+    {
+     "type": "eighties",
+     "row": 1
+    },
+    {
+     "type": "eighties",
+     "row": 2
+    },
+    {
+     "type": "eighties",
+     "row": 3
+    },
+    {
+     "type": "eighties",
+     "row": 4
+    },
+    {
+     "type": "eighties",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "eighties",
+     "row": 0
+    },
+    {
+     "type": "eighties",
+     "row": 1
+    },
+    {
+     "type": "eighties",
+     "row": 2
+    },
+    {
+     "type": "eighties",
+     "row": 3
+    },
+    {
+     "type": "eighties",
+     "row": 4
+    },
+    {
+     "type": "eighties",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "eighties",
+     "row": 0
+    },
+    {
+     "type": "eighties",
+     "row": 1
+    },
+    {
+     "type": "eighties",
+     "row": 1
+    },
+    {
+     "type": "eighties",
+     "row": 2
+    },
+    {
+     "type": "eighties",
+     "row": 2
+    },
+    {
+     "type": "eighties",
+     "row": 3
+    },
+    {
+     "type": "eighties",
+     "row": 4
+    },
+    {
+     "type": "eighties",
+     "row": 4
+    },
+    {
+     "type": "eighties",
+     "row": 3
+    },
+    {
+     "type": "eighties",
+     "row": 4
+    }
+   ]
+  }
+ ],
+ "flags": 2,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_1717",
+  "stage": "HarvestStage",
+  "name_key": "[EPIC_QUEST_SPOOKYSQUASH_LEVEL_NAME]",
+  "level_number": 5,
+  "wave_count": 10,
+  "original_waves": 10,
+  "night": false
+ }
+}

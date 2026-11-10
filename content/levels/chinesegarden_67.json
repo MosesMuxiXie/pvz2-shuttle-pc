@@ -1,0 +1,319 @@
+{
+ "id": "chinesegarden_67",
+ "world": "chinesegarden",
+ "index": 67,
+ "title": "回园林记 - 其二 - 第 67 关",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "gardenia",
+  "elderbarrier",
+  "torpedofruit"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_cuju",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_cuju",
+     "row": 2
+    },
+    {
+     "type": "garden_cuju",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_cuju",
+     "row": 4
+    },
+    {
+     "type": "garden_cuju",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_cuju",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_cuju",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_cuju",
+     "row": 0
+    },
+    {
+     "type": "garden_cuju",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_cuju",
+     "row": 4
+    },
+    {
+     "type": "garden_cuju",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_cuju",
+     "row": 4
+    },
+    {
+     "type": "garden_cuju",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_cuju",
+     "row": 4
+    },
+    {
+     "type": "garden_cuju",
+     "row": 1
+    },
+    {
+     "type": "garden_cuju",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "garden_cuju",
+     "row": 3
+    },
+    {
+     "type": "garden_cuju",
+     "row": 1
+    },
+    {
+     "type": "garden_cuju",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_cuju",
+     "row": 4
+    },
+    {
+     "type": "garden_cuju",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_cuju",
+     "row": 4
+    },
+    {
+     "type": "garden_cuju",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_cuju",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_poet",
+     "row": 4
+    },
+    {
+     "type": "garden_poet",
+     "row": 3
+    },
+    {
+     "type": "garden_poet",
+     "row": 1
+    },
+    {
+     "type": "garden_poet",
+     "row": 3
+    },
+    {
+     "type": "garden_poet",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_cuju",
+     "row": 4
+    },
+    {
+     "type": "garden_cuju",
+     "row": 1
+    },
+    {
+     "type": "garden_cuju",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_cuju",
+     "row": 3
+    },
+    {
+     "type": "garden_cuju",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_cuju",
+     "row": 1
+    },
+    {
+     "type": "garden_cuju",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_cuju",
+     "row": 0
+    },
+    {
+     "type": "garden_cuju",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_cuju",
+     "row": 3
+    },
+    {
+     "type": "garden_cuju",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "garden_cuju",
+     "row": 4
+    },
+    {
+     "type": "garden_cuju",
+     "row": 1
+    },
+    {
+     "type": "garden_cuju",
+     "row": 2
+    }
+   ]
+  }
+ ],
+ "flags": 2,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_1105",
+  "stage": "ChineseGardenDMGStage",
+  "name_key": "[LTE_LEVEL_NAME_TIMESPACEECHOES_S11]",
+  "level_number": 13,
+  "wave_count": 20,
+  "original_waves": 20,
+  "night": false
+ }
+}

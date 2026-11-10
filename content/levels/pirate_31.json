@@ -1,0 +1,563 @@
+{
+ "id": "pirate_31",
+ "world": "pirate",
+ "index": 31,
+ "title": "SHUTTLE - PS - Day 31",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "bloomerang"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "buckethead",
+     "row": 0
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 1
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "pirate_armor1",
+     "row": 0
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "pirate",
+     "row": 1
+    },
+    {
+     "type": "pirate",
+     "row": 1
+    },
+    {
+     "type": "pirate",
+     "row": 2
+    },
+    {
+     "type": "pirate",
+     "row": 3
+    },
+    {
+     "type": "pirate",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "buckethead",
+     "row": 0
+    },
+    {
+     "type": "pirate",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 2
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 1
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "pirate_armor1",
+     "row": 0
+    },
+    {
+     "type": "pirate",
+     "row": 1
+    },
+    {
+     "type": "pirate",
+     "row": 2
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    },
+    {
+     "type": "pirate",
+     "row": 4
+    },
+    {
+     "type": "pirate",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "pirate_armor1",
+     "row": 0
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "pirate",
+     "row": 2
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    },
+    {
+     "type": "pirate",
+     "row": 3
+    },
+    {
+     "type": "pirate",
+     "row": 0
+    },
+    {
+     "type": "pirate",
+     "row": 1
+    },
+    {
+     "type": "pirate",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "pirate_armor1",
+     "row": 1
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 1
+    },
+    {
+     "type": "flag",
+     "row": 2
+    },
+    {
+     "type": "buckethead",
+     "row": 2
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    },
+    {
+     "type": "buckethead",
+     "row": 4
+    },
+    {
+     "type": "pirate",
+     "row": 1
+    },
+    {
+     "type": "pirate",
+     "row": 2
+    },
+    {
+     "type": "pirate",
+     "row": 3
+    },
+    {
+     "type": "pirate",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "pirate",
+     "row": 0
+    },
+    {
+     "type": "pirate",
+     "row": 1
+    },
+    {
+     "type": "pirate",
+     "row": 2
+    },
+    {
+     "type": "pirate",
+     "row": 3
+    },
+    {
+     "type": "pirate",
+     "row": 4
+    },
+    {
+     "type": "pirate",
+     "row": 0
+    },
+    {
+     "type": "pirate",
+     "row": 1
+    },
+    {
+     "type": "pirate",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "pirate",
+     "row": 0
+    },
+    {
+     "type": "pirate",
+     "row": 4
+    },
+    {
+     "type": "pirate",
+     "row": 3
+    },
+    {
+     "type": "pirate",
+     "row": 2
+    },
+    {
+     "type": "pirate",
+     "row": 1
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 0
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 1
+    },
+    {
+     "type": "gargantuar",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "pirate",
+     "row": 2
+    },
+    {
+     "type": "pirate",
+     "row": 3
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 2
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 1
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 4
+    },
+    {
+     "type": "buckethead",
+     "row": 0
+    },
+    {
+     "type": "pirate",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "buckethead",
+     "row": 4
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 2
+    },
+    {
+     "type": "pirate",
+     "row": 3
+    },
+    {
+     "type": "buckethead",
+     "row": 4
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 0
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "pirate",
+     "row": 2
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    },
+    {
+     "type": "pirate",
+     "row": 1
+    },
+    {
+     "type": "pirate",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "pirate_armor1",
+     "row": 3
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 2
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 4
+    },
+    {
+     "type": "pirate",
+     "row": 3
+    },
+    {
+     "type": "pirate",
+     "row": 4
+    },
+    {
+     "type": "pirate",
+     "row": 0
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 2
+    },
+    {
+     "type": "pirate",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "pirate",
+     "row": 2
+    },
+    {
+     "type": "pirate",
+     "row": 3
+    },
+    {
+     "type": "pirate",
+     "row": 4
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 3
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 4
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 2
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 3
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 1
+    },
+    {
+     "type": "pirate",
+     "row": 3
+    },
+    {
+     "type": "pirate",
+     "row": 4
+    },
+    {
+     "type": "pirate",
+     "row": 0
+    },
+    {
+     "type": "pirate",
+     "row": 1
+    },
+    {
+     "type": "pirate",
+     "row": 2
+    },
+    {
+     "type": "pirate",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "flag",
+     "row": 0
+    },
+    {
+     "type": "gargantuar",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 2
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    },
+    {
+     "type": "buckethead",
+     "row": 4
+    },
+    {
+     "type": "buckethead",
+     "row": 0
+    },
+    {
+     "type": "pirate",
+     "row": 1
+    },
+    {
+     "type": "pirate",
+     "row": 2
+    },
+    {
+     "type": "pirate",
+     "row": 3
+    },
+    {
+     "type": "pirate",
+     "row": 4
+    },
+    {
+     "type": "buckethead",
+     "row": 0
+    },
+    {
+     "type": "pirate",
+     "row": 4
+    },
+    {
+     "type": "pirate",
+     "row": 2
+    },
+    {
+     "type": "pirate",
+     "row": 3
+    }
+   ]
+  }
+ ],
+ "flags": 2,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_1563",
+  "stage": "PirateUBStage",
+  "name_key": "[PIRATF_LEVEL_NAME]",
+  "level_number": 8,
+  "wave_count": 14,
+  "original_waves": 14,
+  "night": false
+ }
+}

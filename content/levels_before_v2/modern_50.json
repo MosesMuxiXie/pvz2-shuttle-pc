@@ -1,0 +1,235 @@
+{
+ "id": "modern_50",
+ "world": "modern",
+ "index": 50,
+ "title": "四周年庆典 - 第 50 关",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "bloomerang"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "conehead",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "conehead",
+     "row": 0
+    },
+    {
+     "type": "conehead",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "conehead",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "pirate",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "pirate",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "conehead",
+     "row": 2
+    },
+    {
+     "type": "conehead",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "conehead",
+     "row": 0
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "lostcity",
+     "row": 0
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "conehead",
+     "row": 2
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    },
+    {
+     "type": "conehead",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "lostcity",
+     "row": 0
+    },
+    {
+     "type": "conehead",
+     "row": 1
+    },
+    {
+     "type": "conehead",
+     "row": 2
+    },
+    {
+     "type": "pirate",
+     "row": 3
+    },
+    {
+     "type": "pirate",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "conehead",
+     "row": 0
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "gargantuar",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "lostcity",
+     "row": 0
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    },
+    {
+     "type": "buckethead",
+     "row": 2
+    },
+    {
+     "type": "pirate",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 4
+    }
+   ]
+  }
+ ],
+ "flags": 2,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_0709",
+  "stage": "ModernStage",
+  "name_key": "[LTE_LEVEL_NAME_4TH_ANNIVERSARY]",
+  "level_number": 12,
+  "wave_count": 10,
+  "original_waves": 10,
+  "night": false
+ }
+}

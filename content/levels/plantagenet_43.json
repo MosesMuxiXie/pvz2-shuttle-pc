@@ -1,0 +1,209 @@
+{
+ "id": "plantagenet_43",
+ "world": "plantagenet",
+ "index": 43,
+ "title": "王朝再临 - 第 43 关",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "iris",
+  "olivewood"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 4
+    },
+    {
+     "type": "royal_zombie",
+     "row": 0
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 1
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 3
+    },
+    {
+     "type": "royal_zombie",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_noblewoman",
+     "row": 3
+    },
+    {
+     "type": "royal_zombie",
+     "row": 4
+    },
+    {
+     "type": "royal_zombie",
+     "row": 0
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 1
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_noblewoman",
+     "row": 0
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 3
+    },
+    {
+     "type": "royal_zombie",
+     "row": 4
+    },
+    {
+     "type": "royal_zombie",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_noblewoman",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 3
+    },
+    {
+     "type": "royal_zombie",
+     "row": 4
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 0
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "royal_noblewoman",
+     "row": 4
+    },
+    {
+     "type": "royal_zombie",
+     "row": 0
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 3
+    },
+    {
+     "type": "royal_zombie",
+     "row": 4
+    }
+   ]
+  }
+ ],
+ "flags": 1,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb-synth",
+  "package": "pkg_1017",
+  "stage": "PlantagenetBossStage",
+  "name_key": "[LTE_LEVEL_NAME_TIMESPACEECHOES_S4]",
+  "level_number": 12,
+  "wave_count": 8,
+  "original_waves": 0,
+  "night": false,
+  "boss": true,
+  "boss_zombie": "zomboss"
+ }
+}

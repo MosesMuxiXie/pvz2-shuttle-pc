@@ -1,0 +1,167 @@
+{
+ "id": "renai_55",
+ "world": "renai",
+ "index": 55,
+ "title": "金脑子剧院 - 第 55 关 - 纷争",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "bloomerang"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 0
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 0
+    },
+    {
+     "type": "royal_winetasting",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_noblewoman",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "cowboy",
+     "row": 0
+    },
+    {
+     "type": "cowboy",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "royal_winetasting",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 0
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 0
+    },
+    {
+     "type": "royal_winetasting",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "cowboy",
+     "row": 0
+    },
+    {
+     "type": "cowboy",
+     "row": 1
+    },
+    {
+     "type": "gargantuar",
+     "row": 2
+    },
+    {
+     "type": "gargantuar",
+     "row": 3
+    },
+    {
+     "type": "royal_winetasting",
+     "row": 4
+    },
+    {
+     "type": "flag",
+     "row": 0
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    }
+   ]
+  }
+ ],
+ "flags": 1,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_1087",
+  "stage": "RenaiUBStage",
+  "name_key": "[LTE_LEVEL_NAME_TIMESPACEECHOES_S9_8]",
+  "level_number": 8,
+  "wave_count": 8,
+  "original_waves": 8,
+  "night": false
+ }
+}

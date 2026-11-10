@@ -1,0 +1,299 @@
+{
+ "id": "iceage_71",
+ "world": "iceage",
+ "index": 71,
+ "title": "四周年庆典 - 第 71 关",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "iceburg"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "iceage",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "iceage",
+     "row": 0
+    },
+    {
+     "type": "buckethead",
+     "row": 2
+    },
+    {
+     "type": "dark",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "dark",
+     "row": 0
+    },
+    {
+     "type": "dark",
+     "row": 2
+    },
+    {
+     "type": "iceage",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "iceage",
+     "row": 1
+    },
+    {
+     "type": "iceage",
+     "row": 2
+    },
+    {
+     "type": "iceage",
+     "row": 3
+    },
+    {
+     "type": "iceage",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "iceage",
+     "row": 4
+    },
+    {
+     "type": "buckethead",
+     "row": 2
+    },
+    {
+     "type": "iceage",
+     "row": 1
+    },
+    {
+     "type": "dark",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "mummy",
+     "row": 0
+    },
+    {
+     "type": "mummy",
+     "row": 4
+    },
+    {
+     "type": "mummy",
+     "row": 2
+    },
+    {
+     "type": "mummy",
+     "row": 1
+    },
+    {
+     "type": "mummy",
+     "row": 1
+    },
+    {
+     "type": "mummy",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "iceage",
+     "row": 1
+    },
+    {
+     "type": "iceage",
+     "row": 2
+    },
+    {
+     "type": "iceage",
+     "row": 3
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "iceage",
+     "row": 1
+    },
+    {
+     "type": "iceage",
+     "row": 1
+    },
+    {
+     "type": "iceage",
+     "row": 1
+    },
+    {
+     "type": "iceage",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "iceage",
+     "row": 0
+    },
+    {
+     "type": "iceage",
+     "row": 4
+    },
+    {
+     "type": "iceage",
+     "row": 4
+    },
+    {
+     "type": "iceage",
+     "row": 2
+    },
+    {
+     "type": "iceage",
+     "row": 1
+    },
+    {
+     "type": "iceage",
+     "row": 1
+    },
+    {
+     "type": "iceage",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "iceage",
+     "row": 0
+    },
+    {
+     "type": "iceage",
+     "row": 2
+    },
+    {
+     "type": "dark",
+     "row": 1
+    },
+    {
+     "type": "dark",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "iceage",
+     "row": 2
+    },
+    {
+     "type": "iceage",
+     "row": 1
+    },
+    {
+     "type": "iceage",
+     "row": 1
+    },
+    {
+     "type": "iceage",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "iceage",
+     "row": 0
+    },
+    {
+     "type": "iceage",
+     "row": 4
+    },
+    {
+     "type": "iceage",
+     "row": 3
+    },
+    {
+     "type": "iceage",
+     "row": 2
+    },
+    {
+     "type": "iceage",
+     "row": 1
+    },
+    {
+     "type": "iceage",
+     "row": 1
+    }
+   ]
+  }
+ ],
+ "flags": 4,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_0722",
+  "stage": "IceageExpandStage",
+  "name_key": "[LTE_LEVEL_NAME_4TH_ANNIVERSARY]",
+  "level_number": 24,
+  "wave_count": 12,
+  "original_waves": 12,
+  "night": false
+ }
+}

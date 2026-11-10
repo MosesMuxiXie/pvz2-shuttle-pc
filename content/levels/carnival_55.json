@@ -1,0 +1,213 @@
+{
+ "id": "carnival_55",
+ "world": "carnival",
+ "index": 55,
+ "title": "藏红花史诗任务 - 第 55 步",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "bloomerang"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "eighties",
+     "row": 0
+    },
+    {
+     "type": "eighties",
+     "row": 1
+    },
+    {
+     "type": "eighties",
+     "row": 2
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "eighties",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    },
+    {
+     "type": "eighties",
+     "row": 2
+    },
+    {
+     "type": "eighties",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "buckethead",
+     "row": 4
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "football",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "buckethead",
+     "row": 2
+    },
+    {
+     "type": "football",
+     "row": 1
+    },
+    {
+     "type": "eighties",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "eighties",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "eighties",
+     "row": 0
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 4
+    },
+    {
+     "type": "football",
+     "row": 3
+    },
+    {
+     "type": "eighties",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "eighties",
+     "row": 2
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "eighties",
+     "row": 2
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    },
+    {
+     "type": "football",
+     "row": 3
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    },
+    {
+     "type": "eighties",
+     "row": 4
+    },
+    {
+     "type": "lostcity",
+     "row": 4
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    }
+   ]
+  }
+ ],
+ "flags": 3,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_1668",
+  "stage": "CarnivalStage",
+  "name_key": "[EPIC_QUEST_HOCUS_LEVEL_NAME]",
+  "level_number": 4,
+  "wave_count": 9,
+  "original_waves": 9,
+  "night": false
+ }
+}

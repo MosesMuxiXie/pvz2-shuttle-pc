@@ -1,0 +1,211 @@
+{
+ "id": "beach_69",
+ "world": "beach",
+ "index": 69,
+ "title": "第 69 关",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "bloomerang"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "beach",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "beach",
+     "row": 2
+    },
+    {
+     "type": "beach",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "beach",
+     "row": 4
+    },
+    {
+     "type": "beach",
+     "row": 0
+    },
+    {
+     "type": "beach",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "beach",
+     "row": 1
+    },
+    {
+     "type": "beach",
+     "row": 2
+    },
+    {
+     "type": "beach",
+     "row": 3
+    },
+    {
+     "type": "beach",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "beach",
+     "row": 3
+    },
+    {
+     "type": "beach",
+     "row": 4
+    },
+    {
+     "type": "beach",
+     "row": 0
+    },
+    {
+     "type": "beach",
+     "row": 1
+    },
+    {
+     "type": "beach",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "beach",
+     "row": 0
+    },
+    {
+     "type": "beach",
+     "row": 1
+    },
+    {
+     "type": "beach",
+     "row": 2
+    },
+    {
+     "type": "beach",
+     "row": 3
+    },
+    {
+     "type": "beach",
+     "row": 4
+    },
+    {
+     "type": "beach",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "beach",
+     "row": 2
+    },
+    {
+     "type": "beach",
+     "row": 3
+    },
+    {
+     "type": "beach",
+     "row": 4
+    },
+    {
+     "type": "beach",
+     "row": 0
+    },
+    {
+     "type": "beach",
+     "row": 1
+    },
+    {
+     "type": "beach",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "beach",
+     "row": 4
+    },
+    {
+     "type": "beach",
+     "row": 0
+    },
+    {
+     "type": "beach",
+     "row": 1
+    },
+    {
+     "type": "beach",
+     "row": 2
+    },
+    {
+     "type": "beach",
+     "row": 3
+    },
+    {
+     "type": "beach",
+     "row": 4
+    }
+   ]
+  }
+ ],
+ "flags": 1,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb-synth",
+  "package": "pkg_0290",
+  "stage": "BeachStage",
+  "name_key": "[VASEBREAKER_BEACH_LEVEL_NAME_1]",
+  "level_number": 1,
+  "wave_count": 8,
+  "original_waves": 0,
+  "night": false,
+  "special": [
+   "IsVasebreaker"
+  ],
+  "vasebreaker": true
+ }
+}

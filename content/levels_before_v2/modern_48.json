@@ -1,0 +1,205 @@
+{
+ "id": "modern_48",
+ "world": "modern",
+ "index": 48,
+ "title": "史诗任务：小镇奇兵大骚动！（48-2）",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "bloomerang"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "conehead",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "conehead",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "eighties",
+     "row": 3
+    },
+    {
+     "type": "eighties",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "eighties",
+     "row": 3
+    },
+    {
+     "type": "eighties",
+     "row": 1
+    },
+    {
+     "type": "eighties",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "football",
+     "row": 0
+    },
+    {
+     "type": "conehead",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "newspaper",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "football",
+     "row": 0
+    },
+    {
+     "type": "newspaper",
+     "row": 1
+    },
+    {
+     "type": "football",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "newspaper",
+     "row": 0
+    },
+    {
+     "type": "football",
+     "row": 1
+    },
+    {
+     "type": "newspaper",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "newspaper",
+     "row": 4
+    },
+    {
+     "type": "football",
+     "row": 4
+    },
+    {
+     "type": "newspaper",
+     "row": 2
+    },
+    {
+     "type": "football",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "football",
+     "row": 0
+    },
+    {
+     "type": "newspaper",
+     "row": 1
+    },
+    {
+     "type": "football",
+     "row": 3
+    },
+    {
+     "type": "newspaper",
+     "row": 3
+    },
+    {
+     "type": "football",
+     "row": 1
+    }
+   ]
+  }
+ ],
+ "flags": 3,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_1521",
+  "stage": "ModernStage",
+  "name_key": "[EPIC_QUEST_MODERN_NEW_TITLE]",
+  "level_number": 9,
+  "wave_count": 9,
+  "original_waves": 9,
+  "night": false
+ }
+}

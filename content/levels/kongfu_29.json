@@ -1,0 +1,145 @@
+{
+ "id": "kongfu_29",
+ "world": "kongfu",
+ "index": 29,
+ "title": "SHUTTLE - KFW II - Day 29",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "bonkchoy"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 4
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 4
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    },
+    {
+     "type": "kongfu",
+     "row": 3
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    }
+   ]
+  }
+ ],
+ "flags": 1,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_1414",
+  "stage": "KongfuStage",
+  "name_key": "[KUNGFU_LEVEL_NAME]",
+  "level_number": 4,
+  "wave_count": 7,
+  "original_waves": 7,
+  "night": false
+ }
+}

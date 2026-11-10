@@ -1,0 +1,244 @@
+{
+  "id": "egypt_10",
+  "world": "egypt",
+  "index": 10,
+  "title": "第 10 天",
+  "sun": 350,
+  "deck": [
+    "sunflower",
+    "peashooter",
+    "wallnut",
+    "potatomine",
+    "bonkchoy",
+    "snowpea",
+    "cabbagepult"
+  ],
+  "waves": [
+    {
+      "delay": 18,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "mummy",
+          "row": 0
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "mummy",
+          "row": 3
+        },
+        {
+          "type": "mummy",
+          "row": 0
+        },
+        {
+          "type": "mummy",
+          "row": 2
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "mummy_armor1",
+          "row": 3
+        },
+        {
+          "type": "mummy",
+          "row": 0
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "mummy",
+          "row": 0
+        },
+        {
+          "type": "mummy",
+          "row": 1
+        },
+        {
+          "type": "mummy",
+          "row": 0
+        },
+        {
+          "type": "mummy",
+          "row": 2
+        }
+      ]
+    },
+    {
+      "delay": 24,
+      "flag": true,
+      "zombies": [
+        {
+          "type": "mummy",
+          "row": 3
+        },
+        {
+          "type": "mummy",
+          "row": 0
+        },
+        {
+          "type": "mummy",
+          "row": 4
+        },
+        {
+          "type": "mummy_armor1",
+          "row": 3
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "mummy_armor1",
+          "row": 0
+        },
+        {
+          "type": "mummy",
+          "row": 4
+        },
+        {
+          "type": "mummy",
+          "row": 2
+        },
+        {
+          "type": "mummy",
+          "row": 3
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "mummy",
+          "row": 4
+        },
+        {
+          "type": "mummy",
+          "row": 1
+        },
+        {
+          "type": "mummy",
+          "row": 1
+        },
+        {
+          "type": "mummy",
+          "row": 3
+        },
+        {
+          "type": "mummy",
+          "row": 0
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "mummy_armor1",
+          "row": 4
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "mummy",
+          "row": 4
+        },
+        {
+          "type": "mummy",
+          "row": 1
+        },
+        {
+          "type": "mummy_armor1",
+          "row": 4
+        },
+        {
+          "type": "mummy_armor2",
+          "row": 2
+        },
+        {
+          "type": "mummy",
+          "row": 3
+        },
+        {
+          "type": "mummy_armor1",
+          "row": 0
+        }
+      ]
+    },
+    {
+      "delay": 24,
+      "flag": true,
+      "zombies": [
+        {
+          "type": "mummy_armor1",
+          "row": 3
+        },
+        {
+          "type": "mummy",
+          "row": 1
+        },
+        {
+          "type": "mummy",
+          "row": 0
+        },
+        {
+          "type": "mummy",
+          "row": 4
+        },
+        {
+          "type": "mummy",
+          "row": 0
+        },
+        {
+          "type": "mummy",
+          "row": 0
+        },
+        {
+          "type": "mummy",
+          "row": 4
+        },
+        {
+          "type": "mummy_armor1",
+          "row": 1
+        },
+        {
+          "type": "mummy",
+          "row": 2
+        },
+        {
+          "type": "mummy_armor1",
+          "row": 3
+        },
+        {
+          "type": "mummy",
+          "row": 4
+        }
+      ]
+    }
+  ],
+  "flags": 2,
+  "seed_bank": 7
+}

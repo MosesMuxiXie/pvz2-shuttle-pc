@@ -1,0 +1,202 @@
+{
+  "id": "pirate_2",
+  "world": "pirate",
+  "index": 2,
+  "title": "第 2 天",
+  "sun": 250,
+  "deck": [
+    "sunflower",
+    "peashooter",
+    "wallnut",
+    "repeater",
+    "kernelpult"
+  ],
+  "waves": [
+    {
+      "delay": 18,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "pirate",
+          "row": 0
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "pirate",
+          "row": 1
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "pirate",
+          "row": 2
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "pirate",
+          "row": 4
+        },
+        {
+          "type": "pirate",
+          "row": 2
+        }
+      ]
+    },
+    {
+      "delay": 24,
+      "flag": true,
+      "zombies": [
+        {
+          "type": "pirate",
+          "row": 3
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "pirate",
+          "row": 1
+        },
+        {
+          "type": "pirate",
+          "row": 4
+        },
+        {
+          "type": "pirate",
+          "row": 2
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "pirate",
+          "row": 2
+        },
+        {
+          "type": "pirate_armor1",
+          "row": 0
+        },
+        {
+          "type": "pirate",
+          "row": 3
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "pirate_armor1",
+          "row": 4
+        },
+        {
+          "type": "pirate",
+          "row": 0
+        },
+        {
+          "type": "pirate",
+          "row": 3
+        },
+        {
+          "type": "pirate",
+          "row": 1
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "pirate",
+          "row": 2
+        },
+        {
+          "type": "pirate",
+          "row": 1
+        },
+        {
+          "type": "pirate",
+          "row": 3
+        },
+        {
+          "type": "pirate_armor1",
+          "row": 4
+        },
+        {
+          "type": "pirate",
+          "row": 0
+        }
+      ]
+    },
+    {
+      "delay": 24,
+      "flag": true,
+      "zombies": [
+        {
+          "type": "pirate",
+          "row": 4
+        },
+        {
+          "type": "pirate",
+          "row": 0
+        },
+        {
+          "type": "pirate",
+          "row": 1
+        },
+        {
+          "type": "pirate",
+          "row": 3
+        },
+        {
+          "type": "pirate_armor1",
+          "row": 0
+        },
+        {
+          "type": "pirate",
+          "row": 2
+        },
+        {
+          "type": "pirate_armor1",
+          "row": 3
+        },
+        {
+          "type": "pirate",
+          "row": 3
+        },
+        {
+          "type": "pirate",
+          "row": 1
+        },
+        {
+          "type": "pirate",
+          "row": 1
+        }
+      ]
+    }
+  ],
+  "flags": 2,
+  "seed_bank": 6
+}

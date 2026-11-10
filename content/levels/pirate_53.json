@@ -1,0 +1,211 @@
+{
+ "id": "pirate_53",
+ "world": "pirate",
+ "index": 53,
+ "title": "海盗挑战包：三乘三",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "bloomerang"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "pirate",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "pirate",
+     "row": 2
+    },
+    {
+     "type": "pirate",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "pirate",
+     "row": 4
+    },
+    {
+     "type": "pirate",
+     "row": 0
+    },
+    {
+     "type": "pirate",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "pirate",
+     "row": 1
+    },
+    {
+     "type": "pirate",
+     "row": 2
+    },
+    {
+     "type": "pirate",
+     "row": 3
+    },
+    {
+     "type": "pirate",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "pirate_armor1",
+     "row": 3
+    },
+    {
+     "type": "pirate",
+     "row": 4
+    },
+    {
+     "type": "pirate",
+     "row": 0
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 1
+    },
+    {
+     "type": "pirate",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "pirate_armor1",
+     "row": 0
+    },
+    {
+     "type": "pirate",
+     "row": 1
+    },
+    {
+     "type": "pirate",
+     "row": 2
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 3
+    },
+    {
+     "type": "pirate",
+     "row": 4
+    },
+    {
+     "type": "pirate",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "pirate_armor1",
+     "row": 2
+    },
+    {
+     "type": "pirate",
+     "row": 3
+    },
+    {
+     "type": "pirate",
+     "row": 4
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 0
+    },
+    {
+     "type": "pirate",
+     "row": 1
+    },
+    {
+     "type": "pirate",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "pirate_armor1",
+     "row": 4
+    },
+    {
+     "type": "pirate",
+     "row": 0
+    },
+    {
+     "type": "pirate",
+     "row": 1
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 2
+    },
+    {
+     "type": "pirate",
+     "row": 3
+    },
+    {
+     "type": "pirate",
+     "row": 4
+    }
+   ]
+  }
+ ],
+ "flags": 1,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb-synth",
+  "package": "pkg_0306",
+  "stage": "PirateStage",
+  "name_key": "[VASEBREAKER_PIRATE_LEVEL_NAME_1]",
+  "level_number": 1,
+  "wave_count": 8,
+  "original_waves": 0,
+  "night": false,
+  "special": [
+   "IsVasebreaker"
+  ],
+  "vasebreaker": true
+ }
+}

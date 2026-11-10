@@ -1,0 +1,487 @@
+{
+ "id": "modern_114",
+ "world": "modern",
+ "index": 114,
+ "title": "虎草史诗任务 - 第 114 步",
+ "sun": 550,
+ "deck": [
+  "potatomine",
+  "sunflower",
+  "splitpea",
+  "wallnut"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "conehead",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "conehead",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "conehead",
+     "row": 0
+    },
+    {
+     "type": "newspaper",
+     "row": 1
+    },
+    {
+     "type": "conehead",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "newspaper",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "conehead",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "conehead",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 4
+    },
+    {
+     "type": "buckethead",
+     "row": 0
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "football",
+     "row": 0
+    },
+    {
+     "type": "newspaper",
+     "row": 1
+    },
+    {
+     "type": "football",
+     "row": 1
+    },
+    {
+     "type": "newspaper",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    },
+    {
+     "type": "kongfu",
+     "row": 0
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "conehead",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "conehead",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 4
+    },
+    {
+     "type": "buckethead",
+     "row": 0
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "newspaper",
+     "row": 0
+    },
+    {
+     "type": "newspaper",
+     "row": 1
+    },
+    {
+     "type": "conehead",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "mummy_armor1",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "football",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "football",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "mummy_armor1",
+     "row": 0
+    },
+    {
+     "type": "mummy_armor1",
+     "row": 1
+    },
+    {
+     "type": "mummy_armor1",
+     "row": 1
+    },
+    {
+     "type": "mummy_armor1",
+     "row": 1
+    },
+    {
+     "type": "mummy_armor1",
+     "row": 1
+    },
+    {
+     "type": "mummy_armor1",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 0
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "football",
+     "row": 3
+    },
+    {
+     "type": "football",
+     "row": 4
+    },
+    {
+     "type": "football",
+     "row": 1
+    },
+    {
+     "type": "football",
+     "row": 1
+    },
+    {
+     "type": "newspaper",
+     "row": 2
+    },
+    {
+     "type": "newspaper",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 0
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "football",
+     "row": 3
+    },
+    {
+     "type": "football",
+     "row": 4
+    },
+    {
+     "type": "football",
+     "row": 1
+    },
+    {
+     "type": "football",
+     "row": 1
+    },
+    {
+     "type": "newspaper",
+     "row": 2
+    },
+    {
+     "type": "newspaper",
+     "row": 3
+    }
+   ]
+  }
+ ],
+ "flags": 2,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_1750",
+  "stage": "ModernStage",
+  "name_key": "[EPIC_QUEST_TIGERGRASS_LEVEL_NAME]",
+  "level_number": 6,
+  "wave_count": 14,
+  "original_waves": 14,
+  "night": false
+ }
+}

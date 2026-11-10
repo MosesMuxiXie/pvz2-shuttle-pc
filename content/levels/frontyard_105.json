@@ -1,0 +1,255 @@
+{
+ "id": "frontyard_105",
+ "world": "frontyard",
+ "index": 105,
+ "title": "无草皮之地 - 第 105 关",
+ "sun": 550,
+ "deck": [
+  "peashooter",
+  "sunflower",
+  "potatomine",
+  "wallnut"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "conehead",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "buckethead",
+     "row": 2
+    },
+    {
+     "type": "flag",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "conehead",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "conehead",
+     "row": 2
+    },
+    {
+     "type": "buckethead",
+     "row": 4
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "flag",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "conehead",
+     "row": 0
+    },
+    {
+     "type": "newspaper",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "newspaper",
+     "row": 2
+    },
+    {
+     "type": "buckethead",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "buckethead",
+     "row": 2
+    },
+    {
+     "type": "flag",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "buckethead",
+     "row": 2
+    }
+   ]
+  }
+ ],
+ "flags": 4,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_1154",
+  "stage": "FrontLawnUnsoddedStage",
+  "name_key": "[LTE_LEVEL_NAME_UNSODDED]",
+  "level_number": 2,
+  "wave_count": 10,
+  "original_waves": 10,
+  "night": false
+ }
+}

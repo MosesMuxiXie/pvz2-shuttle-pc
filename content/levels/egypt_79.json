@@ -1,0 +1,615 @@
+{
+ "id": "egypt_79",
+ "world": "egypt",
+ "index": 79,
+ "title": "笑傲风月 - 第 79 关",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "bloomerang"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "mummy",
+     "row": 1
+    },
+    {
+     "type": "mummy",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "mummy",
+     "row": 0
+    },
+    {
+     "type": "mummy",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "eighties",
+     "row": 0
+    },
+    {
+     "type": "eighties",
+     "row": 1
+    },
+    {
+     "type": "eighties",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "mummy_armor1",
+     "row": 1
+    },
+    {
+     "type": "mummy_armor1",
+     "row": 1
+    },
+    {
+     "type": "mummy",
+     "row": 3
+    },
+    {
+     "type": "mummy",
+     "row": 3
+    },
+    {
+     "type": "mummy",
+     "row": 4
+    },
+    {
+     "type": "mummy_armor2",
+     "row": 0
+    },
+    {
+     "type": "mummy_armor2",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "dark",
+     "row": 0
+    },
+    {
+     "type": "dark",
+     "row": 1
+    },
+    {
+     "type": "dark",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "iceage",
+     "row": 2
+    },
+    {
+     "type": "iceage",
+     "row": 3
+    },
+    {
+     "type": "iceage",
+     "row": 4
+    },
+    {
+     "type": "mummy",
+     "row": 3
+    },
+    {
+     "type": "mummy",
+     "row": 4
+    },
+    {
+     "type": "mummy",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "eighties",
+     "row": 0
+    },
+    {
+     "type": "eighties",
+     "row": 1
+    },
+    {
+     "type": "eighties",
+     "row": 2
+    },
+    {
+     "type": "eighties",
+     "row": 3
+    },
+    {
+     "type": "eighties",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "mummy",
+     "row": 1
+    },
+    {
+     "type": "mummy",
+     "row": 3
+    },
+    {
+     "type": "mummy",
+     "row": 2
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    },
+    {
+     "type": "lostcity",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "mummy",
+     "row": 2
+    },
+    {
+     "type": "mummy",
+     "row": 4
+    },
+    {
+     "type": "mummy",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "mummy_armor2",
+     "row": 0
+    },
+    {
+     "type": "mummy_armor2",
+     "row": 1
+    },
+    {
+     "type": "mummy_armor2",
+     "row": 2
+    },
+    {
+     "type": "mummy_armor2",
+     "row": 3
+    },
+    {
+     "type": "mummy",
+     "row": 1
+    },
+    {
+     "type": "eighties",
+     "row": 2
+    },
+    {
+     "type": "eighties",
+     "row": 4
+    },
+    {
+     "type": "cowboy",
+     "row": 2
+    },
+    {
+     "type": "cowboy",
+     "row": 3
+    },
+    {
+     "type": "mummy",
+     "row": 4
+    },
+    {
+     "type": "mummy",
+     "row": 0
+    },
+    {
+     "type": "mummy",
+     "row": 1
+    },
+    {
+     "type": "mummy",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "pirate_armor1",
+     "row": 2
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 3
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "mummy",
+     "row": 0
+    },
+    {
+     "type": "cowboy",
+     "row": 4
+    },
+    {
+     "type": "cowboy",
+     "row": 3
+    },
+    {
+     "type": "cowboy",
+     "row": 2
+    },
+    {
+     "type": "mummy",
+     "row": 1
+    },
+    {
+     "type": "gargantuar",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "eighties",
+     "row": 0
+    },
+    {
+     "type": "eighties",
+     "row": 4
+    },
+    {
+     "type": "eighties",
+     "row": 3
+    },
+    {
+     "type": "eighties",
+     "row": 2
+    },
+    {
+     "type": "eighties",
+     "row": 1
+    },
+    {
+     "type": "eighties",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "mummy",
+     "row": 0
+    },
+    {
+     "type": "mummy",
+     "row": 4
+    },
+    {
+     "type": "mummy",
+     "row": 3
+    },
+    {
+     "type": "mummy",
+     "row": 2
+    },
+    {
+     "type": "mummy",
+     "row": 1
+    },
+    {
+     "type": "mummy",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "mummy_armor1",
+     "row": 2
+    },
+    {
+     "type": "mummy_armor1",
+     "row": 4
+    },
+    {
+     "type": "mummy",
+     "row": 2
+    },
+    {
+     "type": "mummy",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "pirate",
+     "row": 0
+    },
+    {
+     "type": "pirate",
+     "row": 1
+    },
+    {
+     "type": "pirate",
+     "row": 2
+    },
+    {
+     "type": "pirate",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "iceage",
+     "row": 2
+    },
+    {
+     "type": "iceage",
+     "row": 3
+    },
+    {
+     "type": "iceage",
+     "row": 4
+    },
+    {
+     "type": "mummy_armor2",
+     "row": 2
+    },
+    {
+     "type": "mummy_armor2",
+     "row": 1
+    },
+    {
+     "type": "mummy",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "mummy",
+     "row": 0
+    },
+    {
+     "type": "mummy",
+     "row": 1
+    },
+    {
+     "type": "mummy",
+     "row": 2
+    },
+    {
+     "type": "mummy",
+     "row": 3
+    },
+    {
+     "type": "mummy",
+     "row": 4
+    },
+    {
+     "type": "mummy",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "beach",
+     "row": 1
+    },
+    {
+     "type": "beach",
+     "row": 1
+    },
+    {
+     "type": "beach",
+     "row": 2
+    },
+    {
+     "type": "beach",
+     "row": 4
+    },
+    {
+     "type": "eighties",
+     "row": 4
+    },
+    {
+     "type": "eighties",
+     "row": 0
+    },
+    {
+     "type": "eighties",
+     "row": 1
+    },
+    {
+     "type": "eighties",
+     "row": 2
+    },
+    {
+     "type": "eighties",
+     "row": 3
+    },
+    {
+     "type": "eighties",
+     "row": 4
+    },
+    {
+     "type": "eighties",
+     "row": 0
+    },
+    {
+     "type": "eighties",
+     "row": 1
+    }
+   ]
+  }
+ ],
+ "flags": 2,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_0749",
+  "stage": "EgyptNightsFunTimeStage",
+  "name_key": "[LTE_LEVEL_NAME_FUNTIME]",
+  "level_number": 21,
+  "wave_count": 20,
+  "original_waves": 20,
+  "night": true
+ }
+}

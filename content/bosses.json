@@ -1,0 +1,1621 @@
+{
+ "version": 1,
+ "bosses": [
+  {
+   "id": "boss_frontyard",
+   "world": "frontyard",
+   "name_zh": "后院暴君",
+   "title": "僵王博士·后院暴君",
+   "hp": 8000,
+   "minions": [
+    "newspaper",
+    "basic",
+    "conehead"
+   ],
+   "art": "zombies/GargantuarZOMBIE",
+   "reward": 192,
+   "phases": [
+    {
+     "at": 1.0,
+     "speed": 1.0,
+     "summon": 0,
+     "text": "僵王博士进入战场！",
+     "hp_ratio": 1.0,
+     "speed_mult": 1.0,
+     "eat_mult": 1.0,
+     "minions": [
+      "newspaper",
+      "basic",
+      "conehead"
+     ],
+     "count": 0,
+     "message": "僵王博士进入战场！"
+    },
+    {
+     "at": 0.66,
+     "speed": 1.15,
+     "summon": 1,
+     "text": "僵王博士狂暴了！攻击速度提升",
+     "hp_ratio": 0.66,
+     "speed_mult": 1.15,
+     "eat_mult": 1.2,
+     "minions": [
+      "newspaper",
+      "basic",
+      "conehead"
+     ],
+     "count": 1,
+     "message": "僵王博士狂暴了！攻击速度提升"
+    },
+    {
+     "at": 0.33,
+     "speed": 1.3,
+     "summon": 2,
+     "text": "僵王博士进入最终阶段！召唤增援",
+     "hp_ratio": 0.33,
+     "speed_mult": 1.3,
+     "eat_mult": 1.4,
+     "minions": [
+      "newspaper",
+      "basic",
+      "conehead"
+     ],
+     "count": 2,
+     "message": "僵王博士进入最终阶段！召唤增援"
+    }
+   ]
+  },
+  {
+   "id": "boss_egypt",
+   "world": "egypt",
+   "name_zh": "沙漠暴君",
+   "title": "僵王博士·沙漠暴君",
+   "hp": 8200,
+   "minions": [
+    "mummy",
+    "mummy_armor1",
+    "mummy_armor2"
+   ],
+   "art": "zombies/GargantuarZOMBIE",
+   "reward": 204,
+   "phases": [
+    {
+     "at": 1.0,
+     "speed": 1.0,
+     "summon": 0,
+     "text": "僵王博士进入战场！",
+     "hp_ratio": 1.0,
+     "speed_mult": 1.0,
+     "eat_mult": 1.0,
+     "minions": [
+      "mummy",
+      "mummy_armor1",
+      "mummy_armor2"
+     ],
+     "count": 0,
+     "message": "僵王博士进入战场！"
+    },
+    {
+     "at": 0.66,
+     "speed": 1.15,
+     "summon": 1,
+     "text": "僵王博士狂暴了！攻击速度提升",
+     "hp_ratio": 0.66,
+     "speed_mult": 1.15,
+     "eat_mult": 1.2,
+     "minions": [
+      "mummy",
+      "mummy_armor1",
+      "mummy_armor2"
+     ],
+     "count": 1,
+     "message": "僵王博士狂暴了！攻击速度提升"
+    },
+    {
+     "at": 0.33,
+     "speed": 1.3,
+     "summon": 2,
+     "text": "僵王博士进入最终阶段！召唤增援",
+     "hp_ratio": 0.33,
+     "speed_mult": 1.3,
+     "eat_mult": 1.4,
+     "minions": [
+      "mummy",
+      "mummy_armor1",
+      "mummy_armor2"
+     ],
+     "count": 2,
+     "message": "僵王博士进入最终阶段！召唤增援"
+    }
+   ]
+  },
+  {
+   "id": "boss_pirate",
+   "world": "pirate",
+   "name_zh": "海上霸主",
+   "title": "僵王博士·海上霸主",
+   "hp": 8400,
+   "minions": [
+    "pirate",
+    "pirate_armor1"
+   ],
+   "art": "zombies/GargantuarZOMBIE",
+   "reward": 216,
+   "phases": [
+    {
+     "at": 1.0,
+     "speed": 1.0,
+     "summon": 0,
+     "text": "僵王博士进入战场！",
+     "hp_ratio": 1.0,
+     "speed_mult": 1.0,
+     "eat_mult": 1.0,
+     "minions": [
+      "pirate",
+      "pirate_armor1"
+     ],
+     "count": 0,
+     "message": "僵王博士进入战场！"
+    },
+    {
+     "at": 0.66,
+     "speed": 1.15,
+     "summon": 1,
+     "text": "僵王博士狂暴了！攻击速度提升",
+     "hp_ratio": 0.66,
+     "speed_mult": 1.15,
+     "eat_mult": 1.2,
+     "minions": [
+      "pirate",
+      "pirate_armor1"
+     ],
+     "count": 1,
+     "message": "僵王博士狂暴了！攻击速度提升"
+    },
+    {
+     "at": 0.33,
+     "speed": 1.3,
+     "summon": 2,
+     "text": "僵王博士进入最终阶段！召唤增援",
+     "hp_ratio": 0.33,
+     "speed_mult": 1.3,
+     "eat_mult": 1.4,
+     "minions": [
+      "pirate",
+      "pirate_armor1"
+     ],
+     "count": 2,
+     "message": "僵王博士进入最终阶段！召唤增援"
+    }
+   ]
+  },
+  {
+   "id": "boss_cowboy",
+   "world": "cowboy",
+   "name_zh": "西部枪王",
+   "title": "僵王博士·西部枪王",
+   "hp": 8600,
+   "minions": [
+    "cowboy",
+    "cowboy_armor1"
+   ],
+   "art": "zombies/GargantuarZOMBIE",
+   "reward": 228,
+   "phases": [
+    {
+     "at": 1.0,
+     "speed": 1.0,
+     "summon": 0,
+     "text": "僵王博士进入战场！",
+     "hp_ratio": 1.0,
+     "speed_mult": 1.0,
+     "eat_mult": 1.0,
+     "minions": [
+      "cowboy",
+      "cowboy_armor1"
+     ],
+     "count": 0,
+     "message": "僵王博士进入战场！"
+    },
+    {
+     "at": 0.66,
+     "speed": 1.15,
+     "summon": 1,
+     "text": "僵王博士狂暴了！攻击速度提升",
+     "hp_ratio": 0.66,
+     "speed_mult": 1.15,
+     "eat_mult": 1.2,
+     "minions": [
+      "cowboy",
+      "cowboy_armor1"
+     ],
+     "count": 1,
+     "message": "僵王博士狂暴了！攻击速度提升"
+    },
+    {
+     "at": 0.33,
+     "speed": 1.3,
+     "summon": 2,
+     "text": "僵王博士进入最终阶段！召唤增援",
+     "hp_ratio": 0.33,
+     "speed_mult": 1.3,
+     "eat_mult": 1.4,
+     "minions": [
+      "cowboy",
+      "cowboy_armor1"
+     ],
+     "count": 2,
+     "message": "僵王博士进入最终阶段！召唤增援"
+    }
+   ]
+  },
+  {
+   "id": "boss_future",
+   "world": "future",
+   "name_zh": "未来机械",
+   "title": "僵王博士·未来机械",
+   "hp": 8800,
+   "minions": [
+    "football",
+    "future",
+    "future_armor1"
+   ],
+   "art": "zombies/GargantuarZOMBIE",
+   "reward": 240,
+   "phases": [
+    {
+     "at": 1.0,
+     "speed": 1.0,
+     "summon": 0,
+     "text": "僵王博士进入战场！",
+     "hp_ratio": 1.0,
+     "speed_mult": 1.0,
+     "eat_mult": 1.0,
+     "minions": [
+      "football",
+      "future",
+      "future_armor1"
+     ],
+     "count": 0,
+     "message": "僵王博士进入战场！"
+    },
+    {
+     "at": 0.66,
+     "speed": 1.15,
+     "summon": 1,
+     "text": "僵王博士狂暴了！攻击速度提升",
+     "hp_ratio": 0.66,
+     "speed_mult": 1.15,
+     "eat_mult": 1.2,
+     "minions": [
+      "football",
+      "future",
+      "future_armor1"
+     ],
+     "count": 1,
+     "message": "僵王博士狂暴了！攻击速度提升"
+    },
+    {
+     "at": 0.33,
+     "speed": 1.3,
+     "summon": 2,
+     "text": "僵王博士进入最终阶段！召唤增援",
+     "hp_ratio": 0.33,
+     "speed_mult": 1.3,
+     "eat_mult": 1.4,
+     "minions": [
+      "football",
+      "future",
+      "future_armor1"
+     ],
+     "count": 2,
+     "message": "僵王博士进入最终阶段！召唤增援"
+    }
+   ]
+  },
+  {
+   "id": "boss_dark",
+   "world": "dark",
+   "name_zh": "暗夜君王",
+   "title": "僵王博士·暗夜君王",
+   "hp": 9000,
+   "minions": [
+    "dark",
+    "dark_armor1"
+   ],
+   "art": "zombies/GargantuarZOMBIE",
+   "reward": 252,
+   "phases": [
+    {
+     "at": 1.0,
+     "speed": 1.0,
+     "summon": 0,
+     "text": "僵王博士进入战场！",
+     "hp_ratio": 1.0,
+     "speed_mult": 1.0,
+     "eat_mult": 1.0,
+     "minions": [
+      "dark",
+      "dark_armor1"
+     ],
+     "count": 0,
+     "message": "僵王博士进入战场！"
+    },
+    {
+     "at": 0.66,
+     "speed": 1.15,
+     "summon": 1,
+     "text": "僵王博士狂暴了！攻击速度提升",
+     "hp_ratio": 0.66,
+     "speed_mult": 1.15,
+     "eat_mult": 1.2,
+     "minions": [
+      "dark",
+      "dark_armor1"
+     ],
+     "count": 1,
+     "message": "僵王博士狂暴了！攻击速度提升"
+    },
+    {
+     "at": 0.33,
+     "speed": 1.3,
+     "summon": 2,
+     "text": "僵王博士进入最终阶段！召唤增援",
+     "hp_ratio": 0.33,
+     "speed_mult": 1.3,
+     "eat_mult": 1.4,
+     "minions": [
+      "dark",
+      "dark_armor1"
+     ],
+     "count": 2,
+     "message": "僵王博士进入最终阶段！召唤增援"
+    }
+   ]
+  },
+  {
+   "id": "boss_beach",
+   "world": "beach",
+   "name_zh": "深海巨兽",
+   "title": "僵王博士·深海巨兽",
+   "hp": 9200,
+   "minions": [
+    "beach"
+   ],
+   "art": "zombies/GargantuarZOMBIE",
+   "reward": 264,
+   "phases": [
+    {
+     "at": 1.0,
+     "speed": 1.0,
+     "summon": 0,
+     "text": "僵王博士进入战场！",
+     "hp_ratio": 1.0,
+     "speed_mult": 1.0,
+     "eat_mult": 1.0,
+     "minions": [
+      "beach"
+     ],
+     "count": 0,
+     "message": "僵王博士进入战场！"
+    },
+    {
+     "at": 0.66,
+     "speed": 1.15,
+     "summon": 1,
+     "text": "僵王博士狂暴了！攻击速度提升",
+     "hp_ratio": 0.66,
+     "speed_mult": 1.15,
+     "eat_mult": 1.2,
+     "minions": [
+      "beach"
+     ],
+     "count": 1,
+     "message": "僵王博士狂暴了！攻击速度提升"
+    },
+    {
+     "at": 0.33,
+     "speed": 1.3,
+     "summon": 2,
+     "text": "僵王博士进入最终阶段！召唤增援",
+     "hp_ratio": 0.33,
+     "speed_mult": 1.3,
+     "eat_mult": 1.4,
+     "minions": [
+      "beach"
+     ],
+     "count": 2,
+     "message": "僵王博士进入最终阶段！召唤增援"
+    }
+   ]
+  },
+  {
+   "id": "boss_lostcity",
+   "world": "lostcity",
+   "name_zh": "失落神庙",
+   "title": "僵王博士·失落神庙",
+   "hp": 9400,
+   "minions": [
+    "lostcity"
+   ],
+   "art": "zombies/GargantuarZOMBIE",
+   "reward": 276,
+   "phases": [
+    {
+     "at": 1.0,
+     "speed": 1.0,
+     "summon": 0,
+     "text": "僵王博士进入战场！",
+     "hp_ratio": 1.0,
+     "speed_mult": 1.0,
+     "eat_mult": 1.0,
+     "minions": [
+      "lostcity"
+     ],
+     "count": 0,
+     "message": "僵王博士进入战场！"
+    },
+    {
+     "at": 0.66,
+     "speed": 1.15,
+     "summon": 1,
+     "text": "僵王博士狂暴了！攻击速度提升",
+     "hp_ratio": 0.66,
+     "speed_mult": 1.15,
+     "eat_mult": 1.2,
+     "minions": [
+      "lostcity"
+     ],
+     "count": 1,
+     "message": "僵王博士狂暴了！攻击速度提升"
+    },
+    {
+     "at": 0.33,
+     "speed": 1.3,
+     "summon": 2,
+     "text": "僵王博士进入最终阶段！召唤增援",
+     "hp_ratio": 0.33,
+     "speed_mult": 1.3,
+     "eat_mult": 1.4,
+     "minions": [
+      "lostcity"
+     ],
+     "count": 2,
+     "message": "僵王博士进入最终阶段！召唤增援"
+    }
+   ]
+  },
+  {
+   "id": "boss_iceage",
+   "world": "iceage",
+   "name_zh": "极寒冰王",
+   "title": "僵王博士·极寒冰王",
+   "hp": 9600,
+   "minions": [
+    "pole_vaulter",
+    "iceage"
+   ],
+   "art": "zombies/GargantuarZOMBIE",
+   "reward": 288,
+   "phases": [
+    {
+     "at": 1.0,
+     "speed": 1.0,
+     "summon": 0,
+     "text": "僵王博士进入战场！",
+     "hp_ratio": 1.0,
+     "speed_mult": 1.0,
+     "eat_mult": 1.0,
+     "minions": [
+      "pole_vaulter",
+      "iceage"
+     ],
+     "count": 0,
+     "message": "僵王博士进入战场！"
+    },
+    {
+     "at": 0.66,
+     "speed": 1.15,
+     "summon": 1,
+     "text": "僵王博士狂暴了！攻击速度提升",
+     "hp_ratio": 0.66,
+     "speed_mult": 1.15,
+     "eat_mult": 1.2,
+     "minions": [
+      "pole_vaulter",
+      "iceage"
+     ],
+     "count": 1,
+     "message": "僵王博士狂暴了！攻击速度提升"
+    },
+    {
+     "at": 0.33,
+     "speed": 1.3,
+     "summon": 2,
+     "text": "僵王博士进入最终阶段！召唤增援",
+     "hp_ratio": 0.33,
+     "speed_mult": 1.3,
+     "eat_mult": 1.4,
+     "minions": [
+      "pole_vaulter",
+      "iceage"
+     ],
+     "count": 2,
+     "message": "僵王博士进入最终阶段！召唤增援"
+    }
+   ]
+  },
+  {
+   "id": "boss_kongfu",
+   "world": "kongfu",
+   "name_zh": "武林宗师",
+   "title": "僵王博士·武林宗师",
+   "hp": 9800,
+   "minions": [
+    "kongfu"
+   ],
+   "art": "zombies/GargantuarZOMBIE",
+   "reward": 300,
+   "phases": [
+    {
+     "at": 1.0,
+     "speed": 1.0,
+     "summon": 0,
+     "text": "僵王博士进入战场！",
+     "hp_ratio": 1.0,
+     "speed_mult": 1.0,
+     "eat_mult": 1.0,
+     "minions": [
+      "kongfu"
+     ],
+     "count": 0,
+     "message": "僵王博士进入战场！"
+    },
+    {
+     "at": 0.66,
+     "speed": 1.15,
+     "summon": 1,
+     "text": "僵王博士狂暴了！攻击速度提升",
+     "hp_ratio": 0.66,
+     "speed_mult": 1.15,
+     "eat_mult": 1.2,
+     "minions": [
+      "kongfu"
+     ],
+     "count": 1,
+     "message": "僵王博士狂暴了！攻击速度提升"
+    },
+    {
+     "at": 0.33,
+     "speed": 1.3,
+     "summon": 2,
+     "text": "僵王博士进入最终阶段！召唤增援",
+     "hp_ratio": 0.33,
+     "speed_mult": 1.3,
+     "eat_mult": 1.4,
+     "minions": [
+      "kongfu"
+     ],
+     "count": 2,
+     "message": "僵王博士进入最终阶段！召唤增援"
+    }
+   ]
+  },
+  {
+   "id": "boss_dino",
+   "world": "dino",
+   "name_zh": "恐龙骑士",
+   "title": "僵王博士·恐龙骑士",
+   "hp": 10000,
+   "minions": [
+    "gargantuar",
+    "garden_gargantuar",
+    "gang_gargantuar"
+   ],
+   "art": "zombies/GargantuarZOMBIE",
+   "reward": 312,
+   "phases": [
+    {
+     "at": 1.0,
+     "speed": 1.0,
+     "summon": 0,
+     "text": "僵王博士进入战场！",
+     "hp_ratio": 1.0,
+     "speed_mult": 1.0,
+     "eat_mult": 1.0,
+     "minions": [
+      "gargantuar",
+      "garden_gargantuar",
+      "gang_gargantuar"
+     ],
+     "count": 0,
+     "message": "僵王博士进入战场！"
+    },
+    {
+     "at": 0.66,
+     "speed": 1.15,
+     "summon": 1,
+     "text": "僵王博士狂暴了！攻击速度提升",
+     "hp_ratio": 0.66,
+     "speed_mult": 1.15,
+     "eat_mult": 1.2,
+     "minions": [
+      "gargantuar",
+      "garden_gargantuar",
+      "gang_gargantuar"
+     ],
+     "count": 1,
+     "message": "僵王博士狂暴了！攻击速度提升"
+    },
+    {
+     "at": 0.33,
+     "speed": 1.3,
+     "summon": 2,
+     "text": "僵王博士进入最终阶段！召唤增援",
+     "hp_ratio": 0.33,
+     "speed_mult": 1.3,
+     "eat_mult": 1.4,
+     "minions": [
+      "gargantuar",
+      "garden_gargantuar",
+      "gang_gargantuar"
+     ],
+     "count": 2,
+     "message": "僵王博士进入最终阶段！召唤增援"
+    }
+   ]
+  },
+  {
+   "id": "boss_eighties",
+   "world": "eighties",
+   "name_zh": "霓虹电弧",
+   "title": "僵王博士·霓虹电弧",
+   "hp": 10200,
+   "minions": [
+    "eighties"
+   ],
+   "art": "zombies/GargantuarZOMBIE",
+   "reward": 324,
+   "phases": [
+    {
+     "at": 1.0,
+     "speed": 1.0,
+     "summon": 0,
+     "text": "僵王博士进入战场！",
+     "hp_ratio": 1.0,
+     "speed_mult": 1.0,
+     "eat_mult": 1.0,
+     "minions": [
+      "eighties"
+     ],
+     "count": 0,
+     "message": "僵王博士进入战场！"
+    },
+    {
+     "at": 0.66,
+     "speed": 1.15,
+     "summon": 1,
+     "text": "僵王博士狂暴了！攻击速度提升",
+     "hp_ratio": 0.66,
+     "speed_mult": 1.15,
+     "eat_mult": 1.2,
+     "minions": [
+      "eighties"
+     ],
+     "count": 1,
+     "message": "僵王博士狂暴了！攻击速度提升"
+    },
+    {
+     "at": 0.33,
+     "speed": 1.3,
+     "summon": 2,
+     "text": "僵王博士进入最终阶段！召唤增援",
+     "hp_ratio": 0.33,
+     "speed_mult": 1.3,
+     "eat_mult": 1.4,
+     "minions": [
+      "eighties"
+     ],
+     "count": 2,
+     "message": "僵王博士进入最终阶段！召唤增援"
+    }
+   ]
+  },
+  {
+   "id": "boss_modern",
+   "world": "modern",
+   "name_zh": "现代军团",
+   "title": "僵王博士·现代军团",
+   "hp": 10400,
+   "minions": [
+    "gargantuar",
+    "garden_gargantuar",
+    "gang_gargantuar"
+   ],
+   "art": "zombies/GargantuarZOMBIE",
+   "reward": 336,
+   "phases": [
+    {
+     "at": 1.0,
+     "speed": 1.0,
+     "summon": 0,
+     "text": "僵王博士进入战场！",
+     "hp_ratio": 1.0,
+     "speed_mult": 1.0,
+     "eat_mult": 1.0,
+     "minions": [
+      "gargantuar",
+      "garden_gargantuar",
+      "gang_gargantuar"
+     ],
+     "count": 0,
+     "message": "僵王博士进入战场！"
+    },
+    {
+     "at": 0.66,
+     "speed": 1.15,
+     "summon": 1,
+     "text": "僵王博士狂暴了！攻击速度提升",
+     "hp_ratio": 0.66,
+     "speed_mult": 1.15,
+     "eat_mult": 1.2,
+     "minions": [
+      "gargantuar",
+      "garden_gargantuar",
+      "gang_gargantuar"
+     ],
+     "count": 1,
+     "message": "僵王博士狂暴了！攻击速度提升"
+    },
+    {
+     "at": 0.33,
+     "speed": 1.3,
+     "summon": 2,
+     "text": "僵王博士进入最终阶段！召唤增援",
+     "hp_ratio": 0.33,
+     "speed_mult": 1.3,
+     "eat_mult": 1.4,
+     "minions": [
+      "gargantuar",
+      "garden_gargantuar",
+      "gang_gargantuar"
+     ],
+     "count": 2,
+     "message": "僵王博士进入最终阶段！召唤增援"
+    }
+   ]
+  },
+  {
+   "id": "boss_sky",
+   "world": "sky",
+   "name_zh": "云端要塞",
+   "title": "僵王博士·云端要塞",
+   "hp": 10600,
+   "minions": [
+    "gargantuar",
+    "garden_gargantuar",
+    "gang_gargantuar"
+   ],
+   "art": "zombies/GargantuarZOMBIE",
+   "reward": 348,
+   "phases": [
+    {
+     "at": 1.0,
+     "speed": 1.0,
+     "summon": 0,
+     "text": "僵王博士进入战场！",
+     "hp_ratio": 1.0,
+     "speed_mult": 1.0,
+     "eat_mult": 1.0,
+     "minions": [
+      "gargantuar",
+      "garden_gargantuar",
+      "gang_gargantuar"
+     ],
+     "count": 0,
+     "message": "僵王博士进入战场！"
+    },
+    {
+     "at": 0.66,
+     "speed": 1.15,
+     "summon": 1,
+     "text": "僵王博士狂暴了！攻击速度提升",
+     "hp_ratio": 0.66,
+     "speed_mult": 1.15,
+     "eat_mult": 1.2,
+     "minions": [
+      "gargantuar",
+      "garden_gargantuar",
+      "gang_gargantuar"
+     ],
+     "count": 1,
+     "message": "僵王博士狂暴了！攻击速度提升"
+    },
+    {
+     "at": 0.33,
+     "speed": 1.3,
+     "summon": 2,
+     "text": "僵王博士进入最终阶段！召唤增援",
+     "hp_ratio": 0.33,
+     "speed_mult": 1.3,
+     "eat_mult": 1.4,
+     "minions": [
+      "gargantuar",
+      "garden_gargantuar",
+      "gang_gargantuar"
+     ],
+     "count": 2,
+     "message": "僵王博士进入最终阶段！召唤增援"
+    }
+   ]
+  },
+  {
+   "id": "boss_chinesegarden",
+   "world": "chinesegarden",
+   "name_zh": "戏曲毁灭者",
+   "title": "僵王博士·戏曲毁灭者",
+   "hp": 11000,
+   "minions": [
+    "garden_gargantuar",
+    "garden_bucket",
+    "garden_cuju"
+   ],
+   "art": "art/chinesegarden/gargantuar.png",
+   "reward": 360,
+   "phases": [
+    {
+     "at": 1.0,
+     "speed": 1.0,
+     "summon": 0,
+     "text": "僵王博士进入战场！",
+     "hp_ratio": 1.0,
+     "speed_mult": 1.0,
+     "eat_mult": 1.0,
+     "minions": [
+      "garden_gargantuar",
+      "garden_bucket",
+      "garden_cuju"
+     ],
+     "count": 0,
+     "message": "僵王博士进入战场！"
+    },
+    {
+     "at": 0.66,
+     "speed": 1.15,
+     "summon": 1,
+     "text": "僵王博士狂暴了！攻击速度提升",
+     "hp_ratio": 0.66,
+     "speed_mult": 1.15,
+     "eat_mult": 1.2,
+     "minions": [
+      "garden_gargantuar",
+      "garden_bucket",
+      "garden_cuju"
+     ],
+     "count": 1,
+     "message": "僵王博士狂暴了！攻击速度提升"
+    },
+    {
+     "at": 0.33,
+     "speed": 1.3,
+     "summon": 2,
+     "text": "僵王博士进入最终阶段！召唤增援",
+     "hp_ratio": 0.33,
+     "speed_mult": 1.3,
+     "eat_mult": 1.4,
+     "minions": [
+      "garden_gargantuar",
+      "garden_bucket",
+      "garden_cuju"
+     ],
+     "count": 2,
+     "message": "僵王博士进入最终阶段！召唤增援"
+    }
+   ]
+  },
+  {
+   "id": "boss_heian",
+   "world": "heian",
+   "name_zh": "百鬼夜行",
+   "title": "僵王博士·百鬼夜行",
+   "hp": 11200,
+   "minions": [
+    "gargantuar",
+    "garden_gargantuar",
+    "gang_gargantuar"
+   ],
+   "art": "zombies/GargantuarZOMBIE",
+   "reward": 372,
+   "phases": [
+    {
+     "at": 1.0,
+     "speed": 1.0,
+     "summon": 0,
+     "text": "僵王博士进入战场！",
+     "hp_ratio": 1.0,
+     "speed_mult": 1.0,
+     "eat_mult": 1.0,
+     "minions": [
+      "gargantuar",
+      "garden_gargantuar",
+      "gang_gargantuar"
+     ],
+     "count": 0,
+     "message": "僵王博士进入战场！"
+    },
+    {
+     "at": 0.66,
+     "speed": 1.15,
+     "summon": 1,
+     "text": "僵王博士狂暴了！攻击速度提升",
+     "hp_ratio": 0.66,
+     "speed_mult": 1.15,
+     "eat_mult": 1.2,
+     "minions": [
+      "gargantuar",
+      "garden_gargantuar",
+      "gang_gargantuar"
+     ],
+     "count": 1,
+     "message": "僵王博士狂暴了！攻击速度提升"
+    },
+    {
+     "at": 0.33,
+     "speed": 1.3,
+     "summon": 2,
+     "text": "僵王博士进入最终阶段！召唤增援",
+     "hp_ratio": 0.33,
+     "speed_mult": 1.3,
+     "eat_mult": 1.4,
+     "minions": [
+      "gargantuar",
+      "garden_gargantuar",
+      "gang_gargantuar"
+     ],
+     "count": 2,
+     "message": "僵王博士进入最终阶段！召唤增援"
+    }
+   ]
+  },
+  {
+   "id": "boss_fairy",
+   "world": "fairy",
+   "name_zh": "森林梦魇",
+   "title": "僵王博士·森林梦魇",
+   "hp": 11400,
+   "minions": [
+    "gargantuar",
+    "garden_gargantuar",
+    "gang_gargantuar"
+   ],
+   "art": "zombies/GargantuarZOMBIE",
+   "reward": 384,
+   "phases": [
+    {
+     "at": 1.0,
+     "speed": 1.0,
+     "summon": 0,
+     "text": "僵王博士进入战场！",
+     "hp_ratio": 1.0,
+     "speed_mult": 1.0,
+     "eat_mult": 1.0,
+     "minions": [
+      "gargantuar",
+      "garden_gargantuar",
+      "gang_gargantuar"
+     ],
+     "count": 0,
+     "message": "僵王博士进入战场！"
+    },
+    {
+     "at": 0.66,
+     "speed": 1.15,
+     "summon": 1,
+     "text": "僵王博士狂暴了！攻击速度提升",
+     "hp_ratio": 0.66,
+     "speed_mult": 1.15,
+     "eat_mult": 1.2,
+     "minions": [
+      "gargantuar",
+      "garden_gargantuar",
+      "gang_gargantuar"
+     ],
+     "count": 1,
+     "message": "僵王博士狂暴了！攻击速度提升"
+    },
+    {
+     "at": 0.33,
+     "speed": 1.3,
+     "summon": 2,
+     "text": "僵王博士进入最终阶段！召唤增援",
+     "hp_ratio": 0.33,
+     "speed_mult": 1.3,
+     "eat_mult": 1.4,
+     "minions": [
+      "gargantuar",
+      "garden_gargantuar",
+      "gang_gargantuar"
+     ],
+     "count": 2,
+     "message": "僵王博士进入最终阶段！召唤增援"
+    }
+   ]
+  },
+  {
+   "id": "boss_mausoleum",
+   "world": "mausoleum",
+   "name_zh": "陵墓守卫",
+   "title": "僵王博士·陵墓守卫",
+   "hp": 11600,
+   "minions": [
+    "gargantuar",
+    "garden_gargantuar",
+    "gang_gargantuar"
+   ],
+   "art": "zombies/GargantuarZOMBIE",
+   "reward": 396,
+   "phases": [
+    {
+     "at": 1.0,
+     "speed": 1.0,
+     "summon": 0,
+     "text": "僵王博士进入战场！",
+     "hp_ratio": 1.0,
+     "speed_mult": 1.0,
+     "eat_mult": 1.0,
+     "minions": [
+      "gargantuar",
+      "garden_gargantuar",
+      "gang_gargantuar"
+     ],
+     "count": 0,
+     "message": "僵王博士进入战场！"
+    },
+    {
+     "at": 0.66,
+     "speed": 1.15,
+     "summon": 1,
+     "text": "僵王博士狂暴了！攻击速度提升",
+     "hp_ratio": 0.66,
+     "speed_mult": 1.15,
+     "eat_mult": 1.2,
+     "minions": [
+      "gargantuar",
+      "garden_gargantuar",
+      "gang_gargantuar"
+     ],
+     "count": 1,
+     "message": "僵王博士狂暴了！攻击速度提升"
+    },
+    {
+     "at": 0.33,
+     "speed": 1.3,
+     "summon": 2,
+     "text": "僵王博士进入最终阶段！召唤增援",
+     "hp_ratio": 0.33,
+     "speed_mult": 1.3,
+     "eat_mult": 1.4,
+     "minions": [
+      "gargantuar",
+      "garden_gargantuar",
+      "gang_gargantuar"
+     ],
+     "count": 2,
+     "message": "僵王博士进入最终阶段！召唤增援"
+    }
+   ]
+  },
+  {
+   "id": "boss_steam",
+   "world": "steam",
+   "name_zh": "蒸汽铁王",
+   "title": "僵王博士·蒸汽铁王",
+   "hp": 11800,
+   "minions": [
+    "gargantuar",
+    "garden_gargantuar",
+    "gang_gargantuar"
+   ],
+   "art": "zombies/GargantuarZOMBIE",
+   "reward": 408,
+   "phases": [
+    {
+     "at": 1.0,
+     "speed": 1.0,
+     "summon": 0,
+     "text": "僵王博士进入战场！",
+     "hp_ratio": 1.0,
+     "speed_mult": 1.0,
+     "eat_mult": 1.0,
+     "minions": [
+      "gargantuar",
+      "garden_gargantuar",
+      "gang_gargantuar"
+     ],
+     "count": 0,
+     "message": "僵王博士进入战场！"
+    },
+    {
+     "at": 0.66,
+     "speed": 1.15,
+     "summon": 1,
+     "text": "僵王博士狂暴了！攻击速度提升",
+     "hp_ratio": 0.66,
+     "speed_mult": 1.15,
+     "eat_mult": 1.2,
+     "minions": [
+      "gargantuar",
+      "garden_gargantuar",
+      "gang_gargantuar"
+     ],
+     "count": 1,
+     "message": "僵王博士狂暴了！攻击速度提升"
+    },
+    {
+     "at": 0.33,
+     "speed": 1.3,
+     "summon": 2,
+     "text": "僵王博士进入最终阶段！召唤增援",
+     "hp_ratio": 0.33,
+     "speed_mult": 1.3,
+     "eat_mult": 1.4,
+     "minions": [
+      "gargantuar",
+      "garden_gargantuar",
+      "gang_gargantuar"
+     ],
+     "count": 2,
+     "message": "僵王博士进入最终阶段！召唤增援"
+    }
+   ]
+  },
+  {
+   "id": "boss_memorytour",
+   "world": "memorytour",
+   "name_zh": "记忆导演",
+   "title": "僵王博士·记忆导演",
+   "hp": 12000,
+   "minions": [
+    "gargantuar",
+    "garden_gargantuar",
+    "gang_gargantuar"
+   ],
+   "art": "zombies/GargantuarZOMBIE",
+   "reward": 420,
+   "phases": [
+    {
+     "at": 1.0,
+     "speed": 1.0,
+     "summon": 0,
+     "text": "僵王博士进入战场！",
+     "hp_ratio": 1.0,
+     "speed_mult": 1.0,
+     "eat_mult": 1.0,
+     "minions": [
+      "gargantuar",
+      "garden_gargantuar",
+      "gang_gargantuar"
+     ],
+     "count": 0,
+     "message": "僵王博士进入战场！"
+    },
+    {
+     "at": 0.66,
+     "speed": 1.15,
+     "summon": 1,
+     "text": "僵王博士狂暴了！攻击速度提升",
+     "hp_ratio": 0.66,
+     "speed_mult": 1.15,
+     "eat_mult": 1.2,
+     "minions": [
+      "gargantuar",
+      "garden_gargantuar",
+      "gang_gargantuar"
+     ],
+     "count": 1,
+     "message": "僵王博士狂暴了！攻击速度提升"
+    },
+    {
+     "at": 0.33,
+     "speed": 1.3,
+     "summon": 2,
+     "text": "僵王博士进入最终阶段！召唤增援",
+     "hp_ratio": 0.33,
+     "speed_mult": 1.3,
+     "eat_mult": 1.4,
+     "minions": [
+      "gargantuar",
+      "garden_gargantuar",
+      "gang_gargantuar"
+     ],
+     "count": 2,
+     "message": "僵王博士进入最终阶段！召唤增援"
+    }
+   ]
+  },
+  {
+   "id": "boss_losantosvice",
+   "world": "losantosvice",
+   "name_zh": "洛城黑帮",
+   "title": "僵王博士·洛城黑帮",
+   "hp": 12200,
+   "minions": [
+    "gang_gargantuar",
+    "gang_bucket",
+    "gang_carl"
+   ],
+   "art": "art/losantosvice/gargantuar.png",
+   "reward": 432,
+   "phases": [
+    {
+     "at": 1.0,
+     "speed": 1.0,
+     "summon": 0,
+     "text": "僵王博士进入战场！",
+     "hp_ratio": 1.0,
+     "speed_mult": 1.0,
+     "eat_mult": 1.0,
+     "minions": [
+      "gang_gargantuar",
+      "gang_bucket",
+      "gang_carl"
+     ],
+     "count": 0,
+     "message": "僵王博士进入战场！"
+    },
+    {
+     "at": 0.66,
+     "speed": 1.15,
+     "summon": 1,
+     "text": "僵王博士狂暴了！攻击速度提升",
+     "hp_ratio": 0.66,
+     "speed_mult": 1.15,
+     "eat_mult": 1.2,
+     "minions": [
+      "gang_gargantuar",
+      "gang_bucket",
+      "gang_carl"
+     ],
+     "count": 1,
+     "message": "僵王博士狂暴了！攻击速度提升"
+    },
+    {
+     "at": 0.33,
+     "speed": 1.3,
+     "summon": 2,
+     "text": "僵王博士进入最终阶段！召唤增援",
+     "hp_ratio": 0.33,
+     "speed_mult": 1.3,
+     "eat_mult": 1.4,
+     "minions": [
+      "gang_gargantuar",
+      "gang_bucket",
+      "gang_carl"
+     ],
+     "count": 2,
+     "message": "僵王博士进入最终阶段！召唤增援"
+    }
+   ]
+  },
+  {
+   "id": "boss_lunarrainbowmarket",
+   "world": "lunarrainbowmarket",
+   "name_zh": "发条博士",
+   "title": "僵王博士·发条博士",
+   "hp": 12400,
+   "minions": [
+    "market_mechanic",
+    "market_armor2",
+    "market_armor1"
+   ],
+   "art": "zombies/GargantuarZOMBIE",
+   "reward": 444,
+   "phases": [
+    {
+     "at": 1.0,
+     "speed": 1.0,
+     "summon": 0,
+     "text": "僵王博士进入战场！",
+     "hp_ratio": 1.0,
+     "speed_mult": 1.0,
+     "eat_mult": 1.0,
+     "minions": [
+      "market_mechanic",
+      "market_armor2",
+      "market_armor1"
+     ],
+     "count": 0,
+     "message": "僵王博士进入战场！"
+    },
+    {
+     "at": 0.66,
+     "speed": 1.15,
+     "summon": 1,
+     "text": "僵王博士狂暴了！攻击速度提升",
+     "hp_ratio": 0.66,
+     "speed_mult": 1.15,
+     "eat_mult": 1.2,
+     "minions": [
+      "market_mechanic",
+      "market_armor2",
+      "market_armor1"
+     ],
+     "count": 1,
+     "message": "僵王博士狂暴了！攻击速度提升"
+    },
+    {
+     "at": 0.33,
+     "speed": 1.3,
+     "summon": 2,
+     "text": "僵王博士进入最终阶段！召唤增援",
+     "hp_ratio": 0.33,
+     "speed_mult": 1.3,
+     "eat_mult": 1.4,
+     "minions": [
+      "market_mechanic",
+      "market_armor2",
+      "market_armor1"
+     ],
+     "count": 2,
+     "message": "僵王博士进入最终阶段！召唤增援"
+    }
+   ]
+  },
+  {
+   "id": "boss_renai",
+   "world": "renai",
+   "name_zh": "恋爱魔女",
+   "title": "僵王博士·恋爱魔女",
+   "hp": 12600,
+   "minions": [
+    "gargantuar",
+    "garden_gargantuar",
+    "gang_gargantuar"
+   ],
+   "art": "zombies/GargantuarZOMBIE",
+   "reward": 456,
+   "phases": [
+    {
+     "at": 1.0,
+     "speed": 1.0,
+     "summon": 0,
+     "text": "僵王博士进入战场！",
+     "hp_ratio": 1.0,
+     "speed_mult": 1.0,
+     "eat_mult": 1.0,
+     "minions": [
+      "gargantuar",
+      "garden_gargantuar",
+      "gang_gargantuar"
+     ],
+     "count": 0,
+     "message": "僵王博士进入战场！"
+    },
+    {
+     "at": 0.66,
+     "speed": 1.15,
+     "summon": 1,
+     "text": "僵王博士狂暴了！攻击速度提升",
+     "hp_ratio": 0.66,
+     "speed_mult": 1.15,
+     "eat_mult": 1.2,
+     "minions": [
+      "gargantuar",
+      "garden_gargantuar",
+      "gang_gargantuar"
+     ],
+     "count": 1,
+     "message": "僵王博士狂暴了！攻击速度提升"
+    },
+    {
+     "at": 0.33,
+     "speed": 1.3,
+     "summon": 2,
+     "text": "僵王博士进入最终阶段！召唤增援",
+     "hp_ratio": 0.33,
+     "speed_mult": 1.3,
+     "eat_mult": 1.4,
+     "minions": [
+      "gargantuar",
+      "garden_gargantuar",
+      "gang_gargantuar"
+     ],
+     "count": 2,
+     "message": "僵王博士进入最终阶段！召唤增援"
+    }
+   ]
+  },
+  {
+   "id": "boss_muji",
+   "world": "muji",
+   "name_zh": "极简支配者",
+   "title": "僵王博士·极简支配者",
+   "hp": 12800,
+   "minions": [
+    "gargantuar",
+    "garden_gargantuar",
+    "gang_gargantuar"
+   ],
+   "art": "zombies/GargantuarZOMBIE",
+   "reward": 468,
+   "phases": [
+    {
+     "at": 1.0,
+     "speed": 1.0,
+     "summon": 0,
+     "text": "僵王博士进入战场！",
+     "hp_ratio": 1.0,
+     "speed_mult": 1.0,
+     "eat_mult": 1.0,
+     "minions": [
+      "gargantuar",
+      "garden_gargantuar",
+      "gang_gargantuar"
+     ],
+     "count": 0,
+     "message": "僵王博士进入战场！"
+    },
+    {
+     "at": 0.66,
+     "speed": 1.15,
+     "summon": 1,
+     "text": "僵王博士狂暴了！攻击速度提升",
+     "hp_ratio": 0.66,
+     "speed_mult": 1.15,
+     "eat_mult": 1.2,
+     "minions": [
+      "gargantuar",
+      "garden_gargantuar",
+      "gang_gargantuar"
+     ],
+     "count": 1,
+     "message": "僵王博士狂暴了！攻击速度提升"
+    },
+    {
+     "at": 0.33,
+     "speed": 1.3,
+     "summon": 2,
+     "text": "僵王博士进入最终阶段！召唤增援",
+     "hp_ratio": 0.33,
+     "speed_mult": 1.3,
+     "eat_mult": 1.4,
+     "minions": [
+      "gargantuar",
+      "garden_gargantuar",
+      "gang_gargantuar"
+     ],
+     "count": 2,
+     "message": "僵王博士进入最终阶段！召唤增援"
+    }
+   ]
+  },
+  {
+   "id": "boss_carnival",
+   "world": "carnival",
+   "name_zh": "马戏团团长",
+   "title": "僵王博士·马戏团团长",
+   "hp": 13000,
+   "minions": [
+    "gargantuar",
+    "garden_gargantuar",
+    "gang_gargantuar"
+   ],
+   "art": "zombies/GargantuarZOMBIE",
+   "reward": 480,
+   "phases": [
+    {
+     "at": 1.0,
+     "speed": 1.0,
+     "summon": 0,
+     "text": "僵王博士进入战场！",
+     "hp_ratio": 1.0,
+     "speed_mult": 1.0,
+     "eat_mult": 1.0,
+     "minions": [
+      "gargantuar",
+      "garden_gargantuar",
+      "gang_gargantuar"
+     ],
+     "count": 0,
+     "message": "僵王博士进入战场！"
+    },
+    {
+     "at": 0.66,
+     "speed": 1.15,
+     "summon": 1,
+     "text": "僵王博士狂暴了！攻击速度提升",
+     "hp_ratio": 0.66,
+     "speed_mult": 1.15,
+     "eat_mult": 1.2,
+     "minions": [
+      "gargantuar",
+      "garden_gargantuar",
+      "gang_gargantuar"
+     ],
+     "count": 1,
+     "message": "僵王博士狂暴了！攻击速度提升"
+    },
+    {
+     "at": 0.33,
+     "speed": 1.3,
+     "summon": 2,
+     "text": "僵王博士进入最终阶段！召唤增援",
+     "hp_ratio": 0.33,
+     "speed_mult": 1.3,
+     "eat_mult": 1.4,
+     "minions": [
+      "gargantuar",
+      "garden_gargantuar",
+      "gang_gargantuar"
+     ],
+     "count": 2,
+     "message": "僵王博士进入最终阶段！召唤增援"
+    }
+   ]
+  },
+  {
+   "id": "boss_plantagenet",
+   "world": "plantagenet",
+   "name_zh": "王朝霸主",
+   "title": "僵王博士·王朝霸主",
+   "hp": 13200,
+   "minions": [
+    "royal_chef_gargantuar",
+    "royal_winetasting",
+    "royal_noblewoman"
+   ],
+   "art": "art/plantagenet/royal_chef_gargantuar.png",
+   "reward": 492,
+   "phases": [
+    {
+     "at": 1.0,
+     "speed": 1.0,
+     "summon": 0,
+     "text": "僵王博士进入战场！",
+     "hp_ratio": 1.0,
+     "speed_mult": 1.0,
+     "eat_mult": 1.0,
+     "minions": [
+      "royal_chef_gargantuar",
+      "royal_winetasting",
+      "royal_noblewoman"
+     ],
+     "count": 0,
+     "message": "僵王博士进入战场！"
+    },
+    {
+     "at": 0.66,
+     "speed": 1.15,
+     "summon": 1,
+     "text": "僵王博士狂暴了！攻击速度提升",
+     "hp_ratio": 0.66,
+     "speed_mult": 1.15,
+     "eat_mult": 1.2,
+     "minions": [
+      "royal_chef_gargantuar",
+      "royal_winetasting",
+      "royal_noblewoman"
+     ],
+     "count": 1,
+     "message": "僵王博士狂暴了！攻击速度提升"
+    },
+    {
+     "at": 0.33,
+     "speed": 1.3,
+     "summon": 2,
+     "text": "僵王博士进入最终阶段！召唤增援",
+     "hp_ratio": 0.33,
+     "speed_mult": 1.3,
+     "eat_mult": 1.4,
+     "minions": [
+      "royal_chef_gargantuar",
+      "royal_winetasting",
+      "royal_noblewoman"
+     ],
+     "count": 2,
+     "message": "僵王博士进入最终阶段！召唤增援"
+    }
+   ]
+  }
+ ]
+}

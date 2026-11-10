@@ -1,0 +1,339 @@
+{
+ "id": "plantagenet_7",
+ "world": "plantagenet",
+ "index": 7,
+ "title": "金雀花王朝 - 第 7 天 - 皇家花圃",
+ "sun": 390,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "iris",
+  "olivewood"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 0
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 1
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_winetasting",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 0
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 3
+    },
+    {
+     "type": "royal_zombie",
+     "row": 4
+    },
+    {
+     "type": "royal_zombie",
+     "row": 0
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_winetasting",
+     "row": 3
+    },
+    {
+     "type": "royal_zombie",
+     "row": 4
+    },
+    {
+     "type": "royal_winetasting",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 2
+    },
+    {
+     "type": "royal_winetasting",
+     "row": 4
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 0
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_winetasting",
+     "row": 4
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 0
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_winetasting",
+     "row": 4
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 0
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_winetasting",
+     "row": 4
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 0
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_winetasting",
+     "row": 4
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 0
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    }
+   ]
+  }
+ ],
+ "flags": 2,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_1584",
+  "stage": "PlantagenetUBStage",
+  "name_key": "[PLANTAGENET_LEVEL_NAME_8]",
+  "level_number": 8,
+  "wave_count": 10,
+  "original_waves": 10,
+  "night": false
+ }
+}

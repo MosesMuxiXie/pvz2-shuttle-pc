@@ -1,0 +1,347 @@
+{
+ "id": "muji_21",
+ "world": "muji",
+ "index": 21,
+ "title": "罗马帝国 - 第 21 天",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "bloomerang"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 0
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 0
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_noblewoman",
+     "row": 0
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_winetasting",
+     "row": 0
+    },
+    {
+     "type": "royal_winetasting",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 0
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_winetasting",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 0
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 0
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 3
+    },
+    {
+     "type": "royal_zombie",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 0
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 1
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "gargantuar",
+     "row": 0
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 1
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 3
+    },
+    {
+     "type": "royal_zombie",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_noblewoman",
+     "row": 0
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 3
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 2
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_winetasting",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 0
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 3
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 4
+    },
+    {
+     "type": "royal_zombie",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 0
+    },
+    {
+     "type": "royal_winetasting",
+     "row": 1
+    },
+    {
+     "type": "royal_winetasting",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 0
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 3
+    },
+    {
+     "type": "royal_zombie",
+     "row": 4
+    },
+    {
+     "type": "royal_zombie",
+     "row": 0
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 0
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    },
+    {
+     "type": "gargantuar",
+     "row": 2
+    },
+    {
+     "type": "gargantuar",
+     "row": 4
+    },
+    {
+     "type": "royal_zombie",
+     "row": 4
+    }
+   ]
+  }
+ ],
+ "flags": 2,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_1807",
+  "stage": "RiftStage",
+  "name_key": "[ROME_LEVEL_NAME]",
+  "level_number": 12,
+  "wave_count": 16,
+  "original_waves": 16,
+  "night": false
+ }
+}

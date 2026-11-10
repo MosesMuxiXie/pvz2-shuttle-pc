@@ -1,0 +1,204 @@
+{
+  "id": "cowboy_3",
+  "world": "cowboy",
+  "index": 3,
+  "title": "第 3 天",
+  "sun": 300,
+  "deck": [
+    "sunflower",
+    "twinsunflower",
+    "peashooter",
+    "wallnut",
+    "tallnut",
+    "melonpult",
+    "splitpea"
+  ],
+  "waves": [
+    {
+      "delay": 18,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "cowboy",
+          "row": 4
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "cowboy",
+          "row": 3
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "cowboy",
+          "row": 0
+        },
+        {
+          "type": "cowboy",
+          "row": 3
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "cowboy",
+          "row": 0
+        },
+        {
+          "type": "cowboy",
+          "row": 4
+        }
+      ]
+    },
+    {
+      "delay": 24,
+      "flag": true,
+      "zombies": [
+        {
+          "type": "cowboy",
+          "row": 4
+        },
+        {
+          "type": "cowboy",
+          "row": 3
+        },
+        {
+          "type": "cowboy",
+          "row": 2
+        },
+        {
+          "type": "cowboy",
+          "row": 2
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "cowboy",
+          "row": 0
+        },
+        {
+          "type": "cowboy",
+          "row": 1
+        },
+        {
+          "type": "cowboy",
+          "row": 2
+        },
+        {
+          "type": "cowboy",
+          "row": 4
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "cowboy",
+          "row": 3
+        },
+        {
+          "type": "cowboy",
+          "row": 4
+        },
+        {
+          "type": "cowboy",
+          "row": 1
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "cowboy_armor1",
+          "row": 3
+        },
+        {
+          "type": "cowboy",
+          "row": 1
+        },
+        {
+          "type": "cowboy",
+          "row": 4
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "cowboy",
+          "row": 1
+        },
+        {
+          "type": "cowboy",
+          "row": 3
+        },
+        {
+          "type": "cowboy_armor1",
+          "row": 0
+        },
+        {
+          "type": "cowboy",
+          "row": 4
+        }
+      ]
+    },
+    {
+      "delay": 24,
+      "flag": true,
+      "zombies": [
+        {
+          "type": "cowboy",
+          "row": 3
+        },
+        {
+          "type": "cowboy_armor1",
+          "row": 0
+        },
+        {
+          "type": "cowboy",
+          "row": 4
+        },
+        {
+          "type": "cowboy_armor1",
+          "row": 1
+        },
+        {
+          "type": "cowboy",
+          "row": 3
+        },
+        {
+          "type": "cowboy_armor1",
+          "row": 2
+        },
+        {
+          "type": "cowboy",
+          "row": 4
+        }
+      ]
+    }
+  ],
+  "flags": 2,
+  "seed_bank": 7
+}

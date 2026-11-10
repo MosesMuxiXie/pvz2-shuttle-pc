@@ -1,0 +1,195 @@
+{
+ "id": "chinesegarden_24",
+ "world": "chinesegarden",
+ "index": 24,
+ "title": "元素！很奇妙吧？ - 第 24 关",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "gardenia",
+  "elderbarrier",
+  "torpedofruit"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_zombie",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_cone",
+     "row": 0
+    },
+    {
+     "type": "garden_bucket",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_poet",
+     "row": 0
+    },
+    {
+     "type": "garden_poet",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 0
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_poet",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "garden_cone",
+     "row": 0
+    },
+    {
+     "type": "garden_cone",
+     "row": 1
+    },
+    {
+     "type": "garden_cone",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "pirate",
+     "row": 0
+    },
+    {
+     "type": "pirate",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_zombie",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_gargantuar",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "pirate",
+     "row": 0
+    },
+    {
+     "type": "garden_poet",
+     "row": 1
+    },
+    {
+     "type": "garden_poet",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_zombie",
+     "row": 0
+    },
+    {
+     "type": "garden_zombie",
+     "row": 1
+    },
+    {
+     "type": "garden_zombie",
+     "row": 2
+    },
+    {
+     "type": "garden_zombie",
+     "row": 3
+    },
+    {
+     "type": "garden_zombie",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "garden_gargantuar",
+     "row": 0
+    }
+   ]
+  }
+ ],
+ "flags": 2,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_0409",
+  "stage": "ChineseGardenNightsStage",
+  "name_key": "[ELEMENT_LEVEL_NAME]",
+  "level_number": 2,
+  "wave_count": 12,
+  "original_waves": 12,
+  "night": true
+ }
+}

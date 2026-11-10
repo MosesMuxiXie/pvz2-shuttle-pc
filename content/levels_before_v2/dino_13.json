@@ -1,0 +1,199 @@
+{
+ "id": "dino_13",
+ "world": "dino",
+ "index": 13,
+ "title": "SHUTTLE - JM - Day 13",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "bonkchoy"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "cowboy",
+     "row": 4
+    },
+    {
+     "type": "cowboy",
+     "row": 4
+    },
+    {
+     "type": "cowboy",
+     "row": 4
+    },
+    {
+     "type": "cowboy",
+     "row": 4
+    },
+    {
+     "type": "cowboy",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "cowboy",
+     "row": 3
+    },
+    {
+     "type": "cowboy",
+     "row": 3
+    },
+    {
+     "type": "cowboy",
+     "row": 3
+    },
+    {
+     "type": "cowboy",
+     "row": 3
+    },
+    {
+     "type": "cowboy",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "cowboy",
+     "row": 4
+    },
+    {
+     "type": "cowboy",
+     "row": 4
+    },
+    {
+     "type": "cowboy",
+     "row": 4
+    },
+    {
+     "type": "cowboy",
+     "row": 4
+    },
+    {
+     "type": "cowboy",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "pirate",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "buckethead",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "cowboy",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "cowboy",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "cowboy",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "dark",
+     "row": 0
+    },
+    {
+     "type": "dark",
+     "row": 4
+    },
+    {
+     "type": "dark",
+     "row": 3
+    },
+    {
+     "type": "dark",
+     "row": 2
+    },
+    {
+     "type": "dark",
+     "row": 1
+    }
+   ]
+  }
+ ],
+ "flags": 1,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_0577",
+  "stage": "DinoStage",
+  "name_key": "[DINO_LEVEL_NAME]",
+  "level_number": 1,
+  "wave_count": 10,
+  "original_waves": 10,
+  "night": false
+ }
+}

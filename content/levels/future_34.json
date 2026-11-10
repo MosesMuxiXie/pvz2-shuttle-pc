@@ -1,0 +1,275 @@
+{
+ "id": "future_34",
+ "world": "future",
+ "index": 34,
+ "title": "第 34 关",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "bloomerang"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "future",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "future",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "future",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "future",
+     "row": 0
+    },
+    {
+     "type": "future",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "future",
+     "row": 0
+    },
+    {
+     "type": "future",
+     "row": 1
+    },
+    {
+     "type": "future",
+     "row": 2
+    },
+    {
+     "type": "future",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "future",
+     "row": 0
+    },
+    {
+     "type": "future",
+     "row": 1
+    },
+    {
+     "type": "future",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "future",
+     "row": 0
+    },
+    {
+     "type": "future",
+     "row": 1
+    },
+    {
+     "type": "future",
+     "row": 2
+    },
+    {
+     "type": "future",
+     "row": 3
+    },
+    {
+     "type": "future",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "future",
+     "row": 0
+    },
+    {
+     "type": "future",
+     "row": 1
+    },
+    {
+     "type": "future",
+     "row": 2
+    },
+    {
+     "type": "future",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "future",
+     "row": 0
+    },
+    {
+     "type": "future",
+     "row": 1
+    },
+    {
+     "type": "future",
+     "row": 2
+    },
+    {
+     "type": "future",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "future",
+     "row": 0
+    },
+    {
+     "type": "future_armor1",
+     "row": 1
+    },
+    {
+     "type": "future_armor1",
+     "row": 2
+    },
+    {
+     "type": "future",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "future",
+     "row": 0
+    },
+    {
+     "type": "future_armor1",
+     "row": 1
+    },
+    {
+     "type": "future_armor1",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "buckethead",
+     "row": 0
+    },
+    {
+     "type": "future",
+     "row": 1
+    },
+    {
+     "type": "future",
+     "row": 2
+    },
+    {
+     "type": "future",
+     "row": 3
+    },
+    {
+     "type": "future",
+     "row": 4
+    },
+    {
+     "type": "future",
+     "row": 0
+    },
+    {
+     "type": "future",
+     "row": 1
+    },
+    {
+     "type": "future",
+     "row": 2
+    },
+    {
+     "type": "future",
+     "row": 3
+    },
+    {
+     "type": "future",
+     "row": 4
+    },
+    {
+     "type": "future",
+     "row": 0
+    },
+    {
+     "type": "future",
+     "row": 1
+    }
+   ]
+  }
+ ],
+ "flags": 1,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_0498",
+  "stage": "FutureStage",
+  "name_key": "Linked Tiles",
+  "level_number": 34,
+  "wave_count": 12,
+  "original_waves": 12,
+  "night": false
+ }
+}

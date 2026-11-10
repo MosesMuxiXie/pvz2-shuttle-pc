@@ -1,0 +1,391 @@
+{
+ "id": "kongfu_70",
+ "world": "kongfu",
+ "index": 70,
+ "title": "笑傲风月 - 第 70 关",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "bonkchoy"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "pirate",
+     "row": 0
+    },
+    {
+     "type": "pirate",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 0
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 0
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 3
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 0
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 3
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 0
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 0
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    },
+    {
+     "type": "buckethead",
+     "row": 4
+    },
+    {
+     "type": "buckethead",
+     "row": 0
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "future",
+     "row": 2
+    },
+    {
+     "type": "future",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 0
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 3
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    },
+    {
+     "type": "kongfu",
+     "row": 0
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "gargantuar",
+     "row": 1
+    },
+    {
+     "type": "gargantuar",
+     "row": 3
+    },
+    {
+     "type": "gargantuar",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "newspaper",
+     "row": 1
+    },
+    {
+     "type": "newspaper",
+     "row": 2
+    },
+    {
+     "type": "newspaper",
+     "row": 4
+    },
+    {
+     "type": "kongfu",
+     "row": 3
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    },
+    {
+     "type": "kongfu",
+     "row": 0
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "cowboy",
+     "row": 0
+    },
+    {
+     "type": "cowboy",
+     "row": 1
+    },
+    {
+     "type": "cowboy",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 3
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    },
+    {
+     "type": "kongfu",
+     "row": 0
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 0
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "gargantuar",
+     "row": 4
+    },
+    {
+     "type": "gargantuar",
+     "row": 2
+    },
+    {
+     "type": "gargantuar",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 3
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 0
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    },
+    {
+     "type": "buckethead",
+     "row": 4
+    },
+    {
+     "type": "buckethead",
+     "row": 0
+    },
+    {
+     "type": "pirate",
+     "row": 1
+    },
+    {
+     "type": "pirate",
+     "row": 2
+    },
+    {
+     "type": "pirate",
+     "row": 3
+    }
+   ]
+  }
+ ],
+ "flags": 4,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_0765",
+  "stage": "KongfuFunTimeStage",
+  "name_key": "[LTE_LEVEL_NAME_FUNTIME]",
+  "level_number": 8,
+  "wave_count": 12,
+  "original_waves": 12,
+  "night": false
+ }
+}

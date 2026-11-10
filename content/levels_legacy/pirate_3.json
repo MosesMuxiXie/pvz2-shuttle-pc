@@ -1,0 +1,398 @@
+{
+  "id": "pirate_3",
+  "world": "pirate",
+  "index": 3,
+  "title": "第 3 天",
+  "sun": 300,
+  "deck": [
+    "sunflower",
+    "peashooter",
+    "wallnut",
+    "repeater",
+    "kernelpult",
+    "torchwood"
+  ],
+  "waves": [
+    {
+      "delay": 18,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "pirate",
+          "row": 0
+        },
+        {
+          "type": "pirate",
+          "row": 0
+        },
+        {
+          "type": "pirate",
+          "row": 0
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "pirate",
+          "row": 1
+        },
+        {
+          "type": "pirate",
+          "row": 1
+        },
+        {
+          "type": "pirate",
+          "row": 1
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "pirate",
+          "row": 0
+        },
+        {
+          "type": "pirate",
+          "row": 0
+        },
+        {
+          "type": "pirate",
+          "row": 0
+        },
+        {
+          "type": "pirate",
+          "row": 1
+        },
+        {
+          "type": "pirate",
+          "row": 1
+        },
+        {
+          "type": "pirate",
+          "row": 1
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "pirate",
+          "row": 2
+        },
+        {
+          "type": "pirate",
+          "row": 2
+        },
+        {
+          "type": "pirate",
+          "row": 2
+        }
+      ]
+    },
+    {
+      "delay": 24,
+      "flag": true,
+      "zombies": [
+        {
+          "type": "pirate",
+          "row": 3
+        },
+        {
+          "type": "pirate",
+          "row": 3
+        },
+        {
+          "type": "pirate",
+          "row": 3
+        },
+        {
+          "type": "pirate",
+          "row": 2
+        },
+        {
+          "type": "pirate",
+          "row": 2
+        },
+        {
+          "type": "pirate",
+          "row": 2
+        },
+        {
+          "type": "pirate",
+          "row": 3
+        },
+        {
+          "type": "pirate",
+          "row": 3
+        },
+        {
+          "type": "pirate",
+          "row": 3
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "pirate",
+          "row": 4
+        },
+        {
+          "type": "pirate",
+          "row": 4
+        },
+        {
+          "type": "pirate",
+          "row": 4
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "pirate",
+          "row": 4
+        },
+        {
+          "type": "pirate",
+          "row": 4
+        },
+        {
+          "type": "pirate",
+          "row": 4
+        },
+        {
+          "type": "pirate",
+          "row": 4
+        },
+        {
+          "type": "pirate",
+          "row": 0
+        },
+        {
+          "type": "pirate",
+          "row": 0
+        },
+        {
+          "type": "pirate",
+          "row": 0
+        },
+        {
+          "type": "pirate",
+          "row": 0
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "pirate",
+          "row": 4
+        },
+        {
+          "type": "pirate",
+          "row": 4
+        },
+        {
+          "type": "pirate",
+          "row": 4
+        },
+        {
+          "type": "pirate",
+          "row": 4
+        },
+        {
+          "type": "pirate",
+          "row": 2
+        },
+        {
+          "type": "pirate",
+          "row": 2
+        },
+        {
+          "type": "pirate",
+          "row": 2
+        },
+        {
+          "type": "pirate",
+          "row": 2
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "pirate",
+          "row": 3
+        },
+        {
+          "type": "pirate",
+          "row": 3
+        },
+        {
+          "type": "pirate",
+          "row": 3
+        },
+        {
+          "type": "pirate",
+          "row": 3
+        },
+        {
+          "type": "pirate",
+          "row": 3
+        },
+        {
+          "type": "pirate",
+          "row": 1
+        },
+        {
+          "type": "pirate",
+          "row": 1
+        },
+        {
+          "type": "pirate",
+          "row": 1
+        },
+        {
+          "type": "pirate",
+          "row": 1
+        },
+        {
+          "type": "pirate",
+          "row": 1
+        }
+      ]
+    },
+    {
+      "delay": 24,
+      "flag": true,
+      "zombies": [
+        {
+          "type": "pirate",
+          "row": 3
+        },
+        {
+          "type": "pirate",
+          "row": 3
+        },
+        {
+          "type": "pirate",
+          "row": 3
+        },
+        {
+          "type": "pirate",
+          "row": 3
+        },
+        {
+          "type": "pirate",
+          "row": 3
+        },
+        {
+          "type": "pirate",
+          "row": 2
+        },
+        {
+          "type": "pirate",
+          "row": 2
+        },
+        {
+          "type": "pirate",
+          "row": 2
+        },
+        {
+          "type": "pirate",
+          "row": 2
+        },
+        {
+          "type": "pirate",
+          "row": 2
+        },
+        {
+          "type": "pirate",
+          "row": 0
+        },
+        {
+          "type": "pirate",
+          "row": 1
+        },
+        {
+          "type": "pirate",
+          "row": 2
+        },
+        {
+          "type": "pirate",
+          "row": 3
+        },
+        {
+          "type": "pirate",
+          "row": 4
+        },
+        {
+          "type": "pirate",
+          "row": 4
+        },
+        {
+          "type": "pirate",
+          "row": 4
+        },
+        {
+          "type": "pirate",
+          "row": 4
+        },
+        {
+          "type": "pirate",
+          "row": 3
+        },
+        {
+          "type": "pirate",
+          "row": 3
+        },
+        {
+          "type": "pirate",
+          "row": 3
+        },
+        {
+          "type": "pirate",
+          "row": 2
+        },
+        {
+          "type": "pirate",
+          "row": 2
+        },
+        {
+          "type": "pirate",
+          "row": 2
+        },
+        {
+          "type": "pirate",
+          "row": 1
+        },
+        {
+          "type": "pirate",
+          "row": 1
+        }
+      ]
+    }
+  ],
+  "flags": 2,
+  "seed_bank": 6,
+  "extra": {
+    "truncated_zombies": 4
+  }
+}

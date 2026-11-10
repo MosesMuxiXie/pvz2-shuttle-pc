@@ -1,0 +1,703 @@
+{
+ "id": "beach_94",
+ "world": "beach",
+ "index": 94,
+ "title": "六周年庆典 - 第 94 回",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "bloomerang"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "pirate",
+     "row": 0
+    },
+    {
+     "type": "pirate",
+     "row": 1
+    },
+    {
+     "type": "pirate",
+     "row": 2
+    },
+    {
+     "type": "beach",
+     "row": 3
+    },
+    {
+     "type": "beach",
+     "row": 4
+    },
+    {
+     "type": "beach",
+     "row": 0
+    },
+    {
+     "type": "beach",
+     "row": 1
+    },
+    {
+     "type": "beach",
+     "row": 2
+    },
+    {
+     "type": "beach",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "beach",
+     "row": 3
+    },
+    {
+     "type": "beach",
+     "row": 3
+    },
+    {
+     "type": "beach",
+     "row": 3
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    },
+    {
+     "type": "buckethead",
+     "row": 4
+    },
+    {
+     "type": "buckethead",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "beach",
+     "row": 0
+    },
+    {
+     "type": "beach",
+     "row": 1
+    },
+    {
+     "type": "beach",
+     "row": 2
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 3
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 4
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 0
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 1
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 2
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 3
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 4
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 0
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 1
+    },
+    {
+     "type": "beach",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "pirate",
+     "row": 0
+    },
+    {
+     "type": "pirate",
+     "row": 1
+    },
+    {
+     "type": "pirate",
+     "row": 2
+    },
+    {
+     "type": "pirate",
+     "row": 3
+    },
+    {
+     "type": "beach",
+     "row": 4
+    },
+    {
+     "type": "beach",
+     "row": 0
+    },
+    {
+     "type": "beach",
+     "row": 1
+    },
+    {
+     "type": "beach",
+     "row": 2
+    },
+    {
+     "type": "beach",
+     "row": 3
+    },
+    {
+     "type": "beach",
+     "row": 4
+    },
+    {
+     "type": "beach",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "pirate",
+     "row": 0
+    },
+    {
+     "type": "pirate",
+     "row": 1
+    },
+    {
+     "type": "pirate",
+     "row": 2
+    },
+    {
+     "type": "pirate",
+     "row": 3
+    },
+    {
+     "type": "beach",
+     "row": 4
+    },
+    {
+     "type": "beach",
+     "row": 0
+    },
+    {
+     "type": "beach",
+     "row": 1
+    },
+    {
+     "type": "beach",
+     "row": 2
+    },
+    {
+     "type": "beach",
+     "row": 3
+    },
+    {
+     "type": "beach",
+     "row": 4
+    },
+    {
+     "type": "beach",
+     "row": 0
+    },
+    {
+     "type": "beach",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 2
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "flag",
+     "row": 0
+    },
+    {
+     "type": "beach",
+     "row": 1
+    },
+    {
+     "type": "beach",
+     "row": 2
+    },
+    {
+     "type": "beach",
+     "row": 4
+    },
+    {
+     "type": "beach",
+     "row": 2
+    },
+    {
+     "type": "beach",
+     "row": 0
+    },
+    {
+     "type": "beach",
+     "row": 1
+    },
+    {
+     "type": "beach",
+     "row": 2
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    },
+    {
+     "type": "buckethead",
+     "row": 4
+    },
+    {
+     "type": "buckethead",
+     "row": 0
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "pirate",
+     "row": 2
+    },
+    {
+     "type": "pirate",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "beach",
+     "row": 0
+    },
+    {
+     "type": "gargantuar",
+     "row": 3
+    },
+    {
+     "type": "gargantuar",
+     "row": 3
+    },
+    {
+     "type": "beach",
+     "row": 3
+    },
+    {
+     "type": "beach",
+     "row": 4
+    },
+    {
+     "type": "beach",
+     "row": 0
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 1
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 2
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 3
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 4
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 0
+    },
+    {
+     "type": "beach",
+     "row": 3
+    },
+    {
+     "type": "beach",
+     "row": 3
+    },
+    {
+     "type": "beach",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "beach",
+     "row": 0
+    },
+    {
+     "type": "beach",
+     "row": 1
+    },
+    {
+     "type": "gargantuar",
+     "row": 3
+    },
+    {
+     "type": "gargantuar",
+     "row": 3
+    },
+    {
+     "type": "beach",
+     "row": 4
+    },
+    {
+     "type": "beach",
+     "row": 0
+    },
+    {
+     "type": "beach",
+     "row": 1
+    },
+    {
+     "type": "beach",
+     "row": 2
+    },
+    {
+     "type": "beach",
+     "row": 3
+    },
+    {
+     "type": "beach",
+     "row": 4
+    },
+    {
+     "type": "beach",
+     "row": 0
+    },
+    {
+     "type": "beach",
+     "row": 1
+    },
+    {
+     "type": "beach",
+     "row": 2
+    },
+    {
+     "type": "beach",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "pirate",
+     "row": 0
+    },
+    {
+     "type": "pirate",
+     "row": 1
+    },
+    {
+     "type": "pirate",
+     "row": 2
+    },
+    {
+     "type": "pirate",
+     "row": 3
+    },
+    {
+     "type": "gargantuar",
+     "row": 3
+    },
+    {
+     "type": "gargantuar",
+     "row": 3
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 2
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    },
+    {
+     "type": "buckethead",
+     "row": 4
+    },
+    {
+     "type": "buckethead",
+     "row": 0
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 2
+    },
+    {
+     "type": "beach",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "gargantuar",
+     "row": 3
+    },
+    {
+     "type": "gargantuar",
+     "row": 3
+    },
+    {
+     "type": "beach",
+     "row": 1
+    },
+    {
+     "type": "beach",
+     "row": 2
+    },
+    {
+     "type": "beach",
+     "row": 3
+    },
+    {
+     "type": "beach",
+     "row": 4
+    },
+    {
+     "type": "beach",
+     "row": 0
+    },
+    {
+     "type": "beach",
+     "row": 1
+    },
+    {
+     "type": "beach",
+     "row": 2
+    },
+    {
+     "type": "beach",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "beach",
+     "row": 4
+    },
+    {
+     "type": "beach",
+     "row": 3
+    },
+    {
+     "type": "beach",
+     "row": 3
+    },
+    {
+     "type": "beach",
+     "row": 3
+    },
+    {
+     "type": "beach",
+     "row": 4
+    },
+    {
+     "type": "beach",
+     "row": 0
+    },
+    {
+     "type": "beach",
+     "row": 1
+    },
+    {
+     "type": "beach",
+     "row": 2
+    },
+    {
+     "type": "gargantuar",
+     "row": 3
+    },
+    {
+     "type": "gargantuar",
+     "row": 3
+    },
+    {
+     "type": "beach",
+     "row": 0
+    },
+    {
+     "type": "beach",
+     "row": 1
+    },
+    {
+     "type": "beach",
+     "row": 2
+    },
+    {
+     "type": "beach",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "flag",
+     "row": 3
+    },
+    {
+     "type": "gargantuar",
+     "row": 3
+    },
+    {
+     "type": "gargantuar",
+     "row": 3
+    },
+    {
+     "type": "beach",
+     "row": 3
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 4
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 0
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 1
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 2
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 3
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 4
+    },
+    {
+     "type": "pirate_armor1",
+     "row": 0
+    },
+    {
+     "type": "beach",
+     "row": 2
+    },
+    {
+     "type": "beach",
+     "row": 4
+    },
+    {
+     "type": "beach",
+     "row": 3
+    }
+   ]
+  }
+ ],
+ "flags": 2,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_0937",
+  "stage": "BeachUBStage",
+  "name_key": "[LTE_LEVEL_NAME_SIXTHANNIVERSARY]",
+  "level_number": 27,
+  "wave_count": 12,
+  "original_waves": 12,
+  "night": false
+ }
+}

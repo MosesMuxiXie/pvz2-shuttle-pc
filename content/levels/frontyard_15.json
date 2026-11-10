@@ -1,0 +1,38 @@
+{
+ "id": "frontyard_15",
+ "world": "frontyard",
+ "index": 15,
+ "title": "Your House - Chapter 2 - Night 15",
+ "sun": 550,
+ "deck": [
+  "snowpea",
+  "peashooter",
+  "sunshroom",
+  "wallnut",
+  "potatomine"
+ ],
+ "waves": [
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 2
+    }
+   ]
+  }
+ ],
+ "flags": 1,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_1998",
+  "stage": "NightStage",
+  "name_key": "[YOURHOUSE_CHAPTER2_LEVEL_NAME]",
+  "level_number": 1,
+  "wave_count": 1,
+  "original_waves": 14,
+  "night": true
+ }
+}

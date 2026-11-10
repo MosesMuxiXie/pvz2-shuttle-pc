@@ -1,0 +1,667 @@
+{
+ "id": "renai_3",
+ "world": "renai",
+ "index": 3,
+ "title": "恋爱剧场·远征 - 夜晚 3",
+ "sun": 230,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "bloomerang"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 3
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    },
+    {
+     "type": "kongfu",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 3
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 3
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 3
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 3
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 3
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 3
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 3
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 3
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 3
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 3
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 3
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 3
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 3
+    },
+    {
+     "type": "kongfu",
+     "row": 3
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_winetasting",
+     "row": 0
+    },
+    {
+     "type": "royal_winetasting",
+     "row": 1
+    },
+    {
+     "type": "royal_winetasting",
+     "row": 2
+    },
+    {
+     "type": "royal_winetasting",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "gargantuar",
+     "row": 3
+    },
+    {
+     "type": "gargantuar",
+     "row": 1
+    },
+    {
+     "type": "gargantuar",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "dark",
+     "row": 0
+    },
+    {
+     "type": "dark",
+     "row": 1
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 2
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_winetasting",
+     "row": 0
+    },
+    {
+     "type": "royal_winetasting",
+     "row": 1
+    },
+    {
+     "type": "royal_winetasting",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_noblewoman",
+     "row": 0
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 1
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 2
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "dark",
+     "row": 0
+    },
+    {
+     "type": "dark",
+     "row": 1
+    },
+    {
+     "type": "dark",
+     "row": 2
+    },
+    {
+     "type": "dark",
+     "row": 3
+    },
+    {
+     "type": "dark",
+     "row": 4
+    },
+    {
+     "type": "dark",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "dark",
+     "row": 0
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 1
+    },
+    {
+     "type": "dark",
+     "row": 2
+    },
+    {
+     "type": "dark",
+     "row": 3
+    },
+    {
+     "type": "dark",
+     "row": 4
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 3
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 3
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_noblewoman",
+     "row": 3
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 2
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 4
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 1
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 4
+    },
+    {
+     "type": "dark",
+     "row": 1
+    },
+    {
+     "type": "dark",
+     "row": 1
+    },
+    {
+     "type": "dark",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "royal_winetasting",
+     "row": 2
+    },
+    {
+     "type": "dark",
+     "row": 2
+    },
+    {
+     "type": "royal_winetasting",
+     "row": 3
+    },
+    {
+     "type": "royal_winetasting",
+     "row": 1
+    },
+    {
+     "type": "royal_winetasting",
+     "row": 4
+    },
+    {
+     "type": "royal_winetasting",
+     "row": 4
+    },
+    {
+     "type": "dark",
+     "row": 4
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 2
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 4
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 2
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 4
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 1
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    }
+   ]
+  }
+ ],
+ "flags": 2,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_1198",
+  "stage": "RenaiNightsStage",
+  "name_key": "[RENAI_EXPAND_NIGHT_LEVEL_NAME]",
+  "level_number": 2,
+  "wave_count": 18,
+  "original_waves": 18,
+  "night": true
+ }
+}

@@ -1,0 +1,321 @@
+{
+ "id": "fairy_45",
+ "world": "fairy",
+ "index": 45,
+ "title": "幽梦寻踪 - 第 45 关",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "bloomerang"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "conehead",
+     "row": 1
+    },
+    {
+     "type": "conehead",
+     "row": 2
+    },
+    {
+     "type": "conehead",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "conehead",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "conehead",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "conehead",
+     "row": 3
+    },
+    {
+     "type": "conehead",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "conehead",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "conehead",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "flag",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "cowboy",
+     "row": 3
+    },
+    {
+     "type": "cowboy",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "conehead",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "conehead",
+     "row": 1
+    },
+    {
+     "type": "conehead",
+     "row": 2
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "conehead",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "cowboy",
+     "row": 1
+    },
+    {
+     "type": "conehead",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "eighties",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "football",
+     "row": 4
+    },
+    {
+     "type": "basic",
+     "row": 3
+    },
+    {
+     "type": "cowboy",
+     "row": 1
+    },
+    {
+     "type": "cowboy",
+     "row": 3
+    },
+    {
+     "type": "cowboy",
+     "row": 3
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "flag",
+     "row": 0
+    },
+    {
+     "type": "conehead",
+     "row": 1
+    },
+    {
+     "type": "conehead",
+     "row": 3
+    },
+    {
+     "type": "conehead",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "conehead",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 4
+    }
+   ]
+  }
+ ],
+ "flags": 3,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_1037",
+  "stage": "FairyNightsUBStage",
+  "name_key": "[LTE_LEVEL_NAME_TIMESPACEECHOES_S5]",
+  "level_number": 9,
+  "wave_count": 11,
+  "original_waves": 11,
+  "night": true
+ }
+}

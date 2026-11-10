@@ -1,0 +1,875 @@
+{
+ "id": "plantagenet_9",
+ "world": "plantagenet",
+ "index": 9,
+ "title": "金雀花王朝 - 第 9 天 - 时空混乱",
+ "sun": 470,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "iris",
+  "olivewood"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 0
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 0
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 3
+    },
+    {
+     "type": "royal_zombie",
+     "row": 4
+    },
+    {
+     "type": "royal_zombie",
+     "row": 0
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 0
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 1
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 3
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    },
+    {
+     "type": "kongfu",
+     "row": 0
+    },
+    {
+     "type": "mummy_armor1",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 3
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    },
+    {
+     "type": "royal_zombie",
+     "row": 0
+    },
+    {
+     "type": "mummy_armor1",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 4
+    },
+    {
+     "type": "royal_zombie",
+     "row": 0
+    },
+    {
+     "type": "mummy_armor1",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "mummy_armor1",
+     "row": 3
+    },
+    {
+     "type": "royal_zombie",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 1
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 3
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 0
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 4
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 0
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 4
+    },
+    {
+     "type": "royal_zombie",
+     "row": 0
+    },
+    {
+     "type": "royal_zombie",
+     "row": 4
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 3
+    },
+    {
+     "type": "royal_zombie",
+     "row": 4
+    },
+    {
+     "type": "kongfu",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 4
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 0
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 1
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 0
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "gargantuar",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 4
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "mummy_armor1",
+     "row": 0
+    },
+    {
+     "type": "mummy_armor1",
+     "row": 4
+    },
+    {
+     "type": "mummy_armor1",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 3
+    },
+    {
+     "type": "royal_zombie",
+     "row": 4
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 1
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 0
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 0
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 3
+    },
+    {
+     "type": "royal_zombie",
+     "row": 4
+    },
+    {
+     "type": "royal_zombie",
+     "row": 0
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 0
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 1
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 3
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    },
+    {
+     "type": "kongfu",
+     "row": 0
+    },
+    {
+     "type": "mummy_armor1",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 3
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    },
+    {
+     "type": "royal_zombie",
+     "row": 0
+    },
+    {
+     "type": "mummy_armor1",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 4
+    },
+    {
+     "type": "royal_zombie",
+     "row": 0
+    },
+    {
+     "type": "mummy_armor1",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "mummy_armor1",
+     "row": 3
+    },
+    {
+     "type": "royal_zombie",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 1
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 3
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 0
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 4
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 0
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 4
+    },
+    {
+     "type": "royal_zombie",
+     "row": 0
+    },
+    {
+     "type": "royal_zombie",
+     "row": 4
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 3
+    },
+    {
+     "type": "royal_zombie",
+     "row": 4
+    },
+    {
+     "type": "kongfu",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 4
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 0
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 1
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 0
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "gargantuar",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 4
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "mummy_armor1",
+     "row": 0
+    },
+    {
+     "type": "mummy_armor1",
+     "row": 4
+    },
+    {
+     "type": "mummy_armor1",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 3
+    },
+    {
+     "type": "royal_zombie",
+     "row": 4
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 1
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 3
+    }
+   ]
+  }
+ ],
+ "flags": 4,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_1567",
+  "stage": "PlantagenetUBStage",
+  "name_key": "[PLANTAGENET_LEVEL_NAME_10]",
+  "level_number": 10,
+  "wave_count": 20,
+  "original_waves": 20,
+  "night": false
+ }
+}

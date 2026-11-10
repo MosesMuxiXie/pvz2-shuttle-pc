@@ -1,0 +1,623 @@
+{
+ "id": "lunarrainbowmarket_102",
+ "world": "lunarrainbowmarket",
+ "index": 102,
+ "title": "自破碎的天空坠落 - 第 102 关",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "begonia",
+  "potatochip",
+  "missiletoast"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "market_trapeze",
+     "row": 1
+    },
+    {
+     "type": "market_armor2",
+     "row": 3
+    },
+    {
+     "type": "market_armor2",
+     "row": 4
+    },
+    {
+     "type": "market_trapeze",
+     "row": 3
+    },
+    {
+     "type": "market_armor2",
+     "row": 2
+    },
+    {
+     "type": "market_armor2",
+     "row": 0
+    },
+    {
+     "type": "market_trapeze",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "market_armor1",
+     "row": 1
+    },
+    {
+     "type": "garden_poet",
+     "row": 2
+    },
+    {
+     "type": "market_armor1",
+     "row": 3
+    },
+    {
+     "type": "market_armor1",
+     "row": 4
+    },
+    {
+     "type": "garden_poet",
+     "row": 0
+    },
+    {
+     "type": "market_armor1",
+     "row": 1
+    },
+    {
+     "type": "market_armor1",
+     "row": 2
+    },
+    {
+     "type": "garden_poet",
+     "row": 3
+    },
+    {
+     "type": "market_armor1",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_poet",
+     "row": 0
+    },
+    {
+     "type": "market_trapeze",
+     "row": 2
+    },
+    {
+     "type": "market_armor1",
+     "row": 2
+    },
+    {
+     "type": "market_trapeze",
+     "row": 4
+    },
+    {
+     "type": "market_armor1",
+     "row": 4
+    },
+    {
+     "type": "garden_poet",
+     "row": 0
+    },
+    {
+     "type": "market_armor1",
+     "row": 1
+    },
+    {
+     "type": "market_armor1",
+     "row": 2
+    },
+    {
+     "type": "garden_poet",
+     "row": 3
+    },
+    {
+     "type": "market_armor1",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_poet",
+     "row": 0
+    },
+    {
+     "type": "garden_poet",
+     "row": 1
+    },
+    {
+     "type": "market_armor1",
+     "row": 2
+    },
+    {
+     "type": "market_mechanic",
+     "row": 3
+    },
+    {
+     "type": "market_armor1",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "market_mechanic",
+     "row": 1
+    },
+    {
+     "type": "market_mechanic",
+     "row": 4
+    },
+    {
+     "type": "garden_poet",
+     "row": 2
+    },
+    {
+     "type": "garden_poet",
+     "row": 3
+    },
+    {
+     "type": "garden_poet",
+     "row": 4
+    },
+    {
+     "type": "garden_poet",
+     "row": 0
+    },
+    {
+     "type": "garden_poet",
+     "row": 1
+    },
+    {
+     "type": "garden_poet",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_poet",
+     "row": 0
+    },
+    {
+     "type": "market_mechanic",
+     "row": 2
+    },
+    {
+     "type": "market_mechanic",
+     "row": 3
+    },
+    {
+     "type": "garden_poet",
+     "row": 3
+    },
+    {
+     "type": "market_armor1",
+     "row": 4
+    },
+    {
+     "type": "garden_poet",
+     "row": 0
+    },
+    {
+     "type": "market_armor1",
+     "row": 1
+    },
+    {
+     "type": "market_armor1",
+     "row": 2
+    },
+    {
+     "type": "garden_poet",
+     "row": 3
+    },
+    {
+     "type": "market_armor1",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 0
+    },
+    {
+     "type": "garden_poet",
+     "row": 1
+    },
+    {
+     "type": "market_armor2",
+     "row": 2
+    },
+    {
+     "type": "garden_poet",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 4
+    },
+    {
+     "type": "market_armor1",
+     "row": 0
+    },
+    {
+     "type": "garden_poet",
+     "row": 1
+    },
+    {
+     "type": "market_armor1",
+     "row": 2
+    },
+    {
+     "type": "garden_poet",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_poet",
+     "row": 0
+    },
+    {
+     "type": "garden_poet",
+     "row": 1
+    },
+    {
+     "type": "market_trapeze",
+     "row": 1
+    },
+    {
+     "type": "garden_poet",
+     "row": 3
+    },
+    {
+     "type": "garden_poet",
+     "row": 4
+    },
+    {
+     "type": "market_trapeze",
+     "row": 0
+    },
+    {
+     "type": "market_armor1",
+     "row": 1
+    },
+    {
+     "type": "garden_poet",
+     "row": 2
+    },
+    {
+     "type": "market_armor1",
+     "row": 3
+    },
+    {
+     "type": "market_armor1",
+     "row": 4
+    },
+    {
+     "type": "garden_poet",
+     "row": 0
+    },
+    {
+     "type": "market_armor1",
+     "row": 1
+    },
+    {
+     "type": "market_armor1",
+     "row": 2
+    },
+    {
+     "type": "garden_poet",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "market_trapeze",
+     "row": 2
+    },
+    {
+     "type": "market_mechanic",
+     "row": 2
+    },
+    {
+     "type": "market_mechanic",
+     "row": 4
+    },
+    {
+     "type": "market_trapeze",
+     "row": 3
+    },
+    {
+     "type": "market_trapeze",
+     "row": 4
+    },
+    {
+     "type": "garden_poet",
+     "row": 0
+    },
+    {
+     "type": "market_mechanic",
+     "row": 1
+    },
+    {
+     "type": "market_mechanic",
+     "row": 2
+    },
+    {
+     "type": "market_trapeze",
+     "row": 1
+    },
+    {
+     "type": "market_armor1",
+     "row": 4
+    },
+    {
+     "type": "garden_poet",
+     "row": 0
+    },
+    {
+     "type": "market_armor1",
+     "row": 1
+    },
+    {
+     "type": "market_armor1",
+     "row": 2
+    },
+    {
+     "type": "garden_poet",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "market_armor1",
+     "row": 0
+    },
+    {
+     "type": "market_armor2",
+     "row": 1
+    },
+    {
+     "type": "market_armor1",
+     "row": 2
+    },
+    {
+     "type": "market_armor1",
+     "row": 3
+    },
+    {
+     "type": "market_armor2",
+     "row": 4
+    },
+    {
+     "type": "market_armor1",
+     "row": 0
+    },
+    {
+     "type": "garden_poet",
+     "row": 1
+    },
+    {
+     "type": "market_armor1",
+     "row": 2
+    },
+    {
+     "type": "market_armor1",
+     "row": 3
+    },
+    {
+     "type": "garden_poet",
+     "row": 4
+    },
+    {
+     "type": "market_armor1",
+     "row": 0
+    },
+    {
+     "type": "market_armor1",
+     "row": 1
+    },
+    {
+     "type": "garden_poet",
+     "row": 2
+    },
+    {
+     "type": "market_armor1",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "market_armor2",
+     "row": 0
+    },
+    {
+     "type": "market_mechanic",
+     "row": 1
+    },
+    {
+     "type": "market_armor1",
+     "row": 2
+    },
+    {
+     "type": "garden_poet",
+     "row": 3
+    },
+    {
+     "type": "market_armor2",
+     "row": 4
+    },
+    {
+     "type": "market_mechanic",
+     "row": 0
+    },
+    {
+     "type": "basic",
+     "row": 1
+    },
+    {
+     "type": "garden_poet",
+     "row": 2
+    },
+    {
+     "type": "market_armor1",
+     "row": 3
+    },
+    {
+     "type": "garden_poet",
+     "row": 4
+    },
+    {
+     "type": "market_armor1",
+     "row": 0
+    },
+    {
+     "type": "market_armor1",
+     "row": 1
+    },
+    {
+     "type": "garden_poet",
+     "row": 2
+    },
+    {
+     "type": "market_armor1",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "market_mechanic",
+     "row": 0
+    },
+    {
+     "type": "market_mechanic",
+     "row": 1
+    },
+    {
+     "type": "market_mechanic",
+     "row": 2
+    },
+    {
+     "type": "market_mechanic",
+     "row": 3
+    },
+    {
+     "type": "market_armor1",
+     "row": 4
+    },
+    {
+     "type": "garden_poet",
+     "row": 0
+    },
+    {
+     "type": "market_armor1",
+     "row": 1
+    },
+    {
+     "type": "market_armor1",
+     "row": 2
+    },
+    {
+     "type": "garden_poet",
+     "row": 3
+    },
+    {
+     "type": "market_armor1",
+     "row": 4
+    },
+    {
+     "type": "market_armor1",
+     "row": 0
+    },
+    {
+     "type": "garden_poet",
+     "row": 1
+    },
+    {
+     "type": "market_armor1",
+     "row": 2
+    },
+    {
+     "type": "market_armor1",
+     "row": 3
+    }
+   ]
+  }
+ ],
+ "flags": 1,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_0674",
+  "stage": "MarketNightsStage",
+  "name_key": "[LTE_LEVEL_NAME_FIREFLY]",
+  "level_number": 4,
+  "wave_count": 12,
+  "original_waves": 12,
+  "night": true
+ }
+}

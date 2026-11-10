@@ -1,0 +1,247 @@
+{
+ "id": "plantagenet_1",
+ "world": "plantagenet",
+ "index": 1,
+ "title": "金雀花王朝 - 第 1 天 - 王朝衰落",
+ "sun": 150,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "iris",
+  "olivewood"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 0
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_noblewoman",
+     "row": 0
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 1
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_noblewoman",
+     "row": 2
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 1
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 2
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "royal_noblewoman",
+     "row": 0
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 4
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 2
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 2
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_noblewoman",
+     "row": 1
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 3
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_winetasting",
+     "row": 4
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_winetasting",
+     "row": 3
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 3
+    },
+    {
+     "type": "royal_zombie",
+     "row": 3
+    },
+    {
+     "type": "royal_zombie",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_winetasting",
+     "row": 0
+    },
+    {
+     "type": "royal_winetasting",
+     "row": 1
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 2
+    },
+    {
+     "type": "royal_winetasting",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "royal_noblewoman",
+     "row": 0
+    },
+    {
+     "type": "royal_winetasting",
+     "row": 4
+    },
+    {
+     "type": "royal_winetasting",
+     "row": 4
+    },
+    {
+     "type": "royal_winetasting",
+     "row": 3
+    },
+    {
+     "type": "royal_zombie",
+     "row": 3
+    },
+    {
+     "type": "royal_winetasting",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_winetasting",
+     "row": 1
+    }
+   ]
+  }
+ ],
+ "flags": 2,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_1566",
+  "stage": "PlantagenetStage",
+  "name_key": "[PLANTAGENET_LEVEL_NAME_1]",
+  "level_number": 1,
+  "wave_count": 10,
+  "original_waves": 10,
+  "night": false
+ }
+}

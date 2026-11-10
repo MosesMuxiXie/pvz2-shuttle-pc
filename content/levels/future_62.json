@@ -1,0 +1,209 @@
+{
+ "id": "future_62",
+ "world": "future",
+ "index": 62,
+ "title": "史诗任务：遥远未来的机械声！（62-2）",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "bloomerang"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "future",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "future",
+     "row": 2
+    },
+    {
+     "type": "future",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "future",
+     "row": 4
+    },
+    {
+     "type": "future",
+     "row": 0
+    },
+    {
+     "type": "future",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "future",
+     "row": 1
+    },
+    {
+     "type": "future",
+     "row": 2
+    },
+    {
+     "type": "future",
+     "row": 3
+    },
+    {
+     "type": "future",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "future_armor1",
+     "row": 3
+    },
+    {
+     "type": "future",
+     "row": 4
+    },
+    {
+     "type": "future",
+     "row": 0
+    },
+    {
+     "type": "future_armor1",
+     "row": 1
+    },
+    {
+     "type": "future",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "future_armor1",
+     "row": 0
+    },
+    {
+     "type": "future",
+     "row": 1
+    },
+    {
+     "type": "future",
+     "row": 2
+    },
+    {
+     "type": "future_armor1",
+     "row": 3
+    },
+    {
+     "type": "future",
+     "row": 4
+    },
+    {
+     "type": "future",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "future_armor1",
+     "row": 2
+    },
+    {
+     "type": "future",
+     "row": 3
+    },
+    {
+     "type": "future",
+     "row": 4
+    },
+    {
+     "type": "future_armor1",
+     "row": 0
+    },
+    {
+     "type": "future",
+     "row": 1
+    },
+    {
+     "type": "future",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "future_armor1",
+     "row": 4
+    },
+    {
+     "type": "future",
+     "row": 0
+    },
+    {
+     "type": "future",
+     "row": 1
+    },
+    {
+     "type": "future_armor1",
+     "row": 2
+    },
+    {
+     "type": "future",
+     "row": 3
+    },
+    {
+     "type": "future",
+     "row": 4
+    }
+   ]
+  }
+ ],
+ "flags": 1,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb-synth",
+  "package": "pkg_1288",
+  "stage": "FutureStage",
+  "name_key": "[EPIC_QUEST_FUTURE_NEW_TITLE]",
+  "level_number": 10,
+  "wave_count": 8,
+  "original_waves": 0,
+  "night": false,
+  "boss": true,
+  "boss_zombie": "zomboss"
+ }
+}

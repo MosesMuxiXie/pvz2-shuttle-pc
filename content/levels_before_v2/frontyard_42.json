@@ -1,0 +1,251 @@
+{
+ "id": "frontyard_42",
+ "world": "frontyard",
+ "index": 42,
+ "title": "棒打鲜橙史诗任务 - 第 42 步",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "potatomine"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "cowboy",
+     "row": 1
+    },
+    {
+     "type": "cowboy",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "cowboy",
+     "row": 0
+    },
+    {
+     "type": "conehead",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "cowboy",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "cowboy",
+     "row": 0
+    },
+    {
+     "type": "cowboy",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "cowboy",
+     "row": 0
+    },
+    {
+     "type": "cowboy",
+     "row": 1
+    },
+    {
+     "type": "cowboy",
+     "row": 2
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "cowboy",
+     "row": 0
+    },
+    {
+     "type": "cowboy",
+     "row": 1
+    },
+    {
+     "type": "gargantuar",
+     "row": 2
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "cowboy",
+     "row": 0
+    },
+    {
+     "type": "cowboy",
+     "row": 1
+    },
+    {
+     "type": "cowboy",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "cowboy",
+     "row": 0
+    },
+    {
+     "type": "cowboy",
+     "row": 1
+    },
+    {
+     "type": "cowboy",
+     "row": 2
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    },
+    {
+     "type": "buckethead",
+     "row": 4
+    },
+    {
+     "type": "cowboy",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "buckethead",
+     "row": 0
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 2
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    },
+    {
+     "type": "cowboy",
+     "row": 4
+    },
+    {
+     "type": "cowboy",
+     "row": 0
+    },
+    {
+     "type": "gargantuar",
+     "row": 1
+    },
+    {
+     "type": "gargantuar",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "cowboy",
+     "row": 0
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "gargantuar",
+     "row": 2
+    },
+    {
+     "type": "gargantuar",
+     "row": 3
+    },
+    {
+     "type": "gargantuar",
+     "row": 4
+    },
+    {
+     "type": "cowboy",
+     "row": 0
+    },
+    {
+     "type": "cowboy",
+     "row": 1
+    },
+    {
+     "type": "cowboy",
+     "row": 2
+    },
+    {
+     "type": "cowboy",
+     "row": 3
+    }
+   ]
+  }
+ ],
+ "flags": 2,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_1634",
+  "stage": "FrontLawnStage",
+  "name_key": "[EPIC_QUEST_FRESHORANGE_LEVEL_NAME]",
+  "level_number": 2,
+  "wave_count": 10,
+  "original_waves": 10,
+  "night": false
+ }
+}

@@ -1,0 +1,81 @@
+{
+ "id": "egypt_19",
+ "world": "egypt",
+ "index": 19,
+ "title": "Egypt Expand - Day 19",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "bloomerang"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "gargantuar",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "mummy_armor2",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "mummy_armor2",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "mummy_armor2",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "mummy_armor2",
+     "row": 3
+    },
+    {
+     "type": "gargantuar",
+     "row": 1
+    }
+   ]
+  }
+ ],
+ "flags": 1,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_1184",
+  "stage": "EgyptDMGStage",
+  "name_key": "[EGYPT_EXPAND_LEVEL_NAME]",
+  "level_number": 3,
+  "wave_count": 5,
+  "original_waves": 5,
+  "night": false
+ }
+}

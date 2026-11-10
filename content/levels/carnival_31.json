@@ -1,0 +1,323 @@
+{
+ "id": "carnival_31",
+ "world": "carnival",
+ "index": 31,
+ "title": "离谱位面 - 第 31 关",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "bloomerang"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "lostcity",
+     "row": 2
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "lostcity",
+     "row": 0
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "lostcity",
+     "row": 0
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "eighties",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 4
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "eighties",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "lostcity",
+     "row": 2
+    },
+    {
+     "type": "eighties",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 4
+    },
+    {
+     "type": "lostcity",
+     "row": 0
+    },
+    {
+     "type": "lostcity",
+     "row": 4
+    },
+    {
+     "type": "eighties",
+     "row": 2
+    },
+    {
+     "type": "gargantuar",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "lostcity",
+     "row": 0
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 4
+    },
+    {
+     "type": "lostcity",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "lostcity",
+     "row": 4
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 2
+    },
+    {
+     "type": "buckethead",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "lostcity",
+     "row": 0
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    },
+    {
+     "type": "gargantuar",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 4
+    },
+    {
+     "type": "lostcity",
+     "row": 0
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "gargantuar",
+     "row": 4
+    },
+    {
+     "type": "lostcity",
+     "row": 4
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 4
+    },
+    {
+     "type": "lostcity",
+     "row": 0
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    }
+   ]
+  }
+ ],
+ "flags": 2,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_0253",
+  "stage": "AprilFoolsStage",
+  "name_key": "[APRILFOOLS_LEVEL_NAME]",
+  "level_number": 22,
+  "wave_count": 10,
+  "original_waves": 10,
+  "night": false
+ }
+}

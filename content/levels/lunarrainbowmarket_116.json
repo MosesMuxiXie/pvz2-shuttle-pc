@@ -1,0 +1,759 @@
+{
+ "id": "lunarrainbowmarket_116",
+ "world": "lunarrainbowmarket",
+ "index": 116,
+ "title": "蛇舞新春 - 第 116 关 - 看那火树银花灿烂时",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "begonia",
+  "potatochip",
+  "missiletoast"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "market_clockwork",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "market_clockwork",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "iceage",
+     "row": 2
+    },
+    {
+     "type": "iceage",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "market_clockwork",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "market_clockwork",
+     "row": 1
+    },
+    {
+     "type": "market_armor1",
+     "row": 1
+    },
+    {
+     "type": "market_armor2",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "market_mechanic",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "market_clockwork",
+     "row": 0
+    },
+    {
+     "type": "market_armor1",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "gargantuar",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "market_clockwork",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "market_clockwork",
+     "row": 1
+    },
+    {
+     "type": "market_clockwork",
+     "row": 3
+    },
+    {
+     "type": "market_armor1",
+     "row": 2
+    },
+    {
+     "type": "market_armor1",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "market_clockwork",
+     "row": 0
+    },
+    {
+     "type": "market_clockwork",
+     "row": 1
+    },
+    {
+     "type": "market_clockwork",
+     "row": 2
+    },
+    {
+     "type": "market_clockwork",
+     "row": 3
+    },
+    {
+     "type": "market_clockwork",
+     "row": 4
+    },
+    {
+     "type": "market_clockwork",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "cowboy",
+     "row": 1
+    },
+    {
+     "type": "cowboy",
+     "row": 2
+    },
+    {
+     "type": "cowboy",
+     "row": 1
+    },
+    {
+     "type": "cowboy",
+     "row": 2
+    },
+    {
+     "type": "cowboy",
+     "row": 1
+    },
+    {
+     "type": "cowboy",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "market_armor2",
+     "row": 3
+    },
+    {
+     "type": "market_clockwork",
+     "row": 4
+    },
+    {
+     "type": "market_clockwork",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "market_mechanic",
+     "row": 1
+    },
+    {
+     "type": "market_mechanic",
+     "row": 3
+    },
+    {
+     "type": "gargantuar",
+     "row": 4
+    },
+    {
+     "type": "market_clockwork",
+     "row": 3
+    },
+    {
+     "type": "market_clockwork",
+     "row": 4
+    },
+    {
+     "type": "market_armor1",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "gargantuar",
+     "row": 1
+    },
+    {
+     "type": "market_armor1",
+     "row": 3
+    },
+    {
+     "type": "gargantuar",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "market_armor2",
+     "row": 1
+    },
+    {
+     "type": "market_armor2",
+     "row": 2
+    },
+    {
+     "type": "market_armor2",
+     "row": 3
+    },
+    {
+     "type": "market_armor2",
+     "row": 3
+    },
+    {
+     "type": "market_clockwork",
+     "row": 4
+    },
+    {
+     "type": "market_armor1",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "cowboy",
+     "row": 1
+    },
+    {
+     "type": "market_clockwork",
+     "row": 3
+    },
+    {
+     "type": "cowboy",
+     "row": 4
+    },
+    {
+     "type": "market_armor1",
+     "row": 3
+    },
+    {
+     "type": "cowboy",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "market_mechanic",
+     "row": 2
+    },
+    {
+     "type": "market_armor1",
+     "row": 1
+    },
+    {
+     "type": "gargantuar",
+     "row": 3
+    },
+    {
+     "type": "market_armor1",
+     "row": 3
+    },
+    {
+     "type": "market_clockwork",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "market_clockwork",
+     "row": 0
+    },
+    {
+     "type": "market_clockwork",
+     "row": 1
+    },
+    {
+     "type": "market_clockwork",
+     "row": 2
+    },
+    {
+     "type": "market_armor1",
+     "row": 3
+    },
+    {
+     "type": "market_armor1",
+     "row": 4
+    },
+    {
+     "type": "market_armor1",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "market_clockwork",
+     "row": 1
+    },
+    {
+     "type": "market_clockwork",
+     "row": 3
+    },
+    {
+     "type": "market_clockwork",
+     "row": 4
+    },
+    {
+     "type": "market_clockwork",
+     "row": 3
+    },
+    {
+     "type": "market_clockwork",
+     "row": 1
+    },
+    {
+     "type": "market_clockwork",
+     "row": 3
+    },
+    {
+     "type": "market_clockwork",
+     "row": 4
+    },
+    {
+     "type": "market_clockwork",
+     "row": 2
+    },
+    {
+     "type": "cowboy",
+     "row": 3
+    },
+    {
+     "type": "market_armor1",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "market_mechanic",
+     "row": 4
+    },
+    {
+     "type": "market_clockwork",
+     "row": 1
+    },
+    {
+     "type": "market_clockwork",
+     "row": 2
+    },
+    {
+     "type": "market_clockwork",
+     "row": 3
+    },
+    {
+     "type": "market_armor1",
+     "row": 4
+    },
+    {
+     "type": "market_armor1",
+     "row": 0
+    },
+    {
+     "type": "market_armor1",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "gargantuar",
+     "row": 4
+    },
+    {
+     "type": "market_clockwork",
+     "row": 1
+    },
+    {
+     "type": "market_clockwork",
+     "row": 2
+    },
+    {
+     "type": "market_armor1",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "market_armor1",
+     "row": 3
+    },
+    {
+     "type": "market_clockwork",
+     "row": 3
+    },
+    {
+     "type": "market_clockwork",
+     "row": 2
+    },
+    {
+     "type": "market_clockwork",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "market_clockwork",
+     "row": 1
+    },
+    {
+     "type": "market_mechanic",
+     "row": 3
+    },
+    {
+     "type": "market_clockwork",
+     "row": 4
+    },
+    {
+     "type": "market_armor2",
+     "row": 3
+    },
+    {
+     "type": "market_armor2",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "market_armor2",
+     "row": 1
+    },
+    {
+     "type": "market_armor2",
+     "row": 3
+    },
+    {
+     "type": "market_armor2",
+     "row": 4
+    },
+    {
+     "type": "market_armor2",
+     "row": 3
+    },
+    {
+     "type": "market_armor1",
+     "row": 4
+    },
+    {
+     "type": "market_armor1",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "gargantuar",
+     "row": 3
+    },
+    {
+     "type": "market_clockwork",
+     "row": 1
+    },
+    {
+     "type": "market_clockwork",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "market_clockwork",
+     "row": 1
+    },
+    {
+     "type": "market_clockwork",
+     "row": 3
+    },
+    {
+     "type": "gargantuar",
+     "row": 2
+    },
+    {
+     "type": "market_armor1",
+     "row": 3
+    },
+    {
+     "type": "market_clockwork",
+     "row": 4
+    },
+    {
+     "type": "market_armor1",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "market_clockwork",
+     "row": 1
+    },
+    {
+     "type": "market_clockwork",
+     "row": 3
+    },
+    {
+     "type": "market_clockwork",
+     "row": 4
+    },
+    {
+     "type": "market_clockwork",
+     "row": 3
+    },
+    {
+     "type": "market_clockwork",
+     "row": 4
+    },
+    {
+     "type": "market_clockwork",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "market_mechanic",
+     "row": 1
+    },
+    {
+     "type": "market_clockwork",
+     "row": 4
+    },
+    {
+     "type": "market_clockwork",
+     "row": 2
+    },
+    {
+     "type": "market_clockwork",
+     "row": 3
+    },
+    {
+     "type": "market_clockwork",
+     "row": 4
+    },
+    {
+     "type": "market_clockwork",
+     "row": 0
+    },
+    {
+     "type": "market_armor1",
+     "row": 1
+    },
+    {
+     "type": "market_clockwork",
+     "row": 2
+    },
+    {
+     "type": "market_clockwork",
+     "row": 3
+    },
+    {
+     "type": "market_clockwork",
+     "row": 4
+    },
+    {
+     "type": "market_clockwork",
+     "row": 0
+    },
+    {
+     "type": "market_armor1",
+     "row": 1
+    },
+    {
+     "type": "market_clockwork",
+     "row": 2
+    },
+    {
+     "type": "market_armor1",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "gargantuar",
+     "row": 1
+    },
+    {
+     "type": "gargantuar",
+     "row": 2
+    },
+    {
+     "type": "gargantuar",
+     "row": 4
+    },
+    {
+     "type": "gargantuar",
+     "row": 3
+    },
+    {
+     "type": "market_clockwork",
+     "row": 1
+    },
+    {
+     "type": "market_clockwork",
+     "row": 3
+    },
+    {
+     "type": "market_clockwork",
+     "row": 4
+    },
+    {
+     "type": "market_clockwork",
+     "row": 2
+    },
+    {
+     "type": "market_clockwork",
+     "row": 3
+    },
+    {
+     "type": "market_clockwork",
+     "row": 4
+    }
+   ]
+  }
+ ],
+ "flags": 3,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_0785",
+  "stage": "LunarDaylightDMGStage",
+  "name_key": "[LTE_LEVEL_NAME_LUNARZOOYEAR_2025_LVL_12]",
+  "level_number": 12,
+  "wave_count": 30,
+  "original_waves": 30,
+  "night": false
+ }
+}

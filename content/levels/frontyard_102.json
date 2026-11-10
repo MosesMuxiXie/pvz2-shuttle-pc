@@ -1,0 +1,37 @@
+{
+ "id": "frontyard_102",
+ "world": "frontyard",
+ "index": 102,
+ "title": "枪林弹雨 - 第 102 关",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "potatomine"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "football",
+     "row": 3
+    }
+   ]
+  }
+ ],
+ "flags": 1,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_0863",
+  "stage": "FrontLawnStage",
+  "name_key": "[LTE_LEVEL_NAME_MISSILE]",
+  "level_number": 2,
+  "wave_count": 1,
+  "original_waves": 1,
+  "night": false
+ }
+}

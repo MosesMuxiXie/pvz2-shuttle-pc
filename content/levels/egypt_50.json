@@ -1,0 +1,207 @@
+{
+ "id": "egypt_50",
+ "world": "egypt",
+ "index": 50,
+ "title": "神秘埃及 - 第 50 天",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "bloomerang"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "mummy",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "mummy",
+     "row": 2
+    },
+    {
+     "type": "mummy",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "mummy",
+     "row": 4
+    },
+    {
+     "type": "mummy",
+     "row": 0
+    },
+    {
+     "type": "mummy",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "mummy",
+     "row": 1
+    },
+    {
+     "type": "mummy",
+     "row": 2
+    },
+    {
+     "type": "mummy",
+     "row": 3
+    },
+    {
+     "type": "mummy",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "mummy_armor1",
+     "row": 3
+    },
+    {
+     "type": "mummy",
+     "row": 4
+    },
+    {
+     "type": "mummy",
+     "row": 0
+    },
+    {
+     "type": "mummy_armor1",
+     "row": 1
+    },
+    {
+     "type": "mummy",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "mummy_armor1",
+     "row": 0
+    },
+    {
+     "type": "mummy",
+     "row": 1
+    },
+    {
+     "type": "mummy",
+     "row": 2
+    },
+    {
+     "type": "mummy_armor1",
+     "row": 3
+    },
+    {
+     "type": "mummy",
+     "row": 4
+    },
+    {
+     "type": "mummy",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "mummy_armor1",
+     "row": 2
+    },
+    {
+     "type": "mummy",
+     "row": 3
+    },
+    {
+     "type": "mummy",
+     "row": 4
+    },
+    {
+     "type": "mummy_armor1",
+     "row": 0
+    },
+    {
+     "type": "mummy",
+     "row": 1
+    },
+    {
+     "type": "mummy",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "mummy_armor1",
+     "row": 4
+    },
+    {
+     "type": "mummy",
+     "row": 0
+    },
+    {
+     "type": "mummy",
+     "row": 1
+    },
+    {
+     "type": "mummy_armor1",
+     "row": 2
+    },
+    {
+     "type": "mummy",
+     "row": 3
+    },
+    {
+     "type": "mummy",
+     "row": 4
+    }
+   ]
+  }
+ ],
+ "flags": 1,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb-synth",
+  "package": "pkg_0493",
+  "stage": "EgyptStage",
+  "name_key": "Empty Level",
+  "level_number": 50,
+  "wave_count": 8,
+  "original_waves": 0,
+  "night": false
+ }
+}

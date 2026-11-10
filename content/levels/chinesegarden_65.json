@@ -1,0 +1,209 @@
+{
+ "id": "chinesegarden_65",
+ "world": "chinesegarden",
+ "index": 65,
+ "title": "回园林记 - 第 65 关",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "gardenia",
+  "elderbarrier",
+  "torpedofruit"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_zombie",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_zombie",
+     "row": 2
+    },
+    {
+     "type": "garden_zombie",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_zombie",
+     "row": 4
+    },
+    {
+     "type": "garden_zombie",
+     "row": 0
+    },
+    {
+     "type": "garden_zombie",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_zombie",
+     "row": 1
+    },
+    {
+     "type": "garden_zombie",
+     "row": 2
+    },
+    {
+     "type": "garden_zombie",
+     "row": 3
+    },
+    {
+     "type": "garden_zombie",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_cone",
+     "row": 3
+    },
+    {
+     "type": "garden_zombie",
+     "row": 4
+    },
+    {
+     "type": "garden_zombie",
+     "row": 0
+    },
+    {
+     "type": "garden_cone",
+     "row": 1
+    },
+    {
+     "type": "garden_zombie",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_cone",
+     "row": 0
+    },
+    {
+     "type": "garden_zombie",
+     "row": 1
+    },
+    {
+     "type": "garden_zombie",
+     "row": 2
+    },
+    {
+     "type": "garden_cone",
+     "row": 3
+    },
+    {
+     "type": "garden_zombie",
+     "row": 4
+    },
+    {
+     "type": "garden_zombie",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_cone",
+     "row": 2
+    },
+    {
+     "type": "garden_zombie",
+     "row": 3
+    },
+    {
+     "type": "garden_zombie",
+     "row": 4
+    },
+    {
+     "type": "garden_cone",
+     "row": 0
+    },
+    {
+     "type": "garden_zombie",
+     "row": 1
+    },
+    {
+     "type": "garden_zombie",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "garden_cone",
+     "row": 4
+    },
+    {
+     "type": "garden_zombie",
+     "row": 0
+    },
+    {
+     "type": "garden_zombie",
+     "row": 1
+    },
+    {
+     "type": "garden_cone",
+     "row": 2
+    },
+    {
+     "type": "garden_zombie",
+     "row": 3
+    },
+    {
+     "type": "garden_zombie",
+     "row": 4
+    }
+   ]
+  }
+ ],
+ "flags": 1,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb-synth",
+  "package": "pkg_1005",
+  "stage": "ChineseGardenUBStage",
+  "name_key": "[LTE_LEVEL_NAME_CHINESEGARDEN]",
+  "level_number": 12,
+  "wave_count": 8,
+  "original_waves": 0,
+  "night": false,
+  "boss": true,
+  "boss_zombie": "zomboss"
+ }
+}

@@ -1,0 +1,423 @@
+{
+ "id": "chinesegarden_3",
+ "world": "chinesegarden",
+ "index": 3,
+ "title": "中国园林 - 第 3 天",
+ "sun": 230,
+ "deck": [
+  "sunflower",
+  "gardenia",
+  "elderbarrier",
+  "torpedofruit"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_bucket",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_bucket",
+     "row": 2
+    },
+    {
+     "type": "garden_zombie",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_zombie",
+     "row": 1
+    },
+    {
+     "type": "garden_zombie",
+     "row": 2
+    },
+    {
+     "type": "garden_cone",
+     "row": 3
+    },
+    {
+     "type": "garden_cone",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_zombie",
+     "row": 2
+    },
+    {
+     "type": "garden_bucket",
+     "row": 3
+    },
+    {
+     "type": "garden_cone",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_cone",
+     "row": 1
+    },
+    {
+     "type": "garden_cone",
+     "row": 2
+    },
+    {
+     "type": "garden_cone",
+     "row": 3
+    },
+    {
+     "type": "garden_zombie",
+     "row": 4
+    },
+    {
+     "type": "garden_zombie",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_cone",
+     "row": 2
+    },
+    {
+     "type": "garden_cone",
+     "row": 3
+    },
+    {
+     "type": "garden_bucket",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "garden_zombie",
+     "row": 1
+    },
+    {
+     "type": "garden_zombie",
+     "row": 1
+    },
+    {
+     "type": "flag",
+     "row": 2
+    },
+    {
+     "type": "garden_cone",
+     "row": 2
+    },
+    {
+     "type": "garden_zombie",
+     "row": 3
+    },
+    {
+     "type": "garden_bucket",
+     "row": 4
+    },
+    {
+     "type": "garden_zombie",
+     "row": 1
+    },
+    {
+     "type": "garden_bucket",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_zombie",
+     "row": 1
+    },
+    {
+     "type": "garden_zombie",
+     "row": 3
+    },
+    {
+     "type": "garden_cone",
+     "row": 3
+    },
+    {
+     "type": "garden_cone",
+     "row": 4
+    },
+    {
+     "type": "garden_cone",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_bucket",
+     "row": 2
+    },
+    {
+     "type": "garden_bucket",
+     "row": 3
+    },
+    {
+     "type": "garden_zombie",
+     "row": 4
+    },
+    {
+     "type": "garden_zombie",
+     "row": 3
+    },
+    {
+     "type": "garden_bucket",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_zombie",
+     "row": 1
+    },
+    {
+     "type": "garden_cone",
+     "row": 1
+    },
+    {
+     "type": "garden_cone",
+     "row": 2
+    },
+    {
+     "type": "garden_cone",
+     "row": 3
+    },
+    {
+     "type": "garden_cone",
+     "row": 4
+    },
+    {
+     "type": "garden_zombie",
+     "row": 0
+    },
+    {
+     "type": "garden_cone",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_cone",
+     "row": 1
+    },
+    {
+     "type": "garden_zombie",
+     "row": 2
+    },
+    {
+     "type": "garden_bucket",
+     "row": 2
+    },
+    {
+     "type": "garden_bucket",
+     "row": 3
+    },
+    {
+     "type": "garden_bucket",
+     "row": 4
+    },
+    {
+     "type": "garden_zombie",
+     "row": 4
+    },
+    {
+     "type": "garden_cone",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_zombie",
+     "row": 1
+    },
+    {
+     "type": "garden_cone",
+     "row": 1
+    },
+    {
+     "type": "garden_zombie",
+     "row": 2
+    },
+    {
+     "type": "garden_zombie",
+     "row": 2
+    },
+    {
+     "type": "garden_zombie",
+     "row": 3
+    },
+    {
+     "type": "garden_cone",
+     "row": 3
+    },
+    {
+     "type": "garden_zombie",
+     "row": 4
+    },
+    {
+     "type": "garden_zombie",
+     "row": 4
+    },
+    {
+     "type": "garden_zombie",
+     "row": 3
+    },
+    {
+     "type": "garden_cone",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_zombie",
+     "row": 1
+    },
+    {
+     "type": "garden_bucket",
+     "row": 1
+    },
+    {
+     "type": "garden_cone",
+     "row": 2
+    },
+    {
+     "type": "garden_bucket",
+     "row": 3
+    },
+    {
+     "type": "garden_cone",
+     "row": 4
+    },
+    {
+     "type": "garden_zombie",
+     "row": 0
+    },
+    {
+     "type": "garden_bucket",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "garden_cone",
+     "row": 1
+    },
+    {
+     "type": "garden_bucket",
+     "row": 1
+    },
+    {
+     "type": "garden_zombie",
+     "row": 2
+    },
+    {
+     "type": "garden_bucket",
+     "row": 2
+    },
+    {
+     "type": "flag",
+     "row": 3
+    },
+    {
+     "type": "garden_cone",
+     "row": 3
+    },
+    {
+     "type": "garden_bucket",
+     "row": 3
+    },
+    {
+     "type": "garden_zombie",
+     "row": 4
+    },
+    {
+     "type": "garden_bucket",
+     "row": 4
+    },
+    {
+     "type": "garden_cone",
+     "row": 4
+    },
+    {
+     "type": "garden_bucket",
+     "row": 0
+    }
+   ]
+  }
+ ],
+ "flags": 2,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_0391",
+  "stage": "ChineseGardenUBStage",
+  "name_key": "[CHINESEGARDEN_LEVEL_NAME]",
+  "level_number": 3,
+  "wave_count": 14,
+  "original_waves": 14,
+  "night": false
+ }
+}

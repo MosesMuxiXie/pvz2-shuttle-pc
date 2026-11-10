@@ -1,0 +1,218 @@
+{
+  "id": "egypt_3",
+  "world": "egypt",
+  "index": 3,
+  "title": "第 3 天",
+  "sun": 250,
+  "deck": [
+    "sunflower",
+    "peashooter",
+    "wallnut",
+    "potatomine",
+    "bonkchoy"
+  ],
+  "waves": [
+    {
+      "delay": 18,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "mummy",
+          "row": 0
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "mummy",
+          "row": 4
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "mummy",
+          "row": 2
+        },
+        {
+          "type": "mummy",
+          "row": 3
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "mummy",
+          "row": 2
+        },
+        {
+          "type": "mummy",
+          "row": 0
+        }
+      ]
+    },
+    {
+      "delay": 24,
+      "flag": true,
+      "zombies": [
+        {
+          "type": "mummy_armor1",
+          "row": 2
+        },
+        {
+          "type": "mummy",
+          "row": 4
+        },
+        {
+          "type": "mummy",
+          "row": 0
+        },
+        {
+          "type": "mummy",
+          "row": 1
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "mummy",
+          "row": 3
+        },
+        {
+          "type": "mummy",
+          "row": 4
+        },
+        {
+          "type": "mummy",
+          "row": 0
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "mummy",
+          "row": 0
+        },
+        {
+          "type": "mummy_armor1",
+          "row": 3
+        },
+        {
+          "type": "mummy",
+          "row": 4
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "mummy",
+          "row": 4
+        },
+        {
+          "type": "mummy_armor1",
+          "row": 0
+        },
+        {
+          "type": "mummy",
+          "row": 2
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "mummy",
+          "row": 4
+        },
+        {
+          "type": "mummy_armor2",
+          "row": 3
+        }
+      ]
+    },
+    {
+      "delay": 24,
+      "flag": true,
+      "zombies": [
+        {
+          "type": "mummy_armor1",
+          "row": 0
+        },
+        {
+          "type": "mummy",
+          "row": 2
+        },
+        {
+          "type": "mummy",
+          "row": 3
+        },
+        {
+          "type": "mummy",
+          "row": 2
+        },
+        {
+          "type": "mummy",
+          "row": 0
+        },
+        {
+          "type": "mummy_armor2",
+          "row": 1
+        },
+        {
+          "type": "mummy",
+          "row": 4
+        },
+        {
+          "type": "mummy_armor1",
+          "row": 0
+        },
+        {
+          "type": "mummy",
+          "row": 3
+        },
+        {
+          "type": "mummy",
+          "row": 1
+        },
+        {
+          "type": "mummy_armor1",
+          "row": 4
+        },
+        {
+          "type": "mummy",
+          "row": 4
+        },
+        {
+          "type": "mummy",
+          "row": 1
+        },
+        {
+          "type": "mummy",
+          "row": 2
+        }
+      ]
+    }
+  ],
+  "flags": 2,
+  "seed_bank": 6
+}

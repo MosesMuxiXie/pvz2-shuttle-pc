@@ -1,0 +1,216 @@
+{
+  "id": "frontyard_5",
+  "world": "frontyard",
+  "index": 5,
+  "title": "第 5 天",
+  "sun": 200,
+  "deck": [
+    "sunflower",
+    "peashooter",
+    "wallnut",
+    "potatomine"
+  ],
+  "waves": [
+    {
+      "delay": 18,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "basic",
+          "row": 3
+        },
+        {
+          "type": "basic",
+          "row": 4
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "conehead",
+          "row": 4
+        },
+        {
+          "type": "conehead",
+          "row": 0
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "basic",
+          "row": 3
+        },
+        {
+          "type": "basic",
+          "row": 3
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "basic",
+          "row": 2
+        },
+        {
+          "type": "basic",
+          "row": 1
+        }
+      ]
+    },
+    {
+      "delay": 24,
+      "flag": true,
+      "zombies": [
+        {
+          "type": "basic",
+          "row": 3
+        },
+        {
+          "type": "basic",
+          "row": 1
+        },
+        {
+          "type": "newspaper",
+          "row": 4
+        },
+        {
+          "type": "newspaper",
+          "row": 2
+        },
+        {
+          "type": "basic",
+          "row": 3
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "basic",
+          "row": 4
+        },
+        {
+          "type": "conehead",
+          "row": 0
+        },
+        {
+          "type": "basic",
+          "row": 0
+        },
+        {
+          "type": "basic",
+          "row": 4
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "basic",
+          "row": 1
+        },
+        {
+          "type": "basic",
+          "row": 2
+        },
+        {
+          "type": "basic",
+          "row": 3
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "basic",
+          "row": 0
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "basic",
+          "row": 2
+        },
+        {
+          "type": "basic",
+          "row": 1
+        },
+        {
+          "type": "basic",
+          "row": 3
+        },
+        {
+          "type": "basic",
+          "row": 3
+        },
+        {
+          "type": "basic",
+          "row": 0
+        }
+      ]
+    },
+    {
+      "delay": 24,
+      "flag": true,
+      "zombies": [
+        {
+          "type": "basic",
+          "row": 0
+        },
+        {
+          "type": "newspaper",
+          "row": 4
+        },
+        {
+          "type": "basic",
+          "row": 1
+        },
+        {
+          "type": "basic",
+          "row": 2
+        },
+        {
+          "type": "newspaper",
+          "row": 0
+        },
+        {
+          "type": "basic",
+          "row": 4
+        },
+        {
+          "type": "buckethead",
+          "row": 2
+        },
+        {
+          "type": "basic",
+          "row": 3
+        }
+      ]
+    }
+  ],
+  "flags": 2,
+  "seed_bank": 6,
+  "extra": {
+    "original_zombies": 42
+  }
+}

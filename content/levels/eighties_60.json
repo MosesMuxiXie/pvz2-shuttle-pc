@@ -1,0 +1,37 @@
+{
+ "id": "eighties_60",
+ "world": "eighties",
+ "index": 60,
+ "title": "炫光魔-“音游” - 第 60 关",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "bonkchoy"
+ ],
+ "waves": [
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "eighties",
+     "row": 2
+    }
+   ]
+  }
+ ],
+ "flags": 1,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_0869",
+  "stage": "EightiesStage",
+  "name_key": "[LTE_LEVEL_NAME_MUSICGAME]",
+  "level_number": 3,
+  "wave_count": 1,
+  "original_waves": 11,
+  "night": false
+ }
+}

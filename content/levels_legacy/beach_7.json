@@ -1,0 +1,305 @@
+{
+  "id": "beach_7",
+  "world": "beach",
+  "index": 7,
+  "title": "第 7 天",
+  "sun": 450,
+  "deck": [
+    "sunflower",
+    "twinsunflower",
+    "peashooter",
+    "wallnut",
+    "homingthistle",
+    "wintermelon",
+    "iceburg",
+    "spikeweed"
+  ],
+  "waves": [
+    {
+      "delay": 18,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "beach",
+          "row": 0
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "beach",
+          "row": 2
+        },
+        {
+          "type": "beach",
+          "row": 4
+        },
+        {
+          "type": "beach",
+          "row": 3
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "beach",
+          "row": 2
+        },
+        {
+          "type": "beach",
+          "row": 0
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "beach",
+          "row": 0
+        },
+        {
+          "type": "beach",
+          "row": 2
+        }
+      ]
+    },
+    {
+      "delay": 24,
+      "flag": true,
+      "zombies": [
+        {
+          "type": "beach",
+          "row": 1
+        },
+        {
+          "type": "beach",
+          "row": 4
+        },
+        {
+          "type": "beach",
+          "row": 3
+        },
+        {
+          "type": "beach",
+          "row": 0
+        },
+        {
+          "type": "beach",
+          "row": 1
+        },
+        {
+          "type": "beach",
+          "row": 2
+        },
+        {
+          "type": "beach",
+          "row": 2
+        },
+        {
+          "type": "beach",
+          "row": 4
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "beach",
+          "row": 2
+        },
+        {
+          "type": "beach",
+          "row": 0
+        },
+        {
+          "type": "beach",
+          "row": 0
+        },
+        {
+          "type": "beach",
+          "row": 1
+        },
+        {
+          "type": "beach",
+          "row": 3
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "beach",
+          "row": 0
+        },
+        {
+          "type": "beach",
+          "row": 4
+        },
+        {
+          "type": "beach",
+          "row": 1
+        },
+        {
+          "type": "beach",
+          "row": 3
+        },
+        {
+          "type": "beach",
+          "row": 0
+        },
+        {
+          "type": "beach",
+          "row": 4
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "beach",
+          "row": 3
+        },
+        {
+          "type": "beach",
+          "row": 2
+        },
+        {
+          "type": "beach",
+          "row": 0
+        },
+        {
+          "type": "beach",
+          "row": 2
+        },
+        {
+          "type": "beach",
+          "row": 3
+        },
+        {
+          "type": "beach",
+          "row": 4
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "beach",
+          "row": 2
+        },
+        {
+          "type": "beach",
+          "row": 1
+        },
+        {
+          "type": "beach",
+          "row": 3
+        },
+        {
+          "type": "beach",
+          "row": 0
+        },
+        {
+          "type": "beach",
+          "row": 4
+        },
+        {
+          "type": "beach",
+          "row": 4
+        }
+      ]
+    },
+    {
+      "delay": 24,
+      "flag": true,
+      "zombies": [
+        {
+          "type": "beach",
+          "row": 4
+        },
+        {
+          "type": "beach",
+          "row": 4
+        },
+        {
+          "type": "beach",
+          "row": 4
+        },
+        {
+          "type": "beach",
+          "row": 4
+        },
+        {
+          "type": "beach",
+          "row": 0
+        },
+        {
+          "type": "beach",
+          "row": 4
+        },
+        {
+          "type": "beach",
+          "row": 0
+        },
+        {
+          "type": "beach",
+          "row": 1
+        },
+        {
+          "type": "beach",
+          "row": 3
+        },
+        {
+          "type": "beach",
+          "row": 0
+        },
+        {
+          "type": "beach",
+          "row": 2
+        },
+        {
+          "type": "beach",
+          "row": 2
+        },
+        {
+          "type": "beach",
+          "row": 3
+        },
+        {
+          "type": "beach",
+          "row": 1
+        },
+        {
+          "type": "beach",
+          "row": 2
+        },
+        {
+          "type": "beach",
+          "row": 4
+        },
+        {
+          "type": "beach",
+          "row": 1
+        }
+      ]
+    }
+  ],
+  "flags": 2,
+  "seed_bank": 8
+}

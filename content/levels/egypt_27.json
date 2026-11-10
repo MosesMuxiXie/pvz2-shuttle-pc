@@ -1,0 +1,455 @@
+{
+ "id": "egypt_27",
+ "world": "egypt",
+ "index": 27,
+ "title": "Egypt Expand - Day 27",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "bloomerang"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "mummy",
+     "row": 0
+    },
+    {
+     "type": "mummy",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "mummy_armor1",
+     "row": 0
+    },
+    {
+     "type": "mummy_armor2",
+     "row": 1
+    },
+    {
+     "type": "mummy_armor1",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "mummy",
+     "row": 0
+    },
+    {
+     "type": "mummy",
+     "row": 1
+    },
+    {
+     "type": "mummy",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "mummy_armor2",
+     "row": 0
+    },
+    {
+     "type": "mummy",
+     "row": 1
+    },
+    {
+     "type": "mummy_armor2",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "mummy_armor2",
+     "row": 0
+    },
+    {
+     "type": "mummy_armor2",
+     "row": 1
+    },
+    {
+     "type": "mummy_armor2",
+     "row": 2
+    },
+    {
+     "type": "mummy_armor2",
+     "row": 3
+    },
+    {
+     "type": "mummy_armor2",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "mummy",
+     "row": 0
+    },
+    {
+     "type": "mummy",
+     "row": 1
+    },
+    {
+     "type": "mummy",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "mummy_armor2",
+     "row": 0
+    },
+    {
+     "type": "mummy_armor2",
+     "row": 1
+    },
+    {
+     "type": "mummy_armor2",
+     "row": 2
+    },
+    {
+     "type": "mummy_armor2",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "mummy",
+     "row": 0
+    },
+    {
+     "type": "mummy",
+     "row": 1
+    },
+    {
+     "type": "mummy",
+     "row": 2
+    },
+    {
+     "type": "mummy",
+     "row": 3
+    },
+    {
+     "type": "mummy",
+     "row": 4
+    },
+    {
+     "type": "mummy",
+     "row": 0
+    },
+    {
+     "type": "mummy",
+     "row": 1
+    },
+    {
+     "type": "mummy",
+     "row": 2
+    },
+    {
+     "type": "mummy",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "mummy",
+     "row": 0
+    },
+    {
+     "type": "mummy",
+     "row": 1
+    },
+    {
+     "type": "mummy",
+     "row": 2
+    },
+    {
+     "type": "mummy",
+     "row": 3
+    },
+    {
+     "type": "mummy",
+     "row": 4
+    },
+    {
+     "type": "mummy_armor2",
+     "row": 0
+    },
+    {
+     "type": "mummy_armor2",
+     "row": 1
+    },
+    {
+     "type": "mummy_armor2",
+     "row": 2
+    },
+    {
+     "type": "mummy_armor2",
+     "row": 3
+    },
+    {
+     "type": "mummy_armor2",
+     "row": 4
+    },
+    {
+     "type": "mummy",
+     "row": 0
+    },
+    {
+     "type": "mummy",
+     "row": 1
+    },
+    {
+     "type": "mummy",
+     "row": 2
+    },
+    {
+     "type": "mummy",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "mummy_armor2",
+     "row": 0
+    },
+    {
+     "type": "mummy_armor2",
+     "row": 1
+    },
+    {
+     "type": "mummy_armor2",
+     "row": 2
+    },
+    {
+     "type": "mummy_armor2",
+     "row": 3
+    },
+    {
+     "type": "mummy_armor2",
+     "row": 4
+    },
+    {
+     "type": "mummy_armor2",
+     "row": 0
+    },
+    {
+     "type": "mummy_armor2",
+     "row": 1
+    },
+    {
+     "type": "mummy_armor2",
+     "row": 2
+    },
+    {
+     "type": "mummy_armor2",
+     "row": 3
+    },
+    {
+     "type": "mummy_armor2",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "mummy",
+     "row": 0
+    },
+    {
+     "type": "mummy",
+     "row": 1
+    },
+    {
+     "type": "mummy",
+     "row": 2
+    },
+    {
+     "type": "mummy",
+     "row": 3
+    },
+    {
+     "type": "mummy",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "mummy",
+     "row": 0
+    },
+    {
+     "type": "mummy",
+     "row": 1
+    },
+    {
+     "type": "mummy",
+     "row": 2
+    },
+    {
+     "type": "mummy",
+     "row": 3
+    },
+    {
+     "type": "mummy",
+     "row": 4
+    },
+    {
+     "type": "mummy",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "mummy_armor1",
+     "row": 0
+    },
+    {
+     "type": "mummy_armor1",
+     "row": 1
+    },
+    {
+     "type": "mummy_armor1",
+     "row": 2
+    },
+    {
+     "type": "mummy_armor1",
+     "row": 3
+    },
+    {
+     "type": "mummy_armor1",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "mummy_armor1",
+     "row": 0
+    },
+    {
+     "type": "mummy_armor1",
+     "row": 1
+    },
+    {
+     "type": "mummy_armor1",
+     "row": 2
+    },
+    {
+     "type": "mummy_armor1",
+     "row": 3
+    },
+    {
+     "type": "mummy_armor1",
+     "row": 4
+    },
+    {
+     "type": "mummy_armor2",
+     "row": 0
+    },
+    {
+     "type": "mummy_armor2",
+     "row": 1
+    },
+    {
+     "type": "mummy_armor2",
+     "row": 2
+    },
+    {
+     "type": "mummy_armor2",
+     "row": 3
+    },
+    {
+     "type": "mummy_armor2",
+     "row": 4
+    },
+    {
+     "type": "mummy_armor2",
+     "row": 0
+    },
+    {
+     "type": "mummy_armor2",
+     "row": 1
+    },
+    {
+     "type": "mummy_armor2",
+     "row": 2
+    },
+    {
+     "type": "mummy_armor2",
+     "row": 3
+    }
+   ]
+  }
+ ],
+ "flags": 2,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_1188",
+  "stage": "EgyptDMGStage",
+  "name_key": "[EGYPT_EXPAND_LEVEL_NAME]",
+  "level_number": 7,
+  "wave_count": 14,
+  "original_waves": 14,
+  "night": false
+ }
+}

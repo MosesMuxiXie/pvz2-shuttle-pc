@@ -1,0 +1,349 @@
+{
+  "id": "dark_1",
+  "world": "dark",
+  "index": 1,
+  "title": "第 1 天",
+  "sun": 250,
+  "deck": [
+    "sunshroom",
+    "sunflower",
+    "fumeshroom",
+    "peashooter",
+    "chomper",
+    "homingthistle",
+    "umbrellaleaf",
+    "wallnut"
+  ],
+  "waves": [
+    {
+      "delay": 18,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "dark",
+          "row": 1
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "dark",
+          "row": 1
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "dark",
+          "row": 4
+        },
+        {
+          "type": "dark",
+          "row": 3
+        },
+        {
+          "type": "dark",
+          "row": 2
+        },
+        {
+          "type": "dark_armor1",
+          "row": 1
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "dark",
+          "row": 4
+        },
+        {
+          "type": "dark",
+          "row": 0
+        },
+        {
+          "type": "dark_armor1",
+          "row": 2
+        }
+      ]
+    },
+    {
+      "delay": 24,
+      "flag": true,
+      "zombies": [
+        {
+          "type": "dark",
+          "row": 2
+        },
+        {
+          "type": "dark",
+          "row": 4
+        },
+        {
+          "type": "dark",
+          "row": 2
+        },
+        {
+          "type": "dark",
+          "row": 4
+        },
+        {
+          "type": "dark",
+          "row": 0
+        },
+        {
+          "type": "dark",
+          "row": 1
+        },
+        {
+          "type": "dark_armor1",
+          "row": 3
+        },
+        {
+          "type": "dark_armor1",
+          "row": 1
+        },
+        {
+          "type": "dark",
+          "row": 3
+        },
+        {
+          "type": "dark",
+          "row": 1
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "dark_armor1",
+          "row": 2
+        },
+        {
+          "type": "dark_armor1",
+          "row": 0
+        },
+        {
+          "type": "dark_armor1",
+          "row": 4
+        },
+        {
+          "type": "dark",
+          "row": 3
+        },
+        {
+          "type": "dark",
+          "row": 0
+        },
+        {
+          "type": "dark",
+          "row": 2
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "dark",
+          "row": 1
+        },
+        {
+          "type": "dark",
+          "row": 3
+        },
+        {
+          "type": "dark",
+          "row": 4
+        },
+        {
+          "type": "dark_armor1",
+          "row": 0
+        },
+        {
+          "type": "dark_armor1",
+          "row": 2
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "dark_armor1",
+          "row": 0
+        },
+        {
+          "type": "dark_armor1",
+          "row": 4
+        },
+        {
+          "type": "dark_armor1",
+          "row": 1
+        },
+        {
+          "type": "dark_armor1",
+          "row": 3
+        },
+        {
+          "type": "dark_armor1",
+          "row": 2
+        },
+        {
+          "type": "dark",
+          "row": 2
+        },
+        {
+          "type": "dark",
+          "row": 3
+        },
+        {
+          "type": "dark",
+          "row": 1
+        },
+        {
+          "type": "dark_armor1",
+          "row": 1
+        },
+        {
+          "type": "dark_armor1",
+          "row": 3
+        },
+        {
+          "type": "dark_armor1",
+          "row": 4
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "dark_armor1",
+          "row": 4
+        },
+        {
+          "type": "dark_armor1",
+          "row": 4
+        },
+        {
+          "type": "dark_armor1",
+          "row": 0
+        },
+        {
+          "type": "dark_armor1",
+          "row": 0
+        },
+        {
+          "type": "dark_armor1",
+          "row": 2
+        },
+        {
+          "type": "dark_armor1",
+          "row": 2
+        }
+      ]
+    },
+    {
+      "delay": 24,
+      "flag": true,
+      "zombies": [
+        {
+          "type": "dark_armor1",
+          "row": 1
+        },
+        {
+          "type": "dark_armor1",
+          "row": 1
+        },
+        {
+          "type": "dark_armor1",
+          "row": 1
+        },
+        {
+          "type": "dark_armor1",
+          "row": 3
+        },
+        {
+          "type": "dark_armor1",
+          "row": 3
+        },
+        {
+          "type": "dark_armor1",
+          "row": 3
+        },
+        {
+          "type": "dark_armor1",
+          "row": 2
+        },
+        {
+          "type": "dark_armor1",
+          "row": 1
+        },
+        {
+          "type": "dark_armor1",
+          "row": 3
+        },
+        {
+          "type": "dark_armor1",
+          "row": 0
+        },
+        {
+          "type": "dark_armor1",
+          "row": 4
+        },
+        {
+          "type": "dark_armor1",
+          "row": 2
+        },
+        {
+          "type": "dark_armor1",
+          "row": 1
+        },
+        {
+          "type": "dark_armor1",
+          "row": 3
+        },
+        {
+          "type": "dark_armor1",
+          "row": 0
+        },
+        {
+          "type": "dark_armor1",
+          "row": 4
+        },
+        {
+          "type": "dark_armor1",
+          "row": 1
+        },
+        {
+          "type": "dark_armor1",
+          "row": 2
+        },
+        {
+          "type": "dark_armor1",
+          "row": 0
+        },
+        {
+          "type": "dark_armor1",
+          "row": 4
+        }
+      ]
+    }
+  ],
+  "flags": 2,
+  "seed_bank": 8
+}

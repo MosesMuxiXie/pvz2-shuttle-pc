@@ -1,0 +1,1383 @@
+{
+ "id": "chinesegarden_56",
+ "world": "chinesegarden",
+ "index": 56,
+ "title": "四周年庆典 - 第 56 关 - 害人害己",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "gardenia",
+  "elderbarrier",
+  "torpedofruit"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 0
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 0
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 0
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "lostcity",
+     "row": 4
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 0
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 0
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 0
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "lostcity",
+     "row": 4
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "lostcity",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "lostcity",
+     "row": 4
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "lostcity",
+     "row": 4
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "lostcity",
+     "row": 4
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "lostcity",
+     "row": 4
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "lostcity",
+     "row": 4
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "lostcity",
+     "row": 4
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "lostcity",
+     "row": 4
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "lostcity",
+     "row": 4
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "lostcity",
+     "row": 4
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 1
+    },
+    {
+     "type": "lostcity",
+     "row": 3
+    },
+    {
+     "type": "lostcity",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "beach",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "beach",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "beach",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "beach",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    }
+   ]
+  }
+ ],
+ "flags": 1,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_0734",
+  "stage": "ChineseGardenDMGStage",
+  "name_key": "[LTE_LEVEL_NAME_4TH_ANNIVERSARY_8]",
+  "level_number": 8,
+  "wave_count": 50,
+  "original_waves": 50,
+  "night": false
+ }
+}

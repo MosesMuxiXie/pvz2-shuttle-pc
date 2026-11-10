@@ -1,0 +1,394 @@
+{
+ "id": "lunarrainbowmarket_41",
+ "world": "lunarrainbowmarket",
+ "index": 41,
+ "title": "龙吟春韵 - 第 41 步",
+ "sun": 550,
+ "deck": [
+  "sunshroom",
+  "squash",
+  "iceburg"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "market_clockwork",
+     "row": 0
+    },
+    {
+     "type": "market_clockwork",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "market_clockwork",
+     "row": 2
+    },
+    {
+     "type": "market_armor1",
+     "row": 4
+    },
+    {
+     "type": "market_clockwork",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "market_clockwork",
+     "row": 0
+    },
+    {
+     "type": "market_armor1",
+     "row": 1
+    },
+    {
+     "type": "market_clockwork",
+     "row": 2
+    },
+    {
+     "type": "market_armor2",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "market_clockwork",
+     "row": 2
+    },
+    {
+     "type": "market_clockwork",
+     "row": 4
+    },
+    {
+     "type": "market_armor1",
+     "row": 1
+    },
+    {
+     "type": "market_clockwork",
+     "row": 3
+    },
+    {
+     "type": "market_armor2",
+     "row": 4
+    },
+    {
+     "type": "market_clockwork",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "market_armor2",
+     "row": 2
+    },
+    {
+     "type": "market_clockwork",
+     "row": 1
+    },
+    {
+     "type": "market_clockwork",
+     "row": 2
+    },
+    {
+     "type": "market_armor2",
+     "row": 4
+    },
+    {
+     "type": "market_clockwork",
+     "row": 1
+    },
+    {
+     "type": "market_armor1",
+     "row": 3
+    },
+    {
+     "type": "football",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "market_clockwork",
+     "row": 0
+    },
+    {
+     "type": "market_clockwork",
+     "row": 1
+    },
+    {
+     "type": "market_clockwork",
+     "row": 3
+    },
+    {
+     "type": "market_armor2",
+     "row": 1
+    },
+    {
+     "type": "market_armor1",
+     "row": 4
+    },
+    {
+     "type": "market_clockwork",
+     "row": 1
+    },
+    {
+     "type": "market_armor2",
+     "row": 2
+    },
+    {
+     "type": "market_clockwork",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 0
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "market_clockwork",
+     "row": 4
+    },
+    {
+     "type": "market_clockwork",
+     "row": 1
+    },
+    {
+     "type": "market_armor2",
+     "row": 3
+    },
+    {
+     "type": "market_armor1",
+     "row": 0
+    },
+    {
+     "type": "market_armor2",
+     "row": 4
+    },
+    {
+     "type": "market_clockwork",
+     "row": 3
+    },
+    {
+     "type": "market_armor1",
+     "row": 2
+    },
+    {
+     "type": "football",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "market_clockwork",
+     "row": 0
+    },
+    {
+     "type": "kongfu",
+     "row": 4
+    },
+    {
+     "type": "market_armor1",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 3
+    },
+    {
+     "type": "market_clockwork",
+     "row": 3
+    },
+    {
+     "type": "football",
+     "row": 1
+    },
+    {
+     "type": "market_armor1",
+     "row": 4
+    },
+    {
+     "type": "market_armor2",
+     "row": 3
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 0
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "football",
+     "row": 3
+    },
+    {
+     "type": "market_clockwork",
+     "row": 4
+    },
+    {
+     "type": "market_clockwork",
+     "row": 0
+    },
+    {
+     "type": "market_clockwork",
+     "row": 1
+    },
+    {
+     "type": "gargantuar",
+     "row": 2
+    },
+    {
+     "type": "market_armor1",
+     "row": 2
+    },
+    {
+     "type": "market_clockwork",
+     "row": 4
+    },
+    {
+     "type": "market_clockwork",
+     "row": 0
+    },
+    {
+     "type": "market_armor1",
+     "row": 1
+    },
+    {
+     "type": "market_armor2",
+     "row": 3
+    },
+    {
+     "type": "market_armor1",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 0
+    },
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "football",
+     "row": 3
+    },
+    {
+     "type": "football",
+     "row": 3
+    },
+    {
+     "type": "market_clockwork",
+     "row": 0
+    },
+    {
+     "type": "market_clockwork",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 3
+    },
+    {
+     "type": "market_clockwork",
+     "row": 4
+    },
+    {
+     "type": "market_clockwork",
+     "row": 0
+    },
+    {
+     "type": "market_clockwork",
+     "row": 1
+    },
+    {
+     "type": "market_armor1",
+     "row": 2
+    },
+    {
+     "type": "market_armor2",
+     "row": 4
+    }
+   ]
+  }
+ ],
+ "flags": 2,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_0883",
+  "stage": "LunarDaylightUBStage",
+  "name_key": "[LYCY_LEVEL_NAME]",
+  "level_number": 5,
+  "wave_count": 10,
+  "original_waves": 10,
+  "night": false
+ }
+}

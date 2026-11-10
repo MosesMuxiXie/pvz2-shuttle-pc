@@ -1,0 +1,767 @@
+{
+ "id": "chinesegarden_49",
+ "world": "chinesegarden",
+ "index": 49,
+ "title": "六周年庆典 - 第 49 回",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "gardenia",
+  "elderbarrier",
+  "torpedofruit"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_poet",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_poet",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_poet",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    },
+    {
+     "type": "garden_poet",
+     "row": 3
+    },
+    {
+     "type": "garden_poet",
+     "row": 4
+    },
+    {
+     "type": "garden_poet",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 0
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_poet",
+     "row": 3
+    },
+    {
+     "type": "garden_poet",
+     "row": 2
+    },
+    {
+     "type": "garden_poet",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "garden_poet",
+     "row": 2
+    },
+    {
+     "type": "garden_poet",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "pirate",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "dark",
+     "row": 2
+    },
+    {
+     "type": "dark",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_zombie",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "cowboy",
+     "row": 4
+    },
+    {
+     "type": "cowboy",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_zombie",
+     "row": 3
+    },
+    {
+     "type": "garden_zombie",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    },
+    {
+     "type": "garden_zombie",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_zombie",
+     "row": 2
+    },
+    {
+     "type": "garden_zombie",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "garden_zombie",
+     "row": 1
+    },
+    {
+     "type": "garden_zombie",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "pirate",
+     "row": 1
+    },
+    {
+     "type": "beach",
+     "row": 3
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "garden_zombie",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "kongfu",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    },
+    {
+     "type": "garden_zombie",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "garden_zombie",
+     "row": 4
+    },
+    {
+     "type": "pirate",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_zombie",
+     "row": 1
+    },
+    {
+     "type": "garden_zombie",
+     "row": 3
+    },
+    {
+     "type": "cowboy",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_zombie",
+     "row": 2
+    },
+    {
+     "type": "garden_zombie",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_zombie",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "pirate",
+     "row": 1
+    },
+    {
+     "type": "garden_zombie",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_zombie",
+     "row": 2
+    },
+    {
+     "type": "kongfu",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "beach",
+     "row": 4
+    },
+    {
+     "type": "kongfu",
+     "row": 2
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_zombie",
+     "row": 3
+    },
+    {
+     "type": "garden_zombie",
+     "row": 4
+    },
+    {
+     "type": "garden_zombie",
+     "row": 2
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "garden_zombie",
+     "row": 4
+    },
+    {
+     "type": "cowboy",
+     "row": 2
+    },
+    {
+     "type": "garden_zombie",
+     "row": 3
+    },
+    {
+     "type": "kongfu",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    }
+   ]
+  }
+ ],
+ "flags": 3,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_0930",
+  "stage": "ChineseGardenUBStage",
+  "name_key": "[LTE_LEVEL_NAME_SIXTHANNIVERSARY]",
+  "level_number": 20,
+  "wave_count": 30,
+  "original_waves": 30,
+  "night": false
+ }
+}

@@ -1,0 +1,206 @@
+{
+ "version": 1,
+ "source": "OBB ZenGardenPropertySheet",
+ "obb_values": {
+  "PlantGrowDurationInSeconds": 18000,
+  "NormalPlantCoinRewardAmount": 50,
+  "TreasurePlantSpawnRate": 3,
+  "GrowingSpeedupCalcMultiplyFactor": 2,
+  "GrowingSpeedupCalcMaxTimeSeconds": 28800,
+  "PotCosts": {
+   "#GemCostPurchased0": 20,
+   "#GemCostPurchased1": 20,
+   "#GemCostPurchased2": 20,
+   "#GemCostPurchased3": 20,
+   "#GemCostPurchased4": 20,
+   "#GemCostPurchased5": 20,
+   "GemCostDefault": 20
+  },
+  "pots_total_in_obb": 12,
+  "marigold_final_rewards": {}
+ },
+ "pot_count": 8,
+ "layout": {
+  "cols": 4,
+  "rows": 2
+ },
+ "pots": [
+  {
+   "slot": 0,
+   "col": 0,
+   "row": 0,
+   "unlock_index": 0,
+   "gem_cost": 20
+  },
+  {
+   "slot": 1,
+   "col": 1,
+   "row": 0,
+   "unlock_index": 100,
+   "gem_cost": 20
+  },
+  {
+   "slot": 2,
+   "col": 2,
+   "row": 0,
+   "unlock_index": 200,
+   "gem_cost": 20
+  },
+  {
+   "slot": 3,
+   "col": 3,
+   "row": 0,
+   "unlock_index": 300,
+   "gem_cost": 20
+  },
+  {
+   "slot": 4,
+   "col": 0,
+   "row": 1,
+   "unlock_index": 1,
+   "gem_cost": 20
+  },
+  {
+   "slot": 5,
+   "col": 1,
+   "row": 1,
+   "unlock_index": 101,
+   "gem_cost": 20
+  },
+  {
+   "slot": 6,
+   "col": 2,
+   "row": 1,
+   "unlock_index": 201,
+   "gem_cost": 20
+  },
+  {
+   "slot": 7,
+   "col": 3,
+   "row": 1,
+   "unlock_index": 301,
+   "gem_cost": 20
+  }
+ ],
+ "grow_seconds": 18000,
+ "stage_count": 4,
+ "stage_seconds": [
+  0,
+  4500,
+  9000,
+  18000
+ ],
+ "stage_names": [
+  "幼芽",
+  "生长",
+  "含苞",
+  "成熟"
+ ],
+ "plant_pool": [
+  "peashooter",
+  "sunflower",
+  "wallnut",
+  "potatomine",
+  "snowpea",
+  "repeater",
+  "bloomerang",
+  "cabbagepult",
+  "chomper",
+  "fumeshroom",
+  "torchwood",
+  "cherry_bomb",
+  "jalapeno",
+  "squash",
+  "threepeater",
+  "kernelpult",
+  "melonpult",
+  "wintermelon",
+  "spikeweed",
+  "starfruit",
+  "tallnut",
+  "magnifyinggrass",
+  "bonkchoy",
+  "twinsunflower",
+  "gatling",
+  "splitpea",
+  "iceburg",
+  "sunshroom",
+  "homingthistle",
+  "umbrellaleaf",
+  "voiddragon",
+  "gardenia",
+  "jasmine",
+  "torpedofruit",
+  "seapotatomine",
+  "elderbarrier",
+  "birdofparadise",
+  "poppinpoppies",
+  "yuccaguardian",
+  "begonia",
+  "potatochip",
+  "missiletoast"
+ ],
+ "seed_pool": [
+  "iris",
+  "rosemary",
+  "snowlotus",
+  "wildflower",
+  "olivewood",
+  "astrofruit",
+  "chrysanthea",
+  "doominator",
+  "helioscabbage",
+  "paradoxpult",
+  "tubiflora",
+  "vortexmelon",
+  "cheesestrawberry",
+  "oolongpeach",
+  "succulentgrape",
+  "doublepassion",
+  "fireflerry",
+  "frozenpear",
+  "solarflare",
+  "taraxacum"
+ ],
+ "water": {
+  "cost_coins": 5,
+  "reduce_seconds": 1800,
+  "max_waters": 5,
+  "bonus_per_water": 0.05
+ },
+ "harvest": {
+  "coins": 50,
+  "plantfood_min": 1,
+  "plantfood_max": 3,
+  "seed_chance": 0.12,
+  "treasure_chance": 0.03,
+  "treasure_coins": 500,
+  "treasure_plantfood": 3
+ },
+ "rarities": [
+  {
+   "id": "common",
+   "name_zh": "普通",
+   "weight": 60,
+   "coin_mult": 1.0,
+   "plantfood": 1
+  },
+  {
+   "id": "rare",
+   "name_zh": "稀有",
+   "weight": 30,
+   "coin_mult": 1.5,
+   "plantfood": 2
+  },
+  {
+   "id": "epic",
+   "name_zh": "史诗",
+   "weight": 10,
+   "coin_mult": 2.5,
+   "plantfood": 3
+  }
+ ],
+ "duration_overrides": {},
+ "fast_env": "PVZ2_GARDEN_FAST",
+ "fast_multiplier": 100
+}

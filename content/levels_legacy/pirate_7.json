@@ -1,0 +1,292 @@
+{
+  "id": "pirate_7",
+  "world": "pirate",
+  "index": 7,
+  "title": "第 7 天",
+  "sun": 350,
+  "deck": [
+    "sunflower",
+    "peashooter",
+    "wallnut",
+    "repeater",
+    "kernelpult",
+    "torchwood",
+    "cherry_bomb"
+  ],
+  "waves": [
+    {
+      "delay": 18,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "pirate",
+          "row": 0
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "pirate",
+          "row": 2
+        },
+        {
+          "type": "pirate_armor1",
+          "row": 4
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "pirate",
+          "row": 3
+        },
+        {
+          "type": "pirate",
+          "row": 1
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "pirate",
+          "row": 3
+        },
+        {
+          "type": "pirate",
+          "row": 4
+        },
+        {
+          "type": "pirate_armor1",
+          "row": 0
+        }
+      ]
+    },
+    {
+      "delay": 24,
+      "flag": true,
+      "zombies": [
+        {
+          "type": "pirate",
+          "row": 3
+        },
+        {
+          "type": "pirate",
+          "row": 1
+        },
+        {
+          "type": "pirate",
+          "row": 2
+        },
+        {
+          "type": "pirate",
+          "row": 4
+        },
+        {
+          "type": "pirate",
+          "row": 3
+        },
+        {
+          "type": "pirate",
+          "row": 0
+        },
+        {
+          "type": "pirate",
+          "row": 1
+        },
+        {
+          "type": "pirate",
+          "row": 0
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "pirate",
+          "row": 4
+        },
+        {
+          "type": "pirate_armor1",
+          "row": 1
+        },
+        {
+          "type": "pirate",
+          "row": 2
+        },
+        {
+          "type": "pirate",
+          "row": 0
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "pirate",
+          "row": 0
+        },
+        {
+          "type": "pirate",
+          "row": 3
+        },
+        {
+          "type": "pirate",
+          "row": 4
+        },
+        {
+          "type": "pirate_armor1",
+          "row": 1
+        },
+        {
+          "type": "pirate_armor1",
+          "row": 1
+        },
+        {
+          "type": "pirate",
+          "row": 0
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "pirate",
+          "row": 1
+        },
+        {
+          "type": "pirate",
+          "row": 0
+        },
+        {
+          "type": "pirate",
+          "row": 3
+        },
+        {
+          "type": "pirate_armor1",
+          "row": 4
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "pirate",
+          "row": 0
+        },
+        {
+          "type": "pirate",
+          "row": 4
+        },
+        {
+          "type": "pirate",
+          "row": 3
+        },
+        {
+          "type": "pirate",
+          "row": 2
+        },
+        {
+          "type": "pirate_armor1",
+          "row": 3
+        },
+        {
+          "type": "pirate",
+          "row": 0
+        },
+        {
+          "type": "pirate",
+          "row": 2
+        },
+        {
+          "type": "pirate_armor1",
+          "row": 1
+        },
+        {
+          "type": "pirate_armor1",
+          "row": 1
+        }
+      ]
+    },
+    {
+      "delay": 24,
+      "flag": true,
+      "zombies": [
+        {
+          "type": "pirate",
+          "row": 0
+        },
+        {
+          "type": "pirate",
+          "row": 4
+        },
+        {
+          "type": "pirate",
+          "row": 1
+        },
+        {
+          "type": "pirate",
+          "row": 3
+        },
+        {
+          "type": "pirate",
+          "row": 2
+        },
+        {
+          "type": "pirate_armor1",
+          "row": 1
+        },
+        {
+          "type": "pirate_armor1",
+          "row": 1
+        },
+        {
+          "type": "pirate",
+          "row": 0
+        },
+        {
+          "type": "pirate",
+          "row": 4
+        },
+        {
+          "type": "pirate",
+          "row": 2
+        },
+        {
+          "type": "pirate",
+          "row": 3
+        },
+        {
+          "type": "pirate",
+          "row": 0
+        },
+        {
+          "type": "pirate",
+          "row": 2
+        },
+        {
+          "type": "pirate",
+          "row": 3
+        }
+      ]
+    }
+  ],
+  "flags": 2,
+  "seed_bank": 7
+}

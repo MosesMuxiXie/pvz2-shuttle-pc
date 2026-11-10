@@ -1,0 +1,706 @@
+{
+ "art": {
+  "iris": {
+   "src": "Plantagenet/Iris.png",
+   "out": "art/plantagenet/iris.png",
+   "source_size": [
+    3000,
+    3000
+   ],
+   "trim_box": [
+    73,
+    0,
+    3000,
+    2921
+   ],
+   "trimmed_size": [
+    2927,
+    2921
+   ],
+   "saved_size": [
+    900,
+    898
+   ],
+   "bytes": 637180
+  },
+  "rosemary": {
+   "src": "Plantagenet/Rosemary.png",
+   "out": "art/plantagenet/rosemary.png",
+   "source_size": [
+    4628,
+    4999
+   ],
+   "trim_box": [
+    156,
+    191,
+    4443,
+    4999
+   ],
+   "trimmed_size": [
+    4287,
+    4808
+   ],
+   "saved_size": [
+    802,
+    900
+   ],
+   "bytes": 545924
+  },
+  "snowlotus": {
+   "src": "Plantagenet/Snow Lotus.png",
+   "out": "art/plantagenet/snowlotus.png",
+   "source_size": [
+    7370,
+    5646
+   ],
+   "trim_box": [
+    0,
+    0,
+    7370,
+    5646
+   ],
+   "trimmed_size": [
+    7370,
+    5646
+   ],
+   "saved_size": [
+    900,
+    689
+   ],
+   "bytes": 548612
+  },
+  "wildflower": {
+   "src": "Plantagenet/Wildflower.png",
+   "out": "art/plantagenet/wildflower.png",
+   "source_size": [
+    3037,
+    2593
+   ],
+   "trim_box": [
+    0,
+    0,
+    3037,
+    2593
+   ],
+   "trimmed_size": [
+    3037,
+    2593
+   ],
+   "saved_size": [
+    900,
+    768
+   ],
+   "bytes": 437546
+  },
+  "olivewood": {
+   "src": "Plantagenet/Olive Wood.png",
+   "out": "art/plantagenet/olivewood.png",
+   "source_size": [
+    6031,
+    6473
+   ],
+   "trim_box": [
+    0,
+    0,
+    6031,
+    6473
+   ],
+   "trimmed_size": [
+    6031,
+    6473
+   ],
+   "saved_size": [
+    839,
+    900
+   ],
+   "bytes": 578144
+  },
+  "astrofruit": {
+   "src": "Collaboration/Astrofruit.png",
+   "out": "art/plantagenet/astrofruit.png",
+   "source_size": [
+    393,
+    388
+   ],
+   "trim_box": [
+    0,
+    0,
+    389,
+    388
+   ],
+   "trimmed_size": [
+    389,
+    388
+   ],
+   "saved_size": [
+    389,
+    388
+   ],
+   "bytes": 131571
+  },
+  "chrysanthea": {
+   "src": "Collaboration/Chrysanthe Autumn.png",
+   "out": "art/plantagenet/chrysanthea.png",
+   "source_size": [
+    909,
+    951
+   ],
+   "trim_box": [
+    0,
+    0,
+    909,
+    951
+   ],
+   "trimmed_size": [
+    909,
+    951
+   ],
+   "saved_size": [
+    860,
+    900
+   ],
+   "bytes": 389143
+  },
+  "doominator": {
+   "src": "Collaboration/Doominator-shroom.png",
+   "out": "art/plantagenet/doominator.png",
+   "source_size": [
+    1588,
+    1275
+   ],
+   "trim_box": [
+    0,
+    0,
+    1588,
+    1275
+   ],
+   "trimmed_size": [
+    1588,
+    1275
+   ],
+   "saved_size": [
+    900,
+    723
+   ],
+   "bytes": 494676
+  },
+  "helioscabbage": {
+   "src": "Collaboration/Helios Cabbage.png",
+   "out": "art/plantagenet/helioscabbage.png",
+   "source_size": [
+    3149,
+    3252
+   ],
+   "trim_box": [
+    0,
+    0,
+    3149,
+    3252
+   ],
+   "trimmed_size": [
+    3149,
+    3252
+   ],
+   "saved_size": [
+    871,
+    900
+   ],
+   "bytes": 582153
+  },
+  "paradoxpult": {
+   "src": "Collaboration/Paradox-pult.png",
+   "out": "art/plantagenet/paradoxpult.png",
+   "source_size": [
+    2850,
+    2585
+   ],
+   "trim_box": [
+    0,
+    0,
+    2850,
+    2585
+   ],
+   "trimmed_size": [
+    2850,
+    2585
+   ],
+   "saved_size": [
+    900,
+    816
+   ],
+   "bytes": 318180
+  },
+  "tubiflora": {
+   "src": "Collaboration/Tubiflora.png",
+   "out": "art/plantagenet/tubiflora.png",
+   "source_size": [
+    897,
+    857
+   ],
+   "trim_box": [
+    0,
+    0,
+    897,
+    857
+   ],
+   "trimmed_size": [
+    897,
+    857
+   ],
+   "saved_size": [
+    897,
+    857
+   ],
+   "bytes": 319305
+  },
+  "vortexmelon": {
+   "src": "Collaboration/Vortex Melon.png",
+   "out": "art/plantagenet/vortexmelon.png",
+   "source_size": [
+    358,
+    330
+   ],
+   "trim_box": [
+    0,
+    0,
+    358,
+    330
+   ],
+   "trimmed_size": [
+    358,
+    330
+   ],
+   "saved_size": [
+    358,
+    330
+   ],
+   "bytes": 144822
+  },
+  "cheesestrawberry": {
+   "src": "Jin Jin Tea Shop/Cheese Strawberry.png",
+   "out": "art/plantagenet/cheesestrawberry.png",
+   "source_size": [
+    3000,
+    3000
+   ],
+   "trim_box": [
+    59,
+    370,
+    2986,
+    2630
+   ],
+   "trimmed_size": [
+    2927,
+    2260
+   ],
+   "saved_size": [
+    900,
+    695
+   ],
+   "bytes": 373244
+  },
+  "oolongpeach": {
+   "src": "Jin Jin Tea Shop/Oolong Peach.png",
+   "out": "art/plantagenet/oolongpeach.png",
+   "source_size": [
+    3000,
+    3000
+   ],
+   "trim_box": [
+    41,
+    256,
+    2947,
+    2893
+   ],
+   "trimmed_size": [
+    2906,
+    2637
+   ],
+   "saved_size": [
+    900,
+    817
+   ],
+   "bytes": 436686
+  },
+  "succulentgrape": {
+   "src": "Jin Jin Tea Shop/Succulent Grape.png",
+   "out": "art/plantagenet/succulentgrape.png",
+   "source_size": [
+    3000,
+    3000
+   ],
+   "trim_box": [
+    53,
+    183,
+    2973,
+    2718
+   ],
+   "trimmed_size": [
+    2920,
+    2535
+   ],
+   "saved_size": [
+    900,
+    781
+   ],
+   "bytes": 400553
+  },
+  "doublepassion": {
+   "src": "Jin Jin Tea Shop/Double Passion.png",
+   "out": "art/plantagenet/doublepassion.png",
+   "source_size": [
+    3000,
+    3000
+   ],
+   "trim_box": [
+    354,
+    134,
+    2646,
+    2862
+   ],
+   "trimmed_size": [
+    2292,
+    2728
+   ],
+   "saved_size": [
+    756,
+    900
+   ],
+   "bytes": 364245
+  },
+  "fireflerry": {
+   "src": "Stellar Sprouts/Fireflerry.png",
+   "out": "art/stellar/fireflerry.png",
+   "source_size": [
+    5393,
+    5472
+   ],
+   "trim_box": [
+    0,
+    0,
+    5393,
+    5472
+   ],
+   "trimmed_size": [
+    5393,
+    5472
+   ],
+   "saved_size": [
+    887,
+    900
+   ],
+   "bytes": 414274
+  },
+  "frozenpear": {
+   "src": "Others/Frozen Pear.png",
+   "out": "art/others/frozenpear.png",
+   "source_size": [
+    753,
+    889
+   ],
+   "trim_box": [
+    0,
+    0,
+    753,
+    889
+   ],
+   "trimmed_size": [
+    753,
+    889
+   ],
+   "saved_size": [
+    753,
+    889
+   ],
+   "bytes": 357458
+  },
+  "solarflare": {
+   "src": "Others/Solar Flare.png",
+   "out": "art/others/solarflare.png",
+   "source_size": [
+    708,
+    883
+   ],
+   "trim_box": [
+    0,
+    0,
+    708,
+    883
+   ],
+   "trimmed_size": [
+    708,
+    883
+   ],
+   "saved_size": [
+    708,
+    883
+   ],
+   "bytes": 368117
+  },
+  "taraxacum": {
+   "src": "Others/Taraxacum.png",
+   "out": "art/others/taraxacum.png",
+   "source_size": [
+    740,
+    1022
+   ],
+   "trim_box": [
+    0,
+    0,
+    740,
+    1022
+   ],
+   "trimmed_size": [
+    740,
+    1022
+   ],
+   "saved_size": [
+    652,
+    900
+   ],
+   "bytes": 292509
+  },
+  "royal_zombie": {
+   "src": "Plantagenet/Royal Zombie.png",
+   "out": "art/plantagenet/royal_zombie.png",
+   "source_size": [
+    6502,
+    9470
+   ],
+   "trim_box": [
+    0,
+    0,
+    6441,
+    9470
+   ],
+   "trimmed_size": [
+    6441,
+    9470
+   ],
+   "saved_size": [
+    612,
+    900
+   ],
+   "bytes": 288196
+  },
+  "royal_flag": {
+   "src": "Plantagenet/Royal Flag Zombie.png",
+   "out": "art/plantagenet/royal_flag.png",
+   "source_size": [
+    9217,
+    13188
+   ],
+   "trim_box": [
+    64,
+    168,
+    9156,
+    13188
+   ],
+   "trimmed_size": [
+    9092,
+    13020
+   ],
+   "saved_size": [
+    628,
+    900
+   ],
+   "bytes": 329645
+  },
+  "royal_noblewoman": {
+   "src": "Plantagenet/Royal Noblewoman Zombie.png",
+   "out": "art/plantagenet/royal_noblewoman.png",
+   "source_size": [
+    7613,
+    7322
+   ],
+   "trim_box": [
+    56,
+    19,
+    7613,
+    7322
+   ],
+   "trimmed_size": [
+    7557,
+    7303
+   ],
+   "saved_size": [
+    900,
+    870
+   ],
+   "bytes": 401183
+  },
+  "royal_winetasting": {
+   "src": "Plantagenet/Royal Winetasting Zombie.png",
+   "out": "art/plantagenet/royal_winetasting.png",
+   "source_size": [
+    4811,
+    7487
+   ],
+   "trim_box": [
+    54,
+    13,
+    4811,
+    7487
+   ],
+   "trimmed_size": [
+    4757,
+    7474
+   ],
+   "saved_size": [
+    573,
+    900
+   ],
+   "bytes": 368033
+  },
+  "royal_chef_gargantuar": {
+   "src": "Plantagenet/Royal Chef Gargantuar.png",
+   "out": "art/plantagenet/royal_chef_gargantuar.png",
+   "source_size": [
+    6813,
+    6598
+   ],
+   "trim_box": [
+    828,
+    441,
+    6778,
+    6575
+   ],
+   "trimmed_size": [
+    5950,
+    6134
+   ],
+   "saved_size": [
+    873,
+    900
+   ],
+   "bytes": 727991
+  },
+  "imp_maid": {
+   "src": "Plantagenet/Imp Maid Zombie.png",
+   "out": "art/plantagenet/imp_maid.png",
+   "source_size": [
+    6939,
+    7589
+   ],
+   "trim_box": [
+    5,
+    0,
+    6903,
+    7589
+   ],
+   "trimmed_size": [
+    6898,
+    7589
+   ],
+   "saved_size": [
+    818,
+    900
+   ],
+   "bytes": 402256
+  },
+  "royal_princess": {
+   "src": "Plantagenet/Zombie Royal Princess.png",
+   "out": "art/plantagenet/royal_princess.png",
+   "source_size": [
+    5946,
+    6664
+   ],
+   "trim_box": [
+    2,
+    181,
+    5946,
+    6664
+   ],
+   "trimmed_size": [
+    5944,
+    6483
+   ],
+   "saved_size": [
+    825,
+    900
+   ],
+   "bytes": 491059
+  }
+ },
+ "lawn": {
+  "src": "Plantagenet/Plantagenet Day (With Lights).png",
+  "out": "lawn/plantagenet.png",
+  "crop": [
+   762,
+   204,
+   2848,
+   1408
+  ],
+  "source_size": [
+   3948,
+   1536
+  ],
+  "saved_size": [
+   1280,
+   720
+  ],
+  "bytes": 1059686,
+  "grid_on_screen": [
+   190.22,
+   120.2,
+   899.56,
+   580.07
+  ],
+  "grid_target": [
+   190,
+   120,
+   900,
+   580
+  ]
+ },
+ "night_lawn": {
+  "src": "Plantagenet/Plantagenet Night (With Lights).png",
+  "out": "lawn/plantagenet_night.png",
+  "crop": [
+   762,
+   204,
+   2848,
+   1408
+  ],
+  "source_size": [
+   3948,
+   1536
+  ],
+  "saved_size": [
+   1280,
+   720
+  ],
+  "bytes": 942762,
+  "grid_on_screen": [
+   190.22,
+   120.2,
+   899.56,
+   580.07
+  ],
+  "grid_target": [
+   190,
+   120,
+   900,
+   580
+  ]
+ },
+ "world": {
+  "src": "Plantagenet/Plantagenet Day (With Lights).png",
+  "out": "world/plantagenet.png",
+  "source_size": [
+   3948,
+   1536
+  ],
+  "crop": [
+   285,
+   0,
+   1565,
+   720
+  ],
+  "saved_size": [
+   1280,
+   720
+  ],
+  "bytes": 1197678
+ }
+}

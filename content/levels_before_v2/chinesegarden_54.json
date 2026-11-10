@@ -1,0 +1,411 @@
+{
+ "id": "chinesegarden_54",
+ "world": "chinesegarden",
+ "index": 54,
+ "title": "被诅咒的丰收 - 第 54 步",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "gardenia",
+  "elderbarrier",
+  "torpedofruit"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_zombie",
+     "row": 2
+    },
+    {
+     "type": "garden_cone",
+     "row": 3
+    },
+    {
+     "type": "garden_zombie",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_zombie",
+     "row": 0
+    },
+    {
+     "type": "garden_poet",
+     "row": 1
+    },
+    {
+     "type": "garden_cone",
+     "row": 2
+    },
+    {
+     "type": "garden_cone",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_cone",
+     "row": 0
+    },
+    {
+     "type": "garden_zombie",
+     "row": 1
+    },
+    {
+     "type": "garden_cone",
+     "row": 2
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_poet",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_zombie",
+     "row": 0
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_poet",
+     "row": 2
+    },
+    {
+     "type": "garden_bucket",
+     "row": 3
+    },
+    {
+     "type": "garden_cone",
+     "row": 4
+    },
+    {
+     "type": "garden_cone",
+     "row": 0
+    },
+    {
+     "type": "garden_cone",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "garden_zombie",
+     "row": 0
+    },
+    {
+     "type": "garden_zombie",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    },
+    {
+     "type": "garden_zombie",
+     "row": 3
+    },
+    {
+     "type": "garden_bucket",
+     "row": 4
+    },
+    {
+     "type": "garden_bucket",
+     "row": 0
+    },
+    {
+     "type": "garden_poet",
+     "row": 1
+    },
+    {
+     "type": "garden_poet",
+     "row": 2
+    },
+    {
+     "type": "garden_cone",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_cone",
+     "row": 0
+    },
+    {
+     "type": "garden_cone",
+     "row": 1
+    },
+    {
+     "type": "garden_zombie",
+     "row": 2
+    },
+    {
+     "type": "garden_poet",
+     "row": 3
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 4
+    },
+    {
+     "type": "garden_poet",
+     "row": 0
+    },
+    {
+     "type": "garden_bucket",
+     "row": 1
+    },
+    {
+     "type": "garden_cone",
+     "row": 2
+    },
+    {
+     "type": "garden_gargantuar",
+     "row": 3
+    },
+    {
+     "type": "garden_imp",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_poet",
+     "row": 0
+    },
+    {
+     "type": "garden_zombie",
+     "row": 1
+    },
+    {
+     "type": "garden_cone",
+     "row": 2
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_zombie",
+     "row": 4
+    },
+    {
+     "type": "garden_cone",
+     "row": 0
+    },
+    {
+     "type": "garden_poet",
+     "row": 1
+    },
+    {
+     "type": "garden_cone",
+     "row": 2
+    },
+    {
+     "type": "garden_cone",
+     "row": 3
+    },
+    {
+     "type": "garden_bucket",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_cone",
+     "row": 0
+    },
+    {
+     "type": "garden_bucket",
+     "row": 1
+    },
+    {
+     "type": "garden_bucket",
+     "row": 2
+    },
+    {
+     "type": "garden_zombie",
+     "row": 3
+    },
+    {
+     "type": "garden_gargantuar",
+     "row": 1
+    },
+    {
+     "type": "garden_poet",
+     "row": 0
+    },
+    {
+     "type": "garden_cone",
+     "row": 1
+    },
+    {
+     "type": "garden_cone",
+     "row": 2
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 3
+    },
+    {
+     "type": "garden_poet",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "garden_zombie",
+     "row": 0
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 1
+    },
+    {
+     "type": "garden_umbrella",
+     "row": 2
+    },
+    {
+     "type": "garden_zombie",
+     "row": 3
+    },
+    {
+     "type": "garden_poet",
+     "row": 4
+    },
+    {
+     "type": "garden_bucket",
+     "row": 0
+    },
+    {
+     "type": "garden_bucket",
+     "row": 1
+    },
+    {
+     "type": "garden_cone",
+     "row": 2
+    },
+    {
+     "type": "garden_cone",
+     "row": 3
+    },
+    {
+     "type": "garden_poet",
+     "row": 4
+    },
+    {
+     "type": "garden_poet",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "garden_gargantuar",
+     "row": 1
+    },
+    {
+     "type": "garden_gargantuar",
+     "row": 3
+    },
+    {
+     "type": "garden_gargantuar",
+     "row": 2
+    },
+    {
+     "type": "garden_zombie",
+     "row": 3
+    },
+    {
+     "type": "garden_zombie",
+     "row": 4
+    },
+    {
+     "type": "garden_bucket",
+     "row": 0
+    },
+    {
+     "type": "garden_cone",
+     "row": 1
+    },
+    {
+     "type": "garden_cone",
+     "row": 2
+    },
+    {
+     "type": "garden_cone",
+     "row": 3
+    },
+    {
+     "type": "garden_zombie",
+     "row": 4
+    },
+    {
+     "type": "garden_poet",
+     "row": 0
+    },
+    {
+     "type": "garden_poet",
+     "row": 1
+    }
+   ]
+  }
+ ],
+ "flags": 2,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_1715",
+  "stage": "ChineseGardenDMGStage",
+  "name_key": "[EPIC_QUEST_SPOOKYSQUASH_LEVEL_NAME]",
+  "level_number": 3,
+  "wave_count": 10,
+  "original_waves": 10,
+  "night": false
+ }
+}

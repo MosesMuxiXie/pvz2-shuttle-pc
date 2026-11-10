@@ -1,0 +1,4152 @@
+[
+  {
+    "id": "peashooter",
+    "name_zh": "豌豆射手",
+    "name_en": "Peashooter",
+    "cost": 100,
+    "cooldown": 5,
+    "hp": 300,
+    "family": "Peashooter",
+    "art": "plants/PeashooterPLANT",
+    "behavior": "shoot",
+    "damage": 30,
+    "interval": 1.35,
+    "projectile": "pea",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "shooter",
+      "day"
+    ],
+    "desc_zh": "豌豆射手是你的第一道防线。他们会向僵尸发射豌豆。",
+    "almanac_no": 1,
+    "plantfood": true
+  },
+  {
+    "id": "sunflower",
+    "name_zh": "向日葵",
+    "name_en": "Sunflower",
+    "cost": 50,
+    "cooldown": 5,
+    "hp": 300,
+    "family": "Sun",
+    "art": "plants/SunflowerPLANT",
+    "behavior": "produce",
+    "damage": 0,
+    "interval": 24,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "sun",
+      "day"
+    ],
+    "desc_zh": "向日葵为你提供额外的阳光。种得越多越好！",
+    "almanac_no": 2,
+    "plantfood": true,
+    "sun_value": 25,
+    "sun_interval": 24
+  },
+  {
+    "id": "wallnut",
+    "name_zh": "坚果墙",
+    "name_en": "Wall-nut",
+    "cost": 50,
+    "cooldown": 20,
+    "hp": 4000,
+    "family": "Defence",
+    "art": "plants/WallnutPLANT",
+    "behavior": "wall",
+    "damage": 0,
+    "interval": 0,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "wall",
+      "day"
+    ],
+    "desc_zh": "坚果墙利用自己坚硬的外壳保护其身后的植物。",
+    "almanac_no": 3,
+    "plantfood": true
+  },
+  {
+    "id": "potatomine",
+    "name_zh": "土豆地雷",
+    "name_en": "Potato Mine",
+    "cost": 25,
+    "cooldown": 20,
+    "hp": 300,
+    "family": "Explosive",
+    "art": "plants/PotatoMinePLANT",
+    "behavior": "mine",
+    "damage": 1800,
+    "interval": 0,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "explosive",
+      "day"
+    ],
+    "desc_zh": "土豆地雷在被僵尸接触时自爆，但是他们需要时间做准备。将他们种在僵尸的前方。",
+    "almanac_no": 4,
+    "plantfood": true,
+    "splash": 1.0,
+    "delay": 14
+  },
+  {
+    "id": "snowpea",
+    "name_zh": "寒冰射手",
+    "name_en": "Snow Pea",
+    "cost": 150,
+    "cooldown": 5,
+    "hp": 300,
+    "family": "Cold",
+    "art": "plants/SnowPeaPLANT",
+    "behavior": "shoot",
+    "damage": 20,
+    "interval": 1.35,
+    "projectile": "pea_snow",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "shooter",
+      "ice"
+    ],
+    "desc_zh": "寒冰射手发射寒冰子弹，能使僵尸前进变得缓慢。",
+    "almanac_no": 5,
+    "plantfood": true,
+    "slow": 0.5
+  },
+  {
+    "id": "repeater",
+    "name_zh": "双重射手",
+    "name_en": "Repeater",
+    "cost": 175,
+    "cooldown": 5,
+    "hp": 300,
+    "family": "Peashooter",
+    "art": "plants/RepeaterPLANT",
+    "behavior": "shoot",
+    "damage": 20,
+    "interval": 1.35,
+    "projectile": "pea",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "shooter",
+      "day"
+    ],
+    "desc_zh": "双重射手每次发射两颗豌豆。",
+    "almanac_no": 6,
+    "plantfood": true,
+    "extra": {
+      "shots": 2
+    }
+  },
+  {
+    "id": "bloomerang",
+    "name_zh": "回旋镖射手",
+    "name_en": "Bloomerang",
+    "cost": 150,
+    "cooldown": 5,
+    "hp": 300,
+    "family": "Sharp",
+    "art": "plants/BloomerangPLANT",
+    "behavior": "boomerang",
+    "damage": 40,
+    "interval": 2.7,
+    "projectile": "boomerang",
+    "rows": [
+      0
+    ],
+    "pierce": true,
+    "tags": [
+      "plant",
+      "shooter",
+      "pierce"
+    ],
+    "desc_zh": "回旋镖射手可以每次击打本行的多个目标，回旋镖来回都能造成伤害！",
+    "almanac_no": 7,
+    "plantfood": true,
+    "extra": {
+      "pierce_count": 3
+    }
+  },
+  {
+    "id": "cabbagepult",
+    "name_zh": "卷心菜投手",
+    "name_en": "Cabbage-pult",
+    "cost": 100,
+    "cooldown": 5,
+    "hp": 300,
+    "family": "Lobber",
+    "art": "plants/CabbagePultPLANT",
+    "behavior": "lob",
+    "damage": 40,
+    "interval": 2.7,
+    "projectile": "cabbage",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "lobber"
+    ],
+    "desc_zh": "卷心菜投手向敌人投掷卷心菜。",
+    "almanac_no": 8,
+    "plantfood": true
+  },
+  {
+    "id": "chomper",
+    "name_zh": "大嘴花",
+    "name_en": "Chomper",
+    "cost": 150,
+    "cooldown": 5,
+    "hp": 300,
+    "family": "Melee",
+    "art": "plants/ChomperPLANT",
+    "behavior": "chomp",
+    "damage": 1800,
+    "interval": 17,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "melee"
+    ],
+    "desc_zh": "大嘴花可以完整地吃掉两只僵尸，但是他们在咀嚼时很脆弱。",
+    "almanac_no": 9,
+    "plantfood": true,
+    "melee_range": 1.6,
+    "extra": {
+      "chew_time": 17,
+      "max_contain": 2
+    }
+  },
+  {
+    "id": "fumeshroom",
+    "name_zh": "大喷菇",
+    "name_en": "Fume-shroom",
+    "cost": 75,
+    "cooldown": 7,
+    "hp": 300,
+    "family": "Poison",
+    "art": "plants/FumeShroomPLANT",
+    "behavior": "fume",
+    "damage": 40,
+    "interval": 2.4,
+    "projectile": "fume",
+    "rows": [
+      0
+    ],
+    "pierce": true,
+    "tags": [
+      "plant",
+      "fume",
+      "night"
+    ],
+    "desc_zh": "大喷菇向范围内所有僵尸发射气泡攻击。",
+    "almanac_no": 10,
+    "plantfood": true,
+    "melee_range": 5.5,
+    "extra": {
+      "shoot_range": 5.5
+    }
+  },
+  {
+    "id": "torchwood",
+    "name_zh": "火炬树桩",
+    "name_en": "Torchwood",
+    "cost": 175,
+    "cooldown": 5,
+    "hp": 2000,
+    "family": "Peashooter",
+    "art": "plants/TorchwoodPLANT",
+    "behavior": "support",
+    "damage": 6.25,
+    "interval": 1,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "buff",
+      "fire"
+    ],
+    "desc_zh": "火炬树桩将经过的豌豆点燃，造成双倍伤害。他们也会对靠近的僵尸造成伤害，死亡时会在燃烧一整行的僵尸。",
+    "almanac_no": 11,
+    "plantfood": true,
+    "extra": {
+      "fire_multiplier": 2,
+      "death_damage": 450
+    }
+  },
+  {
+    "id": "cherry_bomb",
+    "name_zh": "樱桃炸弹",
+    "name_en": "Cherry Bomb",
+    "cost": 150,
+    "cooldown": 30,
+    "hp": 300,
+    "family": "Explosive",
+    "art": "plants/CherryBombPLANT",
+    "behavior": "instant",
+    "damage": 1800,
+    "interval": 0,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "explosive"
+    ],
+    "desc_zh": "樱桃炸弹会爆炸并对范围内所有僵尸造成伤害。他们会立刻爆炸，将他们种在僵尸附近。",
+    "almanac_no": 12,
+    "plantfood": false,
+    "splash": 2.2,
+    "delay": 1.2
+  },
+  {
+    "id": "jalapeno",
+    "name_zh": "火爆辣椒",
+    "name_en": "Jalapeno",
+    "cost": 75,
+    "cooldown": 20,
+    "hp": 300,
+    "family": "Fire",
+    "art": "plants/JalapenoPLANT",
+    "behavior": "instant",
+    "damage": 1800,
+    "interval": 0,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "explosive",
+      "fire"
+    ],
+    "desc_zh": "火爆辣椒摧毁一整行的僵尸。",
+    "almanac_no": 13,
+    "plantfood": false,
+    "splash": 99,
+    "delay": 1.2,
+    "extra": {
+      "row_wide": true
+    }
+  },
+  {
+    "id": "squash",
+    "name_zh": "倭瓜",
+    "name_en": "Squash",
+    "cost": 50,
+    "cooldown": 20,
+    "hp": 300,
+    "family": "Melee",
+    "art": "plants/SquashPLANT",
+    "behavior": "instant",
+    "damage": 1800,
+    "interval": 0,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "melee"
+    ],
+    "desc_zh": "倭瓜会砸向第一只向他靠近的僵尸。",
+    "almanac_no": 14,
+    "plantfood": true,
+    "splash": 1.0,
+    "delay": 1.0,
+    "extra": {
+      "single_target": true
+    }
+  },
+  {
+    "id": "threepeater",
+    "name_zh": "三线射手",
+    "name_en": "Threepeater",
+    "cost": 250,
+    "cooldown": 5,
+    "hp": 300,
+    "family": "Peashooter",
+    "art": "plants/ThreePeaterPLANT",
+    "behavior": "shoot",
+    "damage": 20,
+    "interval": 1.35,
+    "projectile": "pea",
+    "rows": [
+      -1,
+      0,
+      1
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "shooter",
+      "multi_lane"
+    ],
+    "desc_zh": "三线射手向三行发射豌豆。",
+    "almanac_no": 15,
+    "plantfood": true
+  },
+  {
+    "id": "kernelpult",
+    "name_zh": "玉米投手",
+    "name_en": "Kernel-pult",
+    "cost": 200,
+    "cooldown": 5,
+    "hp": 300,
+    "family": "Lobber",
+    "art": "plants/KernelPultPLANT",
+    "behavior": "lob",
+    "damage": 20,
+    "interval": 2.7,
+    "projectile": "corn",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "lobber"
+    ],
+    "desc_zh": "玉米投手向僵尸投掷玉米粒和黄油。",
+    "almanac_no": 16,
+    "plantfood": true,
+    "extra": {
+      "butter_chance": 0.3,
+      "butter_damage": 60,
+      "butter_duration": 8
+    }
+  },
+  {
+    "id": "melonpult",
+    "name_zh": "西瓜投手",
+    "name_en": "Melon-pult",
+    "cost": 325,
+    "cooldown": 5,
+    "hp": 300,
+    "family": "Lobber",
+    "art": "plants/MelonPultPLANT",
+    "behavior": "lob",
+    "damage": 80,
+    "interval": 2.7,
+    "projectile": "melon",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "lobber",
+      "splash"
+    ],
+    "desc_zh": "西瓜投手会对成群的僵尸造成大量伤害。",
+    "almanac_no": 17,
+    "plantfood": true,
+    "splash": 40,
+    "extra": {
+      "splash_radius": 1.5
+    }
+  },
+  {
+    "id": "wintermelon",
+    "name_zh": "冰西瓜",
+    "name_en": "Winter Melon",
+    "cost": 450,
+    "cooldown": 5,
+    "hp": 300,
+    "family": "Cold",
+    "art": "plants/WinterMelonPLANT",
+    "behavior": "lob",
+    "damage": 80,
+    "interval": 2.7,
+    "projectile": "winter_melon",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "lobber",
+      "splash",
+      "ice"
+    ],
+    "desc_zh": "冰西瓜会对成群的僵尸造成大量伤害，并使他们减速。",
+    "almanac_no": 18,
+    "plantfood": true,
+    "splash": 40,
+    "slow": 0.5,
+    "extra": {
+      "splash_radius": 1.5
+    }
+  },
+  {
+    "id": "spikeweed",
+    "name_zh": "地刺",
+    "name_en": "Spikeweed",
+    "cost": 100,
+    "cooldown": 5,
+    "hp": 300,
+    "family": "Sharp",
+    "art": "plants/SpikeweedPLANT",
+    "behavior": "spike",
+    "damage": 10,
+    "interval": 0.5,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "spike",
+      "ground"
+    ],
+    "desc_zh": "地刺摧毁一滚动前行的目标，并且对经过的僵尸造成伤害。",
+    "almanac_no": 19,
+    "plantfood": true,
+    "melee_range": 1.0,
+    "extra": {
+      "ground_only": true
+    }
+  },
+  {
+    "id": "starfruit",
+    "name_zh": "星星果",
+    "name_en": "Starfruit",
+    "cost": 225,
+    "cooldown": 5,
+    "hp": 300,
+    "family": "Peashooter",
+    "art": "plants/StarFruitPLANT",
+    "behavior": "shoot",
+    "damage": 20,
+    "interval": 1.35,
+    "projectile": "star",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "shooter",
+      "multi_lane"
+    ],
+    "desc_zh": "星星果会向五个方向发射星星子弹。",
+    "almanac_no": 20,
+    "plantfood": true,
+    "extra": {
+      "five_way": true
+    }
+  },
+  {
+    "id": "tallnut",
+    "name_zh": "高坚果",
+    "name_en": "Tall-nut",
+    "cost": 125,
+    "cooldown": 20,
+    "hp": 8000,
+    "family": "Defence",
+    "art": "plants/TallnutPLANT",
+    "behavior": "wall",
+    "damage": 0,
+    "interval": 0,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "wall"
+    ],
+    "desc_zh": "高坚果是血量更厚的坚果墙，可以抵挡低空飞行的僵尸。",
+    "almanac_no": 21,
+    "plantfood": true,
+    "extra": {
+      "tall": true
+    }
+  },
+  {
+    "id": "magnifyinggrass",
+    "name_zh": "棱镜草",
+    "name_en": "Magnifying Grass",
+    "cost": 50,
+    "cooldown": 5,
+    "hp": 300,
+    "family": "Sun",
+    "art": "plants/MagnifyingGrassPLANT",
+    "behavior": "shoot",
+    "damage": 550,
+    "interval": 0.333,
+    "projectile": "magnifying_grass",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "shooter",
+      "sun"
+    ],
+    "desc_zh": "棱镜草将阳光转换为高能的彩虹子弹。",
+    "almanac_no": 22,
+    "plantfood": true,
+    "extra": {
+      "sun_cost_per_shot": 50
+    }
+  },
+  {
+    "id": "bonkchoy",
+    "name_zh": "菜问",
+    "name_en": "Bonk Choy",
+    "cost": 150,
+    "cooldown": 5,
+    "hp": 300,
+    "family": "Melee",
+    "art": "plants/BonkChoyPLANT",
+    "behavior": "spike",
+    "damage": 15,
+    "interval": 0.3,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "melee",
+      "spike"
+    ],
+    "desc_zh": "菜问快速击打身前或身后的敌人。",
+    "almanac_no": 23,
+    "plantfood": true,
+    "melee_range": 1.6,
+    "extra": {
+      "melee": true,
+      "heavy_damage": 30
+    }
+  },
+  {
+    "id": "twinsunflower",
+    "name_zh": "双胞向日葵",
+    "name_en": "Twin Sunflower",
+    "cost": 125,
+    "cooldown": 10,
+    "hp": 300,
+    "family": "Sun",
+    "art": "plants/SunflowerTwinPLANT",
+    "behavior": "produce",
+    "damage": 0,
+    "interval": 24,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "sun"
+    ],
+    "desc_zh": "双胞向日葵提供向日葵两倍的阳光。",
+    "almanac_no": 24,
+    "plantfood": true,
+    "sun_value": 100,
+    "sun_interval": 24,
+    "extra": {
+      "multi_sun": true
+    }
+  },
+  {
+    "id": "gatling",
+    "name_zh": "机枪射手",
+    "name_en": "Gatling Pea",
+    "cost": 450,
+    "cooldown": 5,
+    "hp": 300,
+    "family": "Peashooter",
+    "art": "plants/GatlingPeaPLANT",
+    "behavior": "shoot",
+    "damage": 20,
+    "interval": 0.9,
+    "projectile": "pea",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "shooter",
+      "burst"
+    ],
+    "desc_zh": "机枪射手每次发射 4 豌豆，并且拥有更高的射速。",
+    "almanac_no": 25,
+    "plantfood": true,
+    "extra": {
+      "shots": 4,
+      "burst_interval": 0.1
+    }
+  },
+  {
+    "id": "splitpea",
+    "name_zh": "裂荚射手",
+    "name_en": "Split Pea",
+    "cost": 125,
+    "cooldown": 5,
+    "hp": 300,
+    "family": "Peashooter",
+    "art": "plants/SplitPeaPLANT",
+    "behavior": "shoot",
+    "damage": 20,
+    "interval": 1.35,
+    "projectile": "pea",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "shooter",
+      "backward"
+    ],
+    "desc_zh": "裂荚射手向前后方发射豌豆。",
+    "almanac_no": 26,
+    "plantfood": true,
+    "extra": {
+      "shots": 2,
+      "backward": true
+    }
+  },
+  {
+    "id": "iceburg",
+    "name_zh": "冰冻生菜",
+    "name_en": "Iceberg Lettuce",
+    "cost": 0,
+    "cooldown": 20,
+    "hp": 300,
+    "family": "Cold",
+    "art": "plants/IcebergLettucePLANT",
+    "behavior": "instant",
+    "damage": 0,
+    "interval": 0,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "ice"
+    ],
+    "desc_zh": "冰冻生菜会冻结一只踩中他的僵尸。",
+    "almanac_no": 27,
+    "plantfood": true,
+    "splash": 1.5,
+    "slow": 1.0,
+    "delay": 0.6,
+    "extra": {
+      "freeze_duration": 10,
+      "freeze": true
+    }
+  },
+  {
+    "id": "sunshroom",
+    "name_zh": "阳光菇",
+    "name_en": "Sun-shroom",
+    "cost": 25,
+    "cooldown": 5,
+    "hp": 300,
+    "family": "Sun",
+    "art": "plants/SunShroomPLANT",
+    "behavior": "produce",
+    "damage": 0,
+    "interval": 24,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "sun",
+      "night"
+    ],
+    "desc_zh": "阳光菇一开始提供小阳光，然后提供普通阳光，最后提供大阳光。",
+    "almanac_no": 28,
+    "plantfood": true,
+    "sun_value": 15,
+    "sun_interval": 24,
+    "extra": {
+      "sun_value_list": [
+        25,
+        50,
+        75
+      ],
+      "grow_times": [
+        18,
+        54
+      ]
+    }
+  },
+  {
+    "id": "homingthistle",
+    "name_zh": "导向蓟",
+    "name_en": "Homing Thistle",
+    "cost": 250,
+    "cooldown": 15,
+    "hp": 300,
+    "family": "Sharp",
+    "art": "plants/HomingThistlePLANT",
+    "behavior": "shoot",
+    "damage": 40,
+    "interval": 1.35,
+    "projectile": "homing_thistle",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "shooter",
+      "homing"
+    ],
+    "desc_zh": "导向蓟会向离家最近的目标发射追踪子弹。",
+    "almanac_no": 29,
+    "plantfood": true,
+    "extra": {
+      "homing": true,
+      "any_lane": true
+    }
+  },
+  {
+    "id": "umbrellaleaf",
+    "name_zh": "伞叶",
+    "name_en": "Umbrella Leaf",
+    "cost": 100,
+    "cooldown": 5,
+    "hp": 300,
+    "family": "Defence",
+    "art": "plants/UmbrellaLeafPLANT",
+    "behavior": "support",
+    "damage": 0,
+    "interval": 0,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "support",
+      "defence"
+    ],
+    "desc_zh": "伞叶保护植物免受来自空中的威胁。",
+    "almanac_no": 30,
+    "plantfood": true,
+    "extra": {
+      "blocks_lob": true,
+      "blocks_parachute": true
+    }
+  },
+  {
+    "id": "voiddragon",
+    "name_zh": "暗物质火龙果",
+    "name_en": "Dark Matter Dragonfruit",
+    "cost": 250,
+    "cooldown": 10,
+    "hp": 300,
+    "family": "Dragonfruit",
+    "art": "plants/DarkMatterDragonfruitPLANT",
+    "behavior": "shoot",
+    "damage": 40,
+    "interval": 1.6,
+    "projectile": "pea",
+    "rows": [
+      0
+    ],
+    "pierce": 0,
+    "tags": [
+      "plant",
+      "dark",
+      "event"
+    ],
+    "desc_zh": "来自虚空的暗物质火龙果，以暗物质能量攻击整行僵尸，并有概率触发元素反应。",
+    "almanac_no": 31,
+    "plantfood": ""
+  },
+  {
+    "id": "gardenia",
+    "name_zh": "栀子花",
+    "name_en": "Gardenia",
+    "cost": 225,
+    "cooldown": 12,
+    "hp": 300,
+    "family": "Gardenia",
+    "art": "art/chinesegarden/gardenia.png",
+    "behavior": "shoot",
+    "damage": 30,
+    "interval": 1.5,
+    "projectile": "pea",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "new"
+    ],
+    "desc_zh": "栀子花会向整行僵尸抛洒花瓣，花瓣带着淡淡的香气。",
+    "almanac_no": 32,
+    "plantfood": ""
+  },
+  {
+    "id": "jasmine",
+    "name_zh": "茉莉",
+    "name_en": "Jasmine",
+    "cost": 125,
+    "cooldown": 25,
+    "hp": 300,
+    "family": "Jasmine",
+    "art": "art/chinesegarden/jasmine.png",
+    "behavior": "produce",
+    "damage": 0,
+    "interval": 22.0,
+    "projectile": "pea",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "new"
+    ],
+    "desc_zh": "茉莉在月色下安静地产出阳光，偶尔也会哼一段小调。",
+    "almanac_no": 33,
+    "plantfood": "",
+    "sun_value": 25,
+    "sun_interval": 22.0
+  },
+  {
+    "id": "torpedofruit",
+    "name_zh": "鱼雷果",
+    "name_en": "Torpedo Fruit",
+    "cost": 125,
+    "cooldown": 8,
+    "hp": 1500,
+    "family": "Torpedo",
+    "art": "art/chinesegarden/torpedofruit.png",
+    "behavior": "shoot",
+    "damage": 100,
+    "interval": 2.2,
+    "projectile": "pea",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "new"
+    ],
+    "desc_zh": "鱼雷果的果实会笔直地撞向僵尸，威力惊人。",
+    "almanac_no": 34,
+    "plantfood": ""
+  },
+  {
+    "id": "seapotatomine",
+    "name_zh": "海土豆雷",
+    "name_en": "Sea-potato Mine",
+    "cost": 75,
+    "cooldown": 20,
+    "hp": 300,
+    "family": "Mine",
+    "art": "art/chinesegarden/seapotatomine.png",
+    "behavior": "mine",
+    "damage": 1800,
+    "interval": 0.0,
+    "projectile": "pea",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "new"
+    ],
+    "desc_zh": "海土豆雷把自己埋进石缝里，等待僵尸踩上来。",
+    "almanac_no": 35,
+    "plantfood": "",
+    "delay": 12.0
+  },
+  {
+    "id": "elderbarrier",
+    "name_zh": "接骨木屏障",
+    "name_en": "Elderbarrier",
+    "cost": 75,
+    "cooldown": 15,
+    "hp": 3000,
+    "family": "Wall",
+    "art": "art/chinesegarden/elderbarrier.png",
+    "behavior": "wall",
+    "damage": 0,
+    "interval": 0.0,
+    "projectile": "pea",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "new"
+    ],
+    "desc_zh": "接骨木编成的屏障，能挡住僵尸很久。",
+    "almanac_no": 36,
+    "plantfood": ""
+  },
+  {
+    "id": "birdofparadise",
+    "name_zh": "天堂鸟",
+    "name_en": "Bird of Paradise",
+    "cost": 200,
+    "cooldown": 15,
+    "hp": 300,
+    "family": "Bird",
+    "art": "art/losantosvice/birdofparadise.png",
+    "behavior": "shoot",
+    "damage": 45,
+    "interval": 1.6,
+    "projectile": "pea",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "new"
+    ],
+    "desc_zh": "天堂鸟把花瓣当作回力标，命中两个方向的敌人。",
+    "almanac_no": 37,
+    "plantfood": ""
+  },
+  {
+    "id": "poppinpoppies",
+    "name_zh": "虞美人",
+    "name_en": "Poppin' Poppies",
+    "cost": 225,
+    "cooldown": 15,
+    "hp": 300,
+    "family": "Poppy",
+    "art": "art/losantosvice/poppinpoppies.png",
+    "behavior": "shoot",
+    "damage": 40,
+    "interval": 1.8,
+    "projectile": "pea",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "new"
+    ],
+    "desc_zh": "虞美人跳着舞，把种子一颗颗弹向街道尽头的僵尸。",
+    "almanac_no": 38,
+    "plantfood": ""
+  },
+  {
+    "id": "yuccaguardian",
+    "name_zh": "丝兰卫士",
+    "name_en": "Yucca Guardian",
+    "cost": 175,
+    "cooldown": 10,
+    "hp": 2000,
+    "family": "Yucca",
+    "art": "art/losantosvice/yuccaguardian.png",
+    "behavior": "wall",
+    "damage": 0,
+    "interval": 0.0,
+    "projectile": "pea",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "new"
+    ],
+    "desc_zh": "丝兰卫士像路边的绿化带一样沉默而可靠。",
+    "almanac_no": 39,
+    "plantfood": ""
+  },
+  {
+    "id": "begonia",
+    "name_zh": "秋海棠",
+    "name_en": "Begonia",
+    "cost": 175,
+    "cooldown": 10,
+    "hp": 300,
+    "family": "Begonia",
+    "art": "art/lunarrainbowmarket/begonia.png",
+    "behavior": "lob",
+    "damage": 60,
+    "interval": 2.4,
+    "projectile": "cabbage",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "new"
+    ],
+    "desc_zh": "秋海棠把花瓣抛向空中，越过前排落在僵尸头顶。",
+    "almanac_no": 40,
+    "plantfood": ""
+  },
+  {
+    "id": "potatochip",
+    "name_zh": "薯片",
+    "name_en": "Potato Chip",
+    "cost": 0,
+    "cooldown": 5,
+    "hp": 300,
+    "family": "Chip",
+    "art": "art/lunarrainbowmarket/potatochip.png",
+    "behavior": "instant",
+    "damage": 300,
+    "interval": 0.0,
+    "projectile": "pea",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "new"
+    ],
+    "desc_zh": "一片煎得恰到好处的薯片，落地就碎。免费。",
+    "almanac_no": 41,
+    "plantfood": "",
+    "delay": 0.4
+  },
+  {
+    "id": "missiletoast",
+    "name_zh": "导弹吐司",
+    "name_en": "Missile Toast",
+    "cost": 250,
+    "cooldown": 8,
+    "hp": 300,
+    "family": "Toast",
+    "art": "art/lunarrainbowmarket/missiletoast.png",
+    "behavior": "lob",
+    "damage": 120,
+    "interval": 3.0,
+    "projectile": "melon",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "new"
+    ],
+    "desc_zh": "涂抹了过多黄油的吐司，点火后划出抛物线。",
+    "almanac_no": 42,
+    "plantfood": ""
+  },
+  {
+    "id": "iris",
+    "name_zh": "鸢尾花",
+    "name_en": "Iris",
+    "cost": 200,
+    "cooldown": 8,
+    "hp": 300,
+    "family": "Peashooter",
+    "art": "art/plantagenet/iris.png",
+    "behavior": "shoot",
+    "damage": 45,
+    "interval": 1.5,
+    "projectile": "pea",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "plantagenet",
+      "shooter"
+    ],
+    "desc_zh": "鸢尾花抖落花瓣上的晨露，向前方射出一束晶亮的锐光。",
+    "almanac_no": 43,
+    "plantfood": true
+  },
+  {
+    "id": "rosemary",
+    "name_zh": "迷迭香",
+    "name_en": "Rosemary",
+    "cost": 150,
+    "cooldown": 15,
+    "hp": 300,
+    "family": "Support",
+    "art": "art/plantagenet/rosemary.png",
+    "behavior": "support",
+    "damage": 0,
+    "interval": 0,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "plantagenet",
+      "support"
+    ],
+    "desc_zh": "迷迭香的气息让周围的植物变得从容，连阳光都更愿意在它身边停留。",
+    "almanac_no": 44,
+    "plantfood": true
+  },
+  {
+    "id": "snowlotus",
+    "name_zh": "雪莲",
+    "name_en": "Snow Lotus",
+    "cost": 175,
+    "cooldown": 12,
+    "hp": 300,
+    "family": "Cold",
+    "art": "art/plantagenet/snowlotus.png",
+    "behavior": "shoot",
+    "damage": 40,
+    "interval": 1.6,
+    "projectile": "pea_snow",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "plantagenet",
+      "shooter",
+      "ice"
+    ],
+    "desc_zh": "雪莲吐出寒冷的花粉，被击中的僵尸会放慢脚步。",
+    "almanac_no": 45,
+    "plantfood": true,
+    "slow": 0.6
+  },
+  {
+    "id": "wildflower",
+    "name_zh": "野花",
+    "name_en": "Wildflower",
+    "cost": 50,
+    "cooldown": 10,
+    "hp": 300,
+    "family": "Sun",
+    "art": "art/plantagenet/wildflower.png",
+    "behavior": "produce",
+    "damage": 0,
+    "interval": 20,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "plantagenet",
+      "sun"
+    ],
+    "desc_zh": "野花在石缝里也能开得很好，每隔一会儿就结出一小团阳光。",
+    "almanac_no": 46,
+    "plantfood": true,
+    "sun_value": 25,
+    "sun_interval": 20
+  },
+  {
+    "id": "olivewood",
+    "name_zh": "橄榄木",
+    "name_en": "Olive Wood",
+    "cost": 75,
+    "cooldown": 20,
+    "hp": 3000,
+    "family": "Defence",
+    "art": "art/plantagenet/olivewood.png",
+    "behavior": "wall",
+    "damage": 0,
+    "interval": 0,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "plantagenet",
+      "wall"
+    ],
+    "desc_zh": "橄榄木把根系扎进砖缝，挡住去路时纹丝不动。",
+    "almanac_no": 47,
+    "plantfood": true
+  },
+  {
+    "id": "astrofruit",
+    "name_zh": "星果",
+    "name_en": "Astrofruit",
+    "cost": 225,
+    "cooldown": 12,
+    "hp": 300,
+    "family": "Lobber",
+    "art": "art/plantagenet/astrofruit.png",
+    "behavior": "lob",
+    "damage": 80,
+    "interval": 2.4,
+    "projectile": "melon",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "plantagenet",
+      "lobber"
+    ],
+    "desc_zh": "星果把自己弹上高空，落下来时像一颗小小的陨石。",
+    "almanac_no": 48,
+    "plantfood": true,
+    "splash": 40,
+    "extra": {
+      "splash_radius": 1.5
+    }
+  },
+  {
+    "id": "chrysanthea",
+    "name_zh": "秋菊",
+    "name_en": "Chrysanthea",
+    "cost": 200,
+    "cooldown": 10,
+    "hp": 300,
+    "family": "Peashooter",
+    "art": "art/plantagenet/chrysanthea.png",
+    "behavior": "shoot",
+    "damage": 50,
+    "interval": 1.8,
+    "projectile": "pea",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "plantagenet",
+      "shooter"
+    ],
+    "desc_zh": "秋菊的花瓣层层叠叠，射出去的花瓣会跟着风拐一点弯。",
+    "almanac_no": 49,
+    "plantfood": true
+  },
+  {
+    "id": "doominator",
+    "name_zh": "毁灭菇",
+    "name_en": "Doominator",
+    "cost": 300,
+    "cooldown": 25,
+    "hp": 300,
+    "family": "Explosive",
+    "art": "art/plantagenet/doominator.png",
+    "behavior": "instant",
+    "damage": 1800,
+    "interval": 0,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "plantagenet",
+      "explosive"
+    ],
+    "desc_zh": "毁灭菇把整片棋盘当成自己的舞台，一声闷响之后地上只剩下一圈灰。",
+    "almanac_no": 50,
+    "plantfood": false,
+    "splash": 2.5,
+    "delay": 0.6,
+    "extra": {
+      "radius": 170
+    }
+  },
+  {
+    "id": "helioscabbage",
+    "name_zh": "太阳卷心菜",
+    "name_en": "Helios Cabbage",
+    "cost": 200,
+    "cooldown": 12,
+    "hp": 300,
+    "family": "Lobber",
+    "art": "art/plantagenet/helioscabbage.png",
+    "behavior": "lob",
+    "damage": 70,
+    "interval": 2.2,
+    "projectile": "melon",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "plantagenet",
+      "lobber",
+      "fire"
+    ],
+    "desc_zh": "太阳卷心菜裹着一层暖光，落地时会在地上烧出一圈焦痕。",
+    "almanac_no": 51,
+    "plantfood": true,
+    "splash": 40,
+    "extra": {
+      "splash_radius": 1.5
+    },
+    "element": "fire"
+  },
+  {
+    "id": "paradoxpult",
+    "name_zh": "悖论投手",
+    "name_en": "Paradox-pult",
+    "cost": 300,
+    "cooldown": 15,
+    "hp": 300,
+    "family": "Lobber",
+    "art": "art/plantagenet/paradoxpult.png",
+    "behavior": "lob",
+    "damage": 60,
+    "interval": 2.0,
+    "projectile": "cabbage",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "plantagenet",
+      "lobber"
+    ],
+    "desc_zh": "悖论投手把卷心菜抛向还没来得及发生的位置——但它总能砸中。",
+    "almanac_no": 52,
+    "plantfood": true
+  },
+  {
+    "id": "tubiflora",
+    "name_zh": "管花",
+    "name_en": "Tubiflora",
+    "cost": 175,
+    "cooldown": 10,
+    "hp": 300,
+    "family": "Peashooter",
+    "art": "art/plantagenet/tubiflora.png",
+    "behavior": "shoot",
+    "damage": 50,
+    "interval": 1.4,
+    "projectile": "pea",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "plantagenet",
+      "shooter"
+    ],
+    "desc_zh": "管花从花管里吹出短促的气流，把僵尸推得踉跄。",
+    "almanac_no": 53,
+    "plantfood": true
+  },
+  {
+    "id": "vortexmelon",
+    "name_zh": "漩涡西瓜",
+    "name_en": "Vortex Melon",
+    "cost": 300,
+    "cooldown": 15,
+    "hp": 300,
+    "family": "Lobber",
+    "art": "art/plantagenet/vortexmelon.png",
+    "behavior": "lob",
+    "damage": 100,
+    "interval": 2.8,
+    "projectile": "melon",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "plantagenet",
+      "lobber"
+    ],
+    "desc_zh": "漩涡西瓜砸在地上会卷起一圈瓜汁漩涡，把周围的僵尸一起拖进去。",
+    "almanac_no": 54,
+    "plantfood": true,
+    "splash": 50,
+    "extra": {
+      "splash_radius": 1.6
+    }
+  },
+  {
+    "id": "cheesestrawberry",
+    "name_zh": "芝士草莓",
+    "name_en": "Cheese Strawberry",
+    "cost": 50,
+    "cooldown": 8,
+    "hp": 300,
+    "family": "Sun",
+    "art": "art/plantagenet/cheesestrawberry.png",
+    "behavior": "produce",
+    "damage": 0,
+    "interval": 18,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "plantagenet",
+      "sun"
+    ],
+    "desc_zh": "芝士草莓的果肉里裹着阳光，成熟时连香气都是甜的。",
+    "almanac_no": 55,
+    "plantfood": true,
+    "sun_value": 25,
+    "sun_interval": 18
+  },
+  {
+    "id": "oolongpeach",
+    "name_zh": "乌龙桃",
+    "name_en": "Oolong Peach",
+    "cost": 75,
+    "cooldown": 12,
+    "hp": 300,
+    "family": "Sun",
+    "art": "art/plantagenet/oolongpeach.png",
+    "behavior": "produce",
+    "damage": 0,
+    "interval": 20,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "plantagenet",
+      "sun"
+    ],
+    "desc_zh": "乌龙桃泡出一壶温热的阳光，慢慢分给身边的同伴。",
+    "almanac_no": 56,
+    "plantfood": true,
+    "sun_value": 25,
+    "sun_interval": 20
+  },
+  {
+    "id": "succulentgrape",
+    "name_zh": "多肉葡萄",
+    "name_en": "Succulent Grape",
+    "cost": 125,
+    "cooldown": 10,
+    "hp": 300,
+    "family": "Peashooter",
+    "art": "art/plantagenet/succulentgrape.png",
+    "behavior": "shoot",
+    "damage": 40,
+    "interval": 1.5,
+    "projectile": "pea",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "plantagenet",
+      "shooter"
+    ],
+    "desc_zh": "多肉葡萄的果粒饱满，弹出去的时候还带着一点果霜。",
+    "almanac_no": 57,
+    "plantfood": true
+  },
+  {
+    "id": "doublepassion",
+    "name_zh": "双倍百香果",
+    "name_en": "Double Passion",
+    "cost": 200,
+    "cooldown": 12,
+    "hp": 300,
+    "family": "Peashooter",
+    "art": "art/plantagenet/doublepassion.png",
+    "behavior": "shoot",
+    "damage": 45,
+    "interval": 1.7,
+    "projectile": "pea",
+    "rows": [
+      -1,
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "plantagenet",
+      "shooter",
+      "multi_lane"
+    ],
+    "desc_zh": "双倍百香果上下各开一枪，两行的僵尸都别想靠近。",
+    "almanac_no": 58,
+    "plantfood": true
+  },
+  {
+    "id": "fireflerry",
+    "name_zh": "荧火莓",
+    "name_en": "Fireflerry",
+    "cost": 225,
+    "cooldown": 8,
+    "hp": 2671,
+    "family": "Peashooter",
+    "art": "art/stellar/fireflerry.png",
+    "behavior": "shoot",
+    "damage": 60,
+    "interval": 1.6,
+    "projectile": "pea",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "plantagenet",
+      "shooter",
+      "fire"
+    ],
+    "desc_zh": "荧火莓的尾光拖成一条火线，被烧到的僵尸会一直亮着。",
+    "almanac_no": 59,
+    "plantfood": true,
+    "element": "fire"
+  },
+  {
+    "id": "frozenpear",
+    "name_zh": "冰冻梨",
+    "name_en": "Frozen Pear",
+    "cost": 175,
+    "cooldown": 15,
+    "hp": 2500,
+    "family": "Cold",
+    "art": "art/others/frozenpear.png",
+    "behavior": "instant",
+    "damage": 0,
+    "interval": 0,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "plantagenet",
+      "ice",
+      "freeze"
+    ],
+    "desc_zh": "冰冻梨把自己冻成一块冰坨，碎裂时把身边三行三列的僵尸一起定住。",
+    "almanac_no": 60,
+    "plantfood": true,
+    "splash": 1.5,
+    "slow": 1.0,
+    "delay": 0.3,
+    "extra": {
+      "radius": 150,
+      "freeze_duration": 10,
+      "freeze": true
+    }
+  },
+  {
+    "id": "solarflare",
+    "name_zh": "太阳耀斑",
+    "name_en": "Solar Flare",
+    "cost": 25,
+    "cooldown": 8,
+    "hp": 300,
+    "family": "Explosive",
+    "art": "art/others/solarflare.png",
+    "behavior": "instant",
+    "damage": 250,
+    "interval": 0,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "plantagenet",
+      "explosive"
+    ],
+    "desc_zh": "太阳耀斑只值一次小小的绽放，却足以把脚下的僵尸烫退半步。",
+    "almanac_no": 61,
+    "plantfood": true,
+    "splash": 1.5,
+    "delay": 0.4,
+    "extra": {
+      "radius": 130
+    }
+  },
+  {
+    "id": "taraxacum",
+    "name_zh": "蒲公英",
+    "name_en": "Taraxacum",
+    "cost": 125,
+    "cooldown": 8,
+    "hp": 300,
+    "family": "Support",
+    "art": "art/others/taraxacum.png",
+    "behavior": "support",
+    "damage": 0,
+    "interval": 0,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "plantagenet",
+      "support"
+    ],
+    "desc_zh": "蒲公英把种子交给风，风会替它照看整片草坪。",
+    "almanac_no": 62,
+    "plantfood": true
+  },
+  {
+    "id": "fused_wintergeddon",
+    "name_zh": "究极冰神西瓜",
+    "name_en": "Vortex Melon",
+    "cost": 500,
+    "cooldown": 18.0,
+    "hp": 300,
+    "family": "Cold",
+    "art": "plants/WinterMelonPLANT",
+    "behavior": "lob",
+    "damage": 30,
+    "interval": 2.7,
+    "projectile": "winter_melon",
+    "rows": [
+      -1,
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "lobber",
+      "splash",
+      "ice"
+    ],
+    "desc_zh": "究极冰神西瓜可以投出多个特殊冰西瓜攻击僵尸。",
+    "almanac_no": 63,
+    "plantfood": true,
+    "fused": true,
+    "slow": 0.5,
+    "splash": 40,
+    "extra": {
+      "splash_radius": 1.5
+    }
+  },
+  {
+    "id": "fused_paradoxpult",
+    "name_zh": "究极超时空玉米·融合",
+    "name_en": "Paradox-pult (Fusion)",
+    "cost": 300,
+    "cooldown": 15.0,
+    "hp": 300,
+    "family": "Lobber",
+    "art": "art/plantagenet/paradoxpult.png",
+    "behavior": "lob",
+    "damage": 60,
+    "interval": 2.0,
+    "projectile": "cabbage",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "lobber"
+    ],
+    "desc_zh": "究极超时空玉米可以投掷黄油或黑洞攻击僵尸。",
+    "almanac_no": 64,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_repeater1",
+    "name_zh": "双重射手",
+    "name_en": "Repeater",
+    "cost": 160,
+    "cooldown": 5.0,
+    "hp": 405,
+    "family": "Peashooter",
+    "art": "plants/RepeaterPLANT",
+    "behavior": "shoot",
+    "damage": 38,
+    "interval": 1.35,
+    "projectile": "pea",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "shooter",
+      "day"
+    ],
+    "desc_zh": "双重射手能一次发射两颗豌豆。",
+    "almanac_no": 65,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_primalsunflower",
+    "name_zh": "原始向日葵",
+    "name_en": "Primal Sunflower",
+    "cost": 75,
+    "cooldown": 5.0,
+    "hp": 300,
+    "family": "Sun",
+    "art": "plants/SunflowerPLANT",
+    "behavior": "produce",
+    "damage": 0,
+    "interval": 22.0,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "sun",
+      "day"
+    ],
+    "desc_zh": "原始向日葵可以产生大号的阳光。",
+    "almanac_no": 66,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_snowpea",
+    "name_zh": "寒冰豌豆·融合",
+    "name_en": "Snow Pea (Fusion)",
+    "cost": 150,
+    "cooldown": 5.0,
+    "hp": 300,
+    "family": "Cold",
+    "art": "plants/SnowPeaPLANT",
+    "behavior": "shoot",
+    "damage": 20,
+    "interval": 1.35,
+    "projectile": "pea_snow",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "shooter",
+      "day",
+      "ice"
+    ],
+    "desc_zh": "寒冰豌豆可以发射冰冻豌豆，让僵尸难以前行。",
+    "almanac_no": 67,
+    "plantfood": true,
+    "fused": true,
+    "slow": 0.5
+  },
+  {
+    "id": "fused_snowpea_2",
+    "name_zh": "寒冰豌豆·融合二式",
+    "name_en": "Snow Pea (Fusion Mk II)",
+    "cost": 150,
+    "cooldown": 5.0,
+    "hp": 300,
+    "family": "Cold",
+    "art": "plants/SnowPeaPLANT",
+    "behavior": "shoot",
+    "damage": 20,
+    "interval": 1.35,
+    "projectile": "pea_snow",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "ice",
+      "shooter",
+      "day"
+    ],
+    "desc_zh": "寒冰豌豆可以发射冰冻豌豆，让僵尸难以前行。",
+    "almanac_no": 68,
+    "plantfood": true,
+    "fused": true,
+    "slow": 0.5
+  },
+  {
+    "id": "fused_wintermelon",
+    "name_zh": "冰瓜投手·融合",
+    "name_en": "Winter Melon (Fusion)",
+    "cost": 450,
+    "cooldown": 5.0,
+    "hp": 300,
+    "family": "Cold",
+    "art": "plants/WinterMelonPLANT",
+    "behavior": "lob",
+    "damage": 80,
+    "interval": 2.7,
+    "projectile": "winter_melon",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "lobber",
+      "splash",
+      "ice"
+    ],
+    "desc_zh": "减速成群的僵尸并造成大量伤害。",
+    "almanac_no": 69,
+    "plantfood": true,
+    "fused": true,
+    "slow": 0.5,
+    "splash": 40,
+    "extra": {
+      "splash_radius": 1.5
+    }
+  },
+  {
+    "id": "fused_wintermelon_2",
+    "name_zh": "冰瓜投手·融合二式",
+    "name_en": "Winter Melon (Fusion Mk II)",
+    "cost": 450,
+    "cooldown": 5.0,
+    "hp": 300,
+    "family": "Cold",
+    "art": "plants/WinterMelonPLANT",
+    "behavior": "lob",
+    "damage": 80,
+    "interval": 2.7,
+    "projectile": "winter_melon",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "ice",
+      "lobber",
+      "splash"
+    ],
+    "desc_zh": "减速成群的僵尸并造成大量伤害。",
+    "almanac_no": 70,
+    "plantfood": true,
+    "fused": true,
+    "slow": 0.5,
+    "splash": 40,
+    "extra": {
+      "splash_radius": 1.5
+    }
+  },
+  {
+    "id": "fused_punkshocker",
+    "name_zh": "朋克电王",
+    "name_en": "Punk Shocker",
+    "cost": 225,
+    "cooldown": 8.0,
+    "hp": 300,
+    "family": "Peashooter",
+    "art": "plants/GatlingPeaPLANT",
+    "behavior": "shoot",
+    "damage": 22,
+    "interval": 1.4,
+    "projectile": "pea",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "shooter"
+    ],
+    "desc_zh": "可以制造两道带有麻痹效果的闪电。",
+    "almanac_no": 71,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_headbutterlettuce",
+    "name_zh": "奶油生菜",
+    "name_en": "Headbutter Lettuce",
+    "cost": 120,
+    "cooldown": 5.0,
+    "hp": 405,
+    "family": "Sharp",
+    "art": "plants/BonkChoyPLANT",
+    "behavior": "spike",
+    "damage": 150,
+    "interval": 0.3,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "melee",
+      "spike"
+    ],
+    "desc_zh": "奶油生菜可以在攻击的时候甩出奶油，将远处的僵尸糊住。",
+    "almanac_no": 72,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_headbutterlettuce_2",
+    "name_zh": "奶油生菜·二式",
+    "name_en": "Headbutter Lettuce Mk II",
+    "cost": 120,
+    "cooldown": 5.0,
+    "hp": 405,
+    "family": "Sharp",
+    "art": "plants/BonkChoyPLANT",
+    "behavior": "spike",
+    "damage": 150,
+    "interval": 0.3,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "melee",
+      "spike"
+    ],
+    "desc_zh": "奶油生菜可以在攻击的时候甩出奶油，将远处的僵尸糊住。",
+    "almanac_no": 73,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_birthsunflower",
+    "name_zh": "向日葵歌手",
+    "name_en": "Sunflower Singer",
+    "cost": 125,
+    "cooldown": 10.0,
+    "hp": 300,
+    "family": "Sun",
+    "art": "plants/SunflowerPLANT",
+    "behavior": "produce",
+    "damage": 0,
+    "interval": 22.0,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused"
+    ],
+    "desc_zh": "向日葵歌手可以通过演唱产出 100 阳光。",
+    "almanac_no": 74,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_suntower",
+    "name_zh": "向日塔",
+    "name_en": "Sun Tower",
+    "cost": 200,
+    "cooldown": 10.0,
+    "hp": 300,
+    "family": "Sun",
+    "art": "plants/SunflowerPLANT",
+    "behavior": "produce",
+    "damage": 0,
+    "interval": 22.0,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused"
+    ],
+    "desc_zh": "向日塔可以产生巨大量的阳光，并在产生阳光后暂时加强周围的植物。当她死亡时，造成阳光爆炸。",
+    "almanac_no": 75,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_sweetpotato1",
+    "name_zh": "甜薯",
+    "name_en": "Sweetpotato1",
+    "cost": 40,
+    "cooldown": 20.0,
+    "hp": 5400,
+    "family": "Support",
+    "art": "plants/UmbrellaLeafPLANT",
+    "behavior": "support",
+    "damage": 0,
+    "interval": 0.0,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "wall",
+      "day"
+    ],
+    "desc_zh": "甜薯由坚果墙与garlic融合而成，拥有独特的战斗方式。",
+    "almanac_no": 76,
+    "plantfood": false,
+    "fused": true
+  },
+  {
+    "id": "fused_sweetpotato1_2",
+    "name_zh": "甜薯·二式",
+    "name_en": "Sweetpotato1 Mk II",
+    "cost": 40,
+    "cooldown": 20.0,
+    "hp": 5400,
+    "family": "Support",
+    "art": "plants/UmbrellaLeafPLANT",
+    "behavior": "support",
+    "damage": 0,
+    "interval": 0.0,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "wall",
+      "day"
+    ],
+    "desc_zh": "甜薯·二式由garlic与坚果墙融合而成，拥有独特的战斗方式。",
+    "almanac_no": 77,
+    "plantfood": false,
+    "fused": true
+  },
+  {
+    "id": "fused_spikerock",
+    "name_zh": "石地刺",
+    "name_en": "Spikerock",
+    "cost": 250,
+    "cooldown": 5.0,
+    "hp": 300,
+    "family": "Sharp",
+    "art": "plants/SpikeweedPLANT",
+    "behavior": "spike",
+    "damage": 20,
+    "interval": 0.5,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "spike",
+      "ground"
+    ],
+    "desc_zh": "石地刺可以击破多个滚动的僵尸容器并且伤害踩在他身上的僵尸。",
+    "almanac_no": 78,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_iceweed",
+    "name_zh": "冰蔓草",
+    "name_en": "Iceweed",
+    "cost": 150,
+    "cooldown": 5.0,
+    "hp": 300,
+    "family": "Cold",
+    "art": "plants/SpikeweedPLANT",
+    "behavior": "spike",
+    "damage": 10,
+    "interval": 0.5,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "spike",
+      "ground",
+      "ice"
+    ],
+    "desc_zh": "寒冰地刺可以冷缓并伤害踏在上面的僵尸。",
+    "almanac_no": 79,
+    "plantfood": true,
+    "fused": true,
+    "slow": 0.5
+  },
+  {
+    "id": "fused_iceweed_2",
+    "name_zh": "冰蔓草·二式",
+    "name_en": "Iceweed Mk II",
+    "cost": 150,
+    "cooldown": 5.0,
+    "hp": 300,
+    "family": "Cold",
+    "art": "plants/SpikeweedPLANT",
+    "behavior": "spike",
+    "damage": 10,
+    "interval": 0.5,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "ice",
+      "spike",
+      "ground"
+    ],
+    "desc_zh": "寒冰地刺可以冷缓并伤害踏在上面的僵尸。",
+    "almanac_no": 80,
+    "plantfood": true,
+    "fused": true,
+    "slow": 0.5
+  },
+  {
+    "id": "fused_rabbagepult",
+    "name_zh": "究极太阳神卷心菜",
+    "name_en": "Helios Cabbage",
+    "cost": 275,
+    "cooldown": 8.0,
+    "hp": 300,
+    "family": "Lobber",
+    "art": "plants/CabbagePultPLANT",
+    "behavior": "lob",
+    "damage": 15,
+    "interval": 3.0,
+    "projectile": "cabbage",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "lobber"
+    ],
+    "desc_zh": "究极太阳神卷心菜可以向敌人投掷充满阳光的卷心菜，在击中僵尸后掉落阳光。",
+    "almanac_no": 81,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_rabbagepult_2",
+    "name_zh": "究极太阳神卷心菜·二式",
+    "name_en": "Helios Cabbage Mk II",
+    "cost": 275,
+    "cooldown": 8.0,
+    "hp": 300,
+    "family": "Lobber",
+    "art": "plants/CabbagePultPLANT",
+    "behavior": "lob",
+    "damage": 15,
+    "interval": 3.0,
+    "projectile": "cabbage",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "lobber"
+    ],
+    "desc_zh": "究极太阳神卷心菜可以向敌人投掷充满阳光的卷心菜，在击中僵尸后掉落阳光。",
+    "almanac_no": 82,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_primalpeashooter",
+    "name_zh": "原始豌豆射手",
+    "name_en": "Primal Peashooter",
+    "cost": 175,
+    "cooldown": 5.0,
+    "hp": 300,
+    "family": "Peashooter",
+    "art": "plants/PeashooterPLANT",
+    "behavior": "shoot",
+    "damage": 50,
+    "interval": 1.35,
+    "projectile": "pea",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "shooter",
+      "day"
+    ],
+    "desc_zh": "原始豌豆射手可以发射沉重的豌豆击晕或击退僵尸。",
+    "almanac_no": 83,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_primalpeashooter_2",
+    "name_zh": "原始豌豆射手·二式",
+    "name_en": "Primal Peashooter Mk II",
+    "cost": 175,
+    "cooldown": 5.0,
+    "hp": 300,
+    "family": "Peashooter",
+    "art": "plants/PeashooterPLANT",
+    "behavior": "shoot",
+    "damage": 50,
+    "interval": 1.35,
+    "projectile": "pea",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "shooter",
+      "day"
+    ],
+    "desc_zh": "原始豌豆射手可以发射沉重的豌豆击晕或击退僵尸。",
+    "almanac_no": 84,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_magnetfruit",
+    "name_zh": "究极杨桃大帝",
+    "name_en": "Astrofruit",
+    "cost": 425,
+    "cooldown": 25.0,
+    "hp": 300,
+    "family": "Support",
+    "art": "plants/UmbrellaLeafPLANT",
+    "behavior": "support",
+    "damage": 0,
+    "interval": 0.0,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "shooter",
+      "multi_lane"
+    ],
+    "desc_zh": "究极杨桃大帝可以发射五颗追踪星星，命中后持续追踪并攻击僵尸。",
+    "almanac_no": 85,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_magnetfruit_2",
+    "name_zh": "究极杨桃大帝·二式",
+    "name_en": "Astrofruit Mk II",
+    "cost": 425,
+    "cooldown": 25.0,
+    "hp": 300,
+    "family": "Support",
+    "art": "plants/UmbrellaLeafPLANT",
+    "behavior": "support",
+    "damage": 0,
+    "interval": 0.0,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "shooter",
+      "multi_lane"
+    ],
+    "desc_zh": "究极杨桃大帝可以发射五颗追踪星星，命中后持续追踪并攻击僵尸。",
+    "almanac_no": 86,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_olivepit",
+    "name_zh": "神灵橄榄木",
+    "name_en": "Olive Wood",
+    "cost": 200,
+    "cooldown": 15.0,
+    "hp": 300,
+    "family": "Mine",
+    "art": "plants/PotatoMinePLANT",
+    "behavior": "mine",
+    "damage": 1800,
+    "interval": 15.0,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused"
+    ],
+    "desc_zh": "隔一段时间克死一个僵尸并转生成一个弱壮汉僵尸",
+    "almanac_no": 87,
+    "plantfood": false,
+    "fused": true
+  },
+  {
+    "id": "fused_olivepit_2",
+    "name_zh": "神灵橄榄木·二式",
+    "name_en": "Olive Wood Mk II",
+    "cost": 200,
+    "cooldown": 15.0,
+    "hp": 300,
+    "family": "Mine",
+    "art": "plants/PotatoMinePLANT",
+    "behavior": "mine",
+    "damage": 1800,
+    "interval": 15.0,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused"
+    ],
+    "desc_zh": "隔一段时间克死一个僵尸并转生成一个弱壮汉僵尸",
+    "almanac_no": 88,
+    "plantfood": false,
+    "fused": true
+  },
+  {
+    "id": "fused_magnetshroom",
+    "name_zh": "鸢尾花",
+    "name_en": "Iris",
+    "cost": 275,
+    "cooldown": 15.0,
+    "hp": 300,
+    "family": "Lobber",
+    "art": "plants/KernelPultPLANT",
+    "behavior": "lob",
+    "damage": 50,
+    "interval": 2.7,
+    "projectile": "cabbage",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "lobber"
+    ],
+    "desc_zh": "可以从斗篷中放出魔法鸟，魔法鸟可以持续攻击僵尸，并对僵尸减速。",
+    "almanac_no": 89,
+    "plantfood": false,
+    "fused": true
+  },
+  {
+    "id": "fused_magnetshroom_2",
+    "name_zh": "鸢尾花·二式",
+    "name_en": "Iris Mk II",
+    "cost": 275,
+    "cooldown": 15.0,
+    "hp": 300,
+    "family": "Lobber",
+    "art": "plants/KernelPultPLANT",
+    "behavior": "lob",
+    "damage": 50,
+    "interval": 2.7,
+    "projectile": "cabbage",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "lobber"
+    ],
+    "desc_zh": "可以从斗篷中放出魔法鸟，魔法鸟可以持续攻击僵尸，并对僵尸减速。",
+    "almanac_no": 90,
+    "plantfood": false,
+    "fused": true
+  },
+  {
+    "id": "fused_explodeonut1",
+    "name_zh": "爆炸坚果",
+    "name_en": "Explode-O-Nut",
+    "cost": 60,
+    "cooldown": 20.0,
+    "hp": 5400,
+    "family": "Defence",
+    "art": "plants/WallnutPLANT",
+    "behavior": "wall",
+    "damage": 0,
+    "interval": 0.0,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "wall",
+      "day",
+      "explosive"
+    ],
+    "desc_zh": "爆炸坚果可以保护他身后的植物，而在外壳被吃掉之后，还能炸飞僵尸。",
+    "almanac_no": 91,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_explodeonut1_2",
+    "name_zh": "爆炸坚果·二式",
+    "name_en": "Explode-O-Nut Mk II",
+    "cost": 60,
+    "cooldown": 20.0,
+    "hp": 5400,
+    "family": "Defence",
+    "art": "plants/WallnutPLANT",
+    "behavior": "wall",
+    "damage": 0,
+    "interval": 0.0,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "explosive",
+      "day",
+      "wall"
+    ],
+    "desc_zh": "爆炸坚果可以保护他身后的植物，而在外壳被吃掉之后，还能炸飞僵尸。",
+    "almanac_no": 92,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_reinforcemint",
+    "name_zh": "路灯花",
+    "name_en": "Plantern",
+    "cost": 80,
+    "cooldown": 12.5,
+    "hp": 5400,
+    "family": "Sun",
+    "art": "plants/SunflowerPLANT",
+    "behavior": "produce",
+    "damage": 0,
+    "interval": 22.0,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "wall",
+      "day",
+      "sun"
+    ],
+    "desc_zh": "路灯花阻碍僵尸并为你提供阳光。",
+    "almanac_no": 93,
+    "plantfood": false,
+    "fused": true
+  },
+  {
+    "id": "fused_reinforcemint_2",
+    "name_zh": "路灯花·二式",
+    "name_en": "Plantern Mk II",
+    "cost": 80,
+    "cooldown": 12.5,
+    "hp": 5400,
+    "family": "Sun",
+    "art": "plants/SunflowerPLANT",
+    "behavior": "produce",
+    "damage": 0,
+    "interval": 22.0,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "sun",
+      "day",
+      "wall"
+    ],
+    "desc_zh": "路灯花阻碍僵尸并为你提供阳光。",
+    "almanac_no": 94,
+    "plantfood": false,
+    "fused": true
+  },
+  {
+    "id": "fused_stickybombrice",
+    "name_zh": "黏弹糯米",
+    "name_en": "Stickybomb Rice",
+    "cost": 225,
+    "cooldown": 10.0,
+    "hp": 300,
+    "family": "Cold",
+    "art": "plants/CherryBombPLANT",
+    "behavior": "instant",
+    "damage": 1200,
+    "interval": 0.0,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "lobber",
+      "explosive",
+      "day",
+      "ice"
+    ],
+    "desc_zh": "黏弹糯米可以向僵尸投掷糯米炸弹。",
+    "almanac_no": 95,
+    "plantfood": true,
+    "fused": true,
+    "slow": 0.5
+  },
+  {
+    "id": "fused_stickybombrice_2",
+    "name_zh": "黏弹糯米·二式",
+    "name_en": "Stickybomb Rice Mk II",
+    "cost": 225,
+    "cooldown": 10.0,
+    "hp": 300,
+    "family": "Cold",
+    "art": "plants/CherryBombPLANT",
+    "behavior": "instant",
+    "damage": 1200,
+    "interval": 0.0,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "explosive",
+      "day",
+      "lobber",
+      "ice"
+    ],
+    "desc_zh": "黏弹糯米可以向僵尸投掷糯米炸弹。",
+    "almanac_no": 96,
+    "plantfood": true,
+    "fused": true,
+    "slow": 0.5
+  },
+  {
+    "id": "fused_chardguard",
+    "name_zh": "甜菜护卫",
+    "name_en": "Chard Guard",
+    "cost": 75,
+    "cooldown": 15.0,
+    "hp": 1500,
+    "family": "Defence",
+    "art": "plants/WallnutPLANT",
+    "behavior": "wall",
+    "damage": 0,
+    "interval": 0.0,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "wall",
+      "day"
+    ],
+    "desc_zh": "甜菜护卫擅长防御僵尸，可以把僵尸扔回去。",
+    "almanac_no": 97,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_chardguard_2",
+    "name_zh": "甜菜护卫·二式",
+    "name_en": "Chard Guard Mk II",
+    "cost": 75,
+    "cooldown": 15.0,
+    "hp": 1500,
+    "family": "Defence",
+    "art": "plants/WallnutPLANT",
+    "behavior": "wall",
+    "damage": 0,
+    "interval": 0.0,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "wall",
+      "day"
+    ],
+    "desc_zh": "甜菜护卫擅长防御僵尸，可以把僵尸扔回去。",
+    "almanac_no": 98,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_puffball",
+    "name_zh": "忧郁蘑菇",
+    "name_en": "Gloom-shroom",
+    "cost": 275,
+    "cooldown": 12.0,
+    "hp": 300,
+    "family": "Explosive",
+    "art": "plants/CherryBombPLANT",
+    "behavior": "instant",
+    "damage": 1200,
+    "interval": 0.0,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused"
+    ],
+    "desc_zh": "忧郁蘑菇可以向自己周围的区域喷射浓烟",
+    "almanac_no": 99,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_darktwinsunflower",
+    "name_zh": "黑暗双子葵",
+    "name_en": "Dark Twin Sunflower",
+    "cost": 200,
+    "cooldown": 15.0,
+    "hp": 300,
+    "family": "Sun",
+    "art": "plants/SunflowerPLANT",
+    "behavior": "produce",
+    "damage": 0,
+    "interval": 22.0,
+    "projectile": null,
+    "rows": [
+      -1,
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "sun",
+      "day"
+    ],
+    "desc_zh": "黑暗双子葵可以在生产阳光时召唤不可名状的紫色阳光炸弹攻击僵尸，像一个中世纪的...？",
+    "almanac_no": 100,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_darktwinsunflower_2",
+    "name_zh": "黑暗双子葵·二式",
+    "name_en": "Dark Twin Sunflower Mk II",
+    "cost": 200,
+    "cooldown": 15.0,
+    "hp": 300,
+    "family": "Sun",
+    "art": "plants/SunflowerPLANT",
+    "behavior": "produce",
+    "damage": 0,
+    "interval": 22.0,
+    "projectile": null,
+    "rows": [
+      -1,
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "sun",
+      "day"
+    ],
+    "desc_zh": "黑暗双子葵可以在生产阳光时召唤不可名状的紫色阳光炸弹攻击僵尸，像一个中世纪的...？",
+    "almanac_no": 101,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_cactus1",
+    "name_zh": "仙人掌",
+    "name_en": "Cactus",
+    "cost": 175,
+    "cooldown": 5.0,
+    "hp": 300,
+    "family": "Sharp",
+    "art": "plants/SpikeweedPLANT",
+    "behavior": "spike",
+    "damage": 30,
+    "interval": 0.93,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "shooter",
+      "day",
+      "spike",
+      "ground"
+    ],
+    "desc_zh": "仙人掌可以发射穿透性尖刺，对多个敌人造成伤害！",
+    "almanac_no": 102,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_cactus1_2",
+    "name_zh": "仙人掌·二式",
+    "name_en": "Cactus Mk II",
+    "cost": 175,
+    "cooldown": 5.0,
+    "hp": 300,
+    "family": "Sharp",
+    "art": "plants/SpikeweedPLANT",
+    "behavior": "spike",
+    "damage": 30,
+    "interval": 0.93,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "spike",
+      "ground",
+      "shooter",
+      "day"
+    ],
+    "desc_zh": "仙人掌可以发射穿透性尖刺，对多个敌人造成伤害！",
+    "almanac_no": 103,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_frozenpear",
+    "name_zh": "冻梨·融合",
+    "name_en": "Frozen Pear (Fusion)",
+    "cost": 175,
+    "cooldown": 15.0,
+    "hp": 2500,
+    "family": "Cold",
+    "art": "art/others/frozenpear.png",
+    "behavior": "instant",
+    "damage": 1200,
+    "interval": 0.0,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "ice"
+    ],
+    "desc_zh": "当冻梨将被僵尸啃食时，冻梨会在周围 3x3 范围内释放冲击波，对范围内的僵尸造成伤害，并对僵尸施加冻结和冷缓。",
+    "almanac_no": 104,
+    "plantfood": true,
+    "fused": true,
+    "slow": 0.5
+  },
+  {
+    "id": "fused_frozenpear_2",
+    "name_zh": "冻梨·融合二式",
+    "name_en": "Frozen Pear (Fusion Mk II)",
+    "cost": 175,
+    "cooldown": 15.0,
+    "hp": 2500,
+    "family": "Cold",
+    "art": "art/others/frozenpear.png",
+    "behavior": "instant",
+    "damage": 1200,
+    "interval": 0.0,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "ice"
+    ],
+    "desc_zh": "当冻梨将被僵尸啃食时，冻梨会在周围 3x3 范围内释放冲击波，对范围内的僵尸造成伤害，并对僵尸施加冻结和冷缓。",
+    "almanac_no": 105,
+    "plantfood": true,
+    "fused": true,
+    "slow": 0.5
+  },
+  {
+    "id": "fused_lemonaider",
+    "name_zh": "冰汽青柠",
+    "name_en": "Lemonaider",
+    "cost": 0,
+    "cooldown": 20.0,
+    "hp": 405,
+    "family": "Lobber",
+    "art": "plants/KernelPultPLANT",
+    "behavior": "lob",
+    "damage": 30,
+    "interval": 2.7,
+    "projectile": "cabbage",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "ice",
+      "lobber"
+    ],
+    "desc_zh": "随机投射整颗柠檬和柠檬汽水。",
+    "almanac_no": 106,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_lemonaider_2",
+    "name_zh": "冰汽青柠·二式",
+    "name_en": "Lemonaider Mk II",
+    "cost": 0,
+    "cooldown": 20.0,
+    "hp": 405,
+    "family": "Lobber",
+    "art": "plants/KernelPultPLANT",
+    "behavior": "lob",
+    "damage": 30,
+    "interval": 2.7,
+    "projectile": "cabbage",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "ice",
+      "lobber"
+    ],
+    "desc_zh": "随机投射整颗柠檬和柠檬汽水。",
+    "almanac_no": 107,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_poisonpeashooter",
+    "name_zh": "毒液豌豆射手",
+    "name_en": "Goo Peashooter",
+    "cost": 125,
+    "cooldown": 5.0,
+    "hp": 300,
+    "family": "Peashooter",
+    "art": "plants/PeashooterPLANT",
+    "behavior": "shoot",
+    "damage": 30,
+    "interval": 1.35,
+    "projectile": "pea",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "shooter",
+      "day"
+    ],
+    "desc_zh": "毒液豌豆射手可以向僵尸发射毒豌豆，让它们中毒并减速。",
+    "almanac_no": 108,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_poisonpeashooter_2",
+    "name_zh": "毒液豌豆射手·二式",
+    "name_en": "Goo Peashooter Mk II",
+    "cost": 125,
+    "cooldown": 5.0,
+    "hp": 300,
+    "family": "Peashooter",
+    "art": "plants/PeashooterPLANT",
+    "behavior": "shoot",
+    "damage": 30,
+    "interval": 1.35,
+    "projectile": "pea",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "shooter",
+      "day"
+    ],
+    "desc_zh": "毒液豌豆射手可以向僵尸发射毒豌豆，让它们中毒并减速。",
+    "almanac_no": 109,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_peppermint",
+    "name_zh": "芦藜药师",
+    "name_en": "Lily of Pharmacy",
+    "cost": 175,
+    "cooldown": 8.0,
+    "hp": 300,
+    "family": "Fire",
+    "art": "plants/CabbagePultPLANT",
+    "behavior": "lob",
+    "damage": 70,
+    "interval": 2.7,
+    "projectile": "cabbage",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "lobber",
+      "fire"
+    ],
+    "desc_zh": "可对射程内的僵尸造成伤害并附加中毒效果",
+    "almanac_no": 110,
+    "plantfood": false,
+    "fused": true
+  },
+  {
+    "id": "fused_peppermint_2",
+    "name_zh": "芦藜药师·二式",
+    "name_en": "Lily of Pharmacy Mk II",
+    "cost": 175,
+    "cooldown": 8.0,
+    "hp": 300,
+    "family": "Fire",
+    "art": "plants/CabbagePultPLANT",
+    "behavior": "lob",
+    "damage": 70,
+    "interval": 2.7,
+    "projectile": "cabbage",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "lobber",
+      "fire"
+    ],
+    "desc_zh": "可对射程内的僵尸造成伤害并附加中毒效果",
+    "almanac_no": 111,
+    "plantfood": false,
+    "fused": true
+  },
+  {
+    "id": "fused_shadowpeashooter",
+    "name_zh": "暗影豌豆射手",
+    "name_en": "Shadow Peashooter",
+    "cost": 125,
+    "cooldown": 5.0,
+    "hp": 300,
+    "family": "Peashooter",
+    "art": "plants/SplitPeaPLANT",
+    "behavior": "shoot",
+    "damage": 30,
+    "interval": 1.35,
+    "projectile": "pea",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "shooter",
+      "day"
+    ],
+    "desc_zh": "暗影豌豆射手是一株暗影植物，可以发射暗影豌豆攻击僵尸。",
+    "almanac_no": 112,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_shadowpeashooter_2",
+    "name_zh": "暗影豌豆射手·二式",
+    "name_en": "Shadow Peashooter Mk II",
+    "cost": 125,
+    "cooldown": 5.0,
+    "hp": 300,
+    "family": "Peashooter",
+    "art": "plants/SplitPeaPLANT",
+    "behavior": "shoot",
+    "damage": 30,
+    "interval": 1.35,
+    "projectile": "pea",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "shooter",
+      "day"
+    ],
+    "desc_zh": "暗影豌豆射手是一株暗影植物，可以发射暗影豌豆攻击僵尸。",
+    "almanac_no": 113,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_endurian",
+    "name_zh": "榴莲",
+    "name_en": "Endurian",
+    "cost": 100,
+    "cooldown": 15.0,
+    "hp": 3000,
+    "family": "Defence",
+    "art": "plants/WallnutPLANT",
+    "behavior": "wall",
+    "damage": 0,
+    "interval": 0.0,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "wall",
+      "day",
+      "spike",
+      "ground"
+    ],
+    "desc_zh": "榴莲不仅可以作为防御性植物，还可以对攻击他的僵尸造成伤害。",
+    "almanac_no": 114,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_endurian_2",
+    "name_zh": "榴莲·二式",
+    "name_en": "Endurian Mk II",
+    "cost": 100,
+    "cooldown": 15.0,
+    "hp": 3000,
+    "family": "Defence",
+    "art": "plants/WallnutPLANT",
+    "behavior": "wall",
+    "damage": 0,
+    "interval": 0.0,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "spike",
+      "ground",
+      "wall",
+      "day"
+    ],
+    "desc_zh": "榴莲不仅可以作为防御性植物，还可以对攻击他的僵尸造成伤害。",
+    "almanac_no": 115,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_strawburst",
+    "name_zh": "公主弹簧草",
+    "name_en": "Princess Spring Grass",
+    "cost": 225,
+    "cooldown": 10.0,
+    "hp": 300,
+    "family": "Lobber",
+    "art": "plants/CabbagePultPLANT",
+    "behavior": "lob",
+    "damage": 60,
+    "interval": 2.7,
+    "projectile": "cabbage",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "lobber"
+    ],
+    "desc_zh": "射出弹簧对僵尸造成伤害并将其弹开",
+    "almanac_no": 116,
+    "plantfood": false,
+    "fused": true
+  },
+  {
+    "id": "fused_strawburst_2",
+    "name_zh": "公主弹簧草·二式",
+    "name_en": "Princess Spring Grass Mk II",
+    "cost": 225,
+    "cooldown": 10.0,
+    "hp": 300,
+    "family": "Lobber",
+    "art": "plants/CabbagePultPLANT",
+    "behavior": "lob",
+    "damage": 60,
+    "interval": 2.7,
+    "projectile": "cabbage",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "lobber"
+    ],
+    "desc_zh": "射出弹簧对僵尸造成伤害并将其弹开",
+    "almanac_no": 117,
+    "plantfood": false,
+    "fused": true
+  },
+  {
+    "id": "fused_coldsnapdragon",
+    "name_zh": "冰龙草",
+    "name_en": "Cold Snapdragon",
+    "cost": 150,
+    "cooldown": 5.0,
+    "hp": 300,
+    "family": "Cold",
+    "art": "plants/FumeShroomPLANT",
+    "behavior": "chomp",
+    "damage": 30,
+    "interval": 1.2,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "ice"
+    ],
+    "desc_zh": "冰龙草可以向六块地砖内的僵尸喷出冰雾。",
+    "almanac_no": 118,
+    "plantfood": true,
+    "fused": true,
+    "slow": 0.5
+  },
+  {
+    "id": "fused_coldsnapdragon_2",
+    "name_zh": "冰龙草·二式",
+    "name_en": "Cold Snapdragon Mk II",
+    "cost": 150,
+    "cooldown": 5.0,
+    "hp": 300,
+    "family": "Cold",
+    "art": "plants/FumeShroomPLANT",
+    "behavior": "chomp",
+    "damage": 30,
+    "interval": 1.2,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "ice"
+    ],
+    "desc_zh": "冰龙草可以向六块地砖内的僵尸喷出冰雾。",
+    "almanac_no": 119,
+    "plantfood": true,
+    "fused": true,
+    "slow": 0.5
+  },
+  {
+    "id": "fused_snappea1",
+    "name_zh": "食人花豌豆",
+    "name_en": "Snap Pea",
+    "cost": 200,
+    "cooldown": 10.0,
+    "hp": 300,
+    "family": "Melee",
+    "art": "plants/ChomperPLANT",
+    "behavior": "chomp",
+    "damage": 30,
+    "interval": 9.18,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "shooter",
+      "day",
+      "melee"
+    ],
+    "desc_zh": "食人花豌豆可以先钻入地下，跑到僵尸下面，一口吞下一只僵尸。然后会开始咀嚼僵尸，咀嚼完后会将僵尸的头吐出来攻击另一只僵尸。",
+    "almanac_no": 120,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_snappea1_2",
+    "name_zh": "食人花豌豆·二式",
+    "name_en": "Snap Pea Mk II",
+    "cost": 200,
+    "cooldown": 10.0,
+    "hp": 300,
+    "family": "Melee",
+    "art": "plants/ChomperPLANT",
+    "behavior": "chomp",
+    "damage": 30,
+    "interval": 9.18,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "melee",
+      "shooter",
+      "day"
+    ],
+    "desc_zh": "食人花豌豆可以先钻入地下，跑到僵尸下面，一口吞下一只僵尸。然后会开始咀嚼僵尸，咀嚼完后会将僵尸的头吐出来攻击另一只僵尸。",
+    "almanac_no": 121,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_hollyknight",
+    "name_zh": "机枪射手",
+    "name_en": "Gatling Pea",
+    "cost": 250,
+    "cooldown": 8.0,
+    "hp": 300,
+    "family": "Peashooter",
+    "art": "plants/GatlingPeaPLANT",
+    "behavior": "shoot",
+    "damage": 20,
+    "interval": 1.35,
+    "projectile": "pea",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "shooter",
+      "day"
+    ],
+    "desc_zh": "同时发射四颗豌豆",
+    "almanac_no": 122,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_hollyknight_2",
+    "name_zh": "机枪射手·二式",
+    "name_en": "Gatling Pea Mk II",
+    "cost": 250,
+    "cooldown": 8.0,
+    "hp": 300,
+    "family": "Peashooter",
+    "art": "plants/GatlingPeaPLANT",
+    "behavior": "shoot",
+    "damage": 20,
+    "interval": 1.35,
+    "projectile": "pea",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "shooter",
+      "day"
+    ],
+    "desc_zh": "同时发射四颗豌豆",
+    "almanac_no": 123,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_megagatling",
+    "name_zh": "超级机枪豌豆",
+    "name_en": "Mega Gatling Pea",
+    "cost": 325,
+    "cooldown": 5.0,
+    "hp": 300,
+    "family": "Peashooter",
+    "art": "plants/GatlingPeaPLANT",
+    "behavior": "shoot",
+    "damage": 20,
+    "interval": 1.35,
+    "projectile": "pea",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "shooter",
+      "day"
+    ],
+    "desc_zh": "超级机枪豌豆可以同时发射四颗豌豆，偶尔还会自己产生叶绿素效果。",
+    "almanac_no": 124,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_megagatling_2",
+    "name_zh": "超级机枪豌豆·二式",
+    "name_en": "Mega Gatling Pea Mk II",
+    "cost": 325,
+    "cooldown": 5.0,
+    "hp": 300,
+    "family": "Peashooter",
+    "art": "plants/GatlingPeaPLANT",
+    "behavior": "shoot",
+    "damage": 20,
+    "interval": 1.35,
+    "projectile": "pea",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "shooter",
+      "day"
+    ],
+    "desc_zh": "超级机枪豌豆可以同时发射四颗豌豆，偶尔还会自己产生叶绿素效果。",
+    "almanac_no": 125,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_fusiongatling",
+    "name_zh": "元素机枪豌豆",
+    "name_en": "Elemental Gatling Pea",
+    "cost": 300,
+    "cooldown": 8.0,
+    "hp": 300,
+    "family": "Peashooter",
+    "art": "plants/GatlingPeaPLANT",
+    "behavior": "shoot",
+    "damage": 60,
+    "interval": 1.35,
+    "projectile": "pea",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "shooter",
+      "day"
+    ],
+    "desc_zh": "元素机枪豌豆可以同时散射多颗豌豆。如果已经获取了超级机枪豌豆，元素机枪豌豆会在种植一定时间后会升级为其他形态。",
+    "almanac_no": 126,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_fusiongatling_2",
+    "name_zh": "元素机枪豌豆·二式",
+    "name_en": "Elemental Gatling Pea Mk II",
+    "cost": 300,
+    "cooldown": 8.0,
+    "hp": 300,
+    "family": "Peashooter",
+    "art": "plants/GatlingPeaPLANT",
+    "behavior": "shoot",
+    "damage": 60,
+    "interval": 1.35,
+    "projectile": "pea",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "shooter",
+      "day"
+    ],
+    "desc_zh": "元素机枪豌豆可以同时散射多颗豌豆。如果已经获取了超级机枪豌豆，元素机枪豌豆会在种植一定时间后会升级为其他形态。",
+    "almanac_no": 127,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_hollybarrierleaf",
+    "name_zh": "石榴投手",
+    "name_en": "Pomegranate-pult",
+    "cost": 175,
+    "cooldown": 10.0,
+    "hp": 300,
+    "family": "Lobber",
+    "art": "plants/KernelPultPLANT",
+    "behavior": "lob",
+    "damage": 80,
+    "interval": 2.7,
+    "projectile": "cabbage",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "lobber"
+    ],
+    "desc_zh": "石榴投手练就了明锐的视觉能力，她总是能第一时间发现僵尸头上的防具并击打下来！",
+    "almanac_no": 128,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_hollybarrierleaf_2",
+    "name_zh": "石榴投手·二式",
+    "name_en": "Pomegranate-pult Mk II",
+    "cost": 175,
+    "cooldown": 10.0,
+    "hp": 300,
+    "family": "Lobber",
+    "art": "plants/KernelPultPLANT",
+    "behavior": "lob",
+    "damage": 80,
+    "interval": 2.7,
+    "projectile": "cabbage",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "lobber"
+    ],
+    "desc_zh": "石榴投手练就了明锐的视觉能力，她总是能第一时间发现僵尸头上的防具并击打下来！",
+    "almanac_no": 129,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_turkeypult",
+    "name_zh": "棒打鲜橙",
+    "name_en": "Tangerine Batter",
+    "cost": 225,
+    "cooldown": 5.0,
+    "hp": 300,
+    "family": "Lobber",
+    "art": "plants/CabbagePultPLANT",
+    "behavior": "lob",
+    "damage": 40,
+    "interval": 3.0,
+    "projectile": "cabbage",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "sun",
+      "day",
+      "lobber"
+    ],
+    "desc_zh": "棒打鲜橙可以用棒子打出橙子，橙子命中的单格范围内僵尸会有短暂的眩晕，在一段时间内击杀命中的僵尸可掉落 50 阳光。",
+    "almanac_no": 130,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_turkeypult_2",
+    "name_zh": "棒打鲜橙·二式",
+    "name_en": "Tangerine Batter Mk II",
+    "cost": 225,
+    "cooldown": 5.0,
+    "hp": 300,
+    "family": "Lobber",
+    "art": "plants/CabbagePultPLANT",
+    "behavior": "lob",
+    "damage": 40,
+    "interval": 3.0,
+    "projectile": "cabbage",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "lobber",
+      "sun",
+      "day"
+    ],
+    "desc_zh": "棒打鲜橙可以用棒子打出橙子，橙子命中的单格范围内僵尸会有短暂的眩晕，在一段时间内击杀命中的僵尸可掉落 50 阳光。",
+    "almanac_no": 131,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_slingpea",
+    "name_zh": "豌豆迫击炮",
+    "name_en": "Sling Pea",
+    "cost": 125,
+    "cooldown": 5.0,
+    "hp": 300,
+    "family": "Peashooter",
+    "art": "plants/PeashooterPLANT",
+    "behavior": "shoot",
+    "damage": 20,
+    "interval": 2.03,
+    "projectile": "pea",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "lobber",
+      "shooter",
+      "day"
+    ],
+    "desc_zh": "豌豆迫击炮可以一次发射五颗豌豆，每次都会瞄准离房子最近的僵尸。",
+    "almanac_no": 132,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_slingpea_2",
+    "name_zh": "豌豆迫击炮·二式",
+    "name_en": "Sling Pea Mk II",
+    "cost": 125,
+    "cooldown": 5.0,
+    "hp": 300,
+    "family": "Peashooter",
+    "art": "plants/PeashooterPLANT",
+    "behavior": "shoot",
+    "damage": 20,
+    "interval": 2.03,
+    "projectile": "pea",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "shooter",
+      "day",
+      "lobber"
+    ],
+    "desc_zh": "豌豆迫击炮可以一次发射五颗豌豆，每次都会瞄准离房子最近的僵尸。",
+    "almanac_no": 133,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_jasmine",
+    "name_zh": "茉莉奶绿·融合",
+    "name_en": "Jasmine (Fusion)",
+    "cost": 125,
+    "cooldown": 25.0,
+    "hp": 300,
+    "family": "Jasmine",
+    "art": "art/chinesegarden/jasmine.png",
+    "behavior": "produce",
+    "damage": 0,
+    "interval": 22.0,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused"
+    ],
+    "desc_zh": "可以释放香气使3x3范围内僵尸受到多种负面状态影响。",
+    "almanac_no": 134,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_jasmine_2",
+    "name_zh": "茉莉奶绿·融合二式",
+    "name_en": "Jasmine (Fusion Mk II)",
+    "cost": 125,
+    "cooldown": 25.0,
+    "hp": 300,
+    "family": "Jasmine",
+    "art": "art/chinesegarden/jasmine.png",
+    "behavior": "produce",
+    "damage": 0,
+    "interval": 22.0,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused"
+    ],
+    "desc_zh": "可以释放香气使3x3范围内僵尸受到多种负面状态影响。",
+    "almanac_no": 135,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_pokra1",
+    "name_zh": "尖刺秋葵",
+    "name_en": "Pokra",
+    "cost": 175,
+    "cooldown": 7.0,
+    "hp": 300,
+    "family": "Sharp",
+    "art": "plants/SpikeweedPLANT",
+    "behavior": "spike",
+    "damage": 60,
+    "interval": 0.3,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "melee",
+      "spike"
+    ],
+    "desc_zh": "尖刺秋葵可以连续穿透僵尸戳出刺拳，使其毒缓。多次刺拳叠加，可以发射强力毒刺。每次发射完都会休息片刻才能再次开始攻击。",
+    "almanac_no": 136,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_pokra1_2",
+    "name_zh": "尖刺秋葵·二式",
+    "name_en": "Pokra Mk II",
+    "cost": 175,
+    "cooldown": 7.0,
+    "hp": 300,
+    "family": "Sharp",
+    "art": "plants/SpikeweedPLANT",
+    "behavior": "spike",
+    "damage": 60,
+    "interval": 0.3,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "melee",
+      "spike"
+    ],
+    "desc_zh": "尖刺秋葵可以连续穿透僵尸戳出刺拳，使其毒缓。多次刺拳叠加，可以发射强力毒刺。每次发射完都会休息片刻才能再次开始攻击。",
+    "almanac_no": 137,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_draftodil1",
+    "name_zh": "气流水仙花",
+    "name_en": "Draftodil",
+    "cost": 100,
+    "cooldown": 10.0,
+    "hp": 300,
+    "family": "Support",
+    "art": "plants/UmbrellaLeafPLANT",
+    "behavior": "support",
+    "damage": 0,
+    "interval": 0.0,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused"
+    ],
+    "desc_zh": "发出气流短暂僵直不会飞行的僵尸，吹飞飞行和小鬼僵尸。",
+    "almanac_no": 138,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_draftodil1_2",
+    "name_zh": "气流水仙花·二式",
+    "name_en": "Draftodil Mk II",
+    "cost": 100,
+    "cooldown": 10.0,
+    "hp": 300,
+    "family": "Support",
+    "art": "plants/UmbrellaLeafPLANT",
+    "behavior": "support",
+    "damage": 0,
+    "interval": 0.0,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused"
+    ],
+    "desc_zh": "发出气流短暂僵直不会飞行的僵尸，吹飞飞行和小鬼僵尸。",
+    "almanac_no": 139,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_gumnut",
+    "name_zh": "刺眼花艺伎",
+    "name_en": "Boophone Geigi",
+    "cost": 100,
+    "cooldown": 10.0,
+    "hp": 300,
+    "family": "Defence",
+    "art": "plants/WallnutPLANT",
+    "behavior": "wall",
+    "damage": 0,
+    "interval": 0.0,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused"
+    ],
+    "desc_zh": "飞回的花扇可以对攻击范围内的僵尸造成伤害。",
+    "almanac_no": 140,
+    "plantfood": false,
+    "fused": true
+  },
+  {
+    "id": "fused_tumbleweed",
+    "name_zh": "白瓜相扑手",
+    "name_en": "Sumo Melon",
+    "cost": 100,
+    "cooldown": 10.0,
+    "hp": 300,
+    "family": "Melee",
+    "art": "plants/PeashooterPLANT",
+    "behavior": "boomerang",
+    "damage": 30,
+    "interval": 1.5,
+    "projectile": "boomerang",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused"
+    ],
+    "desc_zh": "白瓜相扑手以静制动，可以大力击退僵尸。",
+    "almanac_no": 141,
+    "plantfood": false,
+    "fused": true
+  },
+  {
+    "id": "fused_tumbleweed_2",
+    "name_zh": "白瓜相扑手·二式",
+    "name_en": "Sumo Melon Mk II",
+    "cost": 100,
+    "cooldown": 10.0,
+    "hp": 300,
+    "family": "Melee",
+    "art": "plants/PeashooterPLANT",
+    "behavior": "boomerang",
+    "damage": 30,
+    "interval": 1.5,
+    "projectile": "boomerang",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused"
+    ],
+    "desc_zh": "白瓜相扑手以静制动，可以大力击退僵尸。",
+    "almanac_no": 142,
+    "plantfood": false,
+    "fused": true
+  },
+  {
+    "id": "fused_powervine",
+    "name_zh": "庆典汽水椰",
+    "name_en": "Celebration Soda Palm",
+    "cost": 0,
+    "cooldown": 20.0,
+    "hp": 405,
+    "family": "Defence",
+    "art": "plants/WallnutPLANT",
+    "behavior": "wall",
+    "damage": 0,
+    "interval": 0.0,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "ice"
+    ],
+    "desc_zh": "一段时间会喷射汽水将前方的僵尸击退",
+    "almanac_no": 143,
+    "plantfood": false,
+    "fused": true
+  },
+  {
+    "id": "fused_powervine_2",
+    "name_zh": "庆典汽水椰·二式",
+    "name_en": "Celebration Soda Palm Mk II",
+    "cost": 0,
+    "cooldown": 20.0,
+    "hp": 405,
+    "family": "Defence",
+    "art": "plants/WallnutPLANT",
+    "behavior": "wall",
+    "damage": 0,
+    "interval": 0.0,
+    "projectile": null,
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "ice"
+    ],
+    "desc_zh": "一段时间会喷射汽水将前方的僵尸击退",
+    "almanac_no": 144,
+    "plantfood": false,
+    "fused": true
+  },
+  {
+    "id": "fused_fusiongatling_3",
+    "name_zh": "元素机枪豌豆·三式",
+    "name_en": "Elemental Gatling Pea Mk III",
+    "cost": 300,
+    "cooldown": 8.0,
+    "hp": 300,
+    "family": "Peashooter",
+    "art": "plants/GatlingPeaPLANT",
+    "behavior": "shoot",
+    "damage": 60,
+    "interval": 1.4,
+    "projectile": "pea",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "shooter"
+    ],
+    "desc_zh": "元素机枪豌豆可以同时散射多颗豌豆。如果已经获取了超级机枪豌豆，元素机枪豌豆会在种植一定时间后会升级为其他形态。",
+    "almanac_no": 145,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_fusiongatling_4",
+    "name_zh": "元素机枪豌豆·四式",
+    "name_en": "Elemental Gatling Pea Mk IV",
+    "cost": 300,
+    "cooldown": 8.0,
+    "hp": 300,
+    "family": "Peashooter",
+    "art": "plants/GatlingPeaPLANT",
+    "behavior": "shoot",
+    "damage": 60,
+    "interval": 1.35,
+    "projectile": "pea",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "shooter",
+      "day"
+    ],
+    "desc_zh": "元素机枪豌豆可以同时散射多颗豌豆。如果已经获取了超级机枪豌豆，元素机枪豌豆会在种植一定时间后会升级为其他形态。",
+    "almanac_no": 146,
+    "plantfood": true,
+    "fused": true
+  },
+  {
+    "id": "fused_fusiongatling_5",
+    "name_zh": "元素机枪豌豆·五式",
+    "name_en": "Elemental Gatling Pea Mk V",
+    "cost": 300,
+    "cooldown": 8.0,
+    "hp": 300,
+    "family": "Peashooter",
+    "art": "plants/GatlingPeaPLANT",
+    "behavior": "shoot",
+    "damage": 60,
+    "interval": 1.35,
+    "projectile": "pea",
+    "rows": [
+      0
+    ],
+    "pierce": false,
+    "tags": [
+      "plant",
+      "fused",
+      "shooter",
+      "day"
+    ],
+    "desc_zh": "元素机枪豌豆可以同时散射多颗豌豆。如果已经获取了超级机枪豌豆，元素机枪豌豆会在种植一定时间后会升级为其他形态。",
+    "almanac_no": 147,
+    "plantfood": true,
+    "fused": true
+  }
+]

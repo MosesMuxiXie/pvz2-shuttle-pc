@@ -1,0 +1,1339 @@
+[
+ {
+  "id": "basic",
+  "name_zh": "普通僵尸",
+  "name_en": "Basic Zombie",
+  "hp": 190,
+  "speed": 0.185,
+  "eat_dps": 100.0,
+  "armor": [],
+  "behavior": "walk",
+  "art": "zombies/BasicZOMBIE",
+  "armature": null,
+  "cost": 100,
+  "desc_zh": "普普通通的前院僵尸。",
+  "tags": [
+   "zombie",
+   "frontyard",
+   "basic"
+  ],
+  "extra": {
+   "source_codename": "tutorial",
+   "res": "Basic"
+  }
+ },
+ {
+  "id": "conehead",
+  "name_zh": "路障僵尸",
+  "name_en": "Conehead Zombie",
+  "hp": 190,
+  "speed": 0.185,
+  "eat_dps": 100.0,
+  "armor": [
+   {
+    "hp": 370,
+    "art": "armors/BasicConeARMOR",
+    "armature": "Cone",
+    "metal": false
+   }
+  ],
+  "behavior": "walk",
+  "art": "zombies/BasicZOMBIE",
+  "armature": null,
+  "cost": 200,
+  "desc_zh": "他的交通路障使他变得比原先抗打两倍。",
+  "tags": [
+   "zombie",
+   "frontyard",
+   "armored",
+   "basic"
+  ],
+  "extra": {
+   "source_codename": "tutorial_armor1",
+   "res": "Basic"
+  }
+ },
+ {
+  "id": "buckethead",
+  "name_zh": "铁桶僵尸",
+  "name_en": "Buckethead Zombie",
+  "hp": 190,
+  "speed": 0.185,
+  "eat_dps": 100.0,
+  "armor": [
+   {
+    "hp": 1100,
+    "art": "armors/BasicBucketARMOR",
+    "armature": "Bucket",
+    "metal": true
+   }
+  ],
+  "behavior": "walk",
+  "art": "zombies/BasicZOMBIE",
+  "armature": null,
+  "cost": 400,
+  "desc_zh": "他头上的铁桶使他极其抗揍。",
+  "tags": [
+   "zombie",
+   "frontyard",
+   "armored",
+   "basic"
+  ],
+  "extra": {
+   "source_codename": "tutorial_armor2",
+   "res": "Basic"
+  }
+ },
+ {
+  "id": "flag",
+  "name_zh": "旗帜僵尸",
+  "name_en": "Flag Zombie",
+  "hp": 190,
+  "speed": 0.24,
+  "eat_dps": 100.0,
+  "armor": [],
+  "behavior": "walk",
+  "art": "zombies/BasicFlagZOMBIE",
+  "armature": null,
+  "cost": 100,
+  "desc_zh": "他的旗帜预示着一大批或者一大波僵尸的到来。",
+  "tags": [
+   "zombie",
+   "frontyard",
+   "flag"
+  ],
+  "extra": {
+   "source_codename": "tutorial_flag",
+   "res": "BasicFlag",
+   "is_flag": true
+  }
+ },
+ {
+  "id": "mummy",
+  "name_zh": "木乃伊僵尸",
+  "name_en": "Mummy Zombie",
+  "hp": 190,
+  "speed": 0.185,
+  "eat_dps": 100.0,
+  "armor": [],
+  "behavior": "walk",
+  "art": "zombies/EgyptBasicZOMBIE",
+  "armature": null,
+  "cost": 100,
+  "desc_zh": "普普通通的干尸。",
+  "tags": [
+   "zombie",
+   "egypt",
+   "basic"
+  ],
+  "extra": {
+   "source_codename": "mummy",
+   "res": "EgyptBasic"
+  }
+ },
+ {
+  "id": "mummy_armor1",
+  "name_zh": "路障木乃伊",
+  "name_en": "Conehead Mummy",
+  "hp": 190,
+  "speed": 0.185,
+  "eat_dps": 100.0,
+  "armor": [
+   {
+    "hp": 370,
+    "art": "armors/EgyptConeARMOR",
+    "armature": "Cone",
+    "metal": false
+   }
+  ],
+  "behavior": "walk",
+  "art": "zombies/EgyptBasicZOMBIE",
+  "armature": null,
+  "cost": 200,
+  "desc_zh": "他的眼镜蛇路障头饰使他变得比原先抗打两倍。",
+  "tags": [
+   "zombie",
+   "egypt",
+   "armored"
+  ],
+  "extra": {
+   "source_codename": "mummy_armor1",
+   "res": "EgyptBasic"
+  }
+ },
+ {
+  "id": "mummy_armor2",
+  "name_zh": "铁桶木乃伊",
+  "name_en": "Buckethead Mummy",
+  "hp": 190,
+  "speed": 0.185,
+  "eat_dps": 100.0,
+  "armor": [
+   {
+    "hp": 1100,
+    "art": "armors/EgyptBucketARMOR",
+    "armature": "Bucket",
+    "metal": true
+   }
+  ],
+  "behavior": "walk",
+  "art": "zombies/EgyptBasicZOMBIE",
+  "armature": null,
+  "cost": 400,
+  "desc_zh": "他那沾满沙子的铁桶使他极其抗揍。",
+  "tags": [
+   "zombie",
+   "egypt",
+   "armored"
+  ],
+  "extra": {
+   "source_codename": "mummy_armor2",
+   "res": "EgyptBasic"
+  }
+ },
+ {
+  "id": "pirate",
+  "name_zh": "海盗僵尸",
+  "name_en": "Pirate Zombie",
+  "hp": 190,
+  "speed": 0.185,
+  "eat_dps": 100.0,
+  "armor": [],
+  "behavior": "walk",
+  "art": "zombies/PirateBasicZOMBIE",
+  "armature": null,
+  "cost": 100,
+  "desc_zh": "普普通通像日常一样在甲板上游荡的僵尸。",
+  "tags": [
+   "zombie",
+   "pirate",
+   "basic"
+  ],
+  "extra": {
+   "source_codename": "pirate",
+   "res": "PirateBasic"
+  }
+ },
+ {
+  "id": "pirate_armor1",
+  "name_zh": "路障海盗",
+  "name_en": "Conehead Pirate",
+  "hp": 190,
+  "speed": 0.185,
+  "eat_dps": 100.0,
+  "armor": [
+   {
+    "hp": 370,
+    "art": "armors/PirateConeARMOR",
+    "armature": "Cone",
+    "metal": false
+   }
+  ],
+  "behavior": "walk",
+  "art": "zombies/PirateBasicZOMBIE",
+  "armature": null,
+  "cost": 200,
+  "desc_zh": "他那海盗旗装饰的路障使他变得比原先抗打两倍。",
+  "tags": [
+   "zombie",
+   "pirate",
+   "armored"
+  ],
+  "extra": {
+   "source_codename": "pirate_armor1",
+   "res": "PirateBasic"
+  }
+ },
+ {
+  "id": "cowboy",
+  "name_zh": "牛仔僵尸",
+  "name_en": "Cowboy Zombie",
+  "hp": 190,
+  "speed": 0.185,
+  "eat_dps": 100.0,
+  "armor": [],
+  "behavior": "walk",
+  "art": "zombies/CowboyBasicZOMBIE",
+  "armature": null,
+  "cost": 100,
+  "desc_zh": "普通但活得风光的牛仔僵尸。",
+  "tags": [
+   "zombie",
+   "cowboy",
+   "basic"
+  ],
+  "extra": {
+   "source_codename": "cowboy",
+   "res": "CowboyBasic"
+  }
+ },
+ {
+  "id": "cowboy_armor1",
+  "name_zh": "路障牛仔",
+  "name_en": "Conehead Cowboy",
+  "hp": 190,
+  "speed": 0.185,
+  "eat_dps": 100.0,
+  "armor": [
+   {
+    "hp": 370,
+    "art": "armors/CowboyConeARMOR",
+    "armature": "Cone",
+    "metal": false
+   }
+  ],
+  "behavior": "walk",
+  "art": "zombies/CowboyBasicZOMBIE",
+  "armature": null,
+  "cost": 200,
+  "desc_zh": "他的牛皮路障使他变得比普通的牛仔抗打两倍。",
+  "tags": [
+   "zombie",
+   "cowboy",
+   "armored"
+  ],
+  "extra": {
+   "source_codename": "cowboy_armor1",
+   "res": "CowboyBasic"
+  }
+ },
+ {
+  "id": "future",
+  "name_zh": "未来僵尸",
+  "name_en": "Future Zombie",
+  "hp": 190,
+  "speed": 0.185,
+  "eat_dps": 100.0,
+  "armor": [],
+  "behavior": "walk",
+  "art": "zombies/FutureBasicZOMBIE",
+  "armature": null,
+  "cost": 100,
+  "desc_zh": "普通的穿着未来连体服的僵尸。",
+  "tags": [
+   "zombie",
+   "future",
+   "basic"
+  ],
+  "extra": {
+   "source_codename": "future",
+   "res": "FutureBasic"
+  }
+ },
+ {
+  "id": "future_armor1",
+  "name_zh": "未来路障僵尸",
+  "name_en": "Future Conehead Zombie",
+  "hp": 190,
+  "speed": 0.185,
+  "eat_dps": 100.0,
+  "armor": [
+   {
+    "hp": 370,
+    "art": "armors/FutureConeARMOR",
+    "armature": "Cone",
+    "metal": false
+   }
+  ],
+  "behavior": "walk",
+  "art": "zombies/FutureBasicZOMBIE",
+  "armature": null,
+  "cost": 200,
+  "desc_zh": "他的高聚物路障使他变得比原先抗打两倍。",
+  "tags": [
+   "zombie",
+   "future",
+   "armored"
+  ],
+  "extra": {
+   "source_codename": "future_armor1",
+   "res": "FutureBasic"
+  }
+ },
+ {
+  "id": "dark",
+  "name_zh": "农夫僵尸",
+  "name_en": "Peasant Zombie",
+  "hp": 190,
+  "speed": 0.185,
+  "eat_dps": 100.0,
+  "armor": [],
+  "behavior": "walk",
+  "art": "zombies/DarkBasicZOMBIE",
+  "armature": null,
+  "cost": 100,
+  "desc_zh": "普通的底层平民僵尸。",
+  "tags": [
+   "zombie",
+   "dark",
+   "basic"
+  ],
+  "extra": {
+   "source_codename": "dark",
+   "res": "DarkBasic"
+  }
+ },
+ {
+  "id": "dark_armor1",
+  "name_zh": "路障农夫",
+  "name_en": "Conehead Peasant",
+  "hp": 190,
+  "speed": 0.185,
+  "eat_dps": 100.0,
+  "armor": [
+   {
+    "hp": 370,
+    "art": "armors/DarkConeARMOR",
+    "armature": "Cone",
+    "metal": false
+   }
+  ],
+  "behavior": "walk",
+  "art": "zombies/DarkBasicZOMBIE",
+  "armature": null,
+  "cost": 200,
+  "desc_zh": "他的石质路障塔使他变得比原先抗打两倍。",
+  "tags": [
+   "zombie",
+   "dark",
+   "armored"
+  ],
+  "extra": {
+   "source_codename": "dark_armor1",
+   "res": "DarkBasic"
+  }
+ },
+ {
+  "id": "beach",
+  "name_zh": "飞机头僵尸",
+  "name_en": "Pompadour Zombie",
+  "hp": 190,
+  "speed": 0.185,
+  "eat_dps": 100.0,
+  "armor": [],
+  "behavior": "walk",
+  "art": "zombies/BeachBasicZOMBIE",
+  "armature": null,
+  "cost": 100,
+  "desc_zh": "普通的在海滩游荡的僵尸。",
+  "tags": [
+   "zombie",
+   "beach",
+   "basic"
+  ],
+  "extra": {
+   "source_codename": "beach",
+   "res": "BeachBasic"
+  }
+ },
+ {
+  "id": "iceage",
+  "name_zh": "洞窟僵尸",
+  "name_en": "Cave Zombie",
+  "hp": 190,
+  "speed": 0.185,
+  "eat_dps": 100.0,
+  "armor": [],
+  "behavior": "walk",
+  "art": "zombies/IceageBasicZOMBIE",
+  "armature": null,
+  "cost": 100,
+  "desc_zh": "普通穴居僵尸。",
+  "tags": [
+   "zombie",
+   "iceage",
+   "basic"
+  ],
+  "extra": {
+   "source_codename": "iceage",
+   "res": "IceageBasic",
+   "chill_instead_of_freeze": true
+  }
+ },
+ {
+  "id": "lostcity",
+  "name_zh": "探宝僵尸",
+  "name_en": "Adventurer Zombie",
+  "hp": 190,
+  "speed": 0.185,
+  "eat_dps": 100.0,
+  "armor": [],
+  "behavior": "walk",
+  "art": "zombies/LostcityBasicZOMBIE",
+  "armature": null,
+  "cost": 100,
+  "desc_zh": "普普通通但是会定期修理胡须的僵尸。",
+  "tags": [
+   "zombie",
+   "lostcity",
+   "basic"
+  ],
+  "extra": {
+   "source_codename": "lostcity",
+   "res": "LostcityBasic"
+  }
+ },
+ {
+  "id": "kongfu",
+  "name_zh": "武斗僵尸",
+  "name_en": "Kongfu Zombie",
+  "hp": 190,
+  "speed": 0.185,
+  "eat_dps": 100.0,
+  "armor": [],
+  "behavior": "walk",
+  "art": "zombies/KongfuBasicZOMBIE",
+  "armature": null,
+  "cost": 100,
+  "desc_zh": "普通的正在学习武术的僵尸。",
+  "tags": [
+   "zombie",
+   "kongfu",
+   "basic"
+  ],
+  "extra": {
+   "source_codename": "kongfu",
+   "res": "KongfuBasic",
+   "summon_count": 3
+  }
+ },
+ {
+  "id": "eighties",
+  "name_zh": "霓虹僵尸",
+  "name_en": "Neon Zombie",
+  "hp": 190,
+  "speed": 0.185,
+  "eat_dps": 100.0,
+  "armor": [],
+  "behavior": "walk",
+  "art": "zombies/EightiesBasicZOMBIE",
+  "armature": null,
+  "cost": 100,
+  "desc_zh": "普普通通爱好音乐的僵尸。",
+  "tags": [
+   "zombie",
+   "eighties",
+   "basic"
+  ],
+  "extra": {
+   "source_codename": "eighties",
+   "res": "EightiesBasic"
+  }
+ },
+ {
+  "id": "gargantuar",
+  "name_zh": "巨尸",
+  "name_en": "Gargantuar",
+  "hp": 3600,
+  "speed": 0.24,
+  "eat_dps": 100.0,
+  "armor": [],
+  "behavior": "gargantuar",
+  "art": "zombies/GargantuarZOMBIE",
+  "armature": null,
+  "cost": 1500,
+  "desc_zh": "巨尸确实不好对付。",
+  "tags": [
+   "zombie",
+   "boss",
+   "gargantuar"
+  ],
+  "extra": {
+   "source_codename": "tutorial_gargantuar",
+   "res": "Gargantuar",
+   "smash_damage": 1500,
+   "imp_type": "basic"
+  }
+ },
+ {
+  "id": "football",
+  "name_zh": "机甲橄榄球盔僵尸",
+  "name_en": "Mecha-Football Zombie",
+  "hp": 2000,
+  "speed": 0.2,
+  "eat_dps": 100.0,
+  "armor": [],
+  "behavior": "walk",
+  "art": "zombies/FutureMechFootballZOMBIE",
+  "armature": null,
+  "cost": 1000,
+  "desc_zh": "将植物沿本行推出。",
+  "tags": [
+   "zombie",
+   "future",
+   "special"
+  ],
+  "extra": {
+   "source_codename": "football_mech",
+   "res": "FutureMechFootball",
+   "push_damage": 400,
+   "immune_to_garlic": true
+  }
+ },
+ {
+  "id": "newspaper",
+  "name_zh": "读报僵尸",
+  "name_en": "Newspaper Zombie",
+  "hp": 460,
+  "speed": 0.22,
+  "eat_dps": 100.0,
+  "armor": [],
+  "behavior": "walk",
+  "art": "zombies/ModernNewspaperZOMBIE",
+  "armature": null,
+  "cost": 700,
+  "desc_zh": "受到报纸保护的僵尸，当报纸被毁坏时将会发飙。",
+  "tags": [
+   "zombie",
+   "frontyard",
+   "special"
+  ],
+  "extra": {
+   "source_codename": "modern_newspaper",
+   "res": "ModernNewspaper",
+   "newspaper_hp": 800,
+   "enrage_damage_scale": 4,
+   "enrage_speed_scale": 4
+  }
+ },
+ {
+  "id": "pole_vaulter",
+  "name_zh": "渡渡鸟骑手",
+  "name_en": "Dodo Rider Zombie",
+  "hp": 490,
+  "speed": 0.3,
+  "eat_dps": 100.0,
+  "armor": [],
+  "behavior": "jump",
+  "art": "zombies/IceageDodoRiderZOMBIE",
+  "armature": null,
+  "cost": 600,
+  "desc_zh": "载着小鬼的渡渡鸟。",
+  "tags": [
+   "zombie",
+   "iceage",
+   "jump",
+   "substitute"
+  ],
+  "extra": {
+   "source_codename": "iceage_dodo",
+   "res": "IceageDodoRider",
+   "jump_distance": 1,
+   "is_substitute": true,
+   "note": "本版本无撑杆僵尸，改用唯一会跳过植物的渡渡鸟骑手"
+  }
+ },
+ {
+  "id": "garden_zombie",
+  "name_zh": "园林僵尸",
+  "name_en": "Garden Zombie",
+  "hp": 190,
+  "speed": 0.185,
+  "eat_dps": 100.0,
+  "armor": [],
+  "behavior": "walk",
+  "art": "art/chinesegarden/zombie.png",
+  "armature": null,
+  "cost": 100,
+  "desc_zh": "背着屏风、戴着瓜皮帽的园林僵尸。",
+  "tags": [
+   "zombie",
+   "chinesegarden"
+  ],
+  "extra": {}
+ },
+ {
+  "id": "garden_cone",
+  "name_zh": "园林路障僵尸",
+  "name_en": "Garden Conehead",
+  "hp": 560,
+  "speed": 0.185,
+  "eat_dps": 100.0,
+  "armor": [
+   {
+    "hp": 370,
+    "name": "路障",
+    "art": "art/chinesegarden/conehead.png",
+    "metal": false
+   }
+  ],
+  "behavior": "walk",
+  "art": "art/chinesegarden/conehead.png",
+  "armature": null,
+  "cost": 100,
+  "desc_zh": "头上的路障让他能多挨几发豌豆。",
+  "tags": [
+   "zombie",
+   "chinesegarden"
+  ],
+  "extra": {
+   "art_variants": {
+    "base": "art/chinesegarden/zombie.png",
+    "armor1": "art/chinesegarden/conehead.png"
+   }
+  }
+ },
+ {
+  "id": "garden_bucket",
+  "name_zh": "园林铁桶僵尸",
+  "name_en": "Garden Buckethead",
+  "hp": 1290,
+  "speed": 0.185,
+  "eat_dps": 100.0,
+  "armor": [
+   {
+    "hp": 1100,
+    "name": "铁桶",
+    "art": "art/chinesegarden/buckethead.png",
+    "metal": false
+   }
+  ],
+  "behavior": "walk",
+  "art": "art/chinesegarden/buckethead.png",
+  "armature": null,
+  "cost": 100,
+  "desc_zh": "铁桶挡住了大部分攻击，但他看不清路。",
+  "tags": [
+   "zombie",
+   "chinesegarden"
+  ],
+  "extra": {
+   "art_variants": {
+    "base": "art/chinesegarden/zombie.png",
+    "armor1": "art/chinesegarden/buckethead.png"
+   }
+  }
+ },
+ {
+  "id": "garden_flag",
+  "name_zh": "园林旗帜僵尸",
+  "name_en": "Garden Flag Zombie",
+  "hp": 190,
+  "speed": 0.24,
+  "eat_dps": 100.0,
+  "armor": [],
+  "behavior": "walk",
+  "art": "art/chinesegarden/flag.png",
+  "armature": null,
+  "cost": 100,
+  "desc_zh": "举着灯笼旗，标志着一大波僵尸的到来。",
+  "tags": [
+   "zombie",
+   "chinesegarden"
+  ],
+  "extra": {
+   "art_variants": {
+    "base": "art/chinesegarden/zombie.png"
+   }
+  }
+ },
+ {
+  "id": "garden_poet",
+  "name_zh": "诗人僵尸",
+  "name_en": "Literati Zombie",
+  "hp": 570,
+  "speed": 0.23,
+  "eat_dps": 100.0,
+  "armor": [],
+  "behavior": "walk",
+  "art": "art/chinesegarden/poet.png",
+  "armature": null,
+  "cost": 100,
+  "desc_zh": "边走边吟诗的僵尸，据说他的诗可以退敌。",
+  "tags": [
+   "zombie",
+   "chinesegarden"
+  ],
+  "extra": {}
+ },
+ {
+  "id": "garden_umbrella",
+  "name_zh": "纸伞僵尸",
+  "name_en": "Umbrella Zombie",
+  "hp": 420,
+  "speed": 0.25,
+  "eat_dps": 100.0,
+  "armor": [],
+  "behavior": "walk",
+  "art": "art/chinesegarden/umbrella.png",
+  "armature": null,
+  "cost": 100,
+  "desc_zh": "撑着纸伞的僵尸，能挡下从正面飞来的豌豆。",
+  "tags": [
+   "zombie",
+   "chinesegarden"
+  ],
+  "extra": {}
+ },
+ {
+  "id": "garden_imp",
+  "name_zh": "太监小鬼",
+  "name_en": "Official Imp",
+  "hp": 190,
+  "speed": 0.22,
+  "eat_dps": 100.0,
+  "armor": [],
+  "behavior": "walk",
+  "art": "art/chinesegarden/imp.png",
+  "armature": null,
+  "cost": 100,
+  "desc_zh": "宫里跑腿的小鬼，跑得很快。",
+  "tags": [
+   "zombie",
+   "chinesegarden"
+  ],
+  "extra": {}
+ },
+ {
+  "id": "garden_gargantuar",
+  "name_zh": "护园巨人",
+  "name_en": "Guardian Gargantuar",
+  "hp": 3600,
+  "speed": 0.24,
+  "eat_dps": 100.0,
+  "armor": [],
+  "behavior": "walk",
+  "art": "art/chinesegarden/gargantuar.png",
+  "armature": null,
+  "cost": 100,
+  "desc_zh": "扛着石灯笼的巨人僵尸，一锤就能砸扁一排植物。",
+  "tags": [
+   "zombie",
+   "chinesegarden"
+  ],
+  "extra": {
+   "art_gargantuar": true
+  }
+ },
+ {
+  "id": "garden_cuju",
+  "name_zh": "蹴鞠明星僵尸",
+  "name_en": "Cuju Star Zombie",
+  "hp": 840,
+  "speed": 0.22,
+  "eat_dps": 100.0,
+  "armor": [],
+  "behavior": "walk",
+  "art": "art/chinesegarden/cujustar.png",
+  "armature": null,
+  "cost": 100,
+  "desc_zh": "颠着蹴鞠一路小跑的僵尸，球技比走路更熟练。",
+  "tags": [
+   "zombie",
+   "chinesegarden"
+  ],
+  "extra": {}
+ },
+ {
+  "id": "garden_drummer",
+  "name_zh": "鼓手僵尸",
+  "name_en": "Drummer Zombie",
+  "hp": 400,
+  "speed": 0.2,
+  "eat_dps": 100.0,
+  "armor": [],
+  "behavior": "walk",
+  "art": "art/chinesegarden/drummer.png",
+  "armature": null,
+  "cost": 100,
+  "desc_zh": "敲着鼓给同伴打拍子。",
+  "tags": [
+   "zombie",
+   "chinesegarden"
+  ],
+  "extra": {}
+ },
+ {
+  "id": "gang_zombie",
+  "name_zh": "帮派僵尸",
+  "name_en": "Families Zombie",
+  "hp": 190,
+  "speed": 0.185,
+  "eat_dps": 100.0,
+  "armor": [],
+  "behavior": "walk",
+  "art": "art/losantosvice/zombie.png",
+  "armature": null,
+  "cost": 100,
+  "desc_zh": "在街区里晃荡的帮派僵尸。",
+  "tags": [
+   "zombie",
+   "losantosvice"
+  ],
+  "extra": {}
+ },
+ {
+  "id": "gang_cone",
+  "name_zh": "帮派路障僵尸",
+  "name_en": "Gang Conehead",
+  "hp": 560,
+  "speed": 0.185,
+  "eat_dps": 100.0,
+  "armor": [
+   {
+    "hp": 370,
+    "name": "路障",
+    "art": "art/losantosvice/conehead.png",
+    "metal": false
+   }
+  ],
+  "behavior": "walk",
+  "art": "art/losantosvice/conehead.png",
+  "armature": null,
+  "cost": 100,
+  "desc_zh": "路障是他从工地顺来的。",
+  "tags": [
+   "zombie",
+   "losantosvice"
+  ],
+  "extra": {
+   "art_variants": {
+    "base": "art/losantosvice/zombie.png",
+    "armor1": "art/losantosvice/conehead.png"
+   }
+  }
+ },
+ {
+  "id": "gang_bucket",
+  "name_zh": "帮派铁桶僵尸",
+  "name_en": "Gang Buckethead",
+  "hp": 1290,
+  "speed": 0.185,
+  "eat_dps": 100.0,
+  "armor": [
+   {
+    "hp": 1100,
+    "name": "铁桶",
+    "art": "art/losantosvice/buckethead.png",
+    "metal": false
+   }
+  ],
+  "behavior": "walk",
+  "art": "art/losantosvice/buckethead.png",
+  "armature": null,
+  "cost": 100,
+  "desc_zh": "铁桶是他的头盔，也是他的饭碗。",
+  "tags": [
+   "zombie",
+   "losantosvice"
+  ],
+  "extra": {
+   "art_variants": {
+    "base": "art/losantosvice/zombie.png",
+    "armor1": "art/losantosvice/buckethead.png"
+   }
+  }
+ },
+ {
+  "id": "gang_flag",
+  "name_zh": "帮派旗帜僵尸",
+  "name_en": "Gang Flag Zombie",
+  "hp": 190,
+  "speed": 0.24,
+  "eat_dps": 100.0,
+  "armor": [],
+  "behavior": "walk",
+  "art": "art/losantosvice/zombie.png",
+  "armature": null,
+  "cost": 100,
+  "desc_zh": "挥舞着帮派旗帜，招呼同伙一起上。",
+  "tags": [
+   "zombie",
+   "losantosvice"
+  ],
+  "extra": {}
+ },
+ {
+  "id": "gang_molotov",
+  "name_zh": "燃烧瓶僵尸",
+  "name_en": "Molotov Zombie",
+  "hp": 400,
+  "speed": 0.12,
+  "eat_dps": 100.0,
+  "armor": [],
+  "behavior": "walk",
+  "art": "art/losantosvice/molotov.png",
+  "armature": null,
+  "cost": 100,
+  "desc_zh": "手里的燃烧瓶让他走得格外慢。",
+  "tags": [
+   "zombie",
+   "losantosvice"
+  ],
+  "extra": {}
+ },
+ {
+  "id": "gang_ozloc",
+  "name_zh": "说唱僵尸",
+  "name_en": "OZ Loc Zombie",
+  "hp": 300,
+  "speed": 0.2,
+  "eat_dps": 100.0,
+  "armor": [],
+  "behavior": "walk",
+  "art": "art/losantosvice/ozloc.png",
+  "armature": null,
+  "cost": 100,
+  "desc_zh": "自称西海岸说唱传奇，边走边押韵。",
+  "tags": [
+   "zombie",
+   "losantosvice"
+  ],
+  "extra": {}
+ },
+ {
+  "id": "gang_carl",
+  "name_zh": "卡尔·约翰逊",
+  "name_en": "Carl Johnson",
+  "hp": 1200,
+  "speed": 0.18,
+  "eat_dps": 100.0,
+  "armor": [],
+  "behavior": "walk",
+  "art": "art/losantosvice/carljohnson.png",
+  "armature": null,
+  "cost": 100,
+  "desc_zh": "“All you had to do was guard the lawn, CJ!”",
+  "tags": [
+   "zombie",
+   "losantosvice"
+  ],
+  "extra": {}
+ },
+ {
+  "id": "gang_gargantuar",
+  "name_zh": "大烟巨人",
+  "name_en": "Big Smogantuar",
+  "hp": 3600,
+  "speed": 0.24,
+  "eat_dps": 100.0,
+  "armor": [],
+  "behavior": "walk",
+  "art": "art/losantosvice/gargantuar.png",
+  "armature": null,
+  "cost": 100,
+  "desc_zh": "拖着巨型烟囱的巨人，走过的地方全是尾气。",
+  "tags": [
+   "zombie",
+   "losantosvice"
+  ],
+  "extra": {
+   "art_gargantuar": true
+  }
+ },
+ {
+  "id": "gang_imp",
+  "name_zh": "快餐小鬼",
+  "name_en": "Cluckin' Bell Imp",
+  "hp": 190,
+  "speed": 0.22,
+  "eat_dps": 100.0,
+  "armor": [],
+  "behavior": "walk",
+  "art": "art/losantosvice/imp.png",
+  "armature": null,
+  "cost": 100,
+  "desc_zh": "抱着一桶炸鸡的小鬼，跑得飞快。",
+  "tags": [
+   "zombie",
+   "losantosvice"
+  ],
+  "extra": {}
+ },
+ {
+  "id": "market_clockwork",
+  "name_zh": "发条僵尸",
+  "name_en": "Clockwork Zombie",
+  "hp": 340,
+  "speed": 0.3,
+  "eat_dps": 100.0,
+  "armor": [],
+  "behavior": "walk",
+  "art": "art/lunarrainbowmarket/clockwork.png",
+  "armature": null,
+  "cost": 100,
+  "desc_zh": "身上上满发条的市场僵尸，速度快得不太自然。",
+  "tags": [
+   "zombie",
+   "lunarrainbowmarket"
+  ],
+  "extra": {}
+ },
+ {
+  "id": "market_armor1",
+  "name_zh": "发条路障僵尸",
+  "name_en": "Clockwork Conehead",
+  "hp": 900,
+  "speed": 0.28,
+  "eat_dps": 100.0,
+  "armor": [
+   {
+    "hp": 640,
+    "name": "齿轮护罩",
+    "art": "art/lunarrainbowmarket/clockwork.png",
+    "metal": false
+   }
+  ],
+  "behavior": "walk",
+  "art": "art/lunarrainbowmarket/clockwork.png",
+  "armature": null,
+  "cost": 100,
+  "desc_zh": "头上套了半截齿轮箱。",
+  "tags": [
+   "zombie",
+   "lunarrainbowmarket"
+  ],
+  "extra": {
+   "art_variants": {
+    "base": "art/lunarrainbowmarket/clockwork.png",
+    "armor1": "art/lunarrainbowmarket/clockwork.png"
+   }
+  }
+ },
+ {
+  "id": "market_armor2",
+  "name_zh": "发条铁桶僵尸",
+  "name_en": "Clockwork Buckethead",
+  "hp": 2200,
+  "speed": 0.26,
+  "eat_dps": 100.0,
+  "armor": [
+   {
+    "hp": 1600,
+    "name": "铁皮罩",
+    "art": "art/lunarrainbowmarket/clockwork.png",
+    "metal": false
+   }
+  ],
+  "behavior": "walk",
+  "art": "art/lunarrainbowmarket/clockwork.png",
+  "armature": null,
+  "cost": 100,
+  "desc_zh": "把整个铁皮罐扣在了头上。",
+  "tags": [
+   "zombie",
+   "lunarrainbowmarket"
+  ],
+  "extra": {
+   "art_variants": {
+    "base": "art/lunarrainbowmarket/clockwork.png",
+    "armor1": "art/lunarrainbowmarket/clockwork.png"
+   }
+  }
+ },
+ {
+  "id": "market_mechanic",
+  "name_zh": "机械师僵尸",
+  "name_en": "Mechanic Zombie",
+  "hp": 3000,
+  "speed": 0.2,
+  "eat_dps": 100.0,
+  "armor": [],
+  "behavior": "walk",
+  "art": "art/lunarrainbowmarket/mechanic.png",
+  "armature": null,
+  "cost": 100,
+  "desc_zh": "背着工具箱的机械师，走到哪儿修到哪儿。",
+  "tags": [
+   "zombie",
+   "lunarrainbowmarket"
+  ],
+  "extra": {}
+ },
+ {
+  "id": "market_trapeze",
+  "name_zh": "空中飞人僵尸",
+  "name_en": "Trapeze Zombie",
+  "hp": 350,
+  "speed": 0.135,
+  "eat_dps": 100.0,
+  "armor": [],
+  "behavior": "walk",
+  "art": "art/lunarrainbowmarket/trapeze.png",
+  "armature": null,
+  "cost": 100,
+  "desc_zh": "晃晃悠悠踩着高跷的杂技僵尸。",
+  "tags": [
+   "zombie",
+   "lunarrainbowmarket"
+  ],
+  "extra": {}
+ },
+ {
+  "id": "royal_zombie",
+  "name_zh": "皇家僵尸",
+  "name_en": "Royal Zombie",
+  "hp": 190,
+  "speed": 0.18,
+  "eat_dps": 100.0,
+  "armor": [],
+  "behavior": "walk",
+  "art": "art/plantagenet/royal_zombie.png",
+  "armature": null,
+  "cost": 100,
+  "desc_zh": "穿着红金礼服的皇家僵尸，走路也要保持仪态。",
+  "tags": [
+   "zombie",
+   "plantagenet",
+   "royal"
+  ],
+  "extra": {
+   "source_codename": "royal",
+   "res": "RoyalZombie"
+  }
+ },
+ {
+  "id": "royal_flag",
+  "name_zh": "皇家旗帜僵尸",
+  "name_en": "Royal Flag Zombie",
+  "hp": 190,
+  "speed": 0.24,
+  "eat_dps": 100.0,
+  "armor": [],
+  "behavior": "walk",
+  "art": "art/plantagenet/royal_flag.png",
+  "armature": null,
+  "cost": 100,
+  "desc_zh": "举着王朝旗帜的传令僵尸，旗子一挥，后面的队伍就到了。",
+  "tags": [
+   "zombie",
+   "plantagenet",
+   "royal",
+   "flag"
+  ],
+  "extra": {
+   "source_codename": "royal_flag",
+   "res": "RoyalFlag",
+   "is_flag": true
+  }
+ },
+ {
+  "id": "royal_noblewoman",
+  "name_zh": "皇家贵妇僵尸",
+  "name_en": "Royal Noblewoman Zombie",
+  "hp": 400,
+  "speed": 0.2,
+  "eat_dps": 100.0,
+  "armor": [
+   {
+    "hp": 160,
+    "name": "裙撑",
+    "art": "art/plantagenet/royal_noblewoman.png",
+    "metal": false
+   }
+  ],
+  "behavior": "walk",
+  "art": "art/plantagenet/royal_noblewoman.png",
+  "armature": null,
+  "cost": 100,
+  "desc_zh": "撑起裙撑的贵妇僵尸，护甲被啃掉之前动作优雅得让人不敢催。",
+  "tags": [
+   "zombie",
+   "plantagenet",
+   "royal",
+   "armor"
+  ],
+  "extra": {
+   "art_variants": {
+    "base": "art/plantagenet/royal_noblewoman.png",
+    "armor1": "art/plantagenet/royal_noblewoman.png"
+   }
+  }
+ },
+ {
+  "id": "royal_winetasting",
+  "name_zh": "皇家品酒僵尸",
+  "name_en": "Royal Winetasting Zombie",
+  "hp": 500,
+  "speed": 0.19,
+  "eat_dps": 100.0,
+  "armor": [
+   {
+    "hp": 790,
+    "name": "酒桶",
+    "art": "art/plantagenet/royal_winetasting.png",
+    "metal": false
+   }
+  ],
+  "behavior": "walk",
+  "art": "art/plantagenet/royal_winetasting.png",
+  "armature": null,
+  "cost": 100,
+  "desc_zh": "抱着酒桶的品酒僵尸，边走边晃，酒桶替他挡了不少伤害。",
+  "tags": [
+   "zombie",
+   "plantagenet",
+   "royal",
+   "armor"
+  ],
+  "extra": {
+   "art_variants": {
+    "base": "art/plantagenet/royal_winetasting.png",
+    "armor1": "art/plantagenet/royal_winetasting.png"
+   }
+  }
+ },
+ {
+  "id": "royal_chef_gargantuar",
+  "name_zh": "皇家厨师巨人僵尸",
+  "name_en": "Royal Chef Gargantuar",
+  "hp": 3600,
+  "speed": 0.24,
+  "eat_dps": 100.0,
+  "armor": [],
+  "behavior": "walk",
+  "art": "art/plantagenet/royal_chef_gargantuar.png",
+  "armature": null,
+  "cost": 100,
+  "desc_zh": "背着整筐餐具的巨人厨师，一铲子下去连花盆都不剩。",
+  "tags": [
+   "zombie",
+   "plantagenet",
+   "royal",
+   "gargantuar"
+  ],
+  "extra": {
+   "art_gargantuar": true
+  }
+ },
+ {
+  "id": "imp_maid",
+  "name_zh": "女仆小鬼僵尸",
+  "name_en": "Imp Maid Zombie",
+  "hp": 190,
+  "speed": 0.25,
+  "eat_dps": 100.0,
+  "armor": [],
+  "behavior": "walk",
+  "art": "art/plantagenet/imp_maid.png",
+  "armature": null,
+  "cost": 100,
+  "desc_zh": "端着银盘的小鬼女仆，跑起来叮当作响，速度比看上去快得多。",
+  "tags": [
+   "zombie",
+   "plantagenet",
+   "imp"
+  ],
+  "extra": {}
+ },
+ {
+  "id": "royal_princess",
+  "name_zh": "皇家公主僵尸",
+  "name_en": "Royal Princess Zombie",
+  "hp": 350,
+  "speed": 0.22,
+  "eat_dps": 100.0,
+  "armor": [],
+  "behavior": "walk",
+  "art": "art/plantagenet/royal_princess.png",
+  "armature": null,
+  "cost": 100,
+  "desc_zh": "披着蕾丝披肩的公主僵尸，护着裙摆一步步往前挪。",
+  "tags": [
+   "zombie",
+   "plantagenet",
+   "royal"
+  ],
+  "extra": {}
+ }
+]

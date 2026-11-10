@@ -1,0 +1,41 @@
+{
+ "id": "frontyard_114",
+ "world": "frontyard",
+ "index": 114,
+ "title": "枪林弹雨 - 第 114 关",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "potatomine"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "football",
+     "row": 2
+    },
+    {
+     "type": "football",
+     "row": 4
+    }
+   ]
+  }
+ ],
+ "flags": 1,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_0864",
+  "stage": "FrontLawnStage",
+  "name_key": "[LTE_LEVEL_NAME_MISSILE]",
+  "level_number": 3,
+  "wave_count": 1,
+  "original_waves": 1,
+  "night": false
+ }
+}

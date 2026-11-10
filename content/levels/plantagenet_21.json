@@ -1,0 +1,37 @@
+{
+ "id": "plantagenet_21",
+ "world": "plantagenet",
+ "index": 21,
+ "title": "第 21 关",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "iris",
+  "olivewood"
+ ],
+ "waves": [
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 2
+    }
+   ]
+  }
+ ],
+ "flags": 1,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_0510",
+  "stage": "JoustStage",
+  "name_key": "",
+  "level_number": 1,
+  "wave_count": 1,
+  "original_waves": 36,
+  "night": false
+ }
+}

@@ -1,0 +1,274 @@
+{
+ "id": "losantosvice_22",
+ "world": "losantosvice",
+ "index": 22,
+ "title": "街道斗殴节 - 第 22 关",
+ "sun": 550,
+ "deck": [
+  "sunshroom",
+  "bonkchoy",
+  "iceburg"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "gang_imp",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "gang_zombie",
+     "row": 0
+    },
+    {
+     "type": "gang_bucket",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "gang_ozloc",
+     "row": 4
+    },
+    {
+     "type": "gang_cone",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "gang_molotov",
+     "row": 1
+    },
+    {
+     "type": "gang_cone",
+     "row": 3
+    },
+    {
+     "type": "gang_molotov",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "gang_ozloc",
+     "row": 0
+    },
+    {
+     "type": "gang_cone",
+     "row": 1
+    },
+    {
+     "type": "gang_bucket",
+     "row": 2
+    },
+    {
+     "type": "gang_molotov",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "gang_molotov",
+     "row": 0
+    },
+    {
+     "type": "gang_cone",
+     "row": 1
+    },
+    {
+     "type": "gang_cone",
+     "row": 2
+    },
+    {
+     "type": "gang_bucket",
+     "row": 3
+    },
+    {
+     "type": "gang_gargantuar",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "gang_imp",
+     "row": 0
+    },
+    {
+     "type": "gang_cone",
+     "row": 1
+    },
+    {
+     "type": "gang_molotov",
+     "row": 2
+    },
+    {
+     "type": "gang_cone",
+     "row": 3
+    },
+    {
+     "type": "gang_bucket",
+     "row": 4
+    },
+    {
+     "type": "gang_ozloc",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "gang_ozloc",
+     "row": 0
+    },
+    {
+     "type": "gang_imp",
+     "row": 1
+    },
+    {
+     "type": "gang_ozloc",
+     "row": 1
+    },
+    {
+     "type": "gang_bucket",
+     "row": 3
+    },
+    {
+     "type": "gang_ozloc",
+     "row": 3
+    },
+    {
+     "type": "gang_cone",
+     "row": 0
+    },
+    {
+     "type": "gang_cone",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "gang_gargantuar",
+     "row": 1
+    },
+    {
+     "type": "gang_molotov",
+     "row": 2
+    },
+    {
+     "type": "gang_cone",
+     "row": 2
+    },
+    {
+     "type": "gang_molotov",
+     "row": 3
+    },
+    {
+     "type": "gang_bucket",
+     "row": 4
+    },
+    {
+     "type": "gang_cone",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "gang_gargantuar",
+     "row": 0
+    },
+    {
+     "type": "gang_ozloc",
+     "row": 4
+    },
+    {
+     "type": "gang_ozloc",
+     "row": 2
+    },
+    {
+     "type": "gang_molotov",
+     "row": 2
+    },
+    {
+     "type": "gang_molotov",
+     "row": 4
+    },
+    {
+     "type": "gang_cone",
+     "row": 3
+    },
+    {
+     "type": "gang_cone",
+     "row": 1
+    },
+    {
+     "type": "gang_bucket",
+     "row": 2
+    },
+    {
+     "type": "gang_bucket",
+     "row": 3
+    },
+    {
+     "type": "gang_imp",
+     "row": 4
+    },
+    {
+     "type": "gang_imp",
+     "row": 0
+    }
+   ]
+  }
+ ],
+ "flags": 2,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_1098",
+  "stage": "GTAStage",
+  "name_key": "[LTE_LEVEL_NAME_TIMESPACEECHOES_S10]",
+  "level_number": 7,
+  "wave_count": 10,
+  "original_waves": 10,
+  "night": false
+ }
+}

@@ -1,0 +1,349 @@
+{
+  "id": "beach_2",
+  "world": "beach",
+  "index": 2,
+  "title": "第 2 天",
+  "sun": 350,
+  "deck": [
+    "sunflower",
+    "twinsunflower",
+    "peashooter",
+    "wallnut",
+    "homingthistle",
+    "wintermelon",
+    "iceburg",
+    "spikeweed"
+  ],
+  "waves": [
+    {
+      "delay": 18,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "beach",
+          "row": 2
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "beach",
+          "row": 4
+        },
+        {
+          "type": "beach",
+          "row": 2
+        },
+        {
+          "type": "beach",
+          "row": 1
+        },
+        {
+          "type": "beach",
+          "row": 0
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "beach",
+          "row": 3
+        },
+        {
+          "type": "beach",
+          "row": 2
+        },
+        {
+          "type": "beach",
+          "row": 4
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "beach",
+          "row": 0
+        },
+        {
+          "type": "beach",
+          "row": 1
+        },
+        {
+          "type": "beach",
+          "row": 0
+        },
+        {
+          "type": "beach",
+          "row": 1
+        },
+        {
+          "type": "beach",
+          "row": 3
+        },
+        {
+          "type": "beach",
+          "row": 1
+        },
+        {
+          "type": "beach",
+          "row": 4
+        },
+        {
+          "type": "beach",
+          "row": 2
+        },
+        {
+          "type": "beach",
+          "row": 3
+        }
+      ]
+    },
+    {
+      "delay": 24,
+      "flag": true,
+      "zombies": [
+        {
+          "type": "beach",
+          "row": 3
+        },
+        {
+          "type": "beach",
+          "row": 2
+        },
+        {
+          "type": "beach",
+          "row": 1
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "beach",
+          "row": 2
+        },
+        {
+          "type": "beach",
+          "row": 0
+        },
+        {
+          "type": "beach",
+          "row": 3
+        },
+        {
+          "type": "beach",
+          "row": 1
+        },
+        {
+          "type": "beach",
+          "row": 0
+        },
+        {
+          "type": "beach",
+          "row": 1
+        },
+        {
+          "type": "beach",
+          "row": 1
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "beach",
+          "row": 1
+        },
+        {
+          "type": "beach",
+          "row": 3
+        },
+        {
+          "type": "beach",
+          "row": 4
+        },
+        {
+          "type": "beach",
+          "row": 0
+        },
+        {
+          "type": "beach",
+          "row": 3
+        },
+        {
+          "type": "beach",
+          "row": 4
+        },
+        {
+          "type": "beach",
+          "row": 3
+        },
+        {
+          "type": "beach",
+          "row": 2
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "beach",
+          "row": 3
+        },
+        {
+          "type": "beach",
+          "row": 4
+        },
+        {
+          "type": "beach",
+          "row": 2
+        },
+        {
+          "type": "beach",
+          "row": 2
+        },
+        {
+          "type": "beach",
+          "row": 2
+        },
+        {
+          "type": "beach",
+          "row": 1
+        },
+        {
+          "type": "beach",
+          "row": 0
+        },
+        {
+          "type": "beach",
+          "row": 2
+        },
+        {
+          "type": "beach",
+          "row": 1
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "beach",
+          "row": 0
+        },
+        {
+          "type": "beach",
+          "row": 4
+        },
+        {
+          "type": "beach",
+          "row": 3
+        },
+        {
+          "type": "beach",
+          "row": 3
+        },
+        {
+          "type": "beach",
+          "row": 3
+        },
+        {
+          "type": "beach",
+          "row": 1
+        }
+      ]
+    },
+    {
+      "delay": 24,
+      "flag": true,
+      "zombies": [
+        {
+          "type": "beach",
+          "row": 0
+        },
+        {
+          "type": "beach",
+          "row": 4
+        },
+        {
+          "type": "beach",
+          "row": 2
+        },
+        {
+          "type": "beach",
+          "row": 2
+        },
+        {
+          "type": "beach",
+          "row": 4
+        },
+        {
+          "type": "beach",
+          "row": 2
+        },
+        {
+          "type": "beach",
+          "row": 4
+        },
+        {
+          "type": "beach",
+          "row": 1
+        },
+        {
+          "type": "beach",
+          "row": 1
+        },
+        {
+          "type": "beach",
+          "row": 2
+        },
+        {
+          "type": "beach",
+          "row": 0
+        },
+        {
+          "type": "beach",
+          "row": 4
+        },
+        {
+          "type": "beach",
+          "row": 0
+        },
+        {
+          "type": "beach",
+          "row": 4
+        },
+        {
+          "type": "beach",
+          "row": 3
+        },
+        {
+          "type": "beach",
+          "row": 1
+        },
+        {
+          "type": "beach",
+          "row": 3
+        }
+      ]
+    }
+  ],
+  "flags": 2,
+  "seed_bank": 8
+}

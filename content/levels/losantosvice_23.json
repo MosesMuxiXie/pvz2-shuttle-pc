@@ -1,0 +1,355 @@
+{
+ "id": "losantosvice_23",
+ "world": "losantosvice",
+ "index": 23,
+ "title": "街道斗殴节 - 第 23 关",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "birdofparadise",
+  "yuccaguardian"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "gang_molotov",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "gang_molotov",
+     "row": 0
+    },
+    {
+     "type": "gang_cone",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "gang_cone",
+     "row": 0
+    },
+    {
+     "type": "gang_cone",
+     "row": 1
+    },
+    {
+     "type": "gang_molotov",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "gang_bucket",
+     "row": 0
+    },
+    {
+     "type": "gang_imp",
+     "row": 1
+    },
+    {
+     "type": "gang_bucket",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "iceage",
+     "row": 0
+    },
+    {
+     "type": "gang_ozloc",
+     "row": 1
+    },
+    {
+     "type": "gang_zombie",
+     "row": 2
+    },
+    {
+     "type": "gang_bucket",
+     "row": 3
+    },
+    {
+     "type": "gang_cone",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "gang_bucket",
+     "row": 0
+    },
+    {
+     "type": "gang_bucket",
+     "row": 1
+    },
+    {
+     "type": "gang_molotov",
+     "row": 2
+    },
+    {
+     "type": "gang_ozloc",
+     "row": 3
+    },
+    {
+     "type": "gang_gargantuar",
+     "row": 4
+    },
+    {
+     "type": "iceage",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "gang_zombie",
+     "row": 0
+    },
+    {
+     "type": "gang_cone",
+     "row": 1
+    },
+    {
+     "type": "gang_cone",
+     "row": 2
+    },
+    {
+     "type": "gang_zombie",
+     "row": 3
+    },
+    {
+     "type": "gang_bucket",
+     "row": 4
+    },
+    {
+     "type": "lostcity",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "gang_ozloc",
+     "row": 0
+    },
+    {
+     "type": "gang_imp",
+     "row": 1
+    },
+    {
+     "type": "gang_zombie",
+     "row": 2
+    },
+    {
+     "type": "gang_imp",
+     "row": 3
+    },
+    {
+     "type": "gang_molotov",
+     "row": 4
+    },
+    {
+     "type": "gang_bucket",
+     "row": 0
+    },
+    {
+     "type": "gang_bucket",
+     "row": 1
+    },
+    {
+     "type": "gang_cone",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "gang_molotov",
+     "row": 0
+    },
+    {
+     "type": "gang_zombie",
+     "row": 1
+    },
+    {
+     "type": "gang_imp",
+     "row": 2
+    },
+    {
+     "type": "gang_cone",
+     "row": 3
+    },
+    {
+     "type": "gang_zombie",
+     "row": 4
+    },
+    {
+     "type": "gang_bucket",
+     "row": 0
+    },
+    {
+     "type": "gang_imp",
+     "row": 1
+    },
+    {
+     "type": "gang_bucket",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "gang_molotov",
+     "row": 0
+    },
+    {
+     "type": "gang_imp",
+     "row": 1
+    },
+    {
+     "type": "gang_cone",
+     "row": 2
+    },
+    {
+     "type": "gang_cone",
+     "row": 3
+    },
+    {
+     "type": "gang_bucket",
+     "row": 4
+    },
+    {
+     "type": "gang_molotov",
+     "row": 0
+    },
+    {
+     "type": "gang_bucket",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "gang_cone",
+     "row": 0
+    },
+    {
+     "type": "gang_cone",
+     "row": 1
+    },
+    {
+     "type": "iceage",
+     "row": 2
+    },
+    {
+     "type": "gang_zombie",
+     "row": 3
+    },
+    {
+     "type": "gang_zombie",
+     "row": 4
+    },
+    {
+     "type": "iceage",
+     "row": 0
+    },
+    {
+     "type": "gang_bucket",
+     "row": 1
+    },
+    {
+     "type": "gang_bucket",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "gang_ozloc",
+     "row": 0
+    },
+    {
+     "type": "iceage",
+     "row": 1
+    },
+    {
+     "type": "gang_cone",
+     "row": 2
+    },
+    {
+     "type": "gang_cone",
+     "row": 3
+    },
+    {
+     "type": "gang_bucket",
+     "row": 4
+    },
+    {
+     "type": "gang_gargantuar",
+     "row": 0
+    },
+    {
+     "type": "gang_bucket",
+     "row": 1
+    }
+   ]
+  }
+ ],
+ "flags": 2,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_1099",
+  "stage": "GTAUBStage",
+  "name_key": "[LTE_LEVEL_NAME_TIMESPACEECHOES_S10]",
+  "level_number": 8,
+  "wave_count": 12,
+  "original_waves": 12,
+  "night": false
+ }
+}

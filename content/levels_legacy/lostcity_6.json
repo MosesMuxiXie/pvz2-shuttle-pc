@@ -1,0 +1,301 @@
+{
+  "id": "lostcity_6",
+  "world": "lostcity",
+  "index": 6,
+  "title": "第 6 天",
+  "sun": 450,
+  "deck": [
+    "sunflower",
+    "twinsunflower",
+    "peashooter",
+    "repeater",
+    "melonpult",
+    "wintermelon",
+    "tallnut",
+    "gatling"
+  ],
+  "waves": [
+    {
+      "delay": 18,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "lostcity",
+          "row": 0
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "lostcity",
+          "row": 1
+        },
+        {
+          "type": "lostcity",
+          "row": 0
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "lostcity",
+          "row": 1
+        },
+        {
+          "type": "lostcity",
+          "row": 0
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "lostcity",
+          "row": 3
+        },
+        {
+          "type": "lostcity",
+          "row": 3
+        },
+        {
+          "type": "lostcity",
+          "row": 3
+        },
+        {
+          "type": "lostcity",
+          "row": 2
+        },
+        {
+          "type": "lostcity",
+          "row": 2
+        }
+      ]
+    },
+    {
+      "delay": 24,
+      "flag": true,
+      "zombies": [
+        {
+          "type": "lostcity",
+          "row": 0
+        },
+        {
+          "type": "lostcity",
+          "row": 1
+        },
+        {
+          "type": "lostcity",
+          "row": 2
+        },
+        {
+          "type": "lostcity",
+          "row": 4
+        },
+        {
+          "type": "lostcity",
+          "row": 4
+        },
+        {
+          "type": "lostcity",
+          "row": 4
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "lostcity",
+          "row": 3
+        },
+        {
+          "type": "lostcity",
+          "row": 2
+        },
+        {
+          "type": "lostcity",
+          "row": 1
+        },
+        {
+          "type": "lostcity",
+          "row": 0
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "lostcity",
+          "row": 3
+        },
+        {
+          "type": "lostcity",
+          "row": 3
+        },
+        {
+          "type": "lostcity",
+          "row": 3
+        },
+        {
+          "type": "lostcity",
+          "row": 3
+        },
+        {
+          "type": "lostcity",
+          "row": 4
+        },
+        {
+          "type": "lostcity",
+          "row": 3
+        },
+        {
+          "type": "lostcity",
+          "row": 2
+        },
+        {
+          "type": "lostcity",
+          "row": 1
+        },
+        {
+          "type": "lostcity",
+          "row": 0
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "lostcity",
+          "row": 0
+        },
+        {
+          "type": "lostcity",
+          "row": 0
+        },
+        {
+          "type": "lostcity",
+          "row": 4
+        },
+        {
+          "type": "lostcity",
+          "row": 4
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "lostcity",
+          "row": 2
+        },
+        {
+          "type": "lostcity",
+          "row": 1
+        },
+        {
+          "type": "lostcity",
+          "row": 0
+        },
+        {
+          "type": "lostcity",
+          "row": 4
+        },
+        {
+          "type": "lostcity",
+          "row": 3
+        }
+      ]
+    },
+    {
+      "delay": 24,
+      "flag": true,
+      "zombies": [
+        {
+          "type": "lostcity",
+          "row": 3
+        },
+        {
+          "type": "lostcity",
+          "row": 3
+        },
+        {
+          "type": "lostcity",
+          "row": 3
+        },
+        {
+          "type": "lostcity",
+          "row": 3
+        },
+        {
+          "type": "lostcity",
+          "row": 4
+        },
+        {
+          "type": "lostcity",
+          "row": 4
+        },
+        {
+          "type": "lostcity",
+          "row": 4
+        },
+        {
+          "type": "lostcity",
+          "row": 3
+        },
+        {
+          "type": "lostcity",
+          "row": 3
+        },
+        {
+          "type": "lostcity",
+          "row": 2
+        },
+        {
+          "type": "lostcity",
+          "row": 2
+        },
+        {
+          "type": "lostcity",
+          "row": 2
+        },
+        {
+          "type": "lostcity",
+          "row": 1
+        },
+        {
+          "type": "lostcity",
+          "row": 1
+        },
+        {
+          "type": "lostcity",
+          "row": 0
+        },
+        {
+          "type": "lostcity",
+          "row": 0
+        },
+        {
+          "type": "lostcity",
+          "row": 0
+        }
+      ]
+    }
+  ],
+  "flags": 2,
+  "seed_bank": 8
+}

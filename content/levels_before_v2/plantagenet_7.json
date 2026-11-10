@@ -1,0 +1,237 @@
+{
+ "id": "plantagenet_7",
+ "world": "plantagenet",
+ "index": 7,
+ "title": "王朝 - 第 7 天",
+ "sun": 390,
+ "deck": [
+  "sunflower",
+  "astrofruit",
+  "helioscabbage",
+  "olivewood",
+  "tubiflora",
+  "cheesestrawberry"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "imp_maid",
+     "row": 1
+    },
+    {
+     "type": "royal_zombie",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 0
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 2
+    },
+    {
+     "type": "imp_maid",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 22,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_winetasting",
+     "row": 1
+    },
+    {
+     "type": "royal_zombie",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "royal_flag",
+     "row": 2
+    },
+    {
+     "type": "imp_maid",
+     "row": 0
+    },
+    {
+     "type": "imp_maid",
+     "row": 4
+    },
+    {
+     "type": "royal_zombie",
+     "row": 1
+    },
+    {
+     "type": "royal_zombie",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_princess",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 0
+    },
+    {
+     "type": "imp_maid",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_noblewoman",
+     "row": 1
+    },
+    {
+     "type": "royal_winetasting",
+     "row": 3
+    },
+    {
+     "type": "royal_zombie",
+     "row": 0
+    }
+   ]
+  },
+  {
+   "delay": 22,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "imp_maid",
+     "row": 2
+    },
+    {
+     "type": "imp_maid",
+     "row": 4
+    },
+    {
+     "type": "royal_princess",
+     "row": 0
+    },
+    {
+     "type": "royal_zombie",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 22,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_zombie",
+     "row": 1
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 2
+    },
+    {
+     "type": "royal_winetasting",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 22,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "royal_princess",
+     "row": 3
+    },
+    {
+     "type": "imp_maid",
+     "row": 0
+    },
+    {
+     "type": "imp_maid",
+     "row": 2
+    },
+    {
+     "type": "royal_zombie",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "royal_flag",
+     "row": 1
+    },
+    {
+     "type": "royal_winetasting",
+     "row": 0
+    },
+    {
+     "type": "royal_noblewoman",
+     "row": 3
+    },
+    {
+     "type": "royal_princess",
+     "row": 4
+    },
+    {
+     "type": "imp_maid",
+     "row": 2
+    }
+   ]
+  }
+ ],
+ "flags": 2,
+ "seed_bank": 6,
+ "night": false,
+ "source": "handcrafted",
+ "extra": {
+  "source": "handcrafted",
+  "night": false,
+  "wave_count": 11,
+  "original_waves": 11
+ }
+}

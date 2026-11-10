@@ -1,0 +1,719 @@
+{
+  "source": "main.460.com.ea.game.pvz2_shu.obb (RTON packages)",
+  "generated_by": "tools/obb_build_content.py (18-world full-level build)",
+  "world_order": [
+    "frontyard",
+    "egypt",
+    "pirate",
+    "cowboy",
+    "future",
+    "dark",
+    "beach",
+    "lostcity",
+    "iceage",
+    "kongfu",
+    "dino",
+    "eighties",
+    "modern",
+    "sky",
+    "chinesegarden",
+    "losantosvice",
+    "lunarrainbowmarket",
+    "plantagenet"
+  ],
+  "worlds": {
+    "frontyard": 43,
+    "egypt": 33,
+    "pirate": 36,
+    "cowboy": 13,
+    "future": 41,
+    "dark": 52,
+    "beach": 30,
+    "lostcity": 25,
+    "iceage": 29,
+    "kongfu": 44,
+    "dino": 33,
+    "eighties": 52,
+    "modern": 51,
+    "sky": 16,
+    "chinesegarden": 58,
+    "losantosvice": 19,
+    "lunarrainbowmarket": 30,
+    "plantagenet": 10
+  },
+  "total_levels": 615,
+  "plants": 62,
+  "stat_fields_changed": 4,
+  "voiddragon_added": false,
+  "preserved_worlds": {
+    "plantagenet": 10
+  },
+  "boss_levels": 34,
+  "night_levels": 52,
+  "special_excluded": {
+    "frontyard": {
+      "FrontLawnStage": {
+        "IsVasebreaker": 5
+      }
+    },
+    "egypt": {
+      "EgyptStage": {
+        "IsVasebreaker": 3
+      }
+    },
+    "pirate": {
+      "PirateStage": {
+        "IsVasebreaker": 3
+      }
+    },
+    "cowboy": {
+      "WestStage": {
+        "IsVasebreaker": 3
+      }
+    },
+    "future": {
+      "FutureStage": {
+        "IsVasebreaker": 3
+      }
+    },
+    "dark": {
+      "DarkStage": {
+        "IsVasebreaker": 3
+      }
+    },
+    "beach": {
+      "BeachStage": {
+        "IsVasebreaker": 3
+      }
+    },
+    "lostcity": {},
+    "iceage": {},
+    "kongfu": {
+      "KongfuDMGStage": {
+        "IsVasebreaker": 1
+      }
+    },
+    "dino": {},
+    "eighties": {},
+    "modern": {},
+    "sky": {},
+    "chinesegarden": {},
+    "losantosvice": {
+      "GTADMGStage": {
+        "IsVasebreaker": 1
+      }
+    },
+    "lunarrainbowmarket": {}
+  },
+  "stage_stats": {
+    "frontyard": {
+      "DayStage": {
+        "total": 20,
+        "normal": 18,
+        "boss": 0,
+        "night": 0,
+        "special": 0,
+        "vase": 0,
+        "beghouled": 0,
+        "bowling": 0,
+        "selected": 18
+      },
+      "NightStage": {
+        "total": 18,
+        "normal": 17,
+        "boss": 0,
+        "night": 18,
+        "special": 0,
+        "vase": 0,
+        "beghouled": 0,
+        "bowling": 0,
+        "selected": 17
+      },
+      "FrontLawnStage": {
+        "total": 24,
+        "normal": 8,
+        "boss": 0,
+        "night": 0,
+        "special": 5,
+        "vase": 5,
+        "beghouled": 0,
+        "bowling": 0,
+        "selected": 8
+      }
+    },
+    "egypt": {
+      "EgyptStage": {
+        "total": 45,
+        "normal": 31,
+        "boss": 2,
+        "night": 0,
+        "special": 3,
+        "vase": 3,
+        "beghouled": 0,
+        "bowling": 0,
+        "selected": 33
+      }
+    },
+    "pirate": {
+      "PirateStage": {
+        "total": 42,
+        "normal": 35,
+        "boss": 1,
+        "night": 0,
+        "special": 3,
+        "vase": 3,
+        "beghouled": 0,
+        "bowling": 0,
+        "selected": 36
+      }
+    },
+    "cowboy": {
+      "WestStage": {
+        "total": 18,
+        "normal": 12,
+        "boss": 2,
+        "night": 0,
+        "special": 3,
+        "vase": 3,
+        "beghouled": 0,
+        "bowling": 0,
+        "selected": 13
+      }
+    },
+    "future": {
+      "FutureStage": {
+        "total": 50,
+        "normal": 37,
+        "boss": 4,
+        "night": 0,
+        "special": 3,
+        "vase": 3,
+        "beghouled": 0,
+        "bowling": 0,
+        "selected": 41
+      }
+    },
+    "dark": {
+      "DarkStage": {
+        "total": 66,
+        "normal": 49,
+        "boss": 3,
+        "night": 2,
+        "special": 3,
+        "vase": 3,
+        "beghouled": 0,
+        "bowling": 0,
+        "selected": 52
+      }
+    },
+    "beach": {
+      "BeachStage": {
+        "total": 38,
+        "normal": 29,
+        "boss": 1,
+        "night": 0,
+        "special": 3,
+        "vase": 3,
+        "beghouled": 0,
+        "bowling": 0,
+        "selected": 30
+      }
+    },
+    "lostcity": {
+      "LostCityStage": {
+        "total": 26,
+        "normal": 21,
+        "boss": 4,
+        "night": 0,
+        "special": 0,
+        "vase": 0,
+        "beghouled": 0,
+        "bowling": 0,
+        "selected": 25
+      }
+    },
+    "iceage": {
+      "IceageStage": {
+        "total": 38,
+        "normal": 26,
+        "boss": 3,
+        "night": 0,
+        "special": 0,
+        "vase": 0,
+        "beghouled": 0,
+        "bowling": 0,
+        "selected": 29
+      }
+    },
+    "kongfu": {
+      "KongfuStage": {
+        "total": 19,
+        "normal": 19,
+        "boss": 0,
+        "night": 0,
+        "special": 0,
+        "vase": 0,
+        "beghouled": 0,
+        "bowling": 0,
+        "selected": 19
+      },
+      "KongfuUBStage": {
+        "total": 21,
+        "normal": 13,
+        "boss": 0,
+        "night": 0,
+        "special": 0,
+        "vase": 0,
+        "beghouled": 0,
+        "bowling": 0,
+        "selected": 13
+      },
+      "KongfuDMGStage": {
+        "total": 19,
+        "normal": 12,
+        "boss": 0,
+        "night": 0,
+        "special": 1,
+        "vase": 1,
+        "beghouled": 0,
+        "bowling": 0,
+        "selected": 12
+      }
+    },
+    "dino": {
+      "DinoStage": {
+        "total": 35,
+        "normal": 32,
+        "boss": 1,
+        "night": 0,
+        "special": 0,
+        "vase": 0,
+        "beghouled": 0,
+        "bowling": 0,
+        "selected": 33
+      }
+    },
+    "eighties": {
+      "EightiesStage": {
+        "total": 61,
+        "normal": 48,
+        "boss": 4,
+        "night": 0,
+        "special": 0,
+        "vase": 0,
+        "beghouled": 0,
+        "bowling": 0,
+        "selected": 52
+      }
+    },
+    "modern": {
+      "ModernStage": {
+        "total": 65,
+        "normal": 50,
+        "boss": 1,
+        "night": 0,
+        "special": 0,
+        "vase": 0,
+        "beghouled": 0,
+        "bowling": 0,
+        "selected": 51
+      }
+    },
+    "sky": {
+      "SkyCityStage": {
+        "total": 17,
+        "normal": 16,
+        "boss": 0,
+        "night": 0,
+        "special": 0,
+        "vase": 0,
+        "beghouled": 0,
+        "bowling": 0,
+        "selected": 16
+      },
+      "SkyCityLostCityStage": {
+        "total": 0,
+        "normal": 0,
+        "boss": 0,
+        "night": 0,
+        "special": 0,
+        "vase": 0,
+        "beghouled": 0,
+        "bowling": 0,
+        "selected": 0
+      }
+    },
+    "chinesegarden": {
+      "ChineseGardenStage": {
+        "total": 21,
+        "normal": 20,
+        "boss": 1,
+        "night": 0,
+        "special": 0,
+        "vase": 0,
+        "beghouled": 0,
+        "bowling": 0,
+        "selected": 21
+      },
+      "ChineseGardenUBStage": {
+        "total": 34,
+        "normal": 26,
+        "boss": 2,
+        "night": 0,
+        "special": 0,
+        "vase": 0,
+        "beghouled": 0,
+        "bowling": 0,
+        "selected": 28
+      },
+      "ChineseGardenDMGStage": {
+        "total": 10,
+        "normal": 9,
+        "boss": 0,
+        "night": 0,
+        "special": 0,
+        "vase": 0,
+        "beghouled": 0,
+        "bowling": 0,
+        "selected": 9
+      }
+    },
+    "losantosvice": {
+      "GTAStage": {
+        "total": 10,
+        "normal": 10,
+        "boss": 0,
+        "night": 0,
+        "special": 0,
+        "vase": 0,
+        "beghouled": 0,
+        "bowling": 0,
+        "selected": 10
+      },
+      "GTAUBStage": {
+        "total": 11,
+        "normal": 3,
+        "boss": 1,
+        "night": 0,
+        "special": 0,
+        "vase": 0,
+        "beghouled": 0,
+        "bowling": 0,
+        "selected": 4
+      },
+      "GTADMGStage": {
+        "total": 6,
+        "normal": 5,
+        "boss": 0,
+        "night": 0,
+        "special": 1,
+        "vase": 1,
+        "beghouled": 0,
+        "bowling": 0,
+        "selected": 5
+      }
+    },
+    "lunarrainbowmarket": {
+      "MarketNightsStage": {
+        "total": 16,
+        "normal": 13,
+        "boss": 3,
+        "night": 16,
+        "special": 0,
+        "vase": 0,
+        "beghouled": 0,
+        "bowling": 0,
+        "selected": 16
+      },
+      "MarketNightsUBStage": {
+        "total": 14,
+        "normal": 8,
+        "boss": 0,
+        "night": 14,
+        "special": 0,
+        "vase": 0,
+        "beghouled": 0,
+        "bowling": 0,
+        "selected": 8
+      },
+      "MarketNightsDMGStage": {
+        "total": 7,
+        "normal": 6,
+        "boss": 0,
+        "night": 7,
+        "special": 0,
+        "vase": 0,
+        "beghouled": 0,
+        "bowling": 0,
+        "selected": 6
+      }
+    }
+  },
+  "unmapped_aliases": {
+    "dino": {
+      "caketank": 2,
+      "feastivus_swashbuckler": 5,
+      "carnie_stiltwalker": 5,
+      "roman_healer": 5,
+      "roman_ballista": 3
+    },
+    "eighties": {
+      "zcorp_helpdesk": 7,
+      "zcorp_consultant": 13,
+      "zcorp_racer_chair": 6
+    },
+    "iceage": {
+      "feastivus_swashbuckler": 10,
+      "feastivus_piano": 6,
+      "feastivus_camel_manyhump": 6,
+      "feastivus_poncho": 2,
+      "feastivus_camel_twohump": 2
+    },
+    "kongfu": {
+      "pvza_barrel": 57,
+      "toycar": 7,
+      "xzj": 2,
+      "carnie_stiltwalker": 1,
+      "roman_healer": 14,
+      "boss": 1,
+      "birthday_barrel": 1,
+      "birthday_pharaoh": 1,
+      "radiated_mid": 1
+    },
+    "modern": {
+      "lunar": 16,
+      "lunar_camel_twohump": 5,
+      "lunar_camel_manyhump": 5,
+      "wealth_god": 1,
+      "lunar_cannon": 1,
+      "lion_dancer": 1,
+      "money_tree": 6,
+      "feastivus": 2,
+      "feastivus_poncho": 8,
+      "feastivus_piano": 3,
+      "carnie_firebreather": 5,
+      "feastivus_troglobite_2block": 3,
+      "feastivus_swashbuckler": 2,
+      "plantagenet_winetasting_weak": 6,
+      "xzj": 97,
+      "roman_shield_pair": 10,
+      "roman_ballista": 2,
+      "FG": 18,
+      "DM": 14,
+      "FM": 14,
+      "MC": 17,
+      "RB": 5,
+      "plantagenet_winetasting": 16,
+      "hero_smash": 8,
+      "wolffire": 4,
+      "foodfight_gobbler_king": 3
+    }
+  },
+  "unmapped_alias_stats": {
+    "unique": 48,
+    "occurrences": 429
+  },
+  "stars_added": 495,
+  "stars_total": 615,
+  "level_inventory_total": 1809,
+  "stage_inventory": {
+    "": 3,
+    "AprilFoolsStage": 28,
+    "BeachBossStage": 1,
+    "BeachDMGStage": 5,
+    "BeachMiniGameStage": 5,
+    "BeachStage": 38,
+    "BeachTeaserStage": 2,
+    "BeachUBStage": 18,
+    "BigBrainzStage": 2,
+    "BirthdayStage": 2,
+    "CarnivalBossStage": 1,
+    "CarnivalStage": 38,
+    "ChildDMGStage": 1,
+    "ChildStage": 30,
+    "ChildUBStage": 4,
+    "ChineseGardenBossStage": 1,
+    "ChineseGardenDMGStage": 10,
+    "ChineseGardenNightsDMGStage": 4,
+    "ChineseGardenNightsStage": 1,
+    "ChineseGardenNightsUBStage": 1,
+    "ChineseGardenStage": 21,
+    "ChineseGardenUBStage": 34,
+    "DarkDMGStage": 11,
+    "DarkStage": 66,
+    "DarkUBStage": 2,
+    "DayLBStage": 1,
+    "DayStage": 20,
+    "DayUBStage": 1,
+    "DeepseaLandStage": 9,
+    "DeepseaStage": 17,
+    "DinoDMGStage": 1,
+    "DinoNightsDMGStage": 2,
+    "DinoNightsStage": 7,
+    "DinoNightsUBStage": 5,
+    "DinoStage": 35,
+    "DinoTeaserStage": 2,
+    "DinoUBStage": 10,
+    "EgyptDMGStage": 5,
+    "EgyptExodusStage": 1,
+    "EgyptFunTimeStage": 3,
+    "EgyptNightsBossStage": 2,
+    "EgyptNightsDMGStage": 5,
+    "EgyptNightsFunTimeStage": 3,
+    "EgyptNightsStage": 6,
+    "EgyptNightsUBStage": 8,
+    "EgyptStage": 45,
+    "EgyptStageUnlimitedPowerups": 1,
+    "EgyptUBStage": 5,
+    "EightiesStage": 61,
+    "EightiesTeaserStage": 1,
+    "FairyDMGStage": 2,
+    "FairyNightsDMGStage": 8,
+    "FairyNightsStage": 7,
+    "FairyNightsUBStage": 12,
+    "FairyStage": 9,
+    "FairyTaleNightsStage": 2,
+    "FairyTaleUBStage": 2,
+    "FairyUBStage": 8,
+    "FeastivusBeachStage": 1,
+    "FeastivusNightsStage": 3,
+    "FeastivusSoccerStage": 3,
+    "FeastivusStage": 6,
+    "FogLBStage": 1,
+    "FogStage": 17,
+    "FrontLawnStage": 24,
+    "FrontLawnUnsoddedStage": 6,
+    "FutureOriDMGStage": 4,
+    "FutureOriFunTimeStage": 9,
+    "FutureOriStage": 3,
+    "FutureOriUBStage": 5,
+    "FutureStage": 50,
+    "GTADMGStage": 6,
+    "GTAStage": 10,
+    "GTAUBStage": 11,
+    "HarvestStage": 8,
+    "HeianBossStage": 1,
+    "HeianDMGStage": 6,
+    "HeianStage": 27,
+    "HeianUBStage": 8,
+    "HeroesStage": 10,
+    "IceageEXStage": 13,
+    "IceageExpandStage": 6,
+    "IceageStage": 38,
+    "IceageTeaserStage": 1,
+    "IceageVeteranStage": 1,
+    "JTTWStage": 15,
+    "JourneyToTheWestStage": 1,
+    "JoustStage": 4,
+    "KongfuBossStage": 2,
+    "KongfuDMGStage": 19,
+    "KongfuFunTimeStage": 6,
+    "KongfuStage": 19,
+    "KongfuUBStage": 21,
+    "LostCityDMGStage": 7,
+    "LostCityNightsDMGStage": 1,
+    "LostCityNightsStage": 4,
+    "LostCityNightsUBStage": 4,
+    "LostCityStage": 26,
+    "LostCityTeaserStage": 2,
+    "LostCityUBStage": 13,
+    "LostCityUnsoddedDMGStage": 2,
+    "LostCityUnsoddedStage": 1,
+    "LunarDMGStage": 9,
+    "LunarDaylightDMGStage": 9,
+    "LunarDaylightNoMusicSuffixStage": 3,
+    "LunarDaylightStage": 14,
+    "LunarDaylightUBStage": 17,
+    "LunarNightAndQinMusicStage": 1,
+    "LunarNoMusicSuffixStage": 2,
+    "LunarStage": 18,
+    "LunarUBStage": 16,
+    "MarketNightsDMGStage": 7,
+    "MarketNightsStage": 16,
+    "MarketNightsUBStage": 14,
+    "MausoleumPalaceStage": 21,
+    "MausoleumStage": 25,
+    "ModernDMGStage": 3,
+    "ModernNightsDMGStage": 1,
+    "ModernNightsUBStage": 1,
+    "ModernOriStage": 2,
+    "ModernOriUBStage": 2,
+    "ModernStage": 65,
+    "ModernUBStage": 5,
+    "NightLBStage": 4,
+    "NightStage": 18,
+    "NightUBStage": 1,
+    "No42UniverseStage": 4,
+    "PaddysStage": 1,
+    "PaddysUBStage": 2,
+    "PenaconyStage": 20,
+    "PennyPurstStage": 1,
+    "PinoconyStage": 3,
+    "PirateBossStage": 1,
+    "PirateDMGStage": 8,
+    "PirateFunTimeStage": 6,
+    "PirateStage": 42,
+    "PirateUBStage": 10,
+    "PlantWarsStage": 2,
+    "PlantagenetBossStage": 1,
+    "PlantagenetDMGStage": 3,
+    "PlantagenetDaylightDMGStage": 3,
+    "PlantagenetDaylightFunTimeStage": 2,
+    "PlantagenetDaylightStage": 6,
+    "PlantagenetDaylightUBStage": 5,
+    "PlantagenetFunTimeStage": 5,
+    "PlantagenetNoMusicStage": 2,
+    "PlantagenetStage": 8,
+    "PlantagenetUBStage": 10,
+    "PoolLBStage": 4,
+    "PoolStage": 12,
+    "PoolUBStage": 1,
+    "PvZ2CRoofNightStage": 1,
+    "PvZ2CRoofStage": 17,
+    "RenaiBossStage": 3,
+    "RenaiDMGStage": 4,
+    "RenaiNightsDMGStage": 3,
+    "RenaiNightsStage": 2,
+    "RenaiNightsUBStage": 6,
+    "RenaiStage": 22,
+    "RenaiUBStage": 9,
+    "RiftStage": 37,
+    "RiftStageLawnOfDoom": 1,
+    "RomanFloodedStage": 1,
+    "RoofNightStage": 1,
+    "RoofStage": 3,
+    "RoofUBStage": 1,
+    "SixLaneFogStage": 7,
+    "SixLaneHonkaiStage": 3,
+    "SixLanePoolStage": 5,
+    "SixLaneStage": 2,
+    "SkyCityBossStage": 1,
+    "SkyCityDMGStage": 5,
+    "SkyCityLostCityBossStage": 1,
+    "SkyCityStage": 17,
+    "SkyCityUBStage": 13,
+    "SpringStage": 1,
+    "Stage": 17,
+    "SteamBossStage": 1,
+    "SteamDMGStage": 10,
+    "SteamStage": 12,
+    "SteamUBStage": 14,
+    "TheStage": 1,
+    "TheatreStage": 7,
+    "TutorialStage": 6,
+    "UnchartedNeedforspeedStage": 10,
+    "ValentinesStage": 3,
+    "VolcanoDMGStage": 5,
+    "VolcanoStage": 2,
+    "VolcanoUBStage": 2,
+    "WestBossStage": 1,
+    "WestDMGStage": 4,
+    "WestNightBossStage": 1,
+    "WestNightDMGStage": 4,
+    "WestNightStage": 4,
+    "WestNightUBStage": 4,
+    "WestStage": 18,
+    "WestUBStage": 6,
+    "ZCorpStage": 15
+  }
+}

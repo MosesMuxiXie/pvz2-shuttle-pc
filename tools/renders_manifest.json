@@ -1,0 +1,444 @@
+{
+ "art": {
+  "chinesegarden": [
+   {
+    "slug": "gardenia",
+    "src": "Chinese Garden/Part 1/Gardenia.png",
+    "size": [
+     758,
+     753
+    ],
+    "bytes": 165993,
+    "key": "art/chinesegarden/gardenia.png"
+   },
+   {
+    "slug": "jasmine",
+    "src": "Chinese Garden/Part 1/Jasmine.png",
+    "size": [
+     900,
+     753
+    ],
+    "bytes": 430442,
+    "key": "art/chinesegarden/jasmine.png"
+   },
+   {
+    "slug": "torpedofruit",
+    "src": "Chinese Garden/Part 1/Torpedo Fruit.png",
+    "size": [
+     663,
+     900
+    ],
+    "bytes": 230747,
+    "key": "art/chinesegarden/torpedofruit.png"
+   },
+   {
+    "slug": "seapotatomine",
+    "src": "Chinese Garden/Part 1/Sea-potato Mine.png",
+    "size": [
+     900,
+     782
+    ],
+    "bytes": 338315,
+    "key": "art/chinesegarden/seapotatomine.png"
+   },
+   {
+    "slug": "elderbarrier",
+    "src": "Chinese Garden/Part 2/Elderbarrier.png",
+    "size": [
+     703,
+     900
+    ],
+    "bytes": 323437,
+    "key": "art/chinesegarden/elderbarrier.png"
+   },
+   {
+    "slug": "phantasmagnolia",
+    "src": "Chinese Garden/Part 2/Phantas Magnolia.png",
+    "size": [
+     635,
+     899
+    ],
+    "bytes": 347489,
+    "key": "art/chinesegarden/phantasmagnolia.png"
+   },
+   {
+    "slug": "plummet1",
+    "src": "Chinese Garden/Part 2/Plummet (Growth Stage 1).png",
+    "size": [
+     814,
+     900
+    ],
+    "bytes": 242520,
+    "key": "art/chinesegarden/plummet1.png"
+   },
+   {
+    "slug": "privacyscreen1",
+    "src": "Chinese Garden/Part 2/Privacy Screen (Variation 1).png",
+    "size": [
+     567,
+     900
+    ],
+    "bytes": 192970,
+    "key": "art/chinesegarden/privacyscreen1.png"
+   },
+   {
+    "slug": "zombie",
+    "src": "Chinese Garden/Part 1/Garden Zombie.png",
+    "size": [
+     576,
+     900
+    ],
+    "bytes": 341313,
+    "key": "art/chinesegarden/zombie.png"
+   },
+   {
+    "slug": "conehead",
+    "src": "Chinese Garden/Part 1/Garden Conehead Zombie.png",
+    "size": [
+     478,
+     900
+    ],
+    "bytes": 258158,
+    "key": "art/chinesegarden/conehead.png"
+   },
+   {
+    "slug": "buckethead",
+    "src": "Chinese Garden/Part 1/Garden Buckethead Zombie.png",
+    "size": [
+     461,
+     900
+    ],
+    "bytes": 256553,
+    "key": "art/chinesegarden/buckethead.png"
+   },
+   {
+    "slug": "flag",
+    "src": "Chinese Garden/Part 1/Garden Flag Zombie.png",
+    "size": [
+     534,
+     900
+    ],
+    "bytes": 283764,
+    "key": "art/chinesegarden/flag.png"
+   },
+   {
+    "slug": "poet",
+    "src": "Chinese Garden/Part 1/Literati Zombie.png",
+    "size": [
+     483,
+     900
+    ],
+    "bytes": 241385,
+    "key": "art/chinesegarden/poet.png"
+   },
+   {
+    "slug": "umbrella",
+    "src": "Chinese Garden/Part 1/Umbrella Zombie.png",
+    "size": [
+     900,
+     873
+    ],
+    "bytes": 275172,
+    "key": "art/chinesegarden/umbrella.png"
+   },
+   {
+    "slug": "imp",
+    "src": "Chinese Garden/Part 1/Official Imp.png",
+    "size": [
+     582,
+     815
+    ],
+    "bytes": 79923,
+    "key": "art/chinesegarden/imp.png"
+   },
+   {
+    "slug": "gargantuar",
+    "src": "Chinese Garden/Part 1/Guardian Gargantuar.png",
+    "size": [
+     842,
+     899
+    ],
+    "bytes": 465259,
+    "key": "art/chinesegarden/gargantuar.png"
+   },
+   {
+    "slug": "cujustar",
+    "src": "Chinese Garden/Part 2/Cuju Star Zombie.png",
+    "size": [
+     647,
+     900
+    ],
+    "bytes": 330173,
+    "key": "art/chinesegarden/cujustar.png"
+   },
+   {
+    "slug": "drummer",
+    "src": "Chinese Garden/Part 2/Drummer Zombie.png",
+    "size": [
+     716,
+     900
+    ],
+    "bytes": 287954,
+    "key": "art/chinesegarden/drummer.png"
+   },
+   {
+    "slug": "flutist",
+    "src": "Chinese Garden/Part 2/Flutist Zombie.png",
+    "size": [
+     629,
+     900
+    ],
+    "bytes": 242999,
+    "key": "art/chinesegarden/flutist.png"
+   },
+   {
+    "slug": "fengshuist",
+    "src": "Chinese Garden/Part 2/Fengshuist Zombie.png",
+    "size": [
+     746,
+     900
+    ],
+    "bytes": 421837,
+    "key": "art/chinesegarden/fengshuist.png"
+   },
+   {
+    "slug": "impkoi",
+    "src": "Chinese Garden/Part 2/Imp Koi Zombie.png",
+    "size": [
+     900,
+     763
+    ],
+    "bytes": 365908,
+    "key": "art/chinesegarden/impkoi.png"
+   },
+   {
+    "slug": "imptaoist",
+    "src": "Chinese Garden/Part 2/Imp Taoist Zombie.png",
+    "size": [
+     862,
+     900
+    ],
+    "bytes": 361142,
+    "key": "art/chinesegarden/imptaoist.png"
+   }
+  ],
+  "losantosvice": [
+   {
+    "slug": "birdofparadise",
+    "src": "Los Santos Vice/Bird of Paradise.png",
+    "size": [
+     734,
+     900
+    ],
+    "bytes": 268914,
+    "key": "art/losantosvice/birdofparadise.png"
+   },
+   {
+    "slug": "poppinpoppies",
+    "src": "Los Santos Vice/Poppin_ Poppies.png",
+    "size": [
+     659,
+     900
+    ],
+    "bytes": 228842,
+    "key": "art/losantosvice/poppinpoppies.png"
+   },
+   {
+    "slug": "yuccaguardian",
+    "src": "Los Santos Vice/Yucca Guardian.png",
+    "size": [
+     705,
+     900
+    ],
+    "bytes": 271649,
+    "key": "art/losantosvice/yuccaguardian.png"
+   },
+   {
+    "slug": "zombie",
+    "src": "Los Santos Vice/Families Basic Zombie.png",
+    "size": [
+     685,
+     900
+    ],
+    "bytes": 265919,
+    "key": "art/losantosvice/zombie.png"
+   },
+   {
+    "slug": "conehead",
+    "src": "Los Santos Vice/Conehead Families.png",
+    "size": [
+     527,
+     900
+    ],
+    "bytes": 222169,
+    "key": "art/losantosvice/conehead.png"
+   },
+   {
+    "slug": "buckethead",
+    "src": "Los Santos Vice/Buckethead Families.png",
+    "size": [
+     674,
+     900
+    ],
+    "bytes": 257074,
+    "key": "art/losantosvice/buckethead.png"
+   },
+   {
+    "slug": "ozloc",
+    "src": "Los Santos Vice/OZ Loc Zombie.png",
+    "size": [
+     640,
+     900
+    ],
+    "bytes": 266143,
+    "key": "art/losantosvice/ozloc.png"
+   },
+   {
+    "slug": "molotov",
+    "src": "Los Santos Vice/Vagos Molotov Zombie.png",
+    "size": [
+     646,
+     900
+    ],
+    "bytes": 313696,
+    "key": "art/losantosvice/molotov.png"
+   },
+   {
+    "slug": "carljohnson",
+    "src": "Los Santos Vice/Carl Johnson.png",
+    "size": [
+     346,
+     900
+    ],
+    "bytes": 144953,
+    "key": "art/losantosvice/carljohnson.png"
+   },
+   {
+    "slug": "gargantuar",
+    "src": "Los Santos Vice/Big Smogantuar.png",
+    "size": [
+     782,
+     900
+    ],
+    "bytes": 413148,
+    "key": "art/losantosvice/gargantuar.png"
+   },
+   {
+    "slug": "imp",
+    "src": "Los Santos Vice/Cluckin_ Bell Imp.png",
+    "size": [
+     618,
+     900
+    ],
+    "bytes": 283469,
+    "key": "art/losantosvice/imp.png"
+   }
+  ],
+  "lunarrainbowmarket": [
+   {
+    "slug": "begonia",
+    "src": "Lunar Rainbow Market/Begonia.png",
+    "size": [
+     751,
+     900
+    ],
+    "bytes": 309401,
+    "key": "art/lunarrainbowmarket/begonia.png"
+   },
+   {
+    "slug": "potatochip",
+    "src": "Lunar Rainbow Market/Potato Chip.png",
+    "size": [
+     366,
+     270
+    ],
+    "bytes": 46095,
+    "key": "art/lunarrainbowmarket/potatochip.png"
+   },
+   {
+    "slug": "missiletoast",
+    "src": "Lunar Rainbow Market/Missile Toast.png.png",
+    "size": [
+     857,
+     900
+    ],
+    "bytes": 396198,
+    "key": "art/lunarrainbowmarket/missiletoast.png"
+   },
+   {
+    "slug": "desirecalamus",
+    "src": "Lunar Rainbow Market/Desire Calamus.png",
+    "size": [
+     709,
+     900
+    ],
+    "bytes": 323741,
+    "key": "art/lunarrainbowmarket/desirecalamus.png"
+   },
+   {
+    "slug": "clockwork",
+    "src": "Lunar Rainbow Market/Clockwork Zombie.png",
+    "size": [
+     578,
+     900
+    ],
+    "bytes": 509853,
+    "key": "art/lunarrainbowmarket/clockwork.png"
+   },
+   {
+    "slug": "mechanic",
+    "src": "Lunar Rainbow Market/Mechanic Zombie.png",
+    "size": [
+     597,
+     900
+    ],
+    "bytes": 361958,
+    "key": "art/lunarrainbowmarket/mechanic.png"
+   },
+   {
+    "slug": "trapeze",
+    "src": "Lunar Rainbow Market/Trapeze Zombies.png",
+    "size": [
+     900,
+     448
+    ],
+    "bytes": 338514,
+    "key": "art/lunarrainbowmarket/trapeze.png"
+   }
+  ]
+ },
+ "worlds": [
+  {
+   "world": "chinesegarden",
+   "src": "Chinese Garden/Part 2/Chinese Garden Part 2.png",
+   "bytes": 1134063
+  },
+  {
+   "world": "losantosvice",
+   "src": "Los Santos Vice/Los Santos Vice.png",
+   "bytes": 897679
+  },
+  {
+   "world": "lunarrainbowmarket",
+   "src": "Lunar Rainbow Market/Lunar Rainbow Market Map.png",
+   "bytes": 803442
+  }
+ ],
+ "lawns": [
+  {
+   "world": "losantosvice",
+   "src": "Los Santos Vice/Los Santos Vice Lawn.png",
+   "bytes": 1591451
+  },
+  {
+   "world": "lunarrainbowmarket",
+   "src": "Lunar Rainbow Market/Lunar Rainbow Market Lawn.png",
+   "bytes": 1377949
+  },
+  {
+   "world": "chinesegarden",
+   "bytes": 707209,
+   "mode": "synthetic"
+  }
+ ]
+}

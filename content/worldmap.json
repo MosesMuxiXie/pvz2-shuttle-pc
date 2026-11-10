@@ -1,0 +1,238 @@
+{
+ "worlds": {
+  "frontyard": {
+   "id": "frontyard",
+   "order": 1,
+   "name_key": "world.frontyard.name",
+   "difficulty": 1,
+   "unlock_cost": 1,
+   "key_required": false,
+   "desc": "阳光充足的前院草坪，一切冒险从这里开始。"
+  },
+  "egypt": {
+   "id": "egypt",
+   "order": 2,
+   "name_key": "world.egypt.name",
+   "difficulty": 1,
+   "unlock_cost": 1,
+   "key_required": true,
+   "desc": "黄沙与金字塔之下，木乃伊正从沉睡的陵墓中苏醒。"
+  },
+  "pirate": {
+   "id": "pirate",
+   "order": 3,
+   "name_key": "world.pirate.name",
+   "difficulty": 4,
+   "unlock_cost": 1,
+   "key_required": true,
+   "desc": "海盗僵尸乘船登陆，甲板与浪花之间危机四伏。"
+  },
+  "cowboy": {
+   "id": "cowboy",
+   "order": 4,
+   "name_key": "world.cowboy.name",
+   "difficulty": 2,
+   "unlock_cost": 1,
+   "key_required": true,
+   "desc": "尘土飞扬的西部小镇，矿车沿着铁轨横冲直撞。"
+  },
+  "future": {
+   "id": "future",
+   "order": 5,
+   "name_key": "world.future.name",
+   "difficulty": 2,
+   "unlock_cost": 1,
+   "key_required": true,
+   "desc": "霓虹闪烁的未来都市，机械僵尸列队推进。"
+  },
+  "dark": {
+   "id": "dark",
+   "order": 6,
+   "name_key": "world.dark.name",
+   "difficulty": 2,
+   "unlock_cost": 1,
+   "key_required": true,
+   "desc": "月光下的古堡，骑士与法师在迷雾中出没。"
+  },
+  "beach": {
+   "id": "beach",
+   "order": 7,
+   "name_key": "world.beach.name",
+   "difficulty": 2,
+   "unlock_cost": 1,
+   "key_required": true,
+   "desc": "潮水涨落的海滩，冲浪僵尸踏浪而来。"
+  },
+  "lostcity": {
+   "id": "lostcity",
+   "order": 8,
+   "name_key": "world.lostcity.name",
+   "difficulty": 1,
+   "unlock_cost": 1,
+   "key_required": true,
+   "desc": "藤蔓覆盖的失落遗迹，探险家僵尸在断壁间游荡。"
+  },
+  "iceage": {
+   "id": "iceage",
+   "order": 9,
+   "name_key": "world.iceage.name",
+   "difficulty": 2,
+   "unlock_cost": 1,
+   "key_required": true,
+   "desc": "寒风呼啸的冰原，冰砖与雪橇僵尸从裂隙中涌出。"
+  },
+  "kongfu": {
+   "id": "kongfu",
+   "order": 10,
+   "name_key": "world.kongfu.name",
+   "difficulty": 4,
+   "unlock_cost": 1,
+   "key_required": true,
+   "desc": "竹林与古刹之间，功夫僵尸摆开阵势。"
+  },
+  "dino": {
+   "id": "dino",
+   "order": 11,
+   "name_key": "world.dino.name",
+   "difficulty": 2,
+   "unlock_cost": 1,
+   "key_required": true,
+   "desc": "史前沼泽深处，恐龙与原始僵尸一同袭来。"
+  },
+  "eighties": {
+   "id": "eighties",
+   "order": 12,
+   "name_key": "world.eighties.name",
+   "difficulty": 2,
+   "unlock_cost": 1,
+   "key_required": true,
+   "desc": "霓虹舞台与磁带机，摇滚僵尸踩着节拍推进。"
+  },
+  "modern": {
+   "id": "modern",
+   "order": 13,
+   "name_key": "world.modern.name",
+   "difficulty": 3,
+   "unlock_cost": 1,
+   "key_required": true,
+   "desc": "小镇的街道与屋顶，现代僵尸发起最后的总攻。"
+  },
+  "sky": {
+   "id": "sky",
+   "order": 14,
+   "name_key": "world.sky.name",
+   "difficulty": 2,
+   "unlock_cost": 1,
+   "key_required": true,
+   "desc": "云海之上的浮空城，雷霆与飞艇环绕。"
+  },
+  "chinesegarden": {
+   "id": "chinesegarden",
+   "order": 15,
+   "name_key": "world.chinesegarden.name",
+   "difficulty": 2,
+   "unlock_cost": 1,
+   "key_required": true,
+   "desc": "灯笼高挂的园林，纸伞与诗人在月色下穿行。"
+  },
+  "heian": {
+   "id": "heian",
+   "order": 16,
+   "name_key": "world.heian.name",
+   "difficulty": 2,
+   "unlock_cost": 1,
+   "key_required": true,
+   "desc": "神社、樱花与灯笼之间，武士僵尸踏着鼓声而来。"
+  },
+  "fairy": {
+   "id": "fairy",
+   "order": 17,
+   "name_key": "world.fairy.name",
+   "difficulty": 2,
+   "unlock_cost": 1,
+   "key_required": true,
+   "desc": "蘑菇与藤蔓缠绕的童话林地，骑士僵尸护送着童话队伍。"
+  },
+  "mausoleum": {
+   "id": "mausoleum",
+   "order": 18,
+   "name_key": "world.mausoleum.name",
+   "difficulty": 3,
+   "unlock_cost": 1,
+   "key_required": true,
+   "desc": "幽深的地宫甬道，石棺与暗影中的守卫一同苏醒。"
+  },
+  "steam": {
+   "id": "steam",
+   "order": 19,
+   "name_key": "world.steam.name",
+   "difficulty": 3,
+   "unlock_cost": 1,
+   "key_required": true,
+   "desc": "齿轮与蒸汽弥漫的工坊，机械僵尸沿着铜管推进。"
+  },
+  "memorytour": {
+   "id": "memorytour",
+   "order": 20,
+   "name_key": "world.memorytour.name",
+   "difficulty": 2,
+   "unlock_cost": 1,
+   "key_required": true,
+   "desc": "泛黄的记忆胶片中，熟悉的老朋友再次并肩。"
+  },
+  "losantosvice": {
+   "id": "losantosvice",
+   "order": 21,
+   "name_key": "world.losantosvice.name",
+   "difficulty": 3,
+   "unlock_cost": 1,
+   "key_required": true,
+   "desc": "夕阳下的街区车库，帮派僵尸沿着柏油路压过来。"
+  },
+  "lunarrainbowmarket": {
+   "id": "lunarrainbowmarket",
+   "order": 22,
+   "name_key": "world.lunarrainbowmarket.name",
+   "difficulty": 4,
+   "unlock_cost": 1,
+   "key_required": true,
+   "desc": "月虹之下的夜市石阶，发条与杂技僵尸从摊位之间涌出。"
+  },
+  "renai": {
+   "id": "renai",
+   "order": 23,
+   "name_key": "world.renai.name",
+   "difficulty": 4,
+   "unlock_cost": 1,
+   "key_required": true,
+   "desc": "聚光灯下的恋爱剧场，演员僵尸轮番上演悲喜剧。"
+  },
+  "muji": {
+   "id": "muji",
+   "order": 24,
+   "name_key": "world.muji.name",
+   "difficulty": 3,
+   "unlock_cost": 1,
+   "key_required": true,
+   "desc": "罗马柱与竞技场之间，军团僵尸列队推进。"
+  },
+  "carnival": {
+   "id": "carnival",
+   "order": 25,
+   "name_key": "world.carnival.name",
+   "difficulty": 5,
+   "unlock_cost": 1,
+   "key_required": true,
+   "desc": "灯火通明的马戏团，空中飞人与发条小丑轮番登场。"
+  },
+  "plantagenet": {
+   "id": "plantagenet",
+   "order": 26,
+   "name_key": "world.plantagenet.name",
+   "difficulty": 4,
+   "unlock_cost": 1,
+   "key_required": true,
+   "desc": "石堡深处的王朝庭院，红毯与烛台之间，皇家僵尸正踏着鼓点列队而来。"
+  }
+ }
+}

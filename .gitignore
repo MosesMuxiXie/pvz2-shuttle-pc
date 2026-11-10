@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Runtime files
+save.json
+save.json.bak
+crash.log
+selftest.log
+*.log
+
+# Build output
+build/
+dist/
+*.spec
+work_out/
+repo/
+
+# Game assets / original artifacts (not redistributed)
+assets/
+Music/
+Renders/
+*.apk
+*.obb
+*.zip
+*.exe
+*.dmg
+*.pkg
+*.app/
+!installer/*.iss
+
+# OS
+Thumbs.db
+.DS_Store

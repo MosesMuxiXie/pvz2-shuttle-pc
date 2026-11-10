@@ -1,0 +1,250 @@
+{
+  "id": "frontyard_10",
+  "world": "frontyard",
+  "index": 10,
+  "title": "第 10 天",
+  "sun": 250,
+  "deck": [
+    "sunflower",
+    "peashooter",
+    "wallnut",
+    "potatomine",
+    "snowpea",
+    "bloomerang"
+  ],
+  "waves": [
+    {
+      "delay": 18,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "basic",
+          "row": 2
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "basic",
+          "row": 2
+        },
+        {
+          "type": "basic",
+          "row": 0
+        },
+        {
+          "type": "basic",
+          "row": 1
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "basic",
+          "row": 3
+        },
+        {
+          "type": "basic",
+          "row": 1
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "basic",
+          "row": 2
+        },
+        {
+          "type": "basic",
+          "row": 1
+        },
+        {
+          "type": "basic",
+          "row": 2
+        },
+        {
+          "type": "basic",
+          "row": 3
+        }
+      ]
+    },
+    {
+      "delay": 24,
+      "flag": true,
+      "zombies": [
+        {
+          "type": "basic",
+          "row": 0
+        },
+        {
+          "type": "basic",
+          "row": 0
+        },
+        {
+          "type": "basic",
+          "row": 4
+        },
+        {
+          "type": "pole_vaulter",
+          "row": 4
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "basic",
+          "row": 3
+        },
+        {
+          "type": "basic",
+          "row": 1
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "basic",
+          "row": 0
+        },
+        {
+          "type": "basic",
+          "row": 0
+        },
+        {
+          "type": "basic",
+          "row": 1
+        },
+        {
+          "type": "basic",
+          "row": 1
+        },
+        {
+          "type": "basic",
+          "row": 2
+        },
+        {
+          "type": "basic",
+          "row": 2
+        },
+        {
+          "type": "basic",
+          "row": 2
+        },
+        {
+          "type": "basic",
+          "row": 3
+        },
+        {
+          "type": "basic",
+          "row": 3
+        },
+        {
+          "type": "basic",
+          "row": 4
+        },
+        {
+          "type": "basic",
+          "row": 4
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "buckethead",
+          "row": 0
+        },
+        {
+          "type": "buckethead",
+          "row": 4
+        },
+        {
+          "type": "basic",
+          "row": 3
+        },
+        {
+          "type": "basic",
+          "row": 2
+        },
+        {
+          "type": "basic",
+          "row": 1
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "buckethead",
+          "row": 3
+        }
+      ]
+    },
+    {
+      "delay": 24,
+      "flag": true,
+      "zombies": [
+        {
+          "type": "buckethead",
+          "row": 2
+        },
+        {
+          "type": "iceage",
+          "row": 1
+        },
+        {
+          "type": "buckethead",
+          "row": 1
+        },
+        {
+          "type": "eighties",
+          "row": 4
+        },
+        {
+          "type": "kongfu",
+          "row": 3
+        },
+        {
+          "type": "basic",
+          "row": 2
+        },
+        {
+          "type": "basic",
+          "row": 1
+        },
+        {
+          "type": "pole_vaulter",
+          "row": 0
+        }
+      ]
+    }
+  ],
+  "flags": 2,
+  "seed_bank": 6,
+  "extra": {
+    "guests": [
+      "iceage",
+      "eighties",
+      "kongfu"
+    ]
+  }
+}

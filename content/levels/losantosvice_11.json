@@ -1,0 +1,505 @@
+{
+ "id": "losantosvice_11",
+ "world": "losantosvice",
+ "index": 11,
+ "title": "洛城风云 - 第 11 天",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "birdofparadise",
+  "yuccaguardian"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "gang_ozloc",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "gang_cone",
+     "row": 0
+    },
+    {
+     "type": "gang_zombie",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "gang_cone",
+     "row": 0
+    },
+    {
+     "type": "gang_zombie",
+     "row": 1
+    },
+    {
+     "type": "gang_molotov",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "gang_cone",
+     "row": 0
+    },
+    {
+     "type": "gang_ozloc",
+     "row": 1
+    },
+    {
+     "type": "gang_cone",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "gang_ozloc",
+     "row": 0
+    },
+    {
+     "type": "gang_imp",
+     "row": 1
+    },
+    {
+     "type": "gang_zombie",
+     "row": 2
+    },
+    {
+     "type": "gang_bucket",
+     "row": 3
+    },
+    {
+     "type": "gang_cone",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "gang_molotov",
+     "row": 0
+    },
+    {
+     "type": "gang_imp",
+     "row": 1
+    },
+    {
+     "type": "gang_bucket",
+     "row": 2
+    },
+    {
+     "type": "gang_bucket",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "gang_ozloc",
+     "row": 0
+    },
+    {
+     "type": "gang_molotov",
+     "row": 1
+    },
+    {
+     "type": "gang_zombie",
+     "row": 2
+    },
+    {
+     "type": "gang_cone",
+     "row": 3
+    },
+    {
+     "type": "gang_cone",
+     "row": 4
+    },
+    {
+     "type": "gang_bucket",
+     "row": 0
+    },
+    {
+     "type": "gang_imp",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "gang_zombie",
+     "row": 0
+    },
+    {
+     "type": "gang_imp",
+     "row": 1
+    },
+    {
+     "type": "gang_molotov",
+     "row": 2
+    },
+    {
+     "type": "gang_ozloc",
+     "row": 3
+    },
+    {
+     "type": "gang_cone",
+     "row": 4
+    },
+    {
+     "type": "gang_bucket",
+     "row": 0
+    },
+    {
+     "type": "gang_bucket",
+     "row": 1
+    },
+    {
+     "type": "gang_cone",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "gang_molotov",
+     "row": 0
+    },
+    {
+     "type": "gang_molotov",
+     "row": 1
+    },
+    {
+     "type": "gang_zombie",
+     "row": 2
+    },
+    {
+     "type": "gang_bucket",
+     "row": 3
+    },
+    {
+     "type": "gang_bucket",
+     "row": 4
+    },
+    {
+     "type": "gang_cone",
+     "row": 0
+    },
+    {
+     "type": "gang_cone",
+     "row": 1
+    },
+    {
+     "type": "gang_cone",
+     "row": 2
+    },
+    {
+     "type": "gang_zombie",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "gang_molotov",
+     "row": 0
+    },
+    {
+     "type": "gang_zombie",
+     "row": 1
+    },
+    {
+     "type": "gang_ozloc",
+     "row": 2
+    },
+    {
+     "type": "gang_ozloc",
+     "row": 3
+    },
+    {
+     "type": "gang_cone",
+     "row": 4
+    },
+    {
+     "type": "gang_bucket",
+     "row": 0
+    },
+    {
+     "type": "gang_cone",
+     "row": 1
+    },
+    {
+     "type": "gang_cone",
+     "row": 2
+    },
+    {
+     "type": "gang_zombie",
+     "row": 3
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "gang_cone",
+     "row": 0
+    },
+    {
+     "type": "gang_cone",
+     "row": 1
+    },
+    {
+     "type": "gang_imp",
+     "row": 2
+    },
+    {
+     "type": "gang_zombie",
+     "row": 3
+    },
+    {
+     "type": "gang_ozloc",
+     "row": 4
+    },
+    {
+     "type": "gang_ozloc",
+     "row": 0
+    },
+    {
+     "type": "gang_zombie",
+     "row": 1
+    },
+    {
+     "type": "gang_molotov",
+     "row": 2
+    },
+    {
+     "type": "gang_molotov",
+     "row": 3
+    },
+    {
+     "type": "gang_bucket",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "gang_imp",
+     "row": 0
+    },
+    {
+     "type": "gang_zombie",
+     "row": 1
+    },
+    {
+     "type": "gang_molotov",
+     "row": 2
+    },
+    {
+     "type": "gang_cone",
+     "row": 3
+    },
+    {
+     "type": "gang_ozloc",
+     "row": 4
+    },
+    {
+     "type": "gang_cone",
+     "row": 0
+    },
+    {
+     "type": "gang_bucket",
+     "row": 1
+    },
+    {
+     "type": "gang_bucket",
+     "row": 2
+    },
+    {
+     "type": "gang_molotov",
+     "row": 3
+    },
+    {
+     "type": "gang_bucket",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "gang_cone",
+     "row": 0
+    },
+    {
+     "type": "gang_cone",
+     "row": 1
+    },
+    {
+     "type": "gang_imp",
+     "row": 2
+    },
+    {
+     "type": "gang_zombie",
+     "row": 3
+    },
+    {
+     "type": "gang_ozloc",
+     "row": 4
+    },
+    {
+     "type": "gang_ozloc",
+     "row": 0
+    },
+    {
+     "type": "gang_zombie",
+     "row": 1
+    },
+    {
+     "type": "gang_bucket",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "gang_cone",
+     "row": 0
+    },
+    {
+     "type": "gang_cone",
+     "row": 1
+    },
+    {
+     "type": "gang_imp",
+     "row": 2
+    },
+    {
+     "type": "gang_zombie",
+     "row": 3
+    },
+    {
+     "type": "gang_ozloc",
+     "row": 4
+    },
+    {
+     "type": "gang_zombie",
+     "row": 0
+    },
+    {
+     "type": "gang_molotov",
+     "row": 1
+    },
+    {
+     "type": "gang_bucket",
+     "row": 2
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "gang_cone",
+     "row": 0
+    },
+    {
+     "type": "gang_cone",
+     "row": 1
+    },
+    {
+     "type": "gang_imp",
+     "row": 2
+    },
+    {
+     "type": "gang_zombie",
+     "row": 3
+    },
+    {
+     "type": "gang_ozloc",
+     "row": 4
+    },
+    {
+     "type": "gang_ozloc",
+     "row": 0
+    },
+    {
+     "type": "gang_zombie",
+     "row": 1
+    },
+    {
+     "type": "gang_bucket",
+     "row": 2
+    },
+    {
+     "type": "gang_molotov",
+     "row": 3
+    },
+    {
+     "type": "gang_bucket",
+     "row": 4
+    }
+   ]
+  }
+ ],
+ "flags": 3,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_1298",
+  "stage": "GTAStage",
+  "name_key": "[GTA_LEVEL_NAME]",
+  "level_number": 11,
+  "wave_count": 15,
+  "original_waves": 15,
+  "night": false
+ }
+}

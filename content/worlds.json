@@ -1,0 +1,470 @@
+[
+ {
+  "id": "frontyard",
+  "name_zh": "前院",
+  "name_en": "Front Yard",
+  "order": 1,
+  "levels": 175,
+  "map": "world/frontyard.png",
+  "lawn": "lawn/frontyard.png",
+  "unlock_after": null,
+  "lawn_mode": "full",
+  "desc_zh": "阳光充足的前院草坪，一切冒险从这里开始。",
+  "bg_tint": [
+   214,
+   226,
+   190
+  ],
+  "difficulty": 1
+ },
+ {
+  "id": "egypt",
+  "name_zh": "神秘埃及",
+  "name_en": "Ancient Egypt",
+  "order": 2,
+  "levels": 84,
+  "map": "world/egypt.png",
+  "lawn": "lawn/egypt.png",
+  "unlock_after": "frontyard",
+  "lawn_mode": "full",
+  "desc_zh": "黄沙与金字塔之下，木乃伊正从沉睡的陵墓中苏醒。",
+  "bg_tint": [
+   226,
+   202,
+   150
+  ],
+  "difficulty": 1
+ },
+ {
+  "id": "pirate",
+  "name_zh": "海盗港湾",
+  "name_en": "Pirate Seas",
+  "order": 3,
+  "levels": 67,
+  "map": "world/pirate.png",
+  "lawn": "lawn/pirate.png",
+  "unlock_after": "egypt",
+  "lawn_mode": "full",
+  "desc_zh": "海盗僵尸乘船登陆，甲板与浪花之间危机四伏。",
+  "bg_tint": [
+   150,
+   195,
+   210
+  ],
+  "difficulty": 4
+ },
+ {
+  "id": "cowboy",
+  "name_zh": "狂野西部",
+  "name_en": "Wild West",
+  "order": 4,
+  "levels": 42,
+  "map": "world/cowboy.png",
+  "lawn": "lawn/cowboy.png",
+  "unlock_after": "pirate",
+  "lawn_mode": "full",
+  "desc_zh": "尘土飞扬的西部小镇，矿车沿着铁轨横冲直撞。",
+  "bg_tint": [
+   222,
+   190,
+   150
+  ],
+  "difficulty": 2
+ },
+ {
+  "id": "future",
+  "name_zh": "未来世界",
+  "name_en": "Far Future",
+  "order": 5,
+  "levels": 71,
+  "map": "world/future.png",
+  "lawn": "lawn/future.png",
+  "unlock_after": "cowboy",
+  "lawn_mode": "full",
+  "desc_zh": "霓虹闪烁的未来都市，机械僵尸列队推进。",
+  "bg_tint": [
+   160,
+   210,
+   225
+  ],
+  "difficulty": 2
+ },
+ {
+  "id": "dark",
+  "name_zh": "黑暗时代",
+  "name_en": "Dark Ages",
+  "order": 6,
+  "levels": 79,
+  "map": "world/dark.png",
+  "lawn": "lawn/dark.png",
+  "unlock_after": "future",
+  "lawn_mode": "full",
+  "desc_zh": "月光下的古堡，骑士与法师在迷雾中出没。",
+  "bg_tint": [
+   150,
+   140,
+   175
+  ],
+  "difficulty": 2
+ },
+ {
+  "id": "beach",
+  "name_zh": "神秘海滩",
+  "name_en": "Big Wave Beach",
+  "order": 7,
+  "levels": 95,
+  "map": "world/beach.png",
+  "lawn": "lawn/beach.png",
+  "unlock_after": "dark",
+  "lawn_mode": "full",
+  "desc_zh": "潮水涨落的海滩，冲浪僵尸踏浪而来。",
+  "bg_tint": [
+   170,
+   215,
+   215
+  ],
+  "difficulty": 2
+ },
+ {
+  "id": "lostcity",
+  "name_zh": "失落之城",
+  "name_en": "Lost City",
+  "order": 8,
+  "levels": 69,
+  "map": "world/lostcity.png",
+  "lawn": "lawn/lostcity.png",
+  "unlock_after": "beach",
+  "lawn_mode": "full",
+  "desc_zh": "藤蔓覆盖的失落遗迹，探险家僵尸在断壁间游荡。",
+  "bg_tint": [
+   190,
+   205,
+   155
+  ],
+  "difficulty": 1
+ },
+ {
+  "id": "iceage",
+  "name_zh": "冰河世界",
+  "name_en": "Frostbite Caves",
+  "order": 9,
+  "levels": 72,
+  "map": "world/iceage.png",
+  "lawn": "lawn/iceage.png",
+  "unlock_after": "lostcity",
+  "lawn_mode": "full",
+  "desc_zh": "寒风呼啸的冰原，冰砖与雪橇僵尸从裂隙中涌出。",
+  "bg_tint": [
+   185,
+   215,
+   235
+  ],
+  "difficulty": 2
+ },
+ {
+  "id": "kongfu",
+  "name_zh": "功夫世界",
+  "name_en": "Kongfu World",
+  "order": 10,
+  "levels": 83,
+  "map": "world/kongfu.png",
+  "lawn": "lawn/kongfu.png",
+  "unlock_after": "iceage",
+  "lawn_mode": "full",
+  "desc_zh": "竹林与古刹之间，功夫僵尸摆开阵势。",
+  "bg_tint": [
+   220,
+   190,
+   150
+  ],
+  "difficulty": 4
+ },
+ {
+  "id": "dino",
+  "name_zh": "恐龙危机",
+  "name_en": "Jurassic Marsh",
+  "order": 11,
+  "levels": 63,
+  "map": "world/dino.png",
+  "lawn": "lawn/dino.png",
+  "unlock_after": "kongfu",
+  "lawn_mode": "full",
+  "desc_zh": "史前沼泽深处，恐龙与原始僵尸一同袭来。",
+  "bg_tint": [
+   175,
+   205,
+   150
+  ],
+  "difficulty": 2
+ },
+ {
+  "id": "eighties",
+  "name_zh": "摇滚年代",
+  "name_en": "Neon Mixtape Tour",
+  "order": 12,
+  "levels": 72,
+  "map": "world/eighties.png",
+  "lawn": "lawn/eighties.png",
+  "unlock_after": "dino",
+  "lawn_mode": "full",
+  "desc_zh": "霓虹舞台与磁带机，摇滚僵尸踩着节拍推进。",
+  "bg_tint": [
+   205,
+   160,
+   220
+  ],
+  "difficulty": 2
+ },
+ {
+  "id": "modern",
+  "name_zh": "摩登世界",
+  "name_en": "Modern Day",
+  "order": 13,
+  "levels": 129,
+  "map": "world/modern.png",
+  "lawn": "lawn/modern.png",
+  "unlock_after": "eighties",
+  "lawn_mode": "full",
+  "desc_zh": "小镇的街道与屋顶，现代僵尸发起最后的总攻。",
+  "bg_tint": [
+   195,
+   205,
+   210
+  ],
+  "difficulty": 3
+ },
+ {
+  "id": "sky",
+  "name_zh": "天空之城",
+  "name_en": "Sky City",
+  "order": 14,
+  "levels": 57,
+  "map": "world/sky.png",
+  "lawn": "lawn/sky.png",
+  "unlock_after": "modern",
+  "lawn_mode": "full",
+  "desc_zh": "云海之上的浮空城，雷霆与飞艇环绕。",
+  "bg_tint": [
+   175,
+   200,
+   230
+  ],
+  "difficulty": 2
+ },
+ {
+  "id": "chinesegarden",
+  "name_zh": "中国园林",
+  "name_en": "Chinese Garden",
+  "order": 15,
+  "levels": 72,
+  "map": "world/chinesegarden.png",
+  "lawn": "lawn/chinesegarden.png",
+  "unlock_after": "sky",
+  "lawn_mode": "full",
+  "desc_zh": "灯笼高挂的园林，纸伞与诗人在月色下穿行。",
+  "bg_tint": [
+   225,
+   180,
+   170
+  ],
+  "difficulty": 2
+ },
+ {
+  "id": "heian",
+  "name_zh": "平安时代",
+  "name_en": "Heian Age",
+  "order": 16,
+  "levels": 42,
+  "map": "world/heian.png",
+  "lawn": "lawn/heian.png",
+  "unlock_after": "chinesegarden",
+  "lawn_mode": "full",
+  "desc_zh": "神社、樱花与灯笼之间，武士僵尸踏着鼓声而来。",
+  "bg_tint": [
+   225,
+   180,
+   160
+  ],
+  "difficulty": 2
+ },
+ {
+  "id": "fairy",
+  "name_zh": "童话森林",
+  "name_en": "Fairytale Forest",
+  "order": 17,
+  "levels": 50,
+  "map": "world/fairy.png",
+  "lawn": "lawn/fairy.png",
+  "unlock_after": "heian",
+  "lawn_mode": "full",
+  "desc_zh": "蘑菇与藤蔓缠绕的童话林地，骑士僵尸护送着童话队伍。",
+  "bg_tint": [
+   175,
+   205,
+   165
+  ],
+  "difficulty": 2
+ },
+ {
+  "id": "mausoleum",
+  "name_zh": "地宫遗迹",
+  "name_en": "Mausoleum",
+  "order": 18,
+  "levels": 55,
+  "map": "world/mausoleum.png",
+  "lawn": "lawn/mausoleum.png",
+  "unlock_after": "fairy",
+  "lawn_mode": "full",
+  "desc_zh": "幽深的地宫甬道，石棺与暗影中的守卫一同苏醒。",
+  "bg_tint": [
+   150,
+   145,
+   165
+  ],
+  "difficulty": 3
+ },
+ {
+  "id": "steam",
+  "name_zh": "蒸汽时代",
+  "name_en": "Steam Ages",
+  "order": 19,
+  "levels": 37,
+  "map": "world/steam.png",
+  "lawn": "lawn/steam.png",
+  "unlock_after": "mausoleum",
+  "lawn_mode": "full",
+  "desc_zh": "齿轮与蒸汽弥漫的工坊，机械僵尸沿着铜管推进。",
+  "bg_tint": [
+   200,
+   180,
+   150
+  ],
+  "difficulty": 3
+ },
+ {
+  "id": "memorytour",
+  "name_zh": "回忆之旅",
+  "name_en": "Memory Lane",
+  "order": 20,
+  "levels": 11,
+  "map": "world/memorytour.png",
+  "lawn": "lawn/memorytour.png",
+  "unlock_after": "steam",
+  "lawn_mode": "full",
+  "desc_zh": "泛黄的记忆胶片中，熟悉的老朋友再次并肩。",
+  "bg_tint": [
+   210,
+   200,
+   170
+  ],
+  "difficulty": 2
+ },
+ {
+  "id": "losantosvice",
+  "name_zh": "洛城风云",
+  "name_en": "Los Santos Vice",
+  "order": 21,
+  "levels": 27,
+  "map": "world/losantosvice.png",
+  "lawn": "lawn/losantosvice.png",
+  "unlock_after": "memorytour",
+  "lawn_mode": "full",
+  "desc_zh": "夕阳下的街区车库，帮派僵尸沿着柏油路压过来。",
+  "bg_tint": [
+   200,
+   170,
+   185
+  ],
+  "difficulty": 3
+ },
+ {
+  "id": "lunarrainbowmarket",
+  "name_zh": "月虹市场",
+  "name_en": "Lunar Rainbow Market",
+  "order": 22,
+  "levels": 126,
+  "map": "world/lunarrainbowmarket.png",
+  "lawn": "lawn/lunarrainbowmarket.png",
+  "unlock_after": "losantosvice",
+  "lawn_mode": "full",
+  "desc_zh": "月虹之下的夜市石阶，发条与杂技僵尸从摊位之间涌出。",
+  "bg_tint": [
+   198,
+   186,
+   232
+  ],
+  "difficulty": 4
+ },
+ {
+  "id": "renai",
+  "name_zh": "恋爱剧场",
+  "name_en": "Renai Theatre",
+  "order": 23,
+  "levels": 59,
+  "map": "world/renai.png",
+  "lawn": "lawn/renai.png",
+  "unlock_after": "lunarrainbowmarket",
+  "lawn_mode": "full",
+  "desc_zh": "聚光灯下的恋爱剧场，演员僵尸轮番上演悲喜剧。",
+  "bg_tint": [
+   220,
+   170,
+   185
+  ],
+  "difficulty": 4
+ },
+ {
+  "id": "muji",
+  "name_zh": "罗马帝国",
+  "name_en": "Roman Empire",
+  "order": 24,
+  "levels": 30,
+  "map": "world/muji.png",
+  "lawn": "lawn/muji.png",
+  "unlock_after": "renai",
+  "lawn_mode": "full",
+  "desc_zh": "罗马柱与竞技场之间，军团僵尸列队推进。",
+  "bg_tint": [
+   205,
+   185,
+   150
+  ],
+  "difficulty": 3
+ },
+ {
+  "id": "carnival",
+  "name_zh": "后院马戏团",
+  "name_en": "Backyard Big Top",
+  "order": 25,
+  "levels": 93,
+  "map": "world/carnival.png",
+  "lawn": "lawn/carnival.png",
+  "unlock_after": "muji",
+  "lawn_mode": "full",
+  "desc_zh": "灯火通明的马戏团，空中飞人与发条小丑轮番登场。",
+  "bg_tint": [
+   205,
+   165,
+   215
+  ],
+  "difficulty": 5
+ },
+ {
+  "id": "plantagenet",
+  "name_zh": "王朝",
+  "name_en": "Plantagenet",
+  "order": 26,
+  "levels": 49,
+  "map": "world/plantagenet.png",
+  "lawn": "lawn/plantagenet.png",
+  "unlock_after": "carnival",
+  "lawn_mode": "full",
+  "desc_zh": "石堡深处的王朝庭院，红毯与烛台之间，皇家僵尸正踏着鼓点列队而来。",
+  "bg_tint": [
+   200,
+   180,
+   150
+  ],
+  "difficulty": 4
+ }
+]

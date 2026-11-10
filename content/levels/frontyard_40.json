@@ -1,0 +1,90 @@
+{
+ "id": "frontyard_40",
+ "world": "frontyard",
+ "index": 40,
+ "title": "你的房子 - 第 40 天",
+ "sun": 550,
+ "deck": [
+  "peashooter",
+  "sunflower",
+  "wallnut",
+  "potatomine",
+  "cabbagepult"
+ ],
+ "waves": [
+  {
+   "delay": 18,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "conehead",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 2
+    },
+    {
+     "type": "basic",
+     "row": 4
+    }
+   ]
+  },
+  {
+   "delay": 20,
+   "flag": false,
+   "zombies": [
+    {
+     "type": "buckethead",
+     "row": 1
+    },
+    {
+     "type": "buckethead",
+     "row": 1
+    }
+   ]
+  },
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "newspaper",
+     "row": 0
+    },
+    {
+     "type": "newspaper",
+     "row": 2
+    },
+    {
+     "type": "newspaper",
+     "row": 4
+    },
+    {
+     "type": "newspaper",
+     "row": 1
+    },
+    {
+     "type": "newspaper",
+     "row": 3
+    },
+    {
+     "type": "basic",
+     "row": 3
+    }
+   ]
+  }
+ ],
+ "flags": 1,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_1991",
+  "stage": "TutorialStage",
+  "name_key": "[TUTORIAL_LEVEL_NAME]",
+  "level_number": 5,
+  "wave_count": 3,
+  "original_waves": 3,
+  "night": false
+ }
+}

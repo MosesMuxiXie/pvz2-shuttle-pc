@@ -1,0 +1,169 @@
+{
+  "id": "future_3",
+  "world": "future",
+  "index": 3,
+  "title": "第 3 天",
+  "sun": 350,
+  "deck": [
+    "sunflower",
+    "twinsunflower",
+    "peashooter",
+    "magnifyinggrass",
+    "gatling",
+    "squash",
+    "starfruit",
+    "tallnut"
+  ],
+  "waves": [
+    {
+      "delay": 18,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "future",
+          "row": 3
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "future",
+          "row": 1
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "future",
+          "row": 1
+        },
+        {
+          "type": "future",
+          "row": 2
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "future_armor1",
+          "row": 4
+        },
+        {
+          "type": "future",
+          "row": 3
+        }
+      ]
+    },
+    {
+      "delay": 24,
+      "flag": true,
+      "zombies": [
+        {
+          "type": "future",
+          "row": 4
+        },
+        {
+          "type": "future",
+          "row": 2
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "future_armor1",
+          "row": 3
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "future_armor1",
+          "row": 4
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "future",
+          "row": 4
+        },
+        {
+          "type": "future_armor1",
+          "row": 3
+        },
+        {
+          "type": "future",
+          "row": 2
+        },
+        {
+          "type": "future",
+          "row": 1
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "future_armor1",
+          "row": 2
+        },
+        {
+          "type": "future_armor1",
+          "row": 1
+        },
+        {
+          "type": "future",
+          "row": 3
+        }
+      ]
+    },
+    {
+      "delay": 24,
+      "flag": true,
+      "zombies": [
+        {
+          "type": "future",
+          "row": 0
+        },
+        {
+          "type": "future",
+          "row": 1
+        },
+        {
+          "type": "future",
+          "row": 2
+        },
+        {
+          "type": "future",
+          "row": 3
+        },
+        {
+          "type": "future",
+          "row": 4
+        }
+      ]
+    }
+  ],
+  "flags": 2,
+  "seed_bank": 8
+}

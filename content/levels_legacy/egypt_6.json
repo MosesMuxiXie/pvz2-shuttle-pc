@@ -1,0 +1,155 @@
+{
+  "id": "egypt_6",
+  "world": "egypt",
+  "index": 6,
+  "title": "第 6 天",
+  "sun": 300,
+  "deck": [
+    "sunflower",
+    "peashooter",
+    "wallnut",
+    "potatomine",
+    "bonkchoy",
+    "snowpea"
+  ],
+  "waves": [
+    {
+      "delay": 18,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "mummy",
+          "row": 3
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "mummy",
+          "row": 1
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "mummy",
+          "row": 3
+        },
+        {
+          "type": "mummy",
+          "row": 4
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "mummy_armor1",
+          "row": 2
+        }
+      ]
+    },
+    {
+      "delay": 24,
+      "flag": true,
+      "zombies": [
+        {
+          "type": "mummy",
+          "row": 3
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "mummy",
+          "row": 1
+        },
+        {
+          "type": "mummy",
+          "row": 3
+        },
+        {
+          "type": "mummy_armor1",
+          "row": 4
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "mummy",
+          "row": 3
+        },
+        {
+          "type": "mummy_armor1",
+          "row": 1
+        },
+        {
+          "type": "mummy",
+          "row": 2
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "mummy",
+          "row": 0
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "mummy",
+          "row": 1
+        },
+        {
+          "type": "mummy_armor1",
+          "row": 3
+        },
+        {
+          "type": "mummy",
+          "row": 4
+        }
+      ]
+    },
+    {
+      "delay": 24,
+      "flag": true,
+      "zombies": [
+        {
+          "type": "mummy",
+          "row": 4
+        },
+        {
+          "type": "mummy",
+          "row": 2
+        },
+        {
+          "type": "mummy",
+          "row": 0
+        }
+      ]
+    }
+  ],
+  "flags": 2,
+  "seed_bank": 6
+}

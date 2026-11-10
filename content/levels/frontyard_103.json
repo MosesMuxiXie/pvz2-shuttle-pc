@@ -1,0 +1,37 @@
+{
+ "id": "frontyard_103",
+ "world": "frontyard",
+ "index": 103,
+ "title": "月隐星坠之信 - 第 103 封",
+ "sun": 550,
+ "deck": [
+  "sunflower",
+  "peashooter",
+  "wallnut",
+  "potatomine"
+ ],
+ "waves": [
+  {
+   "delay": 24,
+   "flag": true,
+   "zombies": [
+    {
+     "type": "basic",
+     "row": 2
+    }
+   ]
+  }
+ ],
+ "flags": 1,
+ "seed_bank": 6,
+ "extra": {
+  "source": "obb",
+  "package": "pkg_0899",
+  "stage": "RoofUBStage",
+  "name_key": "[LTE_LEVEL_NAME_OTHERWORLDLETTERS_MAGNETFRUIT]",
+  "level_number": 2,
+  "wave_count": 1,
+  "original_waves": 30,
+  "night": false
+ }
+}

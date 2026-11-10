@@ -1,0 +1,143 @@
+{
+  "id": "frontyard_1",
+  "world": "frontyard",
+  "index": 1,
+  "title": "第 1 天",
+  "sun": 150,
+  "deck": [
+    "sunflower",
+    "peashooter",
+    "wallnut"
+  ],
+  "waves": [
+    {
+      "delay": 18,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "basic",
+          "row": 3
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "basic",
+          "row": 4
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "basic",
+          "row": 3
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "conehead",
+          "row": 1
+        }
+      ]
+    },
+    {
+      "delay": 24,
+      "flag": true,
+      "zombies": [
+        {
+          "type": "conehead",
+          "row": 0
+        },
+        {
+          "type": "conehead",
+          "row": 4
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "conehead",
+          "row": 0
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "conehead",
+          "row": 0
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "conehead",
+          "row": 2
+        },
+        {
+          "type": "conehead",
+          "row": 2
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "conehead",
+          "row": 4
+        },
+        {
+          "type": "conehead",
+          "row": 0
+        }
+      ]
+    },
+    {
+      "delay": 24,
+      "flag": true,
+      "zombies": [
+        {
+          "type": "conehead",
+          "row": 4
+        },
+        {
+          "type": "conehead",
+          "row": 2
+        },
+        {
+          "type": "basic",
+          "row": 3
+        },
+        {
+          "type": "basic",
+          "row": 2
+        }
+      ]
+    }
+  ],
+  "flags": 2,
+  "seed_bank": 6,
+  "extra": {
+    "original_zombies": 33
+  }
+}

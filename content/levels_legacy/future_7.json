@@ -1,0 +1,269 @@
+{
+  "id": "future_7",
+  "world": "future",
+  "index": 7,
+  "title": "第 7 天",
+  "sun": 400,
+  "deck": [
+    "sunflower",
+    "twinsunflower",
+    "peashooter",
+    "magnifyinggrass",
+    "gatling",
+    "squash",
+    "starfruit",
+    "tallnut"
+  ],
+  "waves": [
+    {
+      "delay": 18,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "future",
+          "row": 4
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "future",
+          "row": 2
+        },
+        {
+          "type": "future",
+          "row": 0
+        },
+        {
+          "type": "future",
+          "row": 3
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "future",
+          "row": 3
+        },
+        {
+          "type": "future",
+          "row": 2
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "future",
+          "row": 1
+        },
+        {
+          "type": "future",
+          "row": 3
+        },
+        {
+          "type": "future",
+          "row": 4
+        },
+        {
+          "type": "future",
+          "row": 3
+        },
+        {
+          "type": "future_armor1",
+          "row": 2
+        }
+      ]
+    },
+    {
+      "delay": 24,
+      "flag": true,
+      "zombies": [
+        {
+          "type": "future",
+          "row": 0
+        },
+        {
+          "type": "future",
+          "row": 2
+        },
+        {
+          "type": "future",
+          "row": 4
+        },
+        {
+          "type": "future",
+          "row": 1
+        },
+        {
+          "type": "future",
+          "row": 3
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "future",
+          "row": 3
+        },
+        {
+          "type": "future_armor1",
+          "row": 4
+        },
+        {
+          "type": "future",
+          "row": 1
+        },
+        {
+          "type": "future_armor1",
+          "row": 0
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "future",
+          "row": 3
+        },
+        {
+          "type": "future",
+          "row": 3
+        },
+        {
+          "type": "future",
+          "row": 4
+        },
+        {
+          "type": "future",
+          "row": 0
+        },
+        {
+          "type": "future",
+          "row": 1
+        },
+        {
+          "type": "future",
+          "row": 1
+        },
+        {
+          "type": "future",
+          "row": 2
+        },
+        {
+          "type": "future",
+          "row": 1
+        },
+        {
+          "type": "future_armor1",
+          "row": 3
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "future",
+          "row": 4
+        },
+        {
+          "type": "future",
+          "row": 0
+        },
+        {
+          "type": "future",
+          "row": 2
+        },
+        {
+          "type": "future",
+          "row": 4
+        }
+      ]
+    },
+    {
+      "delay": 20,
+      "flag": false,
+      "zombies": [
+        {
+          "type": "future",
+          "row": 3
+        },
+        {
+          "type": "future",
+          "row": 0
+        },
+        {
+          "type": "future_armor1",
+          "row": 2
+        },
+        {
+          "type": "future",
+          "row": 2
+        },
+        {
+          "type": "future",
+          "row": 4
+        },
+        {
+          "type": "future_armor1",
+          "row": 4
+        }
+      ]
+    },
+    {
+      "delay": 24,
+      "flag": true,
+      "zombies": [
+        {
+          "type": "future",
+          "row": 0
+        },
+        {
+          "type": "future",
+          "row": 1
+        },
+        {
+          "type": "future",
+          "row": 2
+        },
+        {
+          "type": "future",
+          "row": 3
+        },
+        {
+          "type": "future",
+          "row": 4
+        },
+        {
+          "type": "future",
+          "row": 0
+        },
+        {
+          "type": "future",
+          "row": 2
+        },
+        {
+          "type": "future",
+          "row": 4
+        }
+      ]
+    }
+  ],
+  "flags": 2,
+  "seed_bank": 8
+}
