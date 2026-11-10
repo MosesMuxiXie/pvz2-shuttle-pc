@@ -13,6 +13,7 @@ namespace shuttle {
 struct ZombieSpawn {
     std::string type;
     std::optional<int> row;
+    std::vector<int> rows;
 };
 
 struct WaveDefinition {

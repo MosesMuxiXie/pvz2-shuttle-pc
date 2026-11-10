@@ -76,6 +76,8 @@ void checkFixtures(const fs::path& fixtures) {
 
     write(content / "worlds.json", R"([{"id":"other"}])");
     expectFailure(content, "yard_1.json", "world");
+    write(content / "worlds.json", R"([{"id":"yard","unlock_after":"missing"}])");
+    expectFailure(content, "worlds.json", "unlock_after");
     write(content / "worlds.json", R"([{"id":"yard"}])");
 
     write(content / "zombies.json", R"([{"id":"other"}])");
@@ -88,11 +90,31 @@ void checkFixtures(const fs::path& fixtures) {
 
     write(level, "{");
     expectFailure(content, "yard_1.json", "parse");
+
+    std::string unknownSource(validLevel);
+    unknownSource.replace(unknownSource.find("\"obb\""), 5, "\"obb-sytnh\"");
+    write(level, unknownSource);
+    expectFailure(content, "yard_1.json", "unknown level source 'obb-sytnh'");
+
+    std::string multiRowLevel(validLevel);
+    constexpr std::string_view singleSpawn = R"({"type":"basic","row":0})";
+    multiRowLevel.replace(multiRowLevel.find(singleSpawn), singleSpawn.size(),
+                          R"({"type":"basic","rows":[0,1]},"basic")");
+    write(level, multiRowLevel);
+    const auto multiRowCatalog = shuttle::loadCatalog(content);
+    const auto& spawns = multiRowCatalog.levels.at("yard_1").waves.at(0).zombies;
+    require(spawns.at(0).rows == std::vector<int>{0, 1}, "Explicit lanes were lost");
+    require(spawns.at(1).type == "basic" && !spawns.at(1).row, "Short spawn format was lost");
+    write(level, validLevel);
 }
 
 }
 
+#ifdef _WIN32
+int wmain(int argc, wchar_t** argv) {
+#else
 int main(int argc, char** argv) {
+#endif
     try {
         require(argc == 3, "Expected real content and fixture directories");
         checkRealCatalog(fs::path(argv[1]));
@@ -101,4 +123,5 @@ int main(int argc, char** argv) {
         std::cerr << error.what() << '\n';
         return 1;
     }
+    return 0;
 }

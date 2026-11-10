@@ -78,6 +78,19 @@ void requireReference(const Catalog::Registry& registry, const std::string& id,
     }
 }
 
+void validateWorldUnlocks(const Catalog::Registry& worlds, const fs::path& path) {
+    for (const auto& [id, definition] : worlds) {
+        const auto after = definition.find("unlock_after");
+        if (after == definition.end() || after->is_null()) {
+            continue;
+        }
+        if (!after->is_string() || !worlds.contains(after->get_ref<const std::string&>())) {
+            throw std::runtime_error(utf8Path(path) + ": invalid unlock_after for world '" +
+                                     id + "': " + after->dump());
+        }
+    }
+}
+
 LevelDefinition decodeLevel(json data, const Catalog& catalog) {
     LevelDefinition level;
     level.id = readId(data.at("id"), "level ID");
@@ -106,10 +119,19 @@ LevelDefinition decodeLevel(json data, const Catalog& catalog) {
         }
         for (const auto& zombie : zombies) {
             ZombieSpawn spawn;
-            spawn.type = readId(zombie.at("type"), "zombie ID");
+            spawn.type = readId(zombie.is_string() ? zombie : zombie.at("type"), "zombie ID");
             requireReference(catalog.zombies, spawn.type, "zombie");
             if (zombie.contains("row") && !zombie.at("row").is_null()) {
                 spawn.row = readInt(zombie.at("row"), "zombie row");
+            }
+            if (zombie.contains("rows") && !zombie.at("rows").is_null()) {
+                const auto& rows = zombie.at("rows");
+                if (!rows.is_array()) {
+                    throw std::runtime_error("zombie rows must be an array");
+                }
+                for (const auto& row : rows) {
+                    spawn.rows.push_back(readInt(row, "zombie row"));
+                }
             }
             wave.zombies.push_back(std::move(spawn));
         }
@@ -117,6 +139,9 @@ LevelDefinition decodeLevel(json data, const Catalog& catalog) {
     }
     level.extra = std::move(data.at("extra"));
     level.source = readId(level.extra.at("source"), "level source");
+    if (level.source != "obb" && level.source != "obb-synth") {
+        throw std::runtime_error("unknown level source '" + level.source + "'");
+    }
     level.package = readId(level.extra.at("package"), "level package");
     level.stage = level.extra.at("stage").get<std::string>();
     level.vasebreaker = level.extra.value("vasebreaker", false);
@@ -134,7 +159,9 @@ Catalog loadCatalog(const fs::path& contentRoot) {
     Catalog catalog;
     catalog.plants = readRegistry(contentRoot / "plants.json");
     catalog.zombies = readRegistry(contentRoot / "zombies.json");
-    catalog.worlds = readRegistry(contentRoot / "worlds.json");
+    const auto worldsPath = contentRoot / "worlds.json";
+    catalog.worlds = readRegistry(worldsPath);
+    validateWorldUnlocks(catalog.worlds, worldsPath);
     const auto levelRoot = contentRoot / "levels";
     if (!fs::is_directory(levelRoot)) {
         throw std::runtime_error(utf8Path(levelRoot) + ": cannot open level directory");

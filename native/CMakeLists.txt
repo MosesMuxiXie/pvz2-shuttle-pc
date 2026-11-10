@@ -47,9 +47,16 @@ endif()
 if(BUILD_TESTING)
     add_executable(catalog_test tests/catalog_test.cpp)
     target_link_libraries(catalog_test PRIVATE shuttle_catalog)
+    if(MINGW)
+        target_link_options(catalog_test PRIVATE -municode)
+    endif()
+    set(catalog_fixtures "${CMAKE_CURRENT_BINARY_DIR}/catalog fixtures 🌻")
     add_test(NAME catalog COMMAND catalog_test
         "${CMAKE_CURRENT_SOURCE_DIR}/../content"
-        "${CMAKE_CURRENT_BINARY_DIR}/catalog fixtures")
+        "${catalog_fixtures}")
+    set_tests_properties(catalog PROPERTIES FIXTURES_SETUP catalog_fixture)
+    add_test(NAME catalog_cli_unicode COMMAND PvZ2SHUTTLE --audit-content "${catalog_fixtures}/关卡")
+    set_tests_properties(catalog_cli_unicode PROPERTIES FIXTURES_REQUIRED catalog_fixture)
 
     if(PVZ_ENABLE_DESKTOP)
         set(launcher_assets "${CMAKE_CURRENT_BINARY_DIR}/launcher fixture")
