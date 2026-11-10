@@ -61,4 +61,4 @@ Windows 延续现版的 Windows 10/11 x64 目标，交付安装程序和便携�
 4. 实现并测试已确认的联网服务。完成全量内容结构校验、各模块回放和 UI 对照。验收矩阵为每项记录原版证据、桌面结果、差异与覆盖状态。没有原版证据的项标为待核验。
 5. 在 Windows x64 和 macOS 两种架构上执行安装、启动、游玩、存档和卸载冒烟测试。Windows 复用 Inno Setup 发行入口。macOS 在 macOS 构建机上通过 CPack DragNDrop 生成 DMG，运行 `hdiutil verify` 和挂载复制测试，使用 `lipo -archs` 检查可执行文件及动态库，测试从 `/Applications` 正常启动。公开发布需要 Developer ID 签名、公证和 Gatekeeper 验证。发布素材维持仓库既有来源和授权边界。 [CPack DMG](https://cmake.org/cmake/help/latest/cpack_gen/dmg.html) · [Apple 分发流程](https://developer.apple.com/documentation/security/notarizing-macos-software-before-distribution)
 
-原版对照覆盖、联网能力状态、安装物及其平台测试记录共同决定发布状态。建议对已确认可接入的联网功能要求端到端验收，对已证实停服、未开放或不支持桌面接入的功能在发行说明中标明结果。仍待核验的服务不能视为已完成。ADB 设备、可用于验证的平台和服务测试账号可以在对应阶段补齐。当前文档是设计和差距盘点，联网发布门槛待随方案确认。
+原版对照覆盖、联网能力状态、安装物及其平台测试记录共同决定发布状态。用户确认对已证实停服、未开放或不支持桌面接入的功能在发行说明中明确标注。已确认可接入的联网功能要求端到端验收，仍待核验的服务不能视为已完成。ADB 设备、可用于验证的平台和服务测试账号可以在对应阶段补齐。
