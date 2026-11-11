@@ -14,7 +14,7 @@
     {"delay": 25, "flag": false, "zombies": [
       {"type": "conehead", "row": 1}, "conehead", "basic", "conehead", {"type": "conehead", "row": 4}
     ]},
-    {"delay": 25, "flag": false, "zombies": [
+    {"delay": 25, "flag": false, "additional_plantfood": 1, "zombies": [
       {"type": "conehead", "row": 4}, {"type": "basic", "row": 3},
       {"type": "conehead", "row": 1}, {"type": "conehead", "row": 0},
       "conehead", "conehead", "conehead", "basic", "basic", "basic", "basic"
@@ -31,6 +31,9 @@
     "stage": "DayStage",
     "first_sun": 2,
     "sky_sun_interval": 6,
-    "additional_plantfood_wave_5": 1
+    "sky_sun_range": 3,
+    "sky_sun_increase": 0.1,
+    "sky_sun_cap": 12,
+    "wave_timing": {"jitter": 6, "health_min": 0.7, "health_max": 0.85, "minimum_gap": 4, "flag_warning": 5}
   }
 }

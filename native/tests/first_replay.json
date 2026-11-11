@@ -1,0 +1,9 @@
+{
+  "seed": 1,
+  "ticks": 3000,
+  "actions": [
+    {"tick": 0, "action": "select", "card": 0},
+    {"tick": 0, "action": "start"},
+    {"tick": 0, "action": "plant", "card": 0, "row": 0, "col": 0}
+  ]
+}

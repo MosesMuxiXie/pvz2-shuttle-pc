@@ -113,6 +113,9 @@ LevelDefinition decodeLevel(json data, const Catalog& catalog) {
             throw std::runtime_error("wave delay must be finite and nonnegative");
         }
         wave.flag = entry.at("flag").get<bool>();
+        if (const auto amount = entry.find("additional_plantfood"); amount != entry.end()) {
+            wave.additionalPlantfood = readInt(*amount, "additional_plantfood");
+        }
         const auto& zombies = entry.at("zombies");
         if (!zombies.is_array()) {
             throw std::runtime_error("wave zombies must be an array");

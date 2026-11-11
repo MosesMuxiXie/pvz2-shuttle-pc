@@ -47,6 +47,11 @@ SDL_FRect sunMarker(int row, int col) {
     return {tile.x + 32, tile.y + 3, 22, 16};
 }
 
+SDL_FRect foodMarker(int row, int col) {
+    const auto tile = square(row, col);
+    return {tile.x + 3, tile.y + 3, 23, 16};
+}
+
 void drawCards(SDL_Renderer* renderer, const Battle& battle, int held) {
     for (int i = 0; i < static_cast<int>(battle.cards().size()); ++i) {
         const auto& card = battle.cards()[i];
@@ -91,6 +96,9 @@ void drawBoard(SDL_Renderer* renderer, const Battle& battle) {
         fill(renderer, {x - 10, y + 11, 22, 29}, {103, 113, 150, 255});
         fill(renderer, {x - 8, y + 6, 18, 14}, z.armored ? SDL_Color{213, 131, 53, 255} :
              SDL_Color{165, 182, 127, 255});
+        if (z.carriesPlantfood) {
+            label(renderer, x - 5, y + 20, "F", {145, 255, 129, 255});
+        }
     }
     for (const auto& shot : battle.shots()) {
         fill(renderer, {boardX + static_cast<float>(shot.x) * cellW, square(shot.row, 0).y + 20, 6, 5},
@@ -100,6 +108,11 @@ void drawBoard(SDL_Renderer* renderer, const Battle& battle) {
         const auto marker = sunMarker(sun.row, sun.col);
         fill(renderer, marker, {255, 221, 83, 255});
         label(renderer, marker.x + 3, marker.y + 4, std::to_string(sun.value), ink);
+    }
+    for (const auto& drop : battle.plantfoodDrops()) {
+        const auto marker = foodMarker(drop.row, drop.col);
+        fill(renderer, marker, {126, 239, 145, 255});
+        label(renderer, marker.x + 3, marker.y + 4, "+1", ink);
     }
 }
 
@@ -115,8 +128,13 @@ void render(SDL_Renderer* renderer, const Battle& battle, int held, bool shovel,
         label(renderer, 250, 237, "START BATTLE / ENTER", ink);
     } else {
         label(renderer, 18, 65, "SUN " + std::to_string(battle.sun()) + "    WAVE " +
-              std::to_string(battle.wavesStarted()) + "/" + std::to_string(battle.waveCount()));
+              std::to_string(battle.wavesStarted()) + "/" + std::to_string(battle.waveCount()) +
+              "    FOOD " + std::to_string(battle.plantfood()));
         drawBoard(renderer, battle);
+        if (battle.flagWarning() && !paused) {
+            fill(renderer, {180, 151, 280, 28}, {128, 46, 38, 255});
+            label(renderer, 212, 162, "A HUGE WAVE IS APPROACHING");
+        }
         fill(renderer, shovelButton, shovel ? SDL_Color{243, 193, 69, 255} : SDL_Color{190, 213, 147, 255});
         label(renderer, 532, 324, "SHOVEL X", ink);
         label(renderer, 18, 324, "1-4: seeds    Click: collect / plant    Space: pause");
@@ -241,6 +259,8 @@ void runFirstBattle(const std::filesystem::path& content, const std::filesystem:
             const int col = static_cast<int>((click.x - boardX) / cellW);
             const auto marker = sunMarker(row, col);
             if (SDL_PointInRectFloat(&click, &marker) && battle.collectSun(row, col)) { continue; }
+            const auto food = foodMarker(row, col);
+            if (SDL_PointInRectFloat(&click, &food) && battle.collectPlantfood(row, col)) { continue; }
             if (shovel) { if (battle.shovel(row, col)) { shovel = false; } }
             else if (held >= 0 && battle.plant(held, row, col)) { held = -1; }
         }

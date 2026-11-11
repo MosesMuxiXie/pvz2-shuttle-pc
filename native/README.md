@@ -26,14 +26,26 @@ cmake --build build/desktop --config Release
 
 点击卡片选种子，按 Enter 开战。战斗中点击卡片或按 1–4 选卡，再点击草坪种植。点击阳光收集，X 选铲子，空格暂停。结算后按 R 重开。画面使用程序绘制的图形，无需额外素材。
 
+前院首关现在按当前波的剩余生命触发提前刷波，并显示旗帜波警告。携带叶绿素的僵尸显示 `F`，击败后点击绿色 `+1` 拾取，数量显示在 HUD。四种植物的叶绿素技能属于后续实现范围。
+
 导入 Python 存档后，通关写入独立的原生档位。默认目录由 SDL 选取，导入和游玩也可分别传入相同的目标文件路径。导入会保留原文件和其他进度字段，目标已经存在时会报错。新档位使用硬链接进行原子创建，手动指定位置时请使用支持硬链接的文件系统，例如 NTFS 或 APFS。
 
 ```powershell
 ./build/desktop/Release/PvZ2SHUTTLE.exe --import-save 'D:/path/to/Python/save.json'
 ```
 
+### 固定输入回放
+
+```powershell
+./build/desktop/Release/PvZ2SHUTTLE.exe --replay-first ./content ./native/tests/first_replay.json > ./build/first-replay.jsonl
+```
+
+输入文件包含 `seed`、`ticks` 和按 `tick` 排序的 `actions`。每 tick 对应 1/60 秒，同一 tick 可包含多次操作，输入在该时刻推进下一步前执行。可用操作为 `select`、`start`、`plant`、`shovel`、`collect_sun`、`collect_plantfood`。草坪行列从 0 开始。输入无效或操作被拒绝时返回非零退出码。
+
+JSONL 包含回放头、选卡、种植、阳光、波次计划与触发原因、伤害、叶绿素、推车和结算事件。保留输入脚本、JSONL、源码提交号及所用内容文件，即可重复比较该次原生战斗。运行 CTest 会在构建目录 `battle fixtures/replays/` 生成完整胜利和失败样本，再用命令行逐事件复验。
+
 ### macOS 开发 DMG
 
 GitHub Actions 的 **Build macOS development DMG** 作业构建 `arm64` 和 `x86_64` 通用 `.app`，包内含仓库的 `content/` 和 `/Applications` 拖放入口。作业挂载并验证 DMG，检查两种架构及包内资源，然后上传 DMG 和 SHA-256。包为开发构建，未做 Developer ID 签名或公证。
 
-前院静态比对见 [APK 与 OBB 证据](../docs/superpowers/specs/2026-11-10-frontyard-apk-evidence.md)。完整的玩法、联网和发行验收见[原生重建设计](../docs/superpowers/specs/2026-11-10-native-client-design.md)。
+前院静态比对见 [APK 与 OBB 证据](../docs/superpowers/specs/2026-11-10-frontyard-apk-evidence.md)，全量关卡路径与地图入口见 [OBB 来源索引](../docs/obb-level-index.md)。完整的玩法、联网和发行验收见[原生重建设计](../docs/superpowers/specs/2026-11-10-native-client-design.md)。

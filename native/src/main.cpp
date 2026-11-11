@@ -1,4 +1,5 @@
 #include "catalog.hpp"
+#include "replay.hpp"
 #include "save.hpp"
 #ifdef PVZ_ENABLE_DESKTOP
 #include "battle_screen.hpp"
@@ -23,6 +24,7 @@ void auditContent(const std::filesystem::path& path) {
 
 int usage() {
     std::cerr << "Usage: PvZ2SHUTTLE --audit-content <content directory>\n"
+              << "       PvZ2SHUTTLE --replay-first <content directory> <scenario.json>\n"
               << "       PvZ2SHUTTLE --import-save <Python save.json> <native save.json>\n";
 #ifdef PVZ_ENABLE_DESKTOP
     std::cerr << "       PvZ2SHUTTLE --play-first <content directory> [native save.json]\n"
@@ -54,6 +56,10 @@ int main(int argc, char** argv) {
         const std::filesystem::path path(argv[2]);
         if (command == "--audit-content" && argc == 3) {
             auditContent(path);
+            return 0;
+        }
+        if (command == "--replay-first" && argc == 4) {
+            shuttle::replayFirst(path, std::filesystem::path(argv[3]), std::cout);
             return 0;
         }
         if (command == "--import-save" && argc == 4) {

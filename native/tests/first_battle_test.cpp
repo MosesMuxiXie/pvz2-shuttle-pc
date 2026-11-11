@@ -18,18 +18,44 @@ void require(bool value, const char* message) {
     }
 }
 
-void selectAll(Battle& battle) {
+void selectAll(Battle& battle, json& actions) {
     for (int card = 0; card < static_cast<int>(battle.cards().size()); ++card) {
         require(battle.toggleCard(card), "Card selection failed");
+        actions.push_back({{"tick", 0}, {"action", "select"}, {"card", card}});
     }
     require(battle.start(), "Could not begin the battle");
+    actions.push_back({{"tick", 0}, {"action", "start"}});
 }
 
-void checkBattle(const shuttle::Catalog& catalog, const shuttle::LevelDefinition& level) {
-    Battle lost(catalog, level);
+void writeReplay(const fs::path& root, const char* name, const Battle& battle,
+                 const json& actions, const std::vector<json>& events) {
+    fs::create_directories(root);
+    const auto file = root / name;
+    auto scriptPath = file;
+    scriptPath += ".json";
+    std::ofstream script(scriptPath, std::ios::binary);
+    script.exceptions(std::ios::failbit | std::ios::badbit);
+    script << json{{"seed", 1}, {"ticks", battle.tick()}, {"actions", actions}}.dump(2) << '\n';
+    script.close();
+    auto tracePath = file;
+    tracePath += ".jsonl";
+    std::ofstream trace(tracePath, std::ios::binary);
+    trace.exceptions(std::ios::failbit | std::ios::badbit);
+    trace << json{{"event", "replay_header"}, {"schema", 1}, {"seed", 1}, {"level", "frontyard_1"},
+                   {"tick_rate", Battle::ticksPerSecond}}.dump() << '\n';
+    for (const auto& event : events) {
+        trace << event.dump() << '\n';
+    }
+    trace.close();
+}
+
+void checkBattle(const shuttle::Catalog& catalog, const shuttle::LevelDefinition& level, const fs::path& output) {
+    json lostActions = json::array();
+    std::vector<json> lostEvents;
+    Battle lost(catalog, level, 1, [&](const json& event) { lostEvents.push_back(event); });
     require(!lost.start(), "Started without a selected seed");
     require(!lost.plant(0, 0, 0), "Planted in the chooser");
-    selectAll(lost);
+    selectAll(lost, lostActions);
     for (int tick = 0; tick < 2 * Battle::ticksPerSecond - 1; ++tick) {
         lost.step();
     }
@@ -46,10 +72,21 @@ void checkBattle(const shuttle::Catalog& catalog, const shuttle::LevelDefinition
         lost.step();
     }
     require(lost.phase() == Battle::Phase::lost, "An undefended lawn should lose");
+    require(lostEvents.back().at("event") == "battle_finished", "Events followed the losing settlement");
+    writeReplay(output, "lost", lost, lostActions, lostEvents);
 
-    Battle won(catalog, level);
-    selectAll(won);
-    require(won.sun() == 50 && won.plant(0, 0, 0) && won.sun() == 0, "Starting sun or cost mismatch");
+    json wonActions = json::array();
+    std::vector<json> wonEvents;
+    Battle won(catalog, level, 1, [&](const json& event) { wonEvents.push_back(event); });
+    selectAll(won, wonActions);
+    const auto planted = [&](int card, int row, int col) {
+        const bool accepted = won.plant(card, row, col);
+        if (accepted) {
+            wonActions.push_back({{"tick", won.tick()}, {"action", "plant"}, {"card", card}, {"row", row}, {"col", col}});
+        }
+        return accepted;
+    };
+    require(won.sun() == 50 && planted(0, 0, 0) && won.sun() == 0, "Starting sun or cost mismatch");
     require(!won.plant(0, 1, 0), "Cooldown did not prevent planting");
     require(!won.plant(1, 0, 0), "Planted on an occupied square");
     for (int i = 0; i < 36000 && won.phase() == Battle::Phase::playing; ++i) {
@@ -57,11 +94,17 @@ void checkBattle(const shuttle::Catalog& catalog, const shuttle::LevelDefinition
             while (!won.suns().empty()) {
                 const auto sun = won.suns().front();
                 require(won.collectSun(sun.row, sun.col), "Sun could not be collected");
+                wonActions.push_back({{"tick", won.tick()}, {"action", "collect_sun"}, {"row", sun.row}, {"col", sun.col}});
+            }
+            while (!won.plantfoodDrops().empty()) {
+                const auto drop = won.plantfoodDrops().front();
+                require(won.collectPlantfood(drop.row, drop.col), "Could not collect the additional plant food");
+                wonActions.push_back({{"tick", won.tick()}, {"action", "collect_plantfood"}, {"row", drop.row}, {"col", drop.col}});
             }
             if (i < 24 * Battle::ticksPerSecond) {
                 for (int col : {0, 1}) {
                     for (int row = 0; row < Battle::rows; ++row) {
-                        won.plant(0, row, col);
+                        planted(0, row, col);
                     }
                 }
             } else {
@@ -74,14 +117,14 @@ void checkBattle(const shuttle::Catalog& catalog, const shuttle::LevelDefinition
                 for (const auto& zombie : won.zombies()) {
                     priority[zombie.row] += zombie.hp / 190.0 * (10 - std::min(zombie.x, 9.0)) / 3.0;
                     if (zombie.x > 3.5 && zombie.x < 8.5) {
-                        won.plant(3, zombie.row, static_cast<int>(zombie.x - 3.3));
+                        planted(3, zombie.row, static_cast<int>(zombie.x - 3.3));
                     }
                 }
                 std::array<int, Battle::rows> order{3, 4, 0, 1, 2};
                 std::ranges::stable_sort(order, [&](int a, int b) { return priority[a] > priority[b]; });
                 for (const int row : order) {
                     for (const int col : {1, 2, 3, 4, 5, 0}) {
-                        won.plant(1, row, col);
+                        planted(1, row, col);
                     }
                 }
             }
@@ -93,6 +136,8 @@ void checkBattle(const shuttle::Catalog& catalog, const shuttle::LevelDefinition
     }
     require(won.phase() == Battle::Phase::won, "Scripted first battle did not win");
     require(won.wavesStarted() == level.waves.size(), "Win occurred before final wave");
+    require(won.plantfood() == 1, "The fifth wave did not provide one collectible plant food");
+    writeReplay(output, "won", won, wonActions, wonEvents);
 }
 
 json read(const fs::path& path) {
@@ -164,7 +209,7 @@ int main(int argc, char** argv) {
         const auto catalog = shuttle::loadCatalog(content);
         const auto level = shuttle::loadLevelDefinition(content / "native" / "frontyard_1.json", catalog);
         require(level.waves.size() == 6, "Expected six defined source waves");
-        checkBattle(catalog, level);
+        checkBattle(catalog, level, fs::path(argv[2]) / "replays");
         checkSave(argv[2]);
     } catch (const std::exception& error) {
         std::cerr << error.what() << '\n';

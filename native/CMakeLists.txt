@@ -11,7 +11,7 @@ FetchContent_Declare(nlohmann_json
     URL_HASH SHA256=4b92eb0c06d10683f7447ce9406cb97cd4b453be18d7279320f7b2f025c10187)
 FetchContent_MakeAvailable(nlohmann_json)
 
-add_library(shuttle_catalog STATIC src/catalog.cpp src/battle.cpp src/save.cpp)
+add_library(shuttle_catalog STATIC src/catalog.cpp src/battle.cpp src/replay.cpp src/save.cpp)
 target_compile_features(shuttle_catalog PUBLIC cxx_std_20)
 target_include_directories(shuttle_catalog PUBLIC src)
 target_link_libraries(shuttle_catalog PUBLIC nlohmann_json::nlohmann_json)
@@ -67,6 +67,12 @@ if(APPLE AND PVZ_ENABLE_DESKTOP)
 endif()
 
 if(BUILD_TESTING)
+    add_executable(parity_test tests/parity_test.cpp)
+    target_link_libraries(parity_test PRIVATE shuttle_catalog)
+    if(MINGW)
+        target_link_options(parity_test PRIVATE -municode)
+    endif()
+    add_test(NAME battle_parity COMMAND parity_test "${CMAKE_CURRENT_SOURCE_DIR}/../content")
     find_package(Threads REQUIRED)
     add_executable(first_battle_test tests/first_battle_test.cpp)
     target_link_libraries(first_battle_test PRIVATE shuttle_catalog Threads::Threads)
@@ -75,6 +81,18 @@ if(BUILD_TESTING)
     endif()
     add_test(NAME first_battle COMMAND first_battle_test
         "${CMAKE_CURRENT_SOURCE_DIR}/../content" "${CMAKE_CURRENT_BINARY_DIR}/battle fixtures")
+    set_tests_properties(first_battle PROPERTIES FIXTURES_SETUP battle_replays)
+    add_test(NAME recorded_battle_replay COMMAND "${CMAKE_COMMAND}"
+        "-DPROGRAM=$<TARGET_FILE:PvZ2SHUTTLE>"
+        "-DCONTENT=${CMAKE_CURRENT_SOURCE_DIR}/../content"
+        "-DREPLAYS=${CMAKE_CURRENT_BINARY_DIR}/battle fixtures/replays"
+        -P "${CMAKE_CURRENT_SOURCE_DIR}/tests/recorded_replay.cmake")
+    set_tests_properties(recorded_battle_replay PROPERTIES FIXTURES_REQUIRED battle_replays)
+    add_test(NAME first_battle_replay COMMAND "${CMAKE_COMMAND}"
+        "-DPROGRAM=$<TARGET_FILE:PvZ2SHUTTLE>"
+        "-DCONTENT=${CMAKE_CURRENT_SOURCE_DIR}/../content"
+        "-DSCENARIO=${CMAKE_CURRENT_SOURCE_DIR}/tests/first_replay.json"
+        -P "${CMAKE_CURRENT_SOURCE_DIR}/tests/first_replay.cmake")
 
     add_executable(catalog_test tests/catalog_test.cpp)
     target_link_libraries(catalog_test PRIVATE shuttle_catalog)

@@ -20,6 +20,7 @@ struct WaveDefinition {
     double delay{};
     bool flag{};
     std::vector<ZombieSpawn> zombies;
+    int additionalPlantfood{};
 };
 
 struct LevelDefinition {
