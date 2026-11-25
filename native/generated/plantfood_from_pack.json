@@ -1,0 +1,3908 @@
+{
+ "counts": {
+  "animated": 147,
+  "clientIds": 39,
+  "durationNonZero": 147,
+  "durationRecords": 155,
+  "missingEffectPlants": 333,
+  "plants": 293,
+  "plantsWithDuration": 147,
+  "plantsWithPlayCount": 172,
+  "playCountNonZero": 185,
+  "playCountReachable": 170,
+  "playCountRecords": 189,
+  "playCountShared": 2,
+  "playCountUnreachable": 19,
+  "propSheetObjects": 398,
+  "referencedProps": 335,
+  "unreferencedProps": 63,
+  "withAction": 6,
+  "withDuration": 147,
+  "withPlayCount": 185
+ },
+ "format": 1,
+ "generated": "plantfood-compile-v1",
+ "plants": [
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantBanana",
+   "gaps": [
+    "effect"
+   ],
+   "id": "ailmint",
+   "idKind": "pack",
+   "packType": "ailmint",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 5,
+   "effects": [],
+   "framework": "PlantNarcissusShooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "akee",
+   "idKind": "pack",
+   "packType": "akee",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantAkee",
+   "gaps": [
+    "effect"
+   ],
+   "id": "akee1",
+   "idKind": "pack",
+   "packType": "akee1",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 4.2,
+   "effects": [],
+   "framework": "PlantPrimalPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "aloe",
+   "idKind": "pack",
+   "packType": "aloe",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 3.63,
+   "effects": [],
+   "framework": "PlantAloes",
+   "gaps": [
+    "effect"
+   ],
+   "id": "aloes",
+   "idKind": "pack",
+   "packType": "aloes",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantBonkchoy",
+   "gaps": [
+    "effect"
+   ],
+   "id": "ambershroom",
+   "idKind": "pack",
+   "packType": "ambershroom",
+   "playCount": 3,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantAppleMortar",
+   "gaps": [
+    "effect"
+   ],
+   "id": "applemortar",
+   "idKind": "pack",
+   "packType": "applemortar",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantAquaVine",
+   "gaps": [
+    "effect"
+   ],
+   "id": "aquavine",
+   "idKind": "pack",
+   "packType": "aquavine",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2.97,
+   "effects": [],
+   "framework": "PlantAquaWeed",
+   "gaps": [
+    "effect"
+   ],
+   "id": "aquaweed",
+   "idKind": "pack",
+   "packType": "aquaweed",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 6.66,
+   "effects": [],
+   "framework": "PlantPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "armamint",
+   "idKind": "pack",
+   "packType": "armamint",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantBambooSpartan",
+   "gaps": [
+    "effect"
+   ],
+   "id": "bamboospartan",
+   "idKind": "pack",
+   "packType": "bamboospartan",
+   "playCount": 2,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantBanana",
+   "gaps": [
+    "effect"
+   ],
+   "id": "banana",
+   "idKind": "pack",
+   "packType": "banana",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2.9,
+   "effects": [],
+   "framework": "PlantBeanChemist",
+   "gaps": [
+    "effect"
+   ],
+   "id": "beanchemist",
+   "idKind": "pack",
+   "packType": "beanchemist",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 1.966,
+   "effects": [],
+   "framework": "PlantBegonia",
+   "gaps": [
+    "effect"
+   ],
+   "id": "begonia",
+   "idKind": "client",
+   "packType": "begonia",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantParadise",
+   "gaps": [
+    "effect"
+   ],
+   "id": "birdofparadise",
+   "idKind": "client",
+   "packType": "birdofparadise",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantBirthSunflower",
+   "gaps": [
+    "effect"
+   ],
+   "id": "birthsunflower",
+   "idKind": "pack",
+   "packType": "birthsunflower",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantMiniPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "bitpeashooter",
+   "idKind": "pack",
+   "packType": "bitpeashooter",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 4.2,
+   "effects": [],
+   "framework": "PlantPrimalPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "blastberry",
+   "idKind": "pack",
+   "packType": "blastberry",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantBlastSpinner",
+   "gaps": [
+    "effect"
+   ],
+   "id": "blastspinner",
+   "idKind": "pack",
+   "packType": "blastspinner",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantBlockoli",
+   "gaps": [
+    "effect"
+   ],
+   "id": "blockoli",
+   "idKind": "pack",
+   "packType": "blockoli",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 1.53,
+   "effects": [],
+   "framework": "PlantMagicShroom",
+   "gaps": [
+    "effect"
+   ],
+   "id": "bloomerang",
+   "idKind": "client",
+   "packType": "bloomerang",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantBloomerang",
+   "gaps": [
+    "effect"
+   ],
+   "id": "bloomerang1",
+   "idKind": "pack",
+   "packType": "bloomerang1",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantCabbagepult",
+   "gaps": [
+    "effect"
+   ],
+   "id": "bloominghearts",
+   "idKind": "pack",
+   "packType": "bloominghearts",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantBloomingHearts",
+   "gaps": [
+    "effect"
+   ],
+   "id": "bloominghearts1",
+   "idKind": "pack",
+   "packType": "bloominghearts1",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantBlover",
+   "gaps": [
+    "effect"
+   ],
+   "id": "blover",
+   "idKind": "pack",
+   "packType": "blover",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 1.33,
+   "effects": [],
+   "framework": "PlantPrimalPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "boingsetta",
+   "idKind": "pack",
+   "packType": "boingsetta",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantBoingsetta",
+   "gaps": [
+    "effect"
+   ],
+   "id": "boingsetta1",
+   "idKind": "pack",
+   "packType": "boingsetta1",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantBonkchoy",
+   "gaps": [
+    "effect"
+   ],
+   "id": "bonkchoy",
+   "idKind": "client",
+   "packType": "bonkchoy",
+   "playCount": 3,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantBoomberry",
+   "gaps": [
+    "effect"
+   ],
+   "id": "boomberry",
+   "idKind": "pack",
+   "packType": "boomberry",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantBoomFlower",
+   "gaps": [
+    "effect"
+   ],
+   "id": "boomflower",
+   "idKind": "pack",
+   "packType": "boomflower",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 0.5,
+   "effects": [],
+   "framework": "PlantBowlingBulb",
+   "gaps": [
+    "effect"
+   ],
+   "id": "bowlingbulb",
+   "idKind": "pack",
+   "packType": "bowlingbulb",
+   "playCount": 0,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 4,
+   "effects": [],
+   "framework": "PlantBrambleBush",
+   "gaps": [
+    "effect"
+   ],
+   "id": "bramblebush",
+   "idKind": "pack",
+   "packType": "bramblebush",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 3,
+   "effects": [],
+   "framework": "PlantBubbleCoral",
+   "gaps": [
+    "effect"
+   ],
+   "id": "bubblecoral",
+   "idKind": "pack",
+   "packType": "bubblecoral",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantButtercup",
+   "gaps": [
+    "effect"
+   ],
+   "id": "buttercup",
+   "idKind": "pack",
+   "packType": "buttercup",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantElectricPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "buzzbutton",
+   "idKind": "pack",
+   "packType": "buzzbutton",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantCabbagepult",
+   "gaps": [
+    "effect"
+   ],
+   "id": "cabbagepult",
+   "idKind": "client",
+   "packType": "cabbagepult",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantCabbagepult",
+   "gaps": [
+    "effect"
+   ],
+   "id": "cabbagepultpvz",
+   "idKind": "pack",
+   "packType": "cabbagepultpvz",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantPrimalPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "cactus",
+   "idKind": "pack",
+   "packType": "cactus",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 3,
+   "effects": [],
+   "framework": "PlantCactus",
+   "gaps": [
+    "effect"
+   ],
+   "id": "cactus1",
+   "idKind": "pack",
+   "packType": "cactus1",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantPepperpult",
+   "gaps": [
+    "effect"
+   ],
+   "id": "carrotmissile",
+   "idKind": "pack",
+   "packType": "carrotmissile",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantCaulipower",
+   "gaps": [
+    "effect"
+   ],
+   "id": "caulipower",
+   "idKind": "pack",
+   "packType": "caulipower",
+   "playCount": 5,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantCerydra",
+   "gaps": [
+    "effect"
+   ],
+   "id": "cerydra",
+   "idKind": "pack",
+   "packType": "cerydra",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantChardGuard",
+   "gaps": [
+    "effect"
+   ],
+   "id": "chardguard",
+   "idKind": "pack",
+   "packType": "chardguard",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantChilibean",
+   "gaps": [
+    "effect"
+   ],
+   "id": "chilibean",
+   "idKind": "pack",
+   "packType": "chilibean",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 1.86,
+   "effects": [],
+   "framework": "PlantChineseChompingCabbage",
+   "gaps": [
+    "effect"
+   ],
+   "id": "chinesechompingcabbage",
+   "idKind": "pack",
+   "packType": "chinesechompingcabbage",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 4,
+   "effects": [],
+   "framework": "PlantTorchwood",
+   "gaps": [
+    "effect"
+   ],
+   "id": "citron",
+   "idKind": "pack",
+   "packType": "citron",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantCitron",
+   "gaps": [
+    "effect"
+   ],
+   "id": "citron1",
+   "idKind": "pack",
+   "packType": "citron1",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantCitron",
+   "gaps": [
+    "effect"
+   ],
+   "id": "citron2",
+   "idKind": "pack",
+   "packType": "citron2",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantCoconutCannon",
+   "gaps": [
+    "effect"
+   ],
+   "id": "coconutcannon",
+   "idKind": "pack",
+   "packType": "coconutcannon",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "coconutcannon_barrage",
+   "idKind": "pack",
+   "packType": "coconutcannon_barrage",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantSnapdragon",
+   "gaps": [
+    "effect"
+   ],
+   "id": "coldsnapdragon",
+   "idKind": "pack",
+   "packType": "coldsnapdragon",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2.4,
+   "effects": [],
+   "framework": "PlantCornucopia",
+   "gaps": [
+    "effect"
+   ],
+   "id": "cornucopia",
+   "idKind": "pack",
+   "packType": "cornucopia",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantPrimalPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "cutebubuseed",
+   "idKind": "pack",
+   "packType": "cutebubuseed",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 5.7,
+   "effects": [],
+   "framework": "PlantAcidLemon",
+   "gaps": [
+    "effect"
+   ],
+   "id": "dandelion",
+   "idKind": "pack",
+   "packType": "dandelion",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantTwinSunflower",
+   "gaps": [
+    "effect"
+   ],
+   "id": "darktwinsunflower",
+   "idKind": "pack",
+   "packType": "darktwinsunflower",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 3,
+   "effects": [
+    {
+     "cooldownMax": 2,
+     "cooldownMin": 1.7,
+     "initialMin": 0,
+     "kind": "projectile",
+     "launchSound": null,
+     "projectile": "DartichokeLeafPerfect",
+     "source": "pack",
+     "spawnOffset": {
+      "x": 35,
+      "y": -32
+     }
+    }
+   ],
+   "framework": "PlantDartichoke",
+   "gaps": [],
+   "id": "dartichoke",
+   "idKind": "pack",
+   "packType": "dartichoke",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantReincarnation",
+   "gaps": [
+    "effect"
+   ],
+   "id": "dazeychain",
+   "idKind": "pack",
+   "packType": "dazeychain",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 4.46,
+   "effects": [],
+   "framework": "PlantDesireFlower",
+   "gaps": [
+    "effect"
+   ],
+   "id": "desireflower",
+   "idKind": "pack",
+   "packType": "desireflower",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantDoombell",
+   "gaps": [
+    "effect"
+   ],
+   "id": "doombell",
+   "idKind": "pack",
+   "packType": "doombell",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantDoomShroom",
+   "gaps": [
+    "effect"
+   ],
+   "id": "doomshroom",
+   "idKind": "pack",
+   "packType": "doomshroom",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantSnapdragon",
+   "gaps": [
+    "effect"
+   ],
+   "id": "draftodil",
+   "idKind": "pack",
+   "packType": "draftodil",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [
+    {
+     "cooldownMax": null,
+     "cooldownMin": null,
+     "initialMin": null,
+     "kind": "projectile",
+     "launchSound": null,
+     "projectile": "DraftodilPlantfoodDefault",
+     "source": "pack",
+     "spawnOffset": {
+      "x": 10,
+      "y": -25
+     }
+    }
+   ],
+   "framework": "PlantDraftodil",
+   "gaps": [],
+   "id": "draftodil1",
+   "idKind": "pack",
+   "packType": "draftodil1",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantDragonBabyBruit",
+   "gaps": [
+    "effect"
+   ],
+   "id": "dragonbabybruit",
+   "idKind": "pack",
+   "packType": "dragonbabybruit",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantDragonBruit",
+   "gaps": [
+    "effect"
+   ],
+   "id": "dragonbruit",
+   "idKind": "pack",
+   "packType": "dragonbruit",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 5.133,
+   "effects": [],
+   "framework": "PlantDuckPear",
+   "gaps": [
+    "effect"
+   ],
+   "id": "duckpear",
+   "idKind": "pack",
+   "packType": "duckpear",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantDusklobber",
+   "gaps": [
+    "effect"
+   ],
+   "id": "dusklobber",
+   "idKind": "pack",
+   "packType": "dusklobber",
+   "playCount": 2,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantElderbarrier",
+   "gaps": [
+    "effect"
+   ],
+   "id": "elderbarrier",
+   "idKind": "client",
+   "packType": "elderbarrier",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantElectricBlueberry",
+   "gaps": [
+    "effect"
+   ],
+   "id": "electricblueberry",
+   "idKind": "pack",
+   "packType": "electricblueberry",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantElectricCurrant",
+   "gaps": [
+    "effect"
+   ],
+   "id": "electriccurrant",
+   "idKind": "pack",
+   "packType": "electriccurrant",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantBloomerang",
+   "gaps": [
+    "effect"
+   ],
+   "id": "electricitea",
+   "idKind": "pack",
+   "packType": "electricitea",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 3,
+   "effects": [],
+   "framework": "PlantElectricitea",
+   "gaps": [
+    "effect"
+   ],
+   "id": "electricitea1",
+   "idKind": "pack",
+   "packType": "electricitea1",
+   "playCount": 5,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 3,
+   "effects": [],
+   "framework": "PlantPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "electricpeashooter",
+   "idKind": "pack",
+   "packType": "electricpeashooter",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantEMPea",
+   "gaps": [
+    "effect"
+   ],
+   "id": "empea",
+   "idKind": "pack",
+   "packType": "empea",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantPowerLily",
+   "gaps": [
+    "effect"
+   ],
+   "id": "enchantmint",
+   "idKind": "pack",
+   "packType": "enchantmint",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 6.5,
+   "effects": [],
+   "framework": "PlantPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "enforcemint",
+   "idKind": "pack",
+   "packType": "enforcemint",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 3,
+   "effects": [],
+   "framework": "PlantPrimalPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "enlightenmint",
+   "idKind": "pack",
+   "packType": "enlightenmint",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantCNIceShroom",
+   "gaps": [
+    "effect"
+   ],
+   "id": "escaperoot",
+   "idKind": "pack",
+   "packType": "escaperoot",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantEscapeRoot",
+   "gaps": [
+    "effect"
+   ],
+   "id": "escaperoot1",
+   "idKind": "pack",
+   "packType": "escaperoot1",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantSnapdragon",
+   "gaps": [
+    "effect"
+   ],
+   "id": "evilshroom_speed",
+   "idKind": "pack",
+   "packType": "evilshroom_speed",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 4.2,
+   "effects": [],
+   "framework": "PlantPrimalPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "evilshroom_toughness",
+   "idKind": "pack",
+   "packType": "evilshroom_toughness",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2.96,
+   "effects": [],
+   "framework": "PlantExorcisLily",
+   "gaps": [
+    "effect"
+   ],
+   "id": "exorcislily",
+   "idKind": "pack",
+   "packType": "exorcislily",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantCabbagepult",
+   "gaps": [
+    "effect"
+   ],
+   "id": "explodeonut",
+   "idKind": "pack",
+   "packType": "explodeonut",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantExplodeONut",
+   "gaps": [
+    "effect"
+   ],
+   "id": "explodeonut1",
+   "idKind": "pack",
+   "packType": "explodeonut1",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantCNFireShroom",
+   "gaps": [
+    "effect"
+   ],
+   "id": "explodeovine",
+   "idKind": "pack",
+   "packType": "explodeovine",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantExplodeOVine",
+   "gaps": [
+    "effect"
+   ],
+   "id": "explodeovine1",
+   "idKind": "pack",
+   "packType": "explodeovine1",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2.11,
+   "effects": [],
+   "framework": "PlantPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "fairymushroom",
+   "idKind": "pack",
+   "packType": "fairymushroom",
+   "playCount": 2,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 3,
+   "effects": [],
+   "framework": "PlantPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "firepeashooter",
+   "idKind": "pack",
+   "packType": "firepeashooter",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantFirePeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "firepeashooter1",
+   "idKind": "pack",
+   "packType": "firepeashooter1",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "flowerpot",
+   "idKind": "pack",
+   "packType": "flowerpot",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 4.77,
+   "effects": [],
+   "framework": "PlantPeanut",
+   "gaps": [
+    "effect"
+   ],
+   "id": "frozenpear",
+   "idKind": "client",
+   "packType": "frozenpear",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 5,
+   "effects": [],
+   "framework": "PlantFumeshroom",
+   "gaps": [
+    "effect"
+   ],
+   "id": "fumeshroom",
+   "idKind": "client",
+   "packType": "fumeshroom",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 3.5,
+   "effects": [],
+   "framework": "PlantFusionGatling",
+   "gaps": [
+    "effect"
+   ],
+   "id": "fusiongatling",
+   "idKind": "pack",
+   "packType": "fusiongatling",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 1.5,
+   "effects": [],
+   "framework": "PlantPrimalPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "futurebubuseed",
+   "idKind": "pack",
+   "packType": "futurebubuseed",
+   "playCount": 2,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 3,
+   "effects": [],
+   "framework": "PlantSeaFlora",
+   "gaps": [
+    "effect"
+   ],
+   "id": "gardenia",
+   "idKind": "client",
+   "packType": "gardenia",
+   "playCount": 2,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 3,
+   "effects": [],
+   "framework": "PlantGarlic",
+   "gaps": [
+    "effect"
+   ],
+   "id": "garlic",
+   "idKind": "pack",
+   "packType": "garlic",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantGhostPepper",
+   "gaps": [
+    "effect"
+   ],
+   "id": "ghostpepper",
+   "idKind": "pack",
+   "packType": "ghostpepper",
+   "playCount": 3,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2.7,
+   "effects": [],
+   "framework": "PlantFumeshroom",
+   "gaps": [
+    "effect"
+   ],
+   "id": "gloomvine",
+   "idKind": "pack",
+   "packType": "gloomvine",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantGoldbloom",
+   "gaps": [
+    "effect"
+   ],
+   "id": "goldbloom",
+   "idKind": "pack",
+   "packType": "goldbloom",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 4,
+   "effects": [],
+   "framework": "PlantGraveBuster",
+   "gaps": [
+    "effect"
+   ],
+   "id": "gravebuster",
+   "idKind": "pack",
+   "packType": "gravebuster",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantGrimrose",
+   "gaps": [
+    "effect"
+   ],
+   "id": "grimrose",
+   "idKind": "pack",
+   "packType": "grimrose",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantSnapdragon",
+   "gaps": [
+    "effect"
+   ],
+   "id": "groundcherry",
+   "idKind": "pack",
+   "packType": "groundcherry",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantGuacodile",
+   "gaps": [
+    "effect"
+   ],
+   "id": "guacodile",
+   "idKind": "pack",
+   "packType": "guacodile",
+   "playCount": 2,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 3,
+   "effects": [],
+   "framework": "PlantGuardShroom",
+   "gaps": [
+    "effect"
+   ],
+   "id": "guardshroom",
+   "idKind": "pack",
+   "packType": "guardshroom",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantBloomerang",
+   "gaps": [
+    "effect"
+   ],
+   "id": "gumnut",
+   "idKind": "pack",
+   "packType": "gumnut",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantHayStack",
+   "gaps": [
+    "effect"
+   ],
+   "id": "haystack",
+   "idKind": "pack",
+   "packType": "haystack",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantBonkchoy",
+   "gaps": [
+    "effect"
+   ],
+   "id": "headbutter",
+   "idKind": "pack",
+   "packType": "headbutter",
+   "playCount": 3,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantHeadbutterLettuce",
+   "gaps": [
+    "effect"
+   ],
+   "id": "headbutterlettuce",
+   "idKind": "pack",
+   "packType": "headbutterlettuce",
+   "playCount": 3,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantHocusCrocus",
+   "gaps": [
+    "effect"
+   ],
+   "id": "hocus",
+   "idKind": "pack",
+   "packType": "hocus",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantKernelpult",
+   "gaps": [
+    "effect"
+   ],
+   "id": "hollybarrierleaf",
+   "idKind": "pack",
+   "packType": "hollybarrierleaf",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantInferno",
+   "gaps": [
+    "effect"
+   ],
+   "id": "hollybarrierleafplantfood",
+   "idKind": "pack",
+   "packType": "hollybarrierleafplantfood",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantGatlingPea",
+   "gaps": [
+    "effect"
+   ],
+   "id": "hollyknight",
+   "idKind": "pack",
+   "packType": "hollyknight",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 3,
+   "effects": [],
+   "framework": "PlantPrimalPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "holonut",
+   "idKind": "pack",
+   "packType": "holonut",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantHolonut",
+   "gaps": [
+    "effect"
+   ],
+   "id": "holonut1",
+   "idKind": "pack",
+   "packType": "holonut1",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [
+    {
+     "cooldownMax": 2,
+     "cooldownMin": 1.7,
+     "initialMin": 0,
+     "kind": "projectile",
+     "launchSound": null,
+     "projectile": "HomingThistlePlantfood",
+     "source": "pack",
+     "spawnOffset": {
+      "x": 35,
+      "y": -32
+     }
+    }
+   ],
+   "framework": "PlantHomingThistle",
+   "gaps": [],
+   "id": "homingthistle",
+   "idKind": "client",
+   "packType": "homingthistle",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantHorsebean",
+   "gaps": [
+    "effect"
+   ],
+   "id": "horsebean",
+   "idKind": "pack",
+   "packType": "horsebean",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 6,
+   "effects": [],
+   "framework": "PlantHotDate",
+   "gaps": [
+    "effect"
+   ],
+   "id": "hotdate",
+   "idKind": "pack",
+   "packType": "hotdate",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 4,
+   "effects": [],
+   "framework": "PlantHotPotato",
+   "gaps": [
+    "effect"
+   ],
+   "id": "hotpotato",
+   "idKind": "pack",
+   "packType": "hotpotato",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantHurrikale",
+   "gaps": [
+    "effect"
+   ],
+   "id": "hurrikale",
+   "idKind": "pack",
+   "packType": "hurrikale",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 0.15,
+   "effects": [],
+   "framework": "PlantHypnoShroom",
+   "gaps": [
+    "effect"
+   ],
+   "id": "hypnoshroom",
+   "idKind": "pack",
+   "packType": "hypnoshroom",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2.4,
+   "effects": [],
+   "framework": "PlantHysilens",
+   "gaps": [
+    "effect"
+   ],
+   "id": "hysilens",
+   "idKind": "pack",
+   "packType": "hysilens",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantCabbagepult",
+   "gaps": [
+    "effect"
+   ],
+   "id": "icebloom",
+   "idKind": "pack",
+   "packType": "icebloom",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantIceburg",
+   "gaps": [
+    "effect"
+   ],
+   "id": "iceburg",
+   "idKind": "client",
+   "packType": "iceburg",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantIceweed",
+   "gaps": [
+    "effect"
+   ],
+   "id": "iceweed",
+   "idKind": "pack",
+   "packType": "iceweed",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantImpatiensshooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "impatiensshooter",
+   "idKind": "pack",
+   "packType": "impatiensshooter",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 4,
+   "effects": [],
+   "framework": "PlantPinkStarFruit",
+   "gaps": [
+    "effect"
+   ],
+   "id": "imppear",
+   "idKind": "pack",
+   "packType": "imppear",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantImpPearTeto",
+   "gaps": [
+    "effect"
+   ],
+   "id": "imppear_teto",
+   "idKind": "pack",
+   "packType": "imppear_teto",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 0,
+   "effects": [],
+   "framework": "PlantTigerGrass",
+   "gaps": [
+    "effect"
+   ],
+   "id": "inferno",
+   "idKind": "pack",
+   "packType": "inferno",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantInferno",
+   "gaps": [
+    "effect"
+   ],
+   "id": "inferno2",
+   "idKind": "pack",
+   "packType": "inferno2",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantJackOLantern",
+   "gaps": [
+    "effect"
+   ],
+   "id": "jackolantern",
+   "idKind": "pack",
+   "packType": "jackolantern",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantKelpGuard",
+   "gaps": [
+    "effect"
+   ],
+   "id": "kelpguard",
+   "idKind": "pack",
+   "packType": "kelpguard",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantKernelpult",
+   "gaps": [
+    "effect"
+   ],
+   "id": "kernelpult",
+   "idKind": "client",
+   "packType": "kernelpult",
+   "playCount": 2,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantKernelpult",
+   "gaps": [
+    "effect"
+   ],
+   "id": "kernelpult1",
+   "idKind": "pack",
+   "packType": "kernelpult1",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 0,
+   "effects": [],
+   "framework": "PlantKiwiBeast",
+   "gaps": [
+    "effect"
+   ],
+   "id": "kiwibeast",
+   "idKind": "pack",
+   "packType": "kiwibeast",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantBitPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "kiwibeast_deprecated",
+   "idKind": "pack",
+   "packType": "kiwibeast_deprecated",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 0,
+   "effects": [],
+   "framework": "PlantLilyPad",
+   "gaps": [
+    "effect"
+   ],
+   "id": "land",
+   "idKind": "pack",
+   "packType": "land",
+   "playCount": 0,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantLaserBean",
+   "gaps": [
+    "effect"
+   ],
+   "id": "laser_bean",
+   "idKind": "pack",
+   "packType": "laser_bean",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 10,
+   "effects": [],
+   "framework": "PlantLavaGuava",
+   "gaps": [
+    "effect"
+   ],
+   "id": "lavaguava",
+   "idKind": "pack",
+   "packType": "lavaguava",
+   "playCount": 0,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantKernelpult",
+   "gaps": [
+    "effect"
+   ],
+   "id": "lemonaider",
+   "idKind": "pack",
+   "packType": "lemonaider",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 4,
+   "effects": [],
+   "framework": "PlantLevitater",
+   "gaps": [
+    "effect"
+   ],
+   "id": "levitater",
+   "idKind": "pack",
+   "packType": "levitater",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantLightningReed",
+   "gaps": [
+    "effect"
+   ],
+   "id": "lightningreed",
+   "idKind": "pack",
+   "packType": "lightningreed",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantLilyPad",
+   "gaps": [
+    "effect"
+   ],
+   "id": "lilypad",
+   "idKind": "pack",
+   "packType": "lilypad",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2.5,
+   "effects": [],
+   "framework": "PlantLittleRepeater",
+   "gaps": [
+    "effect"
+   ],
+   "id": "littlerepeater",
+   "idKind": "pack",
+   "packType": "littlerepeater",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantLongmaLily",
+   "gaps": [
+    "effect"
+   ],
+   "id": "longmalily",
+   "idKind": "pack",
+   "packType": "longmalily",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantPrimalPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "magicvine",
+   "idKind": "pack",
+   "packType": "magicvine",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [
+    {
+     "cooldownMax": 2,
+     "cooldownMin": 1.7,
+     "initialMin": 0,
+     "kind": "projectile",
+     "launchSound": null,
+     "projectile": "MagnetFruitGiantShot",
+     "source": "pack",
+     "spawnOffset": {
+      "x": 35,
+      "y": -32
+     }
+    }
+   ],
+   "framework": "PlantMagnetFruit",
+   "gaps": [],
+   "id": "magnetfruit",
+   "idKind": "pack",
+   "packType": "magnetfruit",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantTurkeypult",
+   "gaps": [
+    "effect"
+   ],
+   "id": "magnetshroom",
+   "idKind": "pack",
+   "packType": "magnetshroom",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantMagnetShroom",
+   "gaps": [
+    "effect"
+   ],
+   "id": "magnetshroom1",
+   "idKind": "pack",
+   "packType": "magnetshroom1",
+   "playCount": 6,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 3.0,
+   "effects": [],
+   "framework": "PlantMagnifyingGrass",
+   "gaps": [
+    "effect"
+   ],
+   "id": "magnifyinggrass",
+   "idKind": "client",
+   "packType": "magnifyinggrass",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 5.5,
+   "effects": [],
+   "framework": "PlantMangofier",
+   "gaps": [
+    "effect"
+   ],
+   "id": "mangofier",
+   "idKind": "pack",
+   "packType": "mangofier",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantReincarnation",
+   "gaps": [
+    "effect"
+   ],
+   "id": "mangosteen",
+   "idKind": "pack",
+   "packType": "mangosteen",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 1,
+   "effects": [],
+   "framework": "PlantMarigold",
+   "gaps": [
+    "effect"
+   ],
+   "id": "marigold",
+   "idKind": "pack",
+   "packType": "marigold",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantMaybee",
+   "gaps": [
+    "effect"
+   ],
+   "id": "maybee",
+   "idKind": "pack",
+   "packType": "maybee",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 3.5,
+   "effects": [],
+   "framework": "PlantMegaGatling",
+   "gaps": [
+    "effect"
+   ],
+   "id": "megagatling",
+   "idKind": "pack",
+   "packType": "megagatling",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantMelonpult",
+   "gaps": [
+    "effect"
+   ],
+   "id": "melonpult",
+   "idKind": "client",
+   "packType": "melonpult",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 3.5,
+   "effects": [],
+   "framework": "PlantMeteorFlower",
+   "gaps": [
+    "effect"
+   ],
+   "id": "meteorflower",
+   "idKind": "pack",
+   "packType": "meteorflower",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 0.15,
+   "effects": [],
+   "framework": "PlantHypnoShroom",
+   "gaps": [
+    "effect"
+   ],
+   "id": "midi",
+   "idKind": "pack",
+   "packType": "midi",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 1.46,
+   "effects": [],
+   "framework": "PlantMikuLeek",
+   "gaps": [
+    "effect"
+   ],
+   "id": "mikuleek",
+   "idKind": "pack",
+   "packType": "mikuleek",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 0,
+   "effects": [],
+   "framework": "PlantMagnifyingGrass",
+   "gaps": [
+    "effect"
+   ],
+   "id": "minigame_music",
+   "idKind": "pack",
+   "packType": "minigame_music",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 3.4,
+   "effects": [],
+   "framework": "PlantPrimalPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "minipeashooter",
+   "idKind": "pack",
+   "packType": "minipeashooter",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 1.5,
+   "effects": [],
+   "framework": "PlantMissileToast",
+   "gaps": [
+    "effect"
+   ],
+   "id": "missiletoast",
+   "idKind": "client",
+   "packType": "missiletoast",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantMissileToe",
+   "gaps": [
+    "effect"
+   ],
+   "id": "missiletoe",
+   "idKind": "pack",
+   "packType": "missiletoe",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantMoonFlower",
+   "gaps": [
+    "effect"
+   ],
+   "id": "moonflower",
+   "idKind": "pack",
+   "packType": "moonflower",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantCoconutCannon",
+   "gaps": [
+    "effect"
+   ],
+   "id": "murkadamia",
+   "idKind": "pack",
+   "packType": "murkadamia",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 5,
+   "effects": [],
+   "framework": "PlantNightcap",
+   "gaps": [
+    "effect"
+   ],
+   "id": "nightcap",
+   "idKind": "pack",
+   "packType": "nightcap",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantNightshade",
+   "gaps": [
+    "effect"
+   ],
+   "id": "nightshade",
+   "idKind": "pack",
+   "packType": "nightshade",
+   "playCount": 2,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantPrimalPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "noctarine",
+   "idKind": "pack",
+   "packType": "noctarine",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantThreepeater",
+   "gaps": [
+    "effect"
+   ],
+   "id": "oakshooter_barrage",
+   "idKind": "pack",
+   "packType": "oakshooter_barrage",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantSnapdragon",
+   "gaps": [
+    "effect"
+   ],
+   "id": "old_sushi",
+   "idKind": "pack",
+   "packType": "old_sushi",
+   "playCount": 0,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 1,
+   "effects": [],
+   "framework": "PlantPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "olivepit",
+   "idKind": "pack",
+   "packType": "olivepit",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantOlivePit",
+   "gaps": [
+    "effect"
+   ],
+   "id": "olivepit1",
+   "idKind": "pack",
+   "packType": "olivepit1",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantOxygenAlgae",
+   "gaps": [
+    "effect"
+   ],
+   "id": "oxygenalgae",
+   "idKind": "pack",
+   "packType": "oxygenalgae",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantParadoxPult",
+   "gaps": [
+    "effect"
+   ],
+   "id": "paradoxpult",
+   "idKind": "client",
+   "packType": "paradoxpult",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 1.5,
+   "effects": [],
+   "framework": "PlantPrimalPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "parsnip",
+   "idKind": "pack",
+   "packType": "parsnip",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantParsnip",
+   "gaps": [
+    "effect"
+   ],
+   "id": "parsnip1",
+   "idKind": "pack",
+   "packType": "parsnip1",
+   "playCount": 2,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantPeapod",
+   "gaps": [
+    "effect"
+   ],
+   "id": "peapod",
+   "idKind": "pack",
+   "packType": "peapod",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "peashooter",
+   "idKind": "client",
+   "packType": "peashooter",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantCabbagepult",
+   "gaps": [
+    "effect"
+   ],
+   "id": "peppermint",
+   "idKind": "pack",
+   "packType": "peppermint",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantPepperpult",
+   "gaps": [
+    "effect"
+   ],
+   "id": "pepperpult",
+   "idKind": "pack",
+   "packType": "pepperpult",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 1.83,
+   "effects": [],
+   "framework": "PlantPhantasMagnolia",
+   "gaps": [
+    "effect"
+   ],
+   "id": "phantasmagnolia",
+   "idKind": "pack",
+   "packType": "phantasmagnolia",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2.5,
+   "effects": [],
+   "framework": "PlantRepeater",
+   "gaps": [
+    "effect"
+   ],
+   "id": "phatbeet",
+   "idKind": "pack",
+   "packType": "phatbeet",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantPhatBeet",
+   "gaps": [
+    "effect"
+   ],
+   "id": "phatbeet1",
+   "idKind": "pack",
+   "packType": "phatbeet1",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantPrimalPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "plantain",
+   "idKind": "pack",
+   "packType": "plantain",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantSnapdragon",
+   "gaps": [
+    "effect"
+   ],
+   "id": "plantern",
+   "idKind": "pack",
+   "packType": "plantern",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantPlummet",
+   "gaps": [
+    "effect"
+   ],
+   "id": "plummet",
+   "idKind": "pack",
+   "packType": "plummet",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantPoisonPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "poisonpeashooter",
+   "idKind": "pack",
+   "packType": "poisonpeashooter",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 1.633,
+   "effects": [],
+   "framework": "PlantPoisonVine",
+   "gaps": [
+    "effect"
+   ],
+   "id": "poisonvine",
+   "idKind": "pack",
+   "packType": "poisonvine",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantPokra",
+   "gaps": [
+    "effect"
+   ],
+   "id": "pokra1",
+   "idKind": "pack",
+   "packType": "pokra1",
+   "playCount": 4,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantPoppinPoppies",
+   "gaps": [
+    "effect"
+   ],
+   "id": "poppinpoppies",
+   "idKind": "client",
+   "packType": "poppinpoppies",
+   "playCount": 2,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantPotatomine",
+   "gaps": [
+    "effect"
+   ],
+   "id": "potatochip",
+   "idKind": "client",
+   "packType": "potatochip",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantPotatomine",
+   "gaps": [
+    "effect"
+   ],
+   "id": "potatomine",
+   "idKind": "client",
+   "packType": "potatomine",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantPowerLily",
+   "gaps": [
+    "effect"
+   ],
+   "id": "powerlily",
+   "idKind": "pack",
+   "packType": "powerlily",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantPrimalPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "powerplant",
+   "idKind": "pack",
+   "packType": "powerplant",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantPrimalPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "powervine",
+   "idKind": "pack",
+   "packType": "powervine",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantPowerVine",
+   "gaps": [
+    "effect"
+   ],
+   "id": "powervine1",
+   "idKind": "pack",
+   "packType": "powervine1",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantPrimalPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "primalpeashooter",
+   "idKind": "pack",
+   "packType": "primalpeashooter",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantPotatomine",
+   "gaps": [
+    "effect"
+   ],
+   "id": "primalpotatomine",
+   "idKind": "pack",
+   "packType": "primalpotatomine",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantSunflower",
+   "gaps": [
+    "effect"
+   ],
+   "id": "primalsunflower",
+   "idKind": "pack",
+   "packType": "primalsunflower",
+   "playCount": 2,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantPrimalWallnut",
+   "gaps": [
+    "effect"
+   ],
+   "id": "primalwallnut",
+   "idKind": "pack",
+   "packType": "primalwallnut",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 3,
+   "effects": [],
+   "framework": "PlantPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "puffball",
+   "idKind": "pack",
+   "packType": "puffball",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantPuffshroom",
+   "gaps": [
+    "effect"
+   ],
+   "id": "puffshroom",
+   "idKind": "pack",
+   "packType": "puffshroom",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantPumpkin",
+   "gaps": [
+    "effect"
+   ],
+   "id": "pumpkin",
+   "idKind": "pack",
+   "packType": "pumpkin",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantPunkShocker",
+   "gaps": [
+    "effect"
+   ],
+   "id": "punkshocker",
+   "idKind": "pack",
+   "packType": "punkshocker",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantPrimalPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "pvine",
+   "idKind": "pack",
+   "packType": "pvine",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantPvine",
+   "gaps": [
+    "effect"
+   ],
+   "id": "pvine1",
+   "idKind": "pack",
+   "packType": "pvine1",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 1.2,
+   "effects": [],
+   "framework": "PlantPrimalPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "pyrevine",
+   "idKind": "pack",
+   "packType": "pyrevine",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantPyreVine",
+   "gaps": [
+    "effect"
+   ],
+   "id": "pyrevine1",
+   "idKind": "pack",
+   "packType": "pyrevine1",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantRaCabbagepult",
+   "gaps": [
+    "effect"
+   ],
+   "id": "rabbagepult",
+   "idKind": "pack",
+   "packType": "rabbagepult",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 10,
+   "effects": [],
+   "framework": "PlantPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "redstinger",
+   "idKind": "pack",
+   "packType": "redstinger",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantSunflower",
+   "gaps": [
+    "effect"
+   ],
+   "id": "reinforcemint",
+   "idKind": "pack",
+   "packType": "reinforcemint",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "repeater",
+   "idKind": "client",
+   "packType": "repeater",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2.5,
+   "effects": [],
+   "framework": "PlantRepeater",
+   "gaps": [
+    "effect"
+   ],
+   "id": "repeater1",
+   "idKind": "pack",
+   "packType": "repeater1",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 3,
+   "effects": [
+    {
+     "cooldownMax": 2,
+     "cooldownMin": 1.7,
+     "initialMin": 0,
+     "kind": "projectile",
+     "launchSound": null,
+     "projectile": "TurrheumImmobileProjectilePlantfood",
+     "source": "pack",
+     "spawnOffset": {
+      "x": 0,
+      "y": 0
+     }
+    }
+   ],
+   "framework": "PlantDartichoke",
+   "gaps": [],
+   "id": "rheumnobile",
+   "idKind": "pack",
+   "packType": "rheumnobile",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantMorningGlory",
+   "gaps": [
+    "effect"
+   ],
+   "id": "sapfling",
+   "idKind": "pack",
+   "packType": "sapfling",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantSapfling",
+   "gaps": [
+    "effect"
+   ],
+   "id": "sapfling1",
+   "idKind": "pack",
+   "packType": "sapfling1",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 5.0,
+   "effects": [],
+   "framework": "PlantSeaFlora",
+   "gaps": [
+    "effect"
+   ],
+   "id": "seaflora",
+   "idKind": "pack",
+   "packType": "seaflora",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantPotatomine",
+   "gaps": [
+    "effect"
+   ],
+   "id": "seapotatomine",
+   "idKind": "client",
+   "packType": "seapotatomine",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2.0,
+   "effects": [],
+   "framework": "PlantSeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "seashooter",
+   "idKind": "pack",
+   "packType": "seashooter",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 5.0,
+   "effects": [],
+   "framework": "PlantSeashroom",
+   "gaps": [
+    "effect"
+   ],
+   "id": "seashroom",
+   "idKind": "pack",
+   "packType": "seashroom",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantShadowPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "shadowpeashooter",
+   "idKind": "pack",
+   "packType": "shadowpeashooter",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 0.15,
+   "effects": [],
+   "framework": "PlantShadowShroom",
+   "gaps": [
+    "effect"
+   ],
+   "id": "shadowshroom",
+   "idKind": "pack",
+   "packType": "shadowshroom",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantShineVine",
+   "gaps": [
+    "effect"
+   ],
+   "id": "shinevine",
+   "idKind": "pack",
+   "packType": "shinevine",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantShrinkingViolet",
+   "gaps": [
+    "effect"
+   ],
+   "id": "shrinkingviolet",
+   "idKind": "pack",
+   "packType": "shrinkingviolet",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantArmamintPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "slingpea",
+   "idKind": "pack",
+   "packType": "slingpea",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantSnapdragon",
+   "gaps": [
+    "effect"
+   ],
+   "id": "snapdragon",
+   "idKind": "pack",
+   "packType": "snapdragon",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantGumnut",
+   "gaps": [
+    "effect"
+   ],
+   "id": "snappea",
+   "idKind": "pack",
+   "packType": "snappea",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 1.02,
+   "effects": [],
+   "framework": "PlantPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "snowdrop",
+   "idKind": "pack",
+   "packType": "snowdrop",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantSnowPea",
+   "gaps": [
+    "effect"
+   ],
+   "id": "snowpea",
+   "idKind": "client",
+   "packType": "snowpea",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantSolarSage",
+   "gaps": [
+    "effect"
+   ],
+   "id": "solarsage",
+   "idKind": "pack",
+   "packType": "solarsage",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantSolarTomato",
+   "gaps": [
+    "effect"
+   ],
+   "id": "solartomato",
+   "idKind": "pack",
+   "packType": "solartomato",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 0.1,
+   "effects": [],
+   "framework": "PlantGarlic",
+   "gaps": [
+    "effect"
+   ],
+   "id": "specialgarlic",
+   "idKind": "pack",
+   "packType": "specialgarlic",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 4,
+   "effects": [],
+   "framework": "PlantSpikerock",
+   "gaps": [
+    "effect"
+   ],
+   "id": "spikerock",
+   "idKind": "pack",
+   "packType": "spikerock",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 4,
+   "effects": [],
+   "framework": "PlantSpikeweed",
+   "gaps": [
+    "effect"
+   ],
+   "id": "spikeweed",
+   "idKind": "client",
+   "packType": "spikeweed",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantSplitpea",
+   "gaps": [
+    "effect"
+   ],
+   "id": "splitpea",
+   "idKind": "client",
+   "packType": "splitpea",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 100,
+   "effects": [],
+   "framework": "PlantSpookySquash",
+   "gaps": [
+    "effect"
+   ],
+   "id": "spookysquash",
+   "idKind": "pack",
+   "packType": "spookysquash",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantSporeshroom",
+   "gaps": [
+    "effect"
+   ],
+   "id": "sporeshroom",
+   "idKind": "pack",
+   "packType": "sporeshroom",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 0,
+   "effects": [],
+   "framework": "PlantSpringbean",
+   "gaps": [
+    "effect"
+   ],
+   "id": "springbean",
+   "idKind": "pack",
+   "packType": "springbean",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 1.8,
+   "effects": [],
+   "framework": "PlantPrimalPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "sprout",
+   "idKind": "pack",
+   "packType": "sprout",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 100,
+   "effects": [],
+   "framework": "PlantSquash",
+   "gaps": [
+    "effect"
+   ],
+   "id": "squash",
+   "idKind": "client",
+   "packType": "squash",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantStallia",
+   "gaps": [
+    "effect"
+   ],
+   "id": "stallia",
+   "idKind": "pack",
+   "packType": "stallia",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantStarFruit",
+   "gaps": [
+    "effect"
+   ],
+   "id": "starfruit",
+   "idKind": "client",
+   "packType": "starfruit",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantStarFruit",
+   "gaps": [
+    "effect"
+   ],
+   "id": "starfruit_barrage",
+   "idKind": "pack",
+   "packType": "starfruit_barrage",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantStickybombRice",
+   "gaps": [
+    "effect"
+   ],
+   "id": "stickybombrice",
+   "idKind": "pack",
+   "packType": "stickybombrice",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantCabbagepult",
+   "gaps": [
+    "effect"
+   ],
+   "id": "strawburst",
+   "idKind": "pack",
+   "packType": "strawburst",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantStrawburst",
+   "gaps": [
+    "effect"
+   ],
+   "id": "strawburst1",
+   "idKind": "pack",
+   "packType": "strawburst1",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantStunion",
+   "gaps": [
+    "effect"
+   ],
+   "id": "stunion",
+   "idKind": "pack",
+   "packType": "stunion",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 0.15,
+   "effects": [],
+   "framework": "PlantSunBean",
+   "gaps": [
+    "effect"
+   ],
+   "id": "sunbean1",
+   "idKind": "pack",
+   "packType": "sunbean1",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantSundewTangler",
+   "gaps": [
+    "effect"
+   ],
+   "id": "sundewtangler",
+   "idKind": "pack",
+   "packType": "sundewtangler",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantLittleSunflower",
+   "gaps": [
+    "effect"
+   ],
+   "id": "sunflower",
+   "idKind": "client",
+   "packType": "sunflower",
+   "playCount": 2,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 0.2,
+   "effects": [
+    {
+     "cooldownMax": 2,
+     "cooldownMin": 1.7,
+     "initialMin": 0,
+     "kind": "projectile",
+     "launchSound": null,
+     "projectile": "CattailPlantfood",
+     "source": "pack",
+     "spawnOffset": {
+      "x": 35,
+      "y": -32
+     }
+    }
+   ],
+   "framework": "PlantHomingThistle",
+   "gaps": [],
+   "id": "sungun",
+   "idKind": "pack",
+   "packType": "sungun",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 1,
+   "effects": [],
+   "framework": "PlantSunshroom",
+   "gaps": [
+    "effect"
+   ],
+   "id": "sunshroom",
+   "idKind": "client",
+   "packType": "sunshroom",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 3.2,
+   "effects": [],
+   "framework": "PlantSunTower",
+   "gaps": [
+    "effect"
+   ],
+   "id": "suntower",
+   "idKind": "pack",
+   "packType": "suntower",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantPuffshroom",
+   "gaps": [
+    "effect"
+   ],
+   "id": "sushi",
+   "idKind": "pack",
+   "packType": "sushi",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantCabbagepultCanSink",
+   "gaps": [
+    "effect"
+   ],
+   "id": "sweetpotato",
+   "idKind": "pack",
+   "packType": "sweetpotato",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 6.0,
+   "effects": [],
+   "framework": "PlantSweetPotato",
+   "gaps": [
+    "effect"
+   ],
+   "id": "sweetpotato1",
+   "idKind": "pack",
+   "packType": "sweetpotato1",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantTallnut",
+   "gaps": [
+    "effect"
+   ],
+   "id": "tallnut",
+   "idKind": "client",
+   "packType": "tallnut",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantTangleKelp",
+   "gaps": [
+    "effect"
+   ],
+   "id": "tanglekelp",
+   "idKind": "pack",
+   "packType": "tanglekelp",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 1.63,
+   "effects": [],
+   "framework": "PlantPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "taraxacum",
+   "idKind": "client",
+   "packType": "taraxacum",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantCabbagepult",
+   "gaps": [
+    "effect"
+   ],
+   "id": "teleportatomine",
+   "idKind": "pack",
+   "packType": "teleportatomine",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantThreepeater",
+   "gaps": [
+    "effect"
+   ],
+   "id": "threepeater",
+   "idKind": "client",
+   "packType": "threepeater",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantThreepeater",
+   "gaps": [
+    "effect"
+   ],
+   "id": "threepeater1",
+   "idKind": "pack",
+   "packType": "threepeater1",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantThymeWarp",
+   "gaps": [
+    "effect"
+   ],
+   "id": "thymewarp",
+   "idKind": "pack",
+   "packType": "thymewarp",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 0,
+   "effects": [],
+   "framework": "PlantTigerGrass",
+   "gaps": [
+    "effect"
+   ],
+   "id": "tigergrass",
+   "idKind": "pack",
+   "packType": "tigergrass",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantBowlingBulb",
+   "gaps": [
+    "effect"
+   ],
+   "id": "toadstool",
+   "idKind": "pack",
+   "packType": "toadstool",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantAloe",
+   "gaps": [
+    "effect"
+   ],
+   "id": "tombtangler",
+   "idKind": "pack",
+   "packType": "tombtangler",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 4,
+   "effects": [],
+   "framework": "PlantTorchwood",
+   "gaps": [
+    "effect"
+   ],
+   "id": "torchwood",
+   "idKind": "client",
+   "packType": "torchwood",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 3,
+   "effects": [],
+   "framework": "PlantPrimalPeashooterCanSink",
+   "gaps": [
+    "effect"
+   ],
+   "id": "torpedofruit",
+   "idKind": "client",
+   "packType": "torpedofruit",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 1.53,
+   "effects": [],
+   "framework": "PlantPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "tubiflora",
+   "idKind": "client",
+   "packType": "tubiflora",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "tumbleweed",
+   "idKind": "pack",
+   "packType": "tumbleweed",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantCabbagepult",
+   "gaps": [
+    "effect"
+   ],
+   "id": "turkeypult",
+   "idKind": "pack",
+   "packType": "turkeypult",
+   "playCount": 2,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantPrimalPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "ultimatefumeshroom",
+   "idKind": "pack",
+   "packType": "ultimatefumeshroom",
+   "playCount": 2,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "ultomato",
+   "idKind": "pack",
+   "packType": "ultomato",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantUltomato",
+   "gaps": [
+    "effect"
+   ],
+   "id": "ultomato1",
+   "idKind": "pack",
+   "packType": "ultomato1",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantBonkchoy",
+   "gaps": [
+    "effect"
+   ],
+   "id": "unused_43",
+   "idKind": "pack",
+   "packType": "unused_43",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantKernelpult",
+   "gaps": [
+    "effect"
+   ],
+   "id": "unused_45",
+   "idKind": "pack",
+   "packType": "unused_45",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 1.46,
+   "effects": [],
+   "framework": "PlantPrimalWallnut",
+   "gaps": [
+    "effect"
+   ],
+   "id": "unused_46",
+   "idKind": "pack",
+   "packType": "unused_46",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantSnapdragon",
+   "gaps": [
+    "effect"
+   ],
+   "id": "unused_47",
+   "idKind": "pack",
+   "packType": "unused_47",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "unused_48",
+   "idKind": "pack",
+   "packType": "unused_48",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 0,
+   "effects": [],
+   "framework": "PlantPhatBeet",
+   "gaps": [
+    "effect"
+   ],
+   "id": "unused_49",
+   "idKind": "pack",
+   "packType": "unused_49",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 1.07,
+   "effects": [],
+   "framework": "PlantCactus",
+   "gaps": [
+    "effect"
+   ],
+   "id": "vamporcini",
+   "idKind": "pack",
+   "packType": "vamporcini",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantVamporcini",
+   "gaps": [
+    "effect"
+   ],
+   "id": "vamporcini1",
+   "idKind": "pack",
+   "packType": "vamporcini1",
+   "playCount": 3,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2.4,
+   "effects": [],
+   "framework": "PlantVoidDragon",
+   "gaps": [
+    "effect"
+   ],
+   "id": "voiddragon",
+   "idKind": "client",
+   "packType": "voiddragon",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantWallnut",
+   "gaps": [
+    "effect"
+   ],
+   "id": "wallnut",
+   "idKind": "client",
+   "packType": "wallnut",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantWasabiWhip",
+   "gaps": [
+    "effect"
+   ],
+   "id": "wasabiwhip",
+   "idKind": "pack",
+   "packType": "wasabiwhip",
+   "playCount": 26,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantWaterRabbit",
+   "gaps": [
+    "effect"
+   ],
+   "id": "waterrabbit",
+   "idKind": "pack",
+   "packType": "waterrabbit",
+   "playCount": 2,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantWinterGeddon",
+   "gaps": [
+    "effect"
+   ],
+   "id": "wintergeddon",
+   "idKind": "pack",
+   "packType": "wintergeddon",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantWinterMelon",
+   "gaps": [
+    "effect"
+   ],
+   "id": "wintermelon",
+   "idKind": "client",
+   "packType": "wintermelon",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 7,
+   "effects": [],
+   "framework": "PlantPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "wintermint",
+   "idKind": "pack",
+   "packType": "wintermint",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantAkee",
+   "gaps": [
+    "effect"
+   ],
+   "id": "witchhazel",
+   "idKind": "pack",
+   "packType": "witchhazel",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantWitchHazel",
+   "gaps": [
+    "effect"
+   ],
+   "id": "witchhazel1",
+   "idKind": "pack",
+   "packType": "witchhazel1",
+   "playCount": 1,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantXShot",
+   "gaps": [
+    "effect"
+   ],
+   "id": "xshot",
+   "idKind": "pack",
+   "packType": "xshot",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantXShot",
+   "gaps": [
+    "effect"
+   ],
+   "id": "xshot_barrage",
+   "idKind": "pack",
+   "packType": "xshot_barrage",
+   "playCount": null,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": null,
+   "effects": [],
+   "framework": "PlantYuccaGuardian",
+   "gaps": [
+    "effect"
+   ],
+   "id": "yuccaguardian",
+   "idKind": "client",
+   "packType": "yuccaguardian",
+   "playCount": 2,
+   "source": "pack"
+  },
+  {
+   "durationSeconds": 2,
+   "effects": [],
+   "framework": "PlantPeashooter",
+   "gaps": [
+    "effect"
+   ],
+   "id": "zoybeanpod",
+   "idKind": "pack",
+   "packType": "zoybeanpod",
+   "playCount": null,
+   "source": "pack"
+  }
+ ]
+}

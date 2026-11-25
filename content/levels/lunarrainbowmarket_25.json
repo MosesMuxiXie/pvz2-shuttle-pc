@@ -476,6 +476,11 @@
   "level_number": 25,
   "wave_count": 15,
   "original_waves": 15,
-  "night": true
+  "night": true,
+  "minecarts": [
+   2
+  ],
+  "rail": true,
+  "suppressFlagZombie": true
  }
 }

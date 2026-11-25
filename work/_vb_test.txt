@@ -1,0 +1,30 @@
+test_check_fails_when_the_artefact_is_stale (tools.tests.test_vasebreaker.CompileVasebreakerTests.test_check_fails_when_the_artefact_is_stale) ... ok
+test_check_passes_on_the_shipped_file (tools.tests.test_vasebreaker.CompileVasebreakerTests.test_check_passes_on_the_shipped_file) ... ok
+test_compile_reproduces_the_shipped_file (tools.tests.test_vasebreaker.CompileVasebreakerTests.test_compile_reproduces_the_shipped_file) ... ok
+test_missing_package_degrades_to_unknowns_not_zero (tools.tests.test_vasebreaker.CompileVasebreakerTests.test_missing_package_degrades_to_unknowns_not_zero) ... ok
+test_vase_ids_all_resolve_against_the_pack (tools.tests.test_vasebreaker.CompileVasebreakerTests.test_vase_ids_all_resolve_against_the_pack)
+No dangling zombie/plant id: the rows point at real types in the shipped data. ... ok
+test_all_47_levels_present_and_sorted (tools.tests.test_vasebreaker.ShippedVasebreakerTests.test_all_47_levels_present_and_sorted) ... ok
+test_beach_69_matches_the_pack (tools.tests.test_vasebreaker.ShippedVasebreakerTests.test_beach_69_matches_the_pack)
+pkg_0290 is dumped in the probe; these are the raw values, not a re-derivation. ... ok
+test_beach_70_matches_the_pack (tools.tests.test_vasebreaker.ShippedVasebreakerTests.test_beach_70_matches_the_pack) ... ok
+test_colored_vases_and_firework_vases_are_kept (tools.tests.test_vasebreaker.ShippedVasebreakerTests.test_colored_vases_and_firework_vases_are_kept) ... ok
+test_every_level_carries_the_required_schema (tools.tests.test_vasebreaker.ShippedVasebreakerTests.test_every_level_carries_the_required_schema) ... ok
+test_fields_the_original_lacks_are_null_not_zero (tools.tests.test_vasebreaker.ShippedVasebreakerTests.test_fields_the_original_lacks_are_null_not_zero) ... ok
+test_format_and_top_level_keys (tools.tests.test_vasebreaker.ShippedVasebreakerTests.test_format_and_top_level_keys) ... ok
+test_level_ids_match_content_flag_one_to_one (tools.tests.test_vasebreaker.ShippedVasebreakerTests.test_level_ids_match_content_flag_one_to_one)
+Every client level with extra.vasebreaker is shipped, and nothing else is. ... ok
+test_only_frontyard_166_lacks_a_preset (tools.tests.test_vasebreaker.ShippedVasebreakerTests.test_only_frontyard_166_lacks_a_preset) ... ok
+test_render_is_byte_stable (tools.tests.test_vasebreaker.ShippedVasebreakerTests.test_render_is_byte_stable) ... ok
+vasebreaker check FAILED
+  - beach_69: vaseCount 999 != 30
+vasebreaker levels=47 presets=46 (missing 1) vases=1435 seedBank=8 startingSun=4 unknowns=7
+OK
+test_seed_bank_and_starting_sun_sources (tools.tests.test_vasebreaker.ShippedVasebreakerTests.test_seed_bank_and_starting_sun_sources) ... ok
+test_unknowns_name_every_absent_field_with_counts (tools.tests.test_vasebreaker.ShippedVasebreakerTests.test_unknowns_name_every_absent_field_with_counts) ... ok
+test_vase_count_and_type_totals_are_consistent (tools.tests.test_vasebreaker.ShippedVasebreakerTests.test_vase_count_and_type_totals_are_consistent) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 2.155s
+
+OK

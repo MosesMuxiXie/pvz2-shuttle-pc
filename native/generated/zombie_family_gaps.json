@@ -1,0 +1,1107 @@
+{
+ "appliedPatches": [
+  {
+   "after": "gargantuar",
+   "applied": true,
+   "approved": "2026-11-24 队长批准",
+   "basis": "pack TypeName football_mech → ZombieMechFootball，PopAnim 含 MECH → gargantuar",
+   "before": "walk",
+   "clientId": "football",
+   "currentBehavior": "gargantuar",
+   "currentFamily": "gargantuar",
+   "family": "gargantuar"
+  },
+  {
+   "after": "gargantuar",
+   "applied": true,
+   "approved": "2026-11-24 队长批准",
+   "basis": "无原版条目；content 自带 extra.art_gargantuar=true（authored）",
+   "before": "walk",
+   "clientId": "garden_gargantuar",
+   "currentBehavior": "gargantuar",
+   "currentFamily": "gargantuar",
+   "family": "gargantuar"
+  },
+  {
+   "after": "gargantuar",
+   "applied": true,
+   "approved": "2026-11-24 队长批准",
+   "basis": "无原版条目；content 自带 extra.art_gargantuar=true（authored）",
+   "before": "walk",
+   "clientId": "royal_chef_gargantuar",
+   "currentBehavior": "gargantuar",
+   "currentFamily": "gargantuar",
+   "family": "gargantuar"
+  }
+ ],
+ "counts": {
+  "appliedPatches": 3,
+  "authored": 27,
+  "currentDistribution": {
+   "fly": 0,
+   "gargantuar": 5,
+   "jump": 1,
+   "steal": 0,
+   "summon": 0,
+   "walk": 49
+  },
+  "familyDistribution": {
+   "fly": 0,
+   "gargantuar": 5,
+   "jump": 0,
+   "steal": 0,
+   "summon": 0,
+   "walk": 50
+  },
+  "gaps": 0,
+  "packPresentInContentPack": 20,
+  "stillUnknown": 0,
+  "total": 55,
+  "withEvidence": 28
+ },
+ "format": 1,
+ "gaps": [],
+ "generated": "zombie-family-gaps-v1",
+ "rows": [
+  {
+   "className": "ZombieBasic",
+   "clientId": "basic",
+   "confidence": "pack",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "pkg_2115_ZombieType.json: TypeName=tutorial → ZombieClass=ZombieBasic",
+    "pkg_2115_ZombieType.json: PopAnim=POPANIM_ZOMBIE_ZOMBIE_TUTORIAL",
+    "pkg_2115_ZombieType.json: IsBasicZombie=true",
+    "pkg_2115_ZombieType.json: Properties=RTID(ZombieTutorialDefault@ZombieProperties)",
+    "native/generated/zombie_classes.json: ZombieClass=ZombieBasic → family=walk（依据 214/240 types have IsBasicZombie=true in the ZombieTypes sheet）",
+    "native/generated/id_mapping.csv: client=basic pack=tutorial match_kind=manual",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": "manual",
+   "note": "",
+   "packId": "tutorial"
+  },
+  {
+   "className": "ZombieBasic",
+   "clientId": "beach",
+   "confidence": "pack",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "pkg_2115_ZombieType.json: TypeName=beach → ZombieClass=ZombieBasic",
+    "pkg_2115_ZombieType.json: PopAnim=POPANIM_ZOMBIE_ZOMBIE_BEACH_BASIC",
+    "pkg_2115_ZombieType.json: IsBasicZombie=true",
+    "pkg_2115_ZombieType.json: Properties=RTID(ZombieBeachDefault@ZombieProperties)",
+    "native/generated/zombie_classes.json: ZombieClass=ZombieBasic → family=walk（依据 214/240 types have IsBasicZombie=true in the ZombieTypes sheet）",
+    "native/generated/id_mapping.csv: client=beach pack=beach match_kind=exact",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": "exact",
+   "note": "",
+   "packId": "beach"
+  },
+  {
+   "className": "ZombieBasic",
+   "clientId": "buckethead",
+   "confidence": "pack",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "pkg_2115_ZombieType.json: TypeName=tutorial_armor2 → ZombieClass=ZombieBasic",
+    "pkg_2115_ZombieType.json: PopAnim=POPANIM_ZOMBIE_ZOMBIE_TUTORIAL",
+    "pkg_2115_ZombieType.json: IsBasicZombie=true",
+    "pkg_2115_ZombieType.json: Properties=RTID(ZombieTutorialArmor2Default@ZombieProperties)",
+    "native/generated/zombie_classes.json: ZombieClass=ZombieBasic → family=walk（依据 214/240 types have IsBasicZombie=true in the ZombieTypes sheet）",
+    "native/generated/id_mapping.csv: client=buckethead pack=tutorial_armor2 match_kind=manual",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": "manual",
+   "note": "",
+   "packId": "tutorial_armor2"
+  },
+  {
+   "className": "ZombieBasic",
+   "clientId": "conehead",
+   "confidence": "pack",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "pkg_2115_ZombieType.json: TypeName=tutorial_armor1 → ZombieClass=ZombieBasic",
+    "pkg_2115_ZombieType.json: PopAnim=POPANIM_ZOMBIE_ZOMBIE_TUTORIAL",
+    "pkg_2115_ZombieType.json: IsBasicZombie=true",
+    "pkg_2115_ZombieType.json: Properties=RTID(ZombieTutorialArmor1Default@ZombieProperties)",
+    "native/generated/zombie_classes.json: ZombieClass=ZombieBasic → family=walk（依据 214/240 types have IsBasicZombie=true in the ZombieTypes sheet）",
+    "native/generated/id_mapping.csv: client=conehead pack=tutorial_armor1 match_kind=manual",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": "manual",
+   "note": "",
+   "packId": "tutorial_armor1"
+  },
+  {
+   "className": "ZombieBasic",
+   "clientId": "cowboy",
+   "confidence": "pack",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "pkg_2115_ZombieType.json: TypeName=cowboy → ZombieClass=ZombieBasic",
+    "pkg_2115_ZombieType.json: PopAnim=POPANIM_ZOMBIE_ZOMBIE_WEST_BASIC",
+    "pkg_2115_ZombieType.json: IsBasicZombie=true",
+    "pkg_2115_ZombieType.json: Properties=RTID(ZombieCowboyDefault@ZombieProperties)",
+    "native/generated/zombie_classes.json: ZombieClass=ZombieBasic → family=walk（依据 214/240 types have IsBasicZombie=true in the ZombieTypes sheet）",
+    "native/generated/id_mapping.csv: client=cowboy pack=cowboy match_kind=exact",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": "exact",
+   "note": "",
+   "packId": "cowboy"
+  },
+  {
+   "className": "ZombieBasic",
+   "clientId": "cowboy_armor1",
+   "confidence": "pack",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "pkg_2115_ZombieType.json: TypeName=cowboy_armor1 → ZombieClass=ZombieBasic",
+    "pkg_2115_ZombieType.json: PopAnim=POPANIM_ZOMBIE_ZOMBIE_WEST_BASIC",
+    "pkg_2115_ZombieType.json: IsBasicZombie=true",
+    "pkg_2115_ZombieType.json: Properties=RTID(ZombieCowboyArmor1Default@ZombieProperties)",
+    "native/generated/zombie_classes.json: ZombieClass=ZombieBasic → family=walk（依据 214/240 types have IsBasicZombie=true in the ZombieTypes sheet）",
+    "native/generated/id_mapping.csv: client=cowboy_armor1 pack=cowboy_armor1 match_kind=exact",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": "exact",
+   "note": "",
+   "packId": "cowboy_armor1"
+  },
+  {
+   "className": "ZombieBasic",
+   "clientId": "dark",
+   "confidence": "pack",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "pkg_2115_ZombieType.json: TypeName=dark → ZombieClass=ZombieBasic",
+    "pkg_2115_ZombieType.json: PopAnim=POPANIM_ZOMBIE_ZOMBIE_RENAI_BASIC",
+    "pkg_2115_ZombieType.json: IsBasicZombie=true",
+    "pkg_2115_ZombieType.json: Properties=RTID(ZombieRenaiDefault@ZombieProperties)",
+    "native/generated/zombie_classes.json: ZombieClass=ZombieBasic → family=walk（依据 214/240 types have IsBasicZombie=true in the ZombieTypes sheet）",
+    "native/generated/id_mapping.csv: client=dark pack=dark match_kind=exact",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": "exact",
+   "note": "",
+   "packId": "dark"
+  },
+  {
+   "className": "ZombieBasic",
+   "clientId": "dark_armor1",
+   "confidence": "pack",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "pkg_2115_ZombieType.json: TypeName=dark_armor1 → ZombieClass=ZombieBasic",
+    "pkg_2115_ZombieType.json: PopAnim=POPANIM_ZOMBIE_ZOMBIE_RENAI_BASIC_ARMOR",
+    "pkg_2115_ZombieType.json: IsBasicZombie=true",
+    "pkg_2115_ZombieType.json: Properties=RTID(ZombieRenaiArmor1Default@ZombieProperties)",
+    "native/generated/zombie_classes.json: ZombieClass=ZombieBasic → family=walk（依据 214/240 types have IsBasicZombie=true in the ZombieTypes sheet）",
+    "native/generated/id_mapping.csv: client=dark_armor1 pack=dark_armor1 match_kind=exact",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": "exact",
+   "note": "",
+   "packId": "dark_armor1"
+  },
+  {
+   "className": "ZombieEightiesBasic",
+   "clientId": "eighties",
+   "confidence": "pack",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "pkg_2115_ZombieType.json: TypeName=eighties → ZombieClass=ZombieEightiesBasic",
+    "pkg_2115_ZombieType.json: PopAnim=POPANIM_ZOMBIE_ZOMBIE_EIGHTIES_BASIC",
+    "pkg_2115_ZombieType.json: IsBasicZombie=true",
+    "pkg_2115_ZombieType.json: Properties=RTID(ZombieEightiesDefault@ZombieProperties)",
+    "native/generated/zombie_classes.json: ZombieClass=ZombieEightiesBasic → family=walk（依据 6/6 types have IsBasicZombie=true in the ZombieTypes sheet）",
+    "native/generated/id_mapping.csv: client=eighties pack=eighties match_kind=exact",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": "exact",
+   "note": "",
+   "packId": "eighties"
+  },
+  {
+   "className": "ZombieBasic",
+   "clientId": "flag",
+   "confidence": "pack",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "pkg_2115_ZombieType.json: TypeName=tutorial_flag → ZombieClass=ZombieBasic",
+    "pkg_2115_ZombieType.json: PopAnim=POPANIM_ZOMBIE_ZOMBIE_TUTORIAL_FLAG",
+    "pkg_2115_ZombieType.json: IsBasicZombie=true",
+    "pkg_2115_ZombieType.json: Properties=RTID(ZombieTutorialFlagDefault@ZombieProperties)",
+    "native/generated/zombie_classes.json: ZombieClass=ZombieBasic → family=walk（依据 214/240 types have IsBasicZombie=true in the ZombieTypes sheet）",
+    "native/generated/id_mapping.csv: client=flag pack=tutorial_flag match_kind=manual",
+    "content/zombies.json: extra.is_flag=true",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": "manual",
+   "note": "",
+   "packId": "tutorial_flag"
+  },
+  {
+   "className": "ZombieMechFootball",
+   "clientId": "football",
+   "confidence": "pack",
+   "currentBehavior": "gargantuar",
+   "currentFamily": "gargantuar",
+   "evidence": [
+    "pkg_2115_ZombieType.json: TypeName=football_mech → ZombieClass=ZombieMechFootball",
+    "pkg_2115_ZombieType.json: PopAnim=POPANIM_ZOMBIE_ZOMBIE_MECH_FOOTBALL",
+    "pkg_2115_ZombieType.json: Properties=RTID(ZombieMechFootball@ZombieProperties)",
+    "native/generated/zombie_classes.json: ZombieClass=ZombieMechFootball → family=gargantuar（依据 PopAnim of 3/4 types contains one of GARGANTUAR, ZOMBOSS, MECH）",
+    "native/generated/id_mapping.csv: client=football pack=football_mech match_kind=manual",
+    "content/zombies.json: extra.push_damage=400",
+    "content/zombies.json: behavior=gargantuar"
+   ],
+   "family": "gargantuar",
+   "gap": false,
+   "matchKind": "manual",
+   "note": "2026-11-24 已应用补丁（队长批准）：behavior walk → gargantuar，缺口已闭合",
+   "packId": "football_mech"
+  },
+  {
+   "className": "ZombieBasic",
+   "clientId": "future",
+   "confidence": "pack",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "pkg_2115_ZombieType.json: TypeName=future → ZombieClass=ZombieBasic",
+    "pkg_2115_ZombieType.json: PopAnim=POPANIM_ZOMBIE_ZOMBIE_STEAM_BASIC",
+    "pkg_2115_ZombieType.json: IsBasicZombie=true",
+    "pkg_2115_ZombieType.json: Properties=RTID(ZombieFutureDefault@ZombieProperties)",
+    "native/generated/zombie_classes.json: ZombieClass=ZombieBasic → family=walk（依据 214/240 types have IsBasicZombie=true in the ZombieTypes sheet）",
+    "native/generated/id_mapping.csv: client=future pack=future match_kind=exact",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": "exact",
+   "note": "",
+   "packId": "future"
+  },
+  {
+   "className": "ZombieBasic",
+   "clientId": "future_armor1",
+   "confidence": "pack",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "pkg_2115_ZombieType.json: TypeName=future_armor1 → ZombieClass=ZombieBasic",
+    "pkg_2115_ZombieType.json: PopAnim=POPANIM_ZOMBIE_ZOMBIE_STEAM_BASIC_ARMOR",
+    "pkg_2115_ZombieType.json: IsBasicZombie=true",
+    "pkg_2115_ZombieType.json: Properties=RTID(ZombieFutureArmor1Default@ZombieProperties)",
+    "native/generated/zombie_classes.json: ZombieClass=ZombieBasic → family=walk（依据 214/240 types have IsBasicZombie=true in the ZombieTypes sheet）",
+    "native/generated/id_mapping.csv: client=future_armor1 pack=future_armor1 match_kind=exact",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": "exact",
+   "note": "",
+   "packId": "future_armor1"
+  },
+  {
+   "className": null,
+   "clientId": "gang_bucket",
+   "confidence": "authored",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "native/generated/id_mapping.csv: client=gang_bucket 无 pack 行（match_kind=none）",
+    "content/zombies.json: extra.art_variants 键=armor1,base",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": null,
+   "note": "无原版条目，族来自 content 自述（authored），engine 行为与之一致",
+   "packId": null
+  },
+  {
+   "className": null,
+   "clientId": "gang_carl",
+   "confidence": "authored",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "native/generated/id_mapping.csv: client=gang_carl 无 pack 行（match_kind=none）",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": null,
+   "note": "无原版条目，族来自 content 自述（authored），engine 行为与之一致",
+   "packId": null
+  },
+  {
+   "className": null,
+   "clientId": "gang_cone",
+   "confidence": "authored",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "native/generated/id_mapping.csv: client=gang_cone 无 pack 行（match_kind=none）",
+    "content/zombies.json: extra.art_variants 键=armor1,base",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": null,
+   "note": "无原版条目，族来自 content 自述（authored），engine 行为与之一致",
+   "packId": null
+  },
+  {
+   "className": "ZombieBasic",
+   "clientId": "gang_flag",
+   "confidence": "pack",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "pkg_2115_ZombieType.json: TypeName=gang_flag → ZombieClass=ZombieBasic",
+    "pkg_2115_ZombieType.json: PopAnim=POPANIM_ZOMBIE_ZOMBIE_GANG_FLAG",
+    "pkg_2115_ZombieType.json: IsBasicZombie=true",
+    "pkg_2115_ZombieType.json: Properties=RTID(ZombieGangFlagDefault@ZombieProperties)",
+    "native/generated/zombie_classes.json: ZombieClass=ZombieBasic → family=walk（依据 214/240 types have IsBasicZombie=true in the ZombieTypes sheet）",
+    "native/generated/id_mapping.csv: client=gang_flag pack=gang_flag match_kind=exact",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": "exact",
+   "note": "",
+   "packId": "gang_flag"
+  },
+  {
+   "className": "ZombieGangGargantuar",
+   "clientId": "gang_gargantuar",
+   "confidence": "pack",
+   "currentBehavior": "walk",
+   "currentFamily": "gargantuar",
+   "evidence": [
+    "pkg_2115_ZombieType.json: TypeName=gang_gargantuar → ZombieClass=ZombieGangGargantuar",
+    "pkg_2115_ZombieType.json: PopAnim=POPANIM_ZOMBIE_ZOMBIE_GANG_GARGANTUAR",
+    "pkg_2115_ZombieType.json: Properties=RTID(ZombieGangGargantuar@ZombieProperties)",
+    "native/generated/zombie_classes.json: ZombieClass=ZombieGangGargantuar → family=gargantuar（依据 PopAnim of 1/1 types contains one of GARGANTUAR, ZOMBOSS, MECH）",
+    "native/generated/id_mapping.csv: client=gang_gargantuar pack=gang_gargantuar match_kind=exact",
+    "content/zombies.json: extra.art_gargantuar=true（客户端自带的美术族标记）",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "gargantuar",
+   "gap": false,
+   "matchKind": "exact",
+   "note": "",
+   "packId": "gang_gargantuar"
+  },
+  {
+   "className": "ZombieImp",
+   "clientId": "gang_imp",
+   "confidence": "pack",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "pkg_2115_ZombieType.json: TypeName=gang_imp → ZombieClass=ZombieImp",
+    "pkg_2115_ZombieType.json: PopAnim=POPANIM_ZOMBIE_ZOMBIE_GANG_IMP",
+    "pkg_2115_ZombieType.json: Properties=RTID(ZombieTutorialImpDefault@ZombieProperties)",
+    "native/generated/zombie_classes.json: ZombieClass=ZombieImp → family=walk（依据 no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 35 type(s)）",
+    "native/generated/id_mapping.csv: client=gang_imp pack=gang_imp match_kind=exact",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": "exact",
+   "note": "",
+   "packId": "gang_imp"
+  },
+  {
+   "className": "ZombieGangMolotov",
+   "clientId": "gang_molotov",
+   "confidence": "pack",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "pkg_2115_ZombieType.json: TypeName=gang_molotov → ZombieClass=ZombieGangMolotov",
+    "pkg_2115_ZombieType.json: PopAnim=POPANIM_ZOMBIE_ZOMBIE_GANG_MOLOTOV",
+    "pkg_2115_ZombieType.json: Properties=RTID(ZombieGangMolotovDefault@ZombieProperties)",
+    "native/generated/zombie_classes.json: ZombieClass=ZombieGangMolotov → family=walk（依据 no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)）",
+    "native/generated/id_mapping.csv: client=gang_molotov pack=gang_molotov match_kind=exact",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": "exact",
+   "note": "",
+   "packId": "gang_molotov"
+  },
+  {
+   "className": null,
+   "clientId": "gang_ozloc",
+   "confidence": "authored",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "native/generated/id_mapping.csv: client=gang_ozloc 无 pack 行（match_kind=none）",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": null,
+   "note": "无原版条目，族来自 content 自述（authored），engine 行为与之一致",
+   "packId": null
+  },
+  {
+   "className": null,
+   "clientId": "gang_zombie",
+   "confidence": "authored",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "native/generated/id_mapping.csv: client=gang_zombie 无 pack 行（match_kind=none）",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": null,
+   "note": "无原版条目，族来自 content 自述（authored），engine 行为与之一致",
+   "packId": null
+  },
+  {
+   "className": null,
+   "clientId": "garden_bucket",
+   "confidence": "authored",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "native/generated/id_mapping.csv: client=garden_bucket 无 pack 行（match_kind=none）",
+    "content/zombies.json: extra.art_variants 键=armor1,base",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": null,
+   "note": "无原版条目，族来自 content 自述（authored），engine 行为与之一致",
+   "packId": null
+  },
+  {
+   "className": null,
+   "clientId": "garden_cone",
+   "confidence": "authored",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "native/generated/id_mapping.csv: client=garden_cone 无 pack 行（match_kind=none）",
+    "content/zombies.json: extra.art_variants 键=armor1,base",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": null,
+   "note": "无原版条目，族来自 content 自述（authored），engine 行为与之一致",
+   "packId": null
+  },
+  {
+   "className": null,
+   "clientId": "garden_cuju",
+   "confidence": "authored",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "native/generated/id_mapping.csv: client=garden_cuju 无 pack 行（match_kind=none）",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": null,
+   "note": "无原版条目，族来自 content 自述（authored），engine 行为与之一致",
+   "packId": null
+  },
+  {
+   "className": null,
+   "clientId": "garden_drummer",
+   "confidence": "authored",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "native/generated/id_mapping.csv: client=garden_drummer 无 pack 行（match_kind=none）",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": null,
+   "note": "无原版条目，族来自 content 自述（authored），engine 行为与之一致",
+   "packId": null
+  },
+  {
+   "className": null,
+   "clientId": "garden_flag",
+   "confidence": "authored",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "native/generated/id_mapping.csv: client=garden_flag 无 pack 行（match_kind=none）",
+    "content/zombies.json: extra.art_variants 键=base",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": null,
+   "note": "无原版条目，族来自 content 自述（authored），engine 行为与之一致",
+   "packId": null
+  },
+  {
+   "className": null,
+   "clientId": "garden_gargantuar",
+   "confidence": "authored",
+   "currentBehavior": "gargantuar",
+   "currentFamily": "gargantuar",
+   "evidence": [
+    "native/generated/id_mapping.csv: client=garden_gargantuar 无 pack 行（match_kind=none）",
+    "content/zombies.json: extra.art_gargantuar=true（客户端自带的美术族标记）",
+    "content/zombies.json: behavior=gargantuar"
+   ],
+   "family": "gargantuar",
+   "gap": false,
+   "matchKind": null,
+   "note": "无原版条目，族来自 content 自述（authored），engine 行为与之一致；2026-11-24 已应用补丁（队长批准）：behavior walk → gargantuar，缺口已闭合",
+   "packId": null
+  },
+  {
+   "className": null,
+   "clientId": "garden_imp",
+   "confidence": "authored",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "native/generated/id_mapping.csv: client=garden_imp 无 pack 行（match_kind=none）",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": null,
+   "note": "无原版条目，族来自 content 自述（authored），engine 行为与之一致",
+   "packId": null
+  },
+  {
+   "className": null,
+   "clientId": "garden_poet",
+   "confidence": "authored",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "native/generated/id_mapping.csv: client=garden_poet 无 pack 行（match_kind=none）",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": null,
+   "note": "无原版条目，族来自 content 自述（authored），engine 行为与之一致",
+   "packId": null
+  },
+  {
+   "className": null,
+   "clientId": "garden_umbrella",
+   "confidence": "authored",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "native/generated/id_mapping.csv: client=garden_umbrella 无 pack 行（match_kind=none）",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": null,
+   "note": "无原版条目，族来自 content 自述（authored），engine 行为与之一致",
+   "packId": null
+  },
+  {
+   "className": null,
+   "clientId": "garden_zombie",
+   "confidence": "authored",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "native/generated/id_mapping.csv: client=garden_zombie 无 pack 行（match_kind=none）",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": null,
+   "note": "无原版条目，族来自 content 自述（authored），engine 行为与之一致",
+   "packId": null
+  },
+  {
+   "className": "ZombieGargantuar",
+   "clientId": "gargantuar",
+   "confidence": "pack",
+   "currentBehavior": "gargantuar",
+   "currentFamily": "gargantuar",
+   "evidence": [
+    "pkg_2115_ZombieType.json: TypeName=tutorial_gargantuar → ZombieClass=ZombieGargantuar",
+    "pkg_2115_ZombieType.json: PopAnim=POPANIM_ZOMBIE_TUTORIAL_GARGANTUAR",
+    "pkg_2115_ZombieType.json: Properties=RTID(ZombieTutorialGargantuar@ZombieProperties)",
+    "native/generated/zombie_classes.json: ZombieClass=ZombieGargantuar → family=gargantuar（依据 PopAnim of 42/49 types contains one of GARGANTUAR, ZOMBOSS, MECH）",
+    "native/generated/id_mapping.csv: client=gargantuar pack=tutorial_gargantuar match_kind=manual",
+    "content/zombies.json: behavior=gargantuar"
+   ],
+   "family": "gargantuar",
+   "gap": false,
+   "matchKind": "manual",
+   "note": "",
+   "packId": "tutorial_gargantuar"
+  },
+  {
+   "className": "ZombieBasic",
+   "clientId": "iceage",
+   "confidence": "pack",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "pkg_2115_ZombieType.json: TypeName=iceage → ZombieClass=ZombieBasic",
+    "pkg_2115_ZombieType.json: PopAnim=POPANIM_ZOMBIE_ZOMBIE_ICEAGE_BASIC",
+    "pkg_2115_ZombieType.json: IsBasicZombie=true",
+    "pkg_2115_ZombieType.json: Properties=RTID(ZombieIceageDefault@ZombieProperties)",
+    "native/generated/zombie_classes.json: ZombieClass=ZombieBasic → family=walk（依据 214/240 types have IsBasicZombie=true in the ZombieTypes sheet）",
+    "native/generated/id_mapping.csv: client=iceage pack=iceage match_kind=exact",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": "exact",
+   "note": "",
+   "packId": "iceage"
+  },
+  {
+   "className": null,
+   "clientId": "imp_maid",
+   "confidence": "authored",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "native/generated/id_mapping.csv: client=imp_maid 无 pack 行（match_kind=none）",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": null,
+   "note": "无原版条目，族来自 content 自述（authored），engine 行为与之一致",
+   "packId": null
+  },
+  {
+   "className": "ZombieBasic",
+   "clientId": "kongfu",
+   "confidence": "pack",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "pkg_2115_ZombieType.json: TypeName=kongfu → ZombieClass=ZombieBasic",
+    "pkg_2115_ZombieType.json: PopAnim=POPANIM_ZOMBIE_ZOMBIE_KONGFU_BASIC",
+    "pkg_2115_ZombieType.json: Properties=RTID(ZombieKongfuDefault@ZombieProperties)",
+    "native/generated/zombie_classes.json: ZombieClass=ZombieBasic → family=walk（依据 214/240 types have IsBasicZombie=true in the ZombieTypes sheet）",
+    "native/generated/id_mapping.csv: client=kongfu pack=kongfu match_kind=exact",
+    "content/zombies.json: extra.summon_count=3",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": "exact",
+   "note": "extra.summon_count=3 是召唤表现，原版类 ZombieBasic 判 walk；不改族，summon 只作表现",
+   "packId": "kongfu"
+  },
+  {
+   "className": "ZombieLostCityBasic",
+   "clientId": "lostcity",
+   "confidence": "pack",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "pkg_2115_ZombieType.json: TypeName=lostcity → ZombieClass=ZombieLostCityBasic",
+    "pkg_2115_ZombieType.json: PopAnim=POPANIM_ZOMBIE_ZOMBIE_LOSTCITY_BASIC",
+    "pkg_2115_ZombieType.json: IsBasicZombie=true",
+    "pkg_2115_ZombieType.json: Properties=RTID(ZombieLostCityDefault@ZombieProperties)",
+    "native/generated/zombie_classes.json: ZombieClass=ZombieLostCityBasic → family=walk（依据 6/7 types have IsBasicZombie=true in the ZombieTypes sheet）",
+    "native/generated/id_mapping.csv: client=lostcity pack=lostcity match_kind=exact",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": "exact",
+   "note": "",
+   "packId": "lostcity"
+  },
+  {
+   "className": null,
+   "clientId": "market_armor1",
+   "confidence": "authored",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "native/generated/id_mapping.csv: client=market_armor1 无 pack 行（match_kind=none）",
+    "content/zombies.json: extra.art_variants 键=armor1,base",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": null,
+   "note": "无原版条目，族来自 content 自述（authored），engine 行为与之一致",
+   "packId": null
+  },
+  {
+   "className": null,
+   "clientId": "market_armor2",
+   "confidence": "authored",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "native/generated/id_mapping.csv: client=market_armor2 无 pack 行（match_kind=none）",
+    "content/zombies.json: extra.art_variants 键=armor1,base",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": null,
+   "note": "无原版条目，族来自 content 自述（authored），engine 行为与之一致",
+   "packId": null
+  },
+  {
+   "className": null,
+   "clientId": "market_clockwork",
+   "confidence": "authored",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "native/generated/id_mapping.csv: client=market_clockwork 无 pack 行（match_kind=none）",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": null,
+   "note": "无原版条目，族来自 content 自述（authored），engine 行为与之一致",
+   "packId": null
+  },
+  {
+   "className": null,
+   "clientId": "market_mechanic",
+   "confidence": "authored",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "native/generated/id_mapping.csv: client=market_mechanic 无 pack 行（match_kind=none）",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": null,
+   "note": "无原版条目，族来自 content 自述（authored），engine 行为与之一致",
+   "packId": null
+  },
+  {
+   "className": null,
+   "clientId": "market_trapeze",
+   "confidence": "authored",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "native/generated/id_mapping.csv: client=market_trapeze 无 pack 行（match_kind=none）",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": null,
+   "note": "无原版条目，族来自 content 自述（authored），engine 行为与之一致",
+   "packId": null
+  },
+  {
+   "className": "ZombieBasic",
+   "clientId": "mummy",
+   "confidence": "pack",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "pkg_2115_ZombieType.json: TypeName=mummy → ZombieClass=ZombieBasic",
+    "pkg_2115_ZombieType.json: PopAnim=POPANIM_ZOMBIE_ZOMBIE_EGYPT_BASIC",
+    "pkg_2115_ZombieType.json: IsBasicZombie=true",
+    "pkg_2115_ZombieType.json: Properties=RTID(ZombieMummyDefault@ZombieProperties)",
+    "native/generated/zombie_classes.json: ZombieClass=ZombieBasic → family=walk（依据 214/240 types have IsBasicZombie=true in the ZombieTypes sheet）",
+    "native/generated/id_mapping.csv: client=mummy pack=mummy match_kind=exact",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": "exact",
+   "note": "",
+   "packId": "mummy"
+  },
+  {
+   "className": "ZombieBasic",
+   "clientId": "mummy_armor1",
+   "confidence": "pack",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "pkg_2115_ZombieType.json: TypeName=mummy_armor1 → ZombieClass=ZombieBasic",
+    "pkg_2115_ZombieType.json: PopAnim=POPANIM_ZOMBIE_ZOMBIE_EGYPT_BASIC",
+    "pkg_2115_ZombieType.json: IsBasicZombie=true",
+    "pkg_2115_ZombieType.json: Properties=RTID(ZombieMummyArmor1Default@ZombieProperties)",
+    "native/generated/zombie_classes.json: ZombieClass=ZombieBasic → family=walk（依据 214/240 types have IsBasicZombie=true in the ZombieTypes sheet）",
+    "native/generated/id_mapping.csv: client=mummy_armor1 pack=mummy_armor1 match_kind=exact",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": "exact",
+   "note": "",
+   "packId": "mummy_armor1"
+  },
+  {
+   "className": "ZombieBasic",
+   "clientId": "mummy_armor2",
+   "confidence": "pack",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "pkg_2115_ZombieType.json: TypeName=mummy_armor2 → ZombieClass=ZombieBasic",
+    "pkg_2115_ZombieType.json: PopAnim=POPANIM_ZOMBIE_ZOMBIE_EGYPT_BASIC",
+    "pkg_2115_ZombieType.json: IsBasicZombie=true",
+    "pkg_2115_ZombieType.json: Properties=RTID(ZombieMummyArmor2Default@ZombieProperties)",
+    "native/generated/zombie_classes.json: ZombieClass=ZombieBasic → family=walk（依据 214/240 types have IsBasicZombie=true in the ZombieTypes sheet）",
+    "native/generated/id_mapping.csv: client=mummy_armor2 pack=mummy_armor2 match_kind=exact",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": "exact",
+   "note": "",
+   "packId": "mummy_armor2"
+  },
+  {
+   "className": "ZombieModernNewspaper",
+   "clientId": "newspaper",
+   "confidence": "pack",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "pkg_2115_ZombieType.json: TypeName=modern_newspaper → ZombieClass=ZombieModernNewspaper",
+    "pkg_2115_ZombieType.json: PopAnim=POPANIM_ZOMBIE_ZOMBIE_MODERN_NEWSPAPER",
+    "pkg_2115_ZombieType.json: Properties=RTID(ZombieModernNewspaperDefault@ZombieProperties)",
+    "native/generated/zombie_classes.json: ZombieClass=ZombieModernNewspaper → family=walk（依据 no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 11 type(s)）",
+    "native/generated/id_mapping.csv: client=newspaper pack=modern_newspaper match_kind=manual",
+    "content/zombies.json: extra.newspaper_hp=800",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": "manual",
+   "note": "",
+   "packId": "modern_newspaper"
+  },
+  {
+   "className": "ZombieBasic",
+   "clientId": "pirate",
+   "confidence": "pack",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "pkg_2115_ZombieType.json: TypeName=pirate → ZombieClass=ZombieBasic",
+    "pkg_2115_ZombieType.json: PopAnim=POPANIM_ZOMBIE_ZOMBIE_PIRATE_BASIC",
+    "pkg_2115_ZombieType.json: IsBasicZombie=true",
+    "pkg_2115_ZombieType.json: Properties=RTID(ZombiePirateDefault@ZombieProperties)",
+    "native/generated/zombie_classes.json: ZombieClass=ZombieBasic → family=walk（依据 214/240 types have IsBasicZombie=true in the ZombieTypes sheet）",
+    "native/generated/id_mapping.csv: client=pirate pack=pirate match_kind=exact",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": "exact",
+   "note": "",
+   "packId": "pirate"
+  },
+  {
+   "className": "ZombieBasic",
+   "clientId": "pirate_armor1",
+   "confidence": "pack",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "pkg_2115_ZombieType.json: TypeName=pirate_armor1 → ZombieClass=ZombieBasic",
+    "pkg_2115_ZombieType.json: PopAnim=POPANIM_ZOMBIE_ZOMBIE_PIRATE_BASIC",
+    "pkg_2115_ZombieType.json: IsBasicZombie=true",
+    "pkg_2115_ZombieType.json: Properties=RTID(ZombiePirateArmor1Default@ZombieProperties)",
+    "native/generated/zombie_classes.json: ZombieClass=ZombieBasic → family=walk（依据 214/240 types have IsBasicZombie=true in the ZombieTypes sheet）",
+    "native/generated/id_mapping.csv: client=pirate_armor1 pack=pirate_armor1 match_kind=exact",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": "exact",
+   "note": "",
+   "packId": "pirate_armor1"
+  },
+  {
+   "className": "ZombieIceAgeDodo",
+   "clientId": "pole_vaulter",
+   "confidence": "pack",
+   "currentBehavior": "jump",
+   "currentFamily": "jump",
+   "evidence": [
+    "pkg_2115_ZombieType.json: TypeName=iceage_dodo → ZombieClass=ZombieIceAgeDodo",
+    "pkg_2115_ZombieType.json: PopAnim=POPANIM_ZOMBIE_ZOMBIE_ICEAGE_DODORIDER",
+    "pkg_2115_ZombieType.json: Properties=RTID(ZombieIceAgeDodo@ZombieProperties)",
+    "native/generated/zombie_classes.json: ZombieClass=ZombieIceAgeDodo → family=walk（依据 no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 5 type(s)）",
+    "native/generated/id_mapping.csv: client=pole_vaulter pack=iceage_dodo match_kind=manual",
+    "content/zombies.json: extra.jump_distance=1",
+    "content/zombies.json: behavior=jump"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": "manual",
+   "note": "content.behavior=jump 给 jump，原版类族给 walk；客户端自述优先，保留现状，不算缺口；原版把 dodo 判 walk，content 主动写 jump（jump_distance），保留 content 值",
+   "packId": "iceage_dodo"
+  },
+  {
+   "className": null,
+   "clientId": "royal_chef_gargantuar",
+   "confidence": "authored",
+   "currentBehavior": "gargantuar",
+   "currentFamily": "gargantuar",
+   "evidence": [
+    "native/generated/id_mapping.csv: client=royal_chef_gargantuar 无 pack 行（match_kind=none）",
+    "content/zombies.json: extra.art_gargantuar=true（客户端自带的美术族标记）",
+    "content/zombies.json: behavior=gargantuar"
+   ],
+   "family": "gargantuar",
+   "gap": false,
+   "matchKind": null,
+   "note": "无原版条目，族来自 content 自述（authored），engine 行为与之一致；2026-11-24 已应用补丁（队长批准）：behavior walk → gargantuar，缺口已闭合",
+   "packId": null
+  },
+  {
+   "className": null,
+   "clientId": "royal_flag",
+   "confidence": "authored",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "native/generated/id_mapping.csv: client=royal_flag 无 pack 行（match_kind=none）",
+    "content/zombies.json: extra.source_codename=royal_flag（原版表中不存在该 TypeName）",
+    "content/zombies.json: extra.is_flag=true",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": null,
+   "note": "无原版条目，族来自 content 自述（authored），engine 行为与之一致",
+   "packId": null
+  },
+  {
+   "className": null,
+   "clientId": "royal_noblewoman",
+   "confidence": "authored",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "native/generated/id_mapping.csv: client=royal_noblewoman 无 pack 行（match_kind=none）",
+    "content/zombies.json: extra.art_variants 键=armor1,base",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": null,
+   "note": "无原版条目，族来自 content 自述（authored），engine 行为与之一致",
+   "packId": null
+  },
+  {
+   "className": null,
+   "clientId": "royal_princess",
+   "confidence": "authored",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "native/generated/id_mapping.csv: client=royal_princess 无 pack 行（match_kind=none）",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": null,
+   "note": "无原版条目，族来自 content 自述（authored），engine 行为与之一致",
+   "packId": null
+  },
+  {
+   "className": null,
+   "clientId": "royal_winetasting",
+   "confidence": "authored",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "native/generated/id_mapping.csv: client=royal_winetasting 无 pack 行（match_kind=none）",
+    "content/zombies.json: extra.art_variants 键=armor1,base",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": null,
+   "note": "无原版条目，族来自 content 自述（authored），engine 行为与之一致",
+   "packId": null
+  },
+  {
+   "className": null,
+   "clientId": "royal_zombie",
+   "confidence": "authored",
+   "currentBehavior": "walk",
+   "currentFamily": "walk",
+   "evidence": [
+    "native/generated/id_mapping.csv: client=royal_zombie 无 pack 行（match_kind=none）",
+    "content/zombies.json: extra.source_codename=royal（原版表中不存在该 TypeName）",
+    "content/zombies.json: behavior=walk"
+   ],
+   "family": "walk",
+   "gap": false,
+   "matchKind": null,
+   "note": "无原版条目，族来自 content 自述（authored），engine 行为与之一致",
+   "packId": null
+  }
+ ],
+ "sources": {
+  "classes": "native/generated/zombie_classes.json",
+  "mapping": "native/generated/id_mapping.csv",
+  "pack": "native/generated/content.pack",
+  "propertySheet": "pkg_2112_ZombiePropertySheet.json",
+  "typeSheet": "pkg_2115_ZombieType.json",
+  "zombies": "content/zombies.json"
+ }
+}

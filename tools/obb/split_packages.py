@@ -1,5 +1,14 @@
 # -*- coding: utf-8 -*-
-"""Split 0684_PACKAGES (concatenated 4 KiB-aligned RTON blocks) into JSON."""
+"""Split 0684_PACKAGES (concatenated 4 KiB-aligned RTON blocks) into JSON.
+
+Usage:
+    python tools/obb/split_packages.py                       # 460.1 defaults
+    python tools/obb/split_packages.py --src A --out B       # any other build
+
+--src is the decompressed data.bin of the PACKAGES subgroup; --out is the JSON
+directory. Both fall back to PVZ2_RAW_PACKAGES / PVZ2_OBB_DIR, then to the 460.1
+paths, so the 460.9 rebase can build a second tree without touching this file.
+"""
 import io
 import json
 import os
@@ -9,8 +18,17 @@ import time
 sys.path.insert(0, os.environ.get("PVZ2_PYVZ2_DIR", os.path.join(os.path.dirname(__file__), "..", "..", "..", "work", "deps", "pyvz2-main", "OBBEdit")))
 from pyvz2rton import RTONDecoder
 
-SRC = r"D:\OneDrive\文档\pvz_shuttle\work\obb_raw\0684_PACKAGES\data.bin"
-OUT = r"D:\OneDrive\文档\pvz_shuttle\work\obb_packages"
+_ARGS = {}
+_rest = []
+for _a in sys.argv[1:]:
+    if _a.startswith("--") and "=" in _a:
+        _k, _v = _a.split("=", 1)
+        _ARGS[_k[2:]] = _v
+    else:
+        _rest.append(_a)
+
+SRC = _ARGS.get("src") or os.environ.get("PVZ2_RAW_PACKAGES") or r"D:\OneDrive\文档\pvz_shuttle\work\obb_raw\0684_PACKAGES\data.bin"
+OUT = _ARGS.get("out") or os.environ.get("PVZ2_OBB_DIR") or r"D:\OneDrive\文档\pvz_shuttle\work\obb_packages"
 os.makedirs(OUT, exist_ok=True)
 
 

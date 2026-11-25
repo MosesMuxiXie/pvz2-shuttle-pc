@@ -1,0 +1,11 @@
+{
+ "level": "beach_23",
+ "seed": 1,
+ "inputs": [
+  {"tick": 0, "op": "plant", "type": "peashooter", "row": 2, "col": 0},
+  {"tick": 300, "op": "plant", "type": "peashooter", "row": 2, "col": 1},
+  {"tick": 600, "op": "plant", "type": "peashooter", "row": 2, "col": 2},
+  {"tick": 900, "op": "plant", "type": "peashooter", "row": 2, "col": 3},
+  {"tick": 1200, "op": "plant", "type": "peashooter", "row": 2, "col": 4}
+ ]
+}

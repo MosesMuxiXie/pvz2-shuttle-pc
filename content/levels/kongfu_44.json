@@ -184,6 +184,14 @@
   "level_number": 19,
   "wave_count": 9,
   "original_waves": 9,
-  "night": false
+  "night": false,
+  "minecarts": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "rail": true,
+  "suppressFlagZombie": true
  }
 }

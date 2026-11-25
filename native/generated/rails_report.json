@@ -1,0 +1,8750 @@
+{
+ "byWorld": {
+  "beach": {
+   "functional": 6
+  },
+  "carnival": {
+   "functional": 17
+  },
+  "chinesegarden": {
+   "functional": 4
+  },
+  "cowboy": {
+   "functional": 39
+  },
+  "dark": {
+   "functional": 1
+  },
+  "dino": {
+   "functional": 4
+  },
+  "egypt": {
+   "decorative": 1,
+   "functional": 19
+  },
+  "eighties": {
+   "functional": 8
+  },
+  "fairy": {
+   "functional": 5,
+   "unknown": 1
+  },
+  "frontyard": {
+   "decorative": 2,
+   "functional": 16
+  },
+  "future": {
+   "functional": 5,
+   "unknown": 3
+  },
+  "heian": {
+   "functional": 2
+  },
+  "iceage": {
+   "functional": 3,
+   "unknown": 1
+  },
+  "kongfu": {
+   "functional": 17
+  },
+  "losantosvice": {
+   "functional": 1
+  },
+  "lostcity": {
+   "functional": 5
+  },
+  "lunarrainbowmarket": {
+   "decorative": 1,
+   "functional": 13
+  },
+  "mausoleum": {
+   "functional": 1
+  },
+  "memorytour": {
+   "functional": 2
+  },
+  "modern": {
+   "functional": 2
+  },
+  "muji": {
+   "decorative": 1
+  },
+  "pirate": {
+   "decorative": 1,
+   "functional": 12
+  },
+  "plantagenet": {
+   "functional": 4,
+   "unknown": 1
+  },
+  "renai": {
+   "functional": 2
+  },
+  "sky": {
+   "functional": 2
+  },
+  "steam": {
+   "functional": 2
+  }
+ },
+ "classes": {
+  "DangerRoomRailcartDesigner": {
+   "count": 2,
+   "verdicts": {
+    "functional": 2
+   }
+  },
+  "RailcartProperties": {
+   "count": 202,
+   "verdicts": {
+    "decorative": 6,
+    "functional": 195,
+    "unknown": 1
+   }
+  },
+  "RailcartTutorialIntroProperties": {
+   "count": 1,
+   "verdicts": {
+    "decorative": 1
+   }
+  }
+ },
+ "counts": {
+  "bossModuleLevels": 71,
+  "bossStageNamed": 18,
+  "clientBoss": 71,
+  "clientFlagged": 192,
+  "decorative": 6,
+  "flaggedWithFunctionalData": 192,
+  "flaggedWithRailRecord": 192,
+  "flaggedWithoutFunctionalData": [],
+  "flaggedWithoutRailData": 0,
+  "functional": 192,
+  "functionalUnflagged": 0,
+  "levels": 1809,
+  "levelsWithOriginal": 204,
+  "missingOriginal": 0,
+  "nightMismatch": 13,
+  "noModules": 4,
+  "railLevels": 204,
+  "stageKeyDuplicates": 246,
+  "stageKeyExtraFiles": 424,
+  "stageKeyTotal": 1809,
+  "stageKeys": 1385,
+  "unknown": 6,
+  "vaseClient": 47,
+  "vaseMissing": 0,
+  "vaseOriginal": 47
+ },
+ "flaggedEvidence": [],
+ "flaggedWithoutRailData": [],
+ "format": 1,
+ "functionalUnflagged": [],
+ "identity": {
+  "bossCounting": "Boss 关按 `ZombossBattle`/`ZombossBattle1`/`ZombossBattle2` 模块统计 = 71 关；按 `*BossStage` 名统计只有 18 关，会漏掉混合关（如 pirate_41 的 PirateBossStage 同时挂 ZombossBattle 与 VaseBreaker 模块）。",
+  "key": "StageModule.stage + LevelNumber",
+  "note": "原版 `pkg_*_LevelDefinition.json` 每个文件通常只有 1 个 LevelDefinition 且没有 alias，关卡身份键必须用 StageModule 的 stage 名 + LevelNumber；用客户端关卡 id（如 `pirate_41`）在原表里字面搜索会 0 命中。",
+  "stageKey": "(stage, LevelNumber) 并不唯一：原版 1809 个文件只有 1385 个不同组合，246 个组合重复、多出 424 个文件（最多的组合有 20 个 package）。所以关联原表时以客户端 `extra.package` 为锚点，stage 名 + LevelNumber 只用于核对。"
+ },
+ "levels": [
+  {
+   "client": {
+    "minecarts": [
+     1,
+     2
+    ],
+    "rail": true
+   },
+   "level": "beach_8",
+   "levelNumber": 4,
+   "moduleNames": [],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0334",
+     "type": "railcart_beach",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0334",
+   "stage": "BeachStage",
+   "verdict": "functional",
+   "world": "beach"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0,
+     2
+    ],
+    "rail": true
+   },
+   "level": "beach_9",
+   "levelNumber": 5,
+   "moduleNames": [],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0335",
+     "type": "railcart_beach",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0335",
+   "stage": "BeachStage",
+   "verdict": "functional",
+   "world": "beach"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0,
+     2
+    ],
+    "rail": true
+   },
+   "level": "beach_10",
+   "levelNumber": 6,
+   "moduleNames": [],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0336",
+     "type": "railcart_beach",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0336",
+   "stage": "BeachStage",
+   "verdict": "functional",
+   "world": "beach"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0,
+     1,
+     3
+    ],
+    "rail": true
+   },
+   "level": "beach_11",
+   "levelNumber": 7,
+   "moduleNames": [],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 3,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 3
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0337",
+     "type": "railcart_beach",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0337",
+   "stage": "BeachStage",
+   "verdict": "functional",
+   "world": "beach"
+  },
+  {
+   "client": {
+    "minecarts": [
+     3
+    ],
+    "rail": true
+   },
+   "level": "beach_16",
+   "levelNumber": 12,
+   "moduleNames": [],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0328",
+     "type": "railcart_beach",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0328",
+   "stage": "BeachUBStage",
+   "verdict": "functional",
+   "world": "beach"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     4
+    ],
+    "rail": true
+   },
+   "level": "beach_37",
+   "levelNumber": 6,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0414",
+     "type": "railcart_beach",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0414",
+   "stage": "BeachStage",
+   "verdict": "functional",
+   "world": "beach"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     2,
+     3
+    ],
+    "rail": true
+   },
+   "level": "carnival_10",
+   "levelNumber": 6,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 3,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 3
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0260",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0260",
+   "stage": "AprilFoolsStage",
+   "verdict": "functional",
+   "world": "carnival"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "carnival_17",
+   "levelNumber": 11,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 9,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 9
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0241",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0241",
+   "stage": "AprilFoolsStage",
+   "verdict": "functional",
+   "world": "carnival"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "carnival_18",
+   "levelNumber": 11,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 4,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 4
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0769",
+     "type": "railcart_egypt",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0769",
+   "stage": "No42UniverseStage",
+   "verdict": "functional",
+   "world": "carnival"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "carnival_23",
+   "levelNumber": 15,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 3,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 3
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0245",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0245",
+   "stage": "AprilFoolsStage",
+   "verdict": "functional",
+   "world": "carnival"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "carnival_27",
+   "levelNumber": 18,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 3,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 3
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0407",
+     "type": "railcart_worldcup",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0407",
+   "stage": "BigBrainzStage",
+   "verdict": "functional",
+   "world": "carnival"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     2
+    ],
+    "rail": true
+   },
+   "level": "carnival_46",
+   "levelNumber": 1,
+   "moduleNames": [
+    "Railcart"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 3,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1694",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1694",
+   "stage": "HarvestStage",
+   "verdict": "functional",
+   "world": "carnival"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0
+    ],
+    "rail": true
+   },
+   "level": "carnival_51",
+   "levelNumber": 3,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 3
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1596",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1596",
+   "stage": "HarvestStage",
+   "verdict": "functional",
+   "world": "carnival"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     3
+    ],
+    "rail": true
+   },
+   "level": "carnival_62",
+   "levelNumber": 7,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0370",
+     "type": "railcart_worldcup",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0370",
+   "stage": "CarnivalStage",
+   "verdict": "functional",
+   "world": "carnival"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2,
+     3
+    ],
+    "rail": true
+   },
+   "level": "carnival_73",
+   "levelNumber": 14,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0346",
+     "type": "railcart_worldcup",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0346",
+   "stage": "CarnivalStage",
+   "verdict": "functional",
+   "world": "carnival"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     2,
+     3
+    ],
+    "rail": true
+   },
+   "level": "carnival_75",
+   "levelNumber": 15,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 4,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 4
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0347",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0347",
+   "stage": "CarnivalStage",
+   "verdict": "functional",
+   "world": "carnival"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0,
+     3,
+     4
+    ],
+    "rail": true
+   },
+   "level": "carnival_79",
+   "levelNumber": 18,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 7,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 7
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0715",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0715",
+   "stage": "BirthdayStage",
+   "verdict": "functional",
+   "world": "carnival"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     2,
+     3
+    ],
+    "rail": true
+   },
+   "level": "carnival_80",
+   "levelNumber": 19,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 4,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 4
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0351",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0351",
+   "stage": "CarnivalStage",
+   "verdict": "functional",
+   "world": "carnival"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "carnival_81",
+   "levelNumber": 20,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0353",
+     "type": "railcart_egypt",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0353",
+   "stage": "CarnivalStage",
+   "verdict": "functional",
+   "world": "carnival"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     2,
+     3
+    ],
+    "rail": true
+   },
+   "level": "carnival_84",
+   "levelNumber": 23,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 5,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 5
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0356",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0356",
+   "stage": "CarnivalStage",
+   "verdict": "functional",
+   "world": "carnival"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0,
+     4
+    ],
+    "rail": true
+   },
+   "level": "carnival_89",
+   "levelNumber": 28,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0361",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0361",
+   "stage": "CarnivalStage",
+   "verdict": "functional",
+   "world": "carnival"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     2,
+     3
+    ],
+    "rail": true
+   },
+   "level": "carnival_90",
+   "levelNumber": 29,
+   "moduleNames": [
+    "Railcart"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 3,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0362",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0362",
+   "stage": "CarnivalStage",
+   "verdict": "functional",
+   "world": "carnival"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     3
+    ],
+    "rail": true
+   },
+   "level": "carnival_92",
+   "levelNumber": 31,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0365",
+     "type": "railcart_egypt",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0365",
+   "stage": "CarnivalStage",
+   "verdict": "functional",
+   "world": "carnival"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "chinesegarden_24",
+   "levelNumber": 2,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0409",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0409",
+   "stage": "ChineseGardenNightsStage",
+   "verdict": "functional",
+   "world": "chinesegarden"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "chinesegarden_56",
+   "levelNumber": 8,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0734",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0734",
+   "stage": "ChineseGardenDMGStage",
+   "verdict": "functional",
+   "world": "chinesegarden"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "chinesegarden_67",
+   "levelNumber": 13,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1105",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1105",
+   "stage": "ChineseGardenDMGStage",
+   "verdict": "functional",
+   "world": "chinesegarden"
+  },
+  {
+   "client": {
+    "minecarts": [
+     4
+    ],
+    "rail": true
+   },
+   "level": "chinesegarden_71",
+   "levelNumber": 20,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0930",
+     "type": "railcart_beach",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0930",
+   "stage": "ChineseGardenUBStage",
+   "verdict": "functional",
+   "world": "chinesegarden"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "cowboy_1",
+   "levelNumber": 1,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0420",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    },
+    {
+     "class": "RailcartTutorialIntroProperties",
+     "evidence": {
+      "carts": 0,
+      "hasCartField": false,
+      "hasCountField": false,
+      "hasPathField": false,
+      "rails": 0
+     },
+     "fields": [],
+     "pkg": "pkg_0420",
+     "type": null,
+     "verdict": "decorative"
+    }
+   ],
+   "package": "pkg_0420",
+   "stage": "WestStage",
+   "verdict": "functional",
+   "world": "cowboy"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     2
+    ],
+    "rail": true
+   },
+   "level": "cowboy_3",
+   "levelNumber": 2,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0427",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0427",
+   "stage": "WestStage",
+   "verdict": "functional",
+   "world": "cowboy"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     3
+    ],
+    "rail": true
+   },
+   "level": "cowboy_4",
+   "levelNumber": 3,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0428",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0428",
+   "stage": "WestStage",
+   "verdict": "functional",
+   "world": "cowboy"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     2,
+     3
+    ],
+    "rail": true
+   },
+   "level": "cowboy_5",
+   "levelNumber": 4,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 6,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 5
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0429",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0429",
+   "stage": "WestDMGStage",
+   "verdict": "functional",
+   "world": "cowboy"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "cowboy_6",
+   "levelNumber": 5,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0430",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0430",
+   "stage": "WestStage",
+   "verdict": "functional",
+   "world": "cowboy"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "cowboy_7",
+   "levelNumber": 6,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 3,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 3
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0431",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0431",
+   "stage": "WestUBStage",
+   "verdict": "functional",
+   "world": "cowboy"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     2,
+     3
+    ],
+    "rail": true
+   },
+   "level": "cowboy_8",
+   "levelNumber": 7,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 3,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 3
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0432",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0432",
+   "stage": "WestStage",
+   "verdict": "functional",
+   "world": "cowboy"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "cowboy_9",
+   "levelNumber": 8,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 4,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 4
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0433",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0433",
+   "stage": "WestUBStage",
+   "verdict": "functional",
+   "world": "cowboy"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "rail": true
+   },
+   "level": "cowboy_10",
+   "levelNumber": 12,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 7,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 6
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0423",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0423",
+   "stage": "WestNightDMGStage",
+   "verdict": "functional",
+   "world": "cowboy"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0,
+     1,
+     3
+    ],
+    "rail": true
+   },
+   "level": "cowboy_11",
+   "levelNumber": 12,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 5,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 5
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0506",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0506",
+   "stage": "WestStage",
+   "verdict": "functional",
+   "world": "cowboy"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "rail": true
+   },
+   "level": "cowboy_12",
+   "levelNumber": 1,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 7,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 7
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1166",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1166",
+   "stage": "WestNightUBStage",
+   "verdict": "functional",
+   "world": "cowboy"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     2,
+     3
+    ],
+    "rail": true
+   },
+   "level": "cowboy_13",
+   "levelNumber": 2,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 5,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 5
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0880",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0880",
+   "stage": "WestDMGStage",
+   "verdict": "functional",
+   "world": "cowboy"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0,
+     2
+    ],
+    "rail": true
+   },
+   "level": "cowboy_14",
+   "levelNumber": 2,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 3,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 3
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1167",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1167",
+   "stage": "WestStage",
+   "verdict": "functional",
+   "world": "cowboy"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     2,
+     3
+    ],
+    "rail": true
+   },
+   "level": "cowboy_15",
+   "levelNumber": 3,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 5,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 5
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1168",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1168",
+   "stage": "WestNightDMGStage",
+   "verdict": "functional",
+   "world": "cowboy"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     2
+    ],
+    "rail": true
+   },
+   "level": "cowboy_17",
+   "levelNumber": 4,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 4,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 4
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1169",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1169",
+   "stage": "WestUBStage",
+   "verdict": "functional",
+   "world": "cowboy"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0,
+     1,
+     2,
+     4
+    ],
+    "rail": true
+   },
+   "level": "cowboy_18",
+   "levelNumber": 5,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 5,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 5
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1170",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1170",
+   "stage": "WestNightDMGStage",
+   "verdict": "functional",
+   "world": "cowboy"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0,
+     3,
+     4
+    ],
+    "rail": true
+   },
+   "level": "cowboy_19",
+   "levelNumber": 6,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 3,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1171",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1171",
+   "stage": "WestUBStage",
+   "verdict": "functional",
+   "world": "cowboy"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0,
+     1,
+     3
+    ],
+    "rail": true
+   },
+   "level": "cowboy_20",
+   "levelNumber": 7,
+   "moduleNames": [],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 6,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 20
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0779",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0779",
+   "stage": "WestNightUBStage",
+   "verdict": "functional",
+   "world": "cowboy"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "cowboy_21",
+   "levelNumber": 7,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 3,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 3
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1172",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1172",
+   "stage": "WestNightUBStage",
+   "verdict": "functional",
+   "world": "cowboy"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "rail": true
+   },
+   "level": "cowboy_22",
+   "levelNumber": 8,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 4,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 4
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1173",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1173",
+   "stage": "WestBossStage",
+   "verdict": "functional",
+   "world": "cowboy"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     2,
+     3
+    ],
+    "rail": true
+   },
+   "level": "cowboy_23",
+   "levelNumber": 9,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 4,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 4
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0434",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0434",
+   "stage": "WestNightStage",
+   "verdict": "functional",
+   "world": "cowboy"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     3
+    ],
+    "rail": true
+   },
+   "level": "cowboy_24",
+   "levelNumber": 10,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 4,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 4
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0421",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0421",
+   "stage": "WestNightStage",
+   "verdict": "functional",
+   "world": "cowboy"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "cowboy_25",
+   "levelNumber": 11,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0422",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0422",
+   "stage": "WestNightStage",
+   "verdict": "functional",
+   "world": "cowboy"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0,
+     1
+    ],
+    "rail": true
+   },
+   "level": "cowboy_26",
+   "levelNumber": 13,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0424",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0424",
+   "stage": "WestNightStage",
+   "verdict": "functional",
+   "world": "cowboy"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "cowboy_27",
+   "levelNumber": 14,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0425",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0425",
+   "stage": "WestNightDMGStage",
+   "verdict": "functional",
+   "world": "cowboy"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "cowboy_28",
+   "levelNumber": 15,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 3,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 3
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0426",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0426",
+   "stage": "WestNightBossStage",
+   "verdict": "functional",
+   "world": "cowboy"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     3
+    ],
+    "rail": true
+   },
+   "level": "cowboy_29",
+   "levelNumber": 32,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1531",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1531",
+   "stage": "WestStage",
+   "verdict": "functional",
+   "world": "cowboy"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "rail": true
+   },
+   "level": "cowboy_30",
+   "levelNumber": 8,
+   "moduleNames": [
+    "Railcart"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 5,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 4
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0946",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0946",
+   "stage": "WestNightUBStage",
+   "verdict": "functional",
+   "world": "cowboy"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0,
+     2,
+     4
+    ],
+    "rail": true
+   },
+   "level": "cowboy_31",
+   "levelNumber": 13,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 12,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 12
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0952",
+     "type": "railcart_egypt",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0952",
+   "stage": "WestUBStage",
+   "verdict": "functional",
+   "world": "cowboy"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     2
+    ],
+    "rail": true
+   },
+   "level": "cowboy_32",
+   "levelNumber": 42,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 4,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 4
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0551",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0551",
+   "stage": "WestStage",
+   "verdict": "functional",
+   "world": "cowboy"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1
+    ],
+    "rail": true
+   },
+   "level": "cowboy_33",
+   "levelNumber": 1,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0293",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0293",
+   "stage": "WestStage",
+   "verdict": "functional",
+   "world": "cowboy"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0,
+     1,
+     2
+    ],
+    "rail": true
+   },
+   "level": "cowboy_34",
+   "levelNumber": 1,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 5,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 5
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0904",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0904",
+   "stage": "WestDMGStage",
+   "verdict": "functional",
+   "world": "cowboy"
+  },
+  {
+   "client": {
+    "minecarts": [
+     3
+    ],
+    "rail": true
+   },
+   "level": "cowboy_35",
+   "levelNumber": 1,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 4,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 4
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0918",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0918",
+   "stage": "WestStage",
+   "verdict": "functional",
+   "world": "cowboy"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0
+    ],
+    "rail": true
+   },
+   "level": "cowboy_36",
+   "levelNumber": 2,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0294",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0294",
+   "stage": "WestStage",
+   "verdict": "functional",
+   "world": "cowboy"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "cowboy_37",
+   "levelNumber": 3,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0295",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0295",
+   "stage": "WestStage",
+   "verdict": "functional",
+   "world": "cowboy"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0,
+     2,
+     4
+    ],
+    "rail": true
+   },
+   "level": "cowboy_38",
+   "levelNumber": 3,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 3,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 3
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0653",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0653",
+   "stage": "WestUBStage",
+   "verdict": "functional",
+   "world": "cowboy"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "rail": true
+   },
+   "level": "cowboy_39",
+   "levelNumber": 3,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 10,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 6
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1648",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1648",
+   "stage": "WestDMGStage",
+   "verdict": "functional",
+   "world": "cowboy"
+  },
+  {
+   "client": {
+    "minecarts": null,
+    "rail": true
+   },
+   "level": "cowboy_41",
+   "levelNumber": 666,
+   "moduleNames": [],
+   "modules": [
+    {
+     "class": "DangerRoomRailcartDesigner",
+     "evidence": {
+      "carts": 0,
+      "hasCartField": true,
+      "hasCountField": true,
+      "hasPathField": false,
+      "rails": 0
+     },
+     "fields": [
+      "BaseRailcartCount",
+      "BaseRailcartCountPerLevel",
+      "Layouts",
+      "MaxGeneratedRailcarts"
+     ],
+     "pkg": "pkg_0435",
+     "type": null,
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0435",
+   "stage": "WestStage",
+   "verdict": "functional",
+   "world": "cowboy"
+  },
+  {
+   "client": {
+    "minecarts": null,
+    "rail": true
+   },
+   "level": "cowboy_42",
+   "levelNumber": 666,
+   "moduleNames": [],
+   "modules": [
+    {
+     "class": "DangerRoomRailcartDesigner",
+     "evidence": {
+      "carts": 0,
+      "hasCartField": true,
+      "hasCountField": true,
+      "hasPathField": false,
+      "rails": 0
+     },
+     "fields": [
+      "BaseRailcartCount",
+      "BaseRailcartCountPerLevel",
+      "Layouts",
+      "MaxGeneratedRailcarts"
+     ],
+     "pkg": "pkg_0466",
+     "type": null,
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0466",
+   "stage": "WestStage",
+   "verdict": "functional",
+   "world": "cowboy"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     3
+    ],
+    "rail": true
+   },
+   "level": "dark_78",
+   "levelNumber": 5,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1692",
+     "type": "railcart_future",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1692",
+   "stage": "DarkDMGStage",
+   "verdict": "functional",
+   "world": "dark"
+  },
+  {
+   "client": {
+    "minecarts": [
+     4
+    ],
+    "rail": true
+   },
+   "level": "dino_45",
+   "levelNumber": 59,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1943",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1943",
+   "stage": "DinoNightsUBStage",
+   "verdict": "functional",
+   "world": "dino"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "dino_46",
+   "levelNumber": 69,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1954",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1954",
+   "stage": "DinoNightsStage",
+   "verdict": "functional",
+   "world": "dino"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "dino_55",
+   "levelNumber": 3,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0897",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0897",
+   "stage": "DinoDMGStage",
+   "verdict": "functional",
+   "world": "dino"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "dino_56",
+   "levelNumber": 3,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1635",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1635",
+   "stage": "DinoUBStage",
+   "verdict": "functional",
+   "world": "dino"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0,
+     2
+    ],
+    "rail": true
+   },
+   "level": "egypt_3",
+   "levelNumber": 2,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0614",
+     "type": "railcart_egypt",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0614",
+   "stage": "EgyptStage",
+   "verdict": "functional",
+   "world": "egypt"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "egypt_4",
+   "levelNumber": 3,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0615",
+     "type": "railcart_egypt",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0615",
+   "stage": "EgyptUBStage",
+   "verdict": "functional",
+   "world": "egypt"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "egypt_6",
+   "levelNumber": 5,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0617",
+     "type": "railcart_egypt",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0617",
+   "stage": "EgyptStage",
+   "verdict": "functional",
+   "world": "egypt"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "egypt_7",
+   "levelNumber": 6,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0618",
+     "type": "railcart_egypt",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0618",
+   "stage": "EgyptUBStage",
+   "verdict": "functional",
+   "world": "egypt"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0
+    ],
+    "rail": true
+   },
+   "level": "egypt_15",
+   "levelNumber": 1,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1182",
+     "type": "railcart_egypt",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1182",
+   "stage": "EgyptUBStage",
+   "verdict": "functional",
+   "world": "egypt"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "egypt_19",
+   "levelNumber": 3,
+   "moduleNames": [],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1184",
+     "type": "railcart_egypt",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1184",
+   "stage": "EgyptDMGStage",
+   "verdict": "functional",
+   "world": "egypt"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0,
+     2
+    ],
+    "rail": true
+   },
+   "level": "egypt_20",
+   "levelNumber": 3,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1233",
+     "type": "railcart_egypt",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1233",
+   "stage": "EgyptExodusStage",
+   "verdict": "functional",
+   "world": "egypt"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "egypt_26",
+   "levelNumber": 7,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0619",
+     "type": "railcart_egypt",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0619",
+   "stage": "EgyptNightsStage",
+   "verdict": "functional",
+   "world": "egypt"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "egypt_28",
+   "levelNumber": 8,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0620",
+     "type": "railcart_egypt",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0620",
+   "stage": "EgyptNightsUBStage",
+   "verdict": "functional",
+   "world": "egypt"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "egypt_30",
+   "levelNumber": 9,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0621",
+     "type": "railcart_egypt",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0621",
+   "stage": "EgyptNightsDMGStage",
+   "verdict": "functional",
+   "world": "egypt"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0
+    ],
+    "rail": true
+   },
+   "level": "egypt_34",
+   "levelNumber": 13,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0611",
+     "type": "railcart_egypt",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0611",
+   "stage": "EgyptNightsDMGStage",
+   "verdict": "functional",
+   "world": "egypt"
+  },
+  {
+   "client": {
+    "minecarts": null,
+    "rail": false
+   },
+   "level": "egypt_46",
+   "levelNumber": 94,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 0,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 3
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1982",
+     "type": "railcart_egypt",
+     "verdict": "decorative"
+    }
+   ],
+   "package": "pkg_1982",
+   "stage": "EgyptStage",
+   "verdict": "decorative",
+   "world": "egypt"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "egypt_55",
+   "levelNumber": 1,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0650",
+     "type": "railcart_egypt",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0650",
+   "stage": "EgyptDMGStage",
+   "verdict": "functional",
+   "world": "egypt"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0,
+     1
+    ],
+    "rail": true
+   },
+   "level": "egypt_56",
+   "levelNumber": 1,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 3,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 3
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0736",
+     "type": "railcart_egypt",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0736",
+   "stage": "EgyptNightsFunTimeStage",
+   "verdict": "functional",
+   "world": "egypt"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "rail": true
+   },
+   "level": "egypt_57",
+   "levelNumber": 1,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 6,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 6
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0895",
+     "type": "railcart_egypt",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0895",
+   "stage": "EgyptNightsStage",
+   "verdict": "functional",
+   "world": "egypt"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "egypt_63",
+   "levelNumber": 3,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1735",
+     "type": "railcart_egypt",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1735",
+   "stage": "EgyptUBStage",
+   "verdict": "functional",
+   "world": "egypt"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     3
+    ],
+    "rail": true
+   },
+   "level": "egypt_70",
+   "levelNumber": 6,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1058",
+     "type": "railcart_egypt",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1058",
+   "stage": "EgyptNightsUBStage",
+   "verdict": "functional",
+   "world": "egypt"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "rail": true
+   },
+   "level": "egypt_73",
+   "levelNumber": 9,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 9,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 10
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1061",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1061",
+   "stage": "EgyptStage",
+   "verdict": "functional",
+   "world": "egypt"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "egypt_74",
+   "levelNumber": 10,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 4,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 4
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1051",
+     "type": "railcart_egypt",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1051",
+   "stage": "EgyptNightsDMGStage",
+   "verdict": "functional",
+   "world": "egypt"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     2,
+     3
+    ],
+    "rail": true
+   },
+   "level": "egypt_78",
+   "levelNumber": 16,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 3,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0743",
+     "type": "railcart_egypt",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0743",
+   "stage": "EgyptFunTimeStage",
+   "verdict": "functional",
+   "world": "egypt"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "eighties_51",
+   "levelNumber": 1,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0867",
+     "type": "railcart_future",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0867",
+   "stage": "EightiesStage",
+   "verdict": "functional",
+   "world": "eighties"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "eighties_55",
+   "levelNumber": 2,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0868",
+     "type": "railcart_future",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0868",
+   "stage": "EightiesStage",
+   "verdict": "functional",
+   "world": "eighties"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "eighties_56",
+   "levelNumber": 2,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0896",
+     "type": "railcart_future",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0896",
+   "stage": "EightiesStage",
+   "verdict": "functional",
+   "world": "eighties"
+  },
+  {
+   "client": {
+    "minecarts": [
+     3
+    ],
+    "rail": true
+   },
+   "level": "eighties_57",
+   "levelNumber": 2,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0910",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0910",
+   "stage": "EightiesStage",
+   "verdict": "functional",
+   "world": "eighties"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "eighties_60",
+   "levelNumber": 3,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0869",
+     "type": "railcart_future",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0869",
+   "stage": "EightiesStage",
+   "verdict": "functional",
+   "world": "eighties"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "eighties_62",
+   "levelNumber": 4,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0870",
+     "type": "railcart_future",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0870",
+   "stage": "EightiesStage",
+   "verdict": "functional",
+   "world": "eighties"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "eighties_63",
+   "levelNumber": 4,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0912",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0912",
+   "stage": "EightiesStage",
+   "verdict": "functional",
+   "world": "eighties"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "eighties_64",
+   "levelNumber": 5,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0871",
+     "type": "railcart_future",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0871",
+   "stage": "EightiesStage",
+   "verdict": "functional",
+   "world": "eighties"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     3
+    ],
+    "rail": true
+   },
+   "level": "fairy_22",
+   "levelNumber": 20,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1247",
+     "type": "railcart_future",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1247",
+   "stage": "FairyNightsUBStage",
+   "verdict": "functional",
+   "world": "fairy"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     2,
+     3
+    ],
+    "rail": true
+   },
+   "level": "fairy_30",
+   "levelNumber": 15,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 7,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 7
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0954",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0954",
+   "stage": "FairyNightsStage",
+   "verdict": "functional",
+   "world": "fairy"
+  },
+  {
+   "client": {
+    "minecarts": null,
+    "rail": false
+   },
+   "level": "fairy_31",
+   "levelNumber": 16,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [],
+   "package": "pkg_0955",
+   "stage": "FairyNightsStage",
+   "verdict": "unknown",
+   "world": "fairy"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "fairy_32",
+   "levelNumber": 1,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 5,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 5
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0888",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0888",
+   "stage": "FairyNightsDMGStage",
+   "verdict": "functional",
+   "world": "fairy"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0,
+     1,
+     2
+    ],
+    "rail": true
+   },
+   "level": "fairy_39",
+   "levelNumber": 5,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 3,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1598",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1598",
+   "stage": "FairyNightsDMGStage",
+   "verdict": "functional",
+   "world": "fairy"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "fairy_45",
+   "levelNumber": 9,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1037",
+     "type": "railcart_future",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1037",
+   "stage": "FairyNightsUBStage",
+   "verdict": "functional",
+   "world": "fairy"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "frontyard_20",
+   "levelNumber": 2,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1600",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1600",
+   "stage": "NightStage",
+   "verdict": "functional",
+   "world": "frontyard"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "frontyard_38",
+   "levelNumber": 4,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_2034",
+     "type": "railcart_beach",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_2034",
+   "stage": "PvZ2CRoofStage",
+   "verdict": "functional",
+   "world": "frontyard"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "frontyard_77",
+   "levelNumber": 6,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0974",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0974",
+   "stage": "Stage",
+   "verdict": "functional",
+   "world": "frontyard"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "frontyard_79",
+   "levelNumber": 17,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0956",
+     "type": "railcart_tutorial",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0956",
+   "stage": "Stage",
+   "verdict": "functional",
+   "world": "frontyard"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "frontyard_80",
+   "levelNumber": 19,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0958",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0958",
+   "stage": "NightStage",
+   "verdict": "functional",
+   "world": "frontyard"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "frontyard_84",
+   "levelNumber": 27,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 3,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 3
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0967",
+     "type": "railcart_tutorial",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0967",
+   "stage": "NightStage",
+   "verdict": "functional",
+   "world": "frontyard"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "frontyard_93",
+   "levelNumber": 1,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0862",
+     "type": "railcart_tutorial",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0862",
+   "stage": "FrontLawnStage",
+   "verdict": "functional",
+   "world": "frontyard"
+  },
+  {
+   "client": {
+    "minecarts": null,
+    "rail": false
+   },
+   "level": "frontyard_98",
+   "levelNumber": 1,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 0,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1687",
+     "type": "railcart_cowboy",
+     "verdict": "decorative"
+    }
+   ],
+   "package": "pkg_1687",
+   "stage": "Stage",
+   "verdict": "decorative",
+   "world": "frontyard"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "frontyard_102",
+   "levelNumber": 2,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0863",
+     "type": "railcart_tutorial",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0863",
+   "stage": "FrontLawnStage",
+   "verdict": "functional",
+   "world": "frontyard"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "frontyard_107",
+   "levelNumber": 2,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1634",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1634",
+   "stage": "FrontLawnStage",
+   "verdict": "functional",
+   "world": "frontyard"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "frontyard_114",
+   "levelNumber": 3,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0864",
+     "type": "railcart_tutorial",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0864",
+   "stage": "FrontLawnStage",
+   "verdict": "functional",
+   "world": "frontyard"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "frontyard_121",
+   "levelNumber": 4,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 3,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 3
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0865",
+     "type": "railcart_tutorial",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0865",
+   "stage": "FrontLawnStage",
+   "verdict": "functional",
+   "world": "frontyard"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "frontyard_127",
+   "levelNumber": 5,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 6,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 6
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0866",
+     "type": "railcart_tutorial",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0866",
+   "stage": "FrontLawnStage",
+   "verdict": "functional",
+   "world": "frontyard"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     3
+    ],
+    "rail": true
+   },
+   "level": "frontyard_141",
+   "levelNumber": 9,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 8,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 8
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1629",
+     "type": "railcart_egypt",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1629",
+   "stage": "Stage",
+   "verdict": "functional",
+   "world": "frontyard"
+  },
+  {
+   "client": {
+    "minecarts": null,
+    "rail": false
+   },
+   "level": "frontyard_143",
+   "levelNumber": 10,
+   "moduleNames": [],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 0,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 28
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1621",
+     "type": "railcart_worldcup",
+     "verdict": "decorative"
+    }
+   ],
+   "package": "pkg_1621",
+   "stage": "Stage",
+   "verdict": "decorative",
+   "world": "frontyard"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1
+    ],
+    "rail": true
+   },
+   "level": "frontyard_147",
+   "levelNumber": 12,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1131",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1131",
+   "stage": "NightStage",
+   "verdict": "functional",
+   "world": "frontyard"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0,
+     4
+    ],
+    "rail": true
+   },
+   "level": "frontyard_161",
+   "levelNumber": 22,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1149",
+     "type": "railcart_future",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1149",
+   "stage": "NightLBStage",
+   "verdict": "functional",
+   "world": "frontyard"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "frontyard_175",
+   "levelNumber": null,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 3,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 3
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0543",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0543",
+   "stage": "FrontLawnStage",
+   "verdict": "functional",
+   "world": "frontyard"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "future_53",
+   "levelNumber": 5,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1642",
+     "type": "railcart_future",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1642",
+   "stage": "FutureOriUBStage",
+   "verdict": "functional",
+   "world": "future"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "future_54",
+   "levelNumber": 5,
+   "moduleNames": [],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1643",
+     "type": "railcart_future",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1643",
+   "stage": "FutureOriDMGStage",
+   "verdict": "functional",
+   "world": "future"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0,
+     3
+    ],
+    "rail": true
+   },
+   "level": "future_56",
+   "levelNumber": 6,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1644",
+     "type": "railcart_future",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1644",
+   "stage": "FutureOriUBStage",
+   "verdict": "functional",
+   "world": "future"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     3
+    ],
+    "rail": true
+   },
+   "level": "future_60",
+   "levelNumber": 9,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0766",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0766",
+   "stage": "FutureOriFunTimeStage",
+   "verdict": "functional",
+   "world": "future"
+  },
+  {
+   "client": {
+    "minecarts": null,
+    "rail": false
+   },
+   "level": "future_66",
+   "levelNumber": 19,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [],
+   "package": "pkg_0746",
+   "stage": "FutureOriFunTimeStage",
+   "verdict": "unknown",
+   "world": "future"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "future_68",
+   "levelNumber": 24,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0752",
+     "type": "railcart_future",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0752",
+   "stage": "FutureOriFunTimeStage",
+   "verdict": "functional",
+   "world": "future"
+  },
+  {
+   "client": {
+    "minecarts": null,
+    "rail": false
+   },
+   "level": "future_69",
+   "levelNumber": 29,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [],
+   "package": "pkg_0757",
+   "stage": "FutureOriFunTimeStage",
+   "verdict": "unknown",
+   "world": "future"
+  },
+  {
+   "client": {
+    "minecarts": null,
+    "rail": false
+   },
+   "level": "future_70",
+   "levelNumber": 31,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [],
+   "package": "pkg_0760",
+   "stage": "FutureOriFunTimeStage",
+   "verdict": "unknown",
+   "world": "future"
+  },
+  {
+   "client": {
+    "minecarts": [
+     3
+    ],
+    "rail": true
+   },
+   "level": "heian_38",
+   "levelNumber": 8,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1731",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1731",
+   "stage": "HeianStage",
+   "verdict": "functional",
+   "world": "heian"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0,
+     1,
+     3,
+     4
+    ],
+    "rail": true
+   },
+   "level": "heian_40",
+   "levelNumber": 10,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 6,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 6
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0707",
+     "type": "railcart_tutorial",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0707",
+   "stage": "HeianDMGStage",
+   "verdict": "functional",
+   "world": "heian"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "iceage_45",
+   "levelNumber": 15,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 3,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 3
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0404",
+     "type": "railcart_tutorial",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0404",
+   "stage": "FeastivusNightsStage",
+   "verdict": "functional",
+   "world": "iceage"
+  },
+  {
+   "client": {
+    "minecarts": null,
+    "rail": false
+   },
+   "level": "iceage_65",
+   "levelNumber": 8,
+   "moduleNames": [],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 0,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 0
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0704",
+     "type": "railcart_tutorial",
+     "verdict": "unknown"
+    }
+   ],
+   "package": "pkg_0704",
+   "stage": "IceageVeteranStage",
+   "verdict": "unknown",
+   "world": "iceage"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0,
+     2,
+     4
+    ],
+    "rail": true
+   },
+   "level": "iceage_66",
+   "levelNumber": 8,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 4,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 6
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1628",
+     "type": "railcart_worldcup",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1628",
+   "stage": "FeastivusSoccerStage",
+   "verdict": "functional",
+   "world": "iceage"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     2,
+     3
+    ],
+    "rail": true
+   },
+   "level": "iceage_69",
+   "levelNumber": 20,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 6,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 5
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0718",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0718",
+   "stage": "FeastivusStage",
+   "verdict": "functional",
+   "world": "iceage"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     3
+    ],
+    "rail": true
+   },
+   "level": "kongfu_33",
+   "levelNumber": 8,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 9
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1418",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1418",
+   "stage": "KongfuUBStage",
+   "verdict": "functional",
+   "world": "kongfu"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "kongfu_35",
+   "levelNumber": 10,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1396",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1396",
+   "stage": "KongfuDMGStage",
+   "verdict": "functional",
+   "world": "kongfu"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0,
+     1
+    ],
+    "rail": true
+   },
+   "level": "kongfu_36",
+   "levelNumber": 11,
+   "moduleNames": [
+    "Railcart1"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 7,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 6
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1397",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1397",
+   "stage": "KongfuDMGStage",
+   "verdict": "functional",
+   "world": "kongfu"
+  },
+  {
+   "client": {
+    "minecarts": [
+     3
+    ],
+    "rail": true
+   },
+   "level": "kongfu_38",
+   "levelNumber": 13,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 9,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 9
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1399",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1399",
+   "stage": "KongfuDMGStage",
+   "verdict": "functional",
+   "world": "kongfu"
+  },
+  {
+   "client": {
+    "minecarts": [
+     3
+    ],
+    "rail": true
+   },
+   "level": "kongfu_39",
+   "levelNumber": 14,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1400",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1400",
+   "stage": "KongfuDMGStage",
+   "verdict": "functional",
+   "world": "kongfu"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     3
+    ],
+    "rail": true
+   },
+   "level": "kongfu_41",
+   "levelNumber": 16,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1402",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1402",
+   "stage": "KongfuUBStage",
+   "verdict": "functional",
+   "world": "kongfu"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1
+    ],
+    "rail": true
+   },
+   "level": "kongfu_43",
+   "levelNumber": 18,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1404",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1404",
+   "stage": "KongfuDMGStage",
+   "verdict": "functional",
+   "world": "kongfu"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "rail": true
+   },
+   "level": "kongfu_44",
+   "levelNumber": 19,
+   "moduleNames": [],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 5,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 5
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1405",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1405",
+   "stage": "KongfuUBStage",
+   "verdict": "functional",
+   "world": "kongfu"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "kongfu_45",
+   "levelNumber": 20,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 3
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1407",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1407",
+   "stage": "KongfuDMGStage",
+   "verdict": "functional",
+   "world": "kongfu"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     3
+    ],
+    "rail": true
+   },
+   "level": "kongfu_49",
+   "levelNumber": 24,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1411",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1411",
+   "stage": "KongfuStage",
+   "verdict": "functional",
+   "world": "kongfu"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0
+    ],
+    "rail": true
+   },
+   "level": "kongfu_54",
+   "levelNumber": 24,
+   "moduleNames": [
+    "Railcart"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0964",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0964",
+   "stage": "KongfuDMGStage",
+   "verdict": "functional",
+   "world": "kongfu"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     2,
+     3
+    ],
+    "rail": true
+   },
+   "level": "kongfu_61",
+   "levelNumber": 3,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 4,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 3
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0758",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0758",
+   "stage": "KongfuFunTimeStage",
+   "verdict": "functional",
+   "world": "kongfu"
+  },
+  {
+   "client": {
+    "minecarts": [
+     3
+    ],
+    "rail": true
+   },
+   "level": "kongfu_62",
+   "levelNumber": 3,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 3
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1070",
+     "type": "railcart_beach",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1070",
+   "stage": "JTTWStage",
+   "verdict": "functional",
+   "world": "kongfu"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "kongfu_68",
+   "levelNumber": 6,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 4,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 4
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1073",
+     "type": "railcart_egypt",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1073",
+   "stage": "JTTWStage",
+   "verdict": "functional",
+   "world": "kongfu"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "kongfu_70",
+   "levelNumber": 8,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0765",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0765",
+   "stage": "KongfuFunTimeStage",
+   "verdict": "functional",
+   "world": "kongfu"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "kongfu_82",
+   "levelNumber": 23,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0751",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0751",
+   "stage": "KongfuFunTimeStage",
+   "verdict": "functional",
+   "world": "kongfu"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "kongfu_83",
+   "levelNumber": 28,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0756",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0756",
+   "stage": "KongfuFunTimeStage",
+   "verdict": "functional",
+   "world": "kongfu"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0,
+     2,
+     4
+    ],
+    "rail": true
+   },
+   "level": "losantosvice_26",
+   "levelNumber": 11,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 3,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1091",
+     "type": "railcart_pirate",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1091",
+   "stage": "GTADMGStage",
+   "verdict": "functional",
+   "world": "losantosvice"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0,
+     4
+    ],
+    "rail": true
+   },
+   "level": "lostcity_45",
+   "levelNumber": 23,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0963",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0963",
+   "stage": "VolcanoDMGStage",
+   "verdict": "functional",
+   "world": "lostcity"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0,
+     1,
+     3,
+     4
+    ],
+    "rail": true
+   },
+   "level": "lostcity_48",
+   "levelNumber": 29,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 4,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 3
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0969",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0969",
+   "stage": "LostCityNightsStage",
+   "verdict": "functional",
+   "world": "lostcity"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0,
+     1,
+     3,
+     4
+    ],
+    "rail": true
+   },
+   "level": "lostcity_59",
+   "levelNumber": 5,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 6,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 3
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1637",
+     "type": "railcart_egypt",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1637",
+   "stage": "LostCityDMGStage",
+   "verdict": "functional",
+   "world": "lostcity"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "lostcity_67",
+   "levelNumber": 22,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0697",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0697",
+   "stage": "VolcanoDMGStage",
+   "verdict": "functional",
+   "world": "lostcity"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "lostcity_68",
+   "levelNumber": 27,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0725",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0725",
+   "stage": "LostCityDMGStage",
+   "verdict": "functional",
+   "world": "lostcity"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     2,
+     3
+    ],
+    "rail": true
+   },
+   "level": "lunarrainbowmarket_22",
+   "levelNumber": 22,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 4,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 3
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1771",
+     "type": "railcart_pirate",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1771",
+   "stage": "MarketNightsStage",
+   "verdict": "functional",
+   "world": "lunarrainbowmarket"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "lunarrainbowmarket_25",
+   "levelNumber": 25,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1774",
+     "type": "railcart_egypt",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1774",
+   "stage": "MarketNightsDMGStage",
+   "verdict": "functional",
+   "world": "lunarrainbowmarket"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "lunarrainbowmarket_28",
+   "levelNumber": 28,
+   "moduleNames": [
+    "Railcart"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 3,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 3
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1777",
+     "type": "railcart_tutorial",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1777",
+   "stage": "MarketNightsDMGStage",
+   "verdict": "functional",
+   "world": "lunarrainbowmarket"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "lunarrainbowmarket_31",
+   "levelNumber": 1,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 4,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 4
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0832",
+     "type": "railcart_tutorial",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0832",
+   "stage": "LunarNoMusicSuffixStage",
+   "verdict": "functional",
+   "world": "lunarrainbowmarket"
+  },
+  {
+   "client": {
+    "minecarts": [
+     4
+    ],
+    "rail": true
+   },
+   "level": "lunarrainbowmarket_34",
+   "levelNumber": 2,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcarType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0843",
+     "type": "railcart_egypt",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0843",
+   "stage": "LunarDMGStage",
+   "verdict": "functional",
+   "world": "lunarrainbowmarket"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "lunarrainbowmarket_45",
+   "levelNumber": 7,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0829",
+     "type": "railcart_future",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0829",
+   "stage": "LunarUBStage",
+   "verdict": "functional",
+   "world": "lunarrainbowmarket"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "lunarrainbowmarket_79",
+   "levelNumber": 22,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0846",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0846",
+   "stage": "LunarDaylightDMGStage",
+   "verdict": "functional",
+   "world": "lunarrainbowmarket"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     2,
+     3
+    ],
+    "rail": true
+   },
+   "level": "lunarrainbowmarket_83",
+   "levelNumber": 24,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 7,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 6
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0848",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0848",
+   "stage": "LunarDaylightDMGStage",
+   "verdict": "functional",
+   "world": "lunarrainbowmarket"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "lunarrainbowmarket_88",
+   "levelNumber": 26,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0850",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0850",
+   "stage": "LunarDMGStage",
+   "verdict": "functional",
+   "world": "lunarrainbowmarket"
+  },
+  {
+   "client": {
+    "minecarts": null,
+    "rail": false
+   },
+   "level": "lunarrainbowmarket_93",
+   "levelNumber": 29,
+   "moduleNames": [],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 0,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 3
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0853",
+     "type": "railcart_cowboy",
+     "verdict": "decorative"
+    }
+   ],
+   "package": "pkg_0853",
+   "stage": "LunarDaylightDMGStage",
+   "verdict": "decorative",
+   "world": "lunarrainbowmarket"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "lunarrainbowmarket_109",
+   "levelNumber": 6,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0944",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0944",
+   "stage": "MarketNightsStage",
+   "verdict": "functional",
+   "world": "lunarrainbowmarket"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "lunarrainbowmarket_115",
+   "levelNumber": 11,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0784",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0784",
+   "stage": "LunarUBStage",
+   "verdict": "functional",
+   "world": "lunarrainbowmarket"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     3
+    ],
+    "rail": true
+   },
+   "level": "lunarrainbowmarket_116",
+   "levelNumber": 12,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0785",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0785",
+   "stage": "LunarDaylightDMGStage",
+   "verdict": "functional",
+   "world": "lunarrainbowmarket"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "lunarrainbowmarket_121",
+   "levelNumber": 16,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0789",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0789",
+   "stage": "LunarDaylightStage",
+   "verdict": "functional",
+   "world": "lunarrainbowmarket"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "mausoleum_53",
+   "levelNumber": 11,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1118",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1118",
+   "stage": "MausoleumStage",
+   "verdict": "functional",
+   "world": "mausoleum"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "memorytour_3",
+   "levelNumber": 1,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1604",
+     "type": "railcart_egypt",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1604",
+   "stage": "HeroesStage",
+   "verdict": "functional",
+   "world": "memorytour"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0,
+     2
+    ],
+    "rail": true
+   },
+   "level": "memorytour_4",
+   "levelNumber": 2,
+   "moduleNames": [],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1605",
+     "type": "railcart_beach",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1605",
+   "stage": "HeroesStage",
+   "verdict": "functional",
+   "world": "memorytour"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0
+    ],
+    "rail": true
+   },
+   "level": "modern_30",
+   "levelNumber": 30,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1507",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1507",
+   "stage": "ModernStage",
+   "verdict": "functional",
+   "world": "modern"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "modern_49",
+   "levelNumber": 10,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 3,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 3
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0803",
+     "type": "railcart_tutorial",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0803",
+   "stage": "ModernDMGStage",
+   "verdict": "functional",
+   "world": "modern"
+  },
+  {
+   "client": {
+    "minecarts": null,
+    "rail": false
+   },
+   "level": "muji_27",
+   "levelNumber": 18,
+   "moduleNames": [],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 0,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 15
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1813",
+     "type": "railcart_future",
+     "verdict": "decorative"
+    }
+   ],
+   "package": "pkg_1813",
+   "stage": "RiftStage",
+   "verdict": "decorative",
+   "world": "muji"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     2,
+     4
+    ],
+    "rail": true
+   },
+   "level": "pirate_31",
+   "levelNumber": 8,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 6,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 11
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1563",
+     "type": "railcart_pirate",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1563",
+   "stage": "PirateUBStage",
+   "verdict": "functional",
+   "world": "pirate"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1
+    ],
+    "rail": true
+   },
+   "level": "pirate_40",
+   "levelNumber": 22,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1903",
+     "type": "railcart_pirate",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1903",
+   "stage": "PirateDMGStage",
+   "verdict": "functional",
+   "world": "pirate"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1
+    ],
+    "rail": true
+   },
+   "level": "pirate_43",
+   "levelNumber": 32,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1914",
+     "type": "railcart_pirate",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1914",
+   "stage": "PirateDMGStage",
+   "verdict": "functional",
+   "world": "pirate"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1
+    ],
+    "rail": true
+   },
+   "level": "pirate_44",
+   "levelNumber": 42,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1925",
+     "type": "railcart_pirate",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1925",
+   "stage": "PirateDMGStage",
+   "verdict": "functional",
+   "world": "pirate"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     3
+    ],
+    "rail": true
+   },
+   "level": "pirate_45",
+   "levelNumber": 52,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1936",
+     "type": "railcart_pirate",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1936",
+   "stage": "PirateDMGStage",
+   "verdict": "functional",
+   "world": "pirate"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     2
+    ],
+    "rail": true
+   },
+   "level": "pirate_46",
+   "levelNumber": 62,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 3,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 3
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1947",
+     "type": "railcart_pirate",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1947",
+   "stage": "PirateDMGStage",
+   "verdict": "functional",
+   "world": "pirate"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0,
+     1,
+     3
+    ],
+    "rail": true
+   },
+   "level": "pirate_47",
+   "levelNumber": 72,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 4,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 4
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1958",
+     "type": "railcart_pirate",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1958",
+   "stage": "PirateDMGStage",
+   "verdict": "functional",
+   "world": "pirate"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     3
+    ],
+    "rail": true
+   },
+   "level": "pirate_48",
+   "levelNumber": 82,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 4,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 4
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1969",
+     "type": "railcart_pirate",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1969",
+   "stage": "PirateDMGStage",
+   "verdict": "functional",
+   "world": "pirate"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     3
+    ],
+    "rail": true
+   },
+   "level": "pirate_49",
+   "levelNumber": 92,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 4,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 4
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1980",
+     "type": "railcart_pirate",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1980",
+   "stage": "PirateStage",
+   "verdict": "functional",
+   "world": "pirate"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     3
+    ],
+    "rail": true
+   },
+   "level": "pirate_59",
+   "levelNumber": 7,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 10,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 4
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0764",
+     "type": "railcart_pirate",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0764",
+   "stage": "PirateFunTimeStage",
+   "verdict": "functional",
+   "world": "pirate"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0,
+     2,
+     3
+    ],
+    "rail": true
+   },
+   "level": "pirate_63",
+   "levelNumber": 17,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 3,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 3
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0744",
+     "type": "railcart_pirate",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0744",
+   "stage": "PirateFunTimeStage",
+   "verdict": "functional",
+   "world": "pirate"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "rail": true
+   },
+   "level": "pirate_65",
+   "levelNumber": 22,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 4,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 3
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0750",
+     "type": "railcart_pirate",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0750",
+   "stage": "PirateFunTimeStage",
+   "verdict": "functional",
+   "world": "pirate"
+  },
+  {
+   "client": {
+    "minecarts": null,
+    "rail": false
+   },
+   "level": "pirate_67",
+   "levelNumber": 666,
+   "moduleNames": [],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 0,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 19
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1565",
+     "type": "railcart_pirate",
+     "verdict": "decorative"
+    }
+   ],
+   "package": "pkg_1565",
+   "stage": "PirateStage",
+   "verdict": "decorative",
+   "world": "pirate"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "plantagenet_39",
+   "levelNumber": 10,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 3,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 3
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0737",
+     "type": "railcart_future",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0737",
+   "stage": "PlantagenetFunTimeStage",
+   "verdict": "functional",
+   "world": "plantagenet"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "plantagenet_40",
+   "levelNumber": 10,
+   "moduleNames": [],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1015",
+     "type": "railcart_tutorial",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1015",
+   "stage": "PlantagenetUBStage",
+   "verdict": "functional",
+   "world": "plantagenet"
+  },
+  {
+   "client": {
+    "minecarts": [
+     3
+    ],
+    "rail": true
+   },
+   "level": "plantagenet_45",
+   "levelNumber": 20,
+   "moduleNames": [],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 9,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 9
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0748",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0748",
+   "stage": "PlantagenetFunTimeStage",
+   "verdict": "functional",
+   "world": "plantagenet"
+  },
+  {
+   "client": {
+    "minecarts": null,
+    "rail": false
+   },
+   "level": "plantagenet_47",
+   "levelNumber": 25,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [],
+   "package": "pkg_0753",
+   "stage": "PlantagenetFunTimeStage",
+   "verdict": "unknown",
+   "world": "plantagenet"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "plantagenet_48",
+   "levelNumber": 30,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0759",
+     "type": "railcart_tutorial",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0759",
+   "stage": "PlantagenetFunTimeStage",
+   "verdict": "functional",
+   "world": "plantagenet"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "renai_6",
+   "levelNumber": 3,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1601",
+     "type": "railcart_worldcup",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1601",
+   "stage": "RenaiUBStage",
+   "verdict": "functional",
+   "world": "renai"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     2,
+     3
+    ],
+    "rail": true
+   },
+   "level": "renai_21",
+   "levelNumber": 11,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1790",
+     "type": "railcart_worldcup",
+     "verdict": "functional"
+    },
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1790",
+     "type": "railcart_worldcup",
+     "verdict": "functional"
+    },
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1790",
+     "type": "railcart_worldcup",
+     "verdict": "functional"
+    },
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1790",
+     "type": "railcart_worldcup",
+     "verdict": "functional"
+    },
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1790",
+     "type": "railcart_worldcup",
+     "verdict": "functional"
+    },
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1790",
+     "type": "railcart_worldcup",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1790",
+   "stage": "TheatreStage",
+   "verdict": "functional",
+   "world": "renai"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "rail": true
+   },
+   "level": "sky_47",
+   "levelNumber": 10,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 6,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 8
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0681",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0681",
+   "stage": "PenaconyStage",
+   "verdict": "functional",
+   "world": "sky"
+  },
+  {
+   "client": {
+    "minecarts": [
+     2
+    ],
+    "rail": true
+   },
+   "level": "sky_54",
+   "levelNumber": 25,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 1,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 1
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_0935",
+     "type": "railcart_empty",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_0935",
+   "stage": "SkyCityStage",
+   "verdict": "functional",
+   "world": "sky"
+  },
+  {
+   "client": {
+    "minecarts": [
+     1,
+     2
+    ],
+    "rail": true
+   },
+   "level": "steam_34",
+   "levelNumber": 2,
+   "moduleNames": [
+    "CowboyRails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 2,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 2
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1661",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1661",
+   "stage": "SteamUBStage",
+   "verdict": "functional",
+   "world": "steam"
+  },
+  {
+   "client": {
+    "minecarts": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "rail": true
+   },
+   "level": "steam_35",
+   "levelNumber": 4,
+   "moduleNames": [
+    "Rails"
+   ],
+   "modules": [
+    {
+     "class": "RailcartProperties",
+     "evidence": {
+      "carts": 9,
+      "hasCartField": true,
+      "hasCountField": false,
+      "hasPathField": true,
+      "rails": 9
+     },
+     "fields": [
+      "RailcartType",
+      "Railcarts",
+      "Rails"
+     ],
+     "pkg": "pkg_1748",
+     "type": "railcart_cowboy",
+     "verdict": "functional"
+    }
+   ],
+   "package": "pkg_1748",
+   "stage": "SteamUBStage",
+   "verdict": "functional",
+   "world": "steam"
+  }
+ ],
+ "marker": "rails-semantics-v1",
+ "missingOriginal": [],
+ "moduleWithoutObject": [
+  "fairy_31",
+  "future_66",
+  "future_69",
+  "future_70",
+  "plantagenet_47"
+ ],
+ "nightMismatch": [
+  {
+   "level": "carnival_30",
+   "night": true,
+   "stage": "AprilFoolsStage"
+  },
+  {
+   "level": "dark_52",
+   "night": true,
+   "stage": "DarkStage"
+  },
+  {
+   "level": "dark_53",
+   "night": true,
+   "stage": "DarkStage"
+  },
+  {
+   "level": "dark_54",
+   "night": true,
+   "stage": "DarkDMGStage"
+  },
+  {
+   "level": "dark_56",
+   "night": true,
+   "stage": "DarkDMGStage"
+  },
+  {
+   "level": "dark_57",
+   "night": true,
+   "stage": "DarkDMGStage"
+  },
+  {
+   "level": "dark_58",
+   "night": true,
+   "stage": "DarkDMGStage"
+  },
+  {
+   "level": "dark_59",
+   "night": true,
+   "stage": "DarkDMGStage"
+  },
+  {
+   "level": "dark_60",
+   "night": true,
+   "stage": "DarkDMGStage"
+  },
+  {
+   "level": "dark_61",
+   "night": true,
+   "stage": "DarkDMGStage"
+  },
+  {
+   "level": "dark_62",
+   "night": true,
+   "stage": "DarkDMGStage"
+  },
+  {
+   "level": "plantagenet_47",
+   "night": true,
+   "stage": "PlantagenetFunTimeStage"
+  },
+  {
+   "level": "renai_12",
+   "night": true,
+   "stage": "RenaiDMGStage"
+  }
+ ],
+ "noModulesLevels": [
+  "egypt_50",
+  "frontyard_86",
+  "frontyard_87",
+  "frontyard_88"
+ ],
+ "objectWithoutModule": [
+  "beach_8",
+  "beach_9",
+  "beach_10",
+  "beach_11",
+  "beach_16",
+  "cowboy_20",
+  "cowboy_41",
+  "cowboy_42",
+  "egypt_19",
+  "frontyard_143",
+  "future_54",
+  "iceage_65",
+  "kongfu_44",
+  "lunarrainbowmarket_93",
+  "memorytour_4",
+  "muji_27",
+  "pirate_67",
+  "plantagenet_40",
+  "plantagenet_45"
+ ],
+ "source": {
+  "levels": "content/levels/*.json",
+  "obb": "work/obb_packages/pkg_*_LevelDefinition.json"
+ },
+ "vasebreaker": {
+  "client": [
+   "beach_69",
+   "beach_70",
+   "beach_71",
+   "carnival_66",
+   "carnival_91",
+   "cowboy_33",
+   "cowboy_36",
+   "cowboy_37",
+   "dark_67",
+   "dark_68",
+   "dark_72",
+   "egypt_54",
+   "egypt_57",
+   "egypt_59",
+   "egypt_61",
+   "frontyard_166",
+   "frontyard_167",
+   "frontyard_168",
+   "frontyard_169",
+   "frontyard_170",
+   "future_37",
+   "future_40",
+   "future_44",
+   "future_46",
+   "future_54",
+   "future_65",
+   "future_68",
+   "heian_2",
+   "heian_9",
+   "heian_28",
+   "kongfu_35",
+   "kongfu_76",
+   "kongfu_83",
+   "losantosvice_21",
+   "lunarrainbowmarket_50",
+   "lunarrainbowmarket_64",
+   "lunarrainbowmarket_74",
+   "mausoleum_2",
+   "modern_51",
+   "muji_24",
+   "pirate_41",
+   "pirate_53",
+   "pirate_54",
+   "pirate_57",
+   "plantagenet_18",
+   "sky_52",
+   "steam_32"
+  ],
+  "missing": [],
+  "original": [
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "beach_69",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_0290",
+    "stage": "BeachStage",
+    "wave_count": 8,
+    "world": "beach"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "beach_70",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_0291",
+    "stage": "BeachStage",
+    "wave_count": 8,
+    "world": "beach"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "beach_71",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_0292",
+    "stage": "BeachStage",
+    "wave_count": 8,
+    "world": "beach"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "carnival_66",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_0372",
+    "stage": "CarnivalStage",
+    "wave_count": 1,
+    "world": "carnival"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "carnival_91",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_0364",
+    "stage": "CarnivalStage",
+    "wave_count": 8,
+    "world": "carnival"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "cowboy_33",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_0293",
+    "stage": "WestStage",
+    "wave_count": 8,
+    "world": "cowboy"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "cowboy_36",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_0294",
+    "stage": "WestStage",
+    "wave_count": 8,
+    "world": "cowboy"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "cowboy_37",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_0295",
+    "stage": "WestStage",
+    "wave_count": 8,
+    "world": "cowboy"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "dark_67",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_0296",
+    "stage": "DarkStage",
+    "wave_count": 8,
+    "world": "dark"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "dark_68",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_0297",
+    "stage": "DarkStage",
+    "wave_count": 8,
+    "world": "dark"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "dark_72",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_0298",
+    "stage": "DarkStage",
+    "wave_count": 8,
+    "world": "dark"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "egypt_54",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_0299",
+    "stage": "EgyptStage",
+    "wave_count": 8,
+    "world": "egypt"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "egypt_57",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_0895",
+    "stage": "EgyptNightsStage",
+    "wave_count": 18,
+    "world": "egypt"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "egypt_59",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_0300",
+    "stage": "EgyptStage",
+    "wave_count": 8,
+    "world": "egypt"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "egypt_61",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_0301",
+    "stage": "EgyptStage",
+    "wave_count": 8,
+    "world": "egypt"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "frontyard_166",
+    "modules": [
+     "VaseBreakerArcade",
+     "TestVaseBreaker"
+    ],
+    "package": "pkg_0302",
+    "stage": "FrontLawnStage",
+    "wave_count": 8,
+    "world": "frontyard"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "frontyard_167",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_0309",
+    "stage": "FrontLawnStage",
+    "wave_count": 8,
+    "world": "frontyard"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "frontyard_168",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_0310",
+    "stage": "FrontLawnStage",
+    "wave_count": 8,
+    "world": "frontyard"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "frontyard_169",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_0311",
+    "stage": "FrontLawnStage",
+    "wave_count": 8,
+    "world": "frontyard"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "frontyard_170",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_0312",
+    "stage": "FrontLawnStage",
+    "wave_count": 8,
+    "world": "frontyard"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "future_37",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_0303",
+    "stage": "FutureStage",
+    "wave_count": 8,
+    "world": "future"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "future_40",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_0304",
+    "stage": "FutureStage",
+    "wave_count": 8,
+    "world": "future"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "future_44",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_0305",
+    "stage": "FutureStage",
+    "wave_count": 8,
+    "world": "future"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "future_46",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_1641",
+    "stage": "FutureOriDMGStage",
+    "wave_count": 8,
+    "world": "future"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "future_54",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_1643",
+    "stage": "FutureOriDMGStage",
+    "wave_count": 8,
+    "world": "future"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "future_65",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_0741",
+    "stage": "FutureOriFunTimeStage",
+    "wave_count": 8,
+    "world": "future"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "future_68",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_0752",
+    "stage": "FutureOriFunTimeStage",
+    "wave_count": 8,
+    "world": "future"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "heian_2",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_1322",
+    "stage": "HeianDMGStage",
+    "wave_count": 8,
+    "world": "heian"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "heian_28",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_0966",
+    "stage": "HeianStage",
+    "wave_count": 8,
+    "world": "heian"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "heian_9",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_1334",
+    "stage": "HeianDMGStage",
+    "wave_count": 8,
+    "world": "heian"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "kongfu_35",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_1396",
+    "stage": "KongfuDMGStage",
+    "wave_count": 8,
+    "world": "kongfu"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "kongfu_76",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_1065",
+    "stage": "JTTWStage",
+    "wave_count": 8,
+    "world": "kongfu"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "kongfu_83",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_0756",
+    "stage": "KongfuFunTimeStage",
+    "wave_count": 5,
+    "world": "kongfu"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "losantosvice_21",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_1097",
+    "stage": "GTADMGStage",
+    "wave_count": 8,
+    "world": "losantosvice"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "lunarrainbowmarket_50",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_0886",
+    "stage": "LunarStage",
+    "wave_count": 8,
+    "world": "lunarrainbowmarket"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "lunarrainbowmarket_64",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_0837",
+    "stage": "LunarDMGStage",
+    "wave_count": 8,
+    "world": "lunarrainbowmarket"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "lunarrainbowmarket_74",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_0841",
+    "stage": "LunarStage",
+    "wave_count": 8,
+    "world": "lunarrainbowmarket"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "mausoleum_2",
+    "modules": [
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_0549",
+    "stage": "RiftStage",
+    "wave_count": 8,
+    "world": "mausoleum"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "modern_51",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_0878",
+    "stage": "ChildStage",
+    "wave_count": 8,
+    "world": "modern"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "muji_24",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_1810",
+    "stage": "RiftStage",
+    "wave_count": 8,
+    "world": "muji"
+   },
+   {
+    "boss": true,
+    "bossZombie": "zomboss",
+    "clientSpecial": null,
+    "clientVasebreaker": true,
+    "level": "pirate_41",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_1557",
+    "stage": "PirateBossStage",
+    "wave_count": 8,
+    "world": "pirate"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "pirate_53",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_0306",
+    "stage": "PirateStage",
+    "wave_count": 8,
+    "world": "pirate"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "pirate_54",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_0307",
+    "stage": "PirateStage",
+    "wave_count": 8,
+    "world": "pirate"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "pirate_57",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_0308",
+    "stage": "PirateStage",
+    "wave_count": 8,
+    "world": "pirate"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": null,
+    "clientVasebreaker": true,
+    "level": "plantagenet_18",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_1576",
+    "stage": "PlantagenetDaylightDMGStage",
+    "wave_count": 8,
+    "world": "plantagenet"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "sky_52",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_0721",
+    "stage": "PenaconyStage",
+    "wave_count": 8,
+    "world": "sky"
+   },
+   {
+    "boss": false,
+    "bossZombie": null,
+    "clientSpecial": [
+     "IsVasebreaker"
+    ],
+    "clientVasebreaker": true,
+    "level": "steam_32",
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps"
+    ],
+    "package": "pkg_1880",
+    "stage": "SteamUBStage",
+    "wave_count": 8,
+    "world": "steam"
+   }
+  ]
+ }
+}

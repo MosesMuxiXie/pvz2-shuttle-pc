@@ -954,6 +954,7 @@
   "level_number": 15,
   "wave_count": 16,
   "original_waves": 16,
-  "night": false
+  "night": false,
+  "suppressFlagZombie": true
  }
 }

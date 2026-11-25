@@ -1,0 +1,13 @@
+{
+  "level": "frontyard_1",
+  "seed": 7,
+  "inputs": [
+    { "tick": 10, "op": "plant", "type": "sunflower", "row": 2, "col": 0 },
+    { "tick": 12, "op": "plant", "type": "sunflower", "row": 2, "col": 1 },
+    { "tick": 40, "op": "plant", "type": "potatomine", "row": 3, "col": 4 },
+    { "tick": 200, "op": "spawn", "type": "basic", "row": 2 },
+    { "tick": 280, "op": "collect", "id": 0 },
+    { "tick": 320, "op": "plant", "type": "peashooter", "row": 2, "col": 2 },
+    { "tick": 340, "op": "plant", "type": "wallnut", "row": 2, "col": 5 }
+  ]
+}

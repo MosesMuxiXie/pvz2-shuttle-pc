@@ -4,3 +4,14 @@
 *.md text eol=lf
 *.ps1 text eol=crlf
 *.command text eol=lf
+
+# 生成产物按字节比对（--check 逐字节比较），禁止任何换行转换：
+# content.pack 是 LF 分隔的 JSON 行，被转成 CRLF 就与编译器输出不一致。
+native/generated/** -text
+
+# 三方源码保持上游原样（vendored：stb_vorbis / minimp3 / freetype 等）
+native/third_party/** -text
+
+# 数据表与内嵌表：编译器写 LF，读侧也按 LF 比对
+*.csv text eol=lf
+*.inc text eol=lf

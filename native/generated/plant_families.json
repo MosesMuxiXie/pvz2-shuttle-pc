@@ -1,0 +1,2795 @@
+{
+  "counts": {
+    "byFamily": {
+      "boomerang": 4,
+      "chomp": 3,
+      "fume": 4,
+      "instant": 54,
+      "lob": 44,
+      "mine": 4,
+      "produce": 22,
+      "shoot": 128,
+      "spike": 17,
+      "support": 34,
+      "wall": 25
+    },
+    "byRule": {
+      "R01-produce/sun-action": 15,
+      "R02-produce/sun-producer": 7,
+      "R03-chomp/named": 3,
+      "R04-fume/named": 4,
+      "R05-boomerang/named": 4,
+      "R06-mine/named": 4,
+      "R07-instant/flagged": 38,
+      "R08-instant/consumable": 14,
+      "R09-instant/explosion": 1,
+      "R09b-instant/manual-detonation": 1,
+      "R10-wall/no-actions-high-hp": 15,
+      "R11-wall/defensive-name": 8,
+      "R12-wall/no-attack-high-hp": 2,
+      "R13-spike/named": 8,
+      "R14-spike/melee-special": 9,
+      "R15-support/seed-rain": 8,
+      "R16-lob/arc": 44,
+      "R17-shoot/projectile": 128,
+      "R19-support/no-attack": 24,
+      "R20-support/buff-explosion": 1,
+      "R21-support/catch-all": 1
+    },
+    "labelled": 44,
+    "plants": 339,
+    "unlabelled": 295
+  },
+  "format": "pvz2-shuttle/plant-families@1",
+  "labels": {
+    "agreement": 0.9545,
+    "compared": 44,
+    "disagreements": [
+      {
+        "family": "shoot",
+        "id": "begonia",
+        "label": "lob",
+        "rule": "R17-shoot/projectile"
+      },
+      {
+        "family": "support",
+        "id": "frozenpear",
+        "label": "instant",
+        "rule": "R15-support/seed-rain"
+      }
+    ]
+  },
+  "plants": [
+    {
+      "evidence": "rule=R15-support/seed-rain kinds=projectile hp=300 cost=350 traj=drop atk=1200 obb",
+      "family": "support",
+      "framework": "PlantBanana",
+      "id": "ailmint",
+      "rule": "R15-support/seed-rain",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile,special hp=300 cost=225 traj=straight atk=1500 obb",
+      "family": "shoot",
+      "framework": "PlantNarcissusShooter",
+      "id": "akee",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile,special hp=300 cost=175 traj=arc atk=60 LobHeight=350 obb",
+      "family": "lob",
+      "framework": "PlantAkee",
+      "id": "akee1",
+      "rule": "R16-lob/arc",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=150 traj=straight atk=350 obb",
+      "family": "shoot",
+      "framework": "PlantPrimalPeashooter",
+      "id": "aloe",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R19-support/no-attack kinds=special hp=300 cost=125 traj=unknown atk=0 obb",
+      "family": "support",
+      "framework": "PlantAloes",
+      "id": "aloes",
+      "rule": "R19-support/no-attack",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R13-spike/named kinds=special hp=300 cost=150 traj=unknown atk=60 obb",
+      "family": "spike",
+      "framework": "PlantBonkchoy",
+      "id": "ambershroom",
+      "rule": "R13-spike/named",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R07-instant/flagged kinds=projectile,special hp=1 cost=75 traj=straight atk=3000 IsInstant=true IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantTumbleweed",
+      "id": "appeasemint",
+      "rule": "R07-instant/flagged",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile,special hp=300 cost=250 traj=arc atk=30 LobHeight=500 obb",
+      "family": "lob",
+      "framework": "PlantAppleMortar",
+      "id": "applemortar",
+      "rule": "R16-lob/arc",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R19-support/no-attack kinds=- hp=300 cost=200 traj=unknown atk=0 obb",
+      "family": "support",
+      "framework": "PlantApsarlotus",
+      "id": "apsarlotus",
+      "rule": "R19-support/no-attack",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile,special hp=300.0 cost=175 traj=straight atk=90 obb",
+      "family": "shoot",
+      "framework": "PlantAquaVine",
+      "id": "aquavine",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R19-support/no-attack kinds=special hp=300 cost=300 traj=unknown atk=0 obb",
+      "family": "support",
+      "framework": "PlantAquaWeed",
+      "id": "aquaweed",
+      "rule": "R19-support/no-attack",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=250 traj=straight atk=270 obb",
+      "family": "shoot",
+      "framework": "PlantPeashooter",
+      "id": "armamint",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R14-spike/melee-special kinds=special hp=600 cost=175 traj=unknown atk=750 obb",
+      "family": "spike",
+      "framework": "PlantBambooSpartan",
+      "id": "bamboospartan",
+      "rule": "R14-spike/melee-special",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R15-support/seed-rain kinds=projectile hp=300 cost=500 traj=drop atk=1200 obb",
+      "family": "support",
+      "framework": "PlantBanana",
+      "id": "banana",
+      "rule": "R15-support/seed-rain",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile hp=300 cost=200 traj=arc atk=2400 obb",
+      "family": "lob",
+      "framework": "PlantBeanChemist",
+      "id": "beanchemist",
+      "rule": "R16-lob/arc",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R21-support/catch-all kinds=special hp=2000 cost=100 traj=unknown atk=500 obb",
+      "family": "support",
+      "framework": "PlantBeanSprout",
+      "id": "beansprout",
+      "rule": "R21-support/catch-all",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=175 traj=straight atk=600 obb label=lob(disagree)",
+      "family": "shoot",
+      "framework": "PlantBegonia",
+      "id": "begonia",
+      "rule": "R17-shoot/projectile",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile,special hp=300 cost=200 traj=unknown atk=1500 obb label=shoot(agree)",
+      "family": "shoot",
+      "framework": "PlantParadise",
+      "id": "birdofparadise",
+      "rule": "R17-shoot/projectile",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R01-produce/sun-action kinds=special,sun hp=300 cost=125 traj=unknown atk=0 sunProducer=true obb",
+      "family": "produce",
+      "framework": "PlantBirthSunflower",
+      "id": "birthsunflower",
+      "rule": "R01-produce/sun-action",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=100 traj=straight atk=15 obb",
+      "family": "shoot",
+      "framework": "PlantMiniPeashooter",
+      "id": "bitpeashooter",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=800 cost=175 traj=straight atk=350 obb",
+      "family": "shoot",
+      "framework": "PlantPrimalPeashooter",
+      "id": "blastberry",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R08-instant/consumable kinds=projectile,special hp=1500.0 cost=125 traj=arc atk=0 IsConsumable=true LobHeight=350 obb",
+      "family": "instant",
+      "framework": "PlantBlastSpinner",
+      "id": "blastspinner",
+      "rule": "R08-instant/consumable",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R09-instant/explosion kinds=explode hp=1500 cost=None traj=unknown atk=2000 obb",
+      "family": "instant",
+      "framework": "BlastSpinnerCocoon",
+      "id": "blastspinnercocoon",
+      "rule": "R09-instant/explosion",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R11-wall/defensive-name kinds=special hp=6000 cost=150 traj=unknown atk=190 obb",
+      "family": "wall",
+      "framework": "PlantBlockoli",
+      "id": "blockoli",
+      "rule": "R11-wall/defensive-name",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R05-boomerang/named kinds=projectile hp=300 cost=150 traj=straight atk=40 obb label=boomerang(agree)",
+      "family": "boomerang",
+      "framework": "PlantMagicShroom",
+      "id": "bloomerang",
+      "rule": "R05-boomerang/named",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R05-boomerang/named kinds=projectile hp=300 cost=200 traj=straight atk=25 obb",
+      "family": "boomerang",
+      "framework": "PlantBloomerang",
+      "id": "bloomerang1",
+      "rule": "R05-boomerang/named",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile,special hp=300 cost=200 traj=arc atk=100 obb",
+      "family": "lob",
+      "framework": "PlantCabbagepult",
+      "id": "bloominghearts",
+      "rule": "R16-lob/arc",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile,special hp=300 cost=150 traj=arc atk=40 LobHeight=500 obb",
+      "family": "lob",
+      "framework": "PlantBloomingHearts",
+      "id": "bloominghearts1",
+      "rule": "R16-lob/arc",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R07-instant/flagged kinds=special hp=1000 cost=50 traj=unknown atk=0 IsInstant=true IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantBlover",
+      "id": "blover",
+      "rule": "R07-instant/flagged",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=800 cost=250 traj=none atk=150 obb",
+      "family": "shoot",
+      "framework": "PlantPrimalPeashooter",
+      "id": "boingsetta",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R14-spike/melee-special kinds=special hp=300 cost=150 traj=unknown atk=10000 obb",
+      "family": "spike",
+      "framework": "PlantBoingsetta",
+      "id": "boingsetta1",
+      "rule": "R14-spike/melee-special",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R07-instant/flagged kinds=- hp=100 cost=150 traj=unknown atk=0 IsInstant=true IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantBombardmint",
+      "id": "bombardmint",
+      "rule": "R07-instant/flagged",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R07-instant/flagged kinds=special hp=100 cost=50 traj=unknown atk=0 IsInstant=true IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantAppeasemint",
+      "id": "bombegranate",
+      "rule": "R07-instant/flagged",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R13-spike/named kinds=special hp=300 cost=150 traj=unknown atk=60 obb label=spike(agree)",
+      "family": "spike",
+      "framework": "PlantBonkchoy",
+      "id": "bonkchoy",
+      "rule": "R13-spike/named",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile,special hp=175 cost=200 traj=drop atk=200 LobHeight=1000 obb",
+      "family": "lob",
+      "framework": "PlantBoomberry",
+      "id": "boomberry",
+      "rule": "R16-lob/arc",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=425 traj=none atk=1300 obb",
+      "family": "shoot",
+      "framework": "PlantBoomFlower",
+      "id": "boomflower",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile,special hp=300 cost=200 traj=straight atk=180 obb",
+      "family": "shoot",
+      "framework": "PlantBowlingBulb",
+      "id": "bowlingbulb",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R08-instant/consumable kinds=special hp=1500 cost=125 traj=unknown atk=60 IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantBrambleBush",
+      "id": "bramblebush",
+      "rule": "R08-instant/consumable",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=250 traj=straight atk=320 obb",
+      "family": "shoot",
+      "framework": "PlantBubbleCoral",
+      "id": "bubblecoral",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R07-instant/flagged kinds=projectile hp=300 cost=100 traj=arc atk=25 IsInstant=true IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantBuduhBoom",
+      "id": "buduhboom",
+      "rule": "R07-instant/flagged",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R08-instant/consumable kinds=explode hp=300 cost=1000 traj=unknown atk=0 IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantPowerLily",
+      "id": "burnade",
+      "rule": "R08-instant/consumable",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile,special hp=300 cost=25 traj=arc atk=200 obb",
+      "family": "lob",
+      "framework": "PlantButtercup",
+      "id": "buttercup",
+      "rule": "R16-lob/arc",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=225 traj=straight atk=350 obb",
+      "family": "shoot",
+      "framework": "PlantElectricPeashooter",
+      "id": "buzzbutton",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile,special hp=300 cost=100 traj=arc atk=40 obb label=lob(agree)",
+      "family": "lob",
+      "framework": "PlantCabbagepult",
+      "id": "cabbagepult",
+      "rule": "R16-lob/arc",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile,special hp=300 cost=100 traj=arc atk=40 obb",
+      "family": "lob",
+      "framework": "PlantCabbagepult",
+      "id": "cabbagepultpvz",
+      "rule": "R16-lob/arc",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=225 traj=straight atk=1000 obb",
+      "family": "shoot",
+      "framework": "PlantPrimalPeashooter",
+      "id": "cactus",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=175 traj=straight atk=60 obb",
+      "family": "shoot",
+      "framework": "PlantCactus",
+      "id": "cactus1",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile,special hp=300 cost=150 traj=straight atk=50 LobHeight=250 obb",
+      "family": "lob",
+      "framework": "PlantPepperpult",
+      "id": "carrotmissile",
+      "rule": "R16-lob/arc",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=350 traj=straight atk=0 obb",
+      "family": "shoot",
+      "framework": "PlantCaulipower",
+      "id": "caulipower",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R13-spike/named kinds=special hp=1200 cost=50 traj=unknown atk=100 obb",
+      "family": "spike",
+      "framework": "PlantCeleryStalker",
+      "id": "celerystalker",
+      "rule": "R13-spike/named",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R01-produce/sun-action kinds=sun hp=100 cost=250 traj=unknown atk=0 obb",
+      "family": "produce",
+      "framework": "PlantCerydra",
+      "id": "cerydra",
+      "rule": "R01-produce/sun-action",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R11-wall/defensive-name kinds=special hp=1500 cost=75 traj=unknown atk=60 obb",
+      "family": "wall",
+      "framework": "PlantChardGuard",
+      "id": "chardguard",
+      "rule": "R11-wall/defensive-name",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R07-instant/flagged kinds=explode hp=300 cost=150 traj=unknown atk=1800 IsInstant=true IsConsumable=true obb label=instant(agree)",
+      "family": "instant",
+      "framework": "PlantCherryBomb",
+      "id": "cherry_bomb",
+      "rule": "R07-instant/flagged",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R08-instant/consumable kinds=special hp=300 cost=50 traj=unknown atk=500 IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantChilibean",
+      "id": "chilibean",
+      "rule": "R08-instant/consumable",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R07-instant/flagged kinds=explode hp=300 cost=75 traj=unknown atk=200 IsInstant=true IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantChillyPepper",
+      "id": "chillypepper",
+      "rule": "R07-instant/flagged",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R03-chomp/named kinds=special hp=300 cost=100 traj=unknown atk=40 obb",
+      "family": "chomp",
+      "framework": "PlantChineseChompingCabbage",
+      "id": "chinesechompingcabbage",
+      "rule": "R03-chomp/named",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R03-chomp/named kinds=projectile hp=300 cost=150 traj=unknown atk=0 obb label=chomp(agree)",
+      "family": "chomp",
+      "framework": "PlantChomper",
+      "id": "chomper",
+      "rule": "R03-chomp/named",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R07-instant/flagged kinds=- hp=100 cost=0 traj=unknown atk=0 IsInstant=true IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantPeppermint",
+      "id": "chrysantheautumn",
+      "rule": "R07-instant/flagged",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R12-wall/no-attack-high-hp kinds=explode,special hp=4000 cost=75 traj=unknown atk=0 obb",
+      "family": "wall",
+      "framework": "PlantTorchwood",
+      "id": "citron",
+      "rule": "R12-wall/no-attack-high-hp",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=350 traj=straight atk=2500 obb",
+      "family": "shoot",
+      "framework": "PlantCitron",
+      "id": "citron1",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=350 traj=straight atk=2500 obb",
+      "family": "shoot",
+      "framework": "PlantCitron",
+      "id": "citron2",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=300 traj=straight atk=1200 obb",
+      "family": "shoot",
+      "framework": "PlantCoconutCannon",
+      "id": "coconutcannon",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=400 traj=straight atk=900 obb",
+      "family": "shoot",
+      "framework": "PlantPeashooter",
+      "id": "coconutcannon_barrage",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=150 traj=unknown atk=0 obb",
+      "family": "shoot",
+      "framework": "PlantSnapdragon",
+      "id": "coldsnapdragon",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R07-instant/flagged kinds=special hp=1 cost=75 traj=unknown atk=0 IsInstant=true IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantAppeasemint",
+      "id": "concealmint",
+      "rule": "R07-instant/flagged",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R07-instant/flagged kinds=special hp=1 cost=75 traj=unknown atk=0 IsInstant=true IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantAppeasemint",
+      "id": "containmint",
+      "rule": "R07-instant/flagged",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R19-support/no-attack kinds=- hp=300 cost=250 traj=unknown atk=0 obb",
+      "family": "support",
+      "framework": "PlantCornucopia",
+      "id": "cornucopia",
+      "rule": "R19-support/no-attack",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R07-instant/flagged kinds=projectile hp=300 cost=75 traj=straight atk=40 IsInstant=true IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantCranJelly",
+      "id": "cranjelly",
+      "rule": "R07-instant/flagged",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=250 cost=0 traj=straight atk=100 obb",
+      "family": "shoot",
+      "framework": "PlantPrimalPeashooter",
+      "id": "cutebubuseed",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300.0 cost=200 traj=straight atk=200 obb",
+      "family": "shoot",
+      "framework": "PlantAcidLemon",
+      "id": "dandelion",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R01-produce/sun-action kinds=special,sun hp=300 cost=200 traj=unknown atk=0 sunProducer=true obb",
+      "family": "produce",
+      "framework": "PlantTwinSunflower",
+      "id": "darktwinsunflower",
+      "rule": "R01-produce/sun-action",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=plantfood,projectile hp=300 cost=225 traj=straight atk=80 obb",
+      "family": "shoot",
+      "framework": "PlantDartichoke",
+      "id": "dartichoke",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile,special hp=300 cost=100 traj=straight atk=60 obb",
+      "family": "shoot",
+      "framework": "PlantReincarnation",
+      "id": "dazeychain",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R03-chomp/named kinds=projectile,special hp=300.0 cost=225 traj=straight atk=1500 obb",
+      "family": "chomp",
+      "framework": "PlantDesireFlower",
+      "id": "desireflower",
+      "rule": "R03-chomp/named",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R10-wall/no-actions-high-hp kinds=- hp=4000 cost=75 traj=unknown atk=0 obb",
+      "family": "wall",
+      "framework": "PlantDoombell",
+      "id": "doombell",
+      "rule": "R10-wall/no-actions-high-hp",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R08-instant/consumable kinds=explode hp=300.0 cost=400 traj=unknown atk=1500 IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantDoomShroom",
+      "id": "doomshroom",
+      "rule": "R08-instant/consumable",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=6000 cost=100 traj=unknown atk=0 obb",
+      "family": "shoot",
+      "framework": "PlantSnapdragon",
+      "id": "draftodil",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=plantfood,projectile hp=300 cost=100 traj=straight atk=15 obb",
+      "family": "shoot",
+      "framework": "PlantDraftodil",
+      "id": "draftodil1",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile hp=300 cost=100 traj=arc atk=10 obb",
+      "family": "lob",
+      "framework": "PlantDragonBabyBruit",
+      "id": "dragonbabybruit",
+      "rule": "R16-lob/arc",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile,special hp=300 cost=100 traj=arc atk=35 obb",
+      "family": "lob",
+      "framework": "PlantDragonBruit",
+      "id": "dragonbruit",
+      "rule": "R16-lob/arc",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=150 traj=straight atk=160 obb",
+      "family": "shoot",
+      "framework": "PlantDuckPear",
+      "id": "duckpear",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile,special hp=300 cost=175 traj=arc atk=30 LobHeight=500 obb",
+      "family": "lob",
+      "framework": "PlantDusklobber",
+      "id": "dusklobber",
+      "rule": "R16-lob/arc",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R10-wall/no-actions-high-hp kinds=- hp=3000 cost=75 traj=unknown atk=0 obb label=wall(agree)",
+      "family": "wall",
+      "framework": "PlantElderbarrier",
+      "id": "elderbarrier",
+      "rule": "R10-wall/no-actions-high-hp",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=150 traj=unknown atk=1 obb",
+      "family": "shoot",
+      "framework": "PlantElectricBlueberry",
+      "id": "electricblueberry",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R14-spike/melee-special kinds=special hp=200.0 cost=150 traj=unknown atk=80 obb",
+      "family": "spike",
+      "framework": "PlantElectricCurrant",
+      "id": "electriccurrant",
+      "rule": "R14-spike/melee-special",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R05-boomerang/named kinds=projectile hp=300 cost=225 traj=straight atk=60 obb",
+      "family": "boomerang",
+      "framework": "PlantBloomerang",
+      "id": "electricitea",
+      "rule": "R05-boomerang/named",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R14-spike/melee-special kinds=special hp=150 cost=125 traj=unknown atk=950 obb",
+      "family": "spike",
+      "framework": "PlantElectricitea",
+      "id": "electricitea1",
+      "rule": "R14-spike/melee-special",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=350 traj=straight atk=400 obb",
+      "family": "shoot",
+      "framework": "PlantPeashooter",
+      "id": "electricpeashooter",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=175 traj=straight atk=1000 obb",
+      "family": "shoot",
+      "framework": "PlantElectricPeel",
+      "id": "electricpeel",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R07-instant/flagged kinds=special hp=100 cost=25 traj=unknown atk=1 IsInstant=true IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantEMPea",
+      "id": "empea",
+      "rule": "R07-instant/flagged",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R01-produce/sun-action kinds=special,sun hp=300 cost=225 traj=unknown atk=0 IsInstant=true IsConsumable=true obb",
+      "family": "produce",
+      "framework": "PlantPowerLily",
+      "id": "enchantmint",
+      "rule": "R01-produce/sun-action",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R11-wall/defensive-name kinds=special hp=3000 cost=100 traj=unknown atk=30 obb",
+      "family": "wall",
+      "framework": "PlantEndurian",
+      "id": "endurian",
+      "rule": "R11-wall/defensive-name",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=200 traj=straight atk=20 obb",
+      "family": "shoot",
+      "framework": "PlantPeashooter",
+      "id": "enforcemint",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=1000 cost=150 traj=straight atk=120 obb",
+      "family": "shoot",
+      "framework": "PlantPrimalPeashooter",
+      "id": "enlightenmint",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R02-produce/sun-producer kinds=- hp=100 cost=0 traj=unknown atk=0 sunProducer=true IsInstant=true IsConsumable=true obb",
+      "family": "produce",
+      "framework": "PlantEnlightenmint",
+      "id": "enlightenmint1",
+      "rule": "R02-produce/sun-producer",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile,special hp=300 cost=175 traj=unknown atk=0 obb",
+      "family": "shoot",
+      "framework": "PlantCNIceShroom",
+      "id": "escaperoot",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R07-instant/flagged kinds=explode,projectile hp=300 cost=100 traj=straight atk=200 IsInstant=true IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantEscapeRoot",
+      "id": "escaperoot1",
+      "rule": "R07-instant/flagged",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=150 traj=unknown atk=0 obb",
+      "family": "shoot",
+      "framework": "PlantSnapdragon",
+      "id": "evilshroom_speed",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=175 traj=straight atk=350 obb",
+      "family": "shoot",
+      "framework": "PlantPrimalPeashooter",
+      "id": "evilshroom_toughness",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=100 traj=straight atk=60 obb",
+      "family": "shoot",
+      "framework": "PlantExorcisLily",
+      "id": "exorcislily",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile,special hp=300 cost=200 traj=arc atk=40 obb",
+      "family": "lob",
+      "framework": "PlantCabbagepult",
+      "id": "explodeonut",
+      "rule": "R16-lob/arc",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R10-wall/no-actions-high-hp kinds=- hp=3000 cost=50 traj=unknown atk=0 obb",
+      "family": "wall",
+      "framework": "PlantExplodeONut",
+      "id": "explodeonut1",
+      "rule": "R10-wall/no-actions-high-hp",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile,special hp=300 cost=225 traj=unknown atk=0 obb",
+      "family": "shoot",
+      "framework": "PlantCNFireShroom",
+      "id": "explodeovine",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R10-wall/no-actions-high-hp kinds=- hp=1500 cost=150 traj=unknown atk=0 obb",
+      "family": "wall",
+      "framework": "PlantExplodeOVine",
+      "id": "explodeovine1",
+      "rule": "R10-wall/no-actions-high-hp",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R15-support/seed-rain kinds=projectile hp=30 cost=500 traj=drop atk=500 obb",
+      "family": "support",
+      "framework": "PlantPeashooter",
+      "id": "fairymushroom",
+      "rule": "R15-support/seed-rain",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R07-instant/flagged kinds=projectile hp=100 cost=200 traj=unknown atk=5 IsInstant=true IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantFilamint",
+      "id": "filamint",
+      "rule": "R07-instant/flagged",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R10-wall/no-actions-high-hp kinds=- hp=2671 cost=225 traj=unknown atk=0 obb",
+      "family": "wall",
+      "framework": "PlantFirefly",
+      "id": "firefly",
+      "rule": "R10-wall/no-actions-high-hp",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=600 cost=225 traj=straight atk=300 obb",
+      "family": "shoot",
+      "framework": "PlantPeashooter",
+      "id": "firepeashooter",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile,special hp=300 cost=175 traj=straight atk=225 obb",
+      "family": "shoot",
+      "framework": "PlantFirePeashooter",
+      "id": "firepeashooter1",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=25 traj=none atk=2.14748e+09 obb",
+      "family": "shoot",
+      "framework": "PlantPeashooter",
+      "id": "flowerpot",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R15-support/seed-rain kinds=projectile hp=2500 cost=175 traj=drop atk=1600 obb label=instant(disagree)",
+      "family": "support",
+      "framework": "PlantPeanut",
+      "id": "frozenpear",
+      "rule": "R15-support/seed-rain",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R04-fume/named kinds=projectile,special hp=300 cost=125 traj=unknown atk=1500 obb label=fume(agree)",
+      "family": "fume",
+      "framework": "PlantFumeshroom",
+      "id": "fumeshroom",
+      "rule": "R04-fume/named",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=300 traj=straight atk=50 obb",
+      "family": "shoot",
+      "framework": "PlantFusionGatling",
+      "id": "fusiongatling",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=600 cost=300 traj=straight atk=60 obb",
+      "family": "shoot",
+      "framework": "PlantPrimalPeashooter",
+      "id": "futurebubuseed",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=explode,projectile hp=300 cost=225 traj=straight atk=800 obb label=shoot(agree)",
+      "family": "shoot",
+      "framework": "PlantSeaFlora",
+      "id": "gardenia",
+      "rule": "R17-shoot/projectile",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R19-support/no-attack kinds=- hp=600 cost=50 traj=unknown atk=0 obb",
+      "family": "support",
+      "framework": "PlantGarlic",
+      "id": "garlic",
+      "rule": "R19-support/no-attack",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R14-spike/melee-special kinds=special hp=300 cost=75 traj=unknown atk=160 obb",
+      "family": "spike",
+      "framework": "PlantGhostPepper",
+      "id": "ghostpepper",
+      "rule": "R14-spike/melee-special",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R10-wall/no-actions-high-hp kinds=- hp=3000 cost=100 traj=unknown atk=0 obb",
+      "family": "wall",
+      "framework": "PlantGloombara",
+      "id": "gloombara",
+      "rule": "R10-wall/no-actions-high-hp",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R04-fume/named kinds=projectile,special hp=300 cost=200 traj=unknown atk=1800 obb",
+      "family": "fume",
+      "framework": "PlantFumeshroom",
+      "id": "gloomvine",
+      "rule": "R04-fume/named",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R01-produce/sun-action kinds=sun hp=100 cost=0 traj=unknown atk=0 sunProducer=true IsInstant=true IsConsumable=true obb",
+      "family": "produce",
+      "framework": "PlantGoldbloom",
+      "id": "goldbloom",
+      "rule": "R01-produce/sun-action",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R02-produce/sun-producer kinds=- hp=100 cost=25 traj=unknown atk=0 sunProducer=true IsInstant=true IsConsumable=true obb",
+      "family": "produce",
+      "framework": "PlantGoldLeaf",
+      "id": "goldleaf",
+      "rule": "R02-produce/sun-producer",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R07-instant/flagged kinds=explode,projectile hp=300 cost=250 traj=straight atk=1800 IsInstant=true IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantGrapeshot",
+      "id": "grapeshot",
+      "rule": "R07-instant/flagged",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R07-instant/flagged kinds=- hp=300 cost=0 traj=unknown atk=0 IsInstant=true IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantGraveBuster",
+      "id": "gravebuster",
+      "rule": "R07-instant/flagged",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R08-instant/consumable kinds=special hp=300 cost=100 traj=unknown atk=2500 IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantGrimrose",
+      "id": "grimrose",
+      "rule": "R08-instant/consumable",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=25 traj=unknown atk=0 obb",
+      "family": "shoot",
+      "framework": "PlantSnapdragon",
+      "id": "groundcherry",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=50 cost=125 traj=straight atk=20 obb",
+      "family": "shoot",
+      "framework": "PlantGuacodile",
+      "id": "guacodile",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R15-support/seed-rain kinds=projectile,special hp=1500 cost=125 traj=drop atk=800 obb",
+      "family": "support",
+      "framework": "PlantGuardShroom",
+      "id": "guardshroom",
+      "rule": "R15-support/seed-rain",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R05-boomerang/named kinds=projectile,special hp=300 cost=300 traj=straight atk=1600 obb",
+      "family": "boomerang",
+      "framework": "PlantBloomerang",
+      "id": "gumnut",
+      "rule": "R05-boomerang/named",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R19-support/no-attack kinds=- hp=300 cost=25 traj=unknown atk=0 obb",
+      "family": "support",
+      "framework": "PlantHayStack",
+      "id": "haystack",
+      "rule": "R19-support/no-attack",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R13-spike/named kinds=special hp=1000 cost=225 traj=unknown atk=100 obb",
+      "family": "spike",
+      "framework": "PlantBonkchoy",
+      "id": "headbutter",
+      "rule": "R13-spike/named",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile,special hp=900 cost=175 traj=arc atk=150 obb",
+      "family": "lob",
+      "framework": "PlantHeadbutterLettuce",
+      "id": "headbutterlettuce",
+      "rule": "R16-lob/arc",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R07-instant/flagged kinds=projectile hp=300 cost=125 traj=straight atk=190 IsInstant=true IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantHeathSeeker",
+      "id": "heathseeker",
+      "rule": "R07-instant/flagged",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R19-support/no-attack kinds=- hp=300 cost=75 traj=unknown atk=0 obb",
+      "family": "support",
+      "framework": "PlantHocusCrocus",
+      "id": "hocus",
+      "rule": "R19-support/no-attack",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R11-wall/defensive-name kinds=projectile,special hp=300 cost=175 traj=arc atk=700 obb",
+      "family": "wall",
+      "framework": "PlantKernelpult",
+      "id": "hollybarrierleaf",
+      "rule": "R11-wall/defensive-name",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R11-wall/defensive-name kinds=projectile,special hp=300 cost=300 traj=straight atk=17 obb",
+      "family": "wall",
+      "framework": "PlantInferno",
+      "id": "hollybarrierleafplantfood",
+      "rule": "R11-wall/defensive-name",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=250 traj=straight atk=20 obb",
+      "family": "shoot",
+      "framework": "PlantGatlingPea",
+      "id": "hollyknight",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=175 traj=straight atk=250 obb",
+      "family": "shoot",
+      "framework": "PlantPrimalPeashooter",
+      "id": "holonut",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R10-wall/no-actions-high-hp kinds=- hp=2000 cost=75 traj=unknown atk=0 obb",
+      "family": "wall",
+      "framework": "PlantHolonut",
+      "id": "holonut1",
+      "rule": "R10-wall/no-actions-high-hp",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=plantfood,projectile hp=300 cost=250 traj=straight atk=40 obb label=shoot(agree)",
+      "family": "shoot",
+      "framework": "PlantHomingThistle",
+      "id": "homingthistle",
+      "rule": "R17-shoot/projectile",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R19-support/no-attack kinds=- hp=300 cost=300 traj=unknown atk=0 obb",
+      "family": "support",
+      "framework": "PlantHorsebean",
+      "id": "horsebean",
+      "rule": "R19-support/no-attack",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R09b-instant/manual-detonation kinds=explode hp=4000 cost=150 traj=unknown atk=0 obb",
+      "family": "instant",
+      "framework": "PlantHotDate",
+      "id": "hotdate",
+      "rule": "R09b-instant/manual-detonation",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R07-instant/flagged kinds=- hp=300 cost=0 traj=unknown atk=0 IsInstant=true IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantHotPotato",
+      "id": "hotpotato",
+      "rule": "R07-instant/flagged",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R07-instant/flagged kinds=special hp=1000 cost=100 traj=unknown atk=0 IsInstant=true IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantHurrikale",
+      "id": "hurrikale",
+      "rule": "R07-instant/flagged",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R08-instant/consumable kinds=special hp=50 cost=125 traj=unknown atk=0 IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantHypnoShroom",
+      "id": "hypnoshroom",
+      "rule": "R08-instant/consumable",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=100 traj=straight atk=0 obb",
+      "family": "shoot",
+      "framework": "PlantHysilens",
+      "id": "hysilens",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile,special hp=300 cost=275 traj=arc atk=200 obb",
+      "family": "lob",
+      "framework": "PlantCabbagepult",
+      "id": "icebloom",
+      "rule": "R16-lob/arc",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R07-instant/flagged kinds=explode hp=300 cost=0 traj=unknown atk=0 IsInstant=true IsConsumable=true obb label=instant(agree)",
+      "family": "instant",
+      "framework": "PlantIceburg",
+      "id": "iceburg",
+      "rule": "R07-instant/flagged",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile,special hp=300.0 cost=150 traj=arc atk=1200 obb",
+      "family": "lob",
+      "framework": "PlantIceShroom",
+      "id": "iceshroom",
+      "rule": "R16-lob/arc",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile,special hp=300 cost=150 traj=straight atk=190 obb",
+      "family": "shoot",
+      "framework": "PlantIceweed",
+      "id": "iceweed",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R19-support/no-attack kinds=- hp=300 cost=None traj=unknown atk=0 obb",
+      "family": "support",
+      "framework": "PlantImitater",
+      "id": "imitater",
+      "rule": "R19-support/no-attack",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=200 traj=straight atk=120 obb",
+      "family": "shoot",
+      "framework": "PlantImpatiensshooter",
+      "id": "impatiensshooter",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=275 traj=straight atk=231 obb",
+      "family": "shoot",
+      "framework": "PlantPinkStarFruit",
+      "id": "imppear",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R08-instant/consumable kinds=special hp=300.0 cost=0 traj=unknown atk=500 IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantImpPearTeto",
+      "id": "imppear_teto",
+      "rule": "R08-instant/consumable",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile,special hp=300 cost=200 traj=arc atk=90 obb",
+      "family": "lob",
+      "framework": "PlantTigerGrass",
+      "id": "inferno",
+      "rule": "R16-lob/arc",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile,special hp=300 cost=200 traj=unknown atk=0 obb",
+      "family": "shoot",
+      "framework": "PlantInferno",
+      "id": "inferno2",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R19-support/no-attack kinds=- hp=300 cost=100 traj=unknown atk=0 obb",
+      "family": "support",
+      "framework": "PlantIntensiveCarrot",
+      "id": "intensivecarrot",
+      "rule": "R19-support/no-attack",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R19-support/no-attack kinds=- hp=300 cost=375 traj=unknown atk=0 obb",
+      "family": "support",
+      "framework": "PlantJackOLantern",
+      "id": "jackolantern",
+      "rule": "R19-support/no-attack",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R07-instant/flagged kinds=explode hp=300 cost=75 traj=unknown atk=1800 IsInstant=true IsConsumable=true obb label=instant(agree)",
+      "family": "instant",
+      "framework": "PlantJalapeno",
+      "id": "jalapeno",
+      "rule": "R07-instant/flagged",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R02-produce/sun-producer kinds=special hp=100 cost=125 traj=unknown atk=0 sunProducer=true IsInstant=true IsConsumable=true obb label=produce(agree)",
+      "family": "produce",
+      "framework": "PlantAppeasemint",
+      "id": "jasmine",
+      "rule": "R02-produce/sun-producer",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R11-wall/defensive-name kinds=special hp=3000 cost=200 traj=unknown atk=0 obb",
+      "family": "wall",
+      "framework": "PlantKelpGuard",
+      "id": "kelpguard",
+      "rule": "R11-wall/defensive-name",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile,special hp=300 cost=200 traj=arc atk=40 LobHeight=350 obb label=lob(agree)",
+      "family": "lob",
+      "framework": "PlantKernelpult",
+      "id": "kernelpult",
+      "rule": "R16-lob/arc",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile,special hp=300.0 cost=100 traj=arc atk=40 LobHeight=350 obb",
+      "family": "lob",
+      "framework": "PlantKernelpult",
+      "id": "kernelpult1",
+      "rule": "R16-lob/arc",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R12-wall/no-attack-high-hp kinds=special hp=2000 cost=175 traj=unknown atk=0 obb",
+      "family": "wall",
+      "framework": "PlantKiwiBeast",
+      "id": "kiwibeast",
+      "rule": "R12-wall/no-attack-high-hp",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=100 traj=straight atk=15 obb",
+      "family": "shoot",
+      "framework": "PlantBitPeashooter",
+      "id": "kiwibeast_deprecated",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R07-instant/flagged kinds=special hp=1000000 cost=0 traj=unknown atk=0 IsInstant=true IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantLilyPad",
+      "id": "land",
+      "rule": "R07-instant/flagged",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile,special hp=300 cost=200 traj=unknown atk=1800 obb",
+      "family": "shoot",
+      "framework": "PlantLaserBean",
+      "id": "laser_bean",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R07-instant/flagged kinds=special hp=300 cost=75 traj=unknown atk=25 IsInstant=true IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantLavaGuava",
+      "id": "lavaguava",
+      "rule": "R07-instant/flagged",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile,special hp=300 cost=175 traj=arc atk=50 LobHeight=350 obb",
+      "family": "lob",
+      "framework": "PlantKernelpult",
+      "id": "lemonaider",
+      "rule": "R16-lob/arc",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R19-support/no-attack kinds=- hp=300 cost=50 traj=unknown atk=0 obb",
+      "family": "support",
+      "framework": "PlantLevitater",
+      "id": "levitater",
+      "rule": "R19-support/no-attack",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile,special hp=300 cost=100 traj=unknown atk=100 obb",
+      "family": "shoot",
+      "framework": "PlantLightningReed",
+      "id": "lightningreed",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R19-support/no-attack kinds=- hp=300 cost=25 traj=unknown atk=0 obb",
+      "family": "support",
+      "framework": "PlantLilyPad",
+      "id": "lilypad",
+      "rule": "R19-support/no-attack",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R19-support/no-attack kinds=special hp=600.0 cost=0 traj=unknown atk=0 obb",
+      "family": "support",
+      "framework": "PlantLittleGuy",
+      "id": "littleguy",
+      "rule": "R19-support/no-attack",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=200 traj=straight atk=600 obb",
+      "family": "shoot",
+      "framework": "PlantLittleRepeater",
+      "id": "littlerepeater",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R14-spike/melee-special kinds=special hp=300 cost=150 traj=unknown atk=40 obb",
+      "family": "spike",
+      "framework": "PlantLongmaLily",
+      "id": "longmalily",
+      "rule": "R14-spike/melee-special",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=200 traj=straight atk=1000 obb",
+      "family": "shoot",
+      "framework": "PlantPrimalPeashooter",
+      "id": "magicvine",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=plantfood,projectile hp=300 cost=425 traj=straight atk=5 obb",
+      "family": "shoot",
+      "framework": "PlantMagnetFruit",
+      "id": "magnetfruit",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile,special hp=300 cost=275 traj=straight atk=50 obb",
+      "family": "shoot",
+      "framework": "PlantTurkeypult",
+      "id": "magnetshroom",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R19-support/no-attack kinds=- hp=300 cost=100 traj=unknown atk=0 obb",
+      "family": "support",
+      "framework": "PlantMagnetShroom",
+      "id": "magnetshroom1",
+      "rule": "R19-support/no-attack",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile,unknown hp=300.0 cost=50 traj=straight atk=550 obb label=shoot(agree)",
+      "family": "shoot",
+      "framework": "PlantMagnifyingGrass",
+      "id": "magnifyinggrass",
+      "rule": "R17-shoot/projectile",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile,special hp=250.0 cost=250 traj=arc atk=200 obb",
+      "family": "lob",
+      "framework": "PlantMangofier",
+      "id": "mangofier",
+      "rule": "R16-lob/arc",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile,special hp=300 cost=200 traj=unknown atk=0 obb",
+      "family": "shoot",
+      "framework": "PlantReincarnation",
+      "id": "mangosteen",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R01-produce/sun-action kinds=special,sun hp=300 cost=0 traj=unknown atk=0 obb",
+      "family": "produce",
+      "framework": "PlantMarigold",
+      "id": "marigold",
+      "rule": "R01-produce/sun-action",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R19-support/no-attack kinds=- hp=300 cost=250 traj=unknown atk=0 obb",
+      "family": "support",
+      "framework": "PlantMaybee",
+      "id": "maybee",
+      "rule": "R19-support/no-attack",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=325 traj=straight atk=600 obb",
+      "family": "shoot",
+      "framework": "PlantMegaGatling",
+      "id": "megagatling",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile,special hp=300 cost=325 traj=arc atk=80 obb label=lob(agree)",
+      "family": "lob",
+      "framework": "PlantMelonpult",
+      "id": "melonpult",
+      "rule": "R16-lob/arc",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile hp=250 cost=225 traj=arc atk=1200 obb",
+      "family": "lob",
+      "framework": "PlantMeteorFlower",
+      "id": "meteorflower",
+      "rule": "R16-lob/arc",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R08-instant/consumable kinds=special hp=1 cost=0 traj=unknown atk=0 IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantHypnoShroom",
+      "id": "midi",
+      "rule": "R08-instant/consumable",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R10-wall/no-actions-high-hp kinds=- hp=3000 cost=150 traj=unknown atk=0 obb",
+      "family": "wall",
+      "framework": "PlantMikuLeek",
+      "id": "mikuleek",
+      "rule": "R10-wall/no-actions-high-hp",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R19-support/no-attack kinds=manual,unknown hp=300 cost=0 traj=unknown atk=0 obb",
+      "family": "support",
+      "framework": "PlantMagnifyingGrass",
+      "id": "minigame_music",
+      "rule": "R19-support/no-attack",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=800 cost=250 traj=straight atk=200 obb",
+      "family": "shoot",
+      "framework": "PlantPrimalPeashooter",
+      "id": "minipeashooter",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=1500 cost=175 traj=unknown atk=200 obb",
+      "family": "shoot",
+      "framework": "PlantMiniShroom",
+      "id": "minishroom",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile,special hp=300 cost=275 traj=arc atk=500 obb label=lob(agree)",
+      "family": "lob",
+      "framework": "PlantMissileToast",
+      "id": "missiletoast",
+      "rule": "R16-lob/arc",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=1500 cost=500 traj=drop atk=2400 obb",
+      "family": "shoot",
+      "framework": "PlantMissileToe",
+      "id": "missiletoe",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R01-produce/sun-action kinds=sun hp=200 cost=25 traj=unknown atk=0 sunProducer=true obb",
+      "family": "produce",
+      "framework": "PlantMoonFlower",
+      "id": "moonflower",
+      "rule": "R01-produce/sun-action",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile hp=300 cost=200 traj=arc atk=1350 obb",
+      "family": "lob",
+      "framework": "PlantCoconutCannon",
+      "id": "murkadamia",
+      "rule": "R16-lob/arc",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile,special hp=300 cost=300 traj=unknown atk=1500 obb",
+      "family": "shoot",
+      "framework": "PlantNightcap",
+      "id": "nightcap",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile,special hp=300 cost=100 traj=straight atk=600 obb",
+      "family": "shoot",
+      "framework": "PlantNightshade",
+      "id": "nightshade",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=200 traj=straight atk=600 obb",
+      "family": "shoot",
+      "framework": "PlantPrimalPeashooter",
+      "id": "noctarine",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R07-instant/flagged kinds=special hp=3000 cost=150 traj=unknown atk=40 IsInstant=true IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantNoctarineCloud",
+      "id": "noctarinecloud",
+      "rule": "R07-instant/flagged",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=150 traj=straight atk=600 obb",
+      "family": "shoot",
+      "framework": "PlantThreepeater",
+      "id": "oakshooter_barrage",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=10 cost=0 traj=unknown atk=0 obb",
+      "family": "shoot",
+      "framework": "PlantSnapdragon",
+      "id": "old_sushi",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=2000 cost=200 traj=drop atk=300 obb",
+      "family": "shoot",
+      "framework": "PlantPeashooter",
+      "id": "olivepit",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R19-support/no-attack kinds=special hp=300 cost=50 traj=unknown atk=0 obb",
+      "family": "support",
+      "framework": "PlantOlivePit",
+      "id": "olivepit1",
+      "rule": "R19-support/no-attack",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R01-produce/sun-action kinds=special,sun hp=300 cost=50 traj=unknown atk=0 sunProducer=true obb",
+      "family": "produce",
+      "framework": "PlantOxygenAlgae",
+      "id": "oxygenalgae",
+      "rule": "R01-produce/sun-action",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile hp=300 cost=300 traj=arc atk=60 obb label=lob(agree)",
+      "family": "lob",
+      "framework": "PlantParadoxPult",
+      "id": "paradoxpult",
+      "rule": "R16-lob/arc",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=225 traj=straight atk=8 obb",
+      "family": "shoot",
+      "framework": "PlantPrimalPeashooter",
+      "id": "parsnip",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R14-spike/melee-special kinds=special hp=300 cost=150 traj=unknown atk=70 obb",
+      "family": "spike",
+      "framework": "PlantParsnip",
+      "id": "parsnip1",
+      "rule": "R14-spike/melee-special",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R11-wall/defensive-name kinds=special hp=2000 cost=50 traj=unknown atk=30 obb",
+      "family": "wall",
+      "framework": "PlantEndurian",
+      "id": "peanut",
+      "rule": "R11-wall/defensive-name",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=100 traj=straight atk=400 obb",
+      "family": "shoot",
+      "framework": "PlantPeapod",
+      "id": "peapod",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=100 traj=straight atk=20 obb label=shoot(agree)",
+      "family": "shoot",
+      "framework": "PlantPeashooter",
+      "id": "peashooter",
+      "rule": "R17-shoot/projectile",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile,special hp=300 cost=175 traj=arc atk=70 obb",
+      "family": "lob",
+      "framework": "PlantCabbagepult",
+      "id": "peppermint",
+      "rule": "R16-lob/arc",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile,special hp=300 cost=200 traj=arc atk=50 LobHeight=500 obb",
+      "family": "lob",
+      "framework": "PlantPepperpult",
+      "id": "pepperpult",
+      "rule": "R16-lob/arc",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R04-fume/named kinds=explode hp=300 cost=150 traj=unknown atk=0 IsInstant=true IsConsumable=true obb",
+      "family": "fume",
+      "framework": "PlantPerfumeShroom",
+      "id": "perfumeshroom",
+      "rule": "R04-fume/named",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=100 traj=straight atk=0 obb",
+      "family": "shoot",
+      "framework": "PlantPhantasMagnolia",
+      "id": "phantasmagnolia",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=500 cost=200 traj=straight atk=600 obb",
+      "family": "shoot",
+      "framework": "PlantRepeater",
+      "id": "phatbeet",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R19-support/no-attack kinds=special hp=300 cost=150 traj=unknown atk=0 obb",
+      "family": "support",
+      "framework": "PlantPhatBeet",
+      "id": "phatbeet1",
+      "rule": "R19-support/no-attack",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=175 traj=straight atk=1000 obb",
+      "family": "shoot",
+      "framework": "PlantPrimalPeashooter",
+      "id": "plantain",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=25 traj=unknown atk=0 obb",
+      "family": "shoot",
+      "framework": "PlantSnapdragon",
+      "id": "plantern",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R14-spike/melee-special kinds=special hp=600.0 cost=175 traj=unknown atk=800 obb",
+      "family": "spike",
+      "framework": "PlantPlummet",
+      "id": "plummet",
+      "rule": "R14-spike/melee-special",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=125 traj=straight atk=30 obb",
+      "family": "shoot",
+      "framework": "PlantPoisonPeashooter",
+      "id": "poisonpeashooter",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=125 traj=straight atk=40 obb",
+      "family": "shoot",
+      "framework": "PlantPoisonVine",
+      "id": "poisonvine",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R08-instant/consumable kinds=explode hp=300 cost=500 traj=unknown atk=600 IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantCherryBomb",
+      "id": "pokra",
+      "rule": "R08-instant/consumable",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile,special hp=300 cost=175 traj=straight atk=500 obb",
+      "family": "shoot",
+      "framework": "PlantPokra",
+      "id": "pokra1",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300.0 cost=225 traj=unknown atk=0 obb label=shoot(agree)",
+      "family": "shoot",
+      "framework": "PlantPoppinPoppies",
+      "id": "poppinpoppies",
+      "rule": "R17-shoot/projectile",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R08-instant/consumable kinds=explode hp=300.0 cost=0 traj=unknown atk=0 IsConsumable=true obb label=instant(agree)",
+      "family": "instant",
+      "framework": "PlantPotatomine",
+      "id": "potatochip",
+      "rule": "R08-instant/consumable",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R06-mine/named kinds=explode hp=300 cost=25 traj=unknown atk=0 IsConsumable=true obb label=mine(agree)",
+      "family": "mine",
+      "framework": "PlantPotatomine",
+      "id": "potatomine",
+      "rule": "R06-mine/named",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R01-produce/sun-action kinds=special,sun hp=300 cost=150 traj=unknown atk=0 IsInstant=true IsConsumable=true obb",
+      "family": "produce",
+      "framework": "PlantPowerLily",
+      "id": "powerlily",
+      "rule": "R01-produce/sun-action",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=250 traj=straight atk=7 obb",
+      "family": "shoot",
+      "framework": "PlantPrimalPeashooter",
+      "id": "powerplant",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=5500 cost=125 traj=drop atk=200 obb",
+      "family": "shoot",
+      "framework": "PlantPrimalPeashooter",
+      "id": "powervine",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=125 traj=straight atk=100 obb",
+      "family": "shoot",
+      "framework": "PlantPowerVine",
+      "id": "powervine1",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=175 traj=straight atk=100 obb",
+      "family": "shoot",
+      "framework": "PlantPrimalPeashooter",
+      "id": "primalpeashooter",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R06-mine/named kinds=explode hp=300 cost=50 traj=unknown atk=0 IsConsumable=true obb",
+      "family": "mine",
+      "framework": "PlantPotatomine",
+      "id": "primalpotatomine",
+      "rule": "R06-mine/named",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R01-produce/sun-action kinds=special,sun hp=300 cost=75 traj=unknown atk=0 sunProducer=true obb",
+      "family": "produce",
+      "framework": "PlantSunflower",
+      "id": "primalsunflower",
+      "rule": "R01-produce/sun-action",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R10-wall/no-actions-high-hp kinds=- hp=4000 cost=75 traj=unknown atk=0 obb",
+      "family": "wall",
+      "framework": "PlantPrimalWallnut",
+      "id": "primalwallnut",
+      "rule": "R10-wall/no-actions-high-hp",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R15-support/seed-rain kinds=projectile hp=300 cost=275 traj=drop atk=40 obb",
+      "family": "support",
+      "framework": "PlantPeashooter",
+      "id": "puffball",
+      "rule": "R15-support/seed-rain",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R07-instant/flagged kinds=explode hp=300 cost=150 traj=unknown atk=0 IsInstant=true IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantPuffball",
+      "id": "puffball1",
+      "rule": "R07-instant/flagged",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=150 cost=0 traj=straight atk=20 obb",
+      "family": "shoot",
+      "framework": "PlantPuffshroom",
+      "id": "puffshroom",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R10-wall/no-actions-high-hp kinds=- hp=4000 cost=150 traj=unknown atk=0 obb",
+      "family": "wall",
+      "framework": "PlantPumpkin",
+      "id": "pumpkin",
+      "rule": "R10-wall/no-actions-high-hp",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile,special hp=300 cost=225 traj=unknown atk=100 obb",
+      "family": "shoot",
+      "framework": "PlantPunkShocker",
+      "id": "punkshocker",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=250 traj=straight atk=400 obb",
+      "family": "shoot",
+      "framework": "PlantPrimalPeashooter",
+      "id": "pvine",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=150 traj=straight atk=20 obb",
+      "family": "shoot",
+      "framework": "PlantPvine",
+      "id": "pvine1",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=275 traj=straight atk=300 obb",
+      "family": "shoot",
+      "framework": "PlantPrimalPeashooter",
+      "id": "pyrevine",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R19-support/no-attack kinds=- hp=300 cost=125 traj=unknown atk=0 obb",
+      "family": "support",
+      "framework": "PlantPyreVine",
+      "id": "pyrevine1",
+      "rule": "R19-support/no-attack",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R07-instant/flagged kinds=projectile hp=300 cost=275 traj=straight atk=15 IsInstant=true IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantHeathSeeker",
+      "id": "pyrevine2",
+      "rule": "R07-instant/flagged",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile,special hp=300 cost=275 traj=arc atk=15 sunProducer=true obb",
+      "family": "lob",
+      "framework": "PlantRaCabbagepult",
+      "id": "rabbagepult",
+      "rule": "R16-lob/arc",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=150 traj=straight atk=1000 obb",
+      "family": "shoot",
+      "framework": "PlantPeashooter",
+      "id": "redstinger",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R01-produce/sun-action kinds=special,sun hp=3000 cost=100 traj=unknown atk=1 sunProducer=true obb",
+      "family": "produce",
+      "framework": "PlantSunflower",
+      "id": "reinforcemint",
+      "rule": "R01-produce/sun-action",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=175 traj=straight atk=1200 obb label=shoot(agree)",
+      "family": "shoot",
+      "framework": "PlantPeashooter",
+      "id": "repeater",
+      "rule": "R17-shoot/projectile",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=200 traj=straight atk=600 obb",
+      "family": "shoot",
+      "framework": "PlantRepeater",
+      "id": "repeater1",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=plantfood,projectile hp=5000.0 cost=225 traj=drop atk=550 obb",
+      "family": "shoot",
+      "framework": "PlantDartichoke",
+      "id": "rheumnobile",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R07-instant/flagged kinds=special hp=10 cost=100 traj=unknown atk=100 IsInstant=true IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantRhubarbarian",
+      "id": "rhubarbarian",
+      "rule": "R07-instant/flagged",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=325 traj=straight atk=50 obb",
+      "family": "shoot",
+      "framework": "PlantMorningGlory",
+      "id": "sapfling",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile,special hp=300 cost=75 traj=arc atk=0 obb",
+      "family": "lob",
+      "framework": "PlantSapfling",
+      "id": "sapfling1",
+      "rule": "R16-lob/arc",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R07-instant/flagged kinds=explode hp=300 cost=75 traj=unknown atk=0 IsInstant=true IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantSeaderris",
+      "id": "seaderris",
+      "rule": "R07-instant/flagged",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=explode,projectile hp=300.0 cost=175 traj=straight atk=600 obb",
+      "family": "shoot",
+      "framework": "PlantSeaFlora",
+      "id": "seaflora",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R06-mine/named kinds=explode hp=300 cost=75 traj=unknown atk=0 IsConsumable=true obb label=mine(agree)",
+      "family": "mine",
+      "framework": "PlantPotatomine",
+      "id": "seapotatomine",
+      "rule": "R06-mine/named",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300.0 cost=100 traj=straight atk=50 obb",
+      "family": "shoot",
+      "framework": "PlantSeashooter",
+      "id": "seashooter",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=0 traj=straight atk=50 obb",
+      "family": "shoot",
+      "framework": "PlantSeashroom",
+      "id": "seashroom",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile,special hp=300 cost=125 traj=straight atk=500 obb",
+      "family": "shoot",
+      "framework": "PlantShadowPeashooter",
+      "id": "shadowpeashooter",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R08-instant/consumable kinds=special hp=50 cost=75 traj=unknown atk=0 IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantShadowShroom",
+      "id": "shadowshroom",
+      "rule": "R08-instant/consumable",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R01-produce/sun-action kinds=special,sun hp=300 cost=75 traj=unknown atk=10 sunProducer=true obb",
+      "family": "produce",
+      "framework": "PlantShineVine",
+      "id": "shinevine",
+      "rule": "R01-produce/sun-action",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R08-instant/consumable kinds=explode hp=300 cost=50 traj=unknown atk=0 IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantShrinkingViolet",
+      "id": "shrinkingviolet",
+      "rule": "R08-instant/consumable",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile hp=300 cost=225 traj=arc atk=50 LobHeight=500 obb",
+      "family": "lob",
+      "framework": "PlantArmamintPeashooter",
+      "id": "slingpea",
+      "rule": "R16-lob/arc",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=150 traj=unknown atk=0 obb",
+      "family": "shoot",
+      "framework": "PlantSnapdragon",
+      "id": "snapdragon",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R07-instant/flagged kinds=projectile,special hp=300 cost=125 traj=arc atk=0 IsInstant=true IsConsumable=true LobHeight=500 obb",
+      "family": "instant",
+      "framework": "PlantGumnut",
+      "id": "snappea",
+      "rule": "R07-instant/flagged",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=200 traj=straight atk=400 obb",
+      "family": "shoot",
+      "framework": "PlantSnapPea",
+      "id": "snappea1",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=300 traj=straight atk=400 obb",
+      "family": "shoot",
+      "framework": "PlantPeashooter",
+      "id": "snowdrop",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile,special hp=300 cost=150 traj=straight atk=20 obb label=shoot(agree)",
+      "family": "shoot",
+      "framework": "PlantSnowPea",
+      "id": "snowpea",
+      "rule": "R17-shoot/projectile",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R08-instant/consumable kinds=projectile hp=300.0 cost=25 traj=straight atk=320 IsConsumable=true obb label=instant(agree)",
+      "family": "instant",
+      "framework": "PlantSunGun",
+      "id": "solarflare",
+      "rule": "R08-instant/consumable",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R02-produce/sun-producer kinds=- hp=300 cost=50 traj=unknown atk=0 sunProducer=true IsConsumable=true obb",
+      "family": "produce",
+      "framework": "PlantSolarSage",
+      "id": "solarsage",
+      "rule": "R02-produce/sun-producer",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R02-produce/sun-producer kinds=- hp=3000 cost=100 traj=unknown atk=0 sunProducer=true IsInstant=true IsConsumable=true obb",
+      "family": "produce",
+      "framework": "PlantSolarTomato",
+      "id": "solartomato",
+      "rule": "R02-produce/sun-producer",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R07-instant/flagged kinds=special hp=100 cost=225 traj=unknown atk=0 IsInstant=true IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantAppeasemint",
+      "id": "spearmint",
+      "rule": "R07-instant/flagged",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R19-support/no-attack kinds=- hp=10 cost=0 traj=unknown atk=0 obb",
+      "family": "support",
+      "framework": "PlantGarlic",
+      "id": "specialgarlic",
+      "rule": "R19-support/no-attack",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R13-spike/named kinds=special hp=300 cost=250 traj=unknown atk=20 obb",
+      "family": "spike",
+      "framework": "PlantSpikerock",
+      "id": "spikerock",
+      "rule": "R13-spike/named",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R13-spike/named kinds=special hp=300 cost=100 traj=unknown atk=10 obb label=spike(agree)",
+      "family": "spike",
+      "framework": "PlantSpikeweed",
+      "id": "spikeweed",
+      "rule": "R13-spike/named",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=125 traj=straight atk=600 obb label=shoot(agree)",
+      "family": "shoot",
+      "framework": "PlantSplitpea",
+      "id": "splitpea",
+      "rule": "R17-shoot/projectile",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R07-instant/flagged kinds=special hp=1000 cost=100 traj=unknown atk=2400 IsInstant=true IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantSpookySquash",
+      "id": "spookysquash",
+      "rule": "R07-instant/flagged",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile,special hp=300 cost=150 traj=straight atk=50 obb",
+      "family": "shoot",
+      "framework": "PlantSporeshroom",
+      "id": "sporeshroom",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R14-spike/melee-special kinds=special hp=300 cost=50 traj=unknown atk=1 obb",
+      "family": "spike",
+      "framework": "PlantSpringbean",
+      "id": "springbean",
+      "rule": "R14-spike/melee-special",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=150 traj=straight atk=5000 obb",
+      "family": "shoot",
+      "framework": "PlantPrimalPeashooter",
+      "id": "sprout",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R07-instant/flagged kinds=special hp=1000 cost=50 traj=unknown atk=1800 IsInstant=true IsConsumable=true obb label=instant(agree)",
+      "family": "instant",
+      "framework": "PlantSquash",
+      "id": "squash",
+      "rule": "R07-instant/flagged",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R07-instant/flagged kinds=explode hp=300 cost=0 traj=unknown atk=0 IsInstant=true IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantStallia",
+      "id": "stallia",
+      "rule": "R07-instant/flagged",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=225 traj=straight atk=80 obb label=shoot(agree)",
+      "family": "shoot",
+      "framework": "PlantStarFruit",
+      "id": "starfruit",
+      "rule": "R17-shoot/projectile",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=200 traj=straight atk=200 obb",
+      "family": "shoot",
+      "framework": "PlantStarFruit",
+      "id": "starfruit_barrage",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile,special hp=300 cost=225 traj=arc atk=0 LobHeight=500 obb",
+      "family": "lob",
+      "framework": "PlantStickybombRice",
+      "id": "stickybombrice",
+      "rule": "R16-lob/arc",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile,special hp=300 cost=225 traj=arc atk=60 obb",
+      "family": "lob",
+      "framework": "PlantCabbagepult",
+      "id": "strawburst",
+      "rule": "R16-lob/arc",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile hp=300 cost=400 traj=arc atk=900 obb",
+      "family": "lob",
+      "framework": "PlantStrawburst",
+      "id": "strawburst1",
+      "rule": "R16-lob/arc",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R07-instant/flagged kinds=special hp=300 cost=25 traj=unknown atk=0 IsInstant=true IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantStunion",
+      "id": "stunion",
+      "rule": "R07-instant/flagged",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R07-instant/flagged kinds=projectile hp=1 cost=75 traj=straight atk=200 IsInstant=true IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantTumbleweed",
+      "id": "sunbean",
+      "rule": "R07-instant/flagged",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R02-produce/sun-producer kinds=special hp=50 cost=50 traj=unknown atk=0 sunProducer=true IsConsumable=true obb",
+      "family": "produce",
+      "framework": "PlantSunBean",
+      "id": "sunbean1",
+      "rule": "R02-produce/sun-producer",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R02-produce/sun-producer kinds=special hp=300 cost=100 traj=unknown atk=0 sunProducer=true obb",
+      "family": "produce",
+      "framework": "PlantSundewTangler",
+      "id": "sundewtangler",
+      "rule": "R02-produce/sun-producer",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R01-produce/sun-action kinds=special,sun hp=300 cost=50 traj=unknown atk=0 sunProducer=true obb label=produce(agree)",
+      "family": "produce",
+      "framework": "PlantLittleSunflower",
+      "id": "sunflower",
+      "rule": "R01-produce/sun-action",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=plantfood,projectile hp=300 cost=275 traj=straight atk=60 obb",
+      "family": "shoot",
+      "framework": "PlantHomingThistle",
+      "id": "sungun",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R01-produce/sun-action kinds=special,sun hp=300 cost=25 traj=unknown atk=0 sunProducer=true obb label=produce(agree)",
+      "family": "produce",
+      "framework": "PlantSunshroom",
+      "id": "sunshroom",
+      "rule": "R01-produce/sun-action",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R01-produce/sun-action kinds=special,sun hp=300 cost=200 traj=unknown atk=0 sunProducer=true obb",
+      "family": "produce",
+      "framework": "PlantSunTower",
+      "id": "suntower",
+      "rule": "R01-produce/sun-action",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=10 cost=0 traj=straight atk=0 obb",
+      "family": "shoot",
+      "framework": "PlantPuffshroom",
+      "id": "sushi",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile,special hp=500 cost=275 traj=arc atk=200 obb",
+      "family": "lob",
+      "framework": "PlantCabbagepultCanSink",
+      "id": "sweetpotato",
+      "rule": "R16-lob/arc",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R10-wall/no-actions-high-hp kinds=- hp=4000.0 cost=150 traj=unknown atk=0 obb",
+      "family": "wall",
+      "framework": "PlantSweetPotato",
+      "id": "sweetpotato1",
+      "rule": "R10-wall/no-actions-high-hp",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R10-wall/no-actions-high-hp kinds=- hp=8000 cost=125 traj=unknown atk=0 obb label=wall(agree)",
+      "family": "wall",
+      "framework": "PlantTallnut",
+      "id": "tallnut",
+      "rule": "R10-wall/no-actions-high-hp",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R07-instant/flagged kinds=special hp=300 cost=25 traj=unknown atk=1800 IsInstant=true IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantTangleKelp",
+      "id": "tanglekelp",
+      "rule": "R07-instant/flagged",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R15-support/seed-rain kinds=projectile hp=300 cost=125 traj=drop atk=1600 obb label=support(agree)",
+      "family": "support",
+      "framework": "PlantPeashooter",
+      "id": "taraxacum",
+      "rule": "R15-support/seed-rain",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R15-support/seed-rain kinds=projectile,special hp=300 cost=225 traj=drop atk=150 obb",
+      "family": "support",
+      "framework": "PlantCabbagepult",
+      "id": "teleportatomine",
+      "rule": "R15-support/seed-rain",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R06-mine/named kinds=explode hp=300 cost=75 traj=unknown atk=0 IsInstant=true IsConsumable=true obb",
+      "family": "mine",
+      "framework": "PlantTeleportatoMine",
+      "id": "teleportatomine1",
+      "rule": "R06-mine/named",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=250 traj=straight atk=40 obb label=shoot(agree)",
+      "family": "shoot",
+      "framework": "PlantThreepeater",
+      "id": "threepeater",
+      "rule": "R17-shoot/projectile",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=250 traj=straight atk=40 obb",
+      "family": "shoot",
+      "framework": "PlantThreepeater",
+      "id": "threepeater1",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R07-instant/flagged kinds=special hp=300 cost=75 traj=unknown atk=0 IsInstant=true IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantThymeWarp",
+      "id": "thymewarp",
+      "rule": "R07-instant/flagged",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile,special hp=300 cost=150 traj=arc atk=123 obb",
+      "family": "lob",
+      "framework": "PlantTigerGrass",
+      "id": "tigergrass",
+      "rule": "R16-lob/arc",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R07-instant/flagged kinds=- hp=100 cost=0 traj=unknown atk=0 IsInstant=true IsConsumable=true obb",
+      "family": "instant",
+      "framework": "PlantPowerPlant",
+      "id": "tileturnip",
+      "rule": "R07-instant/flagged",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile,special hp=300 cost=225 traj=arc atk=800 LobHeight=350 obb",
+      "family": "lob",
+      "framework": "PlantBowlingBulb",
+      "id": "toadstool",
+      "rule": "R16-lob/arc",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R19-support/no-attack kinds=- hp=600 cost=150 traj=unknown atk=0 obb",
+      "family": "support",
+      "framework": "PlantAloe",
+      "id": "tombtangler",
+      "rule": "R19-support/no-attack",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R20-support/buff-explosion kinds=explode,special hp=2000 cost=175 traj=unknown atk=20 obb label=support(agree)",
+      "family": "support",
+      "framework": "PlantTorchwood",
+      "id": "torchwood",
+      "rule": "R20-support/buff-explosion",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=1500 cost=125 traj=straight atk=1200 obb label=shoot(agree)",
+      "family": "shoot",
+      "framework": "PlantPrimalPeashooterCanSink",
+      "id": "torpedofruit",
+      "rule": "R17-shoot/projectile",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=175 traj=none atk=80 obb label=shoot(agree)",
+      "family": "shoot",
+      "framework": "PlantPeashooter",
+      "id": "tubiflora",
+      "rule": "R17-shoot/projectile",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile,special hp=4000 cost=100 traj=none atk=180 LobHeight=500 obb",
+      "family": "lob",
+      "framework": "PlantPeashooter",
+      "id": "tumbleweed",
+      "rule": "R16-lob/arc",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile,special hp=300 cost=225 traj=arc atk=40 sunProducer=true obb",
+      "family": "lob",
+      "framework": "PlantCabbagepult",
+      "id": "turkeypult",
+      "rule": "R16-lob/arc",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R04-fume/named kinds=projectile hp=300 cost=350 traj=straight atk=40 obb",
+      "family": "fume",
+      "framework": "PlantPrimalPeashooter",
+      "id": "ultimatefumeshroom",
+      "rule": "R04-fume/named",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=225 traj=straight atk=20 obb",
+      "family": "shoot",
+      "framework": "PlantPeashooter",
+      "id": "ultomato",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=explode,projectile hp=300 cost=250 traj=straight atk=2700 obb",
+      "family": "shoot",
+      "framework": "PlantUltomato",
+      "id": "ultomato1",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R13-spike/named kinds=special hp=300 cost=150 traj=unknown atk=600 obb",
+      "family": "spike",
+      "framework": "PlantBonkchoy",
+      "id": "unused_43",
+      "rule": "R13-spike/named",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile,special hp=300 cost=175 traj=arc atk=120 LobHeight=350 obb",
+      "family": "lob",
+      "framework": "PlantKernelpult",
+      "id": "unused_45",
+      "rule": "R16-lob/arc",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R10-wall/no-actions-high-hp kinds=- hp=5000 cost=100 traj=unknown atk=0 obb",
+      "family": "wall",
+      "framework": "PlantPrimalWallnut",
+      "id": "unused_46",
+      "rule": "R10-wall/no-actions-high-hp",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=100 traj=unknown atk=0 obb",
+      "family": "shoot",
+      "framework": "PlantSnapdragon",
+      "id": "unused_47",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=200 traj=straight atk=300 obb",
+      "family": "shoot",
+      "framework": "PlantPeashooter",
+      "id": "unused_48",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R19-support/no-attack kinds=special hp=300 cost=200 traj=unknown atk=0 obb",
+      "family": "support",
+      "framework": "PlantPhatBeet",
+      "id": "unused_49",
+      "rule": "R19-support/no-attack",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=50 traj=straight atk=50 obb",
+      "family": "shoot",
+      "framework": "PlantCactus",
+      "id": "vamporcini",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R10-wall/no-actions-high-hp kinds=- hp=2700 cost=100 traj=unknown atk=0 obb",
+      "family": "wall",
+      "framework": "PlantVamporcini",
+      "id": "vamporcini1",
+      "rule": "R10-wall/no-actions-high-hp",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=250 traj=straight atk=40 obb label=shoot(agree)",
+      "family": "shoot",
+      "framework": "PlantVoidDragon",
+      "id": "voiddragon",
+      "rule": "R17-shoot/projectile",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R10-wall/no-actions-high-hp kinds=- hp=4000 cost=50 traj=unknown atk=0 obb label=wall(agree)",
+      "family": "wall",
+      "framework": "PlantWallnut",
+      "id": "wallnut",
+      "rule": "R10-wall/no-actions-high-hp",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R13-spike/named kinds=special hp=300 cost=150 traj=unknown atk=75 obb",
+      "family": "spike",
+      "framework": "PlantWasabiWhip",
+      "id": "wasabiwhip",
+      "rule": "R13-spike/named",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R19-support/no-attack kinds=special hp=175 cost=125 traj=unknown atk=0 obb",
+      "family": "support",
+      "framework": "PlantWaterRabbit",
+      "id": "waterrabbit",
+      "rule": "R19-support/no-attack",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile,special hp=300 cost=500 traj=arc atk=30 obb",
+      "family": "lob",
+      "framework": "PlantWinterGeddon",
+      "id": "wintergeddon",
+      "rule": "R16-lob/arc",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile,special hp=300 cost=450 traj=arc atk=80 obb label=lob(agree)",
+      "family": "lob",
+      "framework": "PlantWinterMelon",
+      "id": "wintermelon",
+      "rule": "R16-lob/arc",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=175 traj=straight atk=1200 obb",
+      "family": "shoot",
+      "framework": "PlantPeashooter",
+      "id": "wintermint",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R16-lob/arc kinds=projectile,special hp=300 cost=150 traj=arc atk=70 LobHeight=350 obb",
+      "family": "lob",
+      "framework": "PlantAkee",
+      "id": "witchhazel",
+      "rule": "R16-lob/arc",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile,special hp=300 cost=200 traj=unknown atk=2400 obb",
+      "family": "shoot",
+      "framework": "PlantWitchHazel",
+      "id": "witchhazel1",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=500 cost=150 traj=straight atk=70 obb",
+      "family": "shoot",
+      "framework": "PlantXShot",
+      "id": "xshot",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=500 cost=150 traj=straight atk=70 obb",
+      "family": "shoot",
+      "framework": "PlantXShot",
+      "id": "xshot_barrage",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    },
+    {
+      "evidence": "rule=R11-wall/defensive-name kinds=projectile,special hp=2000.0 cost=175 traj=arc atk=1000 obb label=wall(agree)",
+      "family": "wall",
+      "framework": "PlantYuccaGuardian",
+      "id": "yuccaguardian",
+      "rule": "R11-wall/defensive-name",
+      "source": "content"
+    },
+    {
+      "evidence": "rule=R17-shoot/projectile kinds=projectile hp=300 cost=250 traj=straight atk=50 obb",
+      "family": "shoot",
+      "framework": "PlantPeashooter",
+      "id": "zoybeanpod",
+      "rule": "R17-shoot/projectile",
+      "source": "pack"
+    }
+  ],
+  "sources": {
+    "labels": "content/plants.json",
+    "obb": "pkg_2073+pkg_2082",
+    "pack": "native/generated/content.pack",
+    "plantSheets": 641,
+    "projectiles": 642
+  },
+  "unknownKinds": [
+    {
+      "family": "shoot",
+      "handling": "unknown action ignored; family from the plant's own known actions",
+      "id": "magnifyinggrass"
+    },
+    {
+      "family": "support",
+      "handling": "unknown action ignored; family from the plant's own known actions",
+      "id": "minigame_music"
+    }
+  ]
+}

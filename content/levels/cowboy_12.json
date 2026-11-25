@@ -229,8 +229,9 @@
   "night": true,
   "minecarts": [
    0,
+   1,
    2,
-   4
+   3
   ],
   "rail": true
  }

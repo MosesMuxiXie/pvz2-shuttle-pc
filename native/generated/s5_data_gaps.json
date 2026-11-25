@@ -1,0 +1,985 @@
+{
+  "boss": {
+    "actionClasses": [
+      "ZombossBattleIntroProperties",
+      "ZombossBattleModuleProperties",
+      "ZombossBeachDiveActionDefinition",
+      "ZombossCarpImpActionDefinition",
+      "ZombossCoverUpActionDefinition",
+      "ZombossDarkFireBreathActionDefinition",
+      "ZombossDarkLobFireballsActionDefinition",
+      "ZombossDarkWalkActionDefinition",
+      "ZombossDinoLaserActionDefinition",
+      "ZombossDinoWalkActionDefinition",
+      "ZombossDropSandbagActionDefinition",
+      "ZombossDropZombieActionDefinition",
+      "ZombossEightiesDropSpeakerActionDefinition",
+      "ZombossEightiesFireSpeakerRayActionDefinition",
+      "ZombossEightiesSwapJamActionDefinition",
+      "ZombossFanPullActionDefinition",
+      "ZombossFireActionDefinition",
+      "ZombossFreezingWindRowActionDefinition",
+      "ZombossGoonBlowActionDefinition",
+      "ZombossGoonJumpActionDefinition",
+      "ZombossGoonRushActionDefinition",
+      "ZombossGoonShootActionDefinition",
+      "ZombossGoonStompActionDefinition",
+      "ZombossGoonWalkActionDefinition",
+      "ZombossHelmLostActionDefinition",
+      "ZombossImpCannonActionDefinition",
+      "ZombossJumpActionDefinition",
+      "ZombossMausoleumHowlingActionDefinition",
+      "ZombossMausoleumJadeSealActionDefinition",
+      "ZombossMausoleumOrbActionDefinition",
+      "ZombossMausoleumTunnelActionDefinition",
+      "ZombossRiftBattleModuleProperties",
+      "ZombossRiftPointOfLossModuleProperties",
+      "ZombossRushActionDefinition",
+      "ZombossSharkMinionAttackActionDefinition",
+      "ZombossSkyCityAttackNearByActionDefinition",
+      "ZombossSpawnActionDefinition",
+      "ZombossSpawnDinoActionDefinition",
+      "ZombossSpawnGlacierColumnActionDefinition",
+      "ZombossSummonActionDefinition",
+      "ZombossVictoryOutroProperties",
+      "ZombossWalkActionDefinition",
+      "ZombossWallSummonActionDefinition"
+    ],
+    "authored": [
+      "boss intro pan/cinematic timing (ZombossBattleIntroProperties only gives phase count)",
+      "boss reward/outro choreography",
+      "which of the 26 client worlds hosts which mech (WorldData names only 4 boss level events)"
+    ],
+    "battleSheet": "ZombossBattleModuleProperties",
+    "battles": 75,
+    "battlesByWorld": {
+      "beach": 2,
+      "carnival": 2,
+      "chinesegarden": 4,
+      "cowboy": 4,
+      "dark": 3,
+      "dino": 2,
+      "egypt": 4,
+      "eighties": 4,
+      "fairy": 6,
+      "future": 4,
+      "heian": 1,
+      "iceage": 4,
+      "kongfu": 2,
+      "losantosvice": 1,
+      "lostcity": 6,
+      "lunarrainbowmarket": 5,
+      "mausoleum": 2,
+      "modern": 2,
+      "pirate": 2,
+      "plantagenet": 1,
+      "renai": 4,
+      "rift": 2,
+      "roof": 2,
+      "sky": 1,
+      "steam": 1,
+      "unknown:ChildStage": 2,
+      "unknown:JoustStage": 1,
+      "unknown:Stage": 1
+    },
+    "bossEvents": 4,
+    "bossEventsByWorld": {
+      "dark": 1,
+      "egypt": 1,
+      "kongfu": 1,
+      "skycity": 1
+    },
+    "distinctMech": 50,
+    "driven": [
+      "ZombossBattleModuleProperties.ZombossMechType / ReservedColumnCount / ZombossSpawnGridPosition",
+      "Stages[].HitPoints (per-phase boss health)",
+      "Stages[].Actions (per-phase attack RTIDs)",
+      "Stages[].IdleTime / StunTime / RetreatAction",
+      "ZombossBattleIntroProperties (Weight/RepeatMin/RepeatMax + damage geometry)",
+      "ZombossBattleModuleProperties (Weight/RepeatMin/RepeatMax + damage geometry)",
+      "ZombossBeachDiveActionDefinition (Weight/RepeatMin/RepeatMax + damage geometry)",
+      "ZombossCarpImpActionDefinition (Weight/RepeatMin/RepeatMax + damage geometry)",
+      "ZombossCoverUpActionDefinition (Weight/RepeatMin/RepeatMax + damage geometry)",
+      "ZombossDarkFireBreathActionDefinition (Weight/RepeatMin/RepeatMax + damage geometry)",
+      "ZombossDarkLobFireballsActionDefinition (Weight/RepeatMin/RepeatMax + damage geometry)",
+      "ZombossDarkWalkActionDefinition (Weight/RepeatMin/RepeatMax + damage geometry)"
+    ],
+    "mechRows": {
+      "kongfu_zomboss_blade": 1,
+      "zombossmech_added_beach": 1,
+      "zombossmech_added_chinesegarden": 1,
+      "zombossmech_added_circus": 1,
+      "zombossmech_added_cowboy": 2,
+      "zombossmech_added_dark": 1,
+      "zombossmech_added_fairytale": 1,
+      "zombossmech_added_lostcity": 4,
+      "zombossmech_added_market": 3,
+      "zombossmech_added_mausoleum": 1,
+      "zombossmech_added_roman": 1,
+      "zombossmech_adventure": 1,
+      "zombossmech_adventure2": 1,
+      "zombossmech_beach": 1,
+      "zombossmech_chinesegarden": 1,
+      "zombossmech_circus": 2,
+      "zombossmech_cowboy": 2,
+      "zombossmech_cowboy2": 1,
+      "zombossmech_dark": 3,
+      "zombossmech_dark2": 1,
+      "zombossmech_dino3": 1,
+      "zombossmech_egypt": 1,
+      "zombossmech_egypt2": 2,
+      "zombossmech_egypt_rift": 1,
+      "zombossmech_eighties": 2,
+      "zombossmech_eighties2": 1,
+      "zombossmech_fairytale": 1,
+      "zombossmech_fairytale_head1": 2,
+      "zombossmech_fairytale_head2": 2,
+      "zombossmech_future": 2,
+      "zombossmech_future2": 2,
+      "zombossmech_heian": 1,
+      "zombossmech_iceage": 3,
+      "zombossmech_kongfu_qigong": 2,
+      "zombossmech_lostcity": 3,
+      "zombossmech_mausoleum": 1,
+      "zombossmech_modern1": 3,
+      "zombossmech_modern_beach": 1,
+      "zombossmech_modern_cowboy": 1,
+      "zombossmech_modern_dark": 1,
+      "zombossmech_modern_dino": 1,
+      "zombossmech_modern_egypt": 1,
+      "zombossmech_modern_eighties": 1,
+      "zombossmech_modern_future": 1,
+      "zombossmech_modern_iceage": 1,
+      "zombossmech_modern_lostcity": 1,
+      "zombossmech_modern_pirate": 2,
+      "zombossmech_renai": 2,
+      "zombossmech_skycity": 1,
+      "zombossmech_steam": 1
+    },
+    "note": "75 boss battles over 50 mech types; 82/168 boss props carry a Stages[] table",
+    "phaseObjects": 168,
+    "phaseObjectsWithStages": 82,
+    "totalStages": 258,
+    "verdict": "partial",
+    "worldEventSheet": "pkg_2107_WorldData"
+  },
+  "elements": {
+    "authored": [
+      "element identity per plant (no Element column anywhere: plantElementKeys=0)",
+      "element reaction matrix / multipliers / status effects",
+      "element gating for plants and quests"
+    ],
+    "driven": [],
+    "moduleFlag": {
+      "alias": "ElementReactionModule",
+      "empty": 21,
+      "found": 21,
+      "objclass": "ElementReactionModuleProperties",
+      "withFields": 0
+    },
+    "note": "the only element object is an empty level-module flag (21 records, 0 with fields)",
+    "plantElementKeys": 0,
+    "tables": [],
+    "verdict": "authored"
+  },
+  "format": "pvz2-shuttle/s5-data-gaps@1",
+  "plantfood": {
+    "actionCount": 6,
+    "actions": [
+      {
+        "alias": "CattailDefault",
+        "fields": [
+          "CooldownTimeMax",
+          "CooldownTimeMin",
+          "InitialMinCooldownTime",
+          "Projectile",
+          "ProjectileLaunchSound",
+          "SpawnOffset",
+          "Type"
+        ],
+        "index": 1,
+        "objclass": "HomingThistleProps",
+        "plants": [
+          "sungun"
+        ],
+        "projectile": "\"RTID(CattailPlantfood@ProjectileTypes)\""
+      },
+      {
+        "alias": "DartichokeDefault",
+        "fields": [
+          "CooldownTimeMax",
+          "CooldownTimeMin",
+          "InitialMinCooldownTime",
+          "Projectile",
+          "ProjectileLaunchSound",
+          "SpawnOffset",
+          "Type"
+        ],
+        "index": 1,
+        "objclass": "DartichokeProps",
+        "plants": [
+          "dartichoke"
+        ],
+        "projectile": "\"RTID(DartichokeLeafPerfect@ProjectileTypes)\""
+      },
+      {
+        "alias": "DraftodilDefault",
+        "fields": [
+          "Projectile",
+          "SpawnOffset",
+          "Type"
+        ],
+        "index": 1,
+        "objclass": "DraftodilProps",
+        "plants": [
+          "draftodil1"
+        ],
+        "projectile": "\"RTID(DraftodilPlantfoodDefault@ProjectileTypes)\""
+      },
+      {
+        "alias": "HomingThistleDefault",
+        "fields": [
+          "CooldownTimeMax",
+          "CooldownTimeMin",
+          "InitialMinCooldownTime",
+          "Projectile",
+          "ProjectileLaunchSound",
+          "SpawnOffset",
+          "Type"
+        ],
+        "index": 1,
+        "objclass": "HomingThistleProps",
+        "plants": [
+          "homingthistle"
+        ],
+        "projectile": "\"RTID(HomingThistlePlantfood@ProjectileTypes)\""
+      },
+      {
+        "alias": "MagnetFruitDefault",
+        "fields": [
+          "CooldownTimeMax",
+          "CooldownTimeMin",
+          "InitialMinCooldownTime",
+          "Projectile",
+          "ProjectileLaunchSound",
+          "SpawnOffset",
+          "Type"
+        ],
+        "index": 1,
+        "objclass": "MagnetFruitProps",
+        "plants": [
+          "magnetfruit"
+        ],
+        "projectile": "\"RTID(MagnetFruitGiantShot@ProjectileTypes)\""
+      },
+      {
+        "alias": "TurrheumImmobileDefault",
+        "fields": [
+          "CooldownTimeMax",
+          "CooldownTimeMin",
+          "InitialMinCooldownTime",
+          "Projectile",
+          "ProjectileLaunchSound",
+          "SpawnOffset",
+          "Type"
+        ],
+        "index": 1,
+        "objclass": "DartichokeProps",
+        "plants": [
+          "rheumnobile"
+        ],
+        "projectile": "\"RTID(TurrheumImmobileProjectilePlantfood@ProjectileTypes)\""
+      }
+    ],
+    "authored": [
+      "the per-plant plant-food script for the other 333 plants",
+      "plant-food visual/audio choreography"
+    ],
+    "driven": [
+      "PlantFoodDurationSeconds",
+      "PlantFoodPlayCount",
+      "Action.Type=plantfood (projectile-based bursts: 6 plants)",
+      "MaxPlantFoodCharge / MaxPlantFoodObjects / MaxPlantfoodKills",
+      "IsFromPlantFood / FromPlantfood"
+    ],
+    "fieldNames": [
+      "# Number of seconds to keep plantfood animation looping",
+      "# Number of times to play plantfood animation",
+      "AvatarPlantfood",
+      "FromPlantfood",
+      "IsFromPlantFood",
+      "MaxPlantFoodCharge",
+      "MaxPlantFoodObjects",
+      "MaxPlantfoodKills",
+      "MaxPlantfoodWaterKills",
+      "MaxSunPerZombieOnPlantfoodBurst",
+      "MaxUsesAfterPlantfood",
+      "MinPlantfoodWaterKills",
+      "NetworkedPlantFoodPlayCount",
+      "NumPlantfoodRockets",
+      "NumPlantfoodShockwaves",
+      "NumberOfPlantFoodShots",
+      "NumberOfPlantfoodTargets",
+      "PlantFoodActionIndex",
+      "PlantFoodActivationSound",
+      "PlantFoodAngleVarianceInDegrees",
+      "PlantFoodAttackCooldown",
+      "PlantFoodAttackInterval",
+      "PlantFoodAvatarActionIndex",
+      "PlantFoodBackwardProjectileCount",
+      "PlantFoodBeamDPS",
+      "PlantFoodBeamEndArtOffset",
+      "PlantFoodBeamMaxTargetingDistance",
+      "PlantFoodBeamMovementRate",
+      "PlantFoodBeamStartArtOffset",
+      "PlantFoodBeamStartOffset",
+      "PlantFoodBombTravelTime",
+      "PlantFoodCardCount",
+      "PlantFoodCloudDuration",
+      "PlantFoodCloudSpeed",
+      "PlantFoodCoinsToSpawn",
+      "PlantFoodCollectTime",
+      "PlantFoodDPS",
+      "PlantFoodDurationSeconds",
+      "PlantFoodEatExtraZombieMaxNum",
+      "PlantFoodEatSpiritsMaxNum",
+      "PlantFoodEffectObjectName",
+      "PlantFoodForwardProjectileCount",
+      "PlantFoodGasEffectDelay",
+      "PlantFoodHitEffectPivotOffset",
+      "PlantFoodLightningBoltDamage",
+      "PlantFoodLightningTargets",
+      "PlantFoodOriginArtOffset",
+      "PlantFoodPlaneCount",
+      "PlantFoodPlantsToSpawn",
+      "PlantFoodPlayCount",
+      "PlantFoodProjectile",
+      "PlantFoodProjectileCount",
+      "PlantFoodProjectileNum",
+      "PlantFoodProjectileType",
+      "PlantFoodPulseDamage",
+      "PlantFoodPushBackDistance",
+      "PlantFoodPushBackHeight",
+      "PlantFoodPushBackTime",
+      "PlantFoodPushSpeed",
+      "PlantFoodResistantLightningBoltDamage",
+      "PlantFoodRotateStep",
+      "PlantFoodSharkDamage",
+      "PlantFoodShieldHitpoints",
+      "PlantFoodShineTime",
+      "PlantFoodSpeedScale",
+      "PlantFoodStepCount",
+      "PlantFoodSunCount",
+      "PlantFoodTargets",
+      "PlantFoodTime",
+      "PlantFoodZombieLevel",
+      "PlantFoodZombieTypeToSpawn",
+      "PlantfoodAttackCount",
+      "PlantfoodAttackDamageUpMaxScale",
+      "PlantfoodAttackIntervalMax",
+      "PlantfoodAttackIntervalMin",
+      "PlantfoodAttractRect",
+      "PlantfoodBeeCount",
+      "PlantfoodBeeDamage",
+      "PlantfoodBeeStunTime",
+      "PlantfoodCreatedBombBaseDamage",
+      "PlantfoodCreatedBombExplodeRadius",
+      "PlantfoodCreatedBombPropagationMultiplier",
+      "PlantfoodCreatedBombTimer",
+      "PlantfoodDamageMult",
+      "PlantfoodDamageRadius",
+      "PlantfoodDamageRadiusMult",
+      "PlantfoodDamageReduction",
+      "PlantfoodEatExtraZombieList",
+      "PlantfoodExplosionPAM",
+      "PlantfoodFireTime",
+      "PlantfoodKnockBackDistance",
+      "PlantfoodKnockBackHeight",
+      "PlantfoodKnockBackTime",
+      "PlantfoodKnockbackHeight",
+      "PlantfoodKnockbackOffset",
+      "PlantfoodKnockbackTime",
+      "PlantfoodLaunchProps",
+      "PlantfoodMinTargets",
+      "PlantfoodPineconeCount",
+      "PlantfoodPlants",
+      "PlantfoodPoisonAndSlowDuration",
+      "PlantfoodPoisonDPS",
+      "PlantfoodProjectileAttackRateOverrideValue",
+      "PlantfoodProjectileCount",
+      "PlantfoodProjectileDistance",
+      "PlantfoodProjectileLobHeight",
+      "PlantfoodProjectileSpeed",
+      "PlantfoodProjectileTimeOfFlight",
+      "PlantfoodProjectilesToFire",
+      "PlantfoodPropagationDelayBaseSeconds",
+      "PlantfoodPropagationDelayPerTileDistanceSeconds",
+      "PlantfoodRainDuration",
+      "PlantfoodRechargeTime",
+      "PlantfoodResetsDecayForAllPuffshrooms",
+      "PlantfoodSpawnRate",
+      "PlantfoodSpeedPercentDecrease",
+      "PlantfoodStallDuration",
+      "PlantfoodStartOffset",
+      "PlantfoodTargetCount",
+      "PlantfoodTransformationLevel",
+      "PlantfoodTransformationType",
+      "PlantfoodTurkeyTypeToSpawn",
+      "PlantfoodTurkeysToLaunch",
+      "PlantfoodUnaimedOffsetStart",
+      "PlantfoodUnaimedRepeatCount",
+      "PlantfoodUnaimedSlotDegrees",
+      "PlantfoodWarmingRadius",
+      "PlantfoodZombiesToTarget",
+      "SunMultiplierOnPlantfoodBurst",
+      "ThistlePlantfoodMinTargets",
+      "ThistlePlantfoodUnaimedRepeatCount",
+      "ZombiePlantfoodDamage",
+      "ZombiesAffectedByPlantfood"
+    ],
+    "fields": {
+      "# Number of seconds to keep plantfood animation looping": {
+        "nonEmpty": 0,
+        "records": 3
+      },
+      "# Number of times to play plantfood animation": {
+        "nonEmpty": 0,
+        "records": 3
+      },
+      "AvatarPlantfood": {
+        "nonEmpty": 0,
+        "records": 1
+      },
+      "FromPlantfood": {
+        "nonEmpty": 2,
+        "records": 2
+      },
+      "IsFromPlantFood": {
+        "nonEmpty": 1,
+        "records": 3
+      },
+      "MaxPlantFoodCharge": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "MaxPlantFoodObjects": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "MaxPlantfoodKills": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "MaxPlantfoodWaterKills": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "MaxSunPerZombieOnPlantfoodBurst": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "MaxUsesAfterPlantfood": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "MinPlantfoodWaterKills": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "NetworkedPlantFoodPlayCount": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "NumPlantfoodRockets": {
+        "nonEmpty": 4,
+        "records": 4
+      },
+      "NumPlantfoodShockwaves": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "NumberOfPlantFoodShots": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "NumberOfPlantfoodTargets": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantFoodActionIndex": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantFoodActivationSound": {
+        "nonEmpty": 142,
+        "records": 217
+      },
+      "PlantFoodAngleVarianceInDegrees": {
+        "nonEmpty": 2,
+        "records": 2
+      },
+      "PlantFoodAttackCooldown": {
+        "nonEmpty": 4,
+        "records": 4
+      },
+      "PlantFoodAttackInterval": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantFoodAvatarActionIndex": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantFoodBackwardProjectileCount": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantFoodBeamDPS": {
+        "nonEmpty": 1,
+        "records": 2
+      },
+      "PlantFoodBeamEndArtOffset": {
+        "nonEmpty": 2,
+        "records": 2
+      },
+      "PlantFoodBeamMaxTargetingDistance": {
+        "nonEmpty": 1,
+        "records": 2
+      },
+      "PlantFoodBeamMovementRate": {
+        "nonEmpty": 1,
+        "records": 2
+      },
+      "PlantFoodBeamStartArtOffset": {
+        "nonEmpty": 2,
+        "records": 2
+      },
+      "PlantFoodBeamStartOffset": {
+        "nonEmpty": 2,
+        "records": 2
+      },
+      "PlantFoodBombTravelTime": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantFoodCardCount": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantFoodCloudDuration": {
+        "nonEmpty": 2,
+        "records": 2
+      },
+      "PlantFoodCloudSpeed": {
+        "nonEmpty": 3,
+        "records": 3
+      },
+      "PlantFoodCoinsToSpawn": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantFoodCollectTime": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantFoodDPS": {
+        "nonEmpty": 3,
+        "records": 3
+      },
+      "PlantFoodDurationSeconds": {
+        "nonEmpty": 147,
+        "records": 155
+      },
+      "PlantFoodEatExtraZombieMaxNum": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantFoodEatSpiritsMaxNum": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantFoodEffectObjectName": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantFoodForwardProjectileCount": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantFoodGasEffectDelay": {
+        "nonEmpty": 2,
+        "records": 2
+      },
+      "PlantFoodHitEffectPivotOffset": {
+        "nonEmpty": 2,
+        "records": 2
+      },
+      "PlantFoodLightningBoltDamage": {
+        "nonEmpty": 3,
+        "records": 3
+      },
+      "PlantFoodLightningTargets": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantFoodOriginArtOffset": {
+        "nonEmpty": 2,
+        "records": 2
+      },
+      "PlantFoodPlaneCount": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantFoodPlantsToSpawn": {
+        "nonEmpty": 2,
+        "records": 2
+      },
+      "PlantFoodPlayCount": {
+        "nonEmpty": 185,
+        "records": 189
+      },
+      "PlantFoodProjectile": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantFoodProjectileCount": {
+        "nonEmpty": 47,
+        "records": 47
+      },
+      "PlantFoodProjectileNum": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantFoodProjectileType": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantFoodPulseDamage": {
+        "nonEmpty": 1,
+        "records": 2
+      },
+      "PlantFoodPushBackDistance": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantFoodPushBackHeight": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantFoodPushBackTime": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantFoodPushSpeed": {
+        "nonEmpty": 3,
+        "records": 3
+      },
+      "PlantFoodResistantLightningBoltDamage": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantFoodRotateStep": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantFoodSharkDamage": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantFoodShieldHitpoints": {
+        "nonEmpty": 3,
+        "records": 4
+      },
+      "PlantFoodShineTime": {
+        "nonEmpty": 0,
+        "records": 3
+      },
+      "PlantFoodSpeedScale": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantFoodStepCount": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantFoodSunCount": {
+        "nonEmpty": 9,
+        "records": 9
+      },
+      "PlantFoodTargets": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantFoodTime": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantFoodZombieLevel": {
+        "nonEmpty": 0,
+        "records": 1
+      },
+      "PlantFoodZombieTypeToSpawn": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantfoodAttackCount": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantfoodAttackDamageUpMaxScale": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantfoodAttackIntervalMax": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantfoodAttackIntervalMin": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantfoodAttractRect": {
+        "nonEmpty": 2,
+        "records": 2
+      },
+      "PlantfoodBeeCount": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantfoodBeeDamage": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantfoodBeeStunTime": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantfoodCreatedBombBaseDamage": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantfoodCreatedBombExplodeRadius": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantfoodCreatedBombPropagationMultiplier": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantfoodCreatedBombTimer": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantfoodDamageMult": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantfoodDamageRadius": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantfoodDamageRadiusMult": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantfoodDamageReduction": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantfoodEatExtraZombieList": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantfoodExplosionPAM": {
+        "nonEmpty": 5,
+        "records": 7
+      },
+      "PlantfoodFireTime": {
+        "nonEmpty": 3,
+        "records": 3
+      },
+      "PlantfoodKnockBackDistance": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantfoodKnockBackHeight": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantfoodKnockBackTime": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantfoodKnockbackHeight": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantfoodKnockbackOffset": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantfoodKnockbackTime": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantfoodLaunchProps": {
+        "nonEmpty": 19,
+        "records": 19
+      },
+      "PlantfoodMinTargets": {
+        "nonEmpty": 2,
+        "records": 2
+      },
+      "PlantfoodPineconeCount": {
+        "nonEmpty": 2,
+        "records": 2
+      },
+      "PlantfoodPlants": {
+        "nonEmpty": 2,
+        "records": 10
+      },
+      "PlantfoodPoisonAndSlowDuration": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantfoodPoisonDPS": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantfoodProjectileAttackRateOverrideValue": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantfoodProjectileCount": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantfoodProjectileDistance": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantfoodProjectileLobHeight": {
+        "nonEmpty": 2,
+        "records": 2
+      },
+      "PlantfoodProjectileSpeed": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantfoodProjectileTimeOfFlight": {
+        "nonEmpty": 2,
+        "records": 2
+      },
+      "PlantfoodProjectilesToFire": {
+        "nonEmpty": 6,
+        "records": 6
+      },
+      "PlantfoodPropagationDelayBaseSeconds": {
+        "nonEmpty": 4,
+        "records": 4
+      },
+      "PlantfoodPropagationDelayPerTileDistanceSeconds": {
+        "nonEmpty": 4,
+        "records": 4
+      },
+      "PlantfoodRainDuration": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantfoodRechargeTime": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantfoodResetsDecayForAllPuffshrooms": {
+        "nonEmpty": 1,
+        "records": 2
+      },
+      "PlantfoodSpawnRate": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantfoodSpeedPercentDecrease": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantfoodStallDuration": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantfoodStartOffset": {
+        "nonEmpty": 2,
+        "records": 2
+      },
+      "PlantfoodTargetCount": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantfoodTransformationLevel": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantfoodTransformationType": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantfoodTurkeyTypeToSpawn": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantfoodTurkeysToLaunch": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "PlantfoodUnaimedOffsetStart": {
+        "nonEmpty": 2,
+        "records": 2
+      },
+      "PlantfoodUnaimedRepeatCount": {
+        "nonEmpty": 2,
+        "records": 2
+      },
+      "PlantfoodUnaimedSlotDegrees": {
+        "nonEmpty": 2,
+        "records": 2
+      },
+      "PlantfoodWarmingRadius": {
+        "nonEmpty": 8,
+        "records": 8
+      },
+      "PlantfoodZombiesToTarget": {
+        "nonEmpty": 2,
+        "records": 2
+      },
+      "SunMultiplierOnPlantfoodBurst": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "ThistlePlantfoodMinTargets": {
+        "nonEmpty": 3,
+        "records": 3
+      },
+      "ThistlePlantfoodUnaimedRepeatCount": {
+        "nonEmpty": 3,
+        "records": 5
+      },
+      "ZombiePlantfoodDamage": {
+        "nonEmpty": 1,
+        "records": 1
+      },
+      "ZombiesAffectedByPlantfood": {
+        "nonEmpty": 2,
+        "records": 2
+      }
+    },
+    "note": "6 of 343 plant property objects carry a Type=plantfood action; the rest only expose duration/play-count numbers",
+    "plantCount": 6,
+    "sheet": "pkg_2073_PlantPropertySheet",
+    "verdict": "partial"
+  },
+  "sources": {
+    "distinctObjclasses": 121,
+    "files": 2117,
+    "obb": "D:\\OneDrive\\文档\\pvz_shuttle\\work\\obb_packages",
+    "packages": 2116
+  }
+}

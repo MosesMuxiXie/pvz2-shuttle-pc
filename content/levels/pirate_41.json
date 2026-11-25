@@ -204,6 +204,7 @@
   "original_waves": 0,
   "night": false,
   "boss": true,
-  "boss_zombie": "zomboss"
+  "boss_zombie": "zomboss",
+  "vasebreaker": true
  }
 }

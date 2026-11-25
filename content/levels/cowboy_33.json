@@ -206,6 +206,10 @@
   "special": [
    "IsVasebreaker"
   ],
-  "vasebreaker": true
+  "vasebreaker": true,
+  "minecarts": [
+   1
+  ],
+  "rail": true
  }
 }

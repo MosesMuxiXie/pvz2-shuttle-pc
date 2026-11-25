@@ -32,3 +32,19 @@
 | Craft Anything CLI | 仅用于 APK 结构分析，未分发 |
 
 本仓库的 `tools/obb/` 下脚本为作者根据公开格式资料自行实现，未包含 pyvz2 源码。
+
+## 3. 原生重建依赖（开发预览）
+
+| 组件 | 固定版本 | 上游许可文件 |
+| --- | --- | --- |
+| nlohmann/json | 3.12.0 | MIT，源码归档 `LICENSE.MIT` |
+| SDL | 3.2.28 | zlib，源码归档 `LICENSE.txt` |
+| SDL_image | 3.2.4 | zlib，源码归档 `LICENSE.txt` |
+| stb_image（随 SDL_image 的解码器） | 上述 SDL_image 源码内固定副本 | 头文件末尾提供 MIT / Public Domain 双选许可 |
+| stb_vorbis（Ogg Vorbis 解码器，`native/third_party/stb_vorbis.c`） | 1.25 | 文件头与文件尾声明 Public Domain（ALTERNATIVE A = MIT，ALTERNATIVE B = Public Domain，二选一） |
+| minimp3（MP3 解码器，`native/third_party/minimp3.h`、`minimp3_ex.h`） | master（2026-11-24 取回；来源 https://github.com/lieff/minimp3 ，上游文件 SHA-256 记在两个文件的头注释里） | CC0 1.0 Universal / Public Domain，见同目录 `minimp3.LICENSE` |
+
+原生构建通过 CMake 下载固定 SHA-256 的源码归档，未修改依赖源码；SDL 与 SDL_image 静态链接。
+`native/third_party/stb_vorbis.c`（v1.25，Public Domain/MIT 备选）与 `native/third_party/minimp3.h`、`minimp3_ex.h`（CC0 1.0，来源 https://github.com/lieff/minimp3 ）是仅有的随仓库分发的第三方源码（vendored）；两个解码器的文件顶部都加了来源与 SHA-256 注释，解码实现本身未改动。
+正式原生发行包尚未制作；打包时还须随包保留实际使用版本的许可证及其内嵌第三方组件声明。
+这不改变前文游戏素材的权利归属，也不代表已完成素材授权核验。

@@ -454,9 +454,7 @@
   "original_waves": 15,
   "night": false,
   "minecarts": [
-   0,
-   2,
-   4
+   2
   ],
   "rail": true
  }

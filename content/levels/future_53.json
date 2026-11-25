@@ -334,6 +334,10 @@
   "level_number": 5,
   "wave_count": 14,
   "original_waves": 16,
-  "night": false
+  "night": false,
+  "minecarts": [
+   2
+  ],
+  "rail": true
  }
 }

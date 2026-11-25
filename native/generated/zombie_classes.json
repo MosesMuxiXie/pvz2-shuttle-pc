@@ -1,0 +1,2447 @@
+{
+ "classes": [
+  {
+   "className": "ZombieAFLeo",
+   "count": 1,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "af_leo"
+   ]
+  },
+  {
+   "className": "ZombieArchmage",
+   "count": 1,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "dark_archmage"
+   ]
+  },
+  {
+   "className": "ZombieAtlantisBasic",
+   "count": 14,
+   "evidence": [
+    "12/14 types have IsBasicZombie=true in the ZombieTypes sheet"
+   ],
+   "family": "walk",
+   "note": "basic walker per IsBasicZombie",
+   "sampleTypes": [
+    "atlantis",
+    "atlantis_flag",
+    "atlantis_flag_veteran"
+   ]
+  },
+  {
+   "className": "ZombieAtlantisDiver",
+   "count": 1,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "atlantis_diver"
+   ]
+  },
+  {
+   "className": "ZombieAtlantisGargantuar",
+   "count": 2,
+   "evidence": [
+    "PopAnim of 2/2 types contains one of GARGANTUAR, ZOMBOSS, MECH"
+   ],
+   "family": "gargantuar",
+   "note": "gargantuar/zomboss/mech animation on at least half of the class's types",
+   "sampleTypes": [
+    "atlantis_gargantuar",
+    "atlantis_land_gargantuar"
+   ]
+  },
+  {
+   "className": "ZombieAtlantisPoseidon",
+   "count": 1,
+   "evidence": [
+    "1/1 types reference a Spawn/Summon action (e.g. ZombieAtlantisPoseidonSummonAction)"
+   ],
+   "family": "summon",
+   "note": "spawner per ZombieActions",
+   "sampleTypes": [
+    "atlantis_poseidon"
+   ]
+  },
+  {
+   "className": "ZombieAtlantisRider",
+   "count": 1,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "atlantis_rider"
+   ]
+  },
+  {
+   "className": "ZombieBasic",
+   "count": 240,
+   "evidence": [
+    "214/240 types have IsBasicZombie=true in the ZombieTypes sheet"
+   ],
+   "family": "walk",
+   "note": "basic walker per IsBasicZombie",
+   "sampleTypes": [
+    "tutorial",
+    "tutorial_armor1",
+    "tutorial_armor2"
+   ]
+  },
+  {
+   "className": "ZombieBeachFastSwimmer",
+   "count": 1,
+   "evidence": [
+    "1/1 types have IsBasicZombie=true in the ZombieTypes sheet"
+   ],
+   "family": "walk",
+   "note": "basic walker per IsBasicZombie",
+   "sampleTypes": [
+    "beach_fastswimmer"
+   ]
+  },
+  {
+   "className": "ZombieBeachFisherman",
+   "count": 1,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "beach_fisherman"
+   ]
+  },
+  {
+   "className": "ZombieBeachOctopus",
+   "count": 2,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 2 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "beach_octopus",
+    "heian_sushi"
+   ]
+  },
+  {
+   "className": "ZombieBeachSnorkel",
+   "count": 1,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "beach_snorkel"
+   ]
+  },
+  {
+   "className": "ZombieBeachSurfer",
+   "count": 1,
+   "evidence": [
+    "1/1 types have IsBasicZombie=true in the ZombieTypes sheet"
+   ],
+   "family": "walk",
+   "note": "basic walker per IsBasicZombie",
+   "sampleTypes": [
+    "beach_surfer"
+   ]
+  },
+  {
+   "className": "ZombieBigHeadAllStar",
+   "count": 1,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "bighead_allstar"
+   ]
+  },
+  {
+   "className": "ZombieBigHeadBalloon",
+   "count": 1,
+   "evidence": [
+    "1/1 types set IsSpawnedFlying=true in their ZombieProperties"
+   ],
+   "family": "fly",
+   "note": "flying zombie per IsSpawnedFlying",
+   "sampleTypes": [
+    "bighead_balloon"
+   ]
+  },
+  {
+   "className": "ZombieBigHeadBarrelRoller",
+   "count": 1,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "bighead_barrelroller"
+   ]
+  },
+  {
+   "className": "ZombieBigHeadBasic",
+   "count": 4,
+   "evidence": [
+    "4/4 types have IsBasicZombie=true in the ZombieTypes sheet"
+   ],
+   "family": "walk",
+   "note": "basic walker per IsBasicZombie",
+   "sampleTypes": [
+    "bighead_flag",
+    "bighead",
+    "bighead_armor1"
+   ]
+  },
+  {
+   "className": "ZombieBigHeadGargantuar",
+   "count": 1,
+   "evidence": [
+    "PopAnim of 1/1 types contains one of GARGANTUAR, ZOMBOSS, MECH"
+   ],
+   "family": "gargantuar",
+   "note": "gargantuar/zomboss/mech animation on at least half of the class's types",
+   "sampleTypes": [
+    "bighead_gargantuar"
+   ]
+  },
+  {
+   "className": "ZombieBigHeadImp",
+   "count": 1,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "bighead_imp"
+   ]
+  },
+  {
+   "className": "ZombieBigHeadNewspaper",
+   "count": 1,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "bighead_newspaper"
+   ]
+  },
+  {
+   "className": "ZombieBigHeadSuperfan",
+   "count": 1,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "bighead_superfan"
+   ]
+  },
+  {
+   "className": "ZombieBobsledTeam",
+   "count": 1,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "zombie_bobsled_team"
+   ]
+  },
+  {
+   "className": "ZombieBull",
+   "count": 3,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 3 type(s)",
+    "rule evidence alone said walk; human review disagrees"
+   ],
+   "family": "jump",
+   "note": "human override: 2 of its 3 types are pole vaulters (modern_polevaulting, pool_polevaulting with POPANIM_ZOMBIE_ZOMBIE_MODERN_POLE_VAULTING); ZombieActions carries no Jump entry for them",
+   "sampleTypes": [
+    "west_bull",
+    "modern_polevaulting",
+    "pool_polevaulting"
+   ]
+  },
+  {
+   "className": "ZombieBullVeteran",
+   "count": 1,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)",
+    "rule evidence alone said walk; human review disagrees"
+   ],
+   "family": "jump",
+   "note": "human override: bull rider veteran shares the charging jump of ZombieBull; PopAnim WEST_BULLRIDER_VETERAN",
+   "sampleTypes": [
+    "west_bull_veteran"
+   ]
+  },
+  {
+   "className": "ZombieCakeTank",
+   "count": 43,
+   "evidence": [
+    "24/43 types reference a Spawn/Summon action (e.g. ZombieLostCityRelicHunterVeteranSpawn)",
+    "1/43 types reference a ZombieProperties entry missing from this build",
+    "rule evidence alone said summon; human review disagrees"
+   ],
+   "family": "gargantuar",
+   "note": "human override: boss/vehicle base class: its 43 types include caketank, nian_beast, wealth_god, steam_train and the renai statues, and bosses stay in the gargantuar family",
+   "sampleTypes": [
+    "lostcity_relichunter_veteran",
+    "caketank",
+    "caketankfeastivus"
+   ]
+  },
+  {
+   "className": "ZombieCamel",
+   "count": 14,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 14 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "camel_almanac",
+    "camel_onehump",
+    "camel_twohump"
+   ]
+  },
+  {
+   "className": "ZombieCamelTouch",
+   "count": 4,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 4 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "camel_onehump_touch",
+    "camel_twohump_touch",
+    "camel_manyhump_touch"
+   ]
+  },
+  {
+   "className": "ZombieCarnieDove",
+   "count": 2,
+   "evidence": [
+    "2/2 types set IsSpawnedFlying=true in their ZombieProperties"
+   ],
+   "family": "fly",
+   "note": "flying zombie per IsSpawnedFlying",
+   "sampleTypes": [
+    "carnie_dove",
+    "carnie_dove_veteran"
+   ]
+  },
+  {
+   "className": "ZombieCarnieFireBreather",
+   "count": 3,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 3 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "cowboy_tacochamp",
+    "carnie_firebreather",
+    "carnie_firebreather_veteran"
+   ]
+  },
+  {
+   "className": "ZombieCarnieGrinderhead",
+   "count": 2,
+   "evidence": [
+    "2/2 types have IsBasicZombie=true in the ZombieTypes sheet"
+   ],
+   "family": "walk",
+   "note": "basic walker per IsBasicZombie",
+   "sampleTypes": [
+    "carnie_armor4",
+    "grinderhead_veteran"
+   ]
+  },
+  {
+   "className": "ZombieCarnieImpTwins",
+   "count": 2,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 2 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "carnie_imp_twins",
+    "coal_steam_zomboss_imp"
+   ]
+  },
+  {
+   "className": "ZombieCarnieMagician",
+   "count": 37,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 37 type(s)",
+    "rule evidence alone said walk; human review disagrees"
+   ],
+   "family": "summon",
+   "note": "human override: 18 of 37 types reference Spawn actions (carnie_magician, fairy_tale_imp, fairy_tale_knight_spawner); the ratio misses the 0.5 threshold by one type",
+   "sampleTypes": [
+    "cleopatra",
+    "carnie_magician",
+    "carnie_magician_veteran"
+   ]
+  },
+  {
+   "className": "ZombieCarnieMonkey",
+   "count": 2,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 2 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "carnie_monkey",
+    "carnie_monkey_veteran"
+   ]
+  },
+  {
+   "className": "ZombieCatapult",
+   "count": 1,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "catapult"
+   ]
+  },
+  {
+   "className": "ZombieChicken",
+   "count": 6,
+   "evidence": [
+    "class name contains the minion token `Chicken`; this family only exists as a summon and no walker evidence was found (0/6 basic, 0/6 spawn actions)"
+   ],
+   "family": "summon",
+   "note": "minion-summon family name, no walker evidence",
+   "sampleTypes": [
+    "chicken",
+    "chicken_battlez",
+    "foodfight_turkey"
+   ]
+  },
+  {
+   "className": "ZombieChickenFarmer",
+   "count": 2,
+   "evidence": [
+    "class name contains the minion token `Chicken`; this family only exists as a summon and no walker evidence was found (0/2 basic, 0/2 spawn actions)"
+   ],
+   "family": "summon",
+   "note": "minion-summon family name, no walker evidence",
+   "sampleTypes": [
+    "chicken_farmer",
+    "foodfight_gobbler_king"
+   ]
+  },
+  {
+   "className": "ZombieChineseGardenCarpImp",
+   "count": 1,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "chinesegarden_carpimp"
+   ]
+  },
+  {
+   "className": "ZombieChineseGardenCujuStar",
+   "count": 1,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "chinesegarden_cujustar"
+   ]
+  },
+  {
+   "className": "ZombieChineseGardenGargantuar",
+   "count": 1,
+   "evidence": [
+    "PopAnim of 1/1 types contains one of GARGANTUAR, ZOMBOSS, MECH"
+   ],
+   "family": "gargantuar",
+   "note": "gargantuar/zomboss/mech animation on at least half of the class's types",
+   "sampleTypes": [
+    "chinesegarden_gargantuar"
+   ]
+  },
+  {
+   "className": "ZombieChineseGardenImpTaoist",
+   "count": 1,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "chinesegarden_imp_taoist"
+   ]
+  },
+  {
+   "className": "ZombieChineseGardenScientist",
+   "count": 1,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "chinesegarden_scientist"
+   ]
+  },
+  {
+   "className": "ZombieCrystalSkull",
+   "count": 1,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "lostcity_crystalskull"
+   ]
+  },
+  {
+   "className": "ZombieDarkJuggler",
+   "count": 8,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 8 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "foodfight_chefster",
+    "birthday_juggler",
+    "dark_juggler"
+   ]
+  },
+  {
+   "className": "ZombieDarkKing",
+   "count": 2,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 2 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "dark_king",
+    "steam_train_explosion"
+   ]
+  },
+  {
+   "className": "ZombieDarkWizard",
+   "count": 6,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 6 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "spring_wizard",
+    "sportzball_wizard",
+    "fairy_tale_wizard"
+   ]
+  },
+  {
+   "className": "ZombieDinoBasic",
+   "count": 7,
+   "evidence": [
+    "7/7 types have IsBasicZombie=true in the ZombieTypes sheet"
+   ],
+   "family": "walk",
+   "note": "basic walker per IsBasicZombie",
+   "sampleTypes": [
+    "dino",
+    "dino_armor1",
+    "dino_armor2"
+   ]
+  },
+  {
+   "className": "ZombieDinoBully",
+   "count": 2,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 2 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "dino_bully",
+    "hero_superbrainz"
+   ]
+  },
+  {
+   "className": "ZombieDinoBullyVeteran",
+   "count": 1,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "dino_bully_veteran"
+   ]
+  },
+  {
+   "className": "ZombieDuckyTubeBasic",
+   "count": 6,
+   "evidence": [
+    "6/6 types have IsBasicZombie=true in the ZombieTypes sheet"
+   ],
+   "family": "walk",
+   "note": "basic walker per IsBasicZombie",
+   "sampleTypes": [
+    "duckytube",
+    "duckytube_armor1",
+    "duckytube_armor2"
+   ]
+  },
+  {
+   "className": "ZombieEighties8BitBasic",
+   "count": 3,
+   "evidence": [
+    "3/3 types have IsBasicZombie=true in the ZombieTypes sheet"
+   ],
+   "family": "walk",
+   "note": "basic walker per IsBasicZombie",
+   "sampleTypes": [
+    "eighties_8bit",
+    "eighties_8bit_armor1",
+    "eighties_8bit_armor2"
+   ]
+  },
+  {
+   "className": "ZombieEightiesArcade",
+   "count": 2,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 2 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "eighties_arcade",
+    "eighties_arcade_veteran"
+   ]
+  },
+  {
+   "className": "ZombieEightiesBasic",
+   "count": 6,
+   "evidence": [
+    "6/6 types have IsBasicZombie=true in the ZombieTypes sheet"
+   ],
+   "family": "walk",
+   "note": "basic walker per IsBasicZombie",
+   "sampleTypes": [
+    "eighties",
+    "eighties_armor1",
+    "eighties_armor2"
+   ]
+  },
+  {
+   "className": "ZombieEightiesBoombox",
+   "count": 3,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 3 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "eighties_boombox",
+    "eighties_boombox_veteran",
+    "eighties_popsinger"
+   ]
+  },
+  {
+   "className": "ZombieEightiesBreakDancer",
+   "count": 8,
+   "evidence": [
+    "5/8 types have IsBasicZombie=true in the ZombieTypes sheet"
+   ],
+   "family": "walk",
+   "note": "basic walker per IsBasicZombie",
+   "sampleTypes": [
+    "eighties_breakdancer",
+    "eighties_armor4_ballad",
+    "eighties_armor4_punk"
+   ]
+  },
+  {
+   "className": "ZombieEightiesGargantuar",
+   "count": 1,
+   "evidence": [
+    "PopAnim of 1/1 types contains one of GARGANTUAR, ZOMBOSS, MECH"
+   ],
+   "family": "gargantuar",
+   "note": "gargantuar/zomboss/mech animation on at least half of the class's types",
+   "sampleTypes": [
+    "eighties_gargantuar"
+   ]
+  },
+  {
+   "className": "ZombieEightiesGlitter",
+   "count": 2,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 2 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "eighties_glitter",
+    "eighties_glitter_veteran"
+   ]
+  },
+  {
+   "className": "ZombieEightiesMC",
+   "count": 2,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 2 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "eighties_mc",
+    "eighties_mc_veteran"
+   ]
+  },
+  {
+   "className": "ZombieEightiesPunk",
+   "count": 2,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 2 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "eighties_punk",
+    "eighties_punk_veteran"
+   ]
+  },
+  {
+   "className": "ZombieExcavator",
+   "count": 7,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 7 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "lostcity_excavator",
+    "pool_screendoor",
+    "tutorial_screendoor"
+   ]
+  },
+  {
+   "className": "ZombieExplorer",
+   "count": 6,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 6 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "explorer",
+    "explorer_veteran",
+    "kongfu_monk_torch"
+   ]
+  },
+  {
+   "className": "ZombieFireball",
+   "count": 1,
+   "evidence": [
+    "PopAnim of 1/1 types contains one of GARGANTUAR, ZOMBOSS, MECH",
+    "rule evidence alone said gargantuar; human review disagrees"
+   ],
+   "family": "walk",
+   "note": "human override: its only type is an effect/projectile (fireball) whose PopAnim happens to start with EFFECTS_ZOMBOSS; it is not a gargantuar",
+   "sampleTypes": [
+    "fireball"
+   ]
+  },
+  {
+   "className": "ZombieFutureImp",
+   "count": 9,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 9 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "future_imp",
+    "leprachaun_imp",
+    "spring_imp"
+   ]
+  },
+  {
+   "className": "ZombieFutureJetpack",
+   "count": 6,
+   "evidence": [
+    "5/6 types set IsSpawnedFlying=true in their ZombieProperties"
+   ],
+   "family": "fly",
+   "note": "flying zombie per IsSpawnedFlying",
+   "sampleTypes": [
+    "future_jetpack",
+    "future_jetpack_veteran",
+    "future_jetpack_disco"
+   ]
+  },
+  {
+   "className": "ZombieFutureProtector",
+   "count": 3,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 3 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "future_protector",
+    "future_protector_veteran",
+    "future_protector_ori"
+   ]
+  },
+  {
+   "className": "ZombieGangGargantuar",
+   "count": 1,
+   "evidence": [
+    "PopAnim of 1/1 types contains one of GARGANTUAR, ZOMBOSS, MECH"
+   ],
+   "family": "gargantuar",
+   "note": "gargantuar/zomboss/mech animation on at least half of the class's types",
+   "sampleTypes": [
+    "gang_gargantuar"
+   ]
+  },
+  {
+   "className": "ZombieGangLoudmouth",
+   "count": 1,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "gang_loudmouth"
+   ]
+  },
+  {
+   "className": "ZombieGangMolotov",
+   "count": 1,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "gang_molotov"
+   ]
+  },
+  {
+   "className": "ZombieGangsterImpGreaser",
+   "count": 1,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "gangster_imp_greaser"
+   ]
+  },
+  {
+   "className": "ZombieGangsterImpTyre",
+   "count": 1,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "gangster_tyre"
+   ]
+  },
+  {
+   "className": "ZombieGargantuar",
+   "count": 49,
+   "evidence": [
+    "PopAnim of 42/49 types contains one of GARGANTUAR, ZOMBOSS, MECH"
+   ],
+   "family": "gargantuar",
+   "note": "gargantuar/zomboss/mech animation on at least half of the class's types",
+   "sampleTypes": [
+    "future_gargantuar",
+    "tutorial_gargantuar",
+    "egypt_gargantuar"
+   ]
+  },
+  {
+   "className": "ZombieGargantuarMech",
+   "count": 1,
+   "evidence": [
+    "PopAnim of 1/1 types contains one of GARGANTUAR, ZOMBOSS, MECH"
+   ],
+   "family": "gargantuar",
+   "note": "gargantuar/zomboss/mech animation on at least half of the class's types",
+   "sampleTypes": [
+    "future_gargantuar_ori"
+   ]
+  },
+  {
+   "className": "ZombieGeneralBase",
+   "count": 1,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "lostcity_photographer"
+   ]
+  },
+  {
+   "className": "ZombieGeneralCaesar",
+   "count": 6,
+   "evidence": [
+    "4/6 types reference a Spawn/Summon action (e.g. ZombieGeneralCaesarShieldSummonPhase1Action)"
+   ],
+   "family": "summon",
+   "note": "spawner per ZombieActions",
+   "sampleTypes": [
+    "general_caesar_phase1",
+    "general_caesar_phase2",
+    "general_caesar_phase3"
+   ]
+  },
+  {
+   "className": "ZombieGeneralTreadmill",
+   "count": 48,
+   "evidence": [
+    "33/48 types reference a Spawn/Summon action (e.g. ZombieSkyCityBarrageSummon)",
+    "3/48 types reference a ZombieProperties entry missing from this build"
+   ],
+   "family": "summon",
+   "note": "spawner per ZombieActions",
+   "sampleTypes": [
+    "general_treadmill_phase1",
+    "general_treadmill_phase2",
+    "general_treadmill_phase3"
+   ]
+  },
+  {
+   "className": "ZombieGeneralZmech",
+   "count": 14,
+   "evidence": [
+    "PopAnim of 11/14 types contains one of GARGANTUAR, ZOMBOSS, MECH"
+   ],
+   "family": "gargantuar",
+   "note": "gargantuar/zomboss/mech animation on at least half of the class's types",
+   "sampleTypes": [
+    "general_zmech_phase1",
+    "general_zmech_phase2",
+    "general_zmech_phase3"
+   ]
+  },
+  {
+   "className": "ZombieGum",
+   "count": 4,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 4 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "gum",
+    "catch",
+    "selfdestroy"
+   ]
+  },
+  {
+   "className": "ZombieHamsterBall",
+   "count": 13,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 13 type(s)",
+    "3/13 types reference a ZombieProperties entry missing from this build"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "hamster_ball",
+    "fairy_tale_cavalry",
+    "fairy_cavalry"
+   ]
+  },
+  {
+   "className": "ZombieIceAgeDodo",
+   "count": 5,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 5 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "iceage_dodo",
+    "leprachaun_dodo",
+    "kongfu_monk_imp"
+   ]
+  },
+  {
+   "className": "ZombieIceAgeHunter",
+   "count": 23,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 23 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "iceage_hunter",
+    "iceage_chief",
+    "iceage_chief_veteran"
+   ]
+  },
+  {
+   "className": "ZombieIceAgeTroglobite",
+   "count": 12,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 12 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "easter_troglobite",
+    "easter_troglobite_1block",
+    "easter_troglobite_2block"
+   ]
+  },
+  {
+   "className": "ZombieImp",
+   "count": 35,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 35 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "pirate_imp",
+    "west_bullrider",
+    "tutorial_imp"
+   ]
+  },
+  {
+   "className": "ZombieImpPorter",
+   "count": 1,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "lostcity_impporter"
+   ]
+  },
+  {
+   "className": "ZombieLNYDragonWall",
+   "count": 4,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 4 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "lunar_camel_onehump",
+    "lunar_camel_twohump",
+    "lunar_camel_manyhump"
+   ]
+  },
+  {
+   "className": "ZombieLostCityBasic",
+   "count": 7,
+   "evidence": [
+    "6/7 types have IsBasicZombie=true in the ZombieTypes sheet"
+   ],
+   "family": "walk",
+   "note": "basic walker per IsBasicZombie",
+   "sampleTypes": [
+    "lostcity",
+    "lostcity_armor1",
+    "lostcity_armor2"
+   ]
+  },
+  {
+   "className": "ZombieLostCityBug",
+   "count": 7,
+   "evidence": [
+    "7/7 types set IsSpawnedFlying=true in their ZombieProperties"
+   ],
+   "family": "fly",
+   "note": "flying zombie per IsSpawnedFlying",
+   "sampleTypes": [
+    "lostcity_bug",
+    "lostcity_bug_armor1",
+    "lostcity_bug_armor2"
+   ]
+  },
+  {
+   "className": "ZombieLostCityDoctor",
+   "count": 1,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "lostcity_doctor"
+   ]
+  },
+  {
+   "className": "ZombieLostCityGargantuar",
+   "count": 2,
+   "evidence": [
+    "PopAnim of 2/2 types contains one of GARGANTUAR, ZOMBOSS, MECH"
+   ],
+   "family": "gargantuar",
+   "note": "gargantuar/zomboss/mech animation on at least half of the class's types",
+   "sampleTypes": [
+    "lostcity_gargantuar",
+    "kongfu_gargantuar"
+   ]
+  },
+  {
+   "className": "ZombieLostCityGuide",
+   "count": 1,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "lostcity_guide"
+   ]
+  },
+  {
+   "className": "ZombieLostCityJane",
+   "count": 1,
+   "evidence": [
+    "1/1 types have IsBasicZombie=true in the ZombieTypes sheet"
+   ],
+   "family": "walk",
+   "note": "basic walker per IsBasicZombie",
+   "sampleTypes": [
+    "lostcity_jane"
+   ]
+  },
+  {
+   "className": "ZombieLostCityLostPilot",
+   "count": 1,
+   "evidence": [
+    "1/1 types have IsBasicZombie=true in the ZombieTypes sheet"
+   ],
+   "family": "walk",
+   "note": "basic walker per IsBasicZombie",
+   "sampleTypes": [
+    "lostcity_lostpilot"
+   ]
+  },
+  {
+   "className": "ZombieLostCityRelicHunter",
+   "count": 3,
+   "evidence": [
+    "PopAnim of 2/3 types contains BUNGEE (the only plant-stealing behaviour shipped)"
+   ],
+   "family": "steal",
+   "note": "bungee-style animation on at least half of the class's types",
+   "sampleTypes": [
+    "lostcity_relichunter",
+    "west_bungee",
+    "west_bungee_alt"
+   ]
+  },
+  {
+   "className": "ZombieMausoleumArcher",
+   "count": 3,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 3 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "mausoleum_archer",
+    "mausoleum_spirit_archer",
+    "mausoleum_ghost_archer"
+   ]
+  },
+  {
+   "className": "ZombieMausoleumAssassin",
+   "count": 3,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 3 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "mausoleum_assassin",
+    "mausoleum_spirit_assassin",
+    "mausoleum_ghost_assassin"
+   ]
+  },
+  {
+   "className": "ZombieMausoleumBase",
+   "count": 15,
+   "evidence": [
+    "14/15 types have IsBasicZombie=true in the ZombieTypes sheet"
+   ],
+   "family": "walk",
+   "note": "basic walker per IsBasicZombie",
+   "sampleTypes": [
+    "mausoleum",
+    "mausoleum_armor1",
+    "mausoleum_armor2"
+   ]
+  },
+  {
+   "className": "ZombieMausoleumDrunk",
+   "count": 3,
+   "evidence": [
+    "3/3 types have IsBasicZombie=true in the ZombieTypes sheet"
+   ],
+   "family": "walk",
+   "note": "basic walker per IsBasicZombie",
+   "sampleTypes": [
+    "mausoleum_drunk",
+    "mausoleum_spirit_drunk",
+    "mausoleum_ghost_drunk"
+   ]
+  },
+  {
+   "className": "ZombieMausoleumOrb",
+   "count": 2,
+   "evidence": [
+    "PopAnim of 2/2 types contains one of GARGANTUAR, ZOMBOSS, MECH",
+    "rule evidence alone said gargantuar; human review disagrees"
+   ],
+   "family": "walk",
+   "note": "human override: both types are projectiles (mausoleum_fireball/iceball) with EFFECTS_ZOMBOSS art, not gargantuars",
+   "sampleTypes": [
+    "mausoleum_fireball",
+    "mausoleum_iceball"
+   ]
+  },
+  {
+   "className": "ZombieMausoleumPiggy",
+   "count": 1,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "mausoleum_piggy"
+   ]
+  },
+  {
+   "className": "ZombieMausoleumShield",
+   "count": 6,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 6 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "mausoleum_shield",
+    "mausoleum_shield_pair",
+    "mausoleum_shield_triad"
+   ]
+  },
+  {
+   "className": "ZombieMausoleumTaoist",
+   "count": 1,
+   "evidence": [
+    "1/1 types have IsBasicZombie=true in the ZombieTypes sheet"
+   ],
+   "family": "walk",
+   "note": "basic walker per IsBasicZombie",
+   "sampleTypes": [
+    "mausoleum_taoist"
+   ]
+  },
+  {
+   "className": "ZombieMausoleumTerracotta",
+   "count": 1,
+   "evidence": [
+    "1/1 types have IsBasicZombie=true in the ZombieTypes sheet"
+   ],
+   "family": "walk",
+   "note": "basic walker per IsBasicZombie",
+   "sampleTypes": [
+    "mausoleum_terracotta"
+   ]
+  },
+  {
+   "className": "ZombieMausoleumTerracottaTroglobite",
+   "count": 1,
+   "evidence": [
+    "1/1 types have IsBasicZombie=true in the ZombieTypes sheet"
+   ],
+   "family": "walk",
+   "note": "basic walker per IsBasicZombie",
+   "sampleTypes": [
+    "mausoleum_terracotta_trog"
+   ]
+  },
+  {
+   "className": "ZombieMausoleumToken",
+   "count": 2,
+   "evidence": [
+    "2/2 types have IsBasicZombie=true in the ZombieTypes sheet"
+   ],
+   "family": "walk",
+   "note": "basic walker per IsBasicZombie",
+   "sampleTypes": [
+    "mausoleum_token",
+    "mausoleum_token_defend"
+   ]
+  },
+  {
+   "className": "ZombieMausoleumVendor",
+   "count": 1,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "mausoleum_vendor"
+   ]
+  },
+  {
+   "className": "ZombieMech",
+   "count": 7,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 7 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "mech_cone",
+    "mech_cone_veteran",
+    "invisible_plane"
+   ]
+  },
+  {
+   "className": "ZombieMechDisco",
+   "count": 1,
+   "evidence": [
+    "PopAnim of 1/1 types contains one of GARGANTUAR, ZOMBOSS, MECH"
+   ],
+   "family": "gargantuar",
+   "note": "gargantuar/zomboss/mech animation on at least half of the class's types",
+   "sampleTypes": [
+    "disco_mech"
+   ]
+  },
+  {
+   "className": "ZombieMechFootball",
+   "count": 4,
+   "evidence": [
+    "PopAnim of 3/4 types contains one of GARGANTUAR, ZOMBOSS, MECH"
+   ],
+   "family": "gargantuar",
+   "note": "gargantuar/zomboss/mech animation on at least half of the class's types",
+   "sampleTypes": [
+    "football_mech",
+    "football_mech_ori",
+    "toycar"
+   ]
+  },
+  {
+   "className": "ZombieModernAllStar",
+   "count": 4,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 4 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "modern_allstar",
+    "modern_allstar_ori",
+    "pool_allstar"
+   ]
+  },
+  {
+   "className": "ZombieModernBalloon",
+   "count": 8,
+   "evidence": [
+    "8/8 types set IsSpawnedFlying=true in their ZombieProperties"
+   ],
+   "family": "fly",
+   "note": "flying zombie per IsSpawnedFlying",
+   "sampleTypes": [
+    "tutorial_balloon",
+    "modern_balloon",
+    "sportzball_balloon"
+   ]
+  },
+  {
+   "className": "ZombieModernDisco",
+   "count": 1,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "modern_disco"
+   ]
+  },
+  {
+   "className": "ZombieModernDolphinRider",
+   "count": 1,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)",
+    "rule evidence alone said walk; human review disagrees"
+   ],
+   "family": "jump",
+   "note": "human override: PopAnim POPANIM_ZOMBIE_ZOMBIE_MODERN_DOLPHINRIDER; the dolphin leaps over plants",
+   "sampleTypes": [
+    "modern_dolphin"
+   ]
+  },
+  {
+   "className": "ZombieModernNewspaper",
+   "count": 11,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 11 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "modern_newspaper",
+    "newspaper_veteran",
+    "beghouled_newspaper"
+   ]
+  },
+  {
+   "className": "ZombieModernPogo",
+   "count": 1,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)",
+    "rule evidence alone said walk; human review disagrees"
+   ],
+   "family": "jump",
+   "note": "human override: PopAnim POPANIM_ZOMBIE_ZOMBIE_POGO; pogo hopping is animation-only in this build",
+   "sampleTypes": [
+    "modern_pogostick"
+   ]
+  },
+  {
+   "className": "ZombieModernPoleVaulting",
+   "count": 2,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 2 type(s)",
+    "rule evidence alone said walk; human review disagrees"
+   ],
+   "family": "jump",
+   "note": "human override: PopAnim POPANIM_ZOMBIE_ZOMBIE_POLE_VAULTING; the vault is an animation, not a ZombieActions entry",
+   "sampleTypes": [
+    "modern_polevaulter",
+    "feastivus_polevaulter"
+   ]
+  },
+  {
+   "className": "ZombieModernSuperfanImp",
+   "count": 8,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 8 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "modern_superfanimp",
+    "lunar_superfanimp",
+    "carnie_imp_veteran"
+   ]
+  },
+  {
+   "className": "ZombieNianBeast",
+   "count": 1,
+   "evidence": [
+    "1/1 types reference a Spawn/Summon action (e.g. ZombieNianBeastSpawn1)"
+   ],
+   "family": "summon",
+   "note": "spawner per ZombieActions",
+   "sampleTypes": [
+    "nian_beast_special"
+   ]
+  },
+  {
+   "className": "ZombieNutCracker",
+   "count": 1,
+   "evidence": [
+    "1/1 types have IsBasicZombie=true in the ZombieTypes sheet"
+   ],
+   "family": "walk",
+   "note": "basic walker per IsBasicZombie",
+   "sampleTypes": [
+    "nutcracker"
+   ]
+  },
+  {
+   "className": "ZombieParkour",
+   "count": 2,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 2 type(s)",
+    "rule evidence alone said walk; human review disagrees"
+   ],
+   "family": "jump",
+   "note": "human override: PopAnim POPANIM_ZOMBIE_ZOMBIE_PARKOUR_RUNNER; the runner vaults obstacles",
+   "sampleTypes": [
+    "parkour_runner",
+    "af_runner"
+   ]
+  },
+  {
+   "className": "ZombiePet",
+   "count": 1,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "pet"
+   ]
+  },
+  {
+   "className": "ZombiePharaoh",
+   "count": 3,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 3 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "pharaoh",
+    "birthday_pharaoh",
+    "pvza_barrel"
+   ]
+  },
+  {
+   "className": "ZombiePiano",
+   "count": 3,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 3 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "piano",
+    "feastivus_piano",
+    "zamboni"
+   ]
+  },
+  {
+   "className": "ZombiePirateBarrel",
+   "count": 5,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 5 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "pirate_barrel",
+    "birthday_barrel",
+    "hero_barrel"
+   ]
+  },
+  {
+   "className": "ZombiePirateBarrelPusher",
+   "count": 3,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 3 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "barrelroller",
+    "hero_barrelroller",
+    "dino_cheese_pusher"
+   ]
+  },
+  {
+   "className": "ZombiePirateCannon",
+   "count": 6,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 6 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "cannon",
+    "carnie_cannon",
+    "carnie_cannon_veteran"
+   ]
+  },
+  {
+   "className": "ZombiePirateCaptain",
+   "count": 1,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "pirate_captain"
+   ]
+  },
+  {
+   "className": "ZombiePirateParrot",
+   "count": 1,
+   "evidence": [
+    "1/1 types set IsSpawnedFlying=true in their ZombieProperties"
+   ],
+   "family": "fly",
+   "note": "flying zombie per IsSpawnedFlying",
+   "sampleTypes": [
+    "pirate_captain_parrot"
+   ]
+  },
+  {
+   "className": "ZombiePirateSeagull",
+   "count": 2,
+   "evidence": [
+    "2/2 types set IsSpawnedFlying=true in their ZombieProperties"
+   ],
+   "family": "fly",
+   "note": "flying zombie per IsSpawnedFlying",
+   "sampleTypes": [
+    "seagull",
+    "pelican"
+   ]
+  },
+  {
+   "className": "ZombiePoncho",
+   "count": 8,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 8 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "poncho",
+    "poncho_no_plate",
+    "poncho_plate"
+   ]
+  },
+  {
+   "className": "ZombieProspector",
+   "count": 2,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 2 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "prospector",
+    "pool_digger2"
+   ]
+  },
+  {
+   "className": "ZombieRa",
+   "count": 3,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 3 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "ra",
+    "heian_akinndo",
+    "ra_veteran"
+   ]
+  },
+  {
+   "className": "ZombieRaincoat",
+   "count": 1,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "raincoat"
+   ]
+  },
+  {
+   "className": "ZombieRomanBallista",
+   "count": 2,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 2 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "roman_ballista",
+    "jttw_catapult"
+   ]
+  },
+  {
+   "className": "ZombieRomanHealer",
+   "count": 72,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 72 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "roman_healer",
+    "heavy_shield",
+    "cavalrygun2"
+   ]
+  },
+  {
+   "className": "ZombieRomanImp",
+   "count": 2,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 2 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "relichunter_veteran_action",
+    "roman_imp"
+   ]
+  },
+  {
+   "className": "ZombieRomanMedusa",
+   "count": 2,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 2 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "roman_medusa",
+    "renai_carver"
+   ]
+  },
+  {
+   "className": "ZombieRomanShield",
+   "count": 4,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 4 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "roman_shield_almanac",
+    "roman_shield_triad",
+    "roman_shield_pair"
+   ]
+  },
+  {
+   "className": "ZombieRomanTopShield",
+   "count": 1,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "roman_shield_top"
+   ]
+  },
+  {
+   "className": "ZombieSolarSageEnlightened",
+   "count": 1,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "solarsage_enlightened"
+   ]
+  },
+  {
+   "className": "ZombieSpirit",
+   "count": 4,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 4 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "spirit_white",
+    "spirit_cyan",
+    "spirit_green"
+   ]
+  },
+  {
+   "className": "ZombieStatue",
+   "count": 3,
+   "evidence": [
+    "class name contains the minion token `Statue`; this family only exists as a summon and no walker evidence was found (0/3 basic, 0/3 spawn actions)"
+   ],
+   "family": "summon",
+   "note": "minion-summon family name, no walker evidence",
+   "sampleTypes": [
+    "zombie_statue",
+    "cavalrygun",
+    "heavy_shield"
+   ]
+  },
+  {
+   "className": "ZombieStiltWalker",
+   "count": 2,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 2 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "carnie_stiltwalker",
+    "carnie_stiltwalker_veteran"
+   ]
+  },
+  {
+   "className": "ZombieSwashbuckler",
+   "count": 6,
+   "evidence": [
+    "3/6 types set IsSpawnedFlying=true in their ZombieProperties"
+   ],
+   "family": "fly",
+   "note": "flying zombie per IsSpawnedFlying",
+   "sampleTypes": [
+    "swashbuckler",
+    "feastivus_swashbuckler",
+    "xzj"
+   ]
+  },
+  {
+   "className": "ZombieTigerGrassTiger",
+   "count": 2,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 2 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "tigergrass_tiger",
+    "kiwifruit_stick"
+   ]
+  },
+  {
+   "className": "ZombieTombRaiser",
+   "count": 2,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 2 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "tomb_raiser",
+    "af_godmother"
+   ]
+  },
+  {
+   "className": "ZombieTreasureYeti",
+   "count": 2,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 2 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "treasureyeti",
+    "joustyeti"
+   ]
+  },
+  {
+   "className": "ZombieTrenchCoatImps",
+   "count": 1,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "imposter"
+   ]
+  },
+  {
+   "className": "ZombieTurkeypultBasic",
+   "count": 4,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 4 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "turkeypult_basic",
+    "turkeypult_turkzilla",
+    "lris_bird"
+   ]
+  },
+  {
+   "className": "ZombieWeasel",
+   "count": 2,
+   "evidence": [
+    "class name contains the minion token `Weasel`; this family only exists as a summon and no walker evidence was found (0/2 basic, 0/2 spawn actions)"
+   ],
+   "family": "summon",
+   "note": "minion-summon family name, no walker evidence",
+   "sampleTypes": [
+    "iceage_weasel",
+    "iceage_weasel_veteran"
+   ]
+  },
+  {
+   "className": "ZombieWeaselHoarder",
+   "count": 2,
+   "evidence": [
+    "class name contains the minion token `Weasel`; this family only exists as a summon and no walker evidence was found (0/2 basic, 0/2 spawn actions)"
+   ],
+   "family": "summon",
+   "note": "minion-summon family name, no walker evidence",
+   "sampleTypes": [
+    "iceage_weaselhoarder",
+    "iceage_weaselhoarder_veteran"
+   ]
+  },
+  {
+   "className": "ZombieZCorpConsultant",
+   "count": 10,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 10 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "zcorp_consultant",
+    "general_base_moverow",
+    "renai_ballet2"
+   ]
+  },
+  {
+   "className": "ZombieZCorpGargantuar",
+   "count": 1,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)",
+    "rule evidence alone said walk; human review disagrees"
+   ],
+   "family": "gargantuar",
+   "note": "human override: type zcorp_gargantuar reuses the POPANIM_..._CORPORATE_IMP art (art reuse), it is a gargantuar",
+   "sampleTypes": [
+    "zcorp_gargantuar"
+   ]
+  },
+  {
+   "className": "ZombieZCorpHelpdesk",
+   "count": 1,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "zcorp_helpdesk"
+   ]
+  },
+  {
+   "className": "ZombieZCorpImp",
+   "count": 1,
+   "evidence": [
+    "PopAnim of 1/1 types contains one of GARGANTUAR, ZOMBOSS, MECH",
+    "rule evidence alone said gargantuar; human review disagrees"
+   ],
+   "family": "walk",
+   "note": "human override: type zcorp_imp reuses the POPANIM_..._CORPORATE_GARGANTUAR art (art reuse), it is an imp",
+   "sampleTypes": [
+    "zcorp_imp"
+   ]
+  },
+  {
+   "className": "ZombieZcorpRacer",
+   "count": 1,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "zcorp_racer_chair"
+   ]
+  },
+  {
+   "className": "ZombieZcorpRacerZombie",
+   "count": 1,
+   "evidence": [
+    "1/1 types have IsBasicZombie=true in the ZombieTypes sheet"
+   ],
+   "family": "walk",
+   "note": "basic walker per IsBasicZombie",
+   "sampleTypes": [
+    "zcorp_racer"
+   ]
+  },
+  {
+   "className": "ZombieZomboni",
+   "count": 1,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 1 type(s)"
+   ],
+   "family": "walk",
+   "note": "no special actions in ZombieActions",
+   "sampleTypes": [
+    "zomboni"
+   ]
+  },
+  {
+   "className": "ZombieZombossMech",
+   "count": 3,
+   "evidence": [
+    "PopAnim of 3/3 types contains one of GARGANTUAR, ZOMBOSS, MECH",
+    "1/3 types reference a ZombieProperties entry missing from this build"
+   ],
+   "family": "gargantuar",
+   "note": "gargantuar/zomboss/mech animation on at least half of the class's types",
+   "sampleTypes": [
+    "zombossmech_added_kongfu_qigong",
+    "zombossmech_kongfu_qigong",
+    "kongfu_zomboss_qigong"
+   ]
+  },
+  {
+   "className": "ZombieZombossMech_Beach",
+   "count": 4,
+   "evidence": [
+    "PopAnim of 4/4 types contains one of GARGANTUAR, ZOMBOSS, MECH",
+    "1/4 types reference a ZombieProperties entry missing from this build"
+   ],
+   "family": "gargantuar",
+   "note": "gargantuar/zomboss/mech animation on at least half of the class's types",
+   "sampleTypes": [
+    "zombossmech_beach",
+    "zombossmech_beach2",
+    "zombossmech_modern_beach"
+   ]
+  },
+  {
+   "className": "ZombieZombossMech_ChineseGarden",
+   "count": 2,
+   "evidence": [
+    "PopAnim of 2/2 types contains one of GARGANTUAR, ZOMBOSS, MECH",
+    "1/2 types reference a ZombieProperties entry missing from this build"
+   ],
+   "family": "gargantuar",
+   "note": "gargantuar/zomboss/mech animation on at least half of the class's types",
+   "sampleTypes": [
+    "zombossmech_chinesegarden",
+    "zombossmech_added_chinesegarden"
+   ]
+  },
+  {
+   "className": "ZombieZombossMech_Cowboy",
+   "count": 7,
+   "evidence": [
+    "PopAnim of 7/7 types contains one of GARGANTUAR, ZOMBOSS, MECH",
+    "1/7 types reference a ZombieProperties entry missing from this build"
+   ],
+   "family": "gargantuar",
+   "note": "gargantuar/zomboss/mech animation on at least half of the class's types",
+   "sampleTypes": [
+    "zombossmech_cowboy",
+    "zombossmech_cowboy2",
+    "zombossmech_cowboy_battlez"
+   ]
+  },
+  {
+   "className": "ZombieZombossMech_Dark",
+   "count": 10,
+   "evidence": [
+    "PopAnim of 10/10 types contains one of GARGANTUAR, ZOMBOSS, MECH",
+    "3/10 types reference a ZombieProperties entry missing from this build"
+   ],
+   "family": "gargantuar",
+   "note": "gargantuar/zomboss/mech animation on at least half of the class's types",
+   "sampleTypes": [
+    "zombossmech_dark",
+    "zombossmech_dark2",
+    "zombossmech_dark_battlez"
+   ]
+  },
+  {
+   "className": "ZombieZombossMech_Dino",
+   "count": 6,
+   "evidence": [
+    "PopAnim of 6/6 types contains one of GARGANTUAR, ZOMBOSS, MECH",
+    "2/6 types reference a ZombieProperties entry missing from this build"
+   ],
+   "family": "gargantuar",
+   "note": "gargantuar/zomboss/mech animation on at least half of the class's types",
+   "sampleTypes": [
+    "zombossmech_dino",
+    "zombossmech_dino2",
+    "zombossmech_dino_battlez"
+   ]
+  },
+  {
+   "className": "ZombieZombossMech_Egypt",
+   "count": 14,
+   "evidence": [
+    "PopAnim of 14/14 types contains one of GARGANTUAR, ZOMBOSS, MECH",
+    "5/14 types reference a ZombieProperties entry missing from this build"
+   ],
+   "family": "gargantuar",
+   "note": "gargantuar/zomboss/mech animation on at least half of the class's types",
+   "sampleTypes": [
+    "zombossmech_egypt",
+    "zombossmech_egypt2",
+    "zombossmech_egypt_battlez"
+   ]
+  },
+  {
+   "className": "ZombieZombossMech_Eighties",
+   "count": 6,
+   "evidence": [
+    "PopAnim of 6/6 types contains one of GARGANTUAR, ZOMBOSS, MECH",
+    "2/6 types reference a ZombieProperties entry missing from this build"
+   ],
+   "family": "gargantuar",
+   "note": "gargantuar/zomboss/mech animation on at least half of the class's types",
+   "sampleTypes": [
+    "zombossmech_eighties",
+    "zombossmech_eighties2",
+    "zombossmech_modern_eighties"
+   ]
+  },
+  {
+   "className": "ZombieZombossMech_Future",
+   "count": 9,
+   "evidence": [
+    "PopAnim of 9/9 types contains one of GARGANTUAR, ZOMBOSS, MECH",
+    "2/9 types reference a ZombieProperties entry missing from this build"
+   ],
+   "family": "gargantuar",
+   "note": "gargantuar/zomboss/mech animation on at least half of the class's types",
+   "sampleTypes": [
+    "zombossmech_modern1",
+    "zombossmech_future",
+    "zombossmech_future2"
+   ]
+  },
+  {
+   "className": "ZombieZombossMech_Goon",
+   "count": 2,
+   "evidence": [
+    "no Jump/Vault, Spawn/Summon, flying or gargantuar evidence in the properties of the 2 type(s)",
+    "1/2 types reference a ZombieProperties entry missing from this build",
+    "rule evidence alone said walk; human review disagrees"
+   ],
+   "family": "gargantuar",
+   "note": "human override: market Zomboss mech (zombossmech_market) keeps the boss-vehicle behaviour",
+   "sampleTypes": [
+    "zombossmech_market",
+    "zombossmech_added_market"
+   ]
+  },
+  {
+   "className": "ZombieZombossMech_IceAge",
+   "count": 5,
+   "evidence": [
+    "PopAnim of 5/5 types contains one of GARGANTUAR, ZOMBOSS, MECH",
+    "1/5 types reference a ZombieProperties entry missing from this build"
+   ],
+   "family": "gargantuar",
+   "note": "gargantuar/zomboss/mech animation on at least half of the class's types",
+   "sampleTypes": [
+    "zombossmech_iceage",
+    "zombossmech_iceage2",
+    "zombossmech_iceage_battlez"
+   ]
+  },
+  {
+   "className": "ZombieZombossMech_LostCity",
+   "count": 5,
+   "evidence": [
+    "PopAnim of 5/5 types contains one of GARGANTUAR, ZOMBOSS, MECH",
+    "1/5 types reference a ZombieProperties entry missing from this build"
+   ],
+   "family": "gargantuar",
+   "note": "gargantuar/zomboss/mech animation on at least half of the class's types",
+   "sampleTypes": [
+    "zombossmech_lostcity",
+    "zombossmech_lostcity2",
+    "zombossmech_lostcity_battlez"
+   ]
+  },
+  {
+   "className": "ZombieZombossMech_Mausoleum",
+   "count": 2,
+   "evidence": [
+    "PopAnim of 2/2 types contains one of GARGANTUAR, ZOMBOSS, MECH",
+    "1/2 types reference a ZombieProperties entry missing from this build"
+   ],
+   "family": "gargantuar",
+   "note": "gargantuar/zomboss/mech animation on at least half of the class's types",
+   "sampleTypes": [
+    "zombossmech_mausoleum",
+    "zombossmech_added_mausoleum"
+   ]
+  },
+  {
+   "className": "ZombieZombossMech_Pirate",
+   "count": 10,
+   "evidence": [
+    "PopAnim of 10/10 types contains one of GARGANTUAR, ZOMBOSS, MECH",
+    "2/10 types reference a ZombieProperties entry missing from this build"
+   ],
+   "family": "gargantuar",
+   "note": "gargantuar/zomboss/mech animation on at least half of the class's types",
+   "sampleTypes": [
+    "zombossmech_pirate",
+    "zombossmech_pirate_battlez",
+    "zombossmech_pirate_rift"
+   ]
+  },
+  {
+   "className": "ZombieZombossMech_Roman",
+   "count": 3,
+   "evidence": [
+    "PopAnim of 3/3 types contains one of GARGANTUAR, ZOMBOSS, MECH",
+    "2/3 types reference a ZombieProperties entry missing from this build"
+   ],
+   "family": "gargantuar",
+   "note": "gargantuar/zomboss/mech animation on at least half of the class's types",
+   "sampleTypes": [
+    "zombossmech_roman",
+    "zombossmech_roman_cl",
+    "zombossmech_added_roman"
+   ]
+  },
+  {
+   "className": "ZombieZombotanyBase",
+   "count": 3,
+   "evidence": [
+    "3/3 types have IsBasicZombie=true in the ZombieTypes sheet"
+   ],
+   "family": "walk",
+   "note": "basic walker per IsBasicZombie",
+   "sampleTypes": [
+    "zombotany_wallnut",
+    "zombotany_tallnut",
+    "zombotany_primalwallnut"
+   ]
+  },
+  {
+   "className": "ZombieZombotanyCatapultBase",
+   "count": 1,
+   "evidence": [
+    "1/1 types have IsBasicZombie=true in the ZombieTypes sheet"
+   ],
+   "family": "walk",
+   "note": "basic walker per IsBasicZombie",
+   "sampleTypes": [
+    "zombotany_wintermelon"
+   ]
+  },
+  {
+   "className": "ZombieZombotanyChip",
+   "count": 3,
+   "evidence": [
+    "3/3 types have IsBasicZombie=true in the ZombieTypes sheet"
+   ],
+   "family": "walk",
+   "note": "basic walker per IsBasicZombie",
+   "sampleTypes": [
+    "zombotany_potatochip",
+    "zombotany_potatomine",
+    "zombotany_seapotatomine"
+   ]
+  },
+  {
+   "className": "ZombieZombotanyGatling",
+   "count": 2,
+   "evidence": [
+    "2/2 types have IsBasicZombie=true in the ZombieTypes sheet"
+   ],
+   "family": "walk",
+   "note": "basic walker per IsBasicZombie",
+   "sampleTypes": [
+    "zombotany_splitpea",
+    "zombotany_puffshroom"
+   ]
+  },
+  {
+   "className": "ZombieZombotanyJalapeno",
+   "count": 1,
+   "evidence": [
+    "1/1 types have IsBasicZombie=true in the ZombieTypes sheet"
+   ],
+   "family": "walk",
+   "note": "basic walker per IsBasicZombie",
+   "sampleTypes": [
+    "zombotany_jalapeno"
+   ]
+  },
+  {
+   "className": "ZombieZombotanyKiwibeast",
+   "count": 2,
+   "evidence": [
+    "2/2 types have IsBasicZombie=true in the ZombieTypes sheet"
+   ],
+   "family": "walk",
+   "note": "basic walker per IsBasicZombie",
+   "sampleTypes": [
+    "zombotany_phatbeet",
+    "zombotany_kiwibeast"
+   ]
+  },
+  {
+   "className": "ZombieZombotanyReed",
+   "count": 1,
+   "evidence": [
+    "1/1 types have IsBasicZombie=true in the ZombieTypes sheet"
+   ],
+   "family": "walk",
+   "note": "basic walker per IsBasicZombie",
+   "sampleTypes": [
+    "zombotany_reed"
+   ]
+  },
+  {
+   "className": "ZombieZombotanyRosemary",
+   "count": 1,
+   "evidence": [
+    "1/1 types have IsBasicZombie=true in the ZombieTypes sheet"
+   ],
+   "family": "walk",
+   "note": "basic walker per IsBasicZombie",
+   "sampleTypes": [
+    "zombotany_rosemary"
+   ]
+  },
+  {
+   "className": "ZombieZombotanyShooterBase",
+   "count": 9,
+   "evidence": [
+    "9/9 types have IsBasicZombie=true in the ZombieTypes sheet"
+   ],
+   "family": "walk",
+   "note": "basic walker per IsBasicZombie",
+   "sampleTypes": [
+    "zombotany_peashooter",
+    "zombotany_repeater",
+    "zombotany_firepeashooter"
+   ]
+  },
+  {
+   "className": "ZombieZombotanySolarSage",
+   "count": 1,
+   "evidence": [
+    "1/1 types have IsBasicZombie=true in the ZombieTypes sheet"
+   ],
+   "family": "walk",
+   "note": "basic walker per IsBasicZombie",
+   "sampleTypes": [
+    "zombotany_solarsage"
+   ]
+  },
+  {
+   "className": "ZombieZombotanyTorchwood",
+   "count": 1,
+   "evidence": [
+    "1/1 types have IsBasicZombie=true in the ZombieTypes sheet"
+   ],
+   "family": "walk",
+   "note": "basic walker per IsBasicZombie",
+   "sampleTypes": [
+    "zombotany_torchwood"
+   ]
+  },
+  {
+   "className": "ZombieZoybeanPodBasic",
+   "count": 8,
+   "evidence": [
+    "6/8 types have IsBasicZombie=true in the ZombieTypes sheet"
+   ],
+   "family": "walk",
+   "note": "basic walker per IsBasicZombie",
+   "sampleTypes": [
+    "zoybeanpod_basic",
+    "zoybeanpod_armor1",
+    "zoybeanpod_armor2"
+   ]
+  },
+  {
+   "className": "ZombieZoybeanPodGargantuar",
+   "count": 2,
+   "evidence": [
+    "PopAnim of 2/2 types contains one of GARGANTUAR, ZOMBOSS, MECH"
+   ],
+   "family": "gargantuar",
+   "note": "gargantuar/zomboss/mech animation on at least half of the class's types",
+   "sampleTypes": [
+    "zoybeanpod_gargantuar",
+    "steam_mechanic_spawner"
+   ]
+  }
+ ],
+ "countsByFamily": {
+  "fly": 8,
+  "gargantuar": 29,
+  "jump": 6,
+  "steal": 1,
+  "summon": 10,
+  "walk": 129
+ },
+ "format": 1,
+ "generated": "tools/contentc/zclasses.py (deterministic; no timestamp)",
+ "notes": [
+  "className -> engine family, derived from the shipped sheets (pkg_2115 ZombieType, pkg_2112 ZombieProperties, pkg_2111 ZombieActions).",
+  "A class is judged by at least half of its own types, because ZombieClass is a shared base (ZombieBasic owns 240 types, a few of which carry spawn actions).",
+  "steal has no ZombieActions verb in this build; it is detected from the ..._BUNGEE animation. ZombieLostCityRelicHunter is the only class that reaches it (2 of its 3 types are bungees), so the ordinary relic-hunter type shares that base class.",
+  "generated is a fixed marker, not a timestamp, so two runs are byte-identical.",
+  "13 classes carry a human override; every one is marked in its note."
+ ],
+ "source": {
+  "actionSha256": "005ac1bd3a72af6e77347b7e1bf40bd1bd3d60d2b4f6b605bbb7091119ca0f55",
+  "actionSheet": "pkg_2111_ZombieWalkActionDefinition.json",
+  "propertySha256": "667a9d4536d88bed06e484adc2d6f2e98e51972fb83d158ad16eb1b977bf2c4a",
+  "propertySheet": "pkg_2112_ZombiePropertySheet.json",
+  "sha256": "ca8680faf673b6a7f8bbdf94bb65b7d8de6e4b7dfa968d372a7db2f3631f6776",
+  "sheet": "pkg_2115_ZombieType.json"
+ }
+}

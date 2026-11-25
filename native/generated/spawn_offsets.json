@@ -1,0 +1,5054 @@
+{
+ "counts": {
+  "actionsTotal": 727,
+  "actionsWithSpawnOffset": 488,
+  "byKind": {
+   "explode": 0,
+   "manual": 1,
+   "plantfood": 6,
+   "shot": 386,
+   "special": 77,
+   "sun": 18,
+   "unknown": 0
+  },
+  "plants": 224,
+  "rows": 487,
+  "skippedOffsets": 1,
+  "yMaxPx": 30,
+  "yMedianPx": -32,
+  "yMinPx": -1000,
+  "yNegativeRows": 480,
+  "yPositiveRows": 7
+ },
+ "defaults": {
+  "shotXCols": 0.35,
+  "shotYCols": 0.0,
+  "source": "native/src/engine/action_runner.cpp:85-90 (y dropped), native/src/engine/tuning.hpp kShotStartOffsetCols / kShotHitRadius",
+  "sunYCols": 0.0
+ },
+ "format": 1,
+ "generated": "spawn-offsets-v1",
+ "generatedAt": "sha256:ad0fa20ca73aa95b",
+ "positiveY": [
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "PowerVineDefault",
+   "yPx": 14
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "WitchHazelDefault",
+   "yPx": 22
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "WitchHazelDefault",
+   "yPx": 22
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "XShotBarrageDefault",
+   "yPx": 30
+  },
+  {
+   "actionIndex": 2,
+   "kind": "shot",
+   "plant": "XShotBarrageDefault",
+   "yPx": 30
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "XShotDefault",
+   "yPx": 30
+  },
+  {
+   "actionIndex": 2,
+   "kind": "shot",
+   "plant": "XShotDefault",
+   "yPx": 30
+  }
+ ],
+ "rows": [
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "AgaveDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:AgaveDefault.Actions[0].SpawnOffset",
+   "xCols": -0.55,
+   "xPx": -55,
+   "yCols": -0.9483,
+   "yPx": -110
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "AgaveDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:AgaveDefault.Actions[1].SpawnOffset",
+   "xCols": -0.55,
+   "xPx": -55,
+   "yCols": -0.9914,
+   "yPx": -115
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "AkeeDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:AkeeDefault.Actions[0].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.5603,
+   "yPx": -65
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "AkeeDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:AkeeDefault.Actions[1].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.3448,
+   "yPx": -40
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "AntDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:AntDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "AntDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:AntDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "AppleMortarDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:AppleMortarDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "AppleMortarDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:AppleMortarDefault.Actions[1].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.3448,
+   "yPx": -40
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "AquaVineDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:AquaVineDefault.Actions[0].SpawnOffset",
+   "xCols": -0.1,
+   "xPx": -10.0,
+   "yCols": -0.1724,
+   "yPx": -20.0
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "AquaVineDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:AquaVineDefault.Actions[1].SpawnOffset",
+   "xCols": -0.1,
+   "xPx": -10.0,
+   "yCols": -0.1724,
+   "yPx": -20.0
+  },
+  {
+   "actionIndex": 2,
+   "kind": "shot",
+   "plant": "AquaVineDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:AquaVineDefault.Actions[2].SpawnOffset",
+   "xCols": -0.1,
+   "xPx": -10.0,
+   "yCols": -0.1724,
+   "yPx": -20.0
+  },
+  {
+   "actionIndex": 3,
+   "kind": "special",
+   "plant": "AquaVineDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:AquaVineDefault.Actions[3].SpawnOffset",
+   "xCols": -0.1,
+   "xPx": -10.0,
+   "yCols": -0.1724,
+   "yPx": -20.0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "special",
+   "plant": "AquaWeedDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:AquaWeedDefault.Actions[0].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": 0.0,
+   "yPx": 0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "ArmamintDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:ArmamintDefault.Actions[0].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -5.1724,
+   "yPx": -600
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "AsparagusDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:AsparagusDefault.Actions[0].SpawnOffset",
+   "xCols": 0.43,
+   "xPx": 43,
+   "yCols": 0.0,
+   "yPx": 0
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "AsparagusDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:AsparagusDefault.Actions[1].SpawnOffset",
+   "xCols": 0.25,
+   "xPx": 25,
+   "yCols": -0.1897,
+   "yPx": -22
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "BambruceDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:BambruceDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "BambruceDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:BambruceDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "BananaDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:BananaDefault.Actions[0].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -5.1724,
+   "yPx": -600
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "BeercoconutDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:BeercoconutDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "BeercoconutDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:BeercoconutDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "BegoniaDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:BegoniaDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "BegoniaDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:BegoniaDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 2,
+   "kind": "shot",
+   "plant": "BegoniaDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:BegoniaDefault.Actions[2].SpawnOffset",
+   "xCols": -0.55,
+   "xPx": -55,
+   "yCols": -0.9483,
+   "yPx": -110
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "BirdOfParadiseDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:BirdOfParadiseDefault.Actions[1].SpawnOffset",
+   "xCols": -0.55,
+   "xPx": -55,
+   "yCols": -0.9914,
+   "yPx": -115
+  },
+  {
+   "actionIndex": 0,
+   "kind": "sun",
+   "plant": "BirthSunflowerDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:BirthSunflowerDefault.Actions[0].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.4483,
+   "yPx": -52
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "BitPeashooterDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:BitPeashooterDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "BitPeashooterDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:BitPeashooterDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "BlastSpinnerDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:BlastSpinnerDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15.0,
+   "yCols": -0.819,
+   "yPx": -95.0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "BlastberryDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:BlastberryDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "BlastberryDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:BlastberryDefault.Actions[1].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.3448,
+   "yPx": -40
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "BlazeleafDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:BlazeleafDefault.Actions[1].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15.0,
+   "yCols": -0.3017,
+   "yPx": -35.0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "BloomerangDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:BloomerangDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32.0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "BloomingHeartsDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:BloomingHeartsDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "BloomingHeartsDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:BloomingHeartsDefault.Actions[1].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.3448,
+   "yPx": -40
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "BoomFlowerDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:BoomFlowerDefault.Actions[0].SpawnOffset",
+   "xCols": -0.02,
+   "xPx": -2,
+   "yCols": -0.3621,
+   "yPx": -42
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "BoomFlowerDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:BoomFlowerDefault.Actions[1].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.3448,
+   "yPx": -40
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "BoomberryDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:BoomberryDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95.0
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "BoomberryDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:BoomberryDefault.Actions[1].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.3448,
+   "yPx": -40.0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "BoophoneGeishaDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:BoophoneGeishaDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.3879,
+   "yPx": -45
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "BoophoneGeishaDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:BoophoneGeishaDefault.Actions[1].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.3879,
+   "yPx": -45
+  },
+  {
+   "actionIndex": 2,
+   "kind": "shot",
+   "plant": "BoophoneGeishaDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:BoophoneGeishaDefault.Actions[2].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.3879,
+   "yPx": -45
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "BowlingBulbDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:BowlingBulbDefault.Actions[0].SpawnOffset",
+   "xCols": 0.1,
+   "xPx": 10,
+   "yCols": -0.1379,
+   "yPx": -16
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "BowlingBulbDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:BowlingBulbDefault.Actions[1].SpawnOffset",
+   "xCols": 0.1,
+   "xPx": 10,
+   "yCols": -0.1983,
+   "yPx": -23
+  },
+  {
+   "actionIndex": 2,
+   "kind": "shot",
+   "plant": "BowlingBulbDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:BowlingBulbDefault.Actions[2].SpawnOffset",
+   "xCols": 0.1,
+   "xPx": 10,
+   "yCols": -0.1724,
+   "yPx": -20
+  },
+  {
+   "actionIndex": 3,
+   "kind": "shot",
+   "plant": "BowlingBulbDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:BowlingBulbDefault.Actions[3].SpawnOffset",
+   "xCols": 0.1,
+   "xPx": 10,
+   "yCols": -0.2155,
+   "yPx": -25
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "BubbleCoralDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:BubbleCoralDefault.Actions[0].SpawnOffset",
+   "xCols": 0.1,
+   "xPx": 10.0,
+   "yCols": -0.1897,
+   "yPx": -22.0
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "BubbleCoralDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:BubbleCoralDefault.Actions[1].SpawnOffset",
+   "xCols": 0.6,
+   "xPx": 60.0,
+   "yCols": -0.2586,
+   "yPx": -30.0
+  },
+  {
+   "actionIndex": 2,
+   "kind": "shot",
+   "plant": "BubbleCoralDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:BubbleCoralDefault.Actions[2].SpawnOffset",
+   "xCols": 0.78,
+   "xPx": 78.0,
+   "yCols": -0.1034,
+   "yPx": -12.0
+  },
+  {
+   "actionIndex": 3,
+   "kind": "shot",
+   "plant": "BubbleCoralDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:BubbleCoralDefault.Actions[3].SpawnOffset",
+   "xCols": 0.6,
+   "xPx": 60.0,
+   "yCols": -0.2586,
+   "yPx": -30.0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "BuduhBoomDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:BuduhBoomDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95.0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "ButtercupDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:ButtercupDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "ButtercupDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:ButtercupDefault.Actions[1].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.3448,
+   "yPx": -40
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "CNFireShroomDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:CNFireShroomDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "CNFireShroomDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:CNFireShroomDefault.Actions[1].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95
+  },
+  {
+   "actionIndex": 2,
+   "kind": "shot",
+   "plant": "CNFireShroomDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:CNFireShroomDefault.Actions[2].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "CNIceShroomDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:CNIceShroomDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "CNIceShroomDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:CNIceShroomDefault.Actions[1].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95
+  },
+  {
+   "actionIndex": 2,
+   "kind": "shot",
+   "plant": "CNIceShroomDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:CNIceShroomDefault.Actions[2].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "CabbagepultDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:CabbagepultDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "CabbagepultDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:CabbagepultDefault.Actions[1].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.3448,
+   "yPx": -40
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "CabbagepultPVZDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:CabbagepultPVZDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "CabbagepultPVZDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:CabbagepultPVZDefault.Actions[1].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.3448,
+   "yPx": -40
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "CactusDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:CactusDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32.0
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "CactusDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:CactusDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32.0
+  },
+  {
+   "actionIndex": 2,
+   "kind": "shot",
+   "plant": "CactusDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:CactusDefault.Actions[2].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.8621,
+   "yPx": -100.0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "CarrotMissileDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:CarrotMissileDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "CarrotMissileDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:CarrotMissileDefault.Actions[1].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.3448,
+   "yPx": -40
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "CattailDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:CattailDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "plantfood",
+   "plant": "CattailDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:CattailDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "sun",
+   "plant": "CerydraDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:CerydraDefault.Actions[0].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.4483,
+   "yPx": -52
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "CheeseStrawberryDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:CheeseStrawberryDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "CheeseStrawberryDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:CheeseStrawberryDefault.Actions[1].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.3448,
+   "yPx": -40
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "CitronDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:CitronDefault.Actions[0].SpawnOffset",
+   "xCols": 0.2,
+   "xPx": 20,
+   "yCols": -0.1724,
+   "yPx": -20
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "CitronDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:CitronDefault.Actions[1].SpawnOffset",
+   "xCols": 0.2,
+   "xPx": 20,
+   "yCols": -0.1724,
+   "yPx": -20
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "CobCannonDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:CobCannonDefault.Actions[0].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -5.1724,
+   "yPx": -600
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "CoconutCannonBarrageDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:CoconutCannonBarrageDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.3017,
+   "yPx": -35
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "CoconutCannonBarrageDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:CoconutCannonBarrageDefault.Actions[1].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.3017,
+   "yPx": -35
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "CoconutCannonDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:CoconutCannonDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.3017,
+   "yPx": -35
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "CoconutCannonDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:CoconutCannonDefault.Actions[1].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.3017,
+   "yPx": -35
+  },
+  {
+   "actionIndex": 0,
+   "kind": "sun",
+   "plant": "CoffeeBeanDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:CoffeeBeanDefault.Actions[0].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.5172,
+   "yPx": -60
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "CoffeeBeanDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:CoffeeBeanDefault.Actions[1].SpawnOffset",
+   "xCols": -0.2,
+   "xPx": -20,
+   "yCols": -0.5172,
+   "yPx": -60
+  },
+  {
+   "actionIndex": 2,
+   "kind": "special",
+   "plant": "CoffeeBeanDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:CoffeeBeanDefault.Actions[2].SpawnOffset",
+   "xCols": 0.2,
+   "xPx": 20,
+   "yCols": -0.5172,
+   "yPx": -60
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "ConvallariaChemistDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:ConvallariaChemistDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "ConvallariaChemistDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:ConvallariaChemistDefault.Actions[1].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.3448,
+   "yPx": -40
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "CornfettiDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:CornfettiDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35.0,
+   "yCols": -0.0862,
+   "yPx": -10.0
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "CornfettiDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:CornfettiDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35.0,
+   "yCols": -0.0862,
+   "yPx": -10.0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "CranJellyDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:CranJellyDefault.Actions[0].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.1724,
+   "yPx": -20.0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "CrownFlowerDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:CrownFlowerDefault.Actions[0].SpawnOffset",
+   "xCols": 1.07,
+   "xPx": 107,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "CrownFlowerDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:CrownFlowerDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "CuteBubuSeedDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:CuteBubuSeedDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "CuteBubuSeedDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:CuteBubuSeedDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "CypripediumDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:CypripediumDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "CypripediumDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:CypripediumDefault.Actions[1].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "DandelionDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:DandelionDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.3448,
+   "yPx": -40
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "DandelionDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:DandelionDefault.Actions[1].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -8.6207,
+   "yPx": -1000
+  },
+  {
+   "actionIndex": 2,
+   "kind": "shot",
+   "plant": "DandelionDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:DandelionDefault.Actions[2].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.4741,
+   "yPx": -55
+  },
+  {
+   "actionIndex": 0,
+   "kind": "sun",
+   "plant": "DarkTwinSunflowerDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:DarkTwinSunflowerDefault.Actions[0].SpawnOffset",
+   "xCols": -0.1,
+   "xPx": -10,
+   "yCols": -0.4741,
+   "yPx": -55
+  },
+  {
+   "actionIndex": 1,
+   "kind": "sun",
+   "plant": "DarkTwinSunflowerDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:DarkTwinSunflowerDefault.Actions[1].SpawnOffset",
+   "xCols": 0.1,
+   "xPx": 10,
+   "yCols": -0.5345,
+   "yPx": -62
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "DartichokeDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:DartichokeDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "plantfood",
+   "plant": "DartichokeDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:DartichokeDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 2,
+   "kind": "shot",
+   "plant": "DartichokeDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:DartichokeDefault.Actions[2].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "DesireFlowerDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:DesireFlowerDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35.0,
+   "yCols": -0.2759,
+   "yPx": -32.0
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "DesireFlowerDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:DesireFlowerDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35.0,
+   "yCols": -0.2759,
+   "yPx": -32.0
+  },
+  {
+   "actionIndex": 2,
+   "kind": "special",
+   "plant": "DesireFlowerDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:DesireFlowerDefault.Actions[2].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0.0,
+   "yCols": 0.0,
+   "yPx": 0.0
+  },
+  {
+   "actionIndex": 3,
+   "kind": "special",
+   "plant": "DesireFlowerDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:DesireFlowerDefault.Actions[3].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0.0,
+   "yCols": 0.0,
+   "yPx": 0.0
+  },
+  {
+   "actionIndex": 4,
+   "kind": "special",
+   "plant": "DesireFlowerDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:DesireFlowerDefault.Actions[4].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0.0,
+   "yCols": 0.0,
+   "yPx": 0.0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "DionaeaMuscipulaDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:DionaeaMuscipulaDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "DionaeaMuscipulaDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:DionaeaMuscipulaDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "DraftodilDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:DraftodilDefault.Actions[0].SpawnOffset",
+   "xCols": 0.1,
+   "xPx": 10,
+   "yCols": -0.2155,
+   "yPx": -25
+  },
+  {
+   "actionIndex": 1,
+   "kind": "plantfood",
+   "plant": "DraftodilDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:DraftodilDefault.Actions[1].SpawnOffset",
+   "xCols": 0.1,
+   "xPx": 10,
+   "yCols": -0.2155,
+   "yPx": -25
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "DragonBabyBruitDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:DragonBabyBruitDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95.0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "DragonBruitDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:DragonBruitDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95.0
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "DragonBruitDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:DragonBruitDefault.Actions[1].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.3448,
+   "yPx": -40.0
+  },
+  {
+   "actionIndex": 2,
+   "kind": "shot",
+   "plant": "DragonBruitDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:DragonBruitDefault.Actions[2].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -5.1724,
+   "yPx": -600.0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "DuckPearDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:DuckPearDefault.Actions[0].SpawnOffset",
+   "xCols": 0.6,
+   "xPx": 60,
+   "yCols": -0.0431,
+   "yPx": -5
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "DuckPearDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:DuckPearDefault.Actions[1].SpawnOffset",
+   "xCols": 0.81,
+   "xPx": 81,
+   "yCols": -0.0431,
+   "yPx": -5
+  },
+  {
+   "actionIndex": 2,
+   "kind": "shot",
+   "plant": "DuckPearDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:DuckPearDefault.Actions[2].SpawnOffset",
+   "xCols": 0.81,
+   "xPx": 81,
+   "yCols": -0.0431,
+   "yPx": -5
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "DusklobberDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:DusklobberDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "DusklobberDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:DusklobberDefault.Actions[1].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.3448,
+   "yPx": -40
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "EgretflowerDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:EgretflowerDefault.Actions[0].SpawnOffset",
+   "xCols": 0.43,
+   "xPx": 43,
+   "yCols": 0.0,
+   "yPx": 0
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "EgretflowerDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:EgretflowerDefault.Actions[1].SpawnOffset",
+   "xCols": 0.25,
+   "xPx": 25,
+   "yCols": -0.1897,
+   "yPx": -22
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "ElaeocarpusDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:ElaeocarpusDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "ElaeocarpusDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:ElaeocarpusDefault.Actions[1].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.3448,
+   "yPx": -40
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "ElectricBlueberryDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:ElectricBlueberryDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.8276,
+   "yPx": -96
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "ElectricBlueberryDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:ElectricBlueberryDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.8276,
+   "yPx": -96
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "ElectricPeelDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:ElectricPeelDefault.Actions[0].SpawnOffset",
+   "xCols": 0.67,
+   "xPx": 67,
+   "yCols": 0.0,
+   "yPx": 0.0
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "ElectricPeelDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:ElectricPeelDefault.Actions[1].SpawnOffset",
+   "xCols": 0.4,
+   "xPx": 40,
+   "yCols": -0.1724,
+   "yPx": -20.0
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "EscapeRootDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:EscapeRootDefault.Actions[1].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": 0.0,
+   "yPx": 0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "ExorcisLilyDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:ExorcisLilyDefault.Actions[0].SpawnOffset",
+   "xCols": 0.1,
+   "xPx": 10.0,
+   "yCols": -0.1724,
+   "yPx": -20.0
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "ExorcisLilyDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:ExorcisLilyDefault.Actions[1].SpawnOffset",
+   "xCols": 0.1,
+   "xPx": 10.0,
+   "yCols": -0.1724,
+   "yPx": -20.0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "FairyMushroomDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:FairyMushroomDefault.Actions[0].SpawnOffset",
+   "xCols": 0.14,
+   "xPx": 14,
+   "yCols": 0.0,
+   "yPx": 0
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "FairyMushroomDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:FairyMushroomDefault.Actions[1].SpawnOffset",
+   "xCols": 0.08,
+   "xPx": 8,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "FireGourdDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:FireGourdDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.3017,
+   "yPx": -35
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "FireGourdDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:FireGourdDefault.Actions[1].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.3017,
+   "yPx": -35
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "FirePeashooterDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:FirePeashooterDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 2,
+   "kind": "shot",
+   "plant": "FirePeashooterDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:FirePeashooterDefault.Actions[2].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "FireShroomDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:FireShroomDefault.Actions[0].SpawnOffset",
+   "xCols": 0.1,
+   "xPx": 10,
+   "yCols": -0.1379,
+   "yPx": -16
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "FireShroomDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:FireShroomDefault.Actions[1].SpawnOffset",
+   "xCols": 0.1,
+   "xPx": 10,
+   "yCols": -0.1983,
+   "yPx": -23.0
+  },
+  {
+   "actionIndex": 2,
+   "kind": "shot",
+   "plant": "FireShroomDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:FireShroomDefault.Actions[2].SpawnOffset",
+   "xCols": 0.1,
+   "xPx": 10,
+   "yCols": -0.1379,
+   "yPx": -16
+  },
+  {
+   "actionIndex": 3,
+   "kind": "special",
+   "plant": "FireShroomDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:FireShroomDefault.Actions[3].SpawnOffset",
+   "xCols": 0.1,
+   "xPx": 10,
+   "yCols": -0.1983,
+   "yPx": -23.0
+  },
+  {
+   "actionIndex": 4,
+   "kind": "shot",
+   "plant": "FireShroomDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:FireShroomDefault.Actions[4].SpawnOffset",
+   "xCols": 0.1,
+   "xPx": 10,
+   "yCols": -0.1379,
+   "yPx": -16
+  },
+  {
+   "actionIndex": 5,
+   "kind": "special",
+   "plant": "FireShroomDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:FireShroomDefault.Actions[5].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.2069,
+   "yPx": -24.0
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "FlowerPotDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:FlowerPotDefault.Actions[1].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.5517,
+   "yPx": -64
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "FreshOrangeDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:FreshOrangeDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "FreshOrangeDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:FreshOrangeDefault.Actions[1].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.3448,
+   "yPx": -40
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "FrozenPearDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:FrozenPearDefault.Actions[0].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": 0.0,
+   "yPx": 0
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "FrozenPearDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:FrozenPearDefault.Actions[1].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": 0.0,
+   "yPx": 0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "FumeshroomDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:FumeshroomDefault.Actions[0].SpawnOffset",
+   "xCols": -0.55,
+   "xPx": -55,
+   "yCols": -0.9483,
+   "yPx": -110
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "FumeshroomDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:FumeshroomDefault.Actions[1].SpawnOffset",
+   "xCols": -0.55,
+   "xPx": -55,
+   "yCols": -0.9914,
+   "yPx": -115
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "FusionGatlingDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:FusionGatlingDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32.0
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "FusionGatlingDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:FusionGatlingDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32.0
+  },
+  {
+   "actionIndex": 2,
+   "kind": "shot",
+   "plant": "FusionGatlingDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:FusionGatlingDefault.Actions[2].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32.0
+  },
+  {
+   "actionIndex": 3,
+   "kind": "shot",
+   "plant": "FusionGatlingDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:FusionGatlingDefault.Actions[3].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32.0
+  },
+  {
+   "actionIndex": 4,
+   "kind": "shot",
+   "plant": "FusionGatlingDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:FusionGatlingDefault.Actions[4].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32.0
+  },
+  {
+   "actionIndex": 5,
+   "kind": "shot",
+   "plant": "FusionGatlingDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:FusionGatlingDefault.Actions[5].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32.0
+  },
+  {
+   "actionIndex": 6,
+   "kind": "shot",
+   "plant": "FusionGatlingDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:FusionGatlingDefault.Actions[6].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32.0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "FutureBubuSeedDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:FutureBubuSeedDefault.Actions[0].SpawnOffset",
+   "xCols": 0.14,
+   "xPx": 14,
+   "yCols": 0.0,
+   "yPx": 0
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "FutureBubuSeedDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:FutureBubuSeedDefault.Actions[1].SpawnOffset",
+   "xCols": 0.08,
+   "xPx": 8,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "GardenerGrass",
+   "source": "pkg_2073_PlantPropertySheet.json:GardenerGrass.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "GardenerGrass",
+   "source": "pkg_2073_PlantPropertySheet.json:GardenerGrass.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "GardeniaDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:GardeniaDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32.0
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "GardeniaDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:GardeniaDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32.0
+  },
+  {
+   "actionIndex": 2,
+   "kind": "shot",
+   "plant": "GardeniaDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:GardeniaDefault.Actions[2].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32.0
+  },
+  {
+   "actionIndex": 3,
+   "kind": "shot",
+   "plant": "GardeniaDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:GardeniaDefault.Actions[3].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32.0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "GatlingPeaDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:GatlingPeaDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "GatlingPeaDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:GatlingPeaDefault.Actions[1].SpawnOffset",
+   "xCols": 0.25,
+   "xPx": 25,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "GloomshroomDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:GloomshroomDefault.Actions[0].SpawnOffset",
+   "xCols": 0.14,
+   "xPx": 14,
+   "yCols": 0.0,
+   "yPx": 0
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "GloomshroomDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:GloomshroomDefault.Actions[1].SpawnOffset",
+   "xCols": 0.08,
+   "xPx": 8,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "sun",
+   "plant": "GoldbloomDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:GoldbloomDefault.Actions[0].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.5172,
+   "yPx": -60
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "GrapeshotDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:GrapeshotDefault.Actions[0].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": 0.0,
+   "yPx": 0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "GreenTurnipDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:GreenTurnipDefault.Actions[0].SpawnOffset",
+   "xCols": -0.1,
+   "xPx": -10,
+   "yCols": -0.5172,
+   "yPx": -60
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "GreenTurnipDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:GreenTurnipDefault.Actions[1].SpawnOffset",
+   "xCols": 1.0,
+   "xPx": 100,
+   "yCols": -0.0862,
+   "yPx": -10
+  },
+  {
+   "actionIndex": 2,
+   "kind": "shot",
+   "plant": "GreenTurnipDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:GreenTurnipDefault.Actions[2].SpawnOffset",
+   "xCols": 0.1,
+   "xPx": 10,
+   "yCols": -0.431,
+   "yPx": -50
+  },
+  {
+   "actionIndex": 3,
+   "kind": "shot",
+   "plant": "GreenTurnipDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:GreenTurnipDefault.Actions[3].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.3448,
+   "yPx": -40
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "GuacodileDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:GuacodileDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "GuacodileDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:GuacodileDefault.Actions[1].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.3017,
+   "yPx": -35
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "GuardShroomDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:GuardShroomDefault.Actions[0].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -5.1724,
+   "yPx": -600.0
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "GumnutDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:GumnutDefault.Actions[1].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -1.7241,
+   "yPx": -200
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "Hatmushroom",
+   "source": "pkg_2073_PlantPropertySheet.json:Hatmushroom.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "Hatmushroom",
+   "source": "pkg_2073_PlantPropertySheet.json:Hatmushroom.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 2,
+   "kind": "shot",
+   "plant": "HeadbutterDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:HeadbutterDefault.Actions[2].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95.0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "HeathSeekerDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:HeathSeekerDefault.Actions[0].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": 0.0,
+   "yPx": 0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "HollyKnightDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:HollyKnightDefault.Actions[0].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -5.1724,
+   "yPx": -600
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "HollyKnightDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:HollyKnightDefault.Actions[1].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -5.1724,
+   "yPx": -600
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "HomingThistleDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:HomingThistleDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "plantfood",
+   "plant": "HomingThistleDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:HomingThistleDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "HysilensDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:HysilensDefault.Actions[0].SpawnOffset",
+   "xCols": 0.3,
+   "xPx": 30.0,
+   "yCols": -0.1724,
+   "yPx": -20.0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "IceShroomDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:IceShroomDefault.Actions[0].SpawnOffset",
+   "xCols": 0.1,
+   "xPx": 10,
+   "yCols": -0.1379,
+   "yPx": -16
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "IceShroomDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:IceShroomDefault.Actions[1].SpawnOffset",
+   "xCols": 0.1,
+   "xPx": 10,
+   "yCols": -0.1983,
+   "yPx": -23.0
+  },
+  {
+   "actionIndex": 2,
+   "kind": "shot",
+   "plant": "IceShroomDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:IceShroomDefault.Actions[2].SpawnOffset",
+   "xCols": 0.1,
+   "xPx": 10,
+   "yCols": -0.1379,
+   "yPx": -16
+  },
+  {
+   "actionIndex": 3,
+   "kind": "special",
+   "plant": "IceShroomDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:IceShroomDefault.Actions[3].SpawnOffset",
+   "xCols": 0.1,
+   "xPx": 10,
+   "yCols": -0.1983,
+   "yPx": -23.0
+  },
+  {
+   "actionIndex": 4,
+   "kind": "shot",
+   "plant": "IceShroomDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:IceShroomDefault.Actions[4].SpawnOffset",
+   "xCols": 0.1,
+   "xPx": 10,
+   "yCols": -0.1379,
+   "yPx": -16
+  },
+  {
+   "actionIndex": 5,
+   "kind": "special",
+   "plant": "IceShroomDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:IceShroomDefault.Actions[5].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.2069,
+   "yPx": -24.0
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "IceShroomIntDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:IceShroomIntDefault.Actions[1].SpawnOffset",
+   "xCols": -1.1,
+   "xPx": -110,
+   "yCols": -4.7414,
+   "yPx": -550.0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "ImpatiensshooterDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:ImpatiensshooterDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.1724,
+   "yPx": -20
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "ImpatiensshooterDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:ImpatiensshooterDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.1724,
+   "yPx": -20
+  },
+  {
+   "actionIndex": 2,
+   "kind": "shot",
+   "plant": "ImpatiensshooterDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:ImpatiensshooterDefault.Actions[2].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.1897,
+   "yPx": -22
+  },
+  {
+   "actionIndex": 3,
+   "kind": "shot",
+   "plant": "ImpatiensshooterDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:ImpatiensshooterDefault.Actions[3].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2069,
+   "yPx": -24
+  },
+  {
+   "actionIndex": 4,
+   "kind": "shot",
+   "plant": "ImpatiensshooterDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:ImpatiensshooterDefault.Actions[4].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2069,
+   "yPx": -24
+  },
+  {
+   "actionIndex": 5,
+   "kind": "shot",
+   "plant": "ImpatiensshooterDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:ImpatiensshooterDefault.Actions[5].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.1724,
+   "yPx": -20
+  },
+  {
+   "actionIndex": 6,
+   "kind": "shot",
+   "plant": "ImpatiensshooterDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:ImpatiensshooterDefault.Actions[6].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.1724,
+   "yPx": -20
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "InfernoDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:InfernoDefault.Actions[0].SpawnOffset",
+   "xCols": 0.5,
+   "xPx": 50,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "InfernoDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:InfernoDefault.Actions[1].SpawnOffset",
+   "xCols": 0.65,
+   "xPx": 65,
+   "yCols": -0.2586,
+   "yPx": -30
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "JackfruitDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:JackfruitDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "special",
+   "plant": "KelpGuardDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:KelpGuardDefault.Actions[0].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": 0.0,
+   "yPx": 0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "KernelpultDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:KernelpultDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "KernelpultDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:KernelpultDefault.Actions[1].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "KernelpultOriDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:KernelpultOriDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15.0,
+   "yCols": -0.819,
+   "yPx": -95.0
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "KernelpultOriDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:KernelpultOriDefault.Actions[1].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15.0,
+   "yCols": -0.819,
+   "yPx": -95.0
+  },
+  {
+   "actionIndex": 2,
+   "kind": "special",
+   "plant": "KiwiFruitDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:KiwiFruitDefault.Actions[2].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.431,
+   "yPx": -50
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "LaserBeanDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:LaserBeanDefault.Actions[0].SpawnOffset",
+   "xCols": 0.05,
+   "xPx": 5,
+   "yCols": -0.4052,
+   "yPx": -47
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "LemonDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:LemonDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35.0,
+   "yCols": -0.2759,
+   "yPx": -32.0
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "LemonDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:LemonDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35.0,
+   "yCols": -0.2759,
+   "yPx": -32.0
+  },
+  {
+   "actionIndex": 2,
+   "kind": "shot",
+   "plant": "LemonDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:LemonDefault.Actions[2].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35.0,
+   "yCols": -0.2759,
+   "yPx": -32.0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "LemonaiderDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:LemonaiderDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "LemonaiderDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:LemonaiderDefault.Actions[1].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "LightningReedDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:LightningReedDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "LightningReedDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:LightningReedDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "LittleRepeaterDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:LittleRepeaterDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "LittleRepeaterDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:LittleRepeaterDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 2,
+   "kind": "shot",
+   "plant": "LittleRepeaterDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:LittleRepeaterDefault.Actions[2].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 3,
+   "kind": "shot",
+   "plant": "LittleRepeaterDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:LittleRepeaterDefault.Actions[3].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 4,
+   "kind": "shot",
+   "plant": "LittleRepeaterDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:LittleRepeaterDefault.Actions[4].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 5,
+   "kind": "shot",
+   "plant": "LittleRepeaterDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:LittleRepeaterDefault.Actions[5].SpawnOffset",
+   "xCols": 0.25,
+   "xPx": 25,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "LotusShooterDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:LotusShooterDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "LotusShooterDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:LotusShooterDefault.Actions[1].SpawnOffset",
+   "xCols": 0.25,
+   "xPx": 25,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 2,
+   "kind": "shot",
+   "plant": "LotusShooterDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:LotusShooterDefault.Actions[2].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "LotusShowerDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:LotusShowerDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "LotusShowerDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:LotusShowerDefault.Actions[1].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.3448,
+   "yPx": -40
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "LrisDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:LrisDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.0431,
+   "yPx": -5
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "LrisDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:LrisDefault.Actions[1].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.069,
+   "yPx": -8
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "MagicShroomDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:MagicShroomDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "MagicShroomDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:MagicShroomDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 2,
+   "kind": "shot",
+   "plant": "MagicShroomDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:MagicShroomDefault.Actions[2].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 3,
+   "kind": "shot",
+   "plant": "MagicShroomDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:MagicShroomDefault.Actions[3].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "MagicVineDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:MagicVineDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "MagicVineDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:MagicVineDefault.Actions[1].SpawnOffset",
+   "xCols": 0.25,
+   "xPx": 25,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "MagnetFruitDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:MagnetFruitDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "plantfood",
+   "plant": "MagnetFruitDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:MagnetFruitDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "MagnifyingGrassDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:MagnifyingGrassDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35.0,
+   "yCols": -0.2759,
+   "yPx": -32.0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "MangofierDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:MangofierDefault.Actions[0].SpawnOffset",
+   "xCols": -2.5,
+   "xPx": -250,
+   "yCols": -4.7414,
+   "yPx": -550.0
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "MangofierDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:MangofierDefault.Actions[1].SpawnOffset",
+   "xCols": -2.5,
+   "xPx": -250,
+   "yCols": -4.7414,
+   "yPx": -550.0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "MangosteenDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:MangosteenDefault.Actions[0].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.2069,
+   "yPx": -24.0
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "MangosteenDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:MangosteenDefault.Actions[1].SpawnOffset",
+   "xCols": 0.1,
+   "xPx": 10,
+   "yCols": -0.1983,
+   "yPx": -23.0
+  },
+  {
+   "actionIndex": 2,
+   "kind": "shot",
+   "plant": "MangosteenDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:MangosteenDefault.Actions[2].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.2069,
+   "yPx": -24.0
+  },
+  {
+   "actionIndex": 3,
+   "kind": "special",
+   "plant": "MangosteenDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:MangosteenDefault.Actions[3].SpawnOffset",
+   "xCols": 0.1,
+   "xPx": 10,
+   "yCols": -0.1983,
+   "yPx": -23.0
+  },
+  {
+   "actionIndex": 4,
+   "kind": "shot",
+   "plant": "MangosteenDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:MangosteenDefault.Actions[4].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.2069,
+   "yPx": -24.0
+  },
+  {
+   "actionIndex": 5,
+   "kind": "special",
+   "plant": "MangosteenDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:MangosteenDefault.Actions[5].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.2069,
+   "yPx": -24.0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "sun",
+   "plant": "MarigoldDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:MarigoldDefault.Actions[0].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.4483,
+   "yPx": -52
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "MegaGatlingDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:MegaGatlingDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32.0
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "MegaGatlingDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:MegaGatlingDefault.Actions[1].SpawnOffset",
+   "xCols": 0.25,
+   "xPx": 25,
+   "yCols": -0.2759,
+   "yPx": -32.0
+  },
+  {
+   "actionIndex": 2,
+   "kind": "shot",
+   "plant": "MegaGatlingDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:MegaGatlingDefault.Actions[2].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32.0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "MelonpultDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:MelonpultDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "MelonpultDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:MelonpultDefault.Actions[1].SpawnOffset",
+   "xCols": -0.1,
+   "xPx": -10,
+   "yCols": -0.5172,
+   "yPx": -60
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "MeteorFlowerDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:MeteorFlowerDefault.Actions[0].SpawnOffset",
+   "xCols": -2.5,
+   "xPx": -250,
+   "yCols": -4.7414,
+   "yPx": -550.0
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "MeteorFlowerDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:MeteorFlowerDefault.Actions[1].SpawnOffset",
+   "xCols": -2.5,
+   "xPx": -250,
+   "yCols": -4.7414,
+   "yPx": -550.0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "MicrowaveGrapesDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:MicrowaveGrapesDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "MiniPeashooterDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:MiniPeashooterDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "MissileToastDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:MissileToastDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.431,
+   "yPx": -50
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "MissileToastDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:MissileToastDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.431,
+   "yPx": -50
+  },
+  {
+   "actionIndex": 2,
+   "kind": "special",
+   "plant": "MissileToastDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:MissileToastDefault.Actions[2].SpawnOffset",
+   "xCols": -0.55,
+   "xPx": -55,
+   "yCols": -0.9483,
+   "yPx": -110
+  },
+  {
+   "actionIndex": 3,
+   "kind": "special",
+   "plant": "MissileToastDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:MissileToastDefault.Actions[3].SpawnOffset",
+   "xCols": -0.55,
+   "xPx": -55,
+   "yCols": -0.9483,
+   "yPx": -110
+  },
+  {
+   "actionIndex": 0,
+   "kind": "sun",
+   "plant": "MoonFlowerDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:MoonFlowerDefault.Actions[0].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.4483,
+   "yPx": -52
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "MorningGloryDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:MorningGloryDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.1724,
+   "yPx": -20
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "MorningGloryDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:MorningGloryDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "MulberryDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:MulberryDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "MulberryDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:MulberryDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "manual",
+   "plant": "MusicGameDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:MusicGameDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "NarcissusDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:NarcissusDefault.Actions[0].SpawnOffset",
+   "xCols": -0.55,
+   "xPx": -55,
+   "yCols": -0.9483,
+   "yPx": -110
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "NarcissusDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:NarcissusDefault.Actions[1].SpawnOffset",
+   "xCols": -0.25,
+   "xPx": -25,
+   "yCols": -0.6897,
+   "yPx": -80
+  },
+  {
+   "actionIndex": 2,
+   "kind": "shot",
+   "plant": "NarcissusDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:NarcissusDefault.Actions[2].SpawnOffset",
+   "xCols": -0.25,
+   "xPx": -25,
+   "yCols": -0.6897,
+   "yPx": -80
+  },
+  {
+   "actionIndex": 3,
+   "kind": "special",
+   "plant": "NarcissusDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:NarcissusDefault.Actions[3].SpawnOffset",
+   "xCols": -0.55,
+   "xPx": -55,
+   "yCols": -0.9914,
+   "yPx": -115
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "NightcapDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:NightcapDefault.Actions[0].SpawnOffset",
+   "xCols": -0.55,
+   "xPx": -55,
+   "yCols": -0.9483,
+   "yPx": -110.0
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "NightcapDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:NightcapDefault.Actions[1].SpawnOffset",
+   "xCols": -0.55,
+   "xPx": -55,
+   "yCols": -0.9914,
+   "yPx": -115.0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "NinjaDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:NinjaDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "special",
+   "plant": "NobleCeremonyDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:NobleCeremonyDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "NukeLauncherDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:NukeLauncherDefault.Actions[0].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -5.1724,
+   "yPx": -600
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "NukeLauncherDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:NukeLauncherDefault.Actions[1].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -5.1724,
+   "yPx": -600
+  },
+  {
+   "actionIndex": 2,
+   "kind": "shot",
+   "plant": "NukeLauncherDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:NukeLauncherDefault.Actions[2].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -5.1724,
+   "yPx": -600
+  },
+  {
+   "actionIndex": 3,
+   "kind": "shot",
+   "plant": "NukeLauncherDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:NukeLauncherDefault.Actions[3].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -5.1724,
+   "yPx": -600
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "OakshooterBarrageDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:OakshooterBarrageDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "OakshooterBarrageDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:OakshooterBarrageDefault.Actions[1].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.3448,
+   "yPx": -40
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "OakshooterDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:OakshooterDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "OakshooterDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:OakshooterDefault.Actions[1].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.3448,
+   "yPx": -40
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "OliveWoodDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:OliveWoodDefault.Actions[0].SpawnOffset",
+   "xCols": 0.32,
+   "xPx": 32,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "OliveWoodDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:OliveWoodDefault.Actions[1].SpawnOffset",
+   "xCols": 0.32,
+   "xPx": 32,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "OrchidmageDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:OrchidmageDefault.Actions[0].SpawnOffset",
+   "xCols": 0.6,
+   "xPx": 60,
+   "yCols": -0.1724,
+   "yPx": -20
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "OrchidmageDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:OrchidmageDefault.Actions[1].SpawnOffset",
+   "xCols": 0.6,
+   "xPx": 60,
+   "yCols": -0.1724,
+   "yPx": -20
+  },
+  {
+   "actionIndex": 0,
+   "kind": "sun",
+   "plant": "OxygenAlgaeDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:OxygenAlgaeDefault.Actions[0].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0.0,
+   "yCols": -0.4483,
+   "yPx": -52.0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "ParadoxPultDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:ParadoxPultDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "ParadoxPultDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:ParadoxPultDefault.Actions[1].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "ParsnipDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:ParsnipDefault.Actions[1].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.3017,
+   "yPx": -35.0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "PassionFruitDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PassionFruitDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "PassionFruitDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PassionFruitDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "PeanutDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PeanutDefault.Actions[0].SpawnOffset",
+   "xCols": 0.23,
+   "xPx": 23,
+   "yCols": -0.319,
+   "yPx": -37
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "PeanutDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PeanutDefault.Actions[1].SpawnOffset",
+   "xCols": 0.23,
+   "xPx": 23,
+   "yCols": -0.319,
+   "yPx": -37
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "PeapodDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PeapodDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "PeapodDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PeapodDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "PeashooterDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PeashooterDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "PeashooterDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PeashooterDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "PepperpultDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PepperpultDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "PepperpultDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PepperpultDefault.Actions[1].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.3448,
+   "yPx": -40
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "PhantasMagnoliaDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PhantasMagnoliaDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "PhantasMagnoliaDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PhantasMagnoliaDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "PineconeDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PineconeDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "PineconeDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PineconeDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "PinusKoraiensisDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PinusKoraiensisDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32.0
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "PinusKoraiensisDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PinusKoraiensisDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32.0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "PlantBoomFlower",
+   "source": "pkg_2073_PlantPropertySheet.json:PlantBoomFlower.Actions[0].SpawnOffset",
+   "xCols": -0.02,
+   "xPx": -2,
+   "yCols": -0.3621,
+   "yPx": -42
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "PlantBoomFlower",
+   "source": "pkg_2073_PlantPropertySheet.json:PlantBoomFlower.Actions[1].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.3448,
+   "yPx": -40
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "PlantPropertySheetTemplate",
+   "source": "pkg_2073_PlantPropertySheet.json:PlantPropertySheetTemplate.Actions[0].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": 0.0,
+   "yPx": 0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "PlantainDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PlantainDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.3017,
+   "yPx": -35
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "PlantainDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PlantainDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "sun",
+   "plant": "PlanternDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PlanternDefault.Actions[0].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.4483,
+   "yPx": -52
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "PoisonPeashooterDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PoisonPeashooterDefault.Actions[0].SpawnOffset",
+   "xCols": 0.65,
+   "xPx": 65,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "PoisonPeashooterDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PoisonPeashooterDefault.Actions[1].SpawnOffset",
+   "xCols": 0.8,
+   "xPx": 80,
+   "yCols": -0.3707,
+   "yPx": -43.0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "PoisonVineDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PoisonVineDefault.Actions[0].SpawnOffset",
+   "xCols": 0.1,
+   "xPx": 10.0,
+   "yCols": -0.0431,
+   "yPx": -5.0
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "PoisonVineDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PoisonVineDefault.Actions[1].SpawnOffset",
+   "xCols": 0.1,
+   "xPx": 10.0,
+   "yCols": -0.0431,
+   "yPx": -5.0
+  },
+  {
+   "actionIndex": 2,
+   "kind": "shot",
+   "plant": "PoisonVineDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PoisonVineDefault.Actions[2].SpawnOffset",
+   "xCols": 0.1,
+   "xPx": 10.0,
+   "yCols": -0.0862,
+   "yPx": -10.0
+  },
+  {
+   "actionIndex": 3,
+   "kind": "shot",
+   "plant": "PoisonVineDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PoisonVineDefault.Actions[3].SpawnOffset",
+   "xCols": 0.1,
+   "xPx": 10.0,
+   "yCols": -0.0862,
+   "yPx": -10.0
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "PokraDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PokraDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.0862,
+   "yPx": -10
+  },
+  {
+   "actionIndex": 2,
+   "kind": "shot",
+   "plant": "PokraDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PokraDefault.Actions[2].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.0862,
+   "yPx": -10
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "PomegranateJewelerDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PomegranateJewelerDefault.Actions[0].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.5603,
+   "yPx": -65
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "PomegranateJewelerDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PomegranateJewelerDefault.Actions[1].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.3448,
+   "yPx": -40
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "PomegranatepultDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PomegranatepultDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "PomegranatepultDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PomegranatepultDefault.Actions[1].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "PoppinPoppiesDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PoppinPoppiesDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "PoppinPoppiesDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PoppinPoppiesDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "sun",
+   "plant": "PowerLilyDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PowerLilyDefault.Actions[0].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.5172,
+   "yPx": -60
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "PowerLilyDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PowerLilyDefault.Actions[1].SpawnOffset",
+   "xCols": -0.2,
+   "xPx": -20,
+   "yCols": -0.5172,
+   "yPx": -60
+  },
+  {
+   "actionIndex": 2,
+   "kind": "special",
+   "plant": "PowerLilyDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PowerLilyDefault.Actions[2].SpawnOffset",
+   "xCols": 0.2,
+   "xPx": 20,
+   "yCols": -0.5172,
+   "yPx": -60
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "PowerVineDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PowerVineDefault.Actions[0].SpawnOffset",
+   "xCols": 0.1,
+   "xPx": 10,
+   "yCols": 0.1207,
+   "yPx": 14
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "PowerVineDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PowerVineDefault.Actions[1].SpawnOffset",
+   "xCols": 0.1,
+   "xPx": 10,
+   "yCols": -0.0862,
+   "yPx": -10
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "PrimalPeashooterDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PrimalPeashooterDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "PrimalPeashooterDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PrimalPeashooterDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "PrimalRafflesiaDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PrimalRafflesiaDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "PrimalRafflesiaDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PrimalRafflesiaDefault.Actions[1].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.3448,
+   "yPx": -40
+  },
+  {
+   "actionIndex": 0,
+   "kind": "sun",
+   "plant": "PrimalSunflowerDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PrimalSunflowerDefault.Actions[0].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.4483,
+   "yPx": -52
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "PuffshroomDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PuffshroomDefault.Actions[0].SpawnOffset",
+   "xCols": 0.1,
+   "xPx": 10,
+   "yCols": -0.069,
+   "yPx": -8
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "PuffshroomDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PuffshroomDefault.Actions[1].SpawnOffset",
+   "xCols": 0.1,
+   "xPx": 10,
+   "yCols": -0.069,
+   "yPx": -8
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "PunkShockerDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PunkShockerDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "PunkShockerDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PunkShockerDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "PvineDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PvineDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "PvineDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:PvineDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "RabbagepultDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:RabbagepultDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "RabbagepultDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:RabbagepultDefault.Actions[1].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.3448,
+   "yPx": -40
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "RafflesiaDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:RafflesiaDefault.Actions[0].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.3448,
+   "yPx": -40
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "RafflesiaDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:RafflesiaDefault.Actions[1].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.3448,
+   "yPx": -40
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "RedStingerDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:RedStingerDefault.Actions[0].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.1724,
+   "yPx": -20
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "RedStingerDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:RedStingerDefault.Actions[1].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.1724,
+   "yPx": -20
+  },
+  {
+   "actionIndex": 2,
+   "kind": "special",
+   "plant": "RedStingerDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:RedStingerDefault.Actions[2].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "ReincarnationDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:ReincarnationDefault.Actions[0].SpawnOffset",
+   "xCols": 0.1,
+   "xPx": 10,
+   "yCols": -0.1379,
+   "yPx": -16
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "ReincarnationDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:ReincarnationDefault.Actions[1].SpawnOffset",
+   "xCols": 0.1,
+   "xPx": 10,
+   "yCols": -0.1983,
+   "yPx": -23
+  },
+  {
+   "actionIndex": 2,
+   "kind": "shot",
+   "plant": "ReincarnationDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:ReincarnationDefault.Actions[2].SpawnOffset",
+   "xCols": 0.1,
+   "xPx": 10,
+   "yCols": -0.1724,
+   "yPx": -20
+  },
+  {
+   "actionIndex": 3,
+   "kind": "special",
+   "plant": "ReincarnationDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:ReincarnationDefault.Actions[3].SpawnOffset",
+   "xCols": 0.1,
+   "xPx": 10,
+   "yCols": -0.1983,
+   "yPx": -23
+  },
+  {
+   "actionIndex": 4,
+   "kind": "shot",
+   "plant": "ReincarnationDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:ReincarnationDefault.Actions[4].SpawnOffset",
+   "xCols": 0.1,
+   "xPx": 10,
+   "yCols": -0.2155,
+   "yPx": -25
+  },
+  {
+   "actionIndex": 5,
+   "kind": "special",
+   "plant": "ReincarnationDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:ReincarnationDefault.Actions[5].SpawnOffset",
+   "xCols": 0.1,
+   "xPx": 10,
+   "yCols": -0.1983,
+   "yPx": -23
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "RepeaterDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:RepeaterDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "RepeaterDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:RepeaterDefault.Actions[1].SpawnOffset",
+   "xCols": 0.25,
+   "xPx": 25,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 2,
+   "kind": "shot",
+   "plant": "RepeaterDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:RepeaterDefault.Actions[2].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "RiflebambooDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:RiflebambooDefault.Actions[0].SpawnOffset",
+   "xCols": 0.6,
+   "xPx": 60,
+   "yCols": -0.1724,
+   "yPx": -20
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "RiflebambooDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:RiflebambooDefault.Actions[1].SpawnOffset",
+   "xCols": 0.6,
+   "xPx": 60,
+   "yCols": -0.1724,
+   "yPx": -20
+  },
+  {
+   "actionIndex": 0,
+   "kind": "special",
+   "plant": "RoseStormDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:RoseStormDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "RottenRedDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:RottenRedDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "RottenRedDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:RottenRedDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "SapflingDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:SapflingDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "SapflingDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:SapflingDefault.Actions[1].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.3448,
+   "yPx": -40
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "ScaredyShroomDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:ScaredyShroomDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.0862,
+   "yPx": -10
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "ScaredyShroomDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:ScaredyShroomDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.0862,
+   "yPx": -10
+  },
+  {
+   "actionIndex": 2,
+   "kind": "shot",
+   "plant": "ScaredyShroomDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:ScaredyShroomDefault.Actions[2].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.8621,
+   "yPx": -100.0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "SeaFloraDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:SeaFloraDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35.0,
+   "yCols": -0.2759,
+   "yPx": -32.0
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "SeaFloraDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:SeaFloraDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35.0,
+   "yCols": -0.2759,
+   "yPx": -32.0
+  },
+  {
+   "actionIndex": 2,
+   "kind": "shot",
+   "plant": "SeaFloraDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:SeaFloraDefault.Actions[2].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35.0,
+   "yCols": -0.2759,
+   "yPx": -32.0
+  },
+  {
+   "actionIndex": 3,
+   "kind": "shot",
+   "plant": "SeaFloraDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:SeaFloraDefault.Actions[3].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35.0,
+   "yCols": -0.2759,
+   "yPx": -32.0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "SeashooterDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:SeashooterDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35.0,
+   "yCols": -0.1724,
+   "yPx": -20.0
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "SeashooterDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:SeashooterDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35.0,
+   "yCols": -0.1724,
+   "yPx": -20.0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "SeashroomDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:SeashroomDefault.Actions[0].SpawnOffset",
+   "xCols": 0.1,
+   "xPx": 10.0,
+   "yCols": -0.069,
+   "yPx": -8.0
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "SeashroomDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:SeashroomDefault.Actions[1].SpawnOffset",
+   "xCols": 0.1,
+   "xPx": 10.0,
+   "yCols": -0.069,
+   "yPx": -8.0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "ShadowPeashooterDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:ShadowPeashooterDefault.Actions[0].SpawnOffset",
+   "xCols": 0.5,
+   "xPx": 50,
+   "yCols": -0.1853,
+   "yPx": -21.5
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "ShadowPeashooterDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:ShadowPeashooterDefault.Actions[1].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": 0.0,
+   "yPx": 0
+  },
+  {
+   "actionIndex": 2,
+   "kind": "special",
+   "plant": "ShadowPeashooterDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:ShadowPeashooterDefault.Actions[2].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": 0.0,
+   "yPx": 0
+  },
+  {
+   "actionIndex": 3,
+   "kind": "special",
+   "plant": "ShadowPeashooterDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:ShadowPeashooterDefault.Actions[3].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": 0.0,
+   "yPx": 0
+  },
+  {
+   "actionIndex": 4,
+   "kind": "special",
+   "plant": "ShadowPeashooterDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:ShadowPeashooterDefault.Actions[4].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": 0.0,
+   "yPx": 0
+  },
+  {
+   "actionIndex": 2,
+   "kind": "sun",
+   "plant": "ShineVineDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:ShineVineDefault.Actions[2].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.4483,
+   "yPx": -52
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "SlingPeaDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:SlingPeaDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "SlingPeaDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:SlingPeaDefault.Actions[1].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.3448,
+   "yPx": -40
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "SnapPeaDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:SnapPeaDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32.0
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "SnapPeaDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:SnapPeaDefault.Actions[1].SpawnOffset",
+   "xCols": -0.25,
+   "xPx": -25,
+   "yCols": -1.0776,
+   "yPx": -125.0
+  },
+  {
+   "actionIndex": 2,
+   "kind": "shot",
+   "plant": "SnapPeaDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:SnapPeaDefault.Actions[2].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32.0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "SnowLotusDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:SnowLotusDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "SnowLotusDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:SnowLotusDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "SnowPeaDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:SnowPeaDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "SnowPeaDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:SnowPeaDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 2,
+   "kind": "shot",
+   "plant": "SnowPeaDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:SnowPeaDefault.Actions[2].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 3,
+   "kind": "shot",
+   "plant": "SnowPeaDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:SnowPeaDefault.Actions[3].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "SnowdropDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:SnowdropDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "SnowdropDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:SnowdropDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "SolarFlareDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:SolarFlareDefault.Actions[0].SpawnOffset",
+   "xCols": 0.2,
+   "xPx": 20.0,
+   "yCols": -0.5172,
+   "yPx": -60.0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "SplitpeaDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:SplitpeaDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "SplitpeaDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:SplitpeaDefault.Actions[1].SpawnOffset",
+   "xCols": -0.35,
+   "xPx": -35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 2,
+   "kind": "shot",
+   "plant": "SplitpeaDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:SplitpeaDefault.Actions[2].SpawnOffset",
+   "xCols": -0.25,
+   "xPx": -25,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 3,
+   "kind": "shot",
+   "plant": "SplitpeaDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:SplitpeaDefault.Actions[3].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 4,
+   "kind": "shot",
+   "plant": "SplitpeaDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:SplitpeaDefault.Actions[4].SpawnOffset",
+   "xCols": -0.35,
+   "xPx": -35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "SporeshroomDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:SporeshroomDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.3017,
+   "yPx": -35
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "SporeshroomDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:SporeshroomDefault.Actions[1].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.3017,
+   "yPx": -35
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "SpringprincessDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:SpringprincessDefault.Actions[0].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.5603,
+   "yPx": -65
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "SpringprincessDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:SpringprincessDefault.Actions[1].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.5603,
+   "yPx": -65
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "StarFruitBarrageDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:StarFruitBarrageDefault.Actions[1].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": 0.0,
+   "yPx": 0
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "StarFruitDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:StarFruitDefault.Actions[1].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": 0.0,
+   "yPx": 0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "StephaniaDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:StephaniaDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "StephaniaDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:StephaniaDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "StickybombRiceDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:StickybombRiceDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "StickybombRiceDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:StickybombRiceDefault.Actions[1].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.3448,
+   "yPx": -40
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "StrawburstDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:StrawburstDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.3017,
+   "yPx": -35
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "StrawburstDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:StrawburstDefault.Actions[1].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.3017,
+   "yPx": -35
+  },
+  {
+   "actionIndex": 2,
+   "kind": "shot",
+   "plant": "StrawburstDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:StrawburstDefault.Actions[2].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.3017,
+   "yPx": -35
+  },
+  {
+   "actionIndex": 3,
+   "kind": "shot",
+   "plant": "StrawburstDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:StrawburstDefault.Actions[3].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.3017,
+   "yPx": -35
+  },
+  {
+   "actionIndex": 4,
+   "kind": "shot",
+   "plant": "StrawburstDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:StrawburstDefault.Actions[4].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.3017,
+   "yPx": -35
+  },
+  {
+   "actionIndex": 5,
+   "kind": "shot",
+   "plant": "StrawburstDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:StrawburstDefault.Actions[5].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.3017,
+   "yPx": -35
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "SucculentGrapeDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:SucculentGrapeDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "SucculentGrapeDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:SucculentGrapeDefault.Actions[1].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.3448,
+   "yPx": -40
+  },
+  {
+   "actionIndex": 0,
+   "kind": "sun",
+   "plant": "SunTowerDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:SunTowerDefault.Actions[0].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.4483,
+   "yPx": -52
+  },
+  {
+   "actionIndex": 0,
+   "kind": "sun",
+   "plant": "SunflowerDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:SunflowerDefault.Actions[0].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.4483,
+   "yPx": -52
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "SunpodDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:SunpodDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "SunpodDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:SunpodDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "sun",
+   "plant": "Sunshroom",
+   "source": "pkg_2073_PlantPropertySheet.json:Sunshroom.Actions[0].SpawnOffset",
+   "xCols": -0.1,
+   "xPx": -10,
+   "yCols": -0.4741,
+   "yPx": -55
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "SushiDefault2",
+   "source": "pkg_2073_PlantPropertySheet.json:SushiDefault2.Actions[0].SpawnOffset",
+   "xCols": 0.1,
+   "xPx": 10,
+   "yCols": -0.069,
+   "yPx": -8
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "SushiDefault2",
+   "source": "pkg_2073_PlantPropertySheet.json:SushiDefault2.Actions[1].SpawnOffset",
+   "xCols": 0.1,
+   "xPx": 10,
+   "yCols": -0.069,
+   "yPx": -8
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "SweetheartSnareDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:SweetheartSnareDefault.Actions[1].SpawnOffset",
+   "xCols": -0.1,
+   "xPx": -10.0,
+   "yCols": -0.1724,
+   "yPx": -20.0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "TaraxacumDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:TaraxacumDefault.Actions[0].SpawnOffset",
+   "xCols": 0.14,
+   "xPx": 14,
+   "yCols": 0.0,
+   "yPx": 0
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "TaraxacumDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:TaraxacumDefault.Actions[1].SpawnOffset",
+   "xCols": 0.08,
+   "xPx": 8,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "ThreepeaterDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:ThreepeaterDefault.Actions[0].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.2586,
+   "yPx": -30
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "ThunderSnapdragonDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:ThunderSnapdragonDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "ThunderSnapdragonDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:ThunderSnapdragonDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "TigerGrassDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:TigerGrassDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.431,
+   "yPx": -50
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "TigerstoolDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:TigerstoolDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "TigerstoolDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:TigerstoolDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "TorpedofruitDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:TorpedofruitDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "TorpedofruitDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:TorpedofruitDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "TubifloraDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:TubifloraDefault.Actions[0].SpawnOffset",
+   "xCols": 0.14,
+   "xPx": 14,
+   "yCols": 0.0,
+   "yPx": 0
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "TubifloraDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:TubifloraDefault.Actions[1].SpawnOffset",
+   "xCols": 0.08,
+   "xPx": 8,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "TudoDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:TudoDefault.Actions[0].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": 0.0,
+   "yPx": 0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "TulipTrumpeterDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:TulipTrumpeterDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "TulipTrumpeterDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:TulipTrumpeterDefault.Actions[1].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "TumbleweedDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:TumbleweedDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "TurrheumImmobileDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:TurrheumImmobileDefault.Actions[0].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0.0,
+   "yCols": 0.0,
+   "yPx": 0.0
+  },
+  {
+   "actionIndex": 1,
+   "kind": "plantfood",
+   "plant": "TurrheumImmobileDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:TurrheumImmobileDefault.Actions[1].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": 0.0,
+   "yPx": 0
+  },
+  {
+   "actionIndex": 2,
+   "kind": "shot",
+   "plant": "TurrheumImmobileDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:TurrheumImmobileDefault.Actions[2].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0.0,
+   "yCols": 0.0,
+   "yPx": 0.0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "special",
+   "plant": "TurrheumImmobileUnusedDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:TurrheumImmobileUnusedDefault.Actions[0].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0.0,
+   "yCols": 0.0,
+   "yPx": 0.0
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "TurrheumImmobileUnusedDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:TurrheumImmobileUnusedDefault.Actions[1].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0.0,
+   "yCols": 0.0,
+   "yPx": 0.0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "sun",
+   "plant": "TwinSunflowerDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:TwinSunflowerDefault.Actions[0].SpawnOffset",
+   "xCols": -0.1,
+   "xPx": -10,
+   "yCols": -0.4741,
+   "yPx": -55
+  },
+  {
+   "actionIndex": 1,
+   "kind": "sun",
+   "plant": "TwinSunflowerDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:TwinSunflowerDefault.Actions[1].SpawnOffset",
+   "xCols": 0.1,
+   "xPx": 10,
+   "yCols": -0.5345,
+   "yPx": -62
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "UltimateFumeshroomDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:UltimateFumeshroomDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "UltimateFumeshroomDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:UltimateFumeshroomDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "UltomatoDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:UltomatoDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "VanillaDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:VanillaDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "VanillaDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:VanillaDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "VoidDragonDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:VoidDragonDefault.Actions[0].SpawnOffset",
+   "xCols": 0.1,
+   "xPx": 10.0,
+   "yCols": -0.1897,
+   "yPx": -22.0
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "VoidDragonDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:VoidDragonDefault.Actions[1].SpawnOffset",
+   "xCols": 0.6,
+   "xPx": 60.0,
+   "yCols": -0.2586,
+   "yPx": -30.0
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "WhiteMelonDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:WhiteMelonDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "WhiteMelonDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:WhiteMelonDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 2,
+   "kind": "special",
+   "plant": "WhiteMelonDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:WhiteMelonDefault.Actions[2].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "WildFlowerDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:WildFlowerDefault.Actions[0].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "WildFlowerDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:WildFlowerDefault.Actions[1].SpawnOffset",
+   "xCols": 0.35,
+   "xPx": 35,
+   "yCols": -0.2759,
+   "yPx": -32
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "WinterGeddonDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:WinterGeddonDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "WinterGeddonDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:WinterGeddonDefault.Actions[1].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.3448,
+   "yPx": -40
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "WinterMelonDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:WinterMelonDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "WinterMelonDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:WinterMelonDefault.Actions[1].SpawnOffset",
+   "xCols": -0.1,
+   "xPx": -10,
+   "yCols": -0.5172,
+   "yPx": -60
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "WinterSweetDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:WinterSweetDefault.Actions[0].SpawnOffset",
+   "xCols": 0.21,
+   "xPx": 21,
+   "yCols": -0.1207,
+   "yPx": -14
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "WinterSweetDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:WinterSweetDefault.Actions[1].SpawnOffset",
+   "xCols": 0.23,
+   "xPx": 23,
+   "yCols": -0.1379,
+   "yPx": -16
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "WitchHazelDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:WitchHazelDefault.Actions[0].SpawnOffset",
+   "xCols": 0.7,
+   "xPx": 70,
+   "yCols": 0.1897,
+   "yPx": 22
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "WitchHazelDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:WitchHazelDefault.Actions[1].SpawnOffset",
+   "xCols": 0.7,
+   "xPx": 70,
+   "yCols": 0.1897,
+   "yPx": 22
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "XShotBarrageDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:XShotBarrageDefault.Actions[0].SpawnOffset",
+   "xCols": 0.2,
+   "xPx": 20,
+   "yCols": -0.0862,
+   "yPx": -10
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "XShotBarrageDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:XShotBarrageDefault.Actions[1].SpawnOffset",
+   "xCols": 0.2,
+   "xPx": 20,
+   "yCols": 0.2586,
+   "yPx": 30
+  },
+  {
+   "actionIndex": 2,
+   "kind": "shot",
+   "plant": "XShotBarrageDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:XShotBarrageDefault.Actions[2].SpawnOffset",
+   "xCols": -0.2,
+   "xPx": -20,
+   "yCols": 0.2586,
+   "yPx": 30
+  },
+  {
+   "actionIndex": 3,
+   "kind": "shot",
+   "plant": "XShotBarrageDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:XShotBarrageDefault.Actions[3].SpawnOffset",
+   "xCols": -0.25,
+   "xPx": -25,
+   "yCols": -0.069,
+   "yPx": -8
+  },
+  {
+   "actionIndex": 4,
+   "kind": "shot",
+   "plant": "XShotBarrageDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:XShotBarrageDefault.Actions[4].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.0862,
+   "yPx": -10
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "XShotDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:XShotDefault.Actions[0].SpawnOffset",
+   "xCols": 0.2,
+   "xPx": 20,
+   "yCols": -0.0862,
+   "yPx": -10
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "XShotDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:XShotDefault.Actions[1].SpawnOffset",
+   "xCols": 0.2,
+   "xPx": 20,
+   "yCols": 0.2586,
+   "yPx": 30
+  },
+  {
+   "actionIndex": 2,
+   "kind": "shot",
+   "plant": "XShotDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:XShotDefault.Actions[2].SpawnOffset",
+   "xCols": -0.2,
+   "xPx": -20,
+   "yCols": 0.2586,
+   "yPx": 30
+  },
+  {
+   "actionIndex": 3,
+   "kind": "shot",
+   "plant": "XShotDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:XShotDefault.Actions[3].SpawnOffset",
+   "xCols": -0.25,
+   "xPx": -25,
+   "yCols": -0.069,
+   "yPx": -8
+  },
+  {
+   "actionIndex": 4,
+   "kind": "shot",
+   "plant": "XShotDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:XShotDefault.Actions[4].SpawnOffset",
+   "xCols": 0.0,
+   "xPx": 0,
+   "yCols": -0.0862,
+   "yPx": -10
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "YuccaGuardianDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:YuccaGuardianDefault.Actions[0].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95
+  },
+  {
+   "actionIndex": 1,
+   "kind": "shot",
+   "plant": "YuccaGuardianDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:YuccaGuardianDefault.Actions[1].SpawnOffset",
+   "xCols": 0.15,
+   "xPx": 15,
+   "yCols": -0.819,
+   "yPx": -95
+  },
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "ZnakeLilyDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:ZnakeLilyDefault.Actions[0].SpawnOffset",
+   "xCols": 0.5,
+   "xPx": 50.0,
+   "yCols": -0.2759,
+   "yPx": -32.0
+  },
+  {
+   "actionIndex": 1,
+   "kind": "special",
+   "plant": "ZnakeLilyDefault",
+   "source": "pkg_2073_PlantPropertySheet.json:ZnakeLilyDefault.Actions[1].SpawnOffset",
+   "xCols": 0.65,
+   "xPx": 65.0,
+   "yCols": -0.2586,
+   "yPx": -30.0
+  }
+ ],
+ "samples": {
+  "KernelpultDefault": [
+   {
+    "actionIndex": 0,
+    "kind": "shot",
+    "plant": "KernelpultDefault",
+    "source": "pkg_2073_PlantPropertySheet.json:KernelpultDefault.Actions[0].SpawnOffset",
+    "xCols": 0.15,
+    "xPx": 15,
+    "yCols": -0.819,
+    "yPx": -95
+   },
+   {
+    "actionIndex": 1,
+    "kind": "shot",
+    "plant": "KernelpultDefault",
+    "source": "pkg_2073_PlantPropertySheet.json:KernelpultDefault.Actions[1].SpawnOffset",
+    "xCols": 0.15,
+    "xPx": 15,
+    "yCols": -0.819,
+    "yPx": -95
+   }
+  ],
+  "PeashooterDefault": [
+   {
+    "actionIndex": 0,
+    "kind": "shot",
+    "plant": "PeashooterDefault",
+    "source": "pkg_2073_PlantPropertySheet.json:PeashooterDefault.Actions[0].SpawnOffset",
+    "xCols": 0.35,
+    "xPx": 35,
+    "yCols": -0.2759,
+    "yPx": -32
+   },
+   {
+    "actionIndex": 1,
+    "kind": "shot",
+    "plant": "PeashooterDefault",
+    "source": "pkg_2073_PlantPropertySheet.json:PeashooterDefault.Actions[1].SpawnOffset",
+    "xCols": 0.35,
+    "xPx": 35,
+    "yCols": -0.2759,
+    "yPx": -32
+   }
+  ],
+  "SunflowerDefault": [
+   {
+    "actionIndex": 0,
+    "kind": "sun",
+    "plant": "SunflowerDefault",
+    "source": "pkg_2073_PlantPropertySheet.json:SunflowerDefault.Actions[0].SpawnOffset",
+    "xCols": 0.0,
+    "xPx": 0,
+    "yCols": -0.4483,
+    "yPx": -52
+   }
+  ]
+ },
+ "scale": {
+  "artCenter": {
+   "modes": [
+    {
+     "count": 164,
+     "x": 99.0,
+     "y": 115.0
+    },
+    {
+     "count": 38,
+     "x": 99.0,
+     "y": 116.0
+    },
+    {
+     "count": 25,
+     "x": 97.0,
+     "y": 119.0
+    }
+   ],
+   "pivot": {
+    "x": 99.0,
+    "y": 115.0
+   },
+   "samples": 374
+  },
+  "enginePxPerColumn": 60.0,
+  "engineSource": "native/src/engine/action_runner.cpp:14, native/src/engine/registry.cpp:27",
+  "pxPerColumn": 100.0,
+  "pxPerColumnRatioToEngine": 1.666667,
+  "pxPerRow": 116.0,
+  "pxPerRowCols": 116.0,
+  "source": "pkg_2073_PlantPropertySheet.json:ArtCenter (mode of x and y, +1 for the 0-based pixel centre)"
+ },
+ "skipped": [
+  {
+   "actionIndex": 0,
+   "kind": "shot",
+   "plant": "FlowerPotDefault",
+   "reason": "offset-sentinel",
+   "xPx": 10000,
+   "yPx": -32
+  }
+ ],
+ "ySign": {
+  "convention": "negative-is-up",
+  "evidence": "480 of 487 offsets are <= 0, median -32 px, seven positive rows top out at +30 px",
+  "screenRule": "y grows down on screen, so a negative yPx raises the spawn point"
+ }
+}

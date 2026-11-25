@@ -1,0 +1,108 @@
+{
+ "actionsByKind": {
+  "<none>": 2,
+  "explode": 33,
+  "manual": 1,
+  "plantfood": 6,
+  "projectile": 410,
+  "special": 200,
+  "sun": 16
+ },
+ "counts": {
+  "commentsStripped": 0,
+  "danglingRefs": 3,
+  "duplicatePlantIds": 0,
+  "duplicateZombieIds": 2,
+  "externalRefs": 32,
+  "missingActionRefs": 0,
+  "plantActions": 668,
+  "plants": 339,
+  "plantsMissingProps": 0,
+  "zombieActionRefs": 717,
+  "zombieActions": 0,
+  "zombies": 1127,
+  "zombiesMissingProps": 3
+ },
+ "dangling": [
+  {
+   "ref": "ZombieFairyTaleCavarySummonedDefault@ZombieProperties",
+   "sheet": "ZombieProperties",
+   "type": "fairy_tale_cavalry_summoned"
+  },
+  {
+   "ref": "ZombieRenaiArmor2StatueDefault@ZombieProperties",
+   "sheet": "ZombieProperties",
+   "type": "renai_armor2_statue"
+  },
+  {
+   "ref": "ZombieRenaiPerfumerStatueDefault@ZombieProperties",
+   "sheet": "ZombieProperties",
+   "type": "renai_perfumer_statue"
+  }
+ ],
+ "duplicateIds": {
+  "plants": [],
+  "zombies": [
+   "heavy_shield",
+   "kongfu_gargantuar"
+  ]
+ },
+ "externalRefsBySheet": {
+  "CurrentLevel": 32
+ },
+ "format": 1,
+ "generated": "2026-11-20",
+ "sources": {
+  "ArmorTypes": {
+   "file": "pkg_0002_ArmorPropertySheetUtils.json",
+   "sha256": "1e2776aa4ba65ce0934cd6b5f0e043889301117d641212074d1a556761e19206"
+  },
+  "Fusions": {
+   "file": "pkg_2083_PlantFusionConfig.json",
+   "sha256": "8bb0461831d24321e705df8c656b5d204e26067d59dcb97401c11af82305ab5e"
+  },
+  "GridItemTypes": {
+   "file": "pkg_0024_GridItemPropertySheet.json",
+   "sha256": "3bfd17bc66414f03a8ac07f2aa5203a3d1483dc7e3066da2b582becd97c2b2b2"
+  },
+  "PlantAlmanac": {
+   "file": "pkg_2067_PlantAlmanacData.json",
+   "sha256": "a96af3c955532e6c4926df1adf705a7fe90dd002db49aa4a242987fdbcfb66b3"
+  },
+  "PlantLevelStats": {
+   "file": "pkg_2069_PlantLevelStats.json",
+   "sha256": "1ba775bc3acc6501b1280ba635c38964c61ba71af59f8da1d1355b97e3a989b1"
+  },
+  "PlantProperties": {
+   "file": "pkg_2073_PlantPropertySheet.json",
+   "sha256": "ad0fa20ca73aa95b66aee79886e2b822702da96b7e7acd8006874652528b64f0"
+  },
+  "PlantTypes": {
+   "file": "pkg_2074_PlantType.json",
+   "sha256": "51d31ea3dc41d23240bd4467f488d2272327a4ec50f8b08bb45ba6e3a4a76890"
+  },
+  "ProjectileTypes": {
+   "file": "pkg_2082_ProjectilePropertySheet.json",
+   "sha256": "a273b1152b07321ccd8749918e50613d012fa114080c88214e994e09d9d20f24"
+  },
+  "WorldData": {
+   "file": "pkg_2107_WorldData.json",
+   "sha256": "b1f61cd5ef86dedb16a0d4d288029850d542813ac07a1aacc1a73e1c4fe0af14"
+  },
+  "ZombieActions": {
+   "file": "pkg_2111_ZombieWalkActionDefinition.json",
+   "sha256": "005ac1bd3a72af6e77347b7e1bf40bd1bd3d60d2b4f6b605bbb7091119ca0f55"
+  },
+  "ZombieProperties": {
+   "file": "pkg_2112_ZombiePropertySheet.json",
+   "sha256": "667a9d4536d88bed06e484adc2d6f2e98e51972fb83d158ad16eb1b977bf2c4a"
+  },
+  "ZombieTypes": {
+   "file": "pkg_2115_ZombieType.json",
+   "sha256": "ca8680faf673b6a7f8bbdf94bb65b7d8de6e4b7dfa968d372a7db2f3631f6776"
+  }
+ },
+ "unknownActionKinds": {
+  "<none>": 2
+ }
+}

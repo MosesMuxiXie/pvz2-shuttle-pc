@@ -1,0 +1,245 @@
+{
+ "elements": [
+  {
+   "attachSeconds": 5.0,
+   "color": [
+    80,
+    190,
+    255
+   ],
+   "id": "water",
+   "name_zh": "水",
+   "rationale": "基线 `ELEMENTS` 第 1 位 `water`：中文名「水」、颜色 RGB(80, 190, 255)、附着 5.0 秒（`ELEMENT_NAME` / `ELEMENT_COLOR` / `ATTACH_SECONDS`）；该机制是 SHUTTLE 26.10.1 的自创规则，原版数据无对应表。",
+   "source": "authored"
+  },
+  {
+   "attachSeconds": 5.0,
+   "color": [
+    255,
+    120,
+    40
+   ],
+   "id": "fire",
+   "name_zh": "火",
+   "rationale": "基线 `ELEMENTS` 第 2 位 `fire`：中文名「火」、颜色 RGB(255, 120, 40)、附着 5.0 秒（`ELEMENT_NAME` / `ELEMENT_COLOR` / `ATTACH_SECONDS`）；该机制是 SHUTTLE 26.10.1 的自创规则，原版数据无对应表。",
+   "source": "authored"
+  },
+  {
+   "attachSeconds": 2.0,
+   "color": [
+    176,
+    230,
+    255
+   ],
+   "id": "ice",
+   "name_zh": "冰",
+   "rationale": "基线 `ELEMENTS` 第 3 位 `ice`：中文名「冰」、颜色 RGB(176, 230, 255)、附着 2.0 秒（`ELEMENT_NAME` / `ELEMENT_COLOR` / `ATTACH_SECONDS`）；该机制是 SHUTTLE 26.10.1 的自创规则，原版数据无对应表。",
+   "source": "authored"
+  },
+  {
+   "attachSeconds": 5.0,
+   "color": [
+    255,
+    230,
+    80
+   ],
+   "id": "thunder",
+   "name_zh": "雷",
+   "rationale": "基线 `ELEMENTS` 第 4 位 `thunder`：中文名「雷」、颜色 RGB(255, 230, 80)、附着 5.0 秒（`ELEMENT_NAME` / `ELEMENT_COLOR` / `ATTACH_SECONDS`）；该机制是 SHUTTLE 26.10.1 的自创规则，原版数据无对应表。",
+   "source": "authored"
+  },
+  {
+   "attachSeconds": 5.0,
+   "color": [
+    48,
+    224,
+    208
+   ],
+   "id": "wind",
+   "name_zh": "风",
+   "rationale": "基线 `ELEMENTS` 第 5 位 `wind`：中文名「风」、颜色 RGB(48, 224, 208)、附着 5.0 秒（`ELEMENT_NAME` / `ELEMENT_COLOR` / `ATTACH_SECONDS`）；该机制是 SHUTTLE 26.10.1 的自创规则，原版数据无对应表。",
+   "source": "authored"
+  }
+ ],
+ "format": 1,
+ "marker": "elements-authored-v1",
+ "note": "not an original SHUTTLE mechanic",
+ "reactions": [
+  {
+   "a": "water",
+   "b": "fire",
+   "clear": [
+    "fire"
+   ],
+   "effects": [],
+   "mult": 2.0,
+   "name_zh": "蒸发",
+   "rationale": "基线 `_REACTIONS[frozenset(('water', 'fire'))]`：反应「蒸发」、倍率 2.0、清除 fire、effects=[]；按基线原样编译，未做平衡性调整。",
+   "source": "authored"
+  },
+  {
+   "a": "water",
+   "b": "ice",
+   "clear": [
+    "water",
+    "ice"
+   ],
+   "effects": [
+    {
+     "seconds": 1.5,
+     "type": "freeze"
+    }
+   ],
+   "mult": 1.0,
+   "name_zh": "冻结",
+   "rationale": "基线 `_REACTIONS[frozenset(('water', 'ice'))]`：反应「冻结」、倍率 1.0、清除 water、ice、effects=[{\"seconds\": 1.5, \"type\": \"freeze\"}]；按基线原样编译，未做平衡性调整。",
+   "source": "authored"
+  },
+  {
+   "a": "water",
+   "b": "thunder",
+   "clear": [
+    "water",
+    "thunder"
+   ],
+   "effects": [
+    {
+     "cap": 1000.0,
+     "damage": "attack",
+     "element": "thunder",
+     "radius": 190.0,
+     "type": "aoe"
+    }
+   ],
+   "mult": 1.0,
+   "name_zh": "感电",
+   "rationale": "基线 `_REACTIONS[frozenset(('water', 'thunder'))]`：反应「感电」、倍率 1.0、清除 water、thunder、effects=[{\"cap\": 1000.0, \"damage\": \"attack\", \"element\": \"thunder\", \"radius\": 190.0, \"type\": \"aoe\"}]；按基线原样编译，未做平衡性调整。",
+   "source": "authored"
+  },
+  {
+   "a": "water",
+   "b": "wind",
+   "clear": [
+    "water"
+   ],
+   "effects": [
+    {
+     "element": "water",
+     "type": "spread"
+    }
+   ],
+   "mult": 1.0,
+   "name_zh": "扩散",
+   "rationale": "基线 `_REACTIONS[frozenset(('water', 'wind'))]`：反应「扩散」、倍率 1.0、清除 water、effects=[{\"element\": \"water\", \"type\": \"spread\"}]；按基线原样编译，未做平衡性调整。",
+   "source": "authored"
+  },
+  {
+   "a": "fire",
+   "b": "ice",
+   "clear": [
+    "ice"
+   ],
+   "directional": {
+    "attached": "fire",
+    "attack": "ice",
+    "mult": 1.5
+   },
+   "effects": [],
+   "mult": 2.0,
+   "name_zh": "融化",
+   "rationale": "基线 `_REACTIONS[frozenset(('fire', 'ice'))]`：反应「融化」、倍率 2.0、清除 ice、effects=[]；按基线原样编译，未做平衡性调整。",
+   "source": "authored"
+  },
+  {
+   "a": "fire",
+   "b": "thunder",
+   "clear": [
+    "fire",
+    "thunder"
+   ],
+   "effects": [
+    {
+     "damage": 40.0,
+     "element": "fire",
+     "radius": 190.0,
+     "type": "aoe"
+    }
+   ],
+   "mult": 1.0,
+   "name_zh": "超载",
+   "rationale": "基线 `_REACTIONS[frozenset(('fire', 'thunder'))]`：反应「超载」、倍率 1.0、清除 fire、thunder、effects=[{\"damage\": 40.0, \"element\": \"fire\", \"radius\": 190.0, \"type\": \"aoe\"}]；按基线原样编译，未做平衡性调整。",
+   "source": "authored"
+  },
+  {
+   "a": "fire",
+   "b": "wind",
+   "clear": [
+    "fire"
+   ],
+   "effects": [
+    {
+     "element": "fire",
+     "type": "spread"
+    }
+   ],
+   "mult": 1.0,
+   "name_zh": "扩散",
+   "rationale": "基线 `_REACTIONS[frozenset(('fire', 'wind'))]`：反应「扩散」、倍率 1.0、清除 fire、effects=[{\"element\": \"fire\", \"type\": \"spread\"}]；按基线原样编译，未做平衡性调整。",
+   "source": "authored"
+  },
+  {
+   "a": "ice",
+   "b": "thunder",
+   "clear": [
+    "ice",
+    "thunder"
+   ],
+   "effects": [
+    {
+     "mult": 0.75,
+     "seconds": 10.0,
+     "type": "vulnerable"
+    }
+   ],
+   "mult": 1.0,
+   "name_zh": "超导",
+   "rationale": "基线 `_REACTIONS[frozenset(('ice', 'thunder'))]`：反应「超导」、倍率 1.0、清除 ice、thunder、effects=[{\"mult\": 0.75, \"seconds\": 10.0, \"type\": \"vulnerable\"}]；按基线原样编译，未做平衡性调整。",
+   "source": "authored"
+  },
+  {
+   "a": "ice",
+   "b": "wind",
+   "clear": [
+    "ice"
+   ],
+   "effects": [
+    {
+     "element": "ice",
+     "type": "spread"
+    }
+   ],
+   "mult": 1.0,
+   "name_zh": "扩散",
+   "rationale": "基线 `_REACTIONS[frozenset(('ice', 'wind'))]`：反应「扩散」、倍率 1.0、清除 ice、effects=[{\"element\": \"ice\", \"type\": \"spread\"}]；按基线原样编译，未做平衡性调整。",
+   "source": "authored"
+  },
+  {
+   "a": "thunder",
+   "b": "wind",
+   "clear": [
+    "thunder"
+   ],
+   "effects": [
+    {
+     "element": "thunder",
+     "type": "spread"
+    }
+   ],
+   "mult": 1.0,
+   "name_zh": "扩散",
+   "rationale": "基线 `_REACTIONS[frozenset(('thunder', 'wind'))]`：反应「扩散」、倍率 1.0、清除 thunder、effects=[{\"element\": \"thunder\", \"type\": \"spread\"}]；按基线原样编译，未做平衡性调整。",
+   "source": "authored"
+  }
+ ],
+ "source": "authored"
+}

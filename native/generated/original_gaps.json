@@ -1,0 +1,1977 @@
+{
+ "counts": {
+  "agree": 1380,
+  "clientOnly": 12210,
+  "clientWorlds": 26,
+  "entities": 12,
+  "joinedWorldClientLevels": 1432,
+  "joinedWorldLevelEvents": 555,
+  "levelFiles": 1809,
+  "levelJoins": 1809,
+  "levelObjects": 41218,
+  "mapped": 13075,
+  "packOnly": 793,
+  "packOnlyFieldCount": 36,
+  "packOnlyFieldTop": [
+   {
+    "count": 1806,
+    "entity": "levels",
+    "field": "Modules"
+   },
+   {
+    "count": 1806,
+    "entity": "levels",
+    "field": "StageModule"
+   },
+   {
+    "count": 1802,
+    "entity": "levels",
+    "field": "Loot"
+   },
+   {
+    "count": 1714,
+    "entity": "levels",
+    "field": "WaveManagerProps"
+   },
+   {
+    "count": 1648,
+    "entity": "levels",
+    "field": "Waves"
+   },
+   {
+    "count": 1643,
+    "entity": "levels",
+    "field": "Zombies"
+   },
+   {
+    "count": 1635,
+    "entity": "levels",
+    "field": "NormalPresentTable"
+   },
+   {
+    "count": 1362,
+    "entity": "levels",
+    "field": "AdditionalPlantfood"
+   },
+   {
+    "count": 950,
+    "entity": "levels",
+    "field": "Challenges"
+   },
+   {
+    "count": 305,
+    "entity": "levels",
+    "field": "DynamicPlantfood"
+   },
+   {
+    "count": 276,
+    "entity": "levels",
+    "field": "SuppressPlantfoodPurchase"
+   },
+   {
+    "count": 44,
+    "entity": "plants",
+    "field": "AnimRigClass"
+   }
+  ],
+  "packWorlds": 46,
+  "plantJoinedToPack": 44,
+  "plantJoins": 147,
+  "plantTypeNames": 339,
+  "plantTypes": 339,
+  "sheetsScanned": 2116,
+  "shopItems": 585,
+  "shopPackProducts": 565,
+  "shopZeroPrice": 561,
+  "starEntries": 5427,
+  "systems": 13,
+  "systemsMapped": 6,
+  "systemsPackOnly": 7,
+  "systemsUnverified": 0,
+  "tables": 46,
+  "zombieIdsInContentPack": 20,
+  "zombieJoinedToPack": 28,
+  "zombieJoins": 55,
+  "zombieTypeNames": 1125,
+  "zombieTypes": 1127
+ },
+ "format": 1,
+ "generated": "original-gaps-v1",
+ "packOnlyFields": [
+  {
+   "count": 1806,
+   "entity": "levels",
+   "field": "Modules"
+  },
+  {
+   "count": 1806,
+   "entity": "levels",
+   "field": "StageModule"
+  },
+  {
+   "count": 1802,
+   "entity": "levels",
+   "field": "Loot"
+  },
+  {
+   "count": 1714,
+   "entity": "levels",
+   "field": "WaveManagerProps"
+  },
+  {
+   "count": 1648,
+   "entity": "levels",
+   "field": "Waves"
+  },
+  {
+   "count": 1643,
+   "entity": "levels",
+   "field": "Zombies"
+  },
+  {
+   "count": 1635,
+   "entity": "levels",
+   "field": "NormalPresentTable"
+  },
+  {
+   "count": 1362,
+   "entity": "levels",
+   "field": "AdditionalPlantfood"
+  },
+  {
+   "count": 950,
+   "entity": "levels",
+   "field": "Challenges"
+  },
+  {
+   "count": 305,
+   "entity": "levels",
+   "field": "DynamicPlantfood"
+  },
+  {
+   "count": 276,
+   "entity": "levels",
+   "field": "SuppressPlantfoodPurchase"
+  },
+  {
+   "count": 44,
+   "entity": "plants",
+   "field": "AnimRigClass"
+  },
+  {
+   "count": 44,
+   "entity": "plants",
+   "field": "ArtCenter"
+  },
+  {
+   "count": 44,
+   "entity": "plants",
+   "field": "PlantFramework"
+  },
+  {
+   "count": 44,
+   "entity": "plants",
+   "field": "PlantGridType"
+  },
+  {
+   "count": 44,
+   "entity": "plants",
+   "field": "Properties"
+  },
+  {
+   "count": 44,
+   "entity": "plants",
+   "field": "TypeName"
+  },
+  {
+   "count": 44,
+   "entity": "plants",
+   "field": "ZenGardenBoostCost"
+  },
+  {
+   "count": 44,
+   "entity": "plants",
+   "field": "ZenGardenSproutWeight"
+  },
+  {
+   "count": 44,
+   "entity": "plants",
+   "field": "shatoResourceGroups"
+  },
+  {
+   "count": 42,
+   "entity": "plants",
+   "field": "PlantStats"
+  },
+  {
+   "count": 41,
+   "entity": "plants",
+   "field": "Actions"
+  },
+  {
+   "count": 40,
+   "entity": "plants",
+   "field": "Boosts"
+  },
+  {
+   "count": 28,
+   "entity": "zombies",
+   "field": "AnimRigClass"
+  },
+  {
+   "count": 28,
+   "entity": "zombies",
+   "field": "ArtCenter"
+  },
+  {
+   "count": 28,
+   "entity": "zombies",
+   "field": "AttackRect"
+  },
+  {
+   "count": 28,
+   "entity": "zombies",
+   "field": "CanSpawnPlantFood"
+  },
+  {
+   "count": 28,
+   "entity": "zombies",
+   "field": "Cost"
+  },
+  {
+   "count": 28,
+   "entity": "zombies",
+   "field": "GroundTrackName"
+  },
+  {
+   "count": 28,
+   "entity": "zombies",
+   "field": "HitRect"
+  },
+  {
+   "count": 28,
+   "entity": "zombies",
+   "field": "HomeWorld"
+  },
+  {
+   "count": 28,
+   "entity": "zombies",
+   "field": "IntegerID"
+  },
+  {
+   "count": 28,
+   "entity": "zombies",
+   "field": "Properties"
+  },
+  {
+   "count": 28,
+   "entity": "zombies",
+   "field": "ResourceGroups"
+  },
+  {
+   "count": 28,
+   "entity": "zombies",
+   "field": "ScaledProps"
+  },
+  {
+   "count": 6,
+   "entity": "levels",
+   "field": "SeedPacketList"
+  }
+ ],
+ "sources": {
+  "completeness": "docs/COMPLETENESS.md",
+  "content": "content",
+  "mapping": "native/generated/id_mapping.csv",
+  "obb": "work/obb_packages"
+ },
+ "systems": [
+  {
+   "evidence": [
+    {
+     "count": 1,
+     "field": "Quests",
+     "table": "字段索引（1 张表）"
+    },
+    {
+     "count": 2,
+     "field": "QuestCategories",
+     "table": "字段索引（1 张表）"
+    },
+    {
+     "count": 1,
+     "field": "DailyQuestScheduleDefinitions",
+     "table": "字段索引（1 张表）"
+    },
+    {
+     "count": 23,
+     "field": "CompletionAchievement",
+     "table": "字段索引（23 张表）"
+    },
+    {
+     "count": 6,
+     "field": "Quest",
+     "table": "表名关键词"
+    }
+   ],
+   "id": "achievements_quests",
+   "note": "原版有 QuestMgr / DailyQuestSchedule / CompletionAchievement；客户端没有任何任务或成就表。",
+   "presentInClient": false,
+   "presentInPack": true
+  },
+  {
+   "evidence": [
+    {
+     "count": 167,
+     "field": "AlmanacDataEntries",
+     "table": "字段索引（2 张表）"
+    },
+    {
+     "count": 413,
+     "field": "AlmanacBackdropName",
+     "table": "字段索引（33 张表）"
+    },
+    {
+     "count": 6,
+     "field": "HideFromAlmanac",
+     "table": "字段索引（1 张表）"
+    }
+   ],
+   "id": "almanac_entries",
+   "note": "原版图鉴是 PlantAlmanacData（167 条）；客户端 almanac.json 只有 desc/tip 文案，图鉴 UI 未实现。",
+   "presentInClient": true,
+   "presentInPack": true
+  },
+  {
+   "evidence": [
+    {
+     "count": 1,
+     "field": "SeasonDefinitions",
+     "table": "字段索引（1 张表）"
+    },
+    {
+     "count": 1,
+     "field": "EndOfSeasonManagement",
+     "table": "字段索引（1 张表）"
+    },
+    {
+     "count": 1,
+     "field": "DailyQuestScheduleDefinitions",
+     "table": "字段索引（1 张表）"
+    },
+    {
+     "count": 10,
+     "field": "Joust",
+     "table": "表名关键词"
+    },
+    {
+     "count": 2,
+     "field": "Season",
+     "table": "表名关键词"
+    },
+    {
+     "count": 1,
+     "field": "Daily",
+     "table": "表名关键词"
+    }
+   ],
+   "id": "daily_season",
+   "note": "原版有 Joust 赛季与每日任务排期；客户端没有赛季/每日数据。",
+   "presentInClient": false,
+   "presentInPack": true
+  },
+  {
+   "evidence": [
+    {
+     "count": 3,
+     "field": "LevelLootKey",
+     "table": "字段索引（1 张表）"
+    },
+    {
+     "count": 27,
+     "field": "key_gate",
+     "table": "pkg_2107_WorldData.m_eventList"
+    }
+   ],
+   "id": "key_drops",
+   "note": "原版世界门要钥匙（WorldData key_gate），关卡掉落也有 key 通道；客户端只有世界地图 key_required 布尔。",
+   "presentInClient": true,
+   "presentInPack": true
+  },
+  {
+   "evidence": [
+    {
+     "count": 1802,
+     "field": "Loot",
+     "table": "字段索引（1802 张表）"
+    },
+    {
+     "count": 476,
+     "field": "FirstRewardType",
+     "table": "字段索引（476 张表）"
+    },
+    {
+     "count": 458,
+     "field": "FirstRewardParam",
+     "table": "字段索引（458 张表）"
+    },
+    {
+     "count": 66,
+     "field": "ReplayRewardType",
+     "table": "字段索引（66 张表）"
+    },
+    {
+     "count": 1635,
+     "field": "NormalPresentTable",
+     "table": "字段索引（1635 张表）"
+    },
+    {
+     "count": 1634,
+     "field": "ShinyPresentTable",
+     "table": "字段索引（1634 张表）"
+    },
+    {
+     "count": 95,
+     "field": "AwardDrop",
+     "table": "字段索引（3 张表）"
+    }
+   ],
+   "id": "level_rewards",
+   "note": "原版关卡带掉落表/首通奖励/重复奖励；客户端关卡 JSON 只有 id/world/index/sun/deck/waves/flags/seed_bank/extra（bosses.json 的 reward 是 Boss 击杀奖励，不是关卡结算表，不计入）。",
+   "presentInClient": false,
+   "presentInPack": true
+  },
+  {
+   "evidence": [
+    {
+     "count": 6,
+     "field": "UnlimitedMowers",
+     "table": "字段索引（4 张表）"
+    },
+    {
+     "count": 46,
+     "field": "MowerPopAnim",
+     "table": "字段索引（6 张表）"
+    },
+    {
+     "count": 34,
+     "field": "MowerActivatedAudioEvent",
+     "table": "字段索引（5 张表）"
+    },
+    {
+     "count": 34,
+     "field": "MowerEntryAnimDuration",
+     "table": "字段索引（5 张表）"
+    },
+    {
+     "count": 169,
+     "field": "ModernMowers",
+     "table": "LevelDefinition.Modules"
+    }
+   ],
+   "id": "mower_config",
+   "note": "原版关卡可配小推车数量/动画/音效；客户端只有固定 5 台（stars 里用 mowers 当目标）。",
+   "presentInClient": false,
+   "presentInPack": true
+  },
+  {
+   "evidence": [
+    {
+     "count": 8351,
+     "field": "AdditionalPlantfood",
+     "table": "字段索引（1363 张表）"
+    },
+    {
+     "count": 1163,
+     "field": "DynamicPlantfood",
+     "table": "字段索引（305 张表）"
+    },
+    {
+     "count": 180,
+     "field": "PlantfoodToSpawnCount",
+     "table": "字段索引（180 张表）"
+    },
+    {
+     "count": 90,
+     "field": "StartingPlantfood",
+     "table": "字段索引（86 张表）"
+    },
+    {
+     "count": 311,
+     "field": "SpawnWavesBetweenPlantFood",
+     "table": "字段索引（17 张表）"
+    },
+    {
+     "count": 311,
+     "field": "SpawnWavesBetweenPlantFood",
+     "table": "字段索引（17 张表）"
+    },
+    {
+     "count": 1122,
+     "field": "CanSpawnPlantFood",
+     "table": "字段索引（102 张表）"
+    },
+    {
+     "count": 71,
+     "field": "ZombossBattle",
+     "table": "LevelDefinition.Modules"
+    }
+   ],
+   "id": "plantfood_drop",
+   "note": "原版按波次/关卡投放养料；客户端只有 plants[].plantfood 布尔开关，没有投放节奏。",
+   "presentInClient": false,
+   "presentInPack": true
+  },
+  {
+   "evidence": [
+    {
+     "count": 276,
+     "field": "SuppressPlantfoodPurchase",
+     "table": "字段索引（276 张表）"
+    },
+    {
+     "count": 132,
+     "field": "SuppressAccountUpgrades",
+     "table": "字段索引（132 张表）"
+    },
+    {
+     "count": 90,
+     "field": "StartingPlantfood",
+     "table": "字段索引（86 张表）"
+    }
+   ],
+   "id": "plantfood_purchase",
+   "note": "原版有「是否允许买养料」的关卡级开关；客户端没有货币与购买链路。",
+   "presentInClient": false,
+   "presentInPack": true
+  },
+  {
+   "evidence": [
+    {
+     "count": 46,
+     "field": "Vases",
+     "table": "字段索引（46 张表）"
+    },
+    {
+     "count": 46,
+     "field": "NumColoredPlantVases",
+     "table": "字段索引（46 张表）"
+    },
+    {
+     "count": 46,
+     "field": "NumColoredZombieVases",
+     "table": "字段索引（46 张表）"
+    },
+    {
+     "count": 15,
+     "field": "SeedDropList",
+     "table": "字段索引（15 张表）"
+    },
+    {
+     "count": 6,
+     "field": "SeedPacketList",
+     "table": "字段索引（6 张表）"
+    },
+    {
+     "count": 47,
+     "field": "VaseBreaker*",
+     "table": "LevelDefinition.Modules"
+    }
+   ],
+   "id": "seeds_and_vases",
+   "note": "原版砸罐子/种子掉落是关卡数据；客户端只有 minigames.json 的 45 关预排罐子。",
+   "presentInClient": true,
+   "presentInPack": true
+  },
+  {
+   "evidence": [
+    {
+     "count": 565,
+     "field": "Sku",
+     "table": "字段索引（1 张表）"
+    },
+    {
+     "count": 565,
+     "field": "Price",
+     "table": "字段索引（1 张表）"
+    },
+    {
+     "count": 565,
+     "field": "PriceCoins",
+     "table": "字段索引（1 张表）"
+    },
+    {
+     "count": 562,
+     "field": "PriceGems",
+     "table": "字段索引（1 张表）"
+    },
+    {
+     "count": 565,
+     "field": "PriceMints",
+     "table": "字段索引（1 张表）"
+    },
+    {
+     "count": 565,
+     "field": "ObjectType",
+     "table": "字段索引（1 张表）"
+    },
+    {
+     "count": 565,
+     "field": "ObjectCount",
+     "table": "字段索引（1 张表）"
+    },
+    {
+     "count": 565,
+     "field": "IsFree",
+     "table": "字段索引（1 张表）"
+    }
+   ],
+   "id": "shop_products",
+   "note": "原版 StoreProductProps 565 件；客户端 shop.json 585 件，其中 565 个 sku 对齐、20 个是客户端独有。",
+   "presentInClient": true,
+   "presentInPack": true
+  },
+  {
+   "evidence": [
+    {
+     "count": 478,
+     "field": "ImpactSoundEvent",
+     "table": "字段索引（17 张表）"
+    },
+    {
+     "count": 16,
+     "field": "DropSoundEvent",
+     "table": "字段索引（2 张表）"
+    },
+    {
+     "count": 51,
+     "field": "SoundOnStart",
+     "table": "字段索引（10 张表）"
+    },
+    {
+     "count": 39,
+     "field": "SoundOnDeath",
+     "table": "字段索引（3 张表）"
+    },
+    {
+     "count": 11,
+     "field": "SoundOnEat",
+     "table": "字段索引（2 张表）"
+    },
+    {
+     "count": 2,
+     "field": "SoundOnSummon",
+     "table": "字段索引（2 张表）"
+    },
+    {
+     "count": 5,
+     "field": "AnimationSoundFX",
+     "table": "字段索引（2 张表）"
+    }
+   ],
+   "id": "sound_events",
+   "note": "原版每类实体带音效事件名（Impact/Drop/OnEat…）；客户端 content 里没有任何音效字段。",
+   "presentInClient": false,
+   "presentInPack": true
+  },
+  {
+   "evidence": [
+    {
+     "count": 954,
+     "field": "Challenges",
+     "table": "字段索引（950 张表）"
+    },
+    {
+     "count": 17,
+     "field": "TargetScore",
+     "table": "字段索引（15 张表）"
+    },
+    {
+     "count": 17,
+     "field": "ScoringRulesType",
+     "table": "字段索引（17 张表）"
+    },
+    {
+     "count": 30,
+     "field": "StarChallengeUnlockLevel",
+     "table": "字段索引（2 张表）"
+    }
+   ],
+   "id": "star_challenges",
+   "note": "原版星章目标在 LevelDefinition.Challenges；客户端 stars.json 是 1809 关 × 3 条自创目标。",
+   "presentInClient": true,
+   "presentInPack": true
+  },
+  {
+   "evidence": [
+    {
+     "count": 371,
+     "field": "ZenGardenSproutWeight",
+     "table": "字段索引（1 张表）"
+    },
+    {
+     "count": 371,
+     "field": "ZenGardenBoostCost",
+     "table": "字段索引（1 张表）"
+    },
+    {
+     "count": 359,
+     "field": "ZenGardenDurationOverrideSeconds",
+     "table": "字段索引（1 张表）"
+    },
+    {
+     "count": 5,
+     "field": "IsZenGardenWaterPlant",
+     "table": "字段索引（1 张表）"
+    },
+    {
+     "count": 4,
+     "field": "IsZenGardenTreasurePlant",
+     "table": "字段索引（1 张表）"
+    }
+   ],
+   "id": "zen_garden",
+   "note": "原版花园参数挂在 PlantPropertySheet 的 ZenGarden* 字段；客户端 garden.json 是 8 盆的自创简化模型。",
+   "presentInClient": true,
+   "presentInPack": true
+  }
+ ],
+ "tables": [
+  {
+   "agree": 0,
+   "clientField": "metal",
+   "clientOnly": 14,
+   "entity": "armor",
+   "field": "ArmorFlags",
+   "mapped": 2,
+   "packOnly": 32,
+   "records": 16,
+   "samples": [
+    {
+     "client": "conehead:BasicCone",
+     "pack": "[\"passdamage\", \"invincible\", \"droppable\", \"metallic\"]"
+    },
+    {
+     "client": "buckethead:BasicBucket",
+     "pack": "[\"passdamage\", \"helm\", \"invincible\", \"metallic\"]"
+    }
+   ]
+  },
+  {
+   "agree": 0,
+   "clientField": "armature",
+   "clientOnly": 7,
+   "entity": "armor",
+   "field": "ArmorLayers",
+   "mapped": 1,
+   "packOnly": 27,
+   "records": 16,
+   "samples": [
+    {
+     "client": "buckethead:BasicBucket",
+     "pack": "[\"zombie_armor_bucket_norm\"]"
+    }
+   ]
+  },
+  {
+   "agree": 0,
+   "clientField": "art",
+   "clientOnly": 14,
+   "entity": "armor",
+   "field": "ArmorType",
+   "mapped": 2,
+   "packOnly": 34,
+   "records": 16,
+   "samples": [
+    {
+     "client": "conehead:BasicCone",
+     "pack": "BasicCone"
+    },
+    {
+     "client": "buckethead:BasicBucket",
+     "pack": "BasicBucket"
+    }
+   ]
+  },
+  {
+   "agree": 0,
+   "clientField": "hp",
+   "clientOnly": 14,
+   "entity": "armor",
+   "field": "BaseHealth",
+   "mapped": 2,
+   "packOnly": 34,
+   "records": 16,
+   "samples": [
+    {
+     "client": "conehead:BasicCone",
+     "pack": "1000.0"
+    },
+    {
+     "client": "buckethead:BasicBucket",
+     "pack": "1000"
+    }
+   ]
+  },
+  {
+   "agree": 0,
+   "clientField": "id",
+   "clientOnly": 26,
+   "entity": "bosses",
+   "field": "ZombossMechType",
+   "mapped": 0,
+   "packOnly": 71,
+   "records": 26,
+   "samples": []
+  },
+  {
+   "agree": 0,
+   "clientField": "hp",
+   "clientOnly": 26,
+   "entity": "bosses",
+   "field": "ZombossPhaseCount",
+   "mapped": 0,
+   "packOnly": 71,
+   "records": 26,
+   "samples": []
+  },
+  {
+   "agree": 0,
+   "clientField": "phases",
+   "clientOnly": 26,
+   "entity": "bosses",
+   "field": "ZombossPhases",
+   "mapped": 0,
+   "packOnly": 71,
+   "records": 26,
+   "samples": []
+  },
+  {
+   "agree": 0,
+   "clientField": "ingredients",
+   "clientOnly": 0,
+   "entity": "fusion",
+   "field": "FusionPlant",
+   "mapped": 85,
+   "packOnly": 0,
+   "records": 85,
+   "samples": [
+    {
+     "client": "wintermelon+wintermelon",
+     "pack": "wintermelon"
+    },
+    {
+     "client": "kernelpult+kernelpult",
+     "pack": "kernelpult"
+    },
+    {
+     "client": "peashooter+peashooter",
+     "pack": "peashooter"
+    },
+    {
+     "client": "sunflower+sunflower",
+     "pack": "sunflower"
+    },
+    {
+     "client": "iceburg+peashooter",
+     "pack": "iceburg"
+    }
+   ]
+  },
+  {
+   "agree": 0,
+   "clientField": "result",
+   "clientOnly": 0,
+   "entity": "fusion",
+   "field": "ResultPlant",
+   "mapped": 85,
+   "packOnly": 0,
+   "records": 85,
+   "samples": [
+    {
+     "client": "wintermelon+wintermelon",
+     "pack": "wintergeddon"
+    },
+    {
+     "client": "kernelpult+kernelpult",
+     "pack": "paradoxpult"
+    },
+    {
+     "client": "peashooter+peashooter",
+     "pack": "repeater1"
+    },
+    {
+     "client": "sunflower+sunflower",
+     "pack": "primalsunflower"
+    },
+    {
+     "client": "iceburg+peashooter",
+     "pack": "snowpea"
+    }
+   ]
+  },
+  {
+   "agree": 0,
+   "clientField": "ingredients",
+   "clientOnly": 0,
+   "entity": "fusion",
+   "field": "SourcePlant",
+   "mapped": 85,
+   "packOnly": 0,
+   "records": 85,
+   "samples": [
+    {
+     "client": "wintermelon+wintermelon",
+     "pack": "wintermelon"
+    },
+    {
+     "client": "kernelpult+kernelpult",
+     "pack": "kernelpult"
+    },
+    {
+     "client": "peashooter+peashooter",
+     "pack": "peashooter"
+    },
+    {
+     "client": "sunflower+sunflower",
+     "pack": "sunflower"
+    },
+    {
+     "client": "iceburg+peashooter",
+     "pack": "peashooter"
+    }
+   ]
+  },
+  {
+   "agree": 0,
+   "clientField": "flags",
+   "clientOnly": 1630,
+   "entity": "levels",
+   "field": "FlagCount",
+   "mapped": 179,
+   "packOnly": 0,
+   "records": 1809,
+   "samples": [
+    {
+     "client": "beach_24",
+     "pack": "[1]"
+    },
+    {
+     "client": "beach_25",
+     "pack": "[1]"
+    },
+    {
+     "client": "beach_3",
+     "pack": "[2]"
+    },
+    {
+     "client": "beach_66",
+     "pack": "[4]"
+    },
+    {
+     "client": "beach_76",
+     "pack": "[2]"
+    }
+   ]
+  },
+  {
+   "agree": 0,
+   "clientField": "deck",
+   "clientOnly": 1464,
+   "entity": "levels",
+   "field": "InitialPlantList",
+   "mapped": 345,
+   "packOnly": 0,
+   "records": 1809,
+   "samples": [
+    {
+     "client": "beach_12",
+     "pack": "[[{\"MaxCount\": 15, \"MaxWeightFactor\": 0, \"MinCount\": 5, \"Mi…"
+    },
+    {
+     "client": "beach_15",
+     "pack": "[[{\"MaxCount\": 3, \"MaxWeightFactor\": 0, \"PlantType\": \"tool_…"
+    },
+    {
+     "client": "beach_16",
+     "pack": "[[{\"MaxCount\": 10, \"MaxCountCooldownSeconds\": 20, \"MaxWeigh…"
+    },
+    {
+     "client": "beach_19",
+     "pack": "[[{\"ForceBoosted\": true, \"MaxCount\": 6, \"MaxWeightFactor\": …"
+    },
+    {
+     "client": "beach_21",
+     "pack": "[[{\"MaxCount\": 3, \"MaxWeightFactor\": 0, \"PlantType\": \"tool_…"
+    }
+   ]
+  },
+  {
+   "agree": 0,
+   "clientField": "extra.level_number",
+   "clientOnly": 32,
+   "entity": "levels",
+   "field": "LevelNumber",
+   "mapped": 1777,
+   "packOnly": 0,
+   "records": 1809,
+   "samples": [
+    {
+     "client": "beach_1",
+     "pack": "[1]"
+    },
+    {
+     "client": "beach_10",
+     "pack": "[6]"
+    },
+    {
+     "client": "beach_11",
+     "pack": "[7]"
+    },
+    {
+     "client": "beach_12",
+     "pack": "[8]"
+    },
+    {
+     "client": "beach_13",
+     "pack": "[9]"
+    }
+   ]
+  },
+  {
+   "agree": 0,
+   "clientField": "seed_bank",
+   "clientOnly": 1019,
+   "entity": "levels",
+   "field": "PresetPlantList",
+   "mapped": 790,
+   "packOnly": 0,
+   "records": 1809,
+   "samples": [
+    {
+     "client": "beach_1",
+     "pack": "[[{\"Level\": -1, \"PlantType\": \"lilypad\"}]]"
+    },
+    {
+     "client": "beach_13",
+     "pack": "[[{\"Level\": -1, \"PlantType\": \"sunflower\"}, {\"Level\": -1, \"P…"
+    },
+    {
+     "client": "beach_18",
+     "pack": "[[{\"Level\": -1, \"PlantType\": \"lilypad\"}, {\"Level\": -1, \"Pla…"
+    },
+    {
+     "client": "beach_2",
+     "pack": "[[{\"Level\": -1, \"PlantType\": \"lilypad\"}]]"
+    },
+    {
+     "client": "beach_20",
+     "pack": "[[{\"Level\": -1, \"PlantType\": \"potatomine\"}]]"
+    }
+   ]
+  },
+  {
+   "agree": 0,
+   "clientField": "sun",
+   "clientOnly": 1432,
+   "entity": "levels",
+   "field": "StartingSun",
+   "mapped": 377,
+   "packOnly": 0,
+   "records": 1809,
+   "samples": [
+    {
+     "client": "beach_17",
+     "pack": "[3000]"
+    },
+    {
+     "client": "beach_23",
+     "pack": "[400]"
+    },
+    {
+     "client": "beach_27",
+     "pack": "[400]"
+    },
+    {
+     "client": "beach_3",
+     "pack": "[1000]"
+    },
+    {
+     "client": "beach_31",
+     "pack": "[200]"
+    }
+   ]
+  },
+  {
+   "agree": 0,
+   "clientField": "waves",
+   "clientOnly": 223,
+   "entity": "levels",
+   "field": "WaveCount",
+   "mapped": 1586,
+   "packOnly": 0,
+   "records": 1809,
+   "samples": [
+    {
+     "client": "beach_1",
+     "pack": "[12]"
+    },
+    {
+     "client": "beach_10",
+     "pack": "[12]"
+    },
+    {
+     "client": "beach_11",
+     "pack": "[16]"
+    },
+    {
+     "client": "beach_12",
+     "pack": "[18]"
+    },
+    {
+     "client": "beach_13",
+     "pack": "[15]"
+    }
+   ]
+  },
+  {
+   "agree": 1,
+   "clientField": "plantfood",
+   "clientOnly": 118,
+   "entity": "plantfood",
+   "field": "PlantFoodDurationSeconds",
+   "mapped": 17,
+   "packOnly": 6,
+   "records": 147,
+   "samples": [
+    {
+     "client": "peashooter",
+     "pack": "2"
+    },
+    {
+     "client": "snowpea",
+     "pack": "2"
+    },
+    {
+     "client": "repeater",
+     "pack": "2"
+    },
+    {
+     "client": "bloomerang",
+     "pack": "1.53"
+    },
+    {
+     "client": "fumeshroom",
+     "pack": "5"
+    }
+   ]
+  },
+  {
+   "agree": 11,
+   "clientField": "plantfood",
+   "clientOnly": 121,
+   "entity": "plantfood",
+   "field": "PlantFoodPlayCount",
+   "mapped": 14,
+   "packOnly": 6,
+   "records": 147,
+   "samples": [
+    {
+     "client": "sunflower",
+     "pack": "2"
+    },
+    {
+     "client": "wallnut",
+     "pack": "1"
+    },
+    {
+     "client": "potatomine",
+     "pack": "1"
+    },
+    {
+     "client": "cabbagepult",
+     "pack": "1"
+    },
+    {
+     "client": "kernelpult",
+     "pack": "2"
+    }
+   ]
+  },
+  {
+   "agree": 42,
+   "clientField": "cost",
+   "clientOnly": 103,
+   "entity": "plants",
+   "field": "Cost",
+   "mapped": 44,
+   "packOnly": 0,
+   "records": 147,
+   "samples": [
+    {
+     "client": "peashooter",
+     "pack": "100"
+    },
+    {
+     "client": "sunflower",
+     "pack": "50"
+    },
+    {
+     "client": "wallnut",
+     "pack": "50"
+    },
+    {
+     "client": "potatomine",
+     "pack": "25"
+    },
+    {
+     "client": "snowpea",
+     "pack": "150"
+    }
+   ]
+  },
+  {
+   "agree": 42,
+   "clientField": "hp",
+   "clientOnly": 103,
+   "entity": "plants",
+   "field": "Hitpoints",
+   "mapped": 44,
+   "packOnly": 0,
+   "records": 147,
+   "samples": [
+    {
+     "client": "peashooter",
+     "pack": "300"
+    },
+    {
+     "client": "sunflower",
+     "pack": "300"
+    },
+    {
+     "client": "wallnut",
+     "pack": "4000"
+    },
+    {
+     "client": "potatomine",
+     "pack": "300"
+    },
+    {
+     "client": "snowpea",
+     "pack": "300"
+    }
+   ]
+  },
+  {
+   "agree": 1,
+   "clientField": "almanac_no",
+   "clientOnly": 103,
+   "entity": "plants",
+   "field": "IntegerID",
+   "mapped": 44,
+   "packOnly": 0,
+   "records": 147,
+   "samples": [
+    {
+     "client": "peashooter",
+     "pack": "2"
+    },
+    {
+     "client": "sunflower",
+     "pack": "1"
+    },
+    {
+     "client": "wallnut",
+     "pack": "3"
+    },
+    {
+     "client": "potatomine",
+     "pack": "13"
+    },
+    {
+     "client": "snowpea",
+     "pack": "21"
+    }
+   ]
+  },
+  {
+   "agree": 40,
+   "clientField": "cooldown",
+   "clientOnly": 103,
+   "entity": "plants",
+   "field": "PacketCooldown",
+   "mapped": 44,
+   "packOnly": 0,
+   "records": 147,
+   "samples": [
+    {
+     "client": "peashooter",
+     "pack": "5"
+    },
+    {
+     "client": "sunflower",
+     "pack": "5"
+    },
+    {
+     "client": "wallnut",
+     "pack": "20"
+    },
+    {
+     "client": "potatomine",
+     "pack": "20"
+    },
+    {
+     "client": "snowpea",
+     "pack": "5"
+    }
+   ]
+  },
+  {
+   "agree": 1,
+   "clientField": "plantfood",
+   "clientOnly": 118,
+   "entity": "plants",
+   "field": "PlantFoodDurationSeconds",
+   "mapped": 17,
+   "packOnly": 6,
+   "records": 147,
+   "samples": [
+    {
+     "client": "peashooter",
+     "pack": "2"
+    },
+    {
+     "client": "snowpea",
+     "pack": "2"
+    },
+    {
+     "client": "repeater",
+     "pack": "2"
+    },
+    {
+     "client": "bloomerang",
+     "pack": "1.53"
+    },
+    {
+     "client": "fumeshroom",
+     "pack": "5"
+    }
+   ]
+  },
+  {
+   "agree": 0,
+   "clientField": "art",
+   "clientOnly": 103,
+   "entity": "plants",
+   "field": "PopAnim",
+   "mapped": 44,
+   "packOnly": 0,
+   "records": 147,
+   "samples": [
+    {
+     "client": "peashooter",
+     "pack": "POPANIM_PLANT_PEASHOOTER"
+    },
+    {
+     "client": "sunflower",
+     "pack": "POPANIM_PLANT_SUNFLOWER"
+    },
+    {
+     "client": "wallnut",
+     "pack": "POPANIM_PLANT_WALLNUT"
+    },
+    {
+     "client": "potatomine",
+     "pack": "POPANIM_PLANT_POTATOMINE"
+    },
+    {
+     "client": "snowpea",
+     "pack": "POPANIM_PLANT_SNOWPEA"
+    }
+   ]
+  },
+  {
+   "agree": 0,
+   "clientField": "plants",
+   "clientOnly": 11,
+   "entity": "projectiles",
+   "field": "BaseDamage",
+   "mapped": 0,
+   "packOnly": 127,
+   "records": 11,
+   "samples": []
+  },
+  {
+   "agree": 0,
+   "clientField": "projectile",
+   "clientOnly": 11,
+   "entity": "projectiles",
+   "field": "ClassName",
+   "mapped": 0,
+   "packOnly": 131,
+   "records": 11,
+   "samples": []
+  },
+  {
+   "agree": 0,
+   "clientField": "plants",
+   "clientOnly": 11,
+   "entity": "projectiles",
+   "field": "CollisionFlags",
+   "mapped": 0,
+   "packOnly": 130,
+   "records": 11,
+   "samples": []
+  },
+  {
+   "agree": 1,
+   "clientField": "one_time",
+   "clientOnly": 584,
+   "entity": "shop",
+   "field": "IsOneTimePurchase",
+   "mapped": 1,
+   "packOnly": 0,
+   "records": 585,
+   "samples": [
+    {
+     "client": "obb_worldkey.rainbowmarket",
+     "pack": "True"
+    }
+   ]
+  },
+  {
+   "agree": 565,
+   "clientField": "item_type",
+   "clientOnly": 20,
+   "entity": "shop",
+   "field": "ObjectType",
+   "mapped": 565,
+   "packOnly": 0,
+   "records": 585,
+   "samples": [
+    {
+     "client": "obb_com.pvz2.plant.torchwood",
+     "pack": "plant"
+    },
+    {
+     "client": "obb_com.pvz2.plant.torpedofruit",
+     "pack": "plant"
+    },
+    {
+     "client": "obb_com.pvz2.plant.jasmine",
+     "pack": "plant"
+    },
+    {
+     "client": "obb_com.pvz2.plant.rheumnobile",
+     "pack": "plant"
+    },
+    {
+     "client": "obb_com.pvz2.plant.seaflora",
+     "pack": "plant"
+    }
+   ]
+  },
+  {
+   "agree": 10,
+   "clientField": "price",
+   "clientOnly": 20,
+   "entity": "shop",
+   "field": "Price",
+   "mapped": 565,
+   "packOnly": 0,
+   "records": 585,
+   "samples": [
+    {
+     "client": "obb_com.pvz2.plant.torchwood",
+     "pack": "0"
+    },
+    {
+     "client": "obb_com.pvz2.plant.torpedofruit",
+     "pack": "0"
+    },
+    {
+     "client": "obb_com.pvz2.plant.jasmine",
+     "pack": "0"
+    },
+    {
+     "client": "obb_com.pvz2.plant.rheumnobile",
+     "pack": "0"
+    },
+    {
+     "client": "obb_com.pvz2.plant.seaflora",
+     "pack": "0"
+    }
+   ]
+  },
+  {
+   "agree": 2,
+   "clientField": "price_gems",
+   "clientOnly": 23,
+   "entity": "shop",
+   "field": "PriceGems",
+   "mapped": 562,
+   "packOnly": 0,
+   "records": 585,
+   "samples": [
+    {
+     "client": "obb_com.pvz2.plant.torchwood",
+     "pack": "0"
+    },
+    {
+     "client": "obb_com.pvz2.plant.torpedofruit",
+     "pack": "30"
+    },
+    {
+     "client": "obb_com.pvz2.plant.jasmine",
+     "pack": "0"
+    },
+    {
+     "client": "obb_com.pvz2.plant.rheumnobile",
+     "pack": "0"
+    },
+    {
+     "client": "obb_com.pvz2.plant.seaflora",
+     "pack": "0"
+    }
+   ]
+  },
+  {
+   "agree": 2,
+   "clientField": "price_mints",
+   "clientOnly": 20,
+   "entity": "shop",
+   "field": "PriceMints",
+   "mapped": 565,
+   "packOnly": 0,
+   "records": 585,
+   "samples": [
+    {
+     "client": "obb_com.pvz2.plant.torchwood",
+     "pack": "0"
+    },
+    {
+     "client": "obb_com.pvz2.plant.torpedofruit",
+     "pack": "0"
+    },
+    {
+     "client": "obb_com.pvz2.plant.jasmine",
+     "pack": "15"
+    },
+    {
+     "client": "obb_com.pvz2.plant.rheumnobile",
+     "pack": "0"
+    },
+    {
+     "client": "obb_com.pvz2.plant.seaflora",
+     "pack": "0"
+    }
+   ]
+  },
+  {
+   "agree": 565,
+   "clientField": "sku",
+   "clientOnly": 20,
+   "entity": "shop",
+   "field": "Sku",
+   "mapped": 565,
+   "packOnly": 0,
+   "records": 585,
+   "samples": [
+    {
+     "client": "obb_com.pvz2.plant.torchwood",
+     "pack": "com.pvz2.plant.torchwood"
+    },
+    {
+     "client": "obb_com.pvz2.plant.torpedofruit",
+     "pack": "com.pvz2.plant.torpedofruit"
+    },
+    {
+     "client": "obb_com.pvz2.plant.jasmine",
+     "pack": "com.pvz2.plant.jasmine"
+    },
+    {
+     "client": "obb_com.pvz2.plant.rheumnobile",
+     "pack": "com.pvz2.plant.rheumnobile"
+    },
+    {
+     "client": "obb_com.pvz2.plant.seaflora",
+     "pack": "com.pvz2.plant.seaflora"
+    }
+   ]
+  },
+  {
+   "agree": 0,
+   "clientField": "stars",
+   "clientOnly": 859,
+   "entity": "stars",
+   "field": "Challenges",
+   "mapped": 950,
+   "packOnly": 0,
+   "records": 1809,
+   "samples": [
+    {
+     "client": "beach_11",
+     "pack": "[[[\"RTID(DoNotPlantBeforeLine@CurrentLevel)\"]]]"
+    },
+    {
+     "client": "beach_12",
+     "pack": "[[[\"RTID(BeatTheLevel@CurrentLevel)\", \"RTID(SaveMowers@Leve…"
+    },
+    {
+     "client": "beach_13",
+     "pack": "[[[\"RTID(BeatTheLevel@CurrentLevel)\"]]]"
+    },
+    {
+     "client": "beach_14",
+     "pack": "[[[\"RTID(BeatTheLevel@CurrentLevel)\"]]]"
+    },
+    {
+     "client": "beach_17",
+     "pack": "[[[\"RTID(BeatTheLevel@CurrentLevel)\"]]]"
+    }
+   ]
+  },
+  {
+   "agree": 0,
+   "clientField": "stars",
+   "clientOnly": 1809,
+   "entity": "stars",
+   "field": "TargetScore",
+   "mapped": 0,
+   "packOnly": 0,
+   "records": 1809,
+   "samples": []
+  },
+  {
+   "agree": 0,
+   "clientField": "flags",
+   "clientOnly": 1630,
+   "entity": "waves",
+   "field": "FlagCount",
+   "mapped": 179,
+   "packOnly": 0,
+   "records": 1809,
+   "samples": [
+    {
+     "client": "beach_24",
+     "pack": "[1]"
+    },
+    {
+     "client": "beach_25",
+     "pack": "[1]"
+    },
+    {
+     "client": "beach_3",
+     "pack": "[2]"
+    },
+    {
+     "client": "beach_66",
+     "pack": "[4]"
+    },
+    {
+     "client": "beach_76",
+     "pack": "[2]"
+    }
+   ]
+  },
+  {
+   "agree": 0,
+   "clientField": "waves",
+   "clientOnly": 95,
+   "entity": "waves",
+   "field": "WaveManagerProps",
+   "mapped": 1714,
+   "packOnly": 0,
+   "records": 1809,
+   "samples": [
+    {
+     "client": "beach_1",
+     "pack": "[\"RTID(WaveManagerProps@CurrentLevel)\"]"
+    },
+    {
+     "client": "beach_10",
+     "pack": "[\"RTID(WaveManagerProps@CurrentLevel)\"]"
+    },
+    {
+     "client": "beach_11",
+     "pack": "[\"RTID(WaveManagerProps@CurrentLevel)\"]"
+    },
+    {
+     "client": "beach_12",
+     "pack": "[\"RTID(WaveManagerProps@CurrentLevel)\"]"
+    },
+    {
+     "client": "beach_13",
+     "pack": "[\"RTID(WaveManagerProps@CurrentLevel)\"]"
+    }
+   ]
+  },
+  {
+   "agree": 0,
+   "clientField": "waves",
+   "clientOnly": 161,
+   "entity": "waves",
+   "field": "Waves",
+   "mapped": 1648,
+   "packOnly": 0,
+   "records": 1809,
+   "samples": [
+    {
+     "client": "beach_1",
+     "pack": "[[[\"RTID(Wave1@CurrentLevel)\"], [\"RTID(Wave2@CurrentLevel)\"…"
+    },
+    {
+     "client": "beach_10",
+     "pack": "[[[\"RTID(Wave1@CurrentLevel)\"], [\"RTID(Wave2@CurrentLevel)\"…"
+    },
+    {
+     "client": "beach_11",
+     "pack": "[[[\"RTID(Wave1@CurrentLevel)\"], [\"RTID(Wave2@CurrentLevel)\"…"
+    },
+    {
+     "client": "beach_12",
+     "pack": "[[[\"RTID(Wave1@CurrentLevel)\"], [\"RTID(Wave2@CurrentLevel)\"…"
+    },
+    {
+     "client": "beach_13",
+     "pack": "[[[\"RTID(Wave1@CurrentLevel)\"], [\"RTID(Wave2@CurrentLevel)\"…"
+    }
+   ]
+  },
+  {
+   "agree": 0,
+   "clientField": "levels",
+   "clientOnly": 4,
+   "entity": "worlds",
+   "field": "_levelEvents",
+   "mapped": 22,
+   "packOnly": 0,
+   "records": 26,
+   "samples": [
+    {
+     "client": "egypt",
+     "pack": "26"
+    },
+    {
+     "client": "pirate",
+     "pack": "27"
+    },
+    {
+     "client": "cowboy",
+     "pack": "24"
+    },
+    {
+     "client": "dark",
+     "pack": "24"
+    },
+    {
+     "client": "beach",
+     "pack": "23"
+    }
+   ]
+  },
+  {
+   "agree": 0,
+   "clientField": "map",
+   "clientOnly": 5,
+   "entity": "worlds",
+   "field": "m_mapPieces",
+   "mapped": 21,
+   "packOnly": 23,
+   "records": 26,
+   "samples": [
+    {
+     "client": "egypt",
+     "pack": "[{\"m_drawLayer\": 0, \"m_eventType\": \"island\", \"m_imageID\": 0…"
+    },
+    {
+     "client": "pirate",
+     "pack": "[{\"m_drawLayer\": 0, \"m_eventType\": \"island\", \"m_imageID\": 1…"
+    },
+    {
+     "client": "cowboy",
+     "pack": "[{\"m_drawLayer\": 0, \"m_eventType\": \"island\", \"m_imageID\": 5…"
+    },
+    {
+     "client": "dark",
+     "pack": "[{\"m_drawLayer\": 0, \"m_eventType\": \"island\", \"m_imageID\": 1…"
+    },
+    {
+     "client": "beach",
+     "pack": "[{\"m_drawLayer\": -1, \"m_eventType\": \"island\", \"m_imageID\": …"
+    }
+   ]
+  },
+  {
+   "agree": 19,
+   "clientField": "id",
+   "clientOnly": 4,
+   "entity": "worlds",
+   "field": "m_worldName",
+   "mapped": 22,
+   "packOnly": 24,
+   "records": 26,
+   "samples": [
+    {
+     "client": "egypt",
+     "pack": "egypt"
+    },
+    {
+     "client": "pirate",
+     "pack": "pirate"
+    },
+    {
+     "client": "cowboy",
+     "pack": "cowboy"
+    },
+    {
+     "client": "dark",
+     "pack": "dark"
+    },
+    {
+     "client": "beach",
+     "pack": "beach"
+    }
+   ]
+  },
+  {
+   "agree": 0,
+   "clientField": "armor",
+   "clientOnly": 16,
+   "entity": "zombies",
+   "field": "ArmorType",
+   "mapped": 0,
+   "packOnly": 0,
+   "records": 55,
+   "samples": []
+  },
+  {
+   "agree": 24,
+   "clientField": "eat_dps",
+   "clientOnly": 27,
+   "entity": "zombies",
+   "field": "EatDPS",
+   "mapped": 28,
+   "packOnly": 0,
+   "records": 55,
+   "samples": [
+    {
+     "client": "basic",
+     "pack": "100"
+    },
+    {
+     "client": "conehead",
+     "pack": "100"
+    },
+    {
+     "client": "buckethead",
+     "pack": "100"
+    },
+    {
+     "client": "flag",
+     "pack": "100"
+    },
+    {
+     "client": "mummy",
+     "pack": "100"
+    }
+   ]
+  },
+  {
+   "agree": 28,
+   "clientField": "hp",
+   "clientOnly": 27,
+   "entity": "zombies",
+   "field": "Hitpoints",
+   "mapped": 28,
+   "packOnly": 0,
+   "records": 55,
+   "samples": [
+    {
+     "client": "basic",
+     "pack": "190"
+    },
+    {
+     "client": "conehead",
+     "pack": "190"
+    },
+    {
+     "client": "buckethead",
+     "pack": "190"
+    },
+    {
+     "client": "flag",
+     "pack": "190"
+    },
+    {
+     "client": "mummy",
+     "pack": "190"
+    }
+   ]
+  },
+  {
+   "agree": 0,
+   "clientField": "art",
+   "clientOnly": 27,
+   "entity": "zombies",
+   "field": "PopAnim",
+   "mapped": 28,
+   "packOnly": 0,
+   "records": 55,
+   "samples": [
+    {
+     "client": "basic",
+     "pack": "POPANIM_ZOMBIE_ZOMBIE_TUTORIAL"
+    },
+    {
+     "client": "conehead",
+     "pack": "POPANIM_ZOMBIE_ZOMBIE_TUTORIAL"
+    },
+    {
+     "client": "buckethead",
+     "pack": "POPANIM_ZOMBIE_ZOMBIE_TUTORIAL"
+    },
+    {
+     "client": "flag",
+     "pack": "POPANIM_ZOMBIE_ZOMBIE_TUTORIAL_FLAG"
+    },
+    {
+     "client": "mummy",
+     "pack": "POPANIM_ZOMBIE_ZOMBIE_EGYPT_BASIC"
+    }
+   ]
+  },
+  {
+   "agree": 26,
+   "clientField": "speed",
+   "clientOnly": 27,
+   "entity": "zombies",
+   "field": "Speed",
+   "mapped": 28,
+   "packOnly": 0,
+   "records": 55,
+   "samples": [
+    {
+     "client": "basic",
+     "pack": "0.185"
+    },
+    {
+     "client": "conehead",
+     "pack": "0.185"
+    },
+    {
+     "client": "buckethead",
+     "pack": "0.185"
+    },
+    {
+     "client": "flag",
+     "pack": "0.185"
+    },
+    {
+     "client": "mummy",
+     "pack": "0.185"
+    }
+   ]
+  }
+ ]
+}

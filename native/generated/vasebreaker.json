@@ -1,0 +1,8197 @@
+{
+ "counts": {
+  "byType": {
+   "collectable": 30,
+   "plant": 617,
+   "zombie": 788
+  },
+  "entryTotal": 459,
+  "levels": 47,
+  "unknownKinds": {
+   "endless": 1,
+   "initialSun": 43,
+   "preset": 1,
+   "seedBank": 39,
+   "sunAmount": 46,
+   "timeLimit": 47,
+   "vasePlacement": 46
+  },
+  "vaseTotal": 1435,
+  "withEndless": 1,
+  "withLastStand": 1,
+  "withPreset": 46,
+  "withSeedBank": 8,
+  "withStartingSun": 4,
+  "withTide": 3,
+  "withTimeLimit": 0,
+  "withoutPreset": 1,
+  "withoutPresetIds": [
+   "frontyard_166"
+  ],
+  "withoutSeedBank": 39,
+  "withoutStartingSun": 43,
+  "worlds": {
+   "beach": 3,
+   "carnival": 2,
+   "cowboy": 3,
+   "dark": 3,
+   "egypt": 4,
+   "frontyard": 5,
+   "future": 7,
+   "heian": 3,
+   "kongfu": 3,
+   "losantosvice": 1,
+   "lunarrainbowmarket": 3,
+   "mausoleum": 1,
+   "modern": 1,
+   "muji": 1,
+   "pirate": 4,
+   "plantagenet": 1,
+   "sky": 1,
+   "steam": 1
+  }
+ },
+ "format": 1,
+ "generated": "2026-11-25",
+ "levels": {
+  "beach_69": {
+   "blacklistedCells": null,
+   "byType": {
+    "collectable": 0,
+    "plant": 9,
+    "zombie": 21
+   },
+   "coloredVases": {
+    "plant": 3,
+    "zombie": 2
+   },
+   "columnRange": {
+    "max": 8,
+    "min": 2
+   },
+   "endless": null,
+   "entryCount": 12,
+   "excludedCells": [
+    [
+     4,
+     0
+    ],
+    [
+     5,
+     1
+    ],
+    [
+     6,
+     2
+    ],
+    [
+     5,
+     3
+    ],
+    [
+     4,
+     4
+    ]
+   ],
+   "initialSun": null,
+   "initialSunSource": null,
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_0290_LevelDefinition.json",
+   "levelId": "beach_69",
+   "levelNameKey": "[VASEBREAKER_BEACH_LEVEL_NAME_1]",
+   "levelNumber": 1,
+   "levelPowerupSet": "LevelPowerupsVasebreaker",
+   "modules": [
+    "VaseBreakerArcade",
+    "VaseBreakerProps",
+    "ZombiesDeadWinCon",
+    "DefaultZombieWinCondition",
+    "Tide"
+   ],
+   "package": "pkg_0290",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_0290"
+   },
+   "seedBank": [],
+   "seedBankInfo": null,
+   "sourceFiles": [
+    "pkg_0290_LevelDefinition.json"
+   ],
+   "stageModule": "BeachStage",
+   "tide": {
+    "startingWaveLocation": 4
+   },
+   "timeLimit": null,
+   "unknowns": [
+    "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "seedBank: 该关包内没有 SeedBank / ConveyorBelt 模块",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 30,
+   "vaseGridItemType": null,
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "beach"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "beach_armor1"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "beach_armor2"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "beach_fem"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "beach_fem_armor1"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "beach_fem_armor2"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "beach_snorkel"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "beach_imp"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "wallnut",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": "bowlingbulb",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": "homingthistle",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": "plantfood",
+     "count": 0,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "collectable",
+     "zombieId": null
+    }
+   ]
+  },
+  "beach_70": {
+   "blacklistedCells": null,
+   "byType": {
+    "collectable": 2,
+    "plant": 10,
+    "zombie": 18
+   },
+   "coloredVases": {
+    "plant": 1,
+    "zombie": 3
+   },
+   "columnRange": {
+    "max": 8,
+    "min": 2
+   },
+   "endless": null,
+   "entryCount": 11,
+   "excludedCells": [
+    [
+     2,
+     0
+    ],
+    [
+     4,
+     1
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     4,
+     3
+    ],
+    [
+     2,
+     4
+    ]
+   ],
+   "initialSun": null,
+   "initialSunSource": null,
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_0291_LevelDefinition.json",
+   "levelId": "beach_70",
+   "levelNameKey": "[VASEBREAKER_BEACH_LEVEL_NAME_1]",
+   "levelNumber": 1,
+   "levelPowerupSet": "LevelPowerupsVasebreaker",
+   "modules": [
+    "VaseBreakerArcade",
+    "VaseBreakerProps",
+    "ZombiesDeadWinCon",
+    "DefaultZombieWinCondition",
+    "Tide"
+   ],
+   "package": "pkg_0291",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_0291"
+   },
+   "seedBank": [],
+   "seedBankInfo": null,
+   "sourceFiles": [
+    "pkg_0291_LevelDefinition.json"
+   ],
+   "stageModule": "BeachStage",
+   "tide": {
+    "startingWaveLocation": 6
+   },
+   "timeLimit": null,
+   "unknowns": [
+    "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "seedBank: 该关包内没有 SeedBank / ConveyorBelt 模块",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 30,
+   "vaseGridItemType": null,
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "beach_armor1"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "beach_armor2"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "beach_surfer"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "beach_gargantuar"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "beach_snorkel"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 6,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "beach_imp"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": "lavaguava",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": "banana",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": "magnetshroom",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": "tanglekelp",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": "plantfood",
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "collectable",
+     "zombieId": null
+    }
+   ]
+  },
+  "beach_71": {
+   "blacklistedCells": null,
+   "byType": {
+    "collectable": 1,
+    "plant": 11,
+    "zombie": 18
+   },
+   "coloredVases": {
+    "plant": 2,
+    "zombie": 4
+   },
+   "columnRange": {
+    "max": 8,
+    "min": 3
+   },
+   "endless": null,
+   "entryCount": 13,
+   "excludedCells": [],
+   "initialSun": null,
+   "initialSunSource": null,
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_0292_LevelDefinition.json",
+   "levelId": "beach_71",
+   "levelNameKey": "[VASEBREAKER_BEACH_LEVEL_NAME_1]",
+   "levelNumber": 1,
+   "levelPowerupSet": "LevelPowerupsVasebreaker",
+   "modules": [
+    "VaseBreakerArcade",
+    "VaseBreakerProps",
+    "ZombiesDeadWinCon",
+    "DefaultZombieWinCondition",
+    "LilypadPlacement",
+    "Tide"
+   ],
+   "package": "pkg_0292",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_0292"
+   },
+   "seedBank": [],
+   "seedBankInfo": null,
+   "sourceFiles": [
+    "pkg_0292_LevelDefinition.json"
+   ],
+   "stageModule": "BeachStage",
+   "tide": {
+    "startingWaveLocation": 9
+   },
+   "timeLimit": null,
+   "unknowns": [
+    "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "seedBank: 该关包内没有 SeedBank / ConveyorBelt 模块",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 30,
+   "vaseGridItemType": null,
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 6,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "beach_fem"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "beach_fem_armor1"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "beach_fem_armor2"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "beach_gargantuar"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "beach_octopus"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "beach_surfer"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": "tanglekelp",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": "bowlingbulb",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "starfruit",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "citron",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": "hypnoshroom",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "xshot",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": "plantfood",
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "collectable",
+     "zombieId": null
+    }
+   ]
+  },
+  "carnival_66": {
+   "blacklistedCells": null,
+   "byType": {
+    "collectable": 0,
+    "plant": 0,
+    "zombie": 40
+   },
+   "coloredVases": {
+    "plant": 0,
+    "zombie": 40
+   },
+   "columnRange": {
+    "max": 8,
+    "min": 1
+   },
+   "endless": null,
+   "entryCount": 8,
+   "excludedCells": [],
+   "initialSun": null,
+   "initialSunSource": null,
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_0372_LevelDefinition.json",
+   "levelId": "carnival_66",
+   "levelNameKey": "[LTE_LEVEL_NAME_CIRCUS]",
+   "levelNumber": 9,
+   "levelPowerupSet": null,
+   "modules": [
+    "VaseBreakerArcade",
+    "VaseBreakerProps",
+    "CarnivalDynamicBackground",
+    "ChallengeModule",
+    "SeedBank",
+    "DefaultZombieWinCondition",
+    "NewWaves"
+   ],
+   "package": "pkg_0372",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_0372"
+   },
+   "seedBank": [
+    {
+     "level": -1,
+     "maxCount": null,
+     "method": "preset",
+     "minCount": null,
+     "plantId": "sunshroom",
+     "weight": null
+    },
+    {
+     "level": -1,
+     "maxCount": null,
+     "method": "preset",
+     "minCount": null,
+     "plantId": "potatomine",
+     "weight": null
+    },
+    {
+     "level": -1,
+     "maxCount": null,
+     "method": "preset",
+     "minCount": null,
+     "plantId": "phatbeet",
+     "weight": null
+    },
+    {
+     "level": -1,
+     "maxCount": null,
+     "method": "preset",
+     "minCount": null,
+     "plantId": "goldbloom",
+     "weight": null
+    },
+    {
+     "level": -1,
+     "maxCount": null,
+     "method": "preset",
+     "minCount": null,
+     "plantId": "chardguard",
+     "weight": null
+    }
+   ],
+   "seedBankInfo": {
+    "excludeList": [],
+    "method": "preset",
+    "objclass": "SeedBankProperties"
+   },
+   "sourceFiles": [
+    "pkg_0372_LevelDefinition.json"
+   ],
+   "stageModule": "CarnivalStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 40,
+   "vaseGridItemType": null,
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "carnie_gargantuar"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 5,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "carnie_imp_twins"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "carnie_firebreather"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 5,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "carnie_stiltwalker"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 5,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "carnie_cannon"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 5,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "carnie_magician"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 6,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "carnie_armor2"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 8,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "carnie_armor4"
+    }
+   ]
+  },
+  "carnival_91": {
+   "blacklistedCells": null,
+   "byType": {
+    "collectable": 1,
+    "plant": 26,
+    "zombie": 18
+   },
+   "coloredVases": {
+    "plant": 6,
+    "zombie": 114514
+   },
+   "columnRange": {
+    "max": 8,
+    "min": 0
+   },
+   "endless": null,
+   "entryCount": 18,
+   "excludedCells": [],
+   "initialSun": null,
+   "initialSunSource": null,
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_0364_LevelDefinition.json",
+   "levelId": "carnival_91",
+   "levelNameKey": "[LTE_LEVEL_NAME_CIRCUS_30]",
+   "levelNumber": 30,
+   "levelPowerupSet": "LevelPowerupsVasebreaker",
+   "modules": [
+    "VaseBreakerArcade",
+    "VaseBreakerProps",
+    "CarnivalDynamicBackground",
+    "ZombiesDeadWinCon",
+    "DefaultZombieWinCondition"
+   ],
+   "package": "pkg_0364",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_0364"
+   },
+   "seedBank": [],
+   "seedBankInfo": null,
+   "sourceFiles": [
+    "pkg_0364_LevelDefinition.json"
+   ],
+   "stageModule": "CarnivalStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "seedBank: 该关包内没有 SeedBank / ConveyorBelt 模块",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 45,
+   "vaseGridItemType": null,
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "lunar_camel_twohump"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "carnie_imp_twins"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 5,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "carnie"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "carnie_armor1"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "carnie_armor2"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": "bonkchoy",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "carnie_firebreather"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "carnie_firebreather_veteran"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "carnie_gargantuar"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "carnie_stiltwalker_veteran"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "carnie_stiltwalker"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 6,
+     "plantId": "splitpea",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": "bloomerang",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "squash",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 6,
+     "plantId": "celerystalker",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": "primalwallnut",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "unused_47",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": "plantfood",
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "collectable",
+     "zombieId": null
+    }
+   ]
+  },
+  "cowboy_33": {
+   "blacklistedCells": null,
+   "byType": {
+    "collectable": 1,
+    "plant": 10,
+    "zombie": 19
+   },
+   "coloredVases": {
+    "plant": 3,
+    "zombie": 0
+   },
+   "columnRange": {
+    "max": 8,
+    "min": 2
+   },
+   "endless": null,
+   "entryCount": 9,
+   "excludedCells": [
+    [
+     5,
+     0
+    ],
+    [
+     5,
+     1
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     5,
+     3
+    ],
+    [
+     5,
+     4
+    ]
+   ],
+   "initialSun": null,
+   "initialSunSource": null,
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_0293_LevelDefinition.json",
+   "levelId": "cowboy_33",
+   "levelNameKey": "[VASEBREAKER_WEST_LEVEL_NAME_1]",
+   "levelNumber": 1,
+   "levelPowerupSet": "LevelPowerupsVasebreaker",
+   "modules": [
+    "VaseBreakerArcade",
+    "VaseBreakerProps",
+    "ZombiesDeadWinCon",
+    "DefaultZombieWinCondition",
+    "CowboyRails"
+   ],
+   "package": "pkg_0293",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_0293"
+   },
+   "seedBank": [],
+   "seedBankInfo": null,
+   "sourceFiles": [
+    "pkg_0293_LevelDefinition.json"
+   ],
+   "stageModule": "WestStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "seedBank: 该关包内没有 SeedBank / ConveyorBelt 模块",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 30,
+   "vaseGridItemType": null,
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "cowboy"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 5,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "cowboy_armor1"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "prospector"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "poncho_plate"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "poncho"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": "splitpea",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": "chilibean",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": "wallnut",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": "plantfood",
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "collectable",
+     "zombieId": null
+    }
+   ]
+  },
+  "cowboy_36": {
+   "blacklistedCells": null,
+   "byType": {
+    "collectable": 1,
+    "plant": 15,
+    "zombie": 14
+   },
+   "coloredVases": {
+    "plant": 3,
+    "zombie": 0
+   },
+   "columnRange": {
+    "max": 8,
+    "min": 3
+   },
+   "endless": null,
+   "entryCount": 11,
+   "excludedCells": [],
+   "initialSun": null,
+   "initialSunSource": null,
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_0294_LevelDefinition.json",
+   "levelId": "cowboy_36",
+   "levelNameKey": "[VASEBREAKER_WEST_LEVEL_NAME_2]",
+   "levelNumber": 2,
+   "levelPowerupSet": "LevelPowerupsVasebreaker",
+   "modules": [
+    "VaseBreakerArcade",
+    "VaseBreakerProps",
+    "ZombiesDeadWinCon",
+    "DefaultZombieWinCondition",
+    "CowboyRails"
+   ],
+   "package": "pkg_0294",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_0294"
+   },
+   "seedBank": [],
+   "seedBankInfo": null,
+   "sourceFiles": [
+    "pkg_0294_LevelDefinition.json"
+   ],
+   "stageModule": "WestStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "seedBank: 该关包内没有 SeedBank / ConveyorBelt 模块",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 30,
+   "vaseGridItemType": null,
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "cowboy_armor1"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "cowboy_armor2"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "poncho_plate"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "poncho"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "piano"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 5,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "chicken_farmer"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 5,
+     "plantId": "spikeweed",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": "chilibean",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": "melonpult",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 6,
+     "plantId": "repeater",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": "plantfood",
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "collectable",
+     "zombieId": null
+    }
+   ]
+  },
+  "cowboy_37": {
+   "blacklistedCells": null,
+   "byType": {
+    "collectable": 1,
+    "plant": 16,
+    "zombie": 18
+   },
+   "coloredVases": {
+    "plant": 3,
+    "zombie": 0
+   },
+   "columnRange": {
+    "max": 7,
+    "min": 1
+   },
+   "endless": null,
+   "entryCount": 11,
+   "excludedCells": [],
+   "initialSun": null,
+   "initialSunSource": null,
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_0295_LevelDefinition.json",
+   "levelId": "cowboy_37",
+   "levelNameKey": "[VASEBREAKER_WEST_LEVEL_NAME_3]",
+   "levelNumber": 3,
+   "levelPowerupSet": "LevelPowerupsVasebreaker",
+   "modules": [
+    "VaseBreakerArcade",
+    "VaseBreakerProps",
+    "ZombiesDeadWinCon",
+    "DefaultZombieWinCondition",
+    "CowboyRails"
+   ],
+   "package": "pkg_0295",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_0295"
+   },
+   "seedBank": [],
+   "seedBankInfo": null,
+   "sourceFiles": [
+    "pkg_0295_LevelDefinition.json"
+   ],
+   "stageModule": "WestStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "seedBank: 该关包内没有 SeedBank / ConveyorBelt 模块",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 35,
+   "vaseGridItemType": null,
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "cowboy_armor1"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "cowboy_armor2"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "prospector"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 6,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "poncho_plate"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "poncho_no_plate"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "west_bull"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 5,
+     "plantId": "splitpea",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "peashooter",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": "iceburg",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 5,
+     "plantId": "potatomine",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": "plantfood",
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "collectable",
+     "zombieId": null
+    }
+   ]
+  },
+  "dark_67": {
+   "blacklistedCells": null,
+   "byType": {
+    "collectable": 0,
+    "plant": 11,
+    "zombie": 19
+   },
+   "coloredVases": {
+    "plant": 3,
+    "zombie": 0
+   },
+   "columnRange": {
+    "max": 8,
+    "min": 2
+   },
+   "endless": null,
+   "entryCount": 8,
+   "excludedCells": [
+    [
+     3,
+     0
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     3,
+     4
+    ]
+   ],
+   "initialSun": null,
+   "initialSunSource": null,
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_0296_LevelDefinition.json",
+   "levelId": "dark_67",
+   "levelNameKey": "[VASEBREAKER_DARK_LEVEL_NAME_1]",
+   "levelNumber": 1,
+   "levelPowerupSet": "LevelPowerupsVasebreaker",
+   "modules": [
+    "VaseBreakerArcade",
+    "VaseBreakerProps",
+    "Gravestones",
+    "ZombiesDeadWinCon",
+    "DefaultZombieWinCondition"
+   ],
+   "package": "pkg_0296",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_0296"
+   },
+   "seedBank": [],
+   "seedBankInfo": null,
+   "sourceFiles": [
+    "pkg_0296_LevelDefinition.json"
+   ],
+   "stageModule": "DarkStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "seedBank: 该关包内没有 SeedBank / ConveyorBelt 模块",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 30,
+   "vaseGridItemType": null,
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 10,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "dark"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "dark_armor1"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 6,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "dark_armor2"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "dark_armor3"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 7,
+     "plantId": "puffshroom",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "magnetshroom",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "wallnut",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": "plantfood",
+     "count": 0,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "collectable",
+     "zombieId": null
+    }
+   ]
+  },
+  "dark_68": {
+   "blacklistedCells": null,
+   "byType": {
+    "collectable": 0,
+    "plant": 11,
+    "zombie": 14
+   },
+   "coloredVases": {
+    "plant": 3,
+    "zombie": 0
+   },
+   "columnRange": {
+    "max": 8,
+    "min": 4
+   },
+   "endless": null,
+   "entryCount": 7,
+   "excludedCells": [],
+   "initialSun": null,
+   "initialSunSource": null,
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_0297_LevelDefinition.json",
+   "levelId": "dark_68",
+   "levelNameKey": "[VASEBREAKER_DARK_LEVEL_NAME_2]",
+   "levelNumber": 2,
+   "levelPowerupSet": "LevelPowerupsVasebreaker",
+   "modules": [
+    "VaseBreakerArcade",
+    "VaseBreakerProps",
+    "Gravestones",
+    "ZombiesDeadWinCon",
+    "DefaultZombieWinCondition"
+   ],
+   "package": "pkg_0297",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_0297"
+   },
+   "seedBank": [],
+   "seedBankInfo": null,
+   "sourceFiles": [
+    "pkg_0297_LevelDefinition.json"
+   ],
+   "stageModule": "DarkStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "seedBank: 该关包内没有 SeedBank / ConveyorBelt 模块",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 25,
+   "vaseGridItemType": null,
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 5,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "dark"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "dark_armor1"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 7,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "dark_armor2"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 7,
+     "plantId": "puffshroom",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "magnetshroom",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "wallnut",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": "plantfood",
+     "count": 0,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "collectable",
+     "zombieId": null
+    }
+   ]
+  },
+  "dark_72": {
+   "blacklistedCells": null,
+   "byType": {
+    "collectable": 0,
+    "plant": 11,
+    "zombie": 14
+   },
+   "coloredVases": {
+    "plant": 3,
+    "zombie": 0
+   },
+   "columnRange": {
+    "max": 8,
+    "min": 4
+   },
+   "endless": null,
+   "entryCount": 7,
+   "excludedCells": [],
+   "initialSun": null,
+   "initialSunSource": null,
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_0298_LevelDefinition.json",
+   "levelId": "dark_72",
+   "levelNameKey": "[VASEBREAKER_DARK_LEVEL_NAME_3]",
+   "levelNumber": 3,
+   "levelPowerupSet": "LevelPowerupsVasebreaker",
+   "modules": [
+    "VaseBreakerArcade",
+    "VaseBreakerProps",
+    "Gravestones",
+    "ZombiesDeadWinCon",
+    "DefaultZombieWinCondition"
+   ],
+   "package": "pkg_0298",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_0298"
+   },
+   "seedBank": [],
+   "seedBankInfo": null,
+   "sourceFiles": [
+    "pkg_0298_LevelDefinition.json"
+   ],
+   "stageModule": "DarkStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "seedBank: 该关包内没有 SeedBank / ConveyorBelt 模块",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 25,
+   "vaseGridItemType": null,
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 5,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "dark"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "dark_armor1"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 7,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "dark_armor2"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 7,
+     "plantId": "puffshroom",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "magnetshroom",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "wallnut",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": "plantfood",
+     "count": 0,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "collectable",
+     "zombieId": null
+    }
+   ]
+  },
+  "egypt_54": {
+   "blacklistedCells": null,
+   "byType": {
+    "collectable": 1,
+    "plant": 11,
+    "zombie": 18
+   },
+   "coloredVases": {
+    "plant": 3,
+    "zombie": 0
+   },
+   "columnRange": {
+    "max": 8,
+    "min": 3
+   },
+   "endless": null,
+   "entryCount": 7,
+   "excludedCells": [],
+   "initialSun": null,
+   "initialSunSource": null,
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_0299_LevelDefinition.json",
+   "levelId": "egypt_54",
+   "levelNameKey": "[VASEBREAKER_EGYPT_LEVEL_NAME_1]",
+   "levelNumber": 1,
+   "levelPowerupSet": "LevelPowerupsVasebreaker",
+   "modules": [
+    "VaseBreakerArcade",
+    "VaseBreakerProps",
+    "ZombiesDeadWinCon",
+    "DefaultZombieWinCondition"
+   ],
+   "package": "pkg_0299",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_0299"
+   },
+   "seedBank": [],
+   "seedBankInfo": null,
+   "sourceFiles": [
+    "pkg_0299_LevelDefinition.json"
+   ],
+   "stageModule": "EgyptStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "seedBank: 该关包内没有 SeedBank / ConveyorBelt 模块",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 30,
+   "vaseGridItemType": null,
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 9,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "mummy"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "mummy_armor1"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 7,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "camel_onehump"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 7,
+     "plantId": "bloomerang",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "wallnut",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "potatomine",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": "plantfood",
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "collectable",
+     "zombieId": null
+    }
+   ]
+  },
+  "egypt_57": {
+   "blacklistedCells": [],
+   "byType": {
+    "collectable": 0,
+    "plant": 30,
+    "zombie": 0
+   },
+   "coloredVases": {
+    "plant": 0,
+    "zombie": 0
+   },
+   "columnRange": {
+    "max": 6,
+    "min": 4
+   },
+   "endless": null,
+   "entryCount": 19,
+   "excludedCells": [],
+   "initialSun": null,
+   "initialSunSource": null,
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_0895_LevelDefinition.json",
+   "levelId": "egypt_57",
+   "levelNameKey": "[LTE_LEVEL_NAME_OTHERWORLDLETTERS_CHRYSANTHEAUTUMN]",
+   "levelNumber": 1,
+   "levelPowerupSet": "LevelPowerupsVasebreaker",
+   "modules": [
+    "CowboyRails",
+    "DefaultZombieWinCondition",
+    "EgyptNightBackgroundEffects",
+    "NewWaves",
+    "SeedBank",
+    "VaseBreakerArcade",
+    "VaseBreakerProps",
+    "ZombiesDeadWinCon"
+   ],
+   "package": "pkg_0895",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_0895"
+   },
+   "seedBank": [
+    {
+     "level": -1,
+     "maxCount": null,
+     "method": "preset",
+     "minCount": null,
+     "plantId": "chrysantheautumn",
+     "weight": null
+    }
+   ],
+   "seedBankInfo": {
+    "excludeList": [],
+    "method": "preset",
+    "objclass": "SeedBankProperties"
+   },
+   "sourceFiles": [
+    "pkg_0895_LevelDefinition.json"
+   ],
+   "stageModule": "EgyptNightsStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 30,
+   "vaseGridItemType": null,
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "sunbean",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "hollybarrierleaf",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "buzzbutton",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "hollybarrierleafplantfood",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "snowdrop",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "futurebubuseed",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "cutebubuseed",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "taraxacum",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": "splitpea",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "tubiflora",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": "enlightenmint",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": "unused_48",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": "enforcemint",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": "frozenpear",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": "pepperpult",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": "cactus1",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": "bloomerang1",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "ultimatefumeshroom",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "magnetfruit",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    }
+   ]
+  },
+  "egypt_59": {
+   "blacklistedCells": null,
+   "byType": {
+    "collectable": 1,
+    "plant": 15,
+    "zombie": 14
+   },
+   "coloredVases": {
+    "plant": 3,
+    "zombie": 0
+   },
+   "columnRange": {
+    "max": 8,
+    "min": 3
+   },
+   "endless": null,
+   "entryCount": 9,
+   "excludedCells": [],
+   "initialSun": null,
+   "initialSunSource": null,
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_0300_LevelDefinition.json",
+   "levelId": "egypt_59",
+   "levelNameKey": "[VASEBREAKER_EGYPT_LEVEL_NAME_2]",
+   "levelNumber": 2,
+   "levelPowerupSet": "LevelPowerupsVasebreaker",
+   "modules": [
+    "VaseBreakerArcade",
+    "VaseBreakerProps",
+    "ZombiesDeadWinCon",
+    "DefaultZombieWinCondition"
+   ],
+   "package": "pkg_0300",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_0300"
+   },
+   "seedBank": [],
+   "seedBankInfo": null,
+   "sourceFiles": [
+    "pkg_0300_LevelDefinition.json"
+   ],
+   "stageModule": "EgyptStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "seedBank: 该关包内没有 SeedBank / ConveyorBelt 模块",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 30,
+   "vaseGridItemType": null,
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "mummy"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "mummy_armor1"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "mummy_armor2"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 7,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "explorer"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 5,
+     "plantId": "cabbagepult",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 5,
+     "plantId": "iceburg",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": "repeater",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "potatomine",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": "plantfood",
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "collectable",
+     "zombieId": null
+    }
+   ]
+  },
+  "egypt_61": {
+   "blacklistedCells": null,
+   "byType": {
+    "collectable": 1,
+    "plant": 14,
+    "zombie": 15
+   },
+   "coloredVases": {
+    "plant": 3,
+    "zombie": 0
+   },
+   "columnRange": {
+    "max": 8,
+    "min": 3
+   },
+   "endless": null,
+   "entryCount": 9,
+   "excludedCells": [],
+   "initialSun": null,
+   "initialSunSource": null,
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_0301_LevelDefinition.json",
+   "levelId": "egypt_61",
+   "levelNameKey": "[VASEBREAKER_EGYPT_LEVEL_NAME_3]",
+   "levelNumber": 3,
+   "levelPowerupSet": "LevelPowerupsVasebreaker",
+   "modules": [
+    "VaseBreakerArcade",
+    "VaseBreakerProps",
+    "ZombiesDeadWinCon",
+    "DefaultZombieWinCondition"
+   ],
+   "package": "pkg_0301",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_0301"
+   },
+   "seedBank": [],
+   "seedBankInfo": null,
+   "sourceFiles": [
+    "pkg_0301_LevelDefinition.json"
+   ],
+   "stageModule": "EgyptStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "seedBank: 该关包内没有 SeedBank / ConveyorBelt 模块",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 30,
+   "vaseGridItemType": null,
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "mummy"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "mummy_armor1"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "mummy_armor2"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 6,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "pharaoh"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 5,
+     "plantId": "repeater",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": "spikerock",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": "wallnut",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": "potatomine",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": "plantfood",
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "collectable",
+     "zombieId": null
+    }
+   ]
+  },
+  "frontyard_166": {
+   "blacklistedCells": null,
+   "byType": {
+    "collectable": 0,
+    "plant": 0,
+    "zombie": 0
+   },
+   "coloredVases": {
+    "plant": null,
+    "zombie": null
+   },
+   "columnRange": {
+    "max": null,
+    "min": null
+   },
+   "endless": {
+    "stageCount": 3,
+    "stages": [
+     {
+      "CollectableTypes": [
+       {
+        "Count": 1,
+        "Type": "sun"
+       },
+       {
+        "Count": 1,
+        "Type": "plantfood"
+       }
+      ],
+      "EscalationRate": 1,
+      "FixedZombieTypes": [
+       {
+        "Count": 8,
+        "Type": "tutorial"
+       },
+       {
+        "Count": 3,
+        "Type": "tutorial_armor1"
+       },
+       {
+        "Count": 1,
+        "Type": "tutorial_armor2"
+       },
+       {
+        "Count": 1,
+        "Type": "vase_gargantuar"
+       }
+      ],
+      "MaxColumnIndex": 8,
+      "MinColumnIndex": 3,
+      "NumberOfColoredPlants": 3,
+      "PlantTypes": [
+       {
+        "Count": 5,
+        "Type": "splitpea"
+       },
+       {
+        "Count": 3,
+        "Type": "repeater"
+       },
+       {
+        "Count": 2,
+        "Type": "threepeater"
+       },
+       {
+        "Count": 2,
+        "Type": "bonkchoy"
+       },
+       {
+        "Count": 2,
+        "Type": "potatomine"
+       },
+       {
+        "Count": 1,
+        "Type": "wallnut"
+       }
+      ],
+      "StartingLevel": 1
+     },
+     {
+      "CollectableTypes": [
+       {
+        "Count": 1,
+        "Type": "sun"
+       },
+       {
+        "Count": 1,
+        "Type": "plantfood"
+       }
+      ],
+      "EscalationRate": 1,
+      "FixedZombieTypes": [
+       {
+        "Count": 11,
+        "Type": "tutorial"
+       },
+       {
+        "Count": 4,
+        "Type": "tutorial_armor1"
+       },
+       {
+        "Count": 2,
+        "Type": "tutorial_armor2"
+       },
+       {
+        "Count": 1,
+        "Type": "vase_gargantuar"
+       }
+      ],
+      "MaxColumnIndex": 8,
+      "MinColumnIndex": 2,
+      "NumberOfColoredPlants": 3,
+      "PlantTypes": [
+       {
+        "Count": 5,
+        "Type": "splitpea"
+       },
+       {
+        "Count": 2,
+        "Type": "threepeater"
+       },
+       {
+        "Count": 3,
+        "Type": "repeater"
+       },
+       {
+        "Count": 2,
+        "Type": "bonkchoy"
+       },
+       {
+        "Count": 2,
+        "Type": "potatomine"
+       },
+       {
+        "Count": 1,
+        "Type": "wallnut"
+       }
+      ],
+      "StartingLevel": 6
+     },
+     {
+      "CollectableTypes": [
+       {
+        "Count": 1,
+        "Type": "sun"
+       },
+       {
+        "Count": 1,
+        "Type": "plantfood"
+       }
+      ],
+      "EscalatingZombieTypes": [
+       {
+        "Count": 10,
+        "Type": "tutorial"
+       },
+       {
+        "Count": 4,
+        "Type": "tutorial_armor1"
+       },
+       {
+        "Count": 2,
+        "Type": "tutorial_armor2"
+       },
+       {
+        "Count": 2,
+        "Type": "vase_gargantuar"
+       }
+      ],
+      "EscalationRate": 10,
+      "MaxColumnIndex": 8,
+      "MinColumnIndex": 2,
+      "NumberOfColoredPlants": 3,
+      "PlantTypes": [
+       {
+        "Count": 5,
+        "Type": "splitpea"
+       },
+       {
+        "Count": 2,
+        "Type": "threepeater"
+       },
+       {
+        "Count": 3,
+        "Type": "repeater"
+       },
+       {
+        "Count": 2,
+        "Type": "bonkchoy"
+       },
+       {
+        "Count": 2,
+        "Type": "potatomine"
+       },
+       {
+        "Count": 1,
+        "Type": "wallnut"
+       }
+      ],
+      "StartingLevel": 11
+     }
+    ],
+    "testEndlessLevel": 0
+   },
+   "entryCount": 0,
+   "excludedCells": [],
+   "initialSun": 0,
+   "initialSunSource": "LevelDefinition.StartingSun",
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_0302_LevelDefinition.json",
+   "levelId": "frontyard_166",
+   "levelNameKey": "[VASEBREAKER_ENDLESS_LEVEL_NAME]",
+   "levelNumber": null,
+   "levelPowerupSet": "LevelPowerupsVasebreaker",
+   "modules": [
+    "VaseBreakerArcade",
+    "TestVaseBreaker",
+    "ZombiesDeadWinCon",
+    "DefaultZombieWinCondition",
+    "SeedBank"
+   ],
+   "package": "pkg_0302",
+   "preset": {
+    "aliases": [],
+    "found": false,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": null
+   },
+   "seedBank": [
+    {
+     "level": -1,
+     "maxCount": null,
+     "method": "preset",
+     "minCount": null,
+     "plantId": "cherry_bomb",
+     "weight": null
+    }
+   ],
+   "seedBankInfo": {
+    "excludeList": [],
+    "method": "preset",
+    "objclass": "SeedBankProperties"
+   },
+   "sourceFiles": [
+    "pkg_0302_LevelDefinition.json"
+   ],
+   "stageModule": "FrontLawnStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "preset: 该关包内没有 VaseBreakerPresetProperties，藤罐内容无法从原版数据取得",
+    "endless: VaseBreakerEndlessProperties.Stages 是无尽模式的分阶段配方，不是本关固定罐表；已原样收录在 endless 字段，未并入 vases",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": null,
+   "vaseGridItemType": null,
+   "vases": []
+  },
+  "frontyard_167": {
+   "blacklistedCells": null,
+   "byType": {
+    "collectable": 0,
+    "plant": 12,
+    "zombie": 8
+   },
+   "coloredVases": {
+    "plant": 0,
+    "zombie": 0
+   },
+   "columnRange": {
+    "max": 7,
+    "min": 4
+   },
+   "endless": null,
+   "entryCount": 6,
+   "excludedCells": [],
+   "initialSun": null,
+   "initialSunSource": null,
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_0309_LevelDefinition.json",
+   "levelId": "frontyard_167",
+   "levelNameKey": "[VASEBREAKER_INTRO_LEVEL_NAME]",
+   "levelNumber": null,
+   "levelPowerupSet": "LevelPowerupsVasebreaker",
+   "modules": [
+    "VaseBreakerArcade",
+    "VaseBreakerProps",
+    "ZombiesDeadWinCon",
+    "DefaultZombieWinCondition"
+   ],
+   "package": "pkg_0309",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_0309"
+   },
+   "seedBank": [],
+   "seedBankInfo": null,
+   "sourceFiles": [
+    "pkg_0309_LevelDefinition.json"
+   ],
+   "stageModule": "FrontLawnStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "seedBank: 该关包内没有 SeedBank / ConveyorBelt 模块",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 20,
+   "vaseGridItemType": null,
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 7,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "tutorial"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "tutorial_armor1"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 7,
+     "plantId": "peashooter",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "bonkchoy",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "wallnut",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": "potatomine",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    }
+   ]
+  },
+  "frontyard_168": {
+   "blacklistedCells": null,
+   "byType": {
+    "collectable": 0,
+    "plant": 12,
+    "zombie": 8
+   },
+   "coloredVases": {
+    "plant": 3,
+    "zombie": 0
+   },
+   "columnRange": {
+    "max": 8,
+    "min": 5
+   },
+   "endless": null,
+   "entryCount": 6,
+   "excludedCells": [],
+   "initialSun": null,
+   "initialSunSource": null,
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_0310_LevelDefinition.json",
+   "levelId": "frontyard_168",
+   "levelNameKey": "[VASEBREAKER_INTRO_LEVEL_NAME_1]",
+   "levelNumber": null,
+   "levelPowerupSet": "LevelPowerupsVasebreaker",
+   "modules": [
+    "VaseBreakerArcade",
+    "VaseBreakerProps",
+    "ZombiesDeadWinCon",
+    "DefaultZombieWinCondition"
+   ],
+   "package": "pkg_0310",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_0310"
+   },
+   "seedBank": [],
+   "seedBankInfo": null,
+   "sourceFiles": [
+    "pkg_0310_LevelDefinition.json"
+   ],
+   "stageModule": "FrontLawnStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "seedBank: 该关包内没有 SeedBank / ConveyorBelt 模块",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 20,
+   "vaseGridItemType": null,
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 7,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "tutorial"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "tutorial_armor1"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 7,
+     "plantId": "peashooter",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "bonkchoy",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "wallnut",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": "potatomine",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    }
+   ]
+  },
+  "frontyard_169": {
+   "blacklistedCells": null,
+   "byType": {
+    "collectable": 1,
+    "plant": 13,
+    "zombie": 11
+   },
+   "coloredVases": {
+    "plant": 3,
+    "zombie": 0
+   },
+   "columnRange": {
+    "max": 5,
+    "min": 1
+   },
+   "endless": null,
+   "entryCount": 8,
+   "excludedCells": [],
+   "initialSun": null,
+   "initialSunSource": null,
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_0311_LevelDefinition.json",
+   "levelId": "frontyard_169",
+   "levelNameKey": "[VASEBREAKER_INTRO_LEVEL_NAME_2]",
+   "levelNumber": null,
+   "levelPowerupSet": "LevelPowerupsVasebreaker",
+   "modules": [
+    "VaseBreakerArcade",
+    "VaseBreakerProps",
+    "ZombiesDeadWinCon",
+    "DefaultZombieWinCondition"
+   ],
+   "package": "pkg_0311",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_0311"
+   },
+   "seedBank": [],
+   "seedBankInfo": null,
+   "sourceFiles": [
+    "pkg_0311_LevelDefinition.json"
+   ],
+   "stageModule": "FrontLawnStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "seedBank: 该关包内没有 SeedBank / ConveyorBelt 模块",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 25,
+   "vaseGridItemType": null,
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 7,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "tutorial"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "tutorial_armor1"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "tutorial_armor2"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 7,
+     "plantId": "splitpea",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "bonkchoy",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": "wallnut",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": "potatomine",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": "plantfood",
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "collectable",
+     "zombieId": null
+    }
+   ]
+  },
+  "frontyard_170": {
+   "blacklistedCells": null,
+   "byType": {
+    "collectable": 1,
+    "plant": 13,
+    "zombie": 16
+   },
+   "coloredVases": {
+    "plant": 3,
+    "zombie": 0
+   },
+   "columnRange": {
+    "max": 8,
+    "min": 3
+   },
+   "endless": null,
+   "entryCount": 9,
+   "excludedCells": [],
+   "initialSun": null,
+   "initialSunSource": null,
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_0312_LevelDefinition.json",
+   "levelId": "frontyard_170",
+   "levelNameKey": "[VASEBREAKER_INTRO_LEVEL_NAME_3]",
+   "levelNumber": null,
+   "levelPowerupSet": "LevelPowerupsVasebreaker",
+   "modules": [
+    "VaseBreakerArcade",
+    "VaseBreakerProps",
+    "ZombiesDeadWinCon",
+    "DefaultZombieWinCondition"
+   ],
+   "package": "pkg_0312",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_0312"
+   },
+   "seedBank": [],
+   "seedBankInfo": null,
+   "sourceFiles": [
+    "pkg_0312_LevelDefinition.json"
+   ],
+   "stageModule": "FrontLawnStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "seedBank: 该关包内没有 SeedBank / ConveyorBelt 模块",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 30,
+   "vaseGridItemType": null,
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 10,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "tutorial"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "tutorial_armor1"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "tutorial_armor2"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "vase_gargantuar"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 7,
+     "plantId": "repeater",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "bonkchoy",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "wallnut",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "potatomine",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": "plantfood",
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "collectable",
+     "zombieId": null
+    }
+   ]
+  },
+  "future_37": {
+   "blacklistedCells": null,
+   "byType": {
+    "collectable": 3,
+    "plant": 14,
+    "zombie": 13
+   },
+   "coloredVases": {
+    "plant": 3,
+    "zombie": 0
+   },
+   "columnRange": {
+    "max": 8,
+    "min": 3
+   },
+   "endless": null,
+   "entryCount": 8,
+   "excludedCells": [],
+   "initialSun": null,
+   "initialSunSource": null,
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_0303_LevelDefinition.json",
+   "levelId": "future_37",
+   "levelNameKey": "[VASEBREAKER_FUTURE_LEVEL_NAME_1]",
+   "levelNumber": 1,
+   "levelPowerupSet": "LevelPowerupsVasebreaker",
+   "modules": [
+    "VaseBreakerArcade",
+    "VaseBreakerProps",
+    "ZombiesDeadWinCon",
+    "DefaultZombieWinCondition"
+   ],
+   "package": "pkg_0303",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_0303"
+   },
+   "seedBank": [],
+   "seedBankInfo": null,
+   "sourceFiles": [
+    "pkg_0303_LevelDefinition.json"
+   ],
+   "stageModule": "FutureStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "seedBank: 该关包内没有 SeedBank / ConveyorBelt 模块",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 30,
+   "vaseGridItemType": null,
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "future"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "future_armor1"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "future_armor2"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 6,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "future_imp"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": "magnifyinggrass",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 6,
+     "plantId": "powerplant",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": "peashooter",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": "plantfood",
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "collectable",
+     "zombieId": null
+    }
+   ]
+  },
+  "future_40": {
+   "blacklistedCells": null,
+   "byType": {
+    "collectable": 2,
+    "plant": 11,
+    "zombie": 12
+   },
+   "coloredVases": {
+    "plant": 3,
+    "zombie": 0
+   },
+   "columnRange": {
+    "max": 8,
+    "min": 4
+   },
+   "endless": null,
+   "entryCount": 9,
+   "excludedCells": [],
+   "initialSun": null,
+   "initialSunSource": null,
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_0304_LevelDefinition.json",
+   "levelId": "future_40",
+   "levelNameKey": "[VASEBREAKER_FUTURE_LEVEL_NAME_2]",
+   "levelNumber": 2,
+   "levelPowerupSet": "LevelPowerupsVasebreaker",
+   "modules": [
+    "VaseBreakerArcade",
+    "VaseBreakerProps",
+    "ZombiesDeadWinCon",
+    "DefaultZombieWinCondition",
+    "FutureLinkedTileGroups"
+   ],
+   "package": "pkg_0304",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_0304"
+   },
+   "seedBank": [],
+   "seedBankInfo": null,
+   "sourceFiles": [
+    "pkg_0304_LevelDefinition.json"
+   ],
+   "stageModule": "FutureStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "seedBank: 该关包内没有 SeedBank / ConveyorBelt 模块",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 25,
+   "vaseGridItemType": null,
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 6,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "future_jetpack"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "future_armor1"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "future_armor2"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "mech_cone"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": "cabbagepult",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "holonut",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "citron",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": "iceburg",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": "plantfood",
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "collectable",
+     "zombieId": null
+    }
+   ]
+  },
+  "future_44": {
+   "blacklistedCells": null,
+   "byType": {
+    "collectable": 3,
+    "plant": 16,
+    "zombie": 11
+   },
+   "coloredVases": {
+    "plant": 3,
+    "zombie": 0
+   },
+   "columnRange": {
+    "max": 7,
+    "min": 2
+   },
+   "endless": null,
+   "entryCount": 8,
+   "excludedCells": [],
+   "initialSun": null,
+   "initialSunSource": null,
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_0305_LevelDefinition.json",
+   "levelId": "future_44",
+   "levelNameKey": "[VASEBREAKER_FUTURE_LEVEL_NAME_3]",
+   "levelNumber": 3,
+   "levelPowerupSet": "LevelPowerupsVasebreaker",
+   "modules": [
+    "VaseBreakerArcade",
+    "VaseBreakerProps",
+    "ZombiesDeadWinCon",
+    "DefaultZombieWinCondition"
+   ],
+   "package": "pkg_0305",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_0305"
+   },
+   "seedBank": [],
+   "seedBankInfo": null,
+   "sourceFiles": [
+    "pkg_0305_LevelDefinition.json"
+   ],
+   "stageModule": "FutureStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "seedBank: 该关包内没有 SeedBank / ConveyorBelt 模块",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 30,
+   "vaseGridItemType": null,
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "future_protector"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 6,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "future_armor1"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "football_mech"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 6,
+     "plantId": "powerplant",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 6,
+     "plantId": "spikeweed",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "laser_bean",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "potatomine",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": "plantfood",
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "collectable",
+     "zombieId": null
+    }
+   ]
+  },
+  "future_46": {
+   "blacklistedCells": null,
+   "byType": {
+    "collectable": 0,
+    "plant": 14,
+    "zombie": 21
+   },
+   "coloredVases": {
+    "plant": 4,
+    "zombie": 0
+   },
+   "columnRange": {
+    "max": 8,
+    "min": 2
+   },
+   "endless": null,
+   "entryCount": 14,
+   "excludedCells": [],
+   "initialSun": null,
+   "initialSunSource": null,
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_1641_LevelDefinition.json",
+   "levelId": "future_46",
+   "levelNameKey": "[EPIC_QUEST_FUTUREQUEST_LEVEL_NAME]",
+   "levelNumber": 3,
+   "levelPowerupSet": null,
+   "modules": [
+    "StandardIntro",
+    "LevelEscalationModule",
+    "DefaultZombieWinCondition",
+    "ZombiesDeadWinCon",
+    "VaseBreakerArcade",
+    "VaseBreakerProps"
+   ],
+   "package": "pkg_1641",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_1641"
+   },
+   "seedBank": [],
+   "seedBankInfo": null,
+   "sourceFiles": [
+    "pkg_1641_LevelDefinition.json"
+   ],
+   "stageModule": "FutureOriDMGStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "seedBank: 该关包内没有 SeedBank / ConveyorBelt 模块",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 35,
+   "vaseGridItemType": null,
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "future_armor4_ori"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "future_armor2_ori"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "future_protector_ori"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "mech_cone_ori"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "disco_mech"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "future_flag_veteran_ori"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "football_mech_ori"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": "bowlingbulb",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "wintermelon",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": "stickybombrice",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": "bombardmint",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "holonut1",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": "powerlily",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "teleportatomine",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    }
+   ]
+  },
+  "future_54": {
+   "blacklistedCells": null,
+   "byType": {
+    "collectable": 1,
+    "plant": 16,
+    "zombie": 20
+   },
+   "coloredVases": {
+    "plant": 3,
+    "zombie": 0
+   },
+   "columnRange": {
+    "max": 8,
+    "min": 2
+   },
+   "endless": null,
+   "entryCount": 13,
+   "excludedCells": [],
+   "initialSun": null,
+   "initialSunSource": null,
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_1643_LevelDefinition.json",
+   "levelId": "future_54",
+   "levelNameKey": "[EPIC_QUEST_FUTUREQUEST_LEVEL_NAME]",
+   "levelNumber": 5,
+   "levelPowerupSet": null,
+   "modules": [
+    "VaseBreakerArcade",
+    "VaseBreakerProps",
+    "ZombiesDeadWinCon",
+    "DefaultZombieWinCondition",
+    "ChallengeModule",
+    "FutureRails"
+   ],
+   "package": "pkg_1643",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_1643"
+   },
+   "seedBank": [],
+   "seedBankInfo": null,
+   "sourceFiles": [
+    "pkg_1643_LevelDefinition.json"
+   ],
+   "stageModule": "FutureOriDMGStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "seedBank: 该关包内没有 SeedBank / ConveyorBelt 模块",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 37,
+   "vaseGridItemType": null,
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "future_armor1_ori"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "future_ori"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 5,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "future_armor2_ori"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "future_protector_ori"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "future_armor4_ori"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "disco_mech"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "future_flag_ori"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": "laser_bean",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": "holonut1",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": "headbutterlettuce",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": "magnetshroom1",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": "squash",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": "plantfood",
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "collectable",
+     "zombieId": null
+    }
+   ]
+  },
+  "future_65": {
+   "blacklistedCells": null,
+   "byType": {
+    "collectable": 1,
+    "plant": 15,
+    "zombie": 20
+   },
+   "coloredVases": {
+    "plant": 3,
+    "zombie": 0
+   },
+   "columnRange": {
+    "max": 8,
+    "min": 2
+   },
+   "endless": null,
+   "entryCount": 12,
+   "excludedCells": [],
+   "initialSun": null,
+   "initialSunSource": null,
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_0741_LevelDefinition.json",
+   "levelId": "future_65",
+   "levelNameKey": "[LTE_LEVEL_NAME_FUNTIME]",
+   "levelNumber": 14,
+   "levelPowerupSet": null,
+   "modules": [
+    "FutureNightBackground",
+    "VaseBreakerArcade",
+    "VaseBreakerProps",
+    "ZombiesDeadWinCon",
+    "DefaultZombieWinCondition",
+    "ChallengeModule"
+   ],
+   "package": "pkg_0741",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_0741"
+   },
+   "seedBank": [],
+   "seedBankInfo": null,
+   "sourceFiles": [
+    "pkg_0741_LevelDefinition.json"
+   ],
+   "stageModule": "FutureOriFunTimeStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "seedBank: 该关包内没有 SeedBank / ConveyorBelt 模块",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 36,
+   "vaseGridItemType": null,
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "football_mech_ori"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 5,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "future_ori"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "future_armor2_ori"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "future_protector_ori"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "future_armor4_ori"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "disco_mech"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": "powerplant",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": "heathseeker",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "akee",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": "dartichoke",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": "endurian",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": "plantfood",
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "collectable",
+     "zombieId": null
+    }
+   ]
+  },
+  "future_68": {
+   "blacklistedCells": null,
+   "byType": {
+    "collectable": 1,
+    "plant": 17,
+    "zombie": 17
+   },
+   "coloredVases": {
+    "plant": 7,
+    "zombie": 1
+   },
+   "columnRange": {
+    "max": 7,
+    "min": 1
+   },
+   "endless": null,
+   "entryCount": 17,
+   "excludedCells": [],
+   "initialSun": null,
+   "initialSunSource": null,
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_0752_LevelDefinition.json",
+   "levelId": "future_68",
+   "levelNameKey": "[LTE_LEVEL_NAME_FUNTIME]",
+   "levelNumber": 24,
+   "levelPowerupSet": "LevelPowerupsVasebreaker",
+   "modules": [
+    "VaseBreakerArcade",
+    "VaseBreakerProps",
+    "ZombiesDeadWinCon",
+    "DefaultZombieWinCondition",
+    "CowboyRails"
+   ],
+   "package": "pkg_0752",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_0752"
+   },
+   "seedBank": [],
+   "seedBankInfo": null,
+   "sourceFiles": [
+    "pkg_0752_LevelDefinition.json"
+   ],
+   "stageModule": "FutureOriFunTimeStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "seedBank: 该关包内没有 SeedBank / ConveyorBelt 模块",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 35,
+   "vaseGridItemType": null,
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "future_ori"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "future_armor2_ori"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "future_armor1_ori"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "future_armor4_ori"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "mech_cone_ori"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "football_mech_ori"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "future_jetpack_veteran"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "disco_mech"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "future_protector_ori"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "future_jetpack"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "vase_gargantuar"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 5,
+     "plantId": "splitpea",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": "primalpeashooter",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": "iceburg",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "containmint",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 5,
+     "plantId": "potatomine",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": "plantfood",
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "collectable",
+     "zombieId": null
+    }
+   ]
+  },
+  "heian_2": {
+   "blacklistedCells": null,
+   "byType": {
+    "collectable": 1,
+    "plant": 13,
+    "zombie": 16
+   },
+   "coloredVases": {
+    "plant": 3,
+    "zombie": 0
+   },
+   "columnRange": {
+    "max": 8,
+    "min": 3
+   },
+   "endless": null,
+   "entryCount": 9,
+   "excludedCells": [],
+   "initialSun": null,
+   "initialSunSource": null,
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_1322_LevelDefinition.json",
+   "levelId": "heian_2",
+   "levelNameKey": "[HEIAN_LEVEL_NAME]",
+   "levelNumber": 2,
+   "levelPowerupSet": "LevelPowerupsVasebreaker",
+   "modules": [
+    "VaseBreakerArcade",
+    "VaseBreakerProps",
+    "ZombiesDeadWinCon",
+    "DefaultZombieWinCondition"
+   ],
+   "package": "pkg_1322",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_1322"
+   },
+   "seedBank": [],
+   "seedBankInfo": null,
+   "sourceFiles": [
+    "pkg_1322_LevelDefinition.json"
+   ],
+   "stageModule": "HeianDMGStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "seedBank: 该关包内没有 SeedBank / ConveyorBelt 模块",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 30,
+   "vaseGridItemType": null,
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 10,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "heian_armor2"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "heian_armor2"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "heian_armor2"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "heian"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 7,
+     "plantId": "wasabiwhip",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "wasabiwhip",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "unused_49",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "unused_43",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": "plantfood",
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "collectable",
+     "zombieId": null
+    }
+   ]
+  },
+  "heian_28": {
+   "blacklistedCells": null,
+   "byType": {
+    "collectable": 1,
+    "plant": 16,
+    "zombie": 20
+   },
+   "coloredVases": {
+    "plant": 3,
+    "zombie": 0
+   },
+   "columnRange": {
+    "max": 8,
+    "min": 2
+   },
+   "endless": null,
+   "entryCount": 14,
+   "excludedCells": [],
+   "initialSun": null,
+   "initialSunSource": null,
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_0966_LevelDefinition.json",
+   "levelId": "heian_28",
+   "levelNameKey": "三周年庆典 - 第二十六回 - 乌鸦喝水",
+   "levelNumber": 26,
+   "levelPowerupSet": null,
+   "modules": [
+    "VaseBreakerArcade",
+    "VaseBreakerProps",
+    "ZombiesDeadWinCon",
+    "DefaultZombieWinCondition",
+    "ChallengeModule"
+   ],
+   "package": "pkg_0966",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_0966"
+   },
+   "seedBank": [],
+   "seedBankInfo": null,
+   "sourceFiles": [
+    "pkg_0966_LevelDefinition.json"
+   ],
+   "stageModule": "HeianStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "seedBank: 该关包内没有 SeedBank / ConveyorBelt 模块",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 37,
+   "vaseGridItemType": null,
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "tutorial"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "tutorial_armor2"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "tutorial_armor1"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "modern_newspaper"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "modern_digger"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "modern_pogo"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "modern_allstar_ori"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": "powervine",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "teleportatomine",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": "explodeonut",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "unused_47",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": "powervine",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": "tombtangler",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": "plantfood",
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "collectable",
+     "zombieId": null
+    }
+   ]
+  },
+  "heian_9": {
+   "blacklistedCells": null,
+   "byType": {
+    "collectable": 1,
+    "plant": 13,
+    "zombie": 16
+   },
+   "coloredVases": {
+    "plant": 3,
+    "zombie": 0
+   },
+   "columnRange": {
+    "max": 8,
+    "min": 3
+   },
+   "endless": null,
+   "entryCount": 9,
+   "excludedCells": [],
+   "initialSun": null,
+   "initialSunSource": null,
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_1334_LevelDefinition.json",
+   "levelId": "heian_9",
+   "levelNameKey": "[HEIAN_LEVEL_NAME]",
+   "levelNumber": 8,
+   "levelPowerupSet": "LevelPowerupsVasebreaker",
+   "modules": [
+    "VaseBreakerArcade",
+    "VaseBreakerProps",
+    "ZombiesDeadWinCon",
+    "DefaultZombieWinCondition"
+   ],
+   "package": "pkg_1334",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_1334"
+   },
+   "seedBank": [],
+   "seedBankInfo": null,
+   "sourceFiles": [
+    "pkg_1334_LevelDefinition.json"
+   ],
+   "stageModule": "HeianDMGStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "seedBank: 该关包内没有 SeedBank / ConveyorBelt 模块",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 30,
+   "vaseGridItemType": null,
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 10,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "heian"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "heian_armor1"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "heian_hanabi"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "heian_gargantuar"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 7,
+     "plantId": "repeater",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "wasabiwhip",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "unused_47",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "aloe",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": "plantfood",
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "collectable",
+     "zombieId": null
+    }
+   ]
+  },
+  "kongfu_35": {
+   "blacklistedCells": null,
+   "byType": {
+    "collectable": 0,
+    "plant": 14,
+    "zombie": 16
+   },
+   "coloredVases": {
+    "plant": 3,
+    "zombie": 0
+   },
+   "columnRange": {
+    "max": 7,
+    "min": 2
+   },
+   "endless": null,
+   "entryCount": 13,
+   "excludedCells": [],
+   "initialSun": null,
+   "initialSunSource": null,
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_1396_LevelDefinition.json",
+   "levelId": "kongfu_35",
+   "levelNameKey": "[KUNGFU_LEVEL_NAME]",
+   "levelNumber": 10,
+   "levelPowerupSet": null,
+   "modules": [
+    "VaseBreakerArcade",
+    "VaseBreakerProps",
+    "ZombiesDeadWinCon",
+    "DefaultZombieWinCondition",
+    "BeatTheLevel",
+    "CowboyRails"
+   ],
+   "package": "pkg_1396",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_1396"
+   },
+   "seedBank": [],
+   "seedBankInfo": null,
+   "sourceFiles": [
+    "pkg_1396_LevelDefinition.json"
+   ],
+   "stageModule": "KongfuDMGStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "seedBank: 该关包内没有 SeedBank / ConveyorBelt 模块",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 30,
+   "vaseGridItemType": null,
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 5,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "kongfu_basic_armor1"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "kongfu_basic_armor2"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "kongfu_torch"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "kongfu_qigong"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "kongfu_hammer"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "kongfu_gong"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "kongfu_drink"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "kongfu_basic"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": "snowpea",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "wasabiwhip",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "evilshroom_speed",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": "peppermint",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 5,
+     "plantId": "poisonpeashooter",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    }
+   ]
+  },
+  "kongfu_76": {
+   "blacklistedCells": null,
+   "byType": {
+    "collectable": 1,
+    "plant": 13,
+    "zombie": 21
+   },
+   "coloredVases": {
+    "plant": 3,
+    "zombie": 2
+   },
+   "columnRange": {
+    "max": 8,
+    "min": 2
+   },
+   "endless": null,
+   "entryCount": 15,
+   "excludedCells": [],
+   "initialSun": null,
+   "initialSunSource": null,
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_1065_LevelDefinition.json",
+   "levelId": "kongfu_76",
+   "levelNameKey": "[LTE_LEVEL_NAME_TIMESPACEECHOES_S8]",
+   "levelNumber": 12,
+   "levelPowerupSet": null,
+   "modules": [
+    "VaseBreakerArcade",
+    "VaseBreakerProps",
+    "ZombiesDeadWinCon",
+    "DefaultZombieWinCondition"
+   ],
+   "package": "pkg_1065",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_1065"
+   },
+   "seedBank": [],
+   "seedBankInfo": null,
+   "sourceFiles": [
+    "pkg_1065_LevelDefinition.json"
+   ],
+   "stageModule": "JTTWStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "seedBank: 该关包内没有 SeedBank / ConveyorBelt 模块",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 35,
+   "vaseGridItemType": null,
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "kongfu_basic_armor1"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "jttw_armor1"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "jttw_armor2"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "jttw_armor2"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "kongfu_basic"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "kongfu_drink"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "kongfu_monk_blade"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "kongfu_gong"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "jttw_trident"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "jttw_poncho_plate"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": "kiwibeast",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": "imppear",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 5,
+     "plantId": "inferno",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "rheumnobile",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": "plantfood",
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "collectable",
+     "zombieId": null
+    }
+   ]
+  },
+  "kongfu_83": {
+   "blacklistedCells": null,
+   "byType": {
+    "collectable": 0,
+    "plant": 0,
+    "zombie": 5
+   },
+   "coloredVases": {
+    "plant": 0,
+    "zombie": 40
+   },
+   "columnRange": {
+    "max": 4,
+    "min": 4
+   },
+   "endless": null,
+   "entryCount": 1,
+   "excludedCells": [],
+   "initialSun": null,
+   "initialSunSource": null,
+   "isVasebreaker": true,
+   "lastStand": {
+    "startingPlantfood": 0,
+    "startingSun": 14514
+   },
+   "levelFile": "pkg_0756_LevelDefinition.json",
+   "levelId": "kongfu_83",
+   "levelNameKey": "[LTE_LEVEL_NAME_FUNTIME]",
+   "levelNumber": 28,
+   "levelPowerupSet": "LevelPowerupsVasebreaker",
+   "modules": [
+    "VaseBreakerArcade",
+    "VaseBreakerProps",
+    "ChallengeModule",
+    "SeedBank",
+    "DefaultZombieWinCondition",
+    "CowboyRails",
+    "ProtectThePlant",
+    "LastStand",
+    "Gravestones",
+    "NewWaves"
+   ],
+   "package": "pkg_0756",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_0756"
+   },
+   "seedBank": [
+    {
+     "level": 1,
+     "maxCount": null,
+     "method": "preset",
+     "minCount": null,
+     "plantId": "goldbloom",
+     "weight": null
+    }
+   ],
+   "seedBankInfo": {
+    "excludeList": [],
+    "method": "preset",
+    "objclass": "SeedBankProperties"
+   },
+   "sourceFiles": [
+    "pkg_0756_LevelDefinition.json"
+   ],
+   "stageModule": "KongfuFunTimeStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 5,
+   "vaseGridItemType": null,
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 5,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "carnie_cannon_veteran"
+    }
+   ]
+  },
+  "losantosvice_21": {
+   "blacklistedCells": [
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     4
+    ]
+   ],
+   "byType": {
+    "collectable": 0,
+    "plant": 14,
+    "zombie": 21
+   },
+   "coloredVases": {
+    "plant": 3,
+    "zombie": 0
+   },
+   "columnRange": {
+    "max": 8,
+    "min": 2
+   },
+   "endless": null,
+   "entryCount": 13,
+   "excludedCells": [],
+   "initialSun": null,
+   "initialSunSource": null,
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_1097_LevelDefinition.json",
+   "levelId": "losantosvice_21",
+   "levelNameKey": "[LTE_LEVEL_NAME_TIMESPACEECHOES_S10]",
+   "levelNumber": 6,
+   "levelPowerupSet": "LevelPowerupsVasebreaker",
+   "modules": [
+    "DefaultZombieWinCondition",
+    "GTAMowers",
+    "VaseBreakerArcade",
+    "VaseBreakerProps",
+    "ZombiesDeadWinCon"
+   ],
+   "package": "pkg_1097",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_1097"
+   },
+   "seedBank": [],
+   "seedBankInfo": null,
+   "sourceFiles": [
+    "pkg_1097_LevelDefinition.json"
+   ],
+   "stageModule": "GTADMGStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "seedBank: 该关包内没有 SeedBank / ConveyorBelt 模块",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 35,
+   "vaseGridItemType": null,
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": "yuccaguardian",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": "poppinpoppies",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": "powerlily",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": "birdofparadise",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "potatomine",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 7,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "gang_armor1"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 5,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "gang_armor2"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "gang_loudmouth"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "gang"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "gang_imp"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "gang_gargantuar"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "gang_molotov"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "citron1",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    }
+   ]
+  },
+  "lunarrainbowmarket_50": {
+   "blacklistedCells": null,
+   "byType": {
+    "collectable": 0,
+    "plant": 11,
+    "zombie": 24
+   },
+   "coloredVases": {
+    "plant": 3,
+    "zombie": 1
+   },
+   "columnRange": {
+    "max": 8,
+    "min": 2
+   },
+   "endless": null,
+   "entryCount": 11,
+   "excludedCells": [],
+   "initialSun": null,
+   "initialSunSource": null,
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_0886_LevelDefinition.json",
+   "levelId": "lunarrainbowmarket_50",
+   "levelNameKey": "[LYCY_LEVEL_NAME]",
+   "levelNumber": 8,
+   "levelPowerupSet": "LevelPowerupsVasebreaker",
+   "modules": [
+    "VaseBreakerArcade",
+    "VaseBreakerProps",
+    "ZombiesDeadWinCon",
+    "DefaultZombieWinCondition"
+   ],
+   "package": "pkg_0886",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_0886"
+   },
+   "seedBank": [],
+   "seedBankInfo": null,
+   "sourceFiles": [
+    "pkg_0886_LevelDefinition.json"
+   ],
+   "stageModule": "LunarStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "seedBank: 该关包内没有 SeedBank / ConveyorBelt 模块",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 35,
+   "vaseGridItemType": "vase_firework",
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 8,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "lunar"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "lunar_superfanimp"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "lunar_armor1"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "lunar_armor2"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "lunar_camel_onehump"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "lunar_camel_manyhump"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": "bloomerang",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "phatbeet",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "wallnut",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": "potatomine",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "vase_gargantuar"
+    }
+   ]
+  },
+  "lunarrainbowmarket_64": {
+   "blacklistedCells": null,
+   "byType": {
+    "collectable": 0,
+    "plant": 16,
+    "zombie": 24
+   },
+   "coloredVases": {
+    "plant": 4,
+    "zombie": 0
+   },
+   "columnRange": {
+    "max": 8,
+    "min": 1
+   },
+   "endless": null,
+   "entryCount": 14,
+   "excludedCells": [],
+   "initialSun": null,
+   "initialSunSource": null,
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_0837_LevelDefinition.json",
+   "levelId": "lunarrainbowmarket_64",
+   "levelNameKey": "[LUNAR_EVENTS_LEVEL_NAME]",
+   "levelNumber": 14,
+   "levelPowerupSet": null,
+   "modules": [
+    "StandardIntro",
+    "LevelEscalationModule",
+    "DefaultZombieWinCondition",
+    "ZombiesDeadWinCon",
+    "VaseBreakerArcade",
+    "VaseBreakerProps"
+   ],
+   "package": "pkg_0837",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_0837"
+   },
+   "seedBank": [],
+   "seedBankInfo": null,
+   "sourceFiles": [
+    "pkg_0837_LevelDefinition.json"
+   ],
+   "stageModule": "LunarDMGStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "seedBank: 该关包内没有 SeedBank / ConveyorBelt 模块",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 40,
+   "vaseGridItemType": null,
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "lunar_armor2"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "nutcracker"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "plantagenet_noblewoman"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 5,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "modern_newspaper"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "roman_ballista"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "heian_onmyoji"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "football_mech"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": "slingpea",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "wintermelon",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": "pvine",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": "primalpotatomine",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "gumnut",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": "thymewarp",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": "waterrabbit",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    }
+   ]
+  },
+  "lunarrainbowmarket_74": {
+   "blacklistedCells": null,
+   "byType": {
+    "collectable": 0,
+    "plant": 18,
+    "zombie": 17
+   },
+   "coloredVases": {
+    "plant": 3,
+    "zombie": 0
+   },
+   "columnRange": {
+    "max": 8,
+    "min": 2
+   },
+   "endless": null,
+   "entryCount": 13,
+   "excludedCells": [],
+   "initialSun": null,
+   "initialSunSource": null,
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_0841_LevelDefinition.json",
+   "levelId": "lunarrainbowmarket_74",
+   "levelNameKey": "[LUNAR_EVENTS_LEVEL_NAME]",
+   "levelNumber": 18,
+   "levelPowerupSet": null,
+   "modules": [
+    "LevelOfTheDayModule",
+    "DefaultZombieWinCondition",
+    "ZombiesDeadWinCon",
+    "VaseBreakerArcade",
+    "VaseBreakerProps"
+   ],
+   "package": "pkg_0841",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_0841"
+   },
+   "seedBank": [],
+   "seedBankInfo": null,
+   "sourceFiles": [
+    "pkg_0841_LevelDefinition.json"
+   ],
+   "stageModule": "LunarStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "seedBank: 该关包内没有 SeedBank / ConveyorBelt 模块",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 35,
+   "vaseGridItemType": "vase_firework",
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "heian_hanabi"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "chicken_farmer"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "iceage_hunter"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "newspaper_veteran"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "cleopatra"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "zcorp_consultant"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "feastivus_gargantuar"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 5,
+     "plantId": "snowpea",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "akee",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": "hollybarrierleafplantfood",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 5,
+     "plantId": "buzzbutton",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": "powerlily",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "chardguard",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    }
+   ]
+  },
+  "mausoleum_2": {
+   "blacklistedCells": null,
+   "byType": {
+    "collectable": 0,
+    "plant": 17,
+    "zombie": 13
+   },
+   "coloredVases": {
+    "plant": 5,
+    "zombie": 0
+   },
+   "columnRange": {
+    "max": 8,
+    "min": 2
+   },
+   "endless": null,
+   "entryCount": 7,
+   "excludedCells": [
+    [
+     3,
+     0
+    ],
+    [
+     3,
+     1
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     3,
+     4
+    ]
+   ],
+   "initialSun": null,
+   "initialSunSource": null,
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_0549_LevelDefinition.json",
+   "levelId": "mausoleum_2",
+   "levelNameKey": "[RIFT_LEVEL_NAME]",
+   "levelNumber": 1,
+   "levelPowerupSet": "LevelPowerupsVasebreaker",
+   "modules": [
+    "ZombiesDeadWinCon",
+    "Gravestones",
+    "DefaultZombieWinCondition",
+    "PerkActivator",
+    "LevelDifficultyScaling",
+    "VaseBreakerProps"
+   ],
+   "package": "pkg_0549",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_0549"
+   },
+   "seedBank": [],
+   "seedBankInfo": null,
+   "sourceFiles": [
+    "pkg_0549_LevelDefinition.json"
+   ],
+   "stageModule": "RiftStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "seedBank: 该关包内没有 SeedBank / ConveyorBelt 模块",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 30,
+   "vaseGridItemType": null,
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 10,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "dark"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "dark_armor1"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "dark_armor2"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 8,
+     "plantId": "puffshroom",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "magnetshroom",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 7,
+     "plantId": "wallnut",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": "plantfood",
+     "count": 0,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "collectable",
+     "zombieId": null
+    }
+   ]
+  },
+  "modern_51": {
+   "blacklistedCells": null,
+   "byType": {
+    "collectable": 0,
+    "plant": 12,
+    "zombie": 23
+   },
+   "coloredVases": {
+    "plant": 3,
+    "zombie": 1
+   },
+   "columnRange": {
+    "max": 8,
+    "min": 2
+   },
+   "endless": null,
+   "entryCount": 10,
+   "excludedCells": [],
+   "initialSun": null,
+   "initialSunSource": null,
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_0878_LevelDefinition.json",
+   "levelId": "modern_51",
+   "levelNameKey": "[LYCY_LEVEL_NAME]",
+   "levelNumber": 15,
+   "levelPowerupSet": "LevelPowerupsVasebreaker",
+   "modules": [
+    "VaseBreakerArcade",
+    "VaseBreakerProps",
+    "ZombiesDeadWinCon",
+    "DefaultZombieWinCondition"
+   ],
+   "package": "pkg_0878",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_0878"
+   },
+   "seedBank": [],
+   "seedBankInfo": null,
+   "sourceFiles": [
+    "pkg_0878_LevelDefinition.json"
+   ],
+   "stageModule": "ChildStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "seedBank: 该关包内没有 SeedBank / ConveyorBelt 模块",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 35,
+   "vaseGridItemType": "vase_firework",
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "leprachaun_dodo"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 6,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "valentines_armor2"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "spring_poncho"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 5,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "birthday_jetpack"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "lostcity_lostpilot"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": "futurebubuseed",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": "blover",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "powerlily",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 5,
+     "plantId": "stickybombrice",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "vase_gargantuar"
+    }
+   ]
+  },
+  "muji_24": {
+   "blacklistedCells": [
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     4
+    ]
+   ],
+   "byType": {
+    "collectable": 0,
+    "plant": 14,
+    "zombie": 21
+   },
+   "coloredVases": {
+    "plant": 5,
+    "zombie": 0
+   },
+   "columnRange": {
+    "max": 8,
+    "min": 2
+   },
+   "endless": null,
+   "entryCount": 11,
+   "excludedCells": [],
+   "initialSun": 0,
+   "initialSunSource": "LevelDefinition.StartingSun",
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_1810_LevelDefinition.json",
+   "levelId": "muji_24",
+   "levelNameKey": "[ROME_LEVEL_NAME]",
+   "levelNumber": 15,
+   "levelPowerupSet": "LevelPowerupsVasebreaker",
+   "modules": [
+    "ZombiesDeadWinCon",
+    "VaseBreakerArcade",
+    "VaseBreakerProps",
+    "DefaultZombieWinCondition"
+   ],
+   "package": "pkg_1810",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_1810"
+   },
+   "seedBank": [
+    {
+     "level": -1,
+     "maxCount": null,
+     "method": "preset",
+     "minCount": null,
+     "plantId": "iceburg",
+     "weight": null
+    }
+   ],
+   "seedBankInfo": {
+    "excludeList": [],
+    "method": "preset",
+    "objclass": "SeedBankProperties"
+   },
+   "sourceFiles": [
+    "pkg_1810_LevelDefinition.json"
+   ],
+   "stageModule": "RiftStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 35,
+   "vaseGridItemType": null,
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 5,
+     "plantId": "dartichoke",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": "powerlily",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 5,
+     "plantId": "mangosteen",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "applemortar",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 7,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "roman_armor2"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 6,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "roman_armor1"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "zcorp_consultant"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "roman_shield_pair"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "roman_healer"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "roman_gargantuar"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": "heathseeker",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    }
+   ]
+  },
+  "pirate_41": {
+   "blacklistedCells": [
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     4
+    ]
+   ],
+   "byType": {
+    "collectable": 0,
+    "plant": 0,
+    "zombie": 35
+   },
+   "coloredVases": {
+    "plant": 0,
+    "zombie": 35
+   },
+   "columnRange": {
+    "max": 8,
+    "min": 2
+   },
+   "endless": null,
+   "entryCount": 1,
+   "excludedCells": [],
+   "initialSun": 300,
+   "initialSunSource": "LevelDefinition.StartingSun",
+   "isVasebreaker": null,
+   "lastStand": null,
+   "levelFile": "pkg_1557_LevelDefinition.json",
+   "levelId": "pirate_41",
+   "levelNameKey": "[PIRATF_LEVEL_NAME]",
+   "levelNumber": 26,
+   "levelPowerupSet": null,
+   "modules": [
+    "ZombossIntro",
+    "SeedBank",
+    "DefaultSunDropper",
+    "ZombossBattle",
+    "VaseBreakerArcade",
+    "VaseBreakerProps",
+    "PiratePlanks",
+    "DefaultZombieWinCondition",
+    "NewWaves"
+   ],
+   "package": "pkg_1557",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_1557"
+   },
+   "seedBank": [
+    {
+     "level": null,
+     "maxCount": 6,
+     "method": "conveyor",
+     "minCount": 3,
+     "plantId": "chardguard",
+     "weight": 10
+    },
+    {
+     "level": null,
+     "maxCount": 3,
+     "method": "conveyor",
+     "minCount": 1,
+     "plantId": "dandelion",
+     "weight": 10
+    },
+    {
+     "level": null,
+     "maxCount": 1,
+     "method": "conveyor",
+     "minCount": null,
+     "plantId": "jalapeno",
+     "weight": 5
+    },
+    {
+     "level": null,
+     "maxCount": 6,
+     "method": "conveyor",
+     "minCount": 5,
+     "plantId": "lightningreed",
+     "weight": 30
+    },
+    {
+     "level": null,
+     "maxCount": 10,
+     "method": "conveyor",
+     "minCount": 3,
+     "plantId": "spikeweed",
+     "weight": 10
+    }
+   ],
+   "seedBankInfo": {
+    "conveyor": true,
+    "excludeList": [
+     "burnade",
+     "heathseeker",
+     "spearmint",
+     "filamint",
+     "rhubarbarian",
+     "noctarine",
+     "jackolantern",
+     "caulipower",
+     "appeasemint",
+     "pokra"
+    ],
+    "method": "chooser",
+    "objclass": "SeedBankProperties"
+   },
+   "sourceFiles": [
+    "pkg_1557_LevelDefinition.json"
+   ],
+   "stageModule": "PirateBossStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 35,
+   "vaseGridItemType": null,
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 35,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "pirate_gargantuar"
+    }
+   ]
+  },
+  "pirate_53": {
+   "blacklistedCells": null,
+   "byType": {
+    "collectable": 1,
+    "plant": 11,
+    "zombie": 18
+   },
+   "coloredVases": {
+    "plant": 3,
+    "zombie": 0
+   },
+   "columnRange": {
+    "max": 8,
+    "min": 3
+   },
+   "endless": null,
+   "entryCount": 7,
+   "excludedCells": [],
+   "initialSun": null,
+   "initialSunSource": null,
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_0306_LevelDefinition.json",
+   "levelId": "pirate_53",
+   "levelNameKey": "[VASEBREAKER_PIRATE_LEVEL_NAME_1]",
+   "levelNumber": 1,
+   "levelPowerupSet": "LevelPowerupsVasebreaker",
+   "modules": [
+    "VaseBreakerArcade",
+    "VaseBreakerProps",
+    "ZombiesDeadWinCon",
+    "DefaultZombieWinCondition",
+    "PiratePlanks"
+   ],
+   "package": "pkg_0306",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_0306"
+   },
+   "seedBank": [],
+   "seedBankInfo": null,
+   "sourceFiles": [
+    "pkg_0306_LevelDefinition.json"
+   ],
+   "stageModule": "PirateStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "seedBank: 该关包内没有 SeedBank / ConveyorBelt 模块",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 30,
+   "vaseGridItemType": null,
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 8,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "pirate"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 6,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "pirate_armor1"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "seagull"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 5,
+     "plantId": "spikeweed",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": "wallnut",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": "threepeater",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": "plantfood",
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "collectable",
+     "zombieId": null
+    }
+   ]
+  },
+  "pirate_54": {
+   "blacklistedCells": null,
+   "byType": {
+    "collectable": 1,
+    "plant": 14,
+    "zombie": 15
+   },
+   "coloredVases": {
+    "plant": 3,
+    "zombie": 0
+   },
+   "columnRange": {
+    "max": 8,
+    "min": 3
+   },
+   "endless": null,
+   "entryCount": 9,
+   "excludedCells": [],
+   "initialSun": null,
+   "initialSunSource": null,
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_0307_LevelDefinition.json",
+   "levelId": "pirate_54",
+   "levelNameKey": "[VASEBREAKER_PIRATE_LEVEL_NAME_2]",
+   "levelNumber": 2,
+   "levelPowerupSet": "LevelPowerupsVasebreaker",
+   "modules": [
+    "VaseBreakerArcade",
+    "VaseBreakerProps",
+    "ZombiesDeadWinCon",
+    "DefaultZombieWinCondition",
+    "PiratePlanks"
+   ],
+   "package": "pkg_0307",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_0307"
+   },
+   "seedBank": [],
+   "seedBankInfo": null,
+   "sourceFiles": [
+    "pkg_0307_LevelDefinition.json"
+   ],
+   "stageModule": "PirateStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "seedBank: 该关包内没有 SeedBank / ConveyorBelt 模块",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 30,
+   "vaseGridItemType": null,
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 8,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "pirate"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "pirate_armor1"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "pirate_armor2"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "barrelroller"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": "spikerock",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": "peashooter",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": "springbean",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "threepeater",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": "plantfood",
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "collectable",
+     "zombieId": null
+    }
+   ]
+  },
+  "pirate_57": {
+   "blacklistedCells": null,
+   "byType": {
+    "collectable": 1,
+    "plant": 14,
+    "zombie": 15
+   },
+   "coloredVases": {
+    "plant": 3,
+    "zombie": 0
+   },
+   "columnRange": {
+    "max": 7,
+    "min": 2
+   },
+   "endless": null,
+   "entryCount": 9,
+   "excludedCells": [],
+   "initialSun": null,
+   "initialSunSource": null,
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_0308_LevelDefinition.json",
+   "levelId": "pirate_57",
+   "levelNameKey": "[VASEBREAKER_PIRATE_LEVEL_NAME_3]",
+   "levelNumber": 3,
+   "levelPowerupSet": "LevelPowerupsVasebreaker",
+   "modules": [
+    "VaseBreakerArcade",
+    "VaseBreakerProps",
+    "ZombiesDeadWinCon",
+    "DefaultZombieWinCondition",
+    "PiratePlanks"
+   ],
+   "package": "pkg_0308",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_0308"
+   },
+   "seedBank": [],
+   "seedBankInfo": null,
+   "sourceFiles": [
+    "pkg_0308_LevelDefinition.json"
+   ],
+   "stageModule": "PirateStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "seedBank: 该关包内没有 SeedBank / ConveyorBelt 模块",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 30,
+   "vaseGridItemType": null,
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 5,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "pirate"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 6,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "seagull"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "pirate_armor2"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "pirate_captain"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": "spikeweed",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": "bloomerang",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "wallnut",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 5,
+     "plantId": "bonkchoy",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": "plantfood",
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "collectable",
+     "zombieId": null
+    }
+   ]
+  },
+  "plantagenet_18": {
+   "blacklistedCells": [
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     4
+    ]
+   ],
+   "byType": {
+    "collectable": 0,
+    "plant": 14,
+    "zombie": 21
+   },
+   "coloredVases": {
+    "plant": 5,
+    "zombie": 0
+   },
+   "columnRange": {
+    "max": 8,
+    "min": 2
+   },
+   "endless": null,
+   "entryCount": 10,
+   "excludedCells": [],
+   "initialSun": 200,
+   "initialSunSource": "LevelDefinition.StartingSun",
+   "isVasebreaker": null,
+   "lastStand": null,
+   "levelFile": "pkg_1576_LevelDefinition.json",
+   "levelId": "plantagenet_18",
+   "levelNameKey": "[PLANTAGENET_LEVEL_NAME_19]",
+   "levelNumber": 19,
+   "levelPowerupSet": "LevelPowerupsVasebreaker",
+   "modules": [
+    "StandardIntro",
+    "ZombiesDeadWinCon",
+    "VaseBreakerArcade",
+    "VaseBreakerProps",
+    "SeedBank",
+    "PlantagenetDaylightBackground",
+    "LightModule",
+    "LightModule2",
+    "DefaultZombieWinCondition"
+   ],
+   "package": "pkg_1576",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_1576"
+   },
+   "seedBank": [
+    {
+     "level": -1,
+     "maxCount": null,
+     "method": "preset",
+     "minCount": null,
+     "plantId": "flowerpot",
+     "weight": null
+    }
+   ],
+   "seedBankInfo": {
+    "excludeList": [],
+    "method": "preset",
+    "objclass": "SeedBankProperties"
+   },
+   "sourceFiles": [
+    "pkg_1576_LevelDefinition.json"
+   ],
+   "stageModule": "PlantagenetDaylightDMGStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 35,
+   "vaseGridItemType": null,
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 5,
+     "plantId": "enforcemint",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": "spearmint",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 5,
+     "plantId": "magnetshroom",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": "olivepit",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 7,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "plantagenet_armor2"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 6,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "plantagenet_noblewoman"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "plantagenet_odin"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "plantagenet_gargantuar"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "plantagenet_winetasting_weak"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": "concealmint",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    }
+   ]
+  },
+  "sky_52": {
+   "blacklistedCells": null,
+   "byType": {
+    "collectable": 0,
+    "plant": 16,
+    "zombie": 24
+   },
+   "coloredVases": {
+    "plant": 10,
+    "zombie": 10
+   },
+   "columnRange": {
+    "max": 8,
+    "min": 1
+   },
+   "endless": null,
+   "entryCount": 11,
+   "excludedCells": [],
+   "initialSun": null,
+   "initialSunSource": null,
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_0721_LevelDefinition.json",
+   "levelId": "sky_52",
+   "levelNameKey": "[LTE_LEVEL_NAME_4TH_ANNIVERSARY]",
+   "levelNumber": 23,
+   "levelPowerupSet": "LevelPowerupsVasebreaker",
+   "modules": [
+    "VaseBreakerArcade",
+    "VaseBreakerProps",
+    "CarnivalDynamicBackground",
+    "PenaconyAnim",
+    "DefaultZombieWinCondition"
+   ],
+   "package": "pkg_0721",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_0721"
+   },
+   "seedBank": [],
+   "seedBankInfo": null,
+   "sourceFiles": [
+    "pkg_0721_LevelDefinition.json"
+   ],
+   "stageModule": "PenaconyStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "seedBank: 该关包内没有 SeedBank / ConveyorBelt 模块",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 40,
+   "vaseGridItemType": null,
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 5,
+     "plantId": "bombardmint",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 6,
+     "plantId": "stickybombrice",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 5,
+     "plantId": "waterrabbit",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 1,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "carnie_gargantuar"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 4,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "carnie_imp_twins"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 2,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "carnie_firebreather"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "carnie_stiltwalker"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "carnie_cannon"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "carnie_magician"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 3,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "carnie_armor2"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 5,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "carnie_armor1"
+    }
+   ]
+  },
+  "steam_32": {
+   "blacklistedCells": null,
+   "byType": {
+    "collectable": 0,
+    "plant": 24,
+    "zombie": 6
+   },
+   "coloredVases": {
+    "plant": 0,
+    "zombie": 0
+   },
+   "columnRange": {
+    "max": 8,
+    "min": 3
+   },
+   "endless": null,
+   "entryCount": 3,
+   "excludedCells": [],
+   "initialSun": null,
+   "initialSunSource": null,
+   "isVasebreaker": true,
+   "lastStand": null,
+   "levelFile": "pkg_1880_LevelDefinition.json",
+   "levelId": "steam_32",
+   "levelNameKey": "[STEAM_LEVEL_NAME]",
+   "levelNumber": 32,
+   "levelPowerupSet": "LevelPowerupsVasebreaker",
+   "modules": [
+    "VaseBreakerArcade",
+    "VaseBreakerProps",
+    "ConveyorBelt",
+    "ZombiesDeadWinCon",
+    "DefaultZombieWinCondition"
+   ],
+   "package": "pkg_1880",
+   "preset": {
+    "aliases": [
+     "VaseBreakerProps"
+    ],
+    "found": true,
+    "objclass": "VaseBreakerPresetProperties",
+    "package": "pkg_1880"
+   },
+   "seedBank": [
+    {
+     "level": null,
+     "maxCount": 10,
+     "method": "conveyor",
+     "minCount": 5,
+     "plantId": "primalpeashooter",
+     "weight": 15
+    },
+    {
+     "level": null,
+     "maxCount": 10,
+     "method": "conveyor",
+     "minCount": 2,
+     "plantId": "celerystalker",
+     "weight": 15
+    },
+    {
+     "level": null,
+     "maxCount": 2,
+     "method": "conveyor",
+     "minCount": 1,
+     "plantId": "pokra",
+     "weight": 7
+    },
+    {
+     "level": null,
+     "maxCount": 2,
+     "method": "conveyor",
+     "minCount": 1,
+     "plantId": "iceburg",
+     "weight": 5
+    },
+    {
+     "level": null,
+     "maxCount": 10,
+     "method": "conveyor",
+     "minCount": 5,
+     "plantId": "grapeshot",
+     "weight": 15
+    }
+   ],
+   "seedBankInfo": {
+    "method": "conveyor",
+    "objclass": "ConveyorSeedBankProperties"
+   },
+   "sourceFiles": [
+    "pkg_1880_LevelDefinition.json"
+   ],
+   "stageModule": "SteamUBStage",
+   "tide": null,
+   "timeLimit": null,
+   "unknowns": [
+    "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+    "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+    "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+    "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时"
+   ],
+   "vaseCount": 30,
+   "vaseGridItemType": null,
+   "vases": [
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 6,
+     "plantId": null,
+     "row": null,
+     "sunAmount": null,
+     "type": "zombie",
+     "zombieId": "future_gargantuar"
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 14,
+     "plantId": "primalpotatomine",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    },
+    {
+     "col": null,
+     "collectableType": null,
+     "count": 10,
+     "plantId": "potatomine",
+     "row": null,
+     "sunAmount": null,
+     "type": "plant",
+     "zombieId": null
+    }
+   ]
+  }
+ },
+ "sources": {
+  "flag": "content/levels/*.json extra.vasebreaker",
+  "levelClass": "LevelDefinition",
+  "levels": "D:\\OneDrive\\文档\\pvz_shuttle\\repo\\pvz2-shuttle-pc\\content\\levels",
+  "obb": "D:\\OneDrive\\文档\\pvz_shuttle\\work\\obb_packages",
+  "presetClass": "VaseBreakerPresetProperties"
+ },
+ "unknowns": [
+  {
+   "count": 1,
+   "detail": "endless: VaseBreakerEndlessProperties.Stages 是无尽模式的分阶段配方，不是本关固定罐表；已原样收录在 endless 字段，未并入 vases",
+   "kind": "endless"
+  },
+  {
+   "count": 43,
+   "detail": "initialSun: 该关 LevelDefinition 没有 StartingSun 字段",
+   "kind": "initialSun"
+  },
+  {
+   "count": 1,
+   "detail": "preset: 该关包内没有 VaseBreakerPresetProperties，藤罐内容无法从原版数据取得",
+   "kind": "preset"
+  },
+  {
+   "count": 39,
+   "detail": "seedBank: 该关包内没有 SeedBank / ConveyorBelt 模块",
+   "kind": "seedBank"
+  },
+  {
+   "count": 46,
+   "detail": "sunAmount: 原版 Vases[] 的收集物罐只给类型名（本作全部是 plantfood），没有阳光数量字段",
+   "kind": "sunAmount"
+  },
+  {
+   "count": 47,
+   "detail": "timeLimit: 原版 LevelDefinition 无 TimeLimit 字段（全库仅 JoustGameModuleProperties / StarChallengeLevelTimerProperties 带该字段），砸罐子关卡不计时",
+   "kind": "timeLimit"
+  },
+  {
+   "count": 46,
+   "detail": "vasePlacement: 原版 Vases[] 只有类型与 Count，没有逐罐 row/col；落位由 MinColumnIndex..MaxColumnIndex 减去 GridSquareExcludelist/Blacklist 后随机决定",
+   "kind": "vasePlacement"
+  }
+ ]
+}

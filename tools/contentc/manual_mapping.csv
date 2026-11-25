@@ -1,0 +1,9 @@
+side,client_id,pack_type,note
+zombie,basic,tutorial,extra.source_codename=tutorial 精确命中原版 TypeName，人工确认同一僵尸
+zombie,conehead,tutorial_armor1,extra.source_codename=tutorial_armor1 精确命中原版 TypeName，人工确认同一僵尸
+zombie,buckethead,tutorial_armor2,extra.source_codename=tutorial_armor2 精确命中原版 TypeName，人工确认同一僵尸
+zombie,flag,tutorial_flag,extra.source_codename=tutorial_flag 精确命中原版 TypeName，人工确认同一僵尸
+zombie,gargantuar,tutorial_gargantuar,extra.source_codename=tutorial_gargantuar 精确命中原版 TypeName，人工确认同一僵尸
+zombie,football,football_mech,extra.source_codename=football_mech 精确命中原版 TypeName，人工确认同一僵尸
+zombie,newspaper,modern_newspaper,extra.source_codename=modern_newspaper 精确命中原版 TypeName，人工确认同一僵尸
+zombie,pole_vaulter,iceage_dodo,extra.source_codename=iceage_dodo 精确命中原版 TypeName，人工确认同一僵尸

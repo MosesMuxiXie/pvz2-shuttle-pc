@@ -1,8 +1,60 @@
 # PvZ 2: SHUTTLE — PC 移植版（非官方粉丝复刻）
 
 > **这不是《植物大战僵尸 2》官方产品，也不是 SHUTTLE 模组的官方 PC 版。**
-> 本项目是社区爱好者以 SHUTTLE v26.10.1 的公开数据、素材与界面为参照，用 Python + pygame 重写的
-> Windows / macOS 单机复刻版，仅用于学习、研究与个人游玩。
+> 本项目是社区爱好者以 SHUTTLE v26.11.1（数据包 460.9 / 核心库 460.11）的公开数据、素材与界面为参照
+> 重写的 Windows 单机复刻版，仅用于学习、研究与个人游玩。仓库里有两条实现：
+> **`native/`（C++ 原生客户端，当前主线）** 与 `game/` + `main.py`（早期的 Python + pygame 版本，保留作对照）。
+
+## 原生客户端重建进度（开发中）
+
+2026-11-20 原生端已推进到**数据驱动内核**（S0–S3）：内容编译器把原版属性表编成 `native/generated/content.pack`
+（339 植物类型 / 1127 僵尸类型），183 个 `ZombieClass` 全部映射到行为族，26 个世界的棋盘尺寸从关卡定义解出
+（beach/modern 6×9），任意关卡可用 `--run-level` 无头跑完并在同种子下复现同一状态哈希。
+**尚未完成完整复刻；现有发行版入口不变。** 147 株植物的美术、26 个 Boss、元素/养料/融合/小游戏、
+桌面视图迁移到新内核与 macOS 验证仍在进行，逐项状态见 [docs/PARITY_BASELINE.md](docs/PARITY_BASELINE.md) 与
+[docs/PARITY_MATRIX.md](docs/PARITY_MATRIX.md)。
+运行与构建见 [native/README.md](native/README.md)，验收及后续清单见 [docs/NATIVE_PROGRESS.md](docs/NATIVE_PROGRESS.md)。
+
+## 原生客户端：构建与命令行
+
+`native/` 是 C++20 + SDL3 的实现，数据来自 `content/`（内容编译器产物）与 `native/generated/`（派生表，
+`data 460.9`）。三条命令覆盖了从构建到验收的全过程：
+
+```powershell
+# 构建（Release，桌面视图；找不到 cmake 时脚本自己去 vswhere 里找）
+pwsh -File tools/build_native.ps1
+
+# 打包：构建 -> install 到 dist/ -> 生成 LICENSES.md -> zip -> sha256 -> 解压后台冒烟
+pwsh -File tools/package.ps1
+
+# 门禁：内容编译、C++ 审计、桌面用例、Python 用例、矩阵与台账（静树下必须 EXIT=0）
+pwsh -File tools/check_all.ps1
+```
+
+打出来的 `dist/PvZ2SHUTTLE-<版本>-win64.zip` 里有 `PvZ2SHUTTLE.exe`、`content/`、`generated/`、`assets/ui/`、
+`PROGRESS.md`、`LICENSES.md`（约 20.8 MB）。**`assets/ui/` 只放界面小图与中文字体（26.6 MB 解压后），
+是四屏无头渲染的硬需求**；4.6 GB 的提取美术（`db/ lawn/ world/ …`）不在包里：解压后用 `PVZ_ASSET_ROOT`
+指向本机 `assets/`，或把 `assets/` 放在 exe 旁边（查找顺序：`PVZ_ASSET_ROOT` → exe 所在目录的 `assets/`
+→ 从工作目录向上找 `native/generated`）。构建目录里的 `PVZ_ASSET_SOURCE` 是 cache 变量，素材树换位置时
+要么删 `build/package` 要么显式 `-DPVZ_ASSET_SOURCE=...`（`tools/package.ps1` 每次都会显式传）。
+
+exe 自己的参数（`--version` 会打印版本与数据版本）：
+
+| 命令 | 用途 |
+| --- | --- |
+| `--version` | 打印 `PvZ2SHUTTLE <版本>` 与 `data <数据版本>`，用于验收包里是不是这次构建 |
+| `--menu <content> [--frames N]` | 主菜单；带 `--frames` 时无头渲染 N 帧并落 PNG |
+| `--worldmap <content> [--worldmap-screen]` | 世界地图 / 世界门状态 |
+| `--level-select <content> --world <id>` | 选关屏 |
+| `--run-level <content> <level> --seconds N` | 无头跑一关，输出波次、击杀、掉落、机制计数与状态哈希 |
+| `--flow <content> [--progress FILE] [--flow-after N]` | 自动选关闭环：打完一关结算并推进到下一关 |
+| `--battle <content> <level> [--battle-snapshot PNG]` | 桌面战斗视图（可截图） |
+| `--simulate <content> [level]` | 旧 `Battle` 模拟器；该关有不支持规则时按名单 exit 2 |
+| `--audio-audit` / `--audio-off` / `--volume 0..100` | 音频审计（解了多少音源、多少秒）、静音、主音量 |
+| `--shop <content> --buy <id> [--coins N]` | 商店购买与可买清单 |
+
+`--run-level` 与 `--flow` 的输出是 JSON（`status` / `tick` / `hash` / `coinsGained` / `mechanicUnknown` 等），
+同一个种子两次运行必须逐字节相同——这是所有玩法改动的第一条回归判据。
 
 ## 为什么是“复刻”而不是“直接移植”
 

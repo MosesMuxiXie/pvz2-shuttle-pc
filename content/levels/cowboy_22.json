@@ -204,6 +204,13 @@
   "original_waves": 0,
   "night": false,
   "boss": true,
-  "boss_zombie": "zomboss"
+  "boss_zombie": "zomboss",
+  "minecarts": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "rail": true
  }
 }

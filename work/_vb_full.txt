@@ -1,0 +1,343 @@
+...............................................................F...............................FF.F..FF.F......F..F.....................缺少关卡目录：D:\Temp\User\tmp_bf8o0_g\nope
+缺少原版表目录：D:\Temp\User\tmp_bf8o0_g\nope
+.........F...F................................产物需要重新生成：
+  D:\Temp\User\tmpue9fwclg\out.json（缺失）
+  D:\Temp\User\tmpue9fwclg\out.md（缺失）
+.............................产物不是最新：
+  D:\OneDrive\文档\pvz_shuttle\repo\pvz2-shuttle-pc\native\generated\original_gaps.json 内容过期
+  D:\OneDrive\文档\pvz_shuttle\repo\pvz2-shuttle-pc\docs\reviews\2026-11-24-original-gaps.md 内容过期
+F产物不是最新：
+  D:\Temp\User\oggaps-stale-ea0bm48n\report.md 内容过期
+.产物不是最新：
+  D:\Temp\User\oggaps-nw5kmtcw\original_gaps.json 内容过期
+.F.obb 目录不存在：D:\Temp\User\oggaps-miss-1_0azrsw\nope
+........FF..........................F....F.FFF..产物过期：D:\Temp\User\tmpski9yr6q\plantfood_from_pack.json
+.....找不到 obb 目录：D:\Temp\User\tmpqf1euxiu\no-such-obb
+.....................................................F.F.................................................................................F.......F.........................................F.F................过期：D:\Temp\User\tmp3n30yyjh\zombie_family_gaps.json
+...............
+======================================================================
+FAIL: test_registry_coverage_is_reported_honestly (test_decks.DeckReportTest.test_registry_coverage_is_reported_honestly)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\OneDrive\文档\pvz_shuttle\repo\pvz2-shuttle-pc\tools\tests\test_decks.py", line 123, in test_registry_coverage_is_reported_honestly
+    self.assertEqual(self.report.registry_total, 147)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 442 != 147
+
+======================================================================
+FAIL: test_cost_and_cooldown_defaults_are_recomputable (test_expand.ExpandTest.test_cost_and_cooldown_defaults_are_recomputable)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\OneDrive\文档\pvz_shuttle\repo\pvz2-shuttle-pc\tools\tests\test_expand.py", line 106, in test_cost_and_cooldown_defaults_are_recomputable
+    self.assertEqual(len(self.roster.cost_default), 2)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0 != 2
+
+======================================================================
+FAIL: test_json_payload_is_self_consistent (test_expand.ExpandTest.test_json_payload_is_self_consistent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\OneDrive\文档\pvz_shuttle\repo\pvz2-shuttle-pc\tools\tests\test_expand.py", line 161, in test_json_payload_is_self_consistent
+    self.assertEqual(len(payload["plants"]), EXPECTED_EMITTED)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0 != 295
+
+======================================================================
+FAIL: test_only_pack_only_plants_are_emitted (test_expand.ExpandTest.test_only_pack_only_plants_are_emitted)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\OneDrive\文档\pvz_shuttle\repo\pvz2-shuttle-pc\tools\tests\test_expand.py", line 71, in test_only_pack_only_plants_are_emitted
+    self.assertEqual(len(self.roster.rows), EXPECTED_EMITTED)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0 != 295
+
+======================================================================
+FAIL: test_report_sections_and_family_totals (test_expand.ExpandTest.test_report_sections_and_family_totals)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\OneDrive\文档\pvz_shuttle\repo\pvz2-shuttle-pc\tools\tests\test_expand.py", line 181, in test_report_sections_and_family_totals
+    self.assertEqual(sum(count for _, count in self.roster.family_counts), EXPECTED_EMITTED)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0 != 295
+
+======================================================================
+FAIL: test_rows_tags_and_source_markers (test_expand.ExpandTest.test_rows_tags_and_source_markers)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\OneDrive\文档\pvz_shuttle\repo\pvz2-shuttle-pc\tools\tests\test_expand.py", line 135, in test_rows_tags_and_source_markers
+    self.assertEqual(len(water), 1)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+AssertionError: 0 != 1
+
+======================================================================
+FAIL: test_committed_outputs_are_current (test_fusions.FusionCliTest.test_committed_outputs_are_current)
+仓库里的产物与当前代码一致（否则 --check 在 CI 里会红）。
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\OneDrive\文档\pvz_shuttle\repo\pvz2-shuttle-pc\tools\tests\test_fusions.py", line 231, in test_committed_outputs_are_current
+    self.assertEqual(fusions.DEFAULT_JSON.read_text(encoding="utf-8"), fusions.render_json(result))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '{\n [150 chars]nt": 94,\n  "ingredientsPack": 76,\n  "objects[33612 chars]n}\n' != '{\n [150 chars]nt": 170,\n  "ingredientsPack": 0,\n  "objects[33727 chars]n}\n'
+Diff is 40057 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_pairs_normalized_to_client (test_fusions.FusionCompileTest.test_pairs_normalized_to_client)
+(b) 27 条配对的两位 ingredient 都是 client id。
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\OneDrive\文档\pvz_shuttle\repo\pvz2-shuttle-pc\tools\tests\test_fusions.py", line 78, in test_pairs_normalized_to_client
+    self.assertEqual(self.result.counts["pairsClient"], PAIRS_CLIENT)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 85 != 27
+
+======================================================================
+FAIL: test_unresolved_pairs_are_kept_as_pack (test_fusions.FusionCompileTest.test_unresolved_pairs_are_kept_as_pack)
+(e) 归一不了的配对保留原值并标 pack，且一条都不丢。
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\OneDrive\文档\pvz_shuttle\repo\pvz2-shuttle-pc\tools\tests\test_fusions.py", line 93, in test_unresolved_pairs_are_kept_as_pack
+    self.assertEqual(len(pack_pairs), PACK_PAIRS - PAIRS_CLIENT)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0 != 58
+
+======================================================================
+FAIL: test_art_reuse_popanim_is_not_a_match (test_mapping.MappingOutputTest.test_art_reuse_popanim_is_not_a_match)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\OneDrive\文档\pvz_shuttle\repo\pvz2-shuttle-pc\tools\tests\test_mapping.py", line 192, in test_art_reuse_popanim_is_not_a_match
+    self.assertIn("美术复用", row["note"])
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '美术复用' not found in '客户端独有：原版表无此 id'
+
+======================================================================
+FAIL: test_every_client_plant_is_attributed_or_client_only (test_mapping.MappingOutputTest.test_every_client_plant_is_attributed_or_client_only)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\OneDrive\文档\pvz_shuttle\repo\pvz2-shuttle-pc\tools\tests\test_mapping.py", line 164, in test_every_client_plant_is_attributed_or_client_only
+    self.assertEqual(len(ids), 147)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+AssertionError: 442 != 147
+
+======================================================================
+FAIL: test_check_accepts_committed_artifacts (test_original_gaps.CliTest.test_check_accepts_committed_artifacts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\OneDrive\文档\pvz_shuttle\repo\pvz2-shuttle-pc\tools\tests\test_original_gaps.py", line 258, in test_check_accepts_committed_artifacts
+    self.assertEqual(original_gaps.main(["--check"]), 0)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 0
+
+======================================================================
+FAIL: test_committed_artifacts_match_rendered_bytes (test_original_gaps.CliTest.test_committed_artifacts_match_rendered_bytes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\OneDrive\文档\pvz_shuttle\repo\pvz2-shuttle-pc\tools\tests\test_original_gaps.py", line 315, in test_committed_artifacts_match_rendered_bytes
+    self.assertEqual(GENERATED.read_bytes(), original_gaps.render_json(data).encode("utf-8"))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: b'{\n[44 chars]y": 12210,\n  "clientWorlds": 26,\n  "entities[47677 chars]n}\n' != b'{\n[44 chars]y": 14455,\n  "clientWorlds": 26,\n  "entities[48335 chars]n}\n'
+
+======================================================================
+FAIL: test_plants_cost_matches_pack_cost (test_original_gaps.MeasuredFactsTest.test_plants_cost_matches_pack_cost)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\OneDrive\文档\pvz_shuttle\repo\pvz2-shuttle-pc\tools\tests\test_original_gaps.py", line 112, in test_plants_cost_matches_pack_cost
+    self.assertEqual(row["records"], 147)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 442 != 147
+
+======================================================================
+FAIL: test_projectiles_have_no_name_overlap (test_original_gaps.MeasuredFactsTest.test_projectiles_have_no_name_overlap)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\OneDrive\文档\pvz_shuttle\repo\pvz2-shuttle-pc\tools\tests\test_original_gaps.py", line 149, in test_projectiles_have_no_name_overlap
+    self.assertEqual(row["records"], 11)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+AssertionError: 163 != 11
+
+======================================================================
+FAIL: test_check_passes_on_the_shipped_file (test_pfamilies.PlantFamiliesTests.test_check_passes_on_the_shipped_file)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\OneDrive\文档\pvz_shuttle\repo\pvz2-shuttle-pc\tools\tests\test_pfamilies.py", line 171, in test_check_passes_on_the_shipped_file
+    self.assertEqual(pfamilies.check(self.table, GENERATED), 0)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 0
+
+======================================================================
+FAIL: test_generated_file_is_current (test_pfamilies.PlantFamiliesTests.test_generated_file_is_current)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\OneDrive\文档\pvz_shuttle\repo\pvz2-shuttle-pc\tools\tests\test_pfamilies.py", line 167, in test_generated_file_is_current
+    self.assertEqual(GENERATED.read_text(encoding="utf-8"), pfamilies.render(self.table))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: '{\n [1033 chars]ed": 44,\n    "plants": 339,\n    "unlabelled"[97580 chars]n}\n' != '{\n [1033 chars]ed": 339,\n    "plants": 339,\n    "unlabelled[104176 chars]n}\n'
+
+======================================================================
+FAIL: test_labelled_agreement_meets_the_bar (test_pfamilies.PlantFamiliesTests.test_labelled_agreement_meets_the_bar)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\OneDrive\文档\pvz_shuttle\repo\pvz2-shuttle-pc\tools\tests\test_pfamilies.py", line 98, in test_labelled_agreement_meets_the_bar
+    self.assertEqual(labels["compared"], 44)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 339 != 44
+
+======================================================================
+FAIL: test_labelled_plants_match_the_content_behaviour_field (test_pfamilies.PlantFamiliesTests.test_labelled_plants_match_the_content_behaviour_field)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\OneDrive\文档\pvz_shuttle\repo\pvz2-shuttle-pc\tools\tests\test_pfamilies.py", line 131, in test_labelled_plants_match_the_content_behaviour_field
+    self.assertEqual(compared, 44)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+AssertionError: 339 != 44
+
+======================================================================
+FAIL: test_sources_split_between_pack_and_content (test_pfamilies.PlantFamiliesTests.test_sources_split_between_pack_and_content)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\OneDrive\文档\pvz_shuttle\repo\pvz2-shuttle-pc\tools\tests\test_pfamilies.py", line 90, in test_sources_split_between_pack_and_content
+    self.assertEqual(counts["labelled"], 44)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 339 != 44
+
+======================================================================
+FAIL: test_check_passes (test_rewards.CompileRewardTests.test_check_passes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\OneDrive\文档\pvz_shuttle\repo\pvz2-shuttle-pc\tools\tests\test_rewards.py", line 341, in test_check_passes
+    self.assertEqual(rewards.check(table, SHIPPED), 0)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 0
+
+======================================================================
+FAIL: test_recompile_matches_shipped_bytes (test_rewards.CompileRewardTests.test_recompile_matches_shipped_bytes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\OneDrive\文档\pvz_shuttle\repo\pvz2-shuttle-pc\tools\tests\test_rewards.py", line 337, in test_recompile_matches_shipped_bytes
+    self.assertEqual(rewards.render(table).encode("utf-8"), SHIPPED.read_bytes())
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: b'{\n[66274 chars]t": "2026-11-24T12:43:33Z",\n "pinataTypes": [[285892 chars]n}\n' != b'{\n[66274 chars]t": "sha256:30ec5ddd121d9bb8",\n "pinataTypes"[285895 chars]n}\n'
+
+======================================================================
+FAIL: test_shipped_file_is_exactly_a_fresh_render (test_spawn_offsets.CompileTests.test_shipped_file_is_exactly_a_fresh_render)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\OneDrive\文档\pvz_shuttle\repo\pvz2-shuttle-pc\tools\tests\test_spawn_offsets.py", line 262, in test_shipped_file_is_exactly_a_fresh_render
+    fresh = spawn_offsets.render(table).encode("utf-8")
+    self.assertEqual(hashlib.sha256(fresh).hexdigest(),
+AssertionError: '32d2e87fdfc0e2caf5b639a2e5fab703fee67ba308d0765e2059489e756aaf17' != 'de7361687c40d99116bbb8add269e11aff42f2cd4961e115a6956e332cbb9c9e'
+- 32d2e87fdfc0e2caf5b639a2e5fab703fee67ba308d0765e2059489e756aaf17
++ de7361687c40d99116bbb8add269e11aff42f2cd4961e115a6956e332cbb9c9e
+
+
+======================================================================
+FAIL: test_format_and_generator (test_spawn_offsets.ShippedSpawnOffsetTests.test_format_and_generator)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\OneDrive\文档\pvz_shuttle\repo\pvz2-shuttle-pc\tools\tests\test_spawn_offsets.py", line 78, in test_format_and_generator
+    self.assertRegex(self.table["generatedAt"], r"^sha256:[0-9a-f]{16}$")
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Regex didn't match: '^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$' not found in 'sha256:ad0fa20ca73aa95b'
+
+======================================================================
+FAIL: test_committed_report_lists_zero_gate_worlds (test_worlds.WorldGateTest.test_committed_report_lists_zero_gate_worlds)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\OneDrive\文档\pvz_shuttle\repo\pvz2-shuttle-pc\tools\tests\test_worlds.py", line 227, in test_committed_report_lists_zero_gate_worlds
+    self.assertIn("`gta`", text)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+AssertionError: '# 世界[38 chars]ated=sha256:b1f61cd5ef86dedb；source=work/obb_p[1566 chars]致。\n' != '# 世界[38 chars]ated=2026-11-24T12:43:33.105054+00:00；source=w[1575 chars]致。\n'
+Diff is 1809 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_export_is_deterministic_and_matches_committed_file (test_worlds.WorldGateTest.test_export_is_deterministic_and_matches_committed_file)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\OneDrive\文档\pvz_shuttle\repo\pvz2-shuttle-pc\tools\tests\test_worlds.py", line 186, in test_export_is_deterministic_and_matches_committed_file
+    def test_unknown_gate_kinds_survive(self) -> None:
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: b'{\n[62081 chars]d": "2026-11-24T12:43:33.105054+00:00",\n "sou[50 chars]n}\n' != b'{\n[62081 chars]d": "sha256:b1f61cd5ef86dedb",\n "source": "wo[41 chars]n}\n'
+
+----------------------------------------------------------------------
+Ran 490 tests in 257.970s
+
+FAILED (failures=26)
+armors=102 zombies=1127 armored=276 unknownProps=47 dangling=3 multi=16
+OK
+bosses=50 placements=75 stages=155 actions=634/355 classes=34 unknown=1
+  beach                  2
+  carnival               1
+  chinesegarden          3
+  cowboy                 3
+  dark                   1
+  dino                   2
+  egypt                  3
+  eighties               3
+  fairy                  4
+  future                 2
+  heian                  1
+  iceage                 2
+  kongfu                 2
+  lostcity               3
+  lunarrainbowmarket     3
+  mausoleum              2
+  modern                 1
+  pirate                 1
+  plantagenet            1
+  renai                  3
+  rift                   2
+  roof                   2
+  sky                    1
+  steam                  1
+  unknown:ChildStage     1
+OK
+plant: pack=339 exact=339 popanim=0 almanac=0 manual=0 none=0 client=442 client_only=103
+zombie: pack=1127 exact=20 popanim=0 almanac=0 manual=8 none=1099 client=55 client_only=27
+candidates: codename=0 codename_manual=8 codename_missing=2 popanim_rejected=8 almanac_collisions=102
+wrote D:/Temp/User/tmpffrtsuk4/id_mapping.csv, D:/Temp/User/tmpffrtsuk4/mapping_report.md
+plant: pack=339 exact=339 popanim=0 almanac=0 manual=0 none=0 client=442 client_only=103
+zombie: pack=1127 exact=20 popanim=0 almanac=0 manual=8 none=1099 client=55 client_only=27
+candidates: codename=0 codename_manual=8 codename_missing=2 popanim_rejected=8 almanac_collisions=102
+wrote D:/Temp/User/tmpw7k0o0m2/id_mapping.csv, D:/Temp/User/tmpw7k0o0m2/mapping_report.md
+levels=1 withConveyor=0 withInitials=0 withInitialGridItems=0 withGravestones=0 withProtect=0 withSpawners=0 withEvents=0 withMutators=0 withBoardGrid=0 unknowns=2 sentinels=0 waveUnresolved=0
+levels=1 withConveyor=0 withInitials=0 withInitialGridItems=0 withGravestones=0 withProtect=0 withSpawners=0 withEvents=0 withMutators=0 withBoardGrid=0 unknowns=2 sentinels=0 waveUnresolved=0
+产物已是最新：levels=1 withConveyor=0 withInitials=0 withInitialGridItems=0 withGravestones=0 withProtect=0 withSpawners=0 withEvents=0 withMutators=0 withBoardGrid=0 unknowns=2 sentinels=0 waveUnresolved=0
+plants=339 families=11 labelled=339 agreement=0.994
+  shoot      128
+  lob         44
+  produce     22
+  wall        25
+  instant     54
+  mine         4
+  chomp        3
+  fume         4
+  boomerang    4
+  support     34
+  spike       17
+disagreements with content/plants.json:
+  begonia              pack=shoot     content=lob       R17-shoot/projectile
+  frozenpear           pack=support   content=instant   R15-support/seed-rain
+FAILED:
+  - D:\OneDrive\文档\pvz_shuttle\repo\pvz2-shuttle-pc\native\generated\plant_families.json is stale; regenerate it
+rows=293 withDuration=147 withPlayCount=185 withAction=6 animated=147 plantsWithPlayCount=172 missingEffect=333
+rows=293 withDuration=147 withPlayCount=185 withAction=6 animated=147 plantsWithPlayCount=172 missingEffect=333
+产物最新：rows=293 withDuration=147 withPlayCount=185 withAction=6 animated=147 plantsWithPlayCount=172 missingEffect=333
+rows=293 withDuration=147 withPlayCount=185 withAction=6 animated=147 plantsWithPlayCount=172 missingEffect=333
+projectiles=602 objclasses=71 canonicalIds=571 embeddedOnly=31 trajectory=arc:118,drop:59,static:42,straight:374,unknown:9
+OK
+FAIL shipped file differs from a fresh render
+FAIL shipped file differs from a fresh render
+total=585 byCategory=seed:81/upgrade:11/world_key:1/costume:447/event:32/unknown:13 unknownCategory=13 unknownConditions=0
+OK
+FAIL: D:\Temp\User\tmptlv60p3x\shop_unlock.json 与源不一致（产物过期），重跑 python tools/contentc/shop_unlock.py
+FAIL: D:\Temp\User\tmptlv60p3x\absent.json 不存在，先运行 python tools/contentc/shop_unlock.py
+rows=487 plants=224 pxPerColumn=100 pxPerRow=116 yMedian=-32 skipped=1
+OK
+FAIL: counts.rows 487 != len(rows) 486
+FAIL: withSpawnOffset != rows + skippedOffsets
+FAIL: D:\OneDrive\文档\pvz_shuttle\repo\pvz2-shuttle-pc\native\generated\spawn_offsets.json 与重算结果不一致（产物过期）
+FAIL: xCols/yCols 与像素不符：['AgaveDefault']
+FAIL: D:\OneDrive\文档\pvz_shuttle\repo\pvz2-shuttle-pc\native\generated\spawn_offsets.json 与重算结果不一致（产物过期）
+vasebreaker check FAILED
+  - beach_69: vaseCount 999 != 30
+vasebreaker levels=47 presets=46 (missing 1) vases=1435 seedBank=8 startingSun=4 unknowns=7
+OK

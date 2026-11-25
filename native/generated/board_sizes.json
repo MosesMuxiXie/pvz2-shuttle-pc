@@ -1,0 +1,132 @@
+{
+  "frontyard": {
+    "rows": 5,
+    "cols": 9,
+    "source": "obb=absent stage=DayLBStage,DayStage,DayUBStage,FrontLawnStage,+10 levels=104: level grid stays inside GridX 0..8 by GridY 0..4 = 5x9 (11 off-board sentinels ignored)"
+  },
+  "egypt": {
+    "rows": 5,
+    "cols": 9,
+    "source": "obb=egypt stage=EgyptDMGStage,EgyptExodusStage,EgyptFunTimeStage,EgyptNightsBossStage,+7 levels=84: level grid stays inside GridX 0..8 by GridY 0..4 = 5x9 (0 off-board sentinels ignored)"
+  },
+  "pirate": {
+    "rows": 5,
+    "cols": 9,
+    "source": "obb=pirate stage=PirateBossStage,PirateDMGStage,PirateFunTimeStage,PirateStage,+1 levels=67: level grid stays inside GridX 0..8 by GridY 0..4 = 5x9 (16 off-board sentinels ignored)"
+  },
+  "cowboy": {
+    "rows": 5,
+    "cols": 9,
+    "source": "obb=cowboy stage=WestBossStage,WestDMGStage,WestNightBossStage,WestNightDMGStage,+4 levels=42: level grid stays inside GridX 0..8 by GridY 0..4 = 5x9 (0 off-board sentinels ignored)"
+  },
+  "future": {
+    "rows": 5,
+    "cols": 9,
+    "source": "obb=absent stage=FutureOriDMGStage,FutureOriFunTimeStage,FutureOriStage,FutureOriUBStage,+1 levels=71: level grid stays inside GridX 0..8 by GridY 0..4 = 5x9 (4 off-board sentinels ignored)"
+  },
+  "dark": {
+    "rows": 5,
+    "cols": 9,
+    "source": "obb=dark stage=DarkDMGStage,DarkStage,DarkUBStage levels=79: level grid stays inside GridX 0..8 by GridY 0..4 = 5x9 (20 off-board sentinels ignored)"
+  },
+  "beach": {
+    "rows": 6,
+    "cols": 9,
+    "source": "obb=beach level=pkg_0406_LevelDefinition stage=SixLaneFogStage: 12 of 116 levels place SixLaneModule, whose InitialGridItemPlacements tile GridX 0..8 by GridY 0..5 = 6x9"
+  },
+  "lostcity": {
+    "rows": 5,
+    "cols": 9,
+    "source": "obb=lostcity level=pkg_0968_LevelDefinition stage=LostCityNightsUBStage tiles the whole lawn: 45 cells = 5x9"
+  },
+  "iceage": {
+    "rows": 5,
+    "cols": 9,
+    "source": "obb=absent level=pkg_1353_LevelDefinition stage=IceageStage tiles the whole lawn: 45 cells = 5x9"
+  },
+  "kongfu": {
+    "rows": 5,
+    "cols": 9,
+    "source": "obb=kungfu level=pkg_0740_LevelDefinition stage=KongfuFunTimeStage tiles the whole lawn: 45 cells = 5x9"
+  },
+  "dino": {
+    "rows": 5,
+    "cols": 9,
+    "source": "obb=dino stage=DinoDMGStage,DinoNightsDMGStage,DinoNightsStage,DinoNightsUBStage,+3 levels=62: level grid stays inside GridX 0..8 by GridY 0..4 = 5x9 (0 off-board sentinels ignored)"
+  },
+  "eighties": {
+    "rows": 5,
+    "cols": 9,
+    "source": "obb=eighties stage=EightiesStage,EightiesTeaserStage levels=62: level grid stays inside GridX 0..8 by GridY 0..4 = 5x9 (0 off-board sentinels ignored)"
+  },
+  "modern": {
+    "rows": 6,
+    "cols": 9,
+    "source": "obb=modern level=pkg_0399_LevelDefinition stage=SixLaneStage: 5 of 84 levels place SixLaneModule, whose InitialGridItemPlacements tile GridX 0..8 by GridY 0..5 = 6x9"
+  },
+  "sky": {
+    "rows": 5,
+    "cols": 9,
+    "source": "obb=skycity stage=SkyCityBossStage,SkyCityDMGStage,SkyCityLostCityBossStage,SkyCityStage,+1 levels=37: level grid stays inside GridX 0..8 by GridY 0..4 = 5x9 (0 off-board sentinels ignored)"
+  },
+  "chinesegarden": {
+    "rows": 5,
+    "cols": 9,
+    "source": "obb=chinesegarden stage=ChineseGardenBossStage,ChineseGardenDMGStage,ChineseGardenNightsDMGStage,ChineseGardenNightsStage,+3 levels=72: level grid stays inside GridX 0..8 by GridY 0..4 = 5x9 (4 off-board sentinels ignored)"
+  },
+  "heian": {
+    "rows": 5,
+    "cols": 9,
+    "source": "obb=heian stage=HeianBossStage,HeianDMGStage,HeianStage,HeianUBStage levels=42: level grid stays inside GridX 0..8 by GridY 0..4 = 5x9 (0 off-board sentinels ignored)"
+  },
+  "fairy": {
+    "rows": 5,
+    "cols": 9,
+    "source": "obb=fairy stage=FairyDMGStage,FairyNightsDMGStage,FairyNightsStage,FairyNightsUBStage,+4 levels=50: level grid stays inside GridX 0..8 by GridY 0..4 = 5x9 (102 off-board sentinels ignored)"
+  },
+  "mausoleum": {
+    "rows": 5,
+    "cols": 9,
+    "source": "obb=mausoleum stage=MausoleumPalaceStage,MausoleumStage levels=46: level grid stays inside GridX 0..8 by GridY 0..4 = 5x9 (0 off-board sentinels ignored)"
+  },
+  "steam": {
+    "rows": 5,
+    "cols": 9,
+    "source": "obb=steam stage=SteamBossStage,SteamDMGStage,SteamStage,SteamUBStage levels=37: level grid stays inside GridX 0..5 by GridY 0..4 = 5x9 (0 off-board sentinels ignored)"
+  },
+  "memorytour": {
+    "rows": 5,
+    "cols": 9,
+    "source": "obb=memorytour fallback=5x9-default (no level or stage in the sheets)"
+  },
+  "losantosvice": {
+    "rows": 5,
+    "cols": 9,
+    "source": "obb=gta stage=GTADMGStage,GTAStage,GTAUBStage levels=27: level grid stays inside GridX 0..8 by GridY 0..4 = 5x9 (2 off-board sentinels ignored)"
+  },
+  "lunarrainbowmarket": {
+    "rows": 5,
+    "cols": 9,
+    "source": "obb=rainbowmarket stage=MarketNightsDMGStage,MarketNightsStage,MarketNightsUBStage levels=37: level grid stays inside GridX 0..8 by GridY 0..4 = 5x9 (0 off-board sentinels ignored)"
+  },
+  "renai": {
+    "rows": 5,
+    "cols": 9,
+    "source": "obb=absent level=pkg_1078_LevelDefinition stage=RenaiStage tiles the whole lawn: 45 cells = 5x9"
+  },
+  "muji": {
+    "rows": 5,
+    "cols": 9,
+    "source": "obb=muji fallback=5x9-default (no level or stage in the sheets)"
+  },
+  "carnival": {
+    "rows": 5,
+    "cols": 9,
+    "source": "obb=carnival stage=CarnivalBossStage,CarnivalStage levels=39: level grid stays inside GridX 0..8 by GridY 0..4 = 5x9 (2 off-board sentinels ignored)"
+  },
+  "plantagenet": {
+    "rows": 5,
+    "cols": 9,
+    "source": "obb=plantagenet stage=PlantagenetBossStage,PlantagenetDMGStage,PlantagenetDaylightDMGStage,PlantagenetDaylightFunTimeStage,+6 levels=45: level grid stays inside GridX 0..8 by GridY 0..4 = 5x9 (10 off-board sentinels ignored)"
+  }
+}

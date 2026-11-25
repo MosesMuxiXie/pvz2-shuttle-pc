@@ -1,0 +1,2591 @@
+{
+ "counts": {
+  "aliasHits": {
+   "gta": 6,
+   "kungfu": 1,
+   "rainbowmarket": 1,
+   "skycity": 2
+  },
+  "key_gate": 27,
+  "star_gate": 53,
+  "total": 97,
+  "unknownKinds": {},
+  "worldgate": 17
+ },
+ "format": 1,
+ "gates": [
+  {
+   "event": "tutorial_stargate_exit",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_completedNarrationID": "",
+    "m_cost": 1,
+    "m_dataString": "",
+    "m_displayText": "",
+    "m_drawLayer": 0,
+    "m_eventId": 6,
+    "m_eventType": "star_gate",
+    "m_imageID": 0,
+    "m_isArtFlipped": true,
+    "m_isChallengeType": false,
+    "m_isTimedEvent": false,
+    "m_name": "tutorial_stargate_exit",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 216.25,
+     "y": 662.900023999997
+    },
+    "m_rotationAngle": 0,
+    "m_unlockedFrom": "",
+    "m_unlockedNarrationID": "",
+    "m_visibleFrom": "",
+    "m_worldMapTutorial": "none",
+    "m_worldMapTutorialVisibleWhen": "unlocked"
+   },
+   "stars": 1,
+   "target": null,
+   "targetClient": null,
+   "world": "tutorial",
+   "worldClient": "tutorial"
+  },
+  {
+   "event": "cowboy_stargate_start",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_autoVisible": false,
+    "m_cost": 0,
+    "m_eventId": "1",
+    "m_eventType": "star_gate",
+    "m_isChallengeType": false,
+    "m_name": "cowboy_stargate_start",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 12011,
+     "y": -291
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": 0,
+   "target": null,
+   "targetClient": null,
+   "world": "cowboy",
+   "worldClient": "cowboy"
+  },
+  {
+   "event": "beach_stargate_start",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_eventId": "11",
+    "m_eventSubType": "none",
+    "m_eventType": "star_gate",
+    "m_levelNodeType": "normal",
+    "m_name": "beach_stargate_start",
+    "m_position": {
+     "x": 7698.0,
+     "y": -37.0
+    },
+    "m_unlockedFrom": "",
+    "m_worldMapTutorialVisibleWhen": "unlocked"
+   },
+   "stars": null,
+   "target": null,
+   "targetClient": null,
+   "world": "beach",
+   "worldClient": "beach"
+  },
+  {
+   "event": "beach_stargate_exit",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_cost": 0,
+    "m_eventId": 12,
+    "m_eventType": "star_gate",
+    "m_isChallengeType": false,
+    "m_name": "beach_stargate_exit",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 8117,
+     "y": -7
+    },
+    "m_unlockedFrom": "beach_level_16",
+    "m_visibleFrom": "beach_stargate_start"
+   },
+   "stars": 0,
+   "target": "beach_level_16",
+   "targetClient": "beach_level_16",
+   "world": "beach",
+   "worldClient": "beach"
+  },
+  {
+   "event": "beach_keygate_chal_laststand",
+   "keys": 4,
+   "kind": "key_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_cost": 4,
+    "m_eventId": 14,
+    "m_eventType": "key_gate",
+    "m_isChallengeType": false,
+    "m_name": "beach_keygate_chal_laststand",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 7902,
+     "y": -41
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": null,
+   "target": null,
+   "targetClient": null,
+   "world": "beach",
+   "worldClient": "beach"
+  },
+  {
+   "event": "beach_keygate_chal_preset",
+   "keys": 3,
+   "kind": "key_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_cost": 3,
+    "m_eventId": 15,
+    "m_eventType": "key_gate",
+    "m_isChallengeType": false,
+    "m_name": "beach_keygate_chal_preset",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 7850,
+     "y": -44
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": null,
+   "target": null,
+   "targetClient": null,
+   "world": "beach",
+   "worldClient": "beach"
+  },
+  {
+   "event": "beach_keygate_chal_sunbombs",
+   "keys": 4,
+   "kind": "key_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_cost": 4,
+    "m_eventId": 16,
+    "m_eventType": "key_gate",
+    "m_isChallengeType": false,
+    "m_name": "beach_keygate_chal_sunbombs",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 7800,
+     "y": -42
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": null,
+   "target": null,
+   "targetClient": null,
+   "world": "beach",
+   "worldClient": "beach"
+  },
+  {
+   "event": "eighties_stargate_start",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_eventId": "11",
+    "m_eventSubType": "none",
+    "m_eventType": "star_gate",
+    "m_levelNodeType": "normal",
+    "m_name": "eighties_stargate_start",
+    "m_position": {
+     "x": 9999.0,
+     "y": -37.0
+    },
+    "m_unlockedFrom": "",
+    "m_worldMapTutorialVisibleWhen": "unlocked"
+   },
+   "stars": null,
+   "target": null,
+   "targetClient": null,
+   "world": "eighties",
+   "worldClient": "eighties"
+  },
+  {
+   "event": "dino_stargate_start",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_eventId": "0",
+    "m_eventSubType": "none",
+    "m_eventType": "star_gate",
+    "m_levelNodeType": "normal",
+    "m_name": "dino_stargate_start",
+    "m_position": {
+     "x": 9999.0,
+     "y": -37.0
+    },
+    "m_unlockedFrom": "",
+    "m_worldMapTutorialVisibleWhen": "unlocked"
+   },
+   "stars": null,
+   "target": null,
+   "targetClient": null,
+   "world": "dino",
+   "worldClient": "dino"
+  },
+  {
+   "event": "renai_stargate_start",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_eventId": "11",
+    "m_eventSubType": "none",
+    "m_eventType": "star_gate",
+    "m_levelNodeType": "normal",
+    "m_name": "renai_stargate_start",
+    "m_position": {
+     "x": 7698.0,
+     "y": -37.0
+    },
+    "m_unlockedFrom": "",
+    "m_worldMapTutorialVisibleWhen": "unlocked"
+   },
+   "stars": null,
+   "target": null,
+   "targetClient": null,
+   "world": "dark",
+   "worldClient": "dark"
+  },
+  {
+   "event": "smalltown_stargate_start",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_eventId": "11",
+    "m_eventSubType": "none",
+    "m_eventType": "star_gate",
+    "m_levelNodeType": "normal",
+    "m_name": "smalltown_stargate_start",
+    "m_position": {
+     "x": 9999.0,
+     "y": -37.0
+    },
+    "m_unlockedFrom": "",
+    "m_worldMapTutorialVisibleWhen": "unlocked"
+   },
+   "stars": null,
+   "target": null,
+   "targetClient": null,
+   "world": "modern",
+   "worldClient": "modern"
+  },
+  {
+   "event": "heian_stargate_start",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_eventId": "11",
+    "m_eventSubType": "none",
+    "m_eventType": "star_gate",
+    "m_levelNodeType": "normal",
+    "m_name": "heian_stargate_start",
+    "m_position": {
+     "x": 9999.0,
+     "y": -37.0
+    },
+    "m_unlockedFrom": "",
+    "m_worldMapTutorialVisibleWhen": "unlocked"
+   },
+   "stars": null,
+   "target": null,
+   "targetClient": null,
+   "world": "heian",
+   "worldClient": "heian"
+  },
+  {
+   "event": "plantagenet_stargate_start",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_eventId": "0",
+    "m_eventSubType": "none",
+    "m_eventType": "star_gate",
+    "m_levelNodeType": "normal",
+    "m_name": "plantagenet_stargate_start",
+    "m_position": {
+     "x": 9999.0,
+     "y": -37.0
+    },
+    "m_unlockedFrom": "",
+    "m_worldMapTutorialVisibleWhen": "unlocked"
+   },
+   "stars": null,
+   "target": null,
+   "targetClient": null,
+   "world": "plantagenet",
+   "worldClient": "plantagenet"
+  },
+  {
+   "event": "skycity_stargate_start",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_eventId": "44",
+    "m_eventSubType": "none",
+    "m_eventType": "star_gate",
+    "m_levelNodeType": "normal",
+    "m_name": "skycity_stargate_start",
+    "m_position": {
+     "x": 9999.0,
+     "y": -37.0
+    },
+    "m_unlockedFrom": "",
+    "m_worldMapTutorialVisibleWhen": "unlocked"
+   },
+   "stars": null,
+   "target": null,
+   "targetClient": null,
+   "world": "skycity",
+   "worldClient": "sky"
+  },
+  {
+   "event": "skycity_stargate_exit",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_cost": 8,
+    "m_eventId": 45,
+    "m_eventType": "star_gate",
+    "m_isChallengeType": false,
+    "m_name": "skycity_stargate_exit",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 1137,
+     "y": -268
+    },
+    "m_unlockedFrom": "skycity_level_8",
+    "m_visibleFrom": "skycity_stargate_start"
+   },
+   "stars": 8,
+   "target": "skycity_level_8",
+   "targetClient": "skycity_level_8",
+   "world": "skycity",
+   "worldClient": "sky"
+  },
+  {
+   "event": "kongfu_keygate_chal_protect",
+   "keys": 3,
+   "kind": "key_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_cost": 3,
+    "m_eventId": 13,
+    "m_eventType": "key_gate",
+    "m_isChallengeType": false,
+    "m_name": "kongfu_keygate_chal_protect",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 1009,
+     "y": -142
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": null,
+   "target": null,
+   "targetClient": null,
+   "world": "kongfu",
+   "worldClient": "kongfu"
+  },
+  {
+   "event": "kongfu_keygate_chal_preset",
+   "keys": 4,
+   "kind": "key_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_cost": 4,
+    "m_eventId": 23,
+    "m_eventType": "key_gate",
+    "m_isChallengeType": false,
+    "m_name": "kongfu_keygate_chal_preset",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 1479.419922,
+     "y": -135.099976
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": null,
+   "target": null,
+   "targetClient": null,
+   "world": "kongfu",
+   "worldClient": "kongfu"
+  },
+  {
+   "event": "worldgate_kungfu",
+   "keys": null,
+   "kind": "worldgate",
+   "raw": {
+    "m_autoVisible": "",
+    "m_dataString": "kungfu-kungfu_stargate_start-true",
+    "m_eventId": 32,
+    "m_eventType": "worldgate",
+    "m_isChallengeType": false,
+    "m_name": "worldgate_kungfu",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 5800,
+     "y": 30
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": null,
+   "target": "kungfu",
+   "targetClient": "kongfu",
+   "world": "kongfu",
+   "worldClient": "kongfu"
+  },
+  {
+   "event": "kongfu_keygate_chal_laststand",
+   "keys": 5,
+   "kind": "key_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_cost": 5,
+    "m_eventId": 33,
+    "m_eventType": "key_gate",
+    "m_isChallengeType": false,
+    "m_name": "kongfu_keygate_chal_laststand",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 1339.329956,
+     "y": -130.89996299997
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": null,
+   "target": null,
+   "targetClient": null,
+   "world": "kongfu",
+   "worldClient": "kongfu"
+  },
+  {
+   "event": "kongfu_keygate_chal_minigame",
+   "keys": 4,
+   "kind": "key_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_cost": 4,
+    "m_eventId": 39,
+    "m_eventType": "key_gate",
+    "m_isChallengeType": false,
+    "m_name": "kongfu_keygate_chal_minigame",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 1199.23999,
+     "y": -126.699966
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": null,
+   "target": null,
+   "targetClient": null,
+   "world": "kongfu",
+   "worldClient": "kongfu"
+  },
+  {
+   "event": "kongfu_keygate_chal_0",
+   "keys": 1,
+   "kind": "key_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_cost": 1,
+    "m_eventId": 41,
+    "m_eventType": "key_gate",
+    "m_isChallengeType": false,
+    "m_name": "kongfu_keygate_chal_0",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 870,
+     "y": -136
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": null,
+   "target": null,
+   "targetClient": null,
+   "world": "kongfu",
+   "worldClient": "kongfu"
+  },
+  {
+   "event": "kongfu_stargate_start",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_eventId": "44",
+    "m_eventSubType": "none",
+    "m_eventType": "star_gate",
+    "m_levelNodeType": "normal",
+    "m_name": "kongfu_stargate_start",
+    "m_position": {
+     "x": 9999.0,
+     "y": -37.0
+    },
+    "m_unlockedFrom": "",
+    "m_worldMapTutorialVisibleWhen": "unlocked"
+   },
+   "stars": null,
+   "target": null,
+   "targetClient": null,
+   "world": "kongfu",
+   "worldClient": "kongfu"
+  },
+  {
+   "event": "kongfu_stargate_exit",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_cost": 8,
+    "m_eventId": 45,
+    "m_eventType": "star_gate",
+    "m_isChallengeType": false,
+    "m_name": "kongfu_stargate_exit",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 1137,
+     "y": -268
+    },
+    "m_unlockedFrom": "kongfu_level_8",
+    "m_visibleFrom": "kongfu_stargate_start"
+   },
+   "stars": 8,
+   "target": "kongfu_level_8",
+   "targetClient": "kongfu_level_8",
+   "world": "kongfu",
+   "worldClient": "kongfu"
+  },
+  {
+   "event": "steam_stargate_start",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_eventId": "11",
+    "m_eventSubType": "none",
+    "m_eventType": "star_gate",
+    "m_levelNodeType": "normal",
+    "m_name": "steam_stargate_start",
+    "m_position": {
+     "x": 9999.0,
+     "y": -37.0
+    },
+    "m_unlockedFrom": "",
+    "m_worldMapTutorialVisibleWhen": "unlocked"
+   },
+   "stars": null,
+   "target": null,
+   "targetClient": null,
+   "world": "steam",
+   "worldClient": "steam"
+  },
+  {
+   "event": "muji_stargate_start",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_eventId": "0",
+    "m_eventSubType": "none",
+    "m_eventType": "star_gate",
+    "m_levelNodeType": "normal",
+    "m_name": "muji_stargate_start",
+    "m_position": {
+     "x": 9999.0,
+     "y": -37.0
+    },
+    "m_unlockedFrom": "",
+    "m_worldMapTutorialVisibleWhen": "unlocked"
+   },
+   "stars": null,
+   "target": null,
+   "targetClient": null,
+   "world": "muji",
+   "worldClient": "muji"
+  },
+  {
+   "event": "memorytour_stargate_start",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_eventId": "0",
+    "m_eventSubType": "none",
+    "m_eventType": "star_gate",
+    "m_levelNodeType": "normal",
+    "m_name": "memorytour_stargate_start",
+    "m_position": {
+     "x": 9999.0,
+     "y": -37.0
+    },
+    "m_unlockedFrom": "",
+    "m_worldMapTutorialVisibleWhen": "unlocked"
+   },
+   "stars": null,
+   "target": null,
+   "targetClient": null,
+   "world": "memorytour",
+   "worldClient": "memorytour"
+  },
+  {
+   "event": "fairy_stargate_start",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_eventId": "40",
+    "m_eventSubType": "none",
+    "m_eventType": "star_gate",
+    "m_levelNodeType": "normal",
+    "m_name": "fairy_stargate_start",
+    "m_position": {
+     "x": 9999.0,
+     "y": -37.0
+    },
+    "m_unlockedFrom": "",
+    "m_worldMapTutorialVisibleWhen": "unlocked"
+   },
+   "stars": null,
+   "target": null,
+   "targetClient": null,
+   "world": "fairy",
+   "worldClient": "fairy"
+  },
+  {
+   "event": "pirate_keygate_chal_protect",
+   "keys": 4,
+   "kind": "key_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_cost": 4,
+    "m_eventId": 15,
+    "m_eventType": "key_gate",
+    "m_isChallengeType": false,
+    "m_name": "pirate_keygate_chal_protect",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 7062.419922,
+     "y": -331.99987799997
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": null,
+   "target": null,
+   "targetClient": null,
+   "world": "pirate",
+   "worldClient": "pirate"
+  },
+  {
+   "event": "pirate_keygate_chal_preset",
+   "keys": 4,
+   "kind": "key_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_cost": 4,
+    "m_eventId": 23,
+    "m_eventType": "key_gate",
+    "m_isChallengeType": false,
+    "m_name": "pirate_keygate_chal_preset",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 6922.33007799997,
+     "y": -327.79992699997
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": null,
+   "target": null,
+   "targetClient": null,
+   "world": "pirate",
+   "worldClient": "pirate"
+  },
+  {
+   "event": "pirate_keygate_chal_minigame",
+   "keys": 3,
+   "kind": "key_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_cost": 3,
+    "m_eventId": 28,
+    "m_eventType": "key_gate",
+    "m_isChallengeType": false,
+    "m_name": "pirate_keygate_chal_minigame",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 6782.24023399998,
+     "y": -323.59997599997
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": null,
+   "target": null,
+   "targetClient": null,
+   "world": "pirate",
+   "worldClient": "pirate"
+  },
+  {
+   "event": "pirate_keygate_chal_laststand",
+   "keys": 5,
+   "kind": "key_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_cost": 5,
+    "m_eventId": 32,
+    "m_eventType": "key_gate",
+    "m_isChallengeType": false,
+    "m_name": "pirate_keygate_chal_laststand",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 7202.509766,
+     "y": -336.199951
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": null,
+   "target": null,
+   "targetClient": null,
+   "world": "pirate",
+   "worldClient": "pirate"
+  },
+  {
+   "event": "pirate_stargate_start",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_eventId": "40",
+    "m_eventSubType": "none",
+    "m_eventType": "star_gate",
+    "m_levelNodeType": "normal",
+    "m_name": "pirate_stargate_start",
+    "m_position": {
+     "x": 6642.15,
+     "y": -319.3999
+    },
+    "m_unlockedFrom": "",
+    "m_worldMapTutorialVisibleWhen": "unlocked"
+   },
+   "stars": null,
+   "target": null,
+   "targetClient": null,
+   "world": "pirate",
+   "worldClient": "pirate"
+  },
+  {
+   "event": "pirate_stargate_exit",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_cost": 20,
+    "m_eventId": 42,
+    "m_eventType": "star_gate",
+    "m_isChallengeType": false,
+    "m_name": "pirate_stargate_exit",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 7420.339844,
+     "y": -307.49993899997
+    },
+    "m_unlockedFrom": "pirate_level_10",
+    "m_visibleFrom": "pirate_stargate_start"
+   },
+   "stars": 20,
+   "target": "pirate_level_10",
+   "targetClient": "pirate_level_10",
+   "world": "pirate",
+   "worldClient": "pirate"
+  },
+  {
+   "event": "lostcity_stargate_start",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_completedNarrationID": "",
+    "m_cost": 0,
+    "m_dataString": "",
+    "m_displayText": "",
+    "m_eventId": 11,
+    "m_eventType": "star_gate",
+    "m_isArtFlipped": false,
+    "m_isChallengeType": false,
+    "m_levelNodeType": "normal",
+    "m_name": "lostcity_stargate_start",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 9999.0,
+     "y": -37.0
+    },
+    "m_toggleName": "",
+    "m_unlockedFrom": "",
+    "m_unlockedNarrationID": "",
+    "m_visibleFrom": "",
+    "m_worldMapTutorial": "none",
+    "m_worldMapTutorialVisibleWhen": "none"
+   },
+   "stars": 0,
+   "target": null,
+   "targetClient": null,
+   "world": "lostcity",
+   "worldClient": "lostcity"
+  },
+  {
+   "event": "lostcity_stargate_exit",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_completedNarrationID": "",
+    "m_cost": 0,
+    "m_dataString": "",
+    "m_displayText": "",
+    "m_eventId": 856,
+    "m_eventType": "star_gate",
+    "m_isArtFlipped": false,
+    "m_isChallengeType": false,
+    "m_levelNodeType": "normal",
+    "m_name": "lostcity_stargate_exit",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 8117.0,
+     "y": -7.0
+    },
+    "m_toggleName": "",
+    "m_unlockedFrom": "lostcity_level_16",
+    "m_unlockedNarrationID": "",
+    "m_visibleFrom": "lostcity_stargate_start",
+    "m_worldMapTutorial": "none",
+    "m_worldMapTutorialVisibleWhen": "none"
+   },
+   "stars": 0,
+   "target": "lostcity_level_16",
+   "targetClient": "lostcity_level_16",
+   "world": "lostcity",
+   "worldClient": "lostcity"
+  },
+  {
+   "event": "carnival_stargate_start",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_eventId": "0",
+    "m_eventSubType": "none",
+    "m_eventType": "star_gate",
+    "m_levelNodeType": "normal",
+    "m_name": "carnival_stargate_start",
+    "m_position": {
+     "x": 9999.0,
+     "y": -37.0
+    },
+    "m_unlockedFrom": "",
+    "m_worldMapTutorialVisibleWhen": "unlocked"
+   },
+   "stars": null,
+   "target": null,
+   "targetClient": null,
+   "world": "carnival",
+   "worldClient": "carnival"
+  },
+  {
+   "event": "yourhouse_stargate_start",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_eventId": "1",
+    "m_eventSubType": "none",
+    "m_eventType": "star_gate",
+    "m_levelNodeType": "normal",
+    "m_name": "yourhouse_stargate_start",
+    "m_position": {
+     "x": 0,
+     "y": 0
+    },
+    "m_unlockedFrom": "",
+    "m_worldMapTutorialVisibleWhen": "unlocked"
+   },
+   "stars": null,
+   "target": null,
+   "targetClient": null,
+   "world": "yourhouse",
+   "worldClient": "yourhouse"
+  },
+  {
+   "event": "worldgate_rainbowmarket",
+   "keys": null,
+   "kind": "worldgate",
+   "raw": {
+    "m_autoVisible": "",
+    "m_dataString": "rainbowmarket-rainbowmarket_stargate_start-true",
+    "m_eventId": 2,
+    "m_eventType": "worldgate",
+    "m_isChallengeType": false,
+    "m_name": "worldgate_rainbowmarket",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 4700,
+     "y": 30
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": null,
+   "target": "rainbowmarket",
+   "targetClient": "lunarrainbowmarket",
+   "world": "yourhousex",
+   "worldClient": "yourhousex"
+  },
+  {
+   "event": "yourhousex_stargate_start",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_autoVisible": false,
+    "m_cost": 0,
+    "m_eventId": "1",
+    "m_eventType": "star_gate",
+    "m_isChallengeType": false,
+    "m_name": "yourhousex_stargate_start",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 0,
+     "y": 0
+    },
+    "m_unlockedFrom": "yourhouse_revenge",
+    "m_visibleFrom": ""
+   },
+   "stars": 0,
+   "target": "yourhouse_revenge",
+   "targetClient": "yourhouse_revenge",
+   "world": "yourhousex",
+   "worldClient": "yourhousex"
+  },
+  {
+   "event": "kungfu_stargate_start",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_eventId": "44",
+    "m_eventSubType": "none",
+    "m_eventType": "star_gate",
+    "m_levelNodeType": "normal",
+    "m_name": "kungfu_stargate_start",
+    "m_position": {
+     "x": 9999.0,
+     "y": -37.0
+    },
+    "m_unlockedFrom": "kongfu_level_boss",
+    "m_worldMapTutorialVisibleWhen": "unlocked"
+   },
+   "stars": null,
+   "target": "kongfu_level_boss",
+   "targetClient": "kongfu_level_boss",
+   "world": "kungfu",
+   "worldClient": "kongfu"
+  },
+  {
+   "event": "chinesegarden_level_intro1",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_autoVisible": false,
+    "m_completedNarrationID": "",
+    "m_cost": 0,
+    "m_dataString": "",
+    "m_displayText": "",
+    "m_eventId": 0,
+    "m_eventType": "star_gate",
+    "m_isArtFlipped": false,
+    "m_isChallengeType": false,
+    "m_levelNodeType": "normal",
+    "m_name": "chinesegarden_level_intro1",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 0.0,
+     "y": 0.0
+    },
+    "m_toggleName": "",
+    "m_unlockedFrom": "",
+    "m_unlockedNarrationID": "",
+    "m_visibleFrom": "",
+    "m_worldMapTutorial": "none",
+    "m_worldMapTutorialVisibleWhen": "unlocked"
+   },
+   "stars": 0,
+   "target": null,
+   "targetClient": null,
+   "world": "chinesegarden",
+   "worldClient": "chinesegarden"
+  },
+  {
+   "event": "secondanniversary_stargate_start",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_cost": 10,
+    "m_eventId": 11,
+    "m_eventType": "star_gate",
+    "m_isChallengeType": false,
+    "m_name": "secondanniversary_stargate_start",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 9999,
+     "y": -37
+    },
+    "m_unlockedFrom": "egypt_level_1",
+    "m_visibleFrom": ""
+   },
+   "stars": 10,
+   "target": "egypt_level_1",
+   "targetClient": "egypt_level_1",
+   "world": "secondanniversary",
+   "worldClient": "secondanniversary"
+  },
+  {
+   "event": "thirdanniversary_stargate_exit",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_cost": 8,
+    "m_eventId": 45,
+    "m_eventType": "star_gate",
+    "m_isChallengeType": false,
+    "m_name": "thirdanniversary_stargate_exit",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 1137,
+     "y": -268
+    },
+    "m_unlockedFrom": "thirdanniversary_level_8",
+    "m_visibleFrom": "thirdanniversary_stargate_start"
+   },
+   "stars": 8,
+   "target": "thirdanniversary_level_8",
+   "targetClient": "thirdanniversary_level_8",
+   "world": "thirdanniversary",
+   "worldClient": "thirdanniversary"
+  },
+  {
+   "event": "thirdanniversary_keygate_chal_0",
+   "keys": 1,
+   "kind": "key_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_cost": 1,
+    "m_eventId": 41,
+    "m_eventType": "key_gate",
+    "m_isChallengeType": false,
+    "m_name": "thirdanniversary_keygate_chal_0",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 870,
+     "y": -136
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": null,
+   "target": null,
+   "targetClient": null,
+   "world": "thirdanniversary",
+   "worldClient": "thirdanniversary"
+  },
+  {
+   "event": "thirdanniversary_keygate_chal_preset",
+   "keys": 4,
+   "kind": "key_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_cost": 4,
+    "m_eventId": 23,
+    "m_eventType": "key_gate",
+    "m_isChallengeType": false,
+    "m_name": "thirdanniversary_keygate_chal_preset",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 1479.419922,
+     "y": -135.099976
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": null,
+   "target": null,
+   "targetClient": null,
+   "world": "thirdanniversary",
+   "worldClient": "thirdanniversary"
+  },
+  {
+   "event": "thirdanniversary_keygate_chal_protect",
+   "keys": 3,
+   "kind": "key_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_cost": 3,
+    "m_eventId": 13,
+    "m_eventType": "key_gate",
+    "m_isChallengeType": false,
+    "m_name": "thirdanniversary_keygate_chal_protect",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 1009,
+     "y": -142
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": null,
+   "target": null,
+   "targetClient": null,
+   "world": "thirdanniversary",
+   "worldClient": "thirdanniversary"
+  },
+  {
+   "event": "thirdanniversary_stargate_start",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_cost": 0,
+    "m_eventId": 44,
+    "m_eventType": "star_gate",
+    "m_isChallengeType": false,
+    "m_name": "thirdanniversary_stargate_start",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 758,
+     "y": -146
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": 0,
+   "target": null,
+   "targetClient": null,
+   "world": "thirdanniversary",
+   "worldClient": "thirdanniversary"
+  },
+  {
+   "event": "thirdanniversary_keygate_chal_minigame",
+   "keys": 4,
+   "kind": "key_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_cost": 4,
+    "m_eventId": 39,
+    "m_eventType": "key_gate",
+    "m_isChallengeType": false,
+    "m_name": "thirdanniversary_keygate_chal_minigame",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 1199.23999,
+     "y": -126.699966
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": null,
+   "target": null,
+   "targetClient": null,
+   "world": "thirdanniversary",
+   "worldClient": "thirdanniversary"
+  },
+  {
+   "event": "thirdanniversary_keygate_chal_laststand",
+   "keys": 5,
+   "kind": "key_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_cost": 5,
+    "m_eventId": 33,
+    "m_eventType": "key_gate",
+    "m_isChallengeType": false,
+    "m_name": "thirdanniversary_keygate_chal_laststand",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 1339.329956,
+     "y": -130.899963
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": null,
+   "target": null,
+   "targetClient": null,
+   "world": "thirdanniversary",
+   "worldClient": "thirdanniversary"
+  },
+  {
+   "event": "fourthanniversary_keygate_chal_protect",
+   "keys": 4,
+   "kind": "key_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_completedNarrationID": "",
+    "m_cost": 4,
+    "m_dataString": "",
+    "m_displayText": "",
+    "m_eventId": 15,
+    "m_eventType": "key_gate",
+    "m_isArtFlipped": false,
+    "m_isChallengeType": false,
+    "m_levelNodeType": "normal",
+    "m_name": "fourthanniversary_keygate_chal_protect",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 7062.419922,
+     "y": -331.999878
+    },
+    "m_toggleName": "",
+    "m_unlockedFrom": "",
+    "m_unlockedNarrationID": "",
+    "m_visibleFrom": "",
+    "m_worldMapTutorial": "none",
+    "m_worldMapTutorialVisibleWhen": "unlocked"
+   },
+   "stars": null,
+   "target": null,
+   "targetClient": null,
+   "world": "fourthanniversary",
+   "worldClient": "fourthanniversary"
+  },
+  {
+   "event": "fourthanniversary_keygate_chal_laststand",
+   "keys": 5,
+   "kind": "key_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_completedNarrationID": "",
+    "m_cost": 5,
+    "m_dataString": "",
+    "m_displayText": "",
+    "m_eventId": 32,
+    "m_eventType": "key_gate",
+    "m_isArtFlipped": true,
+    "m_isChallengeType": false,
+    "m_levelNodeType": "normal",
+    "m_name": "fourthanniversary_keygate_chal_laststand",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 7202.509766,
+     "y": -336.199951
+    },
+    "m_toggleName": "",
+    "m_unlockedFrom": "",
+    "m_unlockedNarrationID": "",
+    "m_visibleFrom": "",
+    "m_worldMapTutorial": "none",
+    "m_worldMapTutorialVisibleWhen": "unlocked"
+   },
+   "stars": null,
+   "target": null,
+   "targetClient": null,
+   "world": "fourthanniversary",
+   "worldClient": "fourthanniversary"
+  },
+  {
+   "event": "fourthanniversary_stargate_start",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_completedNarrationID": "",
+    "m_cost": 0,
+    "m_dataString": "",
+    "m_displayText": "",
+    "m_eventId": 40,
+    "m_eventType": "star_gate",
+    "m_isArtFlipped": false,
+    "m_isChallengeType": false,
+    "m_levelNodeType": "normal",
+    "m_name": "fourthanniversary_stargate_start",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 6642.149902,
+     "y": -319.399902
+    },
+    "m_toggleName": "",
+    "m_unlockedFrom": "egypt_level_1",
+    "m_unlockedNarrationID": "",
+    "m_visibleFrom": "",
+    "m_worldMapTutorial": "none",
+    "m_worldMapTutorialVisibleWhen": "unlocked"
+   },
+   "stars": 0,
+   "target": "egypt_level_1",
+   "targetClient": "egypt_level_1",
+   "world": "fourthanniversary",
+   "worldClient": "fourthanniversary"
+  },
+  {
+   "event": "fourthanniversary_stargate_exit",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_completedNarrationID": "",
+    "m_cost": 20,
+    "m_dataString": "",
+    "m_displayText": "",
+    "m_eventId": 42,
+    "m_eventType": "star_gate",
+    "m_isArtFlipped": true,
+    "m_isChallengeType": false,
+    "m_levelNodeType": "normal",
+    "m_name": "fourthanniversary_stargate_exit",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 7420.339844,
+     "y": -307.499939
+    },
+    "m_toggleName": "",
+    "m_unlockedFrom": "fourthanniversary_level_10",
+    "m_unlockedNarrationID": "",
+    "m_visibleFrom": "fourthanniversary_stargate_start",
+    "m_worldMapTutorial": "none",
+    "m_worldMapTutorialVisibleWhen": "unlocked"
+   },
+   "stars": 20,
+   "target": "fourthanniversary_level_10",
+   "targetClient": "fourthanniversary_level_10",
+   "world": "fourthanniversary",
+   "worldClient": "fourthanniversary"
+  },
+  {
+   "event": "fourthanniversary_keygate_chal_minigame",
+   "keys": 3,
+   "kind": "key_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_completedNarrationID": "",
+    "m_cost": 3,
+    "m_dataString": "",
+    "m_displayText": "",
+    "m_eventId": 28,
+    "m_eventType": "key_gate",
+    "m_isArtFlipped": true,
+    "m_isChallengeType": false,
+    "m_levelNodeType": "normal",
+    "m_name": "fourthanniversary_keygate_chal_minigame",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 6782.240234,
+     "y": -323.599976
+    },
+    "m_toggleName": "",
+    "m_unlockedFrom": "",
+    "m_unlockedNarrationID": "",
+    "m_visibleFrom": "",
+    "m_worldMapTutorial": "none",
+    "m_worldMapTutorialVisibleWhen": "unlocked"
+   },
+   "stars": null,
+   "target": null,
+   "targetClient": null,
+   "world": "fourthanniversary",
+   "worldClient": "fourthanniversary"
+  },
+  {
+   "event": "fourthanniversary_keygate_chal_preset",
+   "keys": 4,
+   "kind": "key_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_completedNarrationID": "",
+    "m_cost": 4,
+    "m_dataString": "",
+    "m_displayText": "",
+    "m_eventId": 23,
+    "m_eventType": "key_gate",
+    "m_isArtFlipped": false,
+    "m_isChallengeType": false,
+    "m_levelNodeType": "normal",
+    "m_name": "fourthanniversary_keygate_chal_preset",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 6922.330078,
+     "y": -327.799927
+    },
+    "m_toggleName": "",
+    "m_unlockedFrom": "",
+    "m_unlockedNarrationID": "",
+    "m_visibleFrom": "",
+    "m_worldMapTutorial": "none",
+    "m_worldMapTutorialVisibleWhen": "unlocked"
+   },
+   "stars": null,
+   "target": null,
+   "targetClient": null,
+   "world": "fourthanniversary",
+   "worldClient": "fourthanniversary"
+  },
+  {
+   "event": "epicquest_level_intro1",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_autoVisible": false,
+    "m_cost": 0,
+    "m_eventId": "0",
+    "m_eventType": "star_gate",
+    "m_isChallengeType": false,
+    "m_name": "epicquest_level_intro1",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 0,
+     "y": 0
+    },
+    "m_unlockedFrom": "egypt_level_7",
+    "m_visibleFrom": ""
+   },
+   "stars": 0,
+   "target": "egypt_level_7",
+   "targetClient": "egypt_level_7",
+   "world": "epicquest",
+   "worldClient": "epicquest"
+  },
+  {
+   "event": "tower_level_intro1",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_eventId": "0",
+    "m_eventSubType": "none",
+    "m_eventType": "star_gate",
+    "m_levelNodeType": "normal",
+    "m_name": "tower_level_intro1",
+    "m_position": {
+     "x": 0,
+     "y": 300
+    },
+    "m_unlockedFrom": "chinesegarden_level_12",
+    "m_worldMapTutorialVisibleWhen": "unlocked"
+   },
+   "stars": null,
+   "target": "chinesegarden_level_12",
+   "targetClient": "chinesegarden_level_12",
+   "world": "tower",
+   "worldClient": "tower"
+  },
+  {
+   "event": "gangster_keygate_chal_minigame",
+   "keys": 3,
+   "kind": "key_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_completedNarrationID": "",
+    "m_cost": 3,
+    "m_dataString": "",
+    "m_displayText": "",
+    "m_eventId": 36,
+    "m_eventType": "key_gate",
+    "m_isArtFlipped": true,
+    "m_isChallengeType": false,
+    "m_levelNodeType": "normal",
+    "m_name": "gangster_keygate_chal_minigame",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 12279.0,
+     "y": -269.0
+    },
+    "m_toggleName": "",
+    "m_unlockedFrom": "",
+    "m_unlockedNarrationID": "",
+    "m_visibleFrom": "",
+    "m_worldMapTutorial": "none",
+    "m_worldMapTutorialVisibleWhen": "unlocked"
+   },
+   "stars": null,
+   "target": null,
+   "targetClient": null,
+   "world": "gta",
+   "worldClient": "losantosvice"
+  },
+  {
+   "event": "gangster_stargate_start",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_completedNarrationID": "",
+    "m_cost": 10,
+    "m_dataString": "",
+    "m_displayText": "",
+    "m_eventId": 26,
+    "m_eventType": "star_gate",
+    "m_isArtFlipped": false,
+    "m_isChallengeType": false,
+    "m_levelNodeType": "normal",
+    "m_name": "gangster_stargate_start",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 12011.0,
+     "y": -291.0
+    },
+    "m_toggleName": "",
+    "m_unlockedFrom": "",
+    "m_unlockedNarrationID": "",
+    "m_visibleFrom": "",
+    "m_worldMapTutorial": "none",
+    "m_worldMapTutorialVisibleWhen": "unlocked"
+   },
+   "stars": 10,
+   "target": null,
+   "targetClient": null,
+   "world": "gta",
+   "worldClient": "losantosvice"
+  },
+  {
+   "event": "gangster_keygate_chal_preset",
+   "keys": 5,
+   "kind": "key_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_completedNarrationID": "",
+    "m_cost": 5,
+    "m_dataString": "",
+    "m_displayText": "",
+    "m_eventId": 22,
+    "m_eventType": "key_gate",
+    "m_isArtFlipped": true,
+    "m_isChallengeType": false,
+    "m_levelNodeType": "normal",
+    "m_name": "gangster_keygate_chal_preset",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 12611.0,
+     "y": -282.0
+    },
+    "m_toggleName": "",
+    "m_unlockedFrom": "",
+    "m_unlockedNarrationID": "",
+    "m_visibleFrom": "",
+    "m_worldMapTutorial": "none",
+    "m_worldMapTutorialVisibleWhen": "unlocked"
+   },
+   "stars": null,
+   "target": null,
+   "targetClient": null,
+   "world": "gta",
+   "worldClient": "losantosvice"
+  },
+  {
+   "event": "gangster_keygate_chal_laststand",
+   "keys": 4,
+   "kind": "key_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_completedNarrationID": "",
+    "m_cost": 4,
+    "m_dataString": "",
+    "m_displayText": "",
+    "m_eventId": 28,
+    "m_eventType": "key_gate",
+    "m_isArtFlipped": false,
+    "m_isChallengeType": false,
+    "m_levelNodeType": "normal",
+    "m_name": "gangster_keygate_chal_laststand",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 12457.0,
+     "y": -280.0
+    },
+    "m_toggleName": "",
+    "m_unlockedFrom": "",
+    "m_unlockedNarrationID": "",
+    "m_visibleFrom": "",
+    "m_worldMapTutorial": "none",
+    "m_worldMapTutorialVisibleWhen": "unlocked"
+   },
+   "stars": null,
+   "target": null,
+   "targetClient": null,
+   "world": "gta",
+   "worldClient": "losantosvice"
+  },
+  {
+   "event": "gangster_stargate_exit",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_completedNarrationID": "",
+    "m_cost": 0,
+    "m_dataString": "",
+    "m_displayText": "",
+    "m_eventId": 42,
+    "m_eventType": "star_gate",
+    "m_isArtFlipped": true,
+    "m_isChallengeType": false,
+    "m_levelNodeType": "normal",
+    "m_name": "gangster_stargate_exit",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 12729.0,
+     "y": -274.0
+    },
+    "m_toggleName": "",
+    "m_unlockedFrom": "cowboy_level_10",
+    "m_unlockedNarrationID": "",
+    "m_visibleFrom": "cowboy_stargate_start",
+    "m_worldMapTutorial": "none",
+    "m_worldMapTutorialVisibleWhen": "unlocked"
+   },
+   "stars": 0,
+   "target": "cowboy_level_10",
+   "targetClient": "cowboy_level_10",
+   "world": "gta",
+   "worldClient": "losantosvice"
+  },
+  {
+   "event": "gangster_keygate_chal_protect",
+   "keys": 4,
+   "kind": "key_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_completedNarrationID": "",
+    "m_cost": 4,
+    "m_dataString": "",
+    "m_displayText": "",
+    "m_eventId": 14,
+    "m_eventType": "key_gate",
+    "m_isArtFlipped": false,
+    "m_isChallengeType": false,
+    "m_levelNodeType": "normal",
+    "m_name": "gangster_keygate_chal_protect",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 12145.0,
+     "y": -280.0
+    },
+    "m_toggleName": "",
+    "m_unlockedFrom": "",
+    "m_unlockedNarrationID": "",
+    "m_visibleFrom": "",
+    "m_worldMapTutorial": "none",
+    "m_worldMapTutorialVisibleWhen": "unlocked"
+   },
+   "stars": null,
+   "target": null,
+   "targetClient": null,
+   "world": "gta",
+   "worldClient": "losantosvice"
+  },
+  {
+   "event": "rainbowmarket_stargate_start",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_completedNarrationID": "",
+    "m_cost": 10,
+    "m_dataString": "",
+    "m_displayText": "",
+    "m_eventId": 0,
+    "m_eventType": "star_gate",
+    "m_isArtFlipped": false,
+    "m_isChallengeType": false,
+    "m_levelNodeType": "normal",
+    "m_name": "rainbowmarket_stargate_start",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 12011.0,
+     "y": -291.0
+    },
+    "m_toggleName": "",
+    "m_unlockedFrom": "",
+    "m_unlockedNarrationID": "",
+    "m_visibleFrom": "",
+    "m_worldMapTutorial": "none",
+    "m_worldMapTutorialVisibleWhen": "unlocked"
+   },
+   "stars": 10,
+   "target": null,
+   "targetClient": null,
+   "world": "rainbowmarket",
+   "worldClient": "lunarrainbowmarket"
+  },
+  {
+   "event": "thymedevent_stargate_start",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_autoVisible": false,
+    "m_cost": 0,
+    "m_eventId": "0",
+    "m_eventType": "star_gate",
+    "m_isChallengeType": false,
+    "m_name": "thymedevent_stargate_start",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 0,
+     "y": 0
+    },
+    "m_unlockedFrom": "egypt_level_7",
+    "m_visibleFrom": ""
+   },
+   "stars": 0,
+   "target": "egypt_level_7",
+   "targetClient": "egypt_level_7",
+   "world": "thymedevent",
+   "worldClient": "thymedevent"
+  },
+  {
+   "event": "worldgate_collab1",
+   "keys": null,
+   "kind": "worldgate",
+   "raw": {
+    "m_autoVisible": "",
+    "m_dataString": "collab1-thymed_event_unlock-true",
+    "m_eventId": 2,
+    "m_eventType": "worldgate",
+    "m_isChallengeType": false,
+    "m_name": "worldgate_collab1",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 269,
+     "y": 30
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": null,
+   "target": "collab1",
+   "targetClient": "collab1",
+   "world": "thymedevent",
+   "worldClient": "thymedevent"
+  },
+  {
+   "event": "worldgate_collab2",
+   "keys": null,
+   "kind": "worldgate",
+   "raw": {
+    "m_autoVisible": "",
+    "m_dataString": "collab2-thymed_event_unlock-true",
+    "m_eventId": 3,
+    "m_eventType": "worldgate",
+    "m_isChallengeType": false,
+    "m_name": "worldgate_collab2",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 547,
+     "y": 30
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": null,
+   "target": "collab2",
+   "targetClient": "collab2",
+   "world": "thymedevent",
+   "worldClient": "thymedevent"
+  },
+  {
+   "event": "worldgate_lny",
+   "keys": null,
+   "kind": "worldgate",
+   "raw": {
+    "m_autoVisible": "",
+    "m_dataString": "lny-thymed_event_unlock-true",
+    "m_eventId": 4,
+    "m_eventType": "worldgate",
+    "m_isChallengeType": false,
+    "m_name": "worldgate_lny",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 825,
+     "y": 30
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": null,
+   "target": "lny",
+   "targetClient": "lny",
+   "world": "thymedevent",
+   "worldClient": "thymedevent"
+  },
+  {
+   "event": "worldgate_funtime",
+   "keys": null,
+   "kind": "worldgate",
+   "raw": {
+    "m_autoVisible": "",
+    "m_dataString": "funtime-thymed_event_unlock-true",
+    "m_eventId": 5,
+    "m_eventType": "worldgate",
+    "m_isChallengeType": false,
+    "m_name": "worldgate_funtime",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 1103,
+     "y": 30
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": null,
+   "target": "funtime",
+   "targetClient": "funtime",
+   "world": "thymedevent",
+   "worldClient": "thymedevent"
+  },
+  {
+   "event": "worldgate_secondanniversary",
+   "keys": null,
+   "kind": "worldgate",
+   "raw": {
+    "m_autoVisible": "",
+    "m_dataString": "secondanniversary-thymed_event_unlock-true",
+    "m_eventId": 6,
+    "m_eventType": "worldgate",
+    "m_isChallengeType": false,
+    "m_name": "worldgate_secondanniversary",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 1381,
+     "y": 30
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": null,
+   "target": "secondanniversary",
+   "targetClient": "secondanniversary",
+   "world": "thymedevent",
+   "worldClient": "thymedevent"
+  },
+  {
+   "event": "worldgate_thirdanniversary",
+   "keys": null,
+   "kind": "worldgate",
+   "raw": {
+    "m_autoVisible": "",
+    "m_dataString": "thirdanniversary-thymed_event_unlock-true",
+    "m_eventId": 7,
+    "m_eventType": "worldgate",
+    "m_isChallengeType": false,
+    "m_name": "worldgate_thirdanniversary",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 1659,
+     "y": 30
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": null,
+   "target": "thirdanniversary",
+   "targetClient": "thirdanniversary",
+   "world": "thymedevent",
+   "worldClient": "thymedevent"
+  },
+  {
+   "event": "worldgate_fourthanniversary",
+   "keys": null,
+   "kind": "worldgate",
+   "raw": {
+    "m_autoVisible": "",
+    "m_dataString": "fourthanniversary-thymed_event_unlock-true",
+    "m_eventId": 8,
+    "m_eventType": "worldgate",
+    "m_isChallengeType": false,
+    "m_name": "worldgate_fourthanniversary",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 1937,
+     "y": 30
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": null,
+   "target": "fourthanniversary",
+   "targetClient": "fourthanniversary",
+   "world": "thymedevent",
+   "worldClient": "thymedevent"
+  },
+  {
+   "event": "worldgate_fifthanniversary",
+   "keys": null,
+   "kind": "worldgate",
+   "raw": {
+    "m_autoVisible": "",
+    "m_dataString": "fifthanniversary-thymed_event_unlock-true",
+    "m_eventId": 9,
+    "m_eventType": "worldgate",
+    "m_isChallengeType": false,
+    "m_name": "worldgate_fifthanniversary",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 2215,
+     "y": 30
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": null,
+   "target": "fifthanniversary",
+   "targetClient": "fifthanniversary",
+   "world": "thymedevent",
+   "worldClient": "thymedevent"
+  },
+  {
+   "event": "worldgate_sixthanniversary",
+   "keys": null,
+   "kind": "worldgate",
+   "raw": {
+    "m_autoVisible": "",
+    "m_dataString": "sixthanniversary-thymed_event_unlock-true",
+    "m_eventId": 10,
+    "m_eventType": "worldgate",
+    "m_isChallengeType": false,
+    "m_name": "worldgate_sixthanniversary",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 2493,
+     "y": 30
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": null,
+   "target": "sixthanniversary",
+   "targetClient": "sixthanniversary",
+   "world": "thymedevent",
+   "worldClient": "thymedevent"
+  },
+  {
+   "event": "worldgate_cerydra",
+   "keys": null,
+   "kind": "worldgate",
+   "raw": {
+    "m_autoVisible": "",
+    "m_dataString": "cerydra-thymed_event_unlock-true",
+    "m_eventId": 11,
+    "m_eventType": "worldgate",
+    "m_isChallengeType": false,
+    "m_name": "worldgate_cerydra",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 2771,
+     "y": 30
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": null,
+   "target": "cerydra",
+   "targetClient": "cerydra",
+   "world": "thymedevent",
+   "worldClient": "thymedevent"
+  },
+  {
+   "event": "worldgate_hysilens",
+   "keys": null,
+   "kind": "worldgate",
+   "raw": {
+    "m_autoVisible": "",
+    "m_dataString": "hysilens-thymed_event_unlock-true",
+    "m_eventId": 12,
+    "m_eventType": "worldgate",
+    "m_isChallengeType": false,
+    "m_name": "worldgate_hysilens",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 3049,
+     "y": 30
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": null,
+   "target": "hysilens",
+   "targetClient": "hysilens",
+   "world": "thymedevent",
+   "worldClient": "thymedevent"
+  },
+  {
+   "event": "worldgate_firefly",
+   "keys": null,
+   "kind": "worldgate",
+   "raw": {
+    "m_autoVisible": "",
+    "m_dataString": "firefly-thymed_event_unlock-true",
+    "m_eventId": 13,
+    "m_eventType": "worldgate",
+    "m_isChallengeType": false,
+    "m_name": "worldgate_firefly",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 3327,
+     "y": 30
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": null,
+   "target": "firefly",
+   "targetClient": "firefly",
+   "world": "thymedevent",
+   "worldClient": "thymedevent"
+  },
+  {
+   "event": "worldgate_tes12",
+   "keys": null,
+   "kind": "worldgate",
+   "raw": {
+    "m_autoVisible": "",
+    "m_dataString": "tes12-thymed_event_unlock-true",
+    "m_eventId": 14,
+    "m_eventType": "worldgate",
+    "m_isChallengeType": false,
+    "m_name": "worldgate_tes12",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 3605,
+     "y": 100
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": null,
+   "target": "tes12",
+   "targetClient": "tes12",
+   "world": "thymedevent",
+   "worldClient": "thymedevent"
+  },
+  {
+   "event": "worldgate_tes13",
+   "keys": null,
+   "kind": "worldgate",
+   "raw": {
+    "m_autoVisible": "",
+    "m_dataString": "tes13-thymed_event_unlock-true",
+    "m_eventId": 15,
+    "m_eventType": "worldgate",
+    "m_isChallengeType": false,
+    "m_name": "worldgate_tes13",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 3883,
+     "y": 30
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": null,
+   "target": "tes13",
+   "targetClient": "tes13",
+   "world": "thymedevent",
+   "worldClient": "thymedevent"
+  },
+  {
+   "event": "worldgate_element",
+   "keys": null,
+   "kind": "worldgate",
+   "raw": {
+    "m_autoVisible": "",
+    "m_dataString": "element-thymed_event_unlock-true",
+    "m_eventId": 16,
+    "m_eventType": "worldgate",
+    "m_isChallengeType": false,
+    "m_name": "worldgate_element",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 4161,
+     "y": 30
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": null,
+   "target": "element",
+   "targetClient": "element",
+   "world": "thymedevent",
+   "worldClient": "thymedevent"
+  },
+  {
+   "event": "lny2026_stargate_start",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_autoVisible": false,
+    "m_cost": 0,
+    "m_eventId": "0",
+    "m_eventType": "star_gate",
+    "m_isChallengeType": false,
+    "m_name": "lny2026_stargate_start",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 0,
+     "y": 0
+    },
+    "m_unlockedFrom": "egypt_level_1",
+    "m_visibleFrom": ""
+   },
+   "stars": 0,
+   "target": "egypt_level_1",
+   "targetClient": "egypt_level_1",
+   "world": "lny",
+   "worldClient": "lny"
+  },
+  {
+   "event": "fifthanniversary_stargate_start",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_cost": 10,
+    "m_eventId": 11,
+    "m_eventType": "star_gate",
+    "m_isChallengeType": false,
+    "m_name": "fifthanniversary_stargate_start",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 7698,
+     "y": -37
+    },
+    "m_unlockedFrom": "egypt_level_1",
+    "m_visibleFrom": ""
+   },
+   "stars": 10,
+   "target": "egypt_level_1",
+   "targetClient": "egypt_level_1",
+   "world": "fifthanniversary",
+   "worldClient": "fifthanniversary"
+  },
+  {
+   "event": "collab1_stargate_start",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_cost": 10,
+    "m_eventId": 11,
+    "m_eventType": "star_gate",
+    "m_isChallengeType": false,
+    "m_name": "collab1_stargate_start",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 7698,
+     "y": -37
+    },
+    "m_unlockedFrom": "egypt_level_1",
+    "m_visibleFrom": ""
+   },
+   "stars": 10,
+   "target": "egypt_level_1",
+   "targetClient": "egypt_level_1",
+   "world": "collab1",
+   "worldClient": "collab1"
+  },
+  {
+   "event": "collab2_stargate_start",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_autoVisible": false,
+    "m_cost": 0,
+    "m_eventId": "0",
+    "m_eventType": "star_gate",
+    "m_isChallengeType": false,
+    "m_name": "collab2_stargate_start",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 0,
+     "y": 0
+    },
+    "m_unlockedFrom": "egypt_level_1",
+    "m_visibleFrom": ""
+   },
+   "stars": 0,
+   "target": "egypt_level_1",
+   "targetClient": "egypt_level_1",
+   "world": "collab2",
+   "worldClient": "collab2"
+  },
+  {
+   "event": "funtime_stargate_start",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_cost": 10,
+    "m_eventId": 11,
+    "m_eventType": "star_gate",
+    "m_isChallengeType": false,
+    "m_name": "funtime_stargate_start",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 9999,
+     "y": -37
+    },
+    "m_unlockedFrom": "egypt_level_1",
+    "m_visibleFrom": ""
+   },
+   "stars": 10,
+   "target": "egypt_level_1",
+   "targetClient": "egypt_level_1",
+   "world": "funtime",
+   "worldClient": "funtime"
+  },
+  {
+   "event": "sixthanniversary_keygate_chal_protect",
+   "keys": 3,
+   "kind": "key_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_cost": 3,
+    "m_eventId": 13,
+    "m_eventType": "key_gate",
+    "m_isChallengeType": false,
+    "m_name": "sixthanniversary_keygate_chal_protect",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 1009,
+     "y": -142
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": null,
+   "target": null,
+   "targetClient": null,
+   "world": "sixthanniversary",
+   "worldClient": "sixthanniversary"
+  },
+  {
+   "event": "sixthanniversary_keygate_chal_preset",
+   "keys": 4,
+   "kind": "key_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_cost": 4,
+    "m_eventId": 23,
+    "m_eventType": "key_gate",
+    "m_isChallengeType": false,
+    "m_name": "sixthanniversary_keygate_chal_preset",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 1479.419922,
+     "y": -135.099976
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": null,
+   "target": null,
+   "targetClient": null,
+   "world": "sixthanniversary",
+   "worldClient": "sixthanniversary"
+  },
+  {
+   "event": "sixthanniversary_stargate_start",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_cost": 0,
+    "m_eventId": 44,
+    "m_eventType": "star_gate",
+    "m_isChallengeType": false,
+    "m_name": "sixthanniversary_stargate_start",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 758,
+     "y": -146
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": 0,
+   "target": null,
+   "targetClient": null,
+   "world": "sixthanniversary",
+   "worldClient": "sixthanniversary"
+  },
+  {
+   "event": "mausoleum_stargate_start",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_autoVisible": false,
+    "m_completedNarrationID": "",
+    "m_cost": 0,
+    "m_dataString": "",
+    "m_displayText": "",
+    "m_eventId": 1,
+    "m_eventType": "star_gate",
+    "m_isArtFlipped": false,
+    "m_isChallengeType": false,
+    "m_levelNodeType": "normal",
+    "m_name": "mausoleum_stargate_start",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 537.6322080803682,
+     "y": -139.36968843078023
+    },
+    "m_toggleName": "",
+    "m_unlockedFrom": "",
+    "m_unlockedNarrationID": "",
+    "m_visibleFrom": "",
+    "m_worldMapTutorial": "none",
+    "m_worldMapTutorialVisibleWhen": "none"
+   },
+   "stars": 0,
+   "target": null,
+   "targetClient": null,
+   "world": "mausoleum",
+   "worldClient": "mausoleum"
+  },
+  {
+   "event": "aprilfools_stargate_start",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_autoVisible": false,
+    "m_completedNarrationID": "",
+    "m_cost": 0,
+    "m_dataString": "",
+    "m_displayText": "",
+    "m_eventId": 50,
+    "m_eventType": "star_gate",
+    "m_isArtFlipped": false,
+    "m_isChallengeType": false,
+    "m_levelNodeType": "",
+    "m_name": "aprilfools_stargate_start",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 380.1792546433395,
+     "y": -64.93754233015414
+    },
+    "m_toggleName": "",
+    "m_unlockedFrom": "",
+    "m_unlockedNarrationID": "",
+    "m_visibleFrom": "",
+    "m_worldMapTutorial": "",
+    "m_worldMapTutorialVisibleWhen": ""
+   },
+   "stars": 0,
+   "target": null,
+   "targetClient": null,
+   "world": "aprilfools",
+   "worldClient": "aprilfools"
+  },
+  {
+   "event": "cerydra_stargate_start",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_cost": 0,
+    "m_eventId": 44,
+    "m_eventType": "star_gate",
+    "m_isChallengeType": false,
+    "m_name": "cerydra_stargate_start",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 758,
+     "y": -146
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": 0,
+   "target": null,
+   "targetClient": null,
+   "world": "cerydra",
+   "worldClient": "cerydra"
+  },
+  {
+   "event": "hysilens_stargate_start",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_cost": 0,
+    "m_eventId": 44,
+    "m_eventType": "star_gate",
+    "m_isChallengeType": false,
+    "m_name": "hysilens_stargate_start",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 758,
+     "y": -146
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": 0,
+   "target": null,
+   "targetClient": null,
+   "world": "hysilens",
+   "worldClient": "hysilens"
+  },
+  {
+   "event": "atlantis_stargate_start",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_completedNarrationID": "",
+    "m_cost": 10,
+    "m_dataString": "",
+    "m_displayText": "",
+    "m_eventId": 11,
+    "m_eventType": "star_gate",
+    "m_isArtFlipped": false,
+    "m_isChallengeType": false,
+    "m_levelNodeType": "normal",
+    "m_name": "atlantis_stargate_start",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 9999.0,
+     "y": -37.0
+    },
+    "m_toggleName": "",
+    "m_unlockedFrom": "egypt_level_1",
+    "m_unlockedNarrationID": "",
+    "m_visibleFrom": "",
+    "m_worldMapTutorial": "none",
+    "m_worldMapTutorialVisibleWhen": "unlocked"
+   },
+   "stars": 10,
+   "target": "egypt_level_1",
+   "targetClient": "egypt_level_1",
+   "world": "atlantis",
+   "worldClient": "atlantis"
+  },
+  {
+   "event": "firefly_stargate_start",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_cost": 0,
+    "m_eventId": 44,
+    "m_eventType": "star_gate",
+    "m_isChallengeType": false,
+    "m_name": "firefly_stargate_start",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 758,
+     "y": -146
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": 0,
+   "target": null,
+   "targetClient": null,
+   "world": "firefly",
+   "worldClient": "firefly"
+  },
+  {
+   "event": "tes12_stargate_start",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_autoVisible": false,
+    "m_cost": 0,
+    "m_eventId": 1,
+    "m_eventType": "star_gate",
+    "m_isChallengeType": false,
+    "m_name": "tes12_stargate_start",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 537.6322080803682,
+     "y": -139.36968843078023
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": 0,
+   "target": null,
+   "targetClient": null,
+   "world": "tes12",
+   "worldClient": "tes12"
+  },
+  {
+   "event": "tes13_stargate_start",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_autoVisible": false,
+    "m_cost": 0,
+    "m_eventId": "1",
+    "m_eventType": "star_gate",
+    "m_isChallengeType": false,
+    "m_name": "tes13_stargate_start",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 0,
+     "y": 0
+    },
+    "m_unlockedFrom": "",
+    "m_visibleFrom": ""
+   },
+   "stars": 0,
+   "target": null,
+   "targetClient": null,
+   "world": "tes13",
+   "worldClient": "tes13"
+  },
+  {
+   "event": "element_stargate_start",
+   "keys": null,
+   "kind": "star_gate",
+   "raw": {
+    "m_autoVisible": true,
+    "m_cost": 10,
+    "m_eventId": 1,
+    "m_eventType": "star_gate",
+    "m_isChallengeType": false,
+    "m_name": "element_stargate_start",
+    "m_parentEvent": "",
+    "m_position": {
+     "x": 7698,
+     "y": -37
+    },
+    "m_unlockedFrom": "egypt_level_1",
+    "m_visibleFrom": ""
+   },
+   "stars": 10,
+   "target": "egypt_level_1",
+   "targetClient": "egypt_level_1",
+   "world": "element",
+   "worldClient": "element"
+  }
+ ],
+ "generated": "sha256:b1f61cd5ef86dedb",
+ "source": "work/obb_packages/pkg_2107_WorldData.json"
+}

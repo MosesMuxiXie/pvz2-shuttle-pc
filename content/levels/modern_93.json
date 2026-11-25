@@ -78,6 +78,7 @@
   "original_waves": 1,
   "night": false,
   "boss": true,
-  "boss_zombie": "zomboss"
+  "boss_zombie": "zomboss",
+  "suppressFlagZombie": true
  }
 }

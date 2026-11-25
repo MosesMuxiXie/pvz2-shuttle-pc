@@ -1,0 +1,377 @@
+{
+ "levelPackages": 1809,
+ "mechanics": [
+  {
+   "mechanic": "conveyor",
+   "needle": "ConveyorSeedBankProperties",
+   "classes": [
+    "ConveyorSeedBankProperties"
+   ],
+   "objects": 349,
+   "levelFiles": 349,
+   "clientField": "extra.seed_bank 只是一个 int，没有传送带卡槽",
+   "sampleLevels": [
+    "0327",
+    "0344",
+    "1029",
+    "1189",
+    "1790"
+   ]
+  },
+  {
+   "mechanic": "seedbank",
+   "needle": "SeedBankProperties",
+   "classes": [
+    "BeghouledSeedBankProperties",
+    "ConveyorSeedBankProperties",
+    "SeedBankProperties"
+   ],
+   "objects": 1746,
+   "levelFiles": 1732,
+   "clientField": "seed_bank(int) + deck[]",
+   "sampleLevels": [
+    "0314",
+    "0344",
+    "0621",
+    "0938",
+    "1091"
+   ]
+  },
+  {
+   "mechanic": "gravestone",
+   "needle": "GravestoneProperties",
+   "classes": [
+    "GravestoneProperties"
+   ],
+   "objects": 241,
+   "levelFiles": 241,
+   "clientField": "",
+   "sampleLevels": [
+    "0448",
+    "0459",
+    "1029",
+    "1131",
+    "1658"
+   ]
+  },
+  {
+   "mechanic": "initial_plant",
+   "needle": "InitialPlantProperties",
+   "classes": [
+    "InitialPlantProperties"
+   ],
+   "objects": 277,
+   "levelFiles": 272,
+   "clientField": "",
+   "sampleLevels": [
+    "0395",
+    "0845",
+    "0954",
+    "1095",
+    "1359"
+   ]
+  },
+  {
+   "mechanic": "initial_griditem",
+   "needle": "InitialGridItemProperties",
+   "classes": [
+    "InitialGridItemProperties"
+   ],
+   "objects": 592,
+   "levelFiles": 475,
+   "clientField": "",
+   "sampleLevels": [
+    "0759",
+    "0834",
+    "1091",
+    "1457",
+    "1790"
+   ]
+  },
+  {
+   "mechanic": "protect_plant",
+   "needle": "ProtectThePlantChallengeProperties",
+   "classes": [
+    "ProtectThePlantChallengeProperties"
+   ],
+   "objects": 287,
+   "levelFiles": 286,
+   "clientField": "",
+   "sampleLevels": [
+    "0621",
+    "0748",
+    "0759",
+    "1091",
+    "1399"
+   ]
+  },
+  {
+   "mechanic": "tide",
+   "needle": "TidalChangeWaveActionProps",
+   "classes": [
+    "TidalChangeWaveActionProps"
+   ],
+   "objects": 370,
+   "levelFiles": 60,
+   "clientField": "",
+   "sampleLevels": [
+    "0327",
+    "0335",
+    "0403",
+    "1042",
+    "1158"
+   ]
+  },
+  {
+   "mechanic": "frost",
+   "needle": "FrostWindWaveActionProps",
+   "classes": [
+    "FrostWindWaveActionProps"
+   ],
+   "objects": 283,
+   "levelFiles": 64,
+   "clientField": "",
+   "sampleLevels": [
+    "0759",
+    "0853",
+    "0921",
+    "0996",
+    "1698"
+   ]
+  },
+  {
+   "mechanic": "dino",
+   "needle": "DinoWaveActionProps",
+   "classes": [
+    "DinoWaveActionProps"
+   ],
+   "objects": 887,
+   "levelFiles": 93,
+   "clientField": "",
+   "sampleLevels": [
+    "0491",
+    "0759",
+    "0874",
+    "1078",
+    "1698"
+   ]
+  },
+  {
+   "mechanic": "portal",
+   "needle": "SpawnModernPortalsWaveActionProps",
+   "classes": [
+    "SpawnModernPortalsWaveActionProps"
+   ],
+   "objects": 684,
+   "levelFiles": 130,
+   "clientField": "",
+   "sampleLevels": [
+    "0314",
+    "0938",
+    "1666",
+    "1776",
+    "1784"
+   ]
+  },
+  {
+   "mechanic": "spider_rain",
+   "needle": "SpiderRainZombieSpawnerProps",
+   "classes": [
+    "SpiderRainZombieSpawnerProps"
+   ],
+   "objects": 322,
+   "levelFiles": 118,
+   "clientField": "",
+   "sampleLevels": [
+    "0379",
+    "0395",
+    "1113",
+    "1262",
+    "1292"
+   ]
+  },
+  {
+   "mechanic": "fish",
+   "needle": "SpawnZombiesFishWaveActionProps",
+   "classes": [
+    "SpawnZombiesFishWaveActionProps"
+   ],
+   "objects": 301,
+   "levelFiles": 26,
+   "clientField": "",
+   "sampleLevels": [
+    "0266",
+    "0274",
+    "0278",
+    "0287",
+    "0289"
+   ]
+  },
+  {
+   "mechanic": "storm",
+   "needle": "StormZombieSpawnerProps",
+   "classes": [
+    "StormZombieSpawnerProps"
+   ],
+   "objects": 375,
+   "levelFiles": 119,
+   "clientField": "",
+   "sampleLevels": [
+    "0365",
+    "0513",
+    "0610",
+    "0621",
+    "1078"
+   ]
+  },
+  {
+   "mechanic": "beach_event",
+   "needle": "BeachStageEventZombieSpawnerProps",
+   "classes": [
+    "BeachStageEventZombieSpawnerProps"
+   ],
+   "objects": 372,
+   "levelFiles": 82,
+   "clientField": "",
+   "sampleLevels": [
+    "0327",
+    "0694",
+    "1158",
+    "1241",
+    "1249"
+   ]
+  },
+  {
+   "mechanic": "gravestone_wave",
+   "needle": "SpawnGravestonesWaveActionProps",
+   "classes": [
+    "SpawnGravestonesWaveActionProps"
+   ],
+   "objects": 1221,
+   "levelFiles": 353,
+   "clientField": "",
+   "sampleLevels": [
+    "0748",
+    "0759",
+    "0834",
+    "0938",
+    "1790"
+   ]
+  },
+  {
+   "mechanic": "grid_spawner",
+   "needle": "SpawnZombiesFromGridItemSpawnerProps",
+   "classes": [
+    "SpawnZombiesFromGridItemSpawnerProps"
+   ],
+   "objects": 708,
+   "levelFiles": 237,
+   "clientField": "",
+   "sampleLevels": [
+    "0358",
+    "0759",
+    "0969",
+    "1540",
+    "1658"
+   ]
+  },
+  {
+   "mechanic": "ground_spawner",
+   "needle": "SpawnZombiesFromGroundSpawnerProps",
+   "classes": [
+    "SpawnZombiesFromGroundSpawnerProps"
+   ],
+   "objects": 325,
+   "levelFiles": 100,
+   "clientField": "",
+   "sampleLevels": [
+    "0616",
+    "0759",
+    "0874",
+    "1078",
+    "1141"
+   ]
+  },
+  {
+   "mechanic": "conveyor_wave",
+   "needle": "ModifyConveyorWaveActionProps",
+   "classes": [
+    "ModifyConveyorWaveActionProps"
+   ],
+   "objects": 381,
+   "levelFiles": 132,
+   "clientField": "",
+   "sampleLevels": [
+    "0828",
+    "0854",
+    "0984",
+    "1714",
+    "1832"
+   ]
+  },
+  {
+   "mechanic": "board_gridmap",
+   "needle": "BoardGridMapProps",
+   "classes": [
+    "BoardGridMapProps"
+   ],
+   "objects": 302,
+   "levelFiles": 49,
+   "clientField": "",
+   "sampleLevels": [
+    "0360",
+    "0742",
+    "1136",
+    "1148",
+    "1986"
+   ]
+  },
+  {
+   "mechanic": "star_challenge",
+   "needle": "StarChallengeModuleProperties",
+   "classes": [
+    "StarChallengeModuleProperties"
+   ],
+   "objects": 952,
+   "levelFiles": 948,
+   "clientField": "stars.json 只有星章目标",
+   "sampleLevels": [
+    "0621",
+    "0938",
+    "1091",
+    "1556",
+    "1790"
+   ]
+  },
+  {
+   "mechanic": "mutator",
+   "needle": "LevelMutator",
+   "classes": [
+    "LevelMutatorGridItemLevelProps",
+    "LevelMutatorMaxSunProps",
+    "LevelMutatorModuleProperties",
+    "LevelMutatorMowerSpawnProps",
+    "LevelMutatorPowerupSetProps",
+    "LevelMutatorRiftZombossPhasesProps",
+    "LevelMutatorSeedSlotCountProps",
+    "LevelMutatorStartSunProps",
+    "LevelMutatorStartingPlantfoodProps",
+    "LevelMutatorSunDropperProps",
+    "LevelMutatorTableProps",
+    "LevelMutatorZombieCountdownFirstWaveSecsProps",
+    "LevelMutatorZombieGeneralLevelProps",
+    "LevelMutatorZombieLevelProps"
+   ],
+   "objects": 194,
+   "levelFiles": 21,
+   "clientField": "",
+   "sampleLevels": [
+    "0541",
+    "0545",
+    "0585",
+    "1899",
+    "1977"
+   ]
+  }
+ ]
+}

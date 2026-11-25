@@ -1,0 +1,1310 @@
+{
+ "counts": {
+  "configs": 1,
+  "contentBaseResults": 46,
+  "contentKeys": 48,
+  "contentRecipes": 85,
+  "contentVariants": 39,
+  "ingredientsClient": 94,
+  "ingredientsPack": 76,
+  "objects": 217,
+  "objectsWithData": 199,
+  "onlyContentKeys": 0,
+  "onlyPackKeys": 0,
+  "onlyResult": 4,
+  "packKeys": 48,
+  "pairs": 85,
+  "pairsClient": 27,
+  "pairsPack": 58,
+  "resultsResolved": 85,
+  "sharedKeys": 48,
+  "uniqueFusion": 44,
+  "uniqueResult": 46,
+  "uniqueSource": 44,
+  "withSound": 46
+ },
+ "format": 1,
+ "generated": "fusion-compile-v1",
+ "pairs": [
+  {
+   "fusion": "sprout",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "sprout",
+    "FusionSoundEvent": null,
+    "ResultPlant": "draftodil1",
+    "SourcePlant": "akee"
+   },
+   "result": "fused_draftodil1",
+   "sound": null,
+   "source": "akee",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "birthsunflower",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "birthsunflower",
+    "FusionSoundEvent": null,
+    "ResultPlant": "suntower",
+    "SourcePlant": "birthsunflower"
+   },
+   "result": "fused_suntower",
+   "sound": null,
+   "source": "birthsunflower",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "bloomerang1",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "bloomerang1",
+    "FusionSoundEvent": null,
+    "ResultPlant": "gumnut",
+    "SourcePlant": "bloomerang1"
+   },
+   "result": "fused_gumnut",
+   "sound": null,
+   "source": "bloomerang1",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "buttercup",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": false,
+    "FusionPlant": "buttercup",
+    "FusionSoundEvent": "Play_Plant_Buttercup_Attack",
+    "ResultPlant": "headbutterlettuce",
+    "SourcePlant": "bonkchoy"
+   },
+   "result": "fused_headbutterlettuce",
+   "sound": "Play_Plant_Buttercup_Attack",
+   "source": "bonkchoy",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "stallia",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "stallia",
+    "FusionSoundEvent": "Play_Plant_Stallia_Attack",
+    "ResultPlant": "pokra1",
+    "SourcePlant": "bonkchoy"
+   },
+   "result": "fused_pokra1",
+   "sound": "Play_Plant_Stallia_Attack",
+   "source": "bonkchoy",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "bonkchoy",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": false,
+    "FusionPlant": "bonkchoy",
+    "FusionSoundEvent": "Play_Plant_Buttercup_Attack",
+    "ResultPlant": "headbutterlettuce",
+    "SourcePlant": "buttercup"
+   },
+   "result": "fused_headbutterlettuce",
+   "sound": "Play_Plant_Buttercup_Attack",
+   "source": "buttercup",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "lavaguava",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "lavaguava",
+    "FusionSoundEvent": "Play_Plant_LavaGuava_Attack_Pop",
+    "ResultPlant": "hollybarrierleaf",
+    "SourcePlant": "cabbagepult"
+   },
+   "result": "fused_hollybarrierleaf",
+   "sound": "Play_Plant_LavaGuava_Attack_Pop",
+   "source": "cabbagepult",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "peashooter",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": false,
+    "FusionPlant": "peashooter",
+    "FusionSoundEvent": null,
+    "ResultPlant": "slingpea",
+    "SourcePlant": "cabbagepult"
+   },
+   "result": "fused_slingpea",
+   "sound": null,
+   "source": "cabbagepult",
+   "sourceKind": "client"
+  },
+  {
+   "fusion": "shadowshroom",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "shadowshroom",
+    "FusionSoundEvent": "Play_Plant_ShadowShroom_Attack",
+    "ResultPlant": "peppermint",
+    "SourcePlant": "cabbagepult"
+   },
+   "result": "fused_peppermint",
+   "sound": "Play_Plant_ShadowShroom_Attack",
+   "source": "cabbagepult",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "solartomato",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "solartomato",
+    "FusionSoundEvent": "Play_Plant_SolarTomato_attack",
+    "ResultPlant": "rabbagepult",
+    "SourcePlant": "cabbagepult"
+   },
+   "result": "fused_rabbagepult",
+   "sound": "Play_Plant_SolarTomato_attack",
+   "source": "cabbagepult",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "sunflower",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "sunflower",
+    "FusionSoundEvent": null,
+    "ResultPlant": "turkeypult",
+    "SourcePlant": "cabbagepult"
+   },
+   "result": "fused_turkeypult",
+   "sound": null,
+   "source": "cabbagepult",
+   "sourceKind": "client"
+  },
+  {
+   "fusion": "iceburg",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "iceburg",
+    "FusionSoundEvent": "Play_IcebergLettuce_Freeze",
+    "ResultPlant": "powervine",
+    "SourcePlant": "chardguard"
+   },
+   "result": "fused_powervine",
+   "sound": "Play_IcebergLettuce_Freeze",
+   "source": "chardguard",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "springbean",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "springbean",
+    "FusionSoundEvent": "Play_SpringBean_Activate",
+    "ResultPlant": "tumbleweed",
+    "SourcePlant": "chardguard"
+   },
+   "result": "fused_tumbleweed",
+   "sound": "Play_SpringBean_Activate",
+   "source": "chardguard",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "stunion",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "stunion",
+    "FusionSoundEvent": null,
+    "ResultPlant": "jasmine",
+    "SourcePlant": "chilibean"
+   },
+   "result": "fused_jasmine",
+   "sound": null,
+   "source": "chilibean",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "peashooter",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": false,
+    "FusionPlant": "peashooter",
+    "FusionSoundEvent": null,
+    "ResultPlant": "snappea1",
+    "SourcePlant": "chomper"
+   },
+   "result": "fused_snappea1",
+   "sound": null,
+   "source": "chomper",
+   "sourceKind": "client"
+  },
+  {
+   "fusion": "iceburg",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "iceburg",
+    "FusionSoundEvent": "Play_IcebergLettuce_Freeze",
+    "ResultPlant": "lemonaider",
+    "SourcePlant": "dandelion"
+   },
+   "result": "fused_lemonaider",
+   "sound": "Play_IcebergLettuce_Freeze",
+   "source": "dandelion",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "solarsage",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "solarsage",
+    "FusionSoundEvent": null,
+    "ResultPlant": "olivepit",
+    "SourcePlant": "draftodil"
+   },
+   "result": "fused_olivepit",
+   "sound": null,
+   "source": "draftodil",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "sunflower",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "sunflower",
+    "FusionSoundEvent": null,
+    "ResultPlant": "darktwinsunflower",
+    "SourcePlant": "firepeashooter1"
+   },
+   "result": "fused_darktwinsunflower",
+   "sound": null,
+   "source": "firepeashooter1",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "peashooter",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "peashooter",
+    "FusionSoundEvent": null,
+    "ResultPlant": "fusiongatling",
+    "SourcePlant": "fusiongatling"
+   },
+   "result": "fused_fusiongatling",
+   "sound": null,
+   "source": "fusiongatling",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "wallnut",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": false,
+    "FusionPlant": "wallnut",
+    "FusionSoundEvent": null,
+    "ResultPlant": "sweetpotato1",
+    "SourcePlant": "garlic"
+   },
+   "result": "fused_sweetpotato1",
+   "sound": null,
+   "source": "garlic",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "peashooter",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "peashooter",
+    "FusionSoundEvent": "Play_Plant_GatlingPea_Attack_Four_Shot",
+    "ResultPlant": "megagatling",
+    "SourcePlant": "hollyknight"
+   },
+   "result": "fused_megagatling",
+   "sound": "Play_Plant_GatlingPea_Attack_Four_Shot",
+   "source": "hollyknight",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "chardguard",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "chardguard",
+    "FusionSoundEvent": "Play_IcebergLettuce_Freeze",
+    "ResultPlant": "powervine",
+    "SourcePlant": "iceburg"
+   },
+   "result": "fused_powervine",
+   "sound": "Play_IcebergLettuce_Freeze",
+   "source": "iceburg",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "dandelion",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "dandelion",
+    "FusionSoundEvent": "Play_IcebergLettuce_Freeze",
+    "ResultPlant": "lemonaider",
+    "SourcePlant": "iceburg"
+   },
+   "result": "fused_lemonaider",
+   "sound": "Play_IcebergLettuce_Freeze",
+   "source": "iceburg",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "melonpult",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": false,
+    "FusionPlant": "melonpult",
+    "FusionSoundEvent": "Play_IcebergLettuce_Freeze",
+    "ResultPlant": "wintermelon",
+    "SourcePlant": "iceburg"
+   },
+   "result": "fused_wintermelon",
+   "sound": "Play_IcebergLettuce_Freeze",
+   "source": "iceburg",
+   "sourceKind": "client"
+  },
+  {
+   "fusion": "peashooter",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": false,
+    "FusionPlant": "peashooter",
+    "FusionSoundEvent": "Play_IcebergLettuce_Freeze",
+    "ResultPlant": "snowpea",
+    "SourcePlant": "iceburg"
+   },
+   "result": "fused_snowpea",
+   "sound": "Play_IcebergLettuce_Freeze",
+   "source": "iceburg",
+   "sourceKind": "client"
+  },
+  {
+   "fusion": "phatbeet1",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "phatbeet1",
+    "FusionSoundEvent": "Play_IcebergLettuce_Freeze",
+    "ResultPlant": "frozenpear",
+    "SourcePlant": "iceburg"
+   },
+   "result": "fused_frozenpear",
+   "sound": "Play_IcebergLettuce_Freeze",
+   "source": "iceburg",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "snapdragon",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "snapdragon",
+    "FusionSoundEvent": "Play_IcebergLettuce_Freeze",
+    "ResultPlant": "coldsnapdragon",
+    "SourcePlant": "iceburg"
+   },
+   "result": "fused_coldsnapdragon",
+   "sound": "Play_IcebergLettuce_Freeze",
+   "source": "iceburg",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "spikeweed",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": false,
+    "FusionPlant": "spikeweed",
+    "FusionSoundEvent": "Play_IcebergLettuce_Freeze",
+    "ResultPlant": "iceweed",
+    "SourcePlant": "iceburg"
+   },
+   "result": "fused_iceweed",
+   "sound": "Play_IcebergLettuce_Freeze",
+   "source": "iceburg",
+   "sourceKind": "client"
+  },
+  {
+   "fusion": "kernelpult",
+   "onlyResult": true,
+   "raw": {
+    "FusionOnlyHasResultPlant": true,
+    "FusionPlant": "kernelpult",
+    "FusionSoundEvent": null,
+    "ResultPlant": "paradoxpult",
+    "SourcePlant": "kernelpult"
+   },
+   "result": "fused_paradoxpult",
+   "sound": null,
+   "source": "kernelpult",
+   "sourceKind": "client"
+  },
+  {
+   "fusion": "potatomine",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "potatomine",
+    "FusionSoundEvent": "Play_Potato_Mine",
+    "ResultPlant": "stickybombrice",
+    "SourcePlant": "kernelpult"
+   },
+   "result": "fused_stickybombrice",
+   "sound": "Play_Potato_Mine",
+   "source": "kernelpult",
+   "sourceKind": "client"
+  },
+  {
+   "fusion": "cabbagepult",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "cabbagepult",
+    "FusionSoundEvent": "Play_Plant_LavaGuava_Attack_Pop",
+    "ResultPlant": "hollybarrierleaf",
+    "SourcePlant": "lavaguava"
+   },
+   "result": "fused_hollybarrierleaf",
+   "sound": "Play_Plant_LavaGuava_Attack_Pop",
+   "source": "lavaguava",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "lightningreed",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "lightningreed",
+    "FusionSoundEvent": "Play_Plant_LightningReed_Nitro_Storm",
+    "ResultPlant": "punkshocker",
+    "SourcePlant": "lightningreed"
+   },
+   "result": "fused_punkshocker",
+   "sound": "Play_Plant_LightningReed_Nitro_Storm",
+   "source": "lightningreed",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "littlerepeater",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "littlerepeater",
+    "FusionSoundEvent": null,
+    "ResultPlant": "fusiongatling",
+    "SourcePlant": "littlerepeater"
+   },
+   "result": "fused_fusiongatling",
+   "sound": null,
+   "source": "littlerepeater",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "starfruit",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "starfruit",
+    "FusionSoundEvent": null,
+    "ResultPlant": "magnetfruit",
+    "SourcePlant": "magnetshroom1"
+   },
+   "result": "fused_magnetfruit",
+   "sound": null,
+   "source": "magnetshroom1",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "peashooter",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "peashooter",
+    "FusionSoundEvent": "Play_Plant_GatlingPea_Attack_Five_Shot",
+    "ResultPlant": "fusiongatling",
+    "SourcePlant": "megagatling"
+   },
+   "result": "fused_fusiongatling",
+   "sound": "Play_Plant_GatlingPea_Attack_Five_Shot",
+   "source": "megagatling",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "iceburg",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": false,
+    "FusionPlant": "iceburg",
+    "FusionSoundEvent": "Play_IcebergLettuce_Freeze",
+    "ResultPlant": "wintermelon",
+    "SourcePlant": "melonpult"
+   },
+   "result": "fused_wintermelon",
+   "sound": "Play_IcebergLettuce_Freeze",
+   "source": "melonpult",
+   "sourceKind": "client"
+  },
+  {
+   "fusion": "peashooter",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "peashooter",
+    "FusionSoundEvent": null,
+    "ResultPlant": "shadowpeashooter",
+    "SourcePlant": "nightshade"
+   },
+   "result": "fused_shadowpeashooter",
+   "sound": null,
+   "source": "nightshade",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "cabbagepult",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": false,
+    "FusionPlant": "cabbagepult",
+    "FusionSoundEvent": null,
+    "ResultPlant": "slingpea",
+    "SourcePlant": "peashooter"
+   },
+   "result": "fused_slingpea",
+   "sound": null,
+   "source": "peashooter",
+   "sourceKind": "client"
+  },
+  {
+   "fusion": "chomper",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": false,
+    "FusionPlant": "chomper",
+    "FusionSoundEvent": null,
+    "ResultPlant": "snappea1",
+    "SourcePlant": "peashooter"
+   },
+   "result": "fused_snappea1",
+   "sound": null,
+   "source": "peashooter",
+   "sourceKind": "client"
+  },
+  {
+   "fusion": "fusiongatling",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "fusiongatling",
+    "FusionSoundEvent": null,
+    "ResultPlant": "fusiongatling",
+    "SourcePlant": "peashooter"
+   },
+   "result": "fused_fusiongatling",
+   "sound": null,
+   "source": "peashooter",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "hollyknight",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "hollyknight",
+    "FusionSoundEvent": "Play_Plant_GatlingPea_Attack_Four_Shot",
+    "ResultPlant": "megagatling",
+    "SourcePlant": "peashooter"
+   },
+   "result": "fused_megagatling",
+   "sound": "Play_Plant_GatlingPea_Attack_Four_Shot",
+   "source": "peashooter",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "iceburg",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": false,
+    "FusionPlant": "iceburg",
+    "FusionSoundEvent": "Play_IcebergLettuce_Freeze",
+    "ResultPlant": "snowpea",
+    "SourcePlant": "peashooter"
+   },
+   "result": "fused_snowpea",
+   "sound": "Play_IcebergLettuce_Freeze",
+   "source": "peashooter",
+   "sourceKind": "client"
+  },
+  {
+   "fusion": "megagatling",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "megagatling",
+    "FusionSoundEvent": "Play_Plant_GatlingPea_Attack_Five_Shot",
+    "ResultPlant": "fusiongatling",
+    "SourcePlant": "peashooter"
+   },
+   "result": "fused_fusiongatling",
+   "sound": "Play_Plant_GatlingPea_Attack_Five_Shot",
+   "source": "peashooter",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "nightshade",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "nightshade",
+    "FusionSoundEvent": null,
+    "ResultPlant": "shadowpeashooter",
+    "SourcePlant": "peashooter"
+   },
+   "result": "fused_shadowpeashooter",
+   "sound": null,
+   "source": "peashooter",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "peashooter",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": false,
+    "FusionPlant": "peashooter",
+    "FusionSoundEvent": null,
+    "ResultPlant": "repeater1",
+    "SourcePlant": "peashooter"
+   },
+   "result": "fused_repeater1",
+   "sound": null,
+   "source": "peashooter",
+   "sourceKind": "client"
+  },
+  {
+   "fusion": "repeater1",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "repeater1",
+    "FusionSoundEvent": null,
+    "ResultPlant": "hollyknight",
+    "SourcePlant": "peashooter"
+   },
+   "result": "fused_hollyknight",
+   "sound": null,
+   "source": "peashooter",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "shadowshroom",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "shadowshroom",
+    "FusionSoundEvent": "Play_Plant_ShadowShroom_Attack",
+    "ResultPlant": "poisonpeashooter",
+    "SourcePlant": "peashooter"
+   },
+   "result": "fused_poisonpeashooter",
+   "sound": "Play_Plant_ShadowShroom_Attack",
+   "source": "peashooter",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "spikeweed",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": false,
+    "FusionPlant": "spikeweed",
+    "FusionSoundEvent": null,
+    "ResultPlant": "cactus1",
+    "SourcePlant": "peashooter"
+   },
+   "result": "fused_cactus1",
+   "sound": null,
+   "source": "peashooter",
+   "sourceKind": "client"
+  },
+  {
+   "fusion": "springbean",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": false,
+    "FusionPlant": "springbean",
+    "FusionSoundEvent": "Play_SpringBean_Activate",
+    "ResultPlant": "primalpeashooter",
+    "SourcePlant": "peashooter"
+   },
+   "result": "fused_primalpeashooter",
+   "sound": "Play_SpringBean_Activate",
+   "source": "peashooter",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "iceburg",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "iceburg",
+    "FusionSoundEvent": "Play_IcebergLettuce_Freeze",
+    "ResultPlant": "frozenpear",
+    "SourcePlant": "phatbeet1"
+   },
+   "result": "fused_frozenpear",
+   "sound": "Play_IcebergLettuce_Freeze",
+   "source": "phatbeet1",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "phatbeet1",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "phatbeet1",
+    "FusionSoundEvent": "Play_Plant_PhatBeet_PlantFood_Impact",
+    "ResultPlant": "puffball",
+    "SourcePlant": "phatbeet1"
+   },
+   "result": "fused_puffball",
+   "sound": "Play_Plant_PhatBeet_PlantFood_Impact",
+   "source": "phatbeet1",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "kernelpult",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "kernelpult",
+    "FusionSoundEvent": "Play_Potato_Mine",
+    "ResultPlant": "stickybombrice",
+    "SourcePlant": "potatomine"
+   },
+   "result": "fused_stickybombrice",
+   "sound": "Play_Potato_Mine",
+   "source": "potatomine",
+   "sourceKind": "client"
+  },
+  {
+   "fusion": "wallnut",
+   "onlyResult": true,
+   "raw": {
+    "FusionOnlyHasResultPlant": true,
+    "FusionPlant": "wallnut",
+    "FusionSoundEvent": "Play_Potato_Mine",
+    "ResultPlant": "explodeonut1",
+    "SourcePlant": "potatomine"
+   },
+   "result": "fused_explodeonut1",
+   "sound": "Play_Potato_Mine",
+   "source": "potatomine",
+   "sourceKind": "client"
+  },
+  {
+   "fusion": "primalsunflower",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "primalsunflower",
+    "FusionSoundEvent": null,
+    "ResultPlant": "birthsunflower",
+    "SourcePlant": "primalsunflower"
+   },
+   "result": "fused_birthsunflower",
+   "sound": null,
+   "source": "primalsunflower",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "peashooter",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "peashooter",
+    "FusionSoundEvent": null,
+    "ResultPlant": "hollyknight",
+    "SourcePlant": "repeater1"
+   },
+   "result": "fused_hollyknight",
+   "sound": null,
+   "source": "repeater1",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "cabbagepult",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "cabbagepult",
+    "FusionSoundEvent": "Play_Plant_ShadowShroom_Attack",
+    "ResultPlant": "peppermint",
+    "SourcePlant": "shadowshroom"
+   },
+   "result": "fused_peppermint",
+   "sound": "Play_Plant_ShadowShroom_Attack",
+   "source": "shadowshroom",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "peashooter",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "peashooter",
+    "FusionSoundEvent": "Play_Plant_ShadowShroom_Attack",
+    "ResultPlant": "poisonpeashooter",
+    "SourcePlant": "shadowshroom"
+   },
+   "result": "fused_poisonpeashooter",
+   "sound": "Play_Plant_ShadowShroom_Attack",
+   "source": "shadowshroom",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "iceburg",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "iceburg",
+    "FusionSoundEvent": "Play_IcebergLettuce_Freeze",
+    "ResultPlant": "coldsnapdragon",
+    "SourcePlant": "snapdragon"
+   },
+   "result": "fused_coldsnapdragon",
+   "sound": "Play_IcebergLettuce_Freeze",
+   "source": "snapdragon",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "draftodil",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "draftodil",
+    "FusionSoundEvent": null,
+    "ResultPlant": "olivepit",
+    "SourcePlant": "solarsage"
+   },
+   "result": "fused_olivepit",
+   "sound": null,
+   "source": "solarsage",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "cabbagepult",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "cabbagepult",
+    "FusionSoundEvent": "Play_Plant_SolarTomato_attack",
+    "ResultPlant": "rabbagepult",
+    "SourcePlant": "solartomato"
+   },
+   "result": "fused_rabbagepult",
+   "sound": "Play_Plant_SolarTomato_attack",
+   "source": "solartomato",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "iceburg",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": false,
+    "FusionPlant": "iceburg",
+    "FusionSoundEvent": "Play_IcebergLettuce_Freeze",
+    "ResultPlant": "iceweed",
+    "SourcePlant": "spikeweed"
+   },
+   "result": "fused_iceweed",
+   "sound": "Play_IcebergLettuce_Freeze",
+   "source": "spikeweed",
+   "sourceKind": "client"
+  },
+  {
+   "fusion": "peashooter",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": false,
+    "FusionPlant": "peashooter",
+    "FusionSoundEvent": null,
+    "ResultPlant": "cactus1",
+    "SourcePlant": "spikeweed"
+   },
+   "result": "fused_cactus1",
+   "sound": null,
+   "source": "spikeweed",
+   "sourceKind": "client"
+  },
+  {
+   "fusion": "spikeweed",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": false,
+    "FusionPlant": "spikeweed",
+    "FusionSoundEvent": null,
+    "ResultPlant": "spikerock",
+    "SourcePlant": "spikeweed"
+   },
+   "result": "fused_spikerock",
+   "sound": null,
+   "source": "spikeweed",
+   "sourceKind": "client"
+  },
+  {
+   "fusion": "wallnut",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": false,
+    "FusionPlant": "wallnut",
+    "FusionSoundEvent": null,
+    "ResultPlant": "endurian",
+    "SourcePlant": "spikeweed"
+   },
+   "result": "fused_endurian",
+   "sound": null,
+   "source": "spikeweed",
+   "sourceKind": "client"
+  },
+  {
+   "fusion": "chardguard",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "chardguard",
+    "FusionSoundEvent": "Play_SpringBean_Activate",
+    "ResultPlant": "tumbleweed",
+    "SourcePlant": "springbean"
+   },
+   "result": "fused_tumbleweed",
+   "sound": "Play_SpringBean_Activate",
+   "source": "springbean",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "peashooter",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": false,
+    "FusionPlant": "peashooter",
+    "FusionSoundEvent": "Play_SpringBean_Activate",
+    "ResultPlant": "primalpeashooter",
+    "SourcePlant": "springbean"
+   },
+   "result": "fused_primalpeashooter",
+   "sound": "Play_SpringBean_Activate",
+   "source": "springbean",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "wallnut",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": false,
+    "FusionPlant": "wallnut",
+    "FusionSoundEvent": "Play_SpringBean_Activate",
+    "ResultPlant": "chardguard",
+    "SourcePlant": "springbean"
+   },
+   "result": "fused_chardguard",
+   "sound": "Play_SpringBean_Activate",
+   "source": "springbean",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "witchhazel",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "witchhazel",
+    "FusionSoundEvent": "Play_SpringBean_Activate",
+    "ResultPlant": "strawburst",
+    "SourcePlant": "springbean"
+   },
+   "result": "fused_strawburst",
+   "sound": "Play_SpringBean_Activate",
+   "source": "springbean",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "akee",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "akee",
+    "FusionSoundEvent": null,
+    "ResultPlant": "draftodil1",
+    "SourcePlant": "sprout"
+   },
+   "result": "fused_draftodil1",
+   "sound": null,
+   "source": "sprout",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "bonkchoy",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "bonkchoy",
+    "FusionSoundEvent": "Play_Plant_Stallia_Attack",
+    "ResultPlant": "pokra1",
+    "SourcePlant": "stallia"
+   },
+   "result": "fused_pokra1",
+   "sound": "Play_Plant_Stallia_Attack",
+   "source": "stallia",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "tigergrass",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "tigergrass",
+    "FusionSoundEvent": "Play_Plant_Stallia_Attack",
+    "ResultPlant": "magnetshroom",
+    "SourcePlant": "stallia"
+   },
+   "result": "fused_magnetshroom",
+   "sound": "Play_Plant_Stallia_Attack",
+   "source": "stallia",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "magnetshroom1",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "magnetshroom1",
+    "FusionSoundEvent": null,
+    "ResultPlant": "magnetfruit",
+    "SourcePlant": "starfruit"
+   },
+   "result": "fused_magnetfruit",
+   "sound": null,
+   "source": "starfruit",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "chilibean",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "chilibean",
+    "FusionSoundEvent": null,
+    "ResultPlant": "jasmine",
+    "SourcePlant": "stunion"
+   },
+   "result": "fused_jasmine",
+   "sound": null,
+   "source": "stunion",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "cabbagepult",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "cabbagepult",
+    "FusionSoundEvent": null,
+    "ResultPlant": "turkeypult",
+    "SourcePlant": "sunflower"
+   },
+   "result": "fused_turkeypult",
+   "sound": null,
+   "source": "sunflower",
+   "sourceKind": "client"
+  },
+  {
+   "fusion": "firepeashooter1",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "firepeashooter1",
+    "FusionSoundEvent": null,
+    "ResultPlant": "darktwinsunflower",
+    "SourcePlant": "sunflower"
+   },
+   "result": "fused_darktwinsunflower",
+   "sound": null,
+   "source": "sunflower",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "sunflower",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": false,
+    "FusionPlant": "sunflower",
+    "FusionSoundEvent": null,
+    "ResultPlant": "primalsunflower",
+    "SourcePlant": "sunflower"
+   },
+   "result": "fused_primalsunflower",
+   "sound": null,
+   "source": "sunflower",
+   "sourceKind": "client"
+  },
+  {
+   "fusion": "wallnut",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": false,
+    "FusionPlant": "wallnut",
+    "FusionSoundEvent": null,
+    "ResultPlant": "reinforcemint",
+    "SourcePlant": "sunflower"
+   },
+   "result": "fused_reinforcemint",
+   "sound": null,
+   "source": "sunflower",
+   "sourceKind": "client"
+  },
+  {
+   "fusion": "stallia",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "stallia",
+    "FusionSoundEvent": "Play_Plant_Stallia_Attack",
+    "ResultPlant": "magnetshroom",
+    "SourcePlant": "tigergrass"
+   },
+   "result": "fused_magnetshroom",
+   "sound": "Play_Plant_Stallia_Attack",
+   "source": "tigergrass",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "garlic",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": false,
+    "FusionPlant": "garlic",
+    "FusionSoundEvent": null,
+    "ResultPlant": "sweetpotato1",
+    "SourcePlant": "wallnut"
+   },
+   "result": "fused_sweetpotato1",
+   "sound": null,
+   "source": "wallnut",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "potatomine",
+   "onlyResult": true,
+   "raw": {
+    "FusionOnlyHasResultPlant": true,
+    "FusionPlant": "potatomine",
+    "FusionSoundEvent": "Play_Potato_Mine",
+    "ResultPlant": "explodeonut1",
+    "SourcePlant": "wallnut"
+   },
+   "result": "fused_explodeonut1",
+   "sound": "Play_Potato_Mine",
+   "source": "wallnut",
+   "sourceKind": "client"
+  },
+  {
+   "fusion": "spikeweed",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": false,
+    "FusionPlant": "spikeweed",
+    "FusionSoundEvent": null,
+    "ResultPlant": "endurian",
+    "SourcePlant": "wallnut"
+   },
+   "result": "fused_endurian",
+   "sound": null,
+   "source": "wallnut",
+   "sourceKind": "client"
+  },
+  {
+   "fusion": "springbean",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": false,
+    "FusionPlant": "springbean",
+    "FusionSoundEvent": "Play_SpringBean_Activate",
+    "ResultPlant": "chardguard",
+    "SourcePlant": "wallnut"
+   },
+   "result": "fused_chardguard",
+   "sound": "Play_SpringBean_Activate",
+   "source": "wallnut",
+   "sourceKind": "pack"
+  },
+  {
+   "fusion": "sunflower",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": false,
+    "FusionPlant": "sunflower",
+    "FusionSoundEvent": null,
+    "ResultPlant": "reinforcemint",
+    "SourcePlant": "wallnut"
+   },
+   "result": "fused_reinforcemint",
+   "sound": null,
+   "source": "wallnut",
+   "sourceKind": "client"
+  },
+  {
+   "fusion": "wintermelon",
+   "onlyResult": true,
+   "raw": {
+    "FusionOnlyHasResultPlant": true,
+    "FusionPlant": "wintermelon",
+    "FusionSoundEvent": null,
+    "ResultPlant": "wintergeddon",
+    "SourcePlant": "wintermelon"
+   },
+   "result": "fused_wintergeddon",
+   "sound": null,
+   "source": "wintermelon",
+   "sourceKind": "client"
+  },
+  {
+   "fusion": "springbean",
+   "onlyResult": false,
+   "raw": {
+    "FusionOnlyHasResultPlant": null,
+    "FusionPlant": "springbean",
+    "FusionSoundEvent": "Play_SpringBean_Activate",
+    "ResultPlant": "strawburst",
+    "SourcePlant": "witchhazel"
+   },
+   "result": "fused_strawburst",
+   "sound": "Play_SpringBean_Activate",
+   "source": "witchhazel",
+   "sourceKind": "pack"
+  }
+ ],
+ "sources": {
+  "config": "work/obb_packages/pkg_2083_PlantFusionConfig.json",
+  "content": "content/fusions.json",
+  "mapping": "native/generated/id_mapping.csv"
+ }
+}

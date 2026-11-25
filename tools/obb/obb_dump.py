@@ -16,9 +16,17 @@ try:
 except Exception:
     zstd = None
 
-OBB = sys.argv[1] if len(sys.argv) > 1 else r"D:\OneDrive\文档\pvz_shuttle\main.460.com.ea.game.pvz2_shu.obb"
-OUT = sys.argv[2] if len(sys.argv) > 2 else r"D:\OneDrive\文档\pvz_shuttle\work\obb_raw"
-LIMIT = int(sys.argv[3]) if len(sys.argv) > 3 else 0
+_ARGS = []
+_ONLY = None
+for _a in sys.argv[1:]:
+    if _a.startswith("--only="):
+        _ONLY = int(_a.split("=", 1)[1])
+    else:
+        _ARGS.append(_a)
+
+OBB = _ARGS[0] if len(_ARGS) > 0 else r"D:\OneDrive\文档\pvz_shuttle\main.460.com.ea.game.pvz2_shu.obb"
+OUT = _ARGS[1] if len(_ARGS) > 1 else r"D:\OneDrive\文档\pvz_shuttle\work\obb_raw"
+LIMIT = int(_ARGS[2]) if len(_ARGS) > 2 else 0
 
 os.makedirs(OUT, exist_ok=True)
 
@@ -62,9 +70,10 @@ def main():
         groups.append((name, off, size))
 
     total = len(groups) if not LIMIT else min(LIMIT, len(groups))
+    indices = range(total) if _ONLY is None else [_ONLY]
     t0 = time.time()
     stats = {"groups": 0, "data": 0, "image": 0, "nulldata": 0, "err": 0}
-    for idx in range(total):
+    for idx in indices:
         name, off, size = groups[idx]
         try:
             f.seek(off)

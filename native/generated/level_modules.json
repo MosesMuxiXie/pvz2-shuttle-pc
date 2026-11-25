@@ -1,0 +1,6879 @@
+{
+ "classCounts": {
+  "?": 8,
+  "ApplyZombieConditionsChallengeProps": 56,
+  "ArmorPropertySheet": 1,
+  "BeachStageEventZombieSpawnerProps": 372,
+  "BeachStageProperties": 1,
+  "BeghouledPresetProperties": 11,
+  "BeghouledSeedBankProperties": 10,
+  "BeghouledZombieSpawnerProperties": 11,
+  "BigTroubleLittleZombieMinigameProperties": 7,
+  "BoardGridMapProps": 50,
+  "BonusChallengeModuleProperties": 2,
+  "BossIconModuleProps": 7,
+  "BoulderProjectileProps": 1,
+  "BowlingMinigameProperties": 28,
+  "BranchBattleSeedBankModuleProperties": 5,
+  "CamelMinigameProperties": 2,
+  "CannonMinigameProperties": 8,
+  "CapitalistModuleProperties": 28,
+  "CapitalistWaveActionProperties": 38,
+  "ChineseGardenBridgeModuleProperties": 42,
+  "ColumnMinigameProperties": 10,
+  "ConveyorSeedBankProperties": 349,
+  "CowboyMinigameProperties": 11,
+  "CrazyOlafTestProperties": 2,
+  "DangerRoomBeachLilypadPlacer": 1,
+  "DangerRoomBeachTideChanger": 1,
+  "DangerRoomBoardGridMapPlacer": 1,
+  "DangerRoomDarkEventGenerator": 1,
+  "DangerRoomDinoDesigner": 1,
+  "DangerRoomFreezingWindDesigner": 1,
+  "DangerRoomGravestoneGenerator": 3,
+  "DangerRoomIceBlockDesigner": 1,
+  "DangerRoomJamDesigner": 1,
+  "DangerRoomJitteredWaveGenerator": 13,
+  "DangerRoomLevelIntroProperties": 13,
+  "DangerRoomModernDesigner": 2,
+  "DangerRoomModuleProperties": 13,
+  "DangerRoomParachuteRainDesigner": 1,
+  "DangerRoomPlankDesigner": 1,
+  "DangerRoomPowerTileDesigner": 1,
+  "DangerRoomRailcartDesigner": 2,
+  "DangerRoomSandstormDesigner": 1,
+  "DangerRoomSpiderRainDesigner": 1,
+  "DangerRoomSpiritSpawnDesigner": 1,
+  "DeathExplosionMiniGameModuleProperties": 17,
+  "DefeatZombiesOfTypeChallengeProps": 26,
+  "DestroyGridItemsChallengeProps": 16,
+  "DinoWaveActionProps": 887,
+  "DisableFusionLevelModuleProperties": 54,
+  "EgyptStageProperties": 7,
+  "EightiesStageProperties": 33,
+  "ElementReactionModuleProperties": 20,
+  "FadeOutOutroProperties": 2,
+  "FrontLawnStageProperties": 3,
+  "FrostWindWaveActionProps": 283,
+  "FutureStageProperties": 1,
+  "GlacierModuleProperties": 4,
+  "GravestoneProperties": 241,
+  "GridItemBoardEntityConditionTargetProps": 11,
+  "GridItemCraterTimedProps": 9,
+  "GridItemGravestonePlantOnDestructionPropertySheet": 19,
+  "GridItemGravestonePropertySheet": 6,
+  "GridItemGravestoneSunOnDestructionPropertySheet": 2,
+  "GridItemGridRegionAreaOfEffectTrapProps": 18,
+  "GridItemPatternPlacer": 2,
+  "GridItemProjectileTrapProps": 25,
+  "GridItemProtectorShieldProps": 10,
+  "GridItemSliderTileProps": 16,
+  "GridItemSurfboardProps": 1,
+  "GridItemTentProps": 1,
+  "GridItemType": 178,
+  "GridItemZombieCustomizePortalProps": 1,
+  "GridItemZombiePortalProps": 56,
+  "HamsterZombieSpawnerProps": 5,
+  "HeianWindModuleProperties": 1,
+  "HeroesStageProperties": 7,
+  "IceAgeStageProperties": 2,
+  "InitialGridItemProperties": 514,
+  "InitialPlantProperties": 276,
+  "InitialZombieProperties": 84,
+  "InvisighoulMinigameProperties": 11,
+  "JoustGameModuleProperties": 4,
+  "LastStandMinigameProperties": 72,
+  "LawnMowerProperties": 4,
+  "LevelDefinition": 1809,
+  "LevelDifficultyScalingModuleProperties": 18,
+  "LevelEscalationModuleProperties": 149,
+  "LevelMutatorMaxSunProps": 8,
+  "LevelMutatorModuleProperties": 13,
+  "LevelMutatorTableProps": 16,
+  "LevelOfTheDayModuleProperties": 31,
+  "LevelScoringModuleProperties": 17,
+  "LevelSongOverrideProperties": 4,
+  "LootOverrideModuleProperties": 11,
+  "LunarStageProperties": 4,
+  "MagnifyingGrassTutorialIntroProperties": 1,
+  "MausoleumTunnelModuleProperties": 41,
+  "MinigameWhackAZombieModuleProperties": 1,
+  "ModernStageProperties": 6,
+  "ModifyConveyorWaveActionProps": 381,
+  "MoldColonyChallengeProps": 99,
+  "PVZ1PassageModuleProperties": 1,
+  "PaddedRoomProperties": 3,
+  "ParachuteRainZombieSpawnerProps": 119,
+  "PerkHandlerModuleProperties": 13,
+  "PickupCollectableTutorialProperties": 3,
+  "PirateCannonTutorialProperties": 5,
+  "PiratePlankProperties": 66,
+  "PlantCooldownModifierProperties": 35,
+  "PlantFullRowChallengeProps": 7,
+  "PlantfoodPurchaseTutorialIntroProperties": 1,
+  "PlantfoodTutorialIntroProperties": 2,
+  "PowerDrinkProjectileProps": 1,
+  "PowerTileIntroProperties": 2,
+  "PowerTileProperties": 62,
+  "PowerupPurchaseIntroProperties": 2,
+  "PowerupTutorialIntroProperties": 1,
+  "PrimalPeashooterProjectileProps": 8,
+  "ProjectilePropertySheet": 35,
+  "ProtectThePlantChallengeProperties": 287,
+  "RaidingPartyZombieSpawnerProps": 85,
+  "RailcartProperties": 202,
+  "RailcartTutorialIntroProperties": 1,
+  "RainingSeedsModuleProperties": 6,
+  "RandomBridgeModuleProperties": 1,
+  "SeedBankProperties": 1386,
+  "SeedPacketClearCooldownWaveActionProperties": 3,
+  "SeeingStarsModuleProperties": 3,
+  "ShockWaveProjectileProps": 1,
+  "SimpleZombieSpawnerProperties": 7,
+  "SixLaneModuleProps": 4,
+  "SpawnGravestoneZombiesOnFlagWavesProperties": 4,
+  "SpawnGravestonesWaveActionProps": 1211,
+  "SpawnModernPortalsWaveActionProps": 684,
+  "SpawnPingFengsWaveActionProps": 20,
+  "SpawnWhackAZombiesProps": 17,
+  "SpawnZombiesFishWaveActionProps": 301,
+  "SpawnZombiesFromGridItemSpawnerProps": 705,
+  "SpawnZombiesFromGroundSpawnerProps": 323,
+  "SpawnZombiesJitteredWaveActionProps": 20898,
+  "SpiderRainZombieSpawnerProps": 319,
+  "SproutOverrideProperties": 1,
+  "SproutPlantingMinigameProperties": 2,
+  "SproutPlantingWaveActionProps": 1,
+  "StageModuleProperties": 16,
+  "StandardLevelIntroProperties": 7,
+  "StarChallengeBeatTheLevelProps": 692,
+  "StarChallengeFamilyPlantsProps": 1,
+  "StarChallengeKillZombiesInTimeProps": 56,
+  "StarChallengeLevelTimerProperties": 11,
+  "StarChallengeModuleProperties": 952,
+  "StarChallengePlantsLostProps": 52,
+  "StarChallengeSaveMowersProps": 2,
+  "StarChallengeSimultaneousPlantsProps": 64,
+  "StarChallengeSpendSunHoldoutProps": 14,
+  "StarChallengeSunProducedProps": 63,
+  "StarChallengeSunUsedProps": 31,
+  "StarChallengeTargetScoreProps": 17,
+  "StarChallengeZombieDistanceProps": 108,
+  "StormZombieSpawnerProps": 375,
+  "SunBombChallengeProperties": 23,
+  "SunDropperProperties": 16,
+  "SunDropperWaveActionProps": 25,
+  "SymmetryBondModuleProps": 2,
+  "TidalChangeWaveActionProps": 370,
+  "TideProperties": 81,
+  "TideWaveWaveActionProps": 22,
+  "TutorialLevel1Properties": 1,
+  "TutorialLevel2Properties": 1,
+  "TutorialLevel4Properties": 2,
+  "TutorialLevelMinesProperties": 2,
+  "UnrestrictedFusionLevelModuleProperties": 2,
+  "UpdateBranchBattleSeedBankWaveActionProperties": 6,
+  "UpdateSeedBankWaveActionProperties": 32,
+  "VaseBreakerEndlessProperties": 1,
+  "VaseBreakerPresetProperties": 46,
+  "WaveDistributorModuleProperties": 2,
+  "WaveDuplicatorModuleProperties": 6,
+  "WaveManagerModuleProperties": 1730,
+  "WaveManagerProperties": 1713,
+  "WestStageProperties": 1,
+  "ZombieBarrelPusherProps": 1,
+  "ZombieBeachOctopusProps": 5,
+  "ZombieBugProps": 6,
+  "ZombieCakeTankProps": 1,
+  "ZombieCarnieFireBreatherProps": 1,
+  "ZombieCarnieMagicianProps": 4,
+  "ZombieChickenFarmerProps": 10,
+  "ZombieCrystalSkullProps": 2,
+  "ZombieDarkKingProps": 1,
+  "ZombieDeathSeedDropModuleProperties": 15,
+  "ZombieDinoBullyVeteranProps": 1,
+  "ZombieDropActionDefinition": 4,
+  "ZombieDropProps": 2,
+  "ZombieDropZombiesOnBoardActionDefinition": 106,
+  "ZombieEightiesBreakDancerProps": 1,
+  "ZombieEightiesGargantuarProps": 1,
+  "ZombieEightiesPunkProps": 1,
+  "ZombieGargantuarMechProps": 1,
+  "ZombieGargantuarProps": 1,
+  "ZombieGeneralTreadmillProps": 2,
+  "ZombieGeneralZmechProps": 58,
+  "ZombieGridItemSpawnActionDefinition": 3,
+  "ZombieIceAgeHunterProps": 19,
+  "ZombieIceAgeTroglobiteProps": 40,
+  "ZombieLayerDisableActionDefinition": 3,
+  "ZombieMechDiscoProps": 1,
+  "ZombieMechFootballProps": 2,
+  "ZombieMechProps": 1,
+  "ZombieModernNewspaperProps": 2,
+  "ZombieModifierProperties": 9,
+  "ZombieOrbitalStrikeActionDefinition": 32,
+  "ZombiePianoProps": 8,
+  "ZombiePirateCannonProps": 3,
+  "ZombiePirateCaptainProps": 1,
+  "ZombiePlayAnimationActionDefinition": 8,
+  "ZombiePotionModuleProperties": 61,
+  "ZombiePotionProps": 8,
+  "ZombieProjectileActionDefinition": 20,
+  "ZombieProjectileLaunchActionDefinition": 6,
+  "ZombiePropertySheet": 47,
+  "ZombieProspectorProps": 1,
+  "ZombieRaProps": 1,
+  "ZombieResistancesModuleProperties": 2,
+  "ZombieRomanBallistaProps": 2,
+  "ZombieRomanHealerProps": 1,
+  "ZombieSeagullProps": 1,
+  "ZombieSpawnActionDefinition": 2,
+  "ZombieTeleportActionDefinition": 11,
+  "ZombieType": 297,
+  "ZombieWalkActionDefinition": 45,
+  "ZombieZombossMechBeachProps": 1,
+  "ZombieZombossMechChineseGardenProps": 1,
+  "ZombieZombossMechCowboyProps": 2,
+  "ZombieZombossMechDarkProps": 2,
+  "ZombieZombossMechDinoProps": 1,
+  "ZombieZombossMechEgyptProps": 1,
+  "ZombieZombossMechEightiesProps": 2,
+  "ZombieZombossMechGoonProps": 3,
+  "ZombieZombossMechIceAgeProps": 1,
+  "ZombieZombossMechLostCityProps": 4,
+  "ZombieZombossMechMausoleumProps": 1,
+  "ZombieZombossMechPirateProps": 1,
+  "ZombieZombossMechRomanProps": 1,
+  "ZombiesAteYourBrainsProperties": 3,
+  "ZombossBattleIntroProperties": 3,
+  "ZombossBattleModuleProperties": 74,
+  "ZombossBeachDiveActionDefinition": 2,
+  "ZombossCarpImpActionDefinition": 1,
+  "ZombossDarkFireBreathActionDefinition": 6,
+  "ZombossDarkLobFireballsActionDefinition": 3,
+  "ZombossDropSandbagActionDefinition": 13,
+  "ZombossDropZombieActionDefinition": 16,
+  "ZombossEightiesDropSpeakerActionDefinition": 6,
+  "ZombossEightiesFireSpeakerRayActionDefinition": 8,
+  "ZombossFanPullActionDefinition": 3,
+  "ZombossFireActionDefinition": 16,
+  "ZombossGoonBlowActionDefinition": 3,
+  "ZombossGoonJumpActionDefinition": 12,
+  "ZombossGoonRushActionDefinition": 3,
+  "ZombossGoonShootActionDefinition": 9,
+  "ZombossGoonStompActionDefinition": 3,
+  "ZombossGoonWalkActionDefinition": 6,
+  "ZombossImpCannonActionDefinition": 4,
+  "ZombossJumpActionDefinition": 16,
+  "ZombossRiftBattleModuleProperties": 1,
+  "ZombossRushActionDefinition": 10,
+  "ZombossSharkMinionAttackActionDefinition": 3,
+  "ZombossSpawnActionDefinition": 19,
+  "ZombossSpawnDinoActionDefinition": 5,
+  "ZombossSummonActionDefinition": 48,
+  "ZombossWalkActionDefinition": 7,
+  "ZombossWallSummonActionDefinition": 2
+ },
+ "crossCheck": {
+  "boss": {
+   "both": 71,
+   "client": 71,
+   "clientKey": "boss",
+   "clientOnly": {
+    "count": 0,
+    "sample": []
+   },
+   "original": 71,
+   "originalOnly": {
+    "count": 0,
+    "sample": []
+   }
+  },
+  "minecarts": {
+   "both": 178,
+   "client": 190,
+   "clientKey": "minecarts",
+   "clientOnly": {
+    "count": 12,
+    "sample": [
+     "beach_10",
+     "beach_11",
+     "beach_16",
+     "beach_8",
+     "beach_9",
+     "cowboy_20",
+     "egypt_19",
+     "future_54",
+     "kongfu_44",
+     "memorytour_4",
+     "plantagenet_40",
+     "plantagenet_45"
+    ]
+   },
+   "original": 185,
+   "originalOnly": {
+    "count": 7,
+    "sample": [
+     "egypt_46",
+     "fairy_31",
+     "frontyard_98",
+     "future_66",
+     "future_69",
+     "future_70",
+     "plantagenet_47"
+    ]
+   }
+  },
+  "vasebreaker": {
+   "both": 47,
+   "client": 47,
+   "clientKey": "vasebreaker",
+   "clientOnly": {
+    "count": 0,
+    "sample": []
+   },
+   "original": 47,
+   "originalOnly": {
+    "count": 0,
+    "sample": []
+   }
+  }
+ },
+ "format": 1,
+ "generated": "level-modules-v1",
+ "keys": {
+  "boss": {
+   "count": 71,
+   "kind": "module",
+   "note": "布尔开关；原版 ZombossBattleModuleProperties 带阶段与召唤参数",
+   "original": {
+    "classes": [
+     "ZombossBattleModuleProperties",
+     "ZombossBattleIntroProperties"
+    ],
+    "modules": [
+     "ZombossBattle",
+     "ZombossBattle1",
+     "ZombossBattle2"
+    ]
+   },
+   "samples": [
+    "true"
+   ],
+   "status": "data",
+   "valueTypes": [
+    "bool"
+   ],
+   "worlds": [
+    "beach",
+    "carnival",
+    "chinesegarden",
+    "cowboy",
+    "dark",
+    "dino",
+    "egypt",
+    "eighties",
+    "fairy",
+    "frontyard",
+    "future",
+    "heian",
+    "iceage",
+    "kongfu",
+    "losantosvice",
+    "lostcity",
+    "lunarrainbowmarket",
+    "mausoleum",
+    "modern",
+    "muji",
+    "pirate",
+    "plantagenet",
+    "renai",
+    "sky",
+    "steam"
+   ]
+  },
+  "boss_zombie": {
+   "count": 71,
+   "kind": "module",
+   "note": "只给僵王代号（zomboss / gargantuar），没有阶段、血量、攻击序列",
+   "original": {
+    "classes": [
+     "ZombossBattleModuleProperties"
+    ],
+    "modules": [
+     "ZombossBattle",
+     "ZombossBattle1",
+     "ZombossBattle2"
+    ]
+   },
+   "samples": [
+    "\"zomboss\"",
+    "\"gargantuar\""
+   ],
+   "status": "flag_only",
+   "valueTypes": [
+    "str"
+   ],
+   "worlds": [
+    "beach",
+    "carnival",
+    "chinesegarden",
+    "cowboy",
+    "dark",
+    "dino",
+    "egypt",
+    "eighties",
+    "fairy",
+    "frontyard",
+    "future",
+    "heian",
+    "iceage",
+    "kongfu",
+    "losantosvice",
+    "lostcity",
+    "lunarrainbowmarket",
+    "mausoleum",
+    "modern",
+    "muji",
+    "pirate",
+    "plantagenet",
+    "renai",
+    "sky",
+    "steam"
+   ]
+  },
+  "level_number": {
+   "count": 1809,
+   "kind": "meta",
+   "note": "关卡序号",
+   "original": {
+    "classes": [],
+    "modules": []
+   },
+   "samples": [
+    "1",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12"
+   ],
+   "status": "meta",
+   "valueTypes": [
+    "int"
+   ],
+   "worlds": [
+    "beach",
+    "carnival",
+    "chinesegarden",
+    "cowboy",
+    "dark",
+    "dino",
+    "egypt",
+    "eighties",
+    "fairy",
+    "frontyard",
+    "future",
+    "heian",
+    "iceage",
+    "kongfu",
+    "losantosvice",
+    "lostcity",
+    "lunarrainbowmarket",
+    "mausoleum",
+    "memorytour",
+    "modern",
+    "muji",
+    "pirate",
+    "plantagenet",
+    "renai",
+    "sky",
+    "steam"
+   ]
+  },
+  "minecarts": {
+   "count": 190,
+   "kind": "module",
+   "note": "只有行号数组（如 [0, 2]、[1, 2, 3]），缺轨道列、长度、速度、载量",
+   "original": {
+    "classes": [
+     "RailcartProperties"
+    ],
+    "modules": [
+     "Rails",
+     "CowboyRails",
+     "Railcart",
+     "Railcart1"
+    ]
+   },
+   "samples": [
+    "[0,2]",
+    "[0,1,3]",
+    "[3]",
+    "[1,4]",
+    "[1,2]",
+    "[1,2,3]",
+    "[2]",
+    "[0]"
+   ],
+   "status": "flag_only",
+   "valueTypes": [
+    "list"
+   ],
+   "worlds": [
+    "beach",
+    "carnival",
+    "chinesegarden",
+    "cowboy",
+    "dark",
+    "dino",
+    "egypt",
+    "eighties",
+    "fairy",
+    "frontyard",
+    "future",
+    "heian",
+    "iceage",
+    "kongfu",
+    "losantosvice",
+    "lostcity",
+    "lunarrainbowmarket",
+    "mausoleum",
+    "memorytour",
+    "modern",
+    "pirate",
+    "plantagenet",
+    "renai",
+    "sky",
+    "steam"
+   ]
+  },
+  "name_key": {
+   "count": 1809,
+   "kind": "meta",
+   "note": "本地化键，3 关为 null",
+   "original": {
+    "classes": [],
+    "modules": []
+   },
+   "samples": [
+    "\"[BEACH_LEVEL_NAME]\"",
+    "\"[ATLANTIS_LEVEL_NAME]\"",
+    "\"[DINO_LEVEL_NAME]\"",
+    "\"[BEACH_EXPAND_LEVEL_NAME]\"",
+    "\"[SEASHROOM_LEVEL_NAME]\"",
+    "\"[ELEMENT_LEVEL_NAME]\"",
+    "\"[LYCY_LEVEL_NAME]\"",
+    "\"[MODERN_LEVEL_NAME]\""
+   ],
+   "status": "meta",
+   "valueTypes": [
+    "NoneType",
+    "str"
+   ],
+   "worlds": [
+    "beach",
+    "carnival",
+    "chinesegarden",
+    "cowboy",
+    "dark",
+    "dino",
+    "egypt",
+    "eighties",
+    "fairy",
+    "frontyard",
+    "future",
+    "heian",
+    "iceage",
+    "kongfu",
+    "losantosvice",
+    "lostcity",
+    "lunarrainbowmarket",
+    "mausoleum",
+    "memorytour",
+    "modern",
+    "muji",
+    "pirate",
+    "plantagenet",
+    "renai",
+    "sky",
+    "steam"
+   ]
+  },
+  "night": {
+   "count": 1809,
+   "kind": "derived",
+   "note": "布尔，由 stage 派生；与 stage 名里的 Night 有冲突，实现时要按原版判定",
+   "original": {
+    "classes": [],
+    "modules": []
+   },
+   "samples": [
+    "false",
+    "true"
+   ],
+   "status": "flag_only",
+   "valueTypes": [
+    "bool"
+   ],
+   "worlds": [
+    "beach",
+    "carnival",
+    "chinesegarden",
+    "cowboy",
+    "dark",
+    "dino",
+    "egypt",
+    "eighties",
+    "fairy",
+    "frontyard",
+    "future",
+    "heian",
+    "iceage",
+    "kongfu",
+    "losantosvice",
+    "lostcity",
+    "lunarrainbowmarket",
+    "mausoleum",
+    "memorytour",
+    "modern",
+    "muji",
+    "pirate",
+    "plantagenet",
+    "renai",
+    "sky",
+    "steam"
+   ]
+  },
+  "original_waves": {
+   "count": 1809,
+   "kind": "meta",
+   "note": "移植前波数，用于对账",
+   "original": {
+    "classes": [],
+    "modules": []
+   },
+   "samples": [
+    "12",
+    "16",
+    "18",
+    "15",
+    "20",
+    "14",
+    "0",
+    "8"
+   ],
+   "status": "meta",
+   "valueTypes": [
+    "int"
+   ],
+   "worlds": [
+    "beach",
+    "carnival",
+    "chinesegarden",
+    "cowboy",
+    "dark",
+    "dino",
+    "egypt",
+    "eighties",
+    "fairy",
+    "frontyard",
+    "future",
+    "heian",
+    "iceage",
+    "kongfu",
+    "losantosvice",
+    "lostcity",
+    "lunarrainbowmarket",
+    "mausoleum",
+    "memorytour",
+    "modern",
+    "muji",
+    "pirate",
+    "plantagenet",
+    "renai",
+    "sky",
+    "steam"
+   ]
+  },
+  "package": {
+   "count": 1809,
+   "kind": "meta",
+   "note": "原版 LevelDefinition 的包号，用于反查",
+   "original": {
+    "classes": [],
+    "modules": []
+   },
+   "samples": [
+    "\"pkg_0325\"",
+    "\"pkg_0336\"",
+    "\"pkg_0337\"",
+    "\"pkg_0338\"",
+    "\"pkg_0339\"",
+    "\"pkg_0326\"",
+    "\"pkg_0327\"",
+    "\"pkg_0328\""
+   ],
+   "status": "meta",
+   "valueTypes": [
+    "str"
+   ],
+   "worlds": [
+    "beach",
+    "carnival",
+    "chinesegarden",
+    "cowboy",
+    "dark",
+    "dino",
+    "egypt",
+    "eighties",
+    "fairy",
+    "frontyard",
+    "future",
+    "heian",
+    "iceage",
+    "kongfu",
+    "losantosvice",
+    "lostcity",
+    "lunarrainbowmarket",
+    "mausoleum",
+    "memorytour",
+    "modern",
+    "muji",
+    "pirate",
+    "plantagenet",
+    "renai",
+    "sky",
+    "steam"
+   ]
+  },
+  "rail": {
+   "count": 192,
+   "kind": "module",
+   "note": "布尔开关，与 minecarts 同源",
+   "original": {
+    "classes": [
+     "RailcartProperties"
+    ],
+    "modules": [
+     "Rails",
+     "CowboyRails",
+     "Railcart",
+     "Railcart1"
+    ]
+   },
+   "samples": [
+    "true"
+   ],
+   "status": "flag_only",
+   "valueTypes": [
+    "bool"
+   ],
+   "worlds": [
+    "beach",
+    "carnival",
+    "chinesegarden",
+    "cowboy",
+    "dark",
+    "dino",
+    "egypt",
+    "eighties",
+    "fairy",
+    "frontyard",
+    "future",
+    "heian",
+    "iceage",
+    "kongfu",
+    "losantosvice",
+    "lostcity",
+    "lunarrainbowmarket",
+    "mausoleum",
+    "memorytour",
+    "modern",
+    "pirate",
+    "plantagenet",
+    "renai",
+    "sky",
+    "steam"
+   ]
+  },
+  "source": {
+   "count": 1809,
+   "kind": "meta",
+   "note": "数据来源标记，实测恒为 obb",
+   "original": {
+    "classes": [],
+    "modules": []
+   },
+   "samples": [
+    "\"obb\"",
+    "\"obb-synth\""
+   ],
+   "status": "meta",
+   "valueTypes": [
+    "str"
+   ],
+   "worlds": [
+    "beach",
+    "carnival",
+    "chinesegarden",
+    "cowboy",
+    "dark",
+    "dino",
+    "egypt",
+    "eighties",
+    "fairy",
+    "frontyard",
+    "future",
+    "heian",
+    "iceage",
+    "kongfu",
+    "losantosvice",
+    "lostcity",
+    "lunarrainbowmarket",
+    "mausoleum",
+    "memorytour",
+    "modern",
+    "muji",
+    "pirate",
+    "plantagenet",
+    "renai",
+    "sky",
+    "steam"
+   ]
+  },
+  "special": {
+   "count": 45,
+   "kind": "module",
+   "note": "标记列表，实测只有 IsVasebreaker 一种",
+   "original": {
+    "classes": [
+     "VaseBreakerPresetProperties"
+    ],
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps",
+     "TestVaseBreaker"
+    ]
+   },
+   "samples": [
+    "[\"IsVasebreaker\"]"
+   ],
+   "status": "flag_only",
+   "valueTypes": [
+    "list"
+   ],
+   "worlds": [
+    "beach",
+    "carnival",
+    "cowboy",
+    "dark",
+    "egypt",
+    "frontyard",
+    "future",
+    "heian",
+    "kongfu",
+    "losantosvice",
+    "lunarrainbowmarket",
+    "mausoleum",
+    "modern",
+    "muji",
+    "pirate",
+    "sky",
+    "steam"
+   ]
+  },
+  "stage": {
+   "count": 1809,
+   "kind": "module",
+   "note": "关卡场景名；原版各 *StageProperties 带场景参数",
+   "original": {
+    "classes": [
+     "StageModuleProperties",
+     "BeachStageProperties",
+     "EgyptStageProperties",
+     "EightiesStageProperties",
+     "ModernStageProperties",
+     "FrontLawnStageProperties",
+     "FutureStageProperties",
+     "IceAgeStageProperties",
+     "LunarStageProperties",
+     "HeroesStageProperties",
+     "WestStageProperties"
+    ],
+    "modules": [
+     "StageModule"
+    ]
+   },
+   "samples": [
+    "\"BeachStage\"",
+    "\"BeachUBStage\"",
+    "\"BeachDMGStage\"",
+    "\"BeachBossStage\"",
+    "\"DeepseaStage\"",
+    "\"DeepseaLandStage\"",
+    "\"BeachTeaserStage\"",
+    "\"BeachMiniGameStage\""
+   ],
+   "status": "data",
+   "valueTypes": [
+    "str"
+   ],
+   "worlds": [
+    "beach",
+    "carnival",
+    "chinesegarden",
+    "cowboy",
+    "dark",
+    "dino",
+    "egypt",
+    "eighties",
+    "fairy",
+    "frontyard",
+    "future",
+    "heian",
+    "iceage",
+    "kongfu",
+    "losantosvice",
+    "lostcity",
+    "lunarrainbowmarket",
+    "mausoleum",
+    "memorytour",
+    "modern",
+    "muji",
+    "pirate",
+    "plantagenet",
+    "renai",
+    "sky",
+    "steam"
+   ]
+  },
+  "suppressFlagZombie": {
+   "count": 271,
+   "kind": "module",
+   "note": "布尔开关，挂在 WaveManagerProperties 上（实测 271 关：true 215 / false 56），不是 Modules 列表里的模块",
+   "original": {
+    "classes": [
+     "WaveManagerProperties"
+    ],
+    "modules": []
+   },
+   "samples": [
+    "false",
+    "true"
+   ],
+   "status": "flag_only",
+   "valueTypes": [
+    "bool"
+   ],
+   "worlds": [
+    "beach",
+    "carnival",
+    "chinesegarden",
+    "cowboy",
+    "dark",
+    "dino",
+    "egypt",
+    "eighties",
+    "fairy",
+    "frontyard",
+    "future",
+    "heian",
+    "iceage",
+    "kongfu",
+    "lostcity",
+    "lunarrainbowmarket",
+    "mausoleum",
+    "memorytour",
+    "modern",
+    "muji",
+    "pirate",
+    "plantagenet",
+    "renai",
+    "sky",
+    "steam"
+   ]
+  },
+  "vasebreaker": {
+   "count": 47,
+   "kind": "module",
+   "note": "布尔开关；花瓶数量、植物池、波次都在原版 VaseBreakerPresetProperties 里",
+   "original": {
+    "classes": [
+     "VaseBreakerPresetProperties",
+     "VaseBreakerEndlessProperties"
+    ],
+    "modules": [
+     "VaseBreakerArcade",
+     "VaseBreakerProps",
+     "TestVaseBreaker"
+    ]
+   },
+   "samples": [
+    "true"
+   ],
+   "status": "flag_only",
+   "valueTypes": [
+    "bool"
+   ],
+   "worlds": [
+    "beach",
+    "carnival",
+    "cowboy",
+    "dark",
+    "egypt",
+    "frontyard",
+    "future",
+    "heian",
+    "kongfu",
+    "losantosvice",
+    "lunarrainbowmarket",
+    "mausoleum",
+    "modern",
+    "muji",
+    "pirate",
+    "plantagenet",
+    "sky",
+    "steam"
+   ]
+  },
+  "wave_count": {
+   "count": 1809,
+   "kind": "meta",
+   "note": "波数；原版 WaveManagerModuleProperties 里才是波表",
+   "original": {
+    "classes": [],
+    "modules": []
+   },
+   "samples": [
+    "12",
+    "16",
+    "18",
+    "14",
+    "20",
+    "13",
+    "15",
+    "8"
+   ],
+   "status": "meta",
+   "valueTypes": [
+    "int"
+   ],
+   "worlds": [
+    "beach",
+    "carnival",
+    "chinesegarden",
+    "cowboy",
+    "dark",
+    "dino",
+    "egypt",
+    "eighties",
+    "fairy",
+    "frontyard",
+    "future",
+    "heian",
+    "iceage",
+    "kongfu",
+    "losantosvice",
+    "lostcity",
+    "lunarrainbowmarket",
+    "mausoleum",
+    "memorytour",
+    "modern",
+    "muji",
+    "pirate",
+    "plantagenet",
+    "renai",
+    "sky",
+    "steam"
+   ]
+  }
+ },
+ "levels": 1809,
+ "levelsWith": {
+  "boss": {
+   "count": 71,
+   "sample": [
+    "beach_19",
+    "beach_63",
+    "carnival_43",
+    "carnival_93",
+    "chinesegarden_23",
+    "chinesegarden_61",
+    "chinesegarden_65",
+    "chinesegarden_69",
+    "cowboy_2",
+    "cowboy_22",
+    "cowboy_28",
+    "cowboy_29",
+    "dark_24",
+    "dark_25",
+    "dark_55",
+    "dino_37",
+    "dino_42",
+    "egypt_14",
+    "egypt_29",
+    "egypt_37"
+   ],
+   "truncated": true
+  },
+  "boss_zombie": {
+   "count": 71,
+   "sample": [
+    "beach_19",
+    "beach_63",
+    "carnival_43",
+    "carnival_93",
+    "chinesegarden_23",
+    "chinesegarden_61",
+    "chinesegarden_65",
+    "chinesegarden_69",
+    "cowboy_2",
+    "cowboy_22",
+    "cowboy_28",
+    "cowboy_29",
+    "dark_24",
+    "dark_25",
+    "dark_55",
+    "dino_37",
+    "dino_42",
+    "egypt_14",
+    "egypt_29",
+    "egypt_37"
+   ],
+   "truncated": true
+  },
+  "minecarts": {
+   "count": 190,
+   "sample": [
+    "beach_10",
+    "beach_11",
+    "beach_16",
+    "beach_37",
+    "beach_8",
+    "beach_9",
+    "carnival_10",
+    "carnival_17",
+    "carnival_18",
+    "carnival_23",
+    "carnival_27",
+    "carnival_46",
+    "carnival_51",
+    "carnival_62",
+    "carnival_73",
+    "carnival_75",
+    "carnival_79",
+    "carnival_80",
+    "carnival_81",
+    "carnival_84"
+   ],
+   "truncated": true
+  },
+  "night": {
+   "count": 1809,
+   "sample": [
+    "beach_1",
+    "beach_10",
+    "beach_11",
+    "beach_12",
+    "beach_13",
+    "beach_14",
+    "beach_15",
+    "beach_16",
+    "beach_17",
+    "beach_18",
+    "beach_19",
+    "beach_2",
+    "beach_20",
+    "beach_21",
+    "beach_22",
+    "beach_23",
+    "beach_24",
+    "beach_25",
+    "beach_26",
+    "beach_27"
+   ],
+   "truncated": true
+  },
+  "rail": {
+   "count": 192,
+   "sample": [
+    "beach_10",
+    "beach_11",
+    "beach_16",
+    "beach_37",
+    "beach_8",
+    "beach_9",
+    "carnival_10",
+    "carnival_17",
+    "carnival_18",
+    "carnival_23",
+    "carnival_27",
+    "carnival_46",
+    "carnival_51",
+    "carnival_62",
+    "carnival_73",
+    "carnival_75",
+    "carnival_79",
+    "carnival_80",
+    "carnival_81",
+    "carnival_84"
+   ],
+   "truncated": true
+  },
+  "special": {
+   "count": 45,
+   "sample": [
+    "beach_69",
+    "beach_70",
+    "beach_71",
+    "carnival_66",
+    "carnival_91",
+    "cowboy_33",
+    "cowboy_36",
+    "cowboy_37",
+    "dark_67",
+    "dark_68",
+    "dark_72",
+    "egypt_54",
+    "egypt_57",
+    "egypt_59",
+    "egypt_61",
+    "frontyard_166",
+    "frontyard_167",
+    "frontyard_168",
+    "frontyard_169",
+    "frontyard_170"
+   ],
+   "truncated": true
+  },
+  "stage": {
+   "count": 1809,
+   "sample": [
+    "beach_1",
+    "beach_10",
+    "beach_11",
+    "beach_12",
+    "beach_13",
+    "beach_14",
+    "beach_15",
+    "beach_16",
+    "beach_17",
+    "beach_18",
+    "beach_19",
+    "beach_2",
+    "beach_20",
+    "beach_21",
+    "beach_22",
+    "beach_23",
+    "beach_24",
+    "beach_25",
+    "beach_26",
+    "beach_27"
+   ],
+   "truncated": true
+  },
+  "suppressFlagZombie": {
+   "count": 271,
+   "sample": [
+    "beach_83",
+    "carnival_22",
+    "carnival_38",
+    "carnival_45",
+    "carnival_51",
+    "carnival_59",
+    "carnival_7",
+    "carnival_79",
+    "carnival_8",
+    "carnival_84",
+    "chinesegarden_1",
+    "chinesegarden_2",
+    "chinesegarden_3",
+    "chinesegarden_38",
+    "chinesegarden_4",
+    "chinesegarden_42",
+    "chinesegarden_44",
+    "chinesegarden_47",
+    "chinesegarden_52",
+    "chinesegarden_68"
+   ],
+   "truncated": true
+  },
+  "vasebreaker": {
+   "count": 47,
+   "sample": [
+    "beach_69",
+    "beach_70",
+    "beach_71",
+    "carnival_66",
+    "carnival_91",
+    "cowboy_33",
+    "cowboy_36",
+    "cowboy_37",
+    "dark_67",
+    "dark_68",
+    "dark_72",
+    "egypt_54",
+    "egypt_57",
+    "egypt_59",
+    "egypt_61",
+    "frontyard_166",
+    "frontyard_167",
+    "frontyard_168",
+    "frontyard_169",
+    "frontyard_170"
+   ],
+   "truncated": true
+  }
+ },
+ "levelsWithoutModules": [
+  "egypt_50",
+  "frontyard_86",
+  "frontyard_87",
+  "frontyard_88"
+ ],
+ "moduleClasses": [
+  "?",
+  "ApplyZombieConditionsChallengeProps",
+  "ArmorPropertySheet",
+  "BeachStageEventZombieSpawnerProps",
+  "BeachStageProperties",
+  "BeghouledPresetProperties",
+  "BeghouledSeedBankProperties",
+  "BeghouledZombieSpawnerProperties",
+  "BigTroubleLittleZombieMinigameProperties",
+  "BoardGridMapProps",
+  "BonusChallengeModuleProperties",
+  "BossIconModuleProps",
+  "BoulderProjectileProps",
+  "BowlingMinigameProperties",
+  "BranchBattleSeedBankModuleProperties",
+  "CamelMinigameProperties",
+  "CannonMinigameProperties",
+  "CapitalistModuleProperties",
+  "CapitalistWaveActionProperties",
+  "ChineseGardenBridgeModuleProperties",
+  "ColumnMinigameProperties",
+  "ConveyorSeedBankProperties",
+  "CowboyMinigameProperties",
+  "CrazyOlafTestProperties",
+  "DangerRoomBeachLilypadPlacer",
+  "DangerRoomBeachTideChanger",
+  "DangerRoomBoardGridMapPlacer",
+  "DangerRoomDarkEventGenerator",
+  "DangerRoomDinoDesigner",
+  "DangerRoomFreezingWindDesigner",
+  "DangerRoomGravestoneGenerator",
+  "DangerRoomIceBlockDesigner",
+  "DangerRoomJamDesigner",
+  "DangerRoomJitteredWaveGenerator",
+  "DangerRoomLevelIntroProperties",
+  "DangerRoomModernDesigner",
+  "DangerRoomModuleProperties",
+  "DangerRoomParachuteRainDesigner",
+  "DangerRoomPlankDesigner",
+  "DangerRoomPowerTileDesigner",
+  "DangerRoomRailcartDesigner",
+  "DangerRoomSandstormDesigner",
+  "DangerRoomSpiderRainDesigner",
+  "DangerRoomSpiritSpawnDesigner",
+  "DeathExplosionMiniGameModuleProperties",
+  "DefeatZombiesOfTypeChallengeProps",
+  "DestroyGridItemsChallengeProps",
+  "DinoWaveActionProps",
+  "DisableFusionLevelModuleProperties",
+  "EgyptStageProperties",
+  "EightiesStageProperties",
+  "ElementReactionModuleProperties",
+  "FadeOutOutroProperties",
+  "FrontLawnStageProperties",
+  "FrostWindWaveActionProps",
+  "FutureStageProperties",
+  "GlacierModuleProperties",
+  "GravestoneProperties",
+  "GridItemBoardEntityConditionTargetProps",
+  "GridItemCraterTimedProps",
+  "GridItemGravestonePlantOnDestructionPropertySheet",
+  "GridItemGravestonePropertySheet",
+  "GridItemGravestoneSunOnDestructionPropertySheet",
+  "GridItemGridRegionAreaOfEffectTrapProps",
+  "GridItemPatternPlacer",
+  "GridItemProjectileTrapProps",
+  "GridItemProtectorShieldProps",
+  "GridItemSliderTileProps",
+  "GridItemSurfboardProps",
+  "GridItemTentProps",
+  "GridItemType",
+  "GridItemZombieCustomizePortalProps",
+  "GridItemZombiePortalProps",
+  "HamsterZombieSpawnerProps",
+  "HeianWindModuleProperties",
+  "HeroesStageProperties",
+  "IceAgeStageProperties",
+  "InitialGridItemProperties",
+  "InitialPlantProperties",
+  "InitialZombieProperties",
+  "InvisighoulMinigameProperties",
+  "JoustGameModuleProperties",
+  "LastStandMinigameProperties",
+  "LawnMowerProperties",
+  "LevelDefinition",
+  "LevelDifficultyScalingModuleProperties",
+  "LevelEscalationModuleProperties",
+  "LevelMutatorMaxSunProps",
+  "LevelMutatorModuleProperties",
+  "LevelMutatorTableProps",
+  "LevelOfTheDayModuleProperties",
+  "LevelScoringModuleProperties",
+  "LevelSongOverrideProperties",
+  "LootOverrideModuleProperties",
+  "LunarStageProperties",
+  "MagnifyingGrassTutorialIntroProperties",
+  "MausoleumTunnelModuleProperties",
+  "MinigameWhackAZombieModuleProperties",
+  "ModernStageProperties",
+  "ModifyConveyorWaveActionProps",
+  "MoldColonyChallengeProps",
+  "PVZ1PassageModuleProperties",
+  "PaddedRoomProperties",
+  "ParachuteRainZombieSpawnerProps",
+  "PerkHandlerModuleProperties",
+  "PickupCollectableTutorialProperties",
+  "PirateCannonTutorialProperties",
+  "PiratePlankProperties",
+  "PlantCooldownModifierProperties",
+  "PlantFullRowChallengeProps",
+  "PlantfoodPurchaseTutorialIntroProperties",
+  "PlantfoodTutorialIntroProperties",
+  "PowerDrinkProjectileProps",
+  "PowerTileIntroProperties",
+  "PowerTileProperties",
+  "PowerupPurchaseIntroProperties",
+  "PowerupTutorialIntroProperties",
+  "PrimalPeashooterProjectileProps",
+  "ProjectilePropertySheet",
+  "ProtectThePlantChallengeProperties",
+  "RaidingPartyZombieSpawnerProps",
+  "RailcartProperties",
+  "RailcartTutorialIntroProperties",
+  "RainingSeedsModuleProperties",
+  "RandomBridgeModuleProperties",
+  "SeedBankProperties",
+  "SeedPacketClearCooldownWaveActionProperties",
+  "SeeingStarsModuleProperties",
+  "ShockWaveProjectileProps",
+  "SimpleZombieSpawnerProperties",
+  "SixLaneModuleProps",
+  "SpawnGravestoneZombiesOnFlagWavesProperties",
+  "SpawnGravestonesWaveActionProps",
+  "SpawnModernPortalsWaveActionProps",
+  "SpawnPingFengsWaveActionProps",
+  "SpawnWhackAZombiesProps",
+  "SpawnZombiesFishWaveActionProps",
+  "SpawnZombiesFromGridItemSpawnerProps",
+  "SpawnZombiesFromGroundSpawnerProps",
+  "SpawnZombiesJitteredWaveActionProps",
+  "SpiderRainZombieSpawnerProps",
+  "SproutOverrideProperties",
+  "SproutPlantingMinigameProperties",
+  "SproutPlantingWaveActionProps",
+  "StageModuleProperties",
+  "StandardLevelIntroProperties",
+  "StarChallengeBeatTheLevelProps",
+  "StarChallengeFamilyPlantsProps",
+  "StarChallengeKillZombiesInTimeProps",
+  "StarChallengeLevelTimerProperties",
+  "StarChallengeModuleProperties",
+  "StarChallengePlantsLostProps",
+  "StarChallengeSaveMowersProps",
+  "StarChallengeSimultaneousPlantsProps",
+  "StarChallengeSpendSunHoldoutProps",
+  "StarChallengeSunProducedProps",
+  "StarChallengeSunUsedProps",
+  "StarChallengeTargetScoreProps",
+  "StarChallengeZombieDistanceProps",
+  "StormZombieSpawnerProps",
+  "SunBombChallengeProperties",
+  "SunDropperProperties",
+  "SunDropperWaveActionProps",
+  "SymmetryBondModuleProps",
+  "TidalChangeWaveActionProps",
+  "TideProperties",
+  "TideWaveWaveActionProps",
+  "TutorialLevel1Properties",
+  "TutorialLevel2Properties",
+  "TutorialLevel4Properties",
+  "TutorialLevelMinesProperties",
+  "UnrestrictedFusionLevelModuleProperties",
+  "UpdateBranchBattleSeedBankWaveActionProperties",
+  "UpdateSeedBankWaveActionProperties",
+  "VaseBreakerEndlessProperties",
+  "VaseBreakerPresetProperties",
+  "WaveDistributorModuleProperties",
+  "WaveDuplicatorModuleProperties",
+  "WaveManagerModuleProperties",
+  "WaveManagerProperties",
+  "WestStageProperties",
+  "ZombieBarrelPusherProps",
+  "ZombieBeachOctopusProps",
+  "ZombieBugProps",
+  "ZombieCakeTankProps",
+  "ZombieCarnieFireBreatherProps",
+  "ZombieCarnieMagicianProps",
+  "ZombieChickenFarmerProps",
+  "ZombieCrystalSkullProps",
+  "ZombieDarkKingProps",
+  "ZombieDeathSeedDropModuleProperties",
+  "ZombieDinoBullyVeteranProps",
+  "ZombieDropActionDefinition",
+  "ZombieDropProps",
+  "ZombieDropZombiesOnBoardActionDefinition",
+  "ZombieEightiesBreakDancerProps",
+  "ZombieEightiesGargantuarProps",
+  "ZombieEightiesPunkProps",
+  "ZombieGargantuarMechProps",
+  "ZombieGargantuarProps",
+  "ZombieGeneralTreadmillProps",
+  "ZombieGeneralZmechProps",
+  "ZombieGridItemSpawnActionDefinition",
+  "ZombieIceAgeHunterProps",
+  "ZombieIceAgeTroglobiteProps",
+  "ZombieLayerDisableActionDefinition",
+  "ZombieMechDiscoProps",
+  "ZombieMechFootballProps",
+  "ZombieMechProps",
+  "ZombieModernNewspaperProps",
+  "ZombieModifierProperties",
+  "ZombieOrbitalStrikeActionDefinition",
+  "ZombiePianoProps",
+  "ZombiePirateCannonProps",
+  "ZombiePirateCaptainProps",
+  "ZombiePlayAnimationActionDefinition",
+  "ZombiePotionModuleProperties",
+  "ZombiePotionProps",
+  "ZombieProjectileActionDefinition",
+  "ZombieProjectileLaunchActionDefinition",
+  "ZombiePropertySheet",
+  "ZombieProspectorProps",
+  "ZombieRaProps",
+  "ZombieResistancesModuleProperties",
+  "ZombieRomanBallistaProps",
+  "ZombieRomanHealerProps",
+  "ZombieSeagullProps",
+  "ZombieSpawnActionDefinition",
+  "ZombieTeleportActionDefinition",
+  "ZombieType",
+  "ZombieWalkActionDefinition",
+  "ZombieZombossMechBeachProps",
+  "ZombieZombossMechChineseGardenProps",
+  "ZombieZombossMechCowboyProps",
+  "ZombieZombossMechDarkProps",
+  "ZombieZombossMechDinoProps",
+  "ZombieZombossMechEgyptProps",
+  "ZombieZombossMechEightiesProps",
+  "ZombieZombossMechGoonProps",
+  "ZombieZombossMechIceAgeProps",
+  "ZombieZombossMechLostCityProps",
+  "ZombieZombossMechMausoleumProps",
+  "ZombieZombossMechPirateProps",
+  "ZombieZombossMechRomanProps",
+  "ZombiesAteYourBrainsProperties",
+  "ZombossBattleIntroProperties",
+  "ZombossBattleModuleProperties",
+  "ZombossBeachDiveActionDefinition",
+  "ZombossCarpImpActionDefinition",
+  "ZombossDarkFireBreathActionDefinition",
+  "ZombossDarkLobFireballsActionDefinition",
+  "ZombossDropSandbagActionDefinition",
+  "ZombossDropZombieActionDefinition",
+  "ZombossEightiesDropSpeakerActionDefinition",
+  "ZombossEightiesFireSpeakerRayActionDefinition",
+  "ZombossFanPullActionDefinition",
+  "ZombossFireActionDefinition",
+  "ZombossGoonBlowActionDefinition",
+  "ZombossGoonJumpActionDefinition",
+  "ZombossGoonRushActionDefinition",
+  "ZombossGoonShootActionDefinition",
+  "ZombossGoonStompActionDefinition",
+  "ZombossGoonWalkActionDefinition",
+  "ZombossImpCannonActionDefinition",
+  "ZombossJumpActionDefinition",
+  "ZombossRiftBattleModuleProperties",
+  "ZombossRushActionDefinition",
+  "ZombossSharkMinionAttackActionDefinition",
+  "ZombossSpawnActionDefinition",
+  "ZombossSpawnDinoActionDefinition",
+  "ZombossSummonActionDefinition",
+  "ZombossWalkActionDefinition",
+  "ZombossWallSummonActionDefinition"
+ ],
+ "modules": {
+  "AdventureZombossIntro": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "frontyard_74"
+   ]
+  },
+  "ApplyZombieConditions": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "kongfu_66",
+    "lostcity_59"
+   ]
+  },
+  "Armrack": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "kongfu_52"
+   ]
+  },
+  "BeachMowers": {
+   "clientKey": null,
+   "levels": 50,
+   "sample": [
+    "beach_1",
+    "beach_10",
+    "beach_11",
+    "beach_13",
+    "beach_14",
+    "beach_15",
+    "beach_16",
+    "beach_17",
+    "beach_18",
+    "beach_19",
+    "beach_2",
+    "beach_20",
+    "beach_21",
+    "beach_22",
+    "beach_26",
+    "beach_28",
+    "beach_3",
+    "beach_30",
+    "beach_32",
+    "beach_34"
+   ]
+  },
+  "BeachRails": {
+   "clientKey": null,
+   "levels": 7,
+   "sample": [
+    "beach_10",
+    "beach_11",
+    "beach_16",
+    "beach_8",
+    "beach_9",
+    "memorytour_4",
+    "renai_21"
+   ]
+  },
+  "BeatTheLevel": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "iceage_57",
+    "kongfu_35"
+   ]
+  },
+  "BeghouledArcade": {
+   "clientKey": null,
+   "levels": 10,
+   "sample": [
+    "egypt_75",
+    "frontyard_171",
+    "kongfu_32",
+    "lunarrainbowmarket_117",
+    "modern_13",
+    "modern_22",
+    "modern_27",
+    "modern_32",
+    "modern_8",
+    "renai_8"
+   ]
+  },
+  "BeghouledIntro": {
+   "clientKey": null,
+   "levels": 9,
+   "sample": [
+    "egypt_75",
+    "kongfu_32",
+    "lunarrainbowmarket_117",
+    "modern_13",
+    "modern_22",
+    "modern_27",
+    "modern_32",
+    "modern_8",
+    "renai_8"
+   ]
+  },
+  "BeghouledProps": {
+   "clientKey": null,
+   "levels": 11,
+   "sample": [
+    "egypt_75",
+    "frontyard_171",
+    "kongfu_32",
+    "lunarrainbowmarket_117",
+    "mausoleum_1",
+    "modern_13",
+    "modern_22",
+    "modern_27",
+    "modern_32",
+    "modern_8",
+    "renai_8"
+   ]
+  },
+  "BeghouledRiftIntro": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "mausoleum_1"
+   ]
+  },
+  "BeghouledSeedBank": {
+   "clientKey": null,
+   "levels": 10,
+   "sample": [
+    "egypt_75",
+    "kongfu_32",
+    "lunarrainbowmarket_117",
+    "mausoleum_1",
+    "modern_13",
+    "modern_22",
+    "modern_27",
+    "modern_32",
+    "modern_8",
+    "renai_8"
+   ]
+  },
+  "BigTroubleLittleZombieMinigameModule": {
+   "clientKey": null,
+   "levels": 6,
+   "sample": [
+    "chinesegarden_62",
+    "frontyard_137",
+    "frontyard_162",
+    "kongfu_58",
+    "lunarrainbowmarket_73",
+    "lunarrainbowmarket_85"
+   ]
+  },
+  "BirthdaySongModule": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "carnival_79"
+   ]
+  },
+  "BonusChallengeModule": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "mausoleum_28",
+    "pirate_16"
+   ]
+  },
+  "BoostTiles": {
+   "clientKey": null,
+   "levels": 5,
+   "sample": [
+    "dark_36",
+    "mausoleum_28",
+    "pirate_14",
+    "pirate_15",
+    "pirate_16"
+   ]
+  },
+  "Boosterama": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "carnival_24",
+    "carnival_32"
+   ]
+  },
+  "BossIcon": {
+   "clientKey": null,
+   "levels": 3,
+   "sample": [
+    "frontyard_165",
+    "kongfu_50",
+    "kongfu_51"
+   ]
+  },
+  "BoulderTraps": {
+   "clientKey": null,
+   "levels": 5,
+   "sample": [
+    "lostcity_32",
+    "lostcity_41",
+    "lostcity_42",
+    "lostcity_51",
+    "lostcity_63"
+   ]
+  },
+  "BowlingBulbMinigame": {
+   "clientKey": null,
+   "levels": 15,
+   "sample": [
+    "beach_15",
+    "beach_21",
+    "carnival_79",
+    "fairy_32",
+    "fairy_39",
+    "frontyard_5",
+    "heian_3",
+    "iceage_69",
+    "kongfu_44",
+    "kongfu_60",
+    "lostcity_59",
+    "muji_19",
+    "pirate_10",
+    "plantagenet_26",
+    "plantagenet_48"
+   ]
+  },
+  "CD": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "kongfu_34",
+    "kongfu_53"
+   ]
+  },
+  "CM": {
+   "clientKey": null,
+   "levels": 4,
+   "sample": [
+    "kongfu_44",
+    "kongfu_57",
+    "lunarrainbowmarket_49",
+    "pirate_50"
+   ]
+  },
+  "CR": {
+   "clientKey": null,
+   "levels": 5,
+   "sample": [
+    "frontyard_143",
+    "kongfu_44",
+    "lunarrainbowmarket_93",
+    "muji_27",
+    "pirate_67"
+   ]
+  },
+  "CamelMinigame": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "egypt_16",
+    "egypt_18"
+   ]
+  },
+  "CannonMinigame": {
+   "clientKey": null,
+   "levels": 8,
+   "sample": [
+    "egypt_69",
+    "lunarrainbowmarket_123",
+    "modern_108",
+    "pirate_24",
+    "sky_11",
+    "sky_54",
+    "sky_8",
+    "steam_8"
+   ]
+  },
+  "CapitalistModule": {
+   "clientKey": null,
+   "levels": 28,
+   "sample": [
+    "carnival_14",
+    "carnival_21",
+    "carnival_22",
+    "carnival_5",
+    "carnival_52",
+    "carnival_8",
+    "fairy_29",
+    "frontyard_149",
+    "frontyard_153",
+    "frontyard_39",
+    "frontyard_69",
+    "frontyard_78",
+    "future_29",
+    "future_67",
+    "iceage_45",
+    "lostcity_64",
+    "lunarrainbowmarket_66",
+    "lunarrainbowmarket_73",
+    "lunarrainbowmarket_89",
+    "mausoleum_41"
+   ]
+  },
+  "Cardbox": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "lunarrainbowmarket_96"
+   ]
+  },
+  "CarnivalDynamicBackground": {
+   "clientKey": null,
+   "levels": 36,
+   "sample": [
+    "carnival_37",
+    "carnival_39",
+    "carnival_42",
+    "carnival_45",
+    "carnival_47",
+    "carnival_49",
+    "carnival_53",
+    "carnival_56",
+    "carnival_60",
+    "carnival_62",
+    "carnival_64",
+    "carnival_66",
+    "carnival_69",
+    "carnival_70",
+    "carnival_71",
+    "carnival_72",
+    "carnival_73",
+    "carnival_75",
+    "carnival_76",
+    "carnival_77"
+   ]
+  },
+  "CarnivalMowers": {
+   "clientKey": null,
+   "levels": 25,
+   "sample": [
+    "carnival_2",
+    "carnival_42",
+    "carnival_43",
+    "carnival_47",
+    "carnival_49",
+    "carnival_50",
+    "carnival_53",
+    "carnival_55",
+    "carnival_56",
+    "carnival_61",
+    "carnival_65",
+    "carnival_69",
+    "carnival_70",
+    "carnival_75",
+    "carnival_82",
+    "carnival_89",
+    "carnival_92",
+    "lunarrainbowmarket_41",
+    "sky_26",
+    "sky_37"
+   ]
+  },
+  "ChallengeModule": {
+   "clientKey": null,
+   "levels": 920,
+   "sample": [
+    "beach_11",
+    "beach_12",
+    "beach_13",
+    "beach_14",
+    "beach_17",
+    "beach_18",
+    "beach_26",
+    "beach_28",
+    "beach_33",
+    "beach_34",
+    "beach_35",
+    "beach_36",
+    "beach_37",
+    "beach_38",
+    "beach_40",
+    "beach_44",
+    "beach_45",
+    "beach_46",
+    "beach_47",
+    "beach_49"
+   ]
+  },
+  "Check": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "modern_110"
+   ]
+  },
+  "CheeseStarMusic": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "modern_60",
+    "modern_78"
+   ]
+  },
+  "ChineseGardenBackground": {
+   "clientKey": null,
+   "levels": 29,
+   "sample": [
+    "chinesegarden_25",
+    "chinesegarden_27",
+    "chinesegarden_29",
+    "chinesegarden_30",
+    "chinesegarden_31",
+    "chinesegarden_32",
+    "chinesegarden_33",
+    "chinesegarden_34",
+    "chinesegarden_35",
+    "chinesegarden_36",
+    "chinesegarden_38",
+    "chinesegarden_39",
+    "chinesegarden_41",
+    "chinesegarden_42",
+    "chinesegarden_44",
+    "chinesegarden_46",
+    "chinesegarden_47",
+    "chinesegarden_48",
+    "chinesegarden_52",
+    "chinesegarden_56"
+   ]
+  },
+  "ChineseGardenBridgeModule": {
+   "clientKey": null,
+   "levels": 43,
+   "sample": [
+    "chinesegarden_1",
+    "chinesegarden_10",
+    "chinesegarden_11",
+    "chinesegarden_12",
+    "chinesegarden_13",
+    "chinesegarden_14",
+    "chinesegarden_15",
+    "chinesegarden_16",
+    "chinesegarden_17",
+    "chinesegarden_18",
+    "chinesegarden_19",
+    "chinesegarden_2",
+    "chinesegarden_20",
+    "chinesegarden_21",
+    "chinesegarden_22",
+    "chinesegarden_23",
+    "chinesegarden_24",
+    "chinesegarden_26",
+    "chinesegarden_28",
+    "chinesegarden_3"
+   ]
+  },
+  "ChineseGardenFullLand": {
+   "clientKey": null,
+   "levels": 5,
+   "sample": [
+    "chinesegarden_50",
+    "chinesegarden_54",
+    "chinesegarden_56",
+    "chinesegarden_59",
+    "chinesegarden_71"
+   ]
+  },
+  "ChineseGardenLand1": {
+   "clientKey": null,
+   "levels": 15,
+   "sample": [
+    "chinesegarden_25",
+    "chinesegarden_32",
+    "chinesegarden_33",
+    "chinesegarden_34",
+    "chinesegarden_35",
+    "chinesegarden_36",
+    "chinesegarden_38",
+    "chinesegarden_39",
+    "chinesegarden_44",
+    "chinesegarden_46",
+    "chinesegarden_48",
+    "chinesegarden_52",
+    "chinesegarden_57",
+    "chinesegarden_63",
+    "chinesegarden_70"
+   ]
+  },
+  "ChineseGardenLand1_Start": {
+   "clientKey": null,
+   "levels": 15,
+   "sample": [
+    "chinesegarden_25",
+    "chinesegarden_32",
+    "chinesegarden_33",
+    "chinesegarden_34",
+    "chinesegarden_35",
+    "chinesegarden_36",
+    "chinesegarden_38",
+    "chinesegarden_39",
+    "chinesegarden_44",
+    "chinesegarden_46",
+    "chinesegarden_48",
+    "chinesegarden_52",
+    "chinesegarden_57",
+    "chinesegarden_63",
+    "chinesegarden_70"
+   ]
+  },
+  "ChineseGardenLand2": {
+   "clientKey": null,
+   "levels": 8,
+   "sample": [
+    "chinesegarden_25",
+    "chinesegarden_27",
+    "chinesegarden_30",
+    "chinesegarden_34",
+    "chinesegarden_38",
+    "chinesegarden_39",
+    "chinesegarden_47",
+    "chinesegarden_48"
+   ]
+  },
+  "ChineseGardenLand2_Start": {
+   "clientKey": null,
+   "levels": 3,
+   "sample": [
+    "chinesegarden_27",
+    "chinesegarden_30",
+    "chinesegarden_47"
+   ]
+  },
+  "ChineseGardenLand3": {
+   "clientKey": null,
+   "levels": 10,
+   "sample": [
+    "chinesegarden_25",
+    "chinesegarden_30",
+    "chinesegarden_35",
+    "chinesegarden_36",
+    "chinesegarden_42",
+    "chinesegarden_44",
+    "chinesegarden_46",
+    "chinesegarden_52",
+    "chinesegarden_61",
+    "chinesegarden_70"
+   ]
+  },
+  "ChineseGardenLand3_Start": {
+   "clientKey": null,
+   "levels": 8,
+   "sample": [
+    "chinesegarden_35",
+    "chinesegarden_36",
+    "chinesegarden_42",
+    "chinesegarden_44",
+    "chinesegarden_46",
+    "chinesegarden_52",
+    "chinesegarden_61",
+    "chinesegarden_70"
+   ]
+  },
+  "ChineseGardenLand4": {
+   "clientKey": null,
+   "levels": 13,
+   "sample": [
+    "chinesegarden_25",
+    "chinesegarden_27",
+    "chinesegarden_29",
+    "chinesegarden_30",
+    "chinesegarden_34",
+    "chinesegarden_38",
+    "chinesegarden_42",
+    "chinesegarden_47",
+    "chinesegarden_48",
+    "chinesegarden_52",
+    "chinesegarden_61",
+    "chinesegarden_63",
+    "chinesegarden_70"
+   ]
+  },
+  "ChineseGardenLand4_Start": {
+   "clientKey": null,
+   "levels": 7,
+   "sample": [
+    "chinesegarden_27",
+    "chinesegarden_29",
+    "chinesegarden_34",
+    "chinesegarden_38",
+    "chinesegarden_47",
+    "chinesegarden_48",
+    "chinesegarden_63"
+   ]
+  },
+  "ChineseGardenLand5": {
+   "clientKey": null,
+   "levels": 14,
+   "sample": [
+    "chinesegarden_25",
+    "chinesegarden_27",
+    "chinesegarden_29",
+    "chinesegarden_32",
+    "chinesegarden_34",
+    "chinesegarden_35",
+    "chinesegarden_36",
+    "chinesegarden_38",
+    "chinesegarden_39",
+    "chinesegarden_42",
+    "chinesegarden_44",
+    "chinesegarden_46",
+    "chinesegarden_48",
+    "chinesegarden_57"
+   ]
+  },
+  "ChineseGardenLand5_Start": {
+   "clientKey": null,
+   "levels": 7,
+   "sample": [
+    "chinesegarden_32",
+    "chinesegarden_35",
+    "chinesegarden_36",
+    "chinesegarden_39",
+    "chinesegarden_44",
+    "chinesegarden_46",
+    "chinesegarden_57"
+   ]
+  },
+  "ChineseGardenMowers": {
+   "clientKey": null,
+   "levels": 45,
+   "sample": [
+    "chinesegarden_1",
+    "chinesegarden_10",
+    "chinesegarden_11",
+    "chinesegarden_13",
+    "chinesegarden_14",
+    "chinesegarden_15",
+    "chinesegarden_16",
+    "chinesegarden_17",
+    "chinesegarden_18",
+    "chinesegarden_19",
+    "chinesegarden_2",
+    "chinesegarden_20",
+    "chinesegarden_21",
+    "chinesegarden_22",
+    "chinesegarden_25",
+    "chinesegarden_26",
+    "chinesegarden_27",
+    "chinesegarden_28",
+    "chinesegarden_29",
+    "chinesegarden_3"
+   ]
+  },
+  "ChineseGardenWater1": {
+   "clientKey": null,
+   "levels": 9,
+   "sample": [
+    "chinesegarden_27",
+    "chinesegarden_29",
+    "chinesegarden_30",
+    "chinesegarden_31",
+    "chinesegarden_41",
+    "chinesegarden_42",
+    "chinesegarden_47",
+    "chinesegarden_61",
+    "chinesegarden_65"
+   ]
+  },
+  "ChineseGardenWater2": {
+   "clientKey": null,
+   "levels": 16,
+   "sample": [
+    "chinesegarden_29",
+    "chinesegarden_31",
+    "chinesegarden_32",
+    "chinesegarden_33",
+    "chinesegarden_35",
+    "chinesegarden_36",
+    "chinesegarden_41",
+    "chinesegarden_42",
+    "chinesegarden_44",
+    "chinesegarden_46",
+    "chinesegarden_52",
+    "chinesegarden_57",
+    "chinesegarden_61",
+    "chinesegarden_63",
+    "chinesegarden_65",
+    "chinesegarden_70"
+   ]
+  },
+  "ChineseGardenWater3": {
+   "clientKey": null,
+   "levels": 14,
+   "sample": [
+    "chinesegarden_27",
+    "chinesegarden_29",
+    "chinesegarden_31",
+    "chinesegarden_32",
+    "chinesegarden_33",
+    "chinesegarden_34",
+    "chinesegarden_38",
+    "chinesegarden_39",
+    "chinesegarden_41",
+    "chinesegarden_47",
+    "chinesegarden_48",
+    "chinesegarden_57",
+    "chinesegarden_63",
+    "chinesegarden_65"
+   ]
+  },
+  "ChineseGardenWater4": {
+   "clientKey": null,
+   "levels": 11,
+   "sample": [
+    "chinesegarden_31",
+    "chinesegarden_32",
+    "chinesegarden_33",
+    "chinesegarden_35",
+    "chinesegarden_36",
+    "chinesegarden_39",
+    "chinesegarden_41",
+    "chinesegarden_44",
+    "chinesegarden_46",
+    "chinesegarden_57",
+    "chinesegarden_65"
+   ]
+  },
+  "ChineseGardenWater5": {
+   "clientKey": null,
+   "levels": 10,
+   "sample": [
+    "chinesegarden_30",
+    "chinesegarden_31",
+    "chinesegarden_33",
+    "chinesegarden_41",
+    "chinesegarden_47",
+    "chinesegarden_52",
+    "chinesegarden_61",
+    "chinesegarden_63",
+    "chinesegarden_65",
+    "chinesegarden_70"
+   ]
+  },
+  "ChooseLilypadsTip": {
+   "clientKey": null,
+   "levels": 11,
+   "sample": [
+    "chinesegarden_1",
+    "chinesegarden_11",
+    "chinesegarden_2",
+    "chinesegarden_39",
+    "chinesegarden_4",
+    "chinesegarden_48",
+    "chinesegarden_5",
+    "chinesegarden_54",
+    "chinesegarden_57",
+    "chinesegarden_63",
+    "chinesegarden_8"
+   ]
+  },
+  "CluckinBellBoxPlacement": {
+   "clientKey": null,
+   "levels": 16,
+   "sample": [
+    "losantosvice_10",
+    "losantosvice_11",
+    "losantosvice_12",
+    "losantosvice_13",
+    "losantosvice_15",
+    "losantosvice_16",
+    "losantosvice_18",
+    "losantosvice_20",
+    "losantosvice_23",
+    "losantosvice_25",
+    "losantosvice_26",
+    "losantosvice_4",
+    "losantosvice_5",
+    "losantosvice_6",
+    "losantosvice_8",
+    "losantosvice_9"
+   ]
+  },
+  "Column": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "frontyard_103",
+    "frontyard_128"
+   ]
+  },
+  "ColumnMinigame": {
+   "clientKey": null,
+   "levels": 8,
+   "sample": [
+    "carnival_24",
+    "future_12",
+    "heian_12",
+    "modern_45",
+    "pirate_39",
+    "sky_27",
+    "sky_35",
+    "steam_2"
+   ]
+  },
+  "Conveyor": {
+   "clientKey": null,
+   "levels": 4,
+   "sample": [
+    "cowboy_10",
+    "egypt_73",
+    "frontyard_143",
+    "lunarrainbowmarket_83"
+   ]
+  },
+  "ConveyorBelt": {
+   "clientKey": null,
+   "levels": 332,
+   "sample": [
+    "beach_12",
+    "beach_15",
+    "beach_16",
+    "beach_19",
+    "beach_21",
+    "beach_29",
+    "beach_41",
+    "beach_42",
+    "beach_52",
+    "beach_63",
+    "beach_64",
+    "beach_7",
+    "beach_75",
+    "beach_77",
+    "beach_78",
+    "beach_84",
+    "beach_85",
+    "beach_87",
+    "beach_89",
+    "beach_94"
+   ]
+  },
+  "CoolDown": {
+   "clientKey": null,
+   "levels": 6,
+   "sample": [
+    "kongfu_38",
+    "kongfu_39",
+    "lostcity_66",
+    "lunarrainbowmarket_90",
+    "lunarrainbowmarket_91",
+    "plantagenet_26"
+   ]
+  },
+  "Cooldown": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "carnival_85",
+    "modern_64"
+   ]
+  },
+  "CowboyConveyor": {
+   "clientKey": null,
+   "levels": 6,
+   "sample": [
+    "carnival_84",
+    "cowboy_15",
+    "cowboy_18",
+    "cowboy_5",
+    "heian_40",
+    "kongfu_45"
+   ]
+  },
+  "CowboyMinigame": {
+   "clientKey": null,
+   "levels": 10,
+   "sample": [
+    "carnival_84",
+    "cowboy_10",
+    "cowboy_15",
+    "cowboy_18",
+    "cowboy_5",
+    "egypt_73",
+    "frontyard_143",
+    "heian_40",
+    "kongfu_45",
+    "lunarrainbowmarket_83"
+   ]
+  },
+  "CowboyMusic": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "cowboy_16"
+   ]
+  },
+  "CowboyRails": {
+   "clientKey": "minecarts",
+   "levels": 78,
+   "sample": [
+    "carnival_62",
+    "carnival_73",
+    "carnival_75",
+    "carnival_79",
+    "carnival_84",
+    "carnival_89",
+    "carnival_92",
+    "cowboy_1",
+    "cowboy_13",
+    "cowboy_15",
+    "cowboy_18",
+    "cowboy_22",
+    "cowboy_24",
+    "cowboy_25",
+    "cowboy_26",
+    "cowboy_28",
+    "cowboy_29",
+    "cowboy_3",
+    "cowboy_32",
+    "cowboy_33"
+   ]
+  },
+  "CowboySeedBank": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "cowboy_32",
+    "future_35"
+   ]
+  },
+  "Crater": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "dark_78",
+    "egypt_56"
+   ]
+  },
+  "CrazyOlaf": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "dark_66",
+    "egypt_49"
+   ]
+  },
+  "DangerRoomIntro": {
+   "clientKey": null,
+   "levels": 13,
+   "sample": [
+    "beach_95",
+    "chinesegarden_72",
+    "cowboy_41",
+    "cowboy_42",
+    "dino_63",
+    "egypt_81",
+    "eighties_72",
+    "future_71",
+    "iceage_72",
+    "lostcity_69",
+    "lunarrainbowmarket_126",
+    "modern_129",
+    "pirate_67"
+   ]
+  },
+  "DangerRoomModule": {
+   "clientKey": null,
+   "levels": 13,
+   "sample": [
+    "beach_95",
+    "chinesegarden_72",
+    "cowboy_41",
+    "cowboy_42",
+    "dino_63",
+    "egypt_81",
+    "eighties_72",
+    "future_71",
+    "iceage_72",
+    "lostcity_69",
+    "lunarrainbowmarket_126",
+    "modern_129",
+    "pirate_67"
+   ]
+  },
+  "DarkMowers": {
+   "clientKey": null,
+   "levels": 54,
+   "sample": [
+    "dark_1",
+    "dark_10",
+    "dark_11",
+    "dark_13",
+    "dark_14",
+    "dark_15",
+    "dark_16",
+    "dark_17",
+    "dark_18",
+    "dark_19",
+    "dark_2",
+    "dark_20",
+    "dark_21",
+    "dark_22",
+    "dark_23",
+    "dark_24",
+    "dark_25",
+    "dark_26",
+    "dark_3",
+    "dark_36"
+   ]
+  },
+  "DarkSeedBank": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "dark_64",
+    "dark_65"
+   ]
+  },
+  "DeathExplosionMiniGameModule": {
+   "clientKey": null,
+   "levels": 17,
+   "sample": [
+    "lunarrainbowmarket_33",
+    "lunarrainbowmarket_35",
+    "lunarrainbowmarket_37",
+    "lunarrainbowmarket_45",
+    "lunarrainbowmarket_59",
+    "lunarrainbowmarket_62",
+    "lunarrainbowmarket_69",
+    "lunarrainbowmarket_76",
+    "lunarrainbowmarket_82",
+    "lunarrainbowmarket_85",
+    "lunarrainbowmarket_94",
+    "modern_35",
+    "modern_49",
+    "modern_52",
+    "modern_53",
+    "modern_54",
+    "sky_54"
+   ]
+  },
+  "DeepSeaRenderEffectModule": {
+   "clientKey": null,
+   "levels": 12,
+   "sample": [
+    "beach_23",
+    "beach_27",
+    "beach_31",
+    "beach_36",
+    "beach_39",
+    "beach_41",
+    "beach_43",
+    "beach_44",
+    "beach_45",
+    "beach_46",
+    "beach_47",
+    "beach_52"
+   ]
+  },
+  "DefaultSecurityGourds": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "pirate_2"
+   ]
+  },
+  "DefaultSunDropper": {
+   "clientKey": null,
+   "levels": 821,
+   "sample": [
+    "beach_1",
+    "beach_10",
+    "beach_11",
+    "beach_13",
+    "beach_14",
+    "beach_18",
+    "beach_2",
+    "beach_22",
+    "beach_24",
+    "beach_25",
+    "beach_26",
+    "beach_28",
+    "beach_30",
+    "beach_32",
+    "beach_37",
+    "beach_38",
+    "beach_4",
+    "beach_5",
+    "beach_50",
+    "beach_6"
+   ]
+  },
+  "DefaultZombieWinCondition": {
+   "clientKey": null,
+   "levels": 1756,
+   "sample": [
+    "beach_1",
+    "beach_10",
+    "beach_11",
+    "beach_12",
+    "beach_13",
+    "beach_14",
+    "beach_15",
+    "beach_16",
+    "beach_17",
+    "beach_18",
+    "beach_19",
+    "beach_2",
+    "beach_20",
+    "beach_21",
+    "beach_22",
+    "beach_24",
+    "beach_25",
+    "beach_26",
+    "beach_28",
+    "beach_3"
+   ]
+  },
+  "DefaultZombossRiftPointOfLoss": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "mausoleum_40"
+   ]
+  },
+  "DefeatSeedBank": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "chinesegarden_4",
+    "chinesegarden_5"
+   ]
+  },
+  "DestroyGridItems": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "kongfu_66"
+   ]
+  },
+  "Destroyables": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "future_1"
+   ]
+  },
+  "DinoMowers": {
+   "clientKey": null,
+   "levels": 43,
+   "sample": [
+    "beach_24",
+    "beach_25",
+    "beach_4",
+    "dino_1",
+    "dino_10",
+    "dino_11",
+    "dino_12",
+    "dino_13",
+    "dino_14",
+    "dino_15",
+    "dino_16",
+    "dino_17",
+    "dino_18",
+    "dino_19",
+    "dino_2",
+    "dino_20",
+    "dino_21",
+    "dino_22",
+    "dino_23",
+    "dino_24"
+   ]
+  },
+  "DisableFusionLevelModule": {
+   "clientKey": null,
+   "levels": 54,
+   "sample": [
+    "beach_37",
+    "beach_47",
+    "beach_50",
+    "carnival_20",
+    "carnival_27",
+    "carnival_32",
+    "carnival_52",
+    "carnival_67",
+    "carnival_8",
+    "chinesegarden_24",
+    "chinesegarden_45",
+    "chinesegarden_58",
+    "chinesegarden_68",
+    "egypt_25",
+    "fairy_13",
+    "frontyard_104",
+    "frontyard_117",
+    "frontyard_128",
+    "frontyard_132",
+    "frontyard_138"
+   ]
+  },
+  "DisableShovel": {
+   "clientKey": null,
+   "levels": 7,
+   "sample": [
+    "losantosvice_24",
+    "lunarrainbowmarket_59",
+    "mausoleum_53",
+    "pirate_10",
+    "pirate_33",
+    "sky_11",
+    "sky_8"
+   ]
+  },
+  "DisableSkipLevel": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "frontyard_98"
+   ]
+  },
+  "DisabledShovel": {
+   "clientKey": null,
+   "levels": 6,
+   "sample": [
+    "egypt_19",
+    "frontyard_102",
+    "frontyard_114",
+    "frontyard_121",
+    "frontyard_127",
+    "frontyard_93"
+   ]
+  },
+  "DoNotPlantBeforeLine": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "lunarrainbowmarket_52",
+    "lunarrainbowmarket_60"
+   ]
+  },
+  "ES": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "losantosvice_24",
+    "muji_26"
+   ]
+  },
+  "EgyptMowers": {
+   "clientKey": null,
+   "levels": 36,
+   "sample": [
+    "egypt_1",
+    "egypt_10",
+    "egypt_11",
+    "egypt_12",
+    "egypt_13",
+    "egypt_14",
+    "egypt_2",
+    "egypt_22",
+    "egypt_23",
+    "egypt_24",
+    "egypt_25",
+    "egypt_27",
+    "egypt_3",
+    "egypt_31",
+    "egypt_32",
+    "egypt_34",
+    "egypt_35",
+    "egypt_36",
+    "egypt_38",
+    "egypt_39"
+   ]
+  },
+  "EgyptNightBackgroundEffects": {
+   "clientKey": null,
+   "levels": 24,
+   "sample": [
+    "egypt_18",
+    "egypt_23",
+    "egypt_24",
+    "egypt_26",
+    "egypt_28",
+    "egypt_29",
+    "egypt_30",
+    "egypt_31",
+    "egypt_32",
+    "egypt_33",
+    "egypt_34",
+    "egypt_35",
+    "egypt_37",
+    "egypt_56",
+    "egypt_57",
+    "egypt_60",
+    "egypt_64",
+    "egypt_65",
+    "egypt_70",
+    "egypt_72"
+   ]
+  },
+  "EgyptRails": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "egypt_19",
+    "renai_21"
+   ]
+  },
+  "EgyptSeedBank": {
+   "clientKey": null,
+   "levels": 5,
+   "sample": [
+    "egypt_17",
+    "egypt_31",
+    "egypt_33",
+    "modern_41",
+    "sky_51"
+   ]
+  },
+  "EgyptTutorialMowers": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "egypt_37",
+    "egypt_5"
+   ]
+  },
+  "EightiesMowers": {
+   "clientKey": null,
+   "levels": 38,
+   "sample": [
+    "eighties_1",
+    "eighties_10",
+    "eighties_11",
+    "eighties_12",
+    "eighties_13",
+    "eighties_14",
+    "eighties_15",
+    "eighties_19",
+    "eighties_2",
+    "eighties_21",
+    "eighties_22",
+    "eighties_23",
+    "eighties_24",
+    "eighties_25",
+    "eighties_26",
+    "eighties_28",
+    "eighties_29",
+    "eighties_3",
+    "eighties_30",
+    "eighties_31"
+   ]
+  },
+  "EightiesZombossIntro": {
+   "clientKey": null,
+   "levels": 4,
+   "sample": [
+    "eighties_16",
+    "eighties_17",
+    "eighties_33",
+    "eighties_36"
+   ]
+  },
+  "EightiesZombossMowers": {
+   "clientKey": null,
+   "levels": 4,
+   "sample": [
+    "eighties_16",
+    "eighties_17",
+    "eighties_33",
+    "eighties_36"
+   ]
+  },
+  "ElementReactionModule": {
+   "clientKey": null,
+   "levels": 20,
+   "sample": [
+    "beach_37",
+    "beach_47",
+    "beach_50",
+    "carnival_27",
+    "chinesegarden_24",
+    "egypt_25",
+    "fairy_13",
+    "frontyard_39",
+    "frontyard_58",
+    "frontyard_63",
+    "frontyard_71",
+    "frontyard_72",
+    "frontyard_73",
+    "future_30",
+    "iceage_45",
+    "lostcity_35",
+    "mausoleum_15",
+    "memorytour_2",
+    "modern_33",
+    "modern_42"
+   ]
+  },
+  "Escalation": {
+   "clientKey": null,
+   "levels": 4,
+   "sample": [
+    "carnival_25",
+    "frontyard_164",
+    "lostcity_66",
+    "memorytour_5"
+   ]
+  },
+  "EventItemPlacement": {
+   "clientKey": null,
+   "levels": 5,
+   "sample": [
+    "heian_14",
+    "heian_25",
+    "heian_26",
+    "heian_27",
+    "heian_8"
+   ]
+  },
+  "FP": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "kongfu_60"
+   ]
+  },
+  "FairyMowers": {
+   "clientKey": null,
+   "levels": 23,
+   "sample": [
+    "fairy_10",
+    "fairy_11",
+    "fairy_14",
+    "fairy_15",
+    "fairy_18",
+    "fairy_21",
+    "fairy_22",
+    "fairy_23",
+    "fairy_25",
+    "fairy_27",
+    "fairy_28",
+    "fairy_33",
+    "fairy_34",
+    "fairy_35",
+    "fairy_36",
+    "fairy_44",
+    "fairy_49",
+    "fairy_5",
+    "fairy_50",
+    "fairy_6"
+   ]
+  },
+  "FairyTaleMowers": {
+   "clientKey": null,
+   "levels": 4,
+   "sample": [
+    "fairy_1",
+    "fairy_2",
+    "fairy_3",
+    "fairy_4"
+   ]
+  },
+  "FairyTaleNightsStageItem": {
+   "clientKey": null,
+   "levels": 29,
+   "sample": [
+    "fairy_10",
+    "fairy_12",
+    "fairy_13",
+    "fairy_15",
+    "fairy_17",
+    "fairy_19",
+    "fairy_2",
+    "fairy_20",
+    "fairy_22",
+    "fairy_24",
+    "fairy_26",
+    "fairy_30",
+    "fairy_31",
+    "fairy_32",
+    "fairy_35",
+    "fairy_36",
+    "fairy_37",
+    "fairy_38",
+    "fairy_39",
+    "fairy_4"
+   ]
+  },
+  "FastSunDropper": {
+   "clientKey": null,
+   "levels": 28,
+   "sample": [
+    "beach_3",
+    "eighties_42",
+    "eighties_44",
+    "eighties_48",
+    "frontyard_137",
+    "frontyard_14",
+    "frontyard_145",
+    "frontyard_22",
+    "frontyard_28",
+    "frontyard_34",
+    "frontyard_40",
+    "future_42",
+    "iceage_52",
+    "iceage_53",
+    "iceage_59",
+    "lunarrainbowmarket_116",
+    "lunarrainbowmarket_59",
+    "lunarrainbowmarket_81",
+    "modern_83",
+    "pirate_62"
+   ]
+  },
+  "FirstCoinTutorial": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "frontyard_40"
+   ]
+  },
+  "FlowerPotPlacement": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "frontyard_103"
+   ]
+  },
+  "FogBackground": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "frontyard_124"
+   ]
+  },
+  "FogInit": {
+   "clientKey": null,
+   "levels": 23,
+   "sample": [
+    "carnival_77",
+    "carnival_83",
+    "fairy_33",
+    "fairy_34",
+    "fairy_35",
+    "fairy_37",
+    "fairy_38",
+    "fairy_43",
+    "fairy_46",
+    "fairy_47",
+    "fairy_49",
+    "fairy_50",
+    "future_58",
+    "kongfu_61",
+    "kongfu_81",
+    "lunarrainbowmarket_81",
+    "modern_69",
+    "plantagenet_29",
+    "plantagenet_31",
+    "plantagenet_37"
+   ]
+  },
+  "FogMusic": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "frontyard_124"
+   ]
+  },
+  "FogPlacement": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "fairy_28",
+    "fairy_5"
+   ]
+  },
+  "FogTrigger2": {
+   "clientKey": null,
+   "levels": 25,
+   "sample": [
+    "frontyard_109",
+    "frontyard_116",
+    "frontyard_124",
+    "frontyard_13",
+    "frontyard_131",
+    "frontyard_140",
+    "frontyard_144",
+    "frontyard_151",
+    "frontyard_163",
+    "frontyard_17",
+    "frontyard_20",
+    "frontyard_21",
+    "frontyard_25",
+    "frontyard_27",
+    "frontyard_31",
+    "frontyard_33",
+    "frontyard_37",
+    "frontyard_44",
+    "frontyard_48",
+    "frontyard_52"
+   ]
+  },
+  "FrontLawnMowers": {
+   "clientKey": null,
+   "levels": 40,
+   "sample": [
+    "carnival_41",
+    "frontyard_100",
+    "frontyard_108",
+    "frontyard_111",
+    "frontyard_113",
+    "frontyard_119",
+    "frontyard_124",
+    "frontyard_125",
+    "frontyard_130",
+    "frontyard_139",
+    "frontyard_144",
+    "frontyard_148",
+    "frontyard_173",
+    "frontyard_174",
+    "frontyard_175",
+    "frontyard_89",
+    "frontyard_90",
+    "frontyard_91",
+    "frontyard_92",
+    "lunarrainbowmarket_100"
+   ]
+  },
+  "FrozenGridItemPlacement": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "chinesegarden_57"
+   ]
+  },
+  "FrozenPlantPlacement": {
+   "clientKey": null,
+   "levels": 158,
+   "sample": [
+    "beach_24",
+    "beach_25",
+    "beach_3",
+    "carnival_44",
+    "carnival_79",
+    "carnival_82",
+    "carnival_84",
+    "carnival_90",
+    "chinesegarden_37",
+    "chinesegarden_67",
+    "cowboy_31",
+    "dark_63",
+    "dino_10",
+    "dino_11",
+    "dino_12",
+    "dino_13",
+    "dino_36",
+    "dino_5",
+    "dino_6",
+    "dino_7"
+   ]
+  },
+  "FrozenPlantPlacement1": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "frontyard_6"
+   ]
+  },
+  "FrozenZ": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "muji_17"
+   ]
+  },
+  "FrozenZombiePlacement": {
+   "clientKey": null,
+   "levels": 68,
+   "sample": [
+    "carnival_3",
+    "carnival_79",
+    "carnival_82",
+    "chinesegarden_52",
+    "chinesegarden_70",
+    "frontyard_83",
+    "iceage_10",
+    "iceage_11",
+    "iceage_12",
+    "iceage_13",
+    "iceage_15",
+    "iceage_16",
+    "iceage_17",
+    "iceage_18",
+    "iceage_19",
+    "iceage_20",
+    "iceage_21",
+    "iceage_22",
+    "iceage_23",
+    "iceage_24"
+   ]
+  },
+  "FtfUB": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "fairy_16"
+   ]
+  },
+  "FutureLinkedTileGroups": {
+   "clientKey": null,
+   "levels": 58,
+   "sample": [
+    "beach_65",
+    "carnival_24",
+    "carnival_30",
+    "cowboy_29",
+    "dark_63",
+    "frontyard_160",
+    "future_10",
+    "future_11",
+    "future_12",
+    "future_13",
+    "future_14",
+    "future_15",
+    "future_16",
+    "future_17",
+    "future_18",
+    "future_19",
+    "future_20",
+    "future_21",
+    "future_22",
+    "future_23"
+   ]
+  },
+  "FutureMowers": {
+   "clientKey": null,
+   "levels": 47,
+   "sample": [
+    "beach_65",
+    "future_1",
+    "future_11",
+    "future_12",
+    "future_13",
+    "future_14",
+    "future_15",
+    "future_16",
+    "future_17",
+    "future_18",
+    "future_19",
+    "future_2",
+    "future_20",
+    "future_21",
+    "future_22",
+    "future_23",
+    "future_24",
+    "future_25",
+    "future_26",
+    "future_27"
+   ]
+  },
+  "FutureNightBackground": {
+   "clientKey": null,
+   "levels": 9,
+   "sample": [
+    "future_30",
+    "future_48",
+    "future_50",
+    "future_52",
+    "future_60",
+    "future_65",
+    "future_67",
+    "future_69",
+    "future_70"
+   ]
+  },
+  "FutureRails": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "future_54",
+    "renai_21"
+   ]
+  },
+  "FutureSeedBank": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "future_33",
+    "future_34"
+   ]
+  },
+  "GI": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "lostcity_65",
+    "lostcity_67"
+   ]
+  },
+  "GT": {
+   "clientKey": null,
+   "levels": 10,
+   "sample": [
+    "frontyard_106",
+    "frontyard_143",
+    "lostcity_56",
+    "lunarrainbowmarket_93",
+    "muji_22",
+    "muji_23",
+    "muji_26",
+    "muji_27",
+    "pirate_33",
+    "pirate_67"
+   ]
+  },
+  "GTAMowers": {
+   "clientKey": null,
+   "levels": 21,
+   "sample": [
+    "losantosvice_1",
+    "losantosvice_10",
+    "losantosvice_11",
+    "losantosvice_12",
+    "losantosvice_14",
+    "losantosvice_16",
+    "losantosvice_17",
+    "losantosvice_18",
+    "losantosvice_19",
+    "losantosvice_2",
+    "losantosvice_20",
+    "losantosvice_21",
+    "losantosvice_22",
+    "losantosvice_23",
+    "losantosvice_3",
+    "losantosvice_4",
+    "losantosvice_5",
+    "losantosvice_6",
+    "losantosvice_7",
+    "losantosvice_8"
+   ]
+  },
+  "GTASunDropper": {
+   "clientKey": null,
+   "levels": 16,
+   "sample": [
+    "losantosvice_1",
+    "losantosvice_10",
+    "losantosvice_11",
+    "losantosvice_13",
+    "losantosvice_14",
+    "losantosvice_16",
+    "losantosvice_17",
+    "losantosvice_18",
+    "losantosvice_2",
+    "losantosvice_22",
+    "losantosvice_25",
+    "losantosvice_26",
+    "losantosvice_4",
+    "losantosvice_5",
+    "losantosvice_7",
+    "losantosvice_9"
+   ]
+  },
+  "GlacierModule": {
+   "clientKey": null,
+   "levels": 4,
+   "sample": [
+    "iceage_32",
+    "iceage_44",
+    "iceage_46",
+    "iceage_47"
+   ]
+  },
+  "GoldTiles": {
+   "clientKey": null,
+   "levels": 75,
+   "sample": [
+    "carnival_31",
+    "carnival_5",
+    "cowboy_31",
+    "egypt_21",
+    "frontyard_119",
+    "frontyard_145",
+    "frontyard_148",
+    "frontyard_69",
+    "frontyard_84",
+    "future_2",
+    "heian_17",
+    "heian_20",
+    "iceage_70",
+    "lostcity_1",
+    "lostcity_10",
+    "lostcity_11",
+    "lostcity_12",
+    "lostcity_13",
+    "lostcity_14",
+    "lostcity_15"
+   ]
+  },
+  "GraveStones": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "carnival_83"
+   ]
+  },
+  "Gravestone": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "frontyard_144",
+    "frontyard_27"
+   ]
+  },
+  "Gravestones": {
+   "clientKey": null,
+   "levels": 274,
+   "sample": [
+    "beach_24",
+    "beach_25",
+    "beach_72",
+    "beach_93",
+    "carnival_12",
+    "carnival_13",
+    "carnival_39",
+    "carnival_48",
+    "carnival_49",
+    "carnival_55",
+    "carnival_60",
+    "carnival_62",
+    "carnival_68",
+    "carnival_75",
+    "carnival_82",
+    "carnival_87",
+    "cowboy_39",
+    "dark_1",
+    "dark_10",
+    "dark_11"
+   ]
+  },
+  "GreedyIcon": {
+   "clientKey": null,
+   "levels": 3,
+   "sample": [
+    "lunarrainbowmarket_113",
+    "lunarrainbowmarket_30",
+    "lunarrainbowmarket_84"
+   ]
+  },
+  "Grid": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "lunarrainbowmarket_92"
+   ]
+  },
+  "GridItems": {
+   "clientKey": null,
+   "levels": 44,
+   "sample": [
+    "carnival_29",
+    "carnival_38",
+    "carnival_62",
+    "carnival_79",
+    "carnival_85",
+    "cowboy_30",
+    "egypt_58",
+    "egypt_60",
+    "egypt_70",
+    "egypt_72",
+    "egypt_74",
+    "egypt_77",
+    "fairy_46",
+    "frontyard_107",
+    "frontyard_116",
+    "frontyard_135",
+    "frontyard_160",
+    "frontyard_61",
+    "heian_29",
+    "iceage_67"
+   ]
+  },
+  "Gridltem": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "dark_79"
+   ]
+  },
+  "HayStackPlacements": {
+   "clientKey": null,
+   "levels": 3,
+   "sample": [
+    "mausoleum_4",
+    "mausoleum_41",
+    "mausoleum_42"
+   ]
+  },
+  "HeianMowers": {
+   "clientKey": null,
+   "levels": 29,
+   "sample": [
+    "heian_1",
+    "heian_10",
+    "heian_12",
+    "heian_13",
+    "heian_15",
+    "heian_16",
+    "heian_17",
+    "heian_18",
+    "heian_19",
+    "heian_20",
+    "heian_21",
+    "heian_22",
+    "heian_23",
+    "heian_24",
+    "heian_25",
+    "heian_30",
+    "heian_31",
+    "heian_32",
+    "heian_33",
+    "heian_34"
+   ]
+  },
+  "HeianNight": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "frontyard_80",
+    "plantagenet_47"
+   ]
+  },
+  "HeianNightBackground": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "heian_29",
+    "heian_42"
+   ]
+  },
+  "HeianWindModule": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "heian_25"
+   ]
+  },
+  "IGP": {
+   "clientKey": null,
+   "levels": 81,
+   "sample": [
+    "beach_37",
+    "carnival_27",
+    "carnival_40",
+    "carnival_68",
+    "chinesegarden_37",
+    "chinesegarden_38",
+    "chinesegarden_56",
+    "chinesegarden_62",
+    "chinesegarden_71",
+    "dino_45",
+    "egypt_76",
+    "eighties_57",
+    "eighties_70",
+    "eighties_71",
+    "fairy_13",
+    "fairy_30",
+    "fairy_31",
+    "fairy_42",
+    "fairy_45",
+    "frontyard_117"
+   ]
+  },
+  "IPP": {
+   "clientKey": null,
+   "levels": 14,
+   "sample": [
+    "carnival_14",
+    "dark_79",
+    "dino_52",
+    "egypt_70",
+    "fairy_36",
+    "fairy_45",
+    "frontyard_116",
+    "frontyard_142",
+    "frontyard_77",
+    "frontyard_82",
+    "kongfu_44",
+    "lostcity_49",
+    "plantagenet_13",
+    "sky_54"
+   ]
+  },
+  "IZP": {
+   "clientKey": null,
+   "levels": 9,
+   "sample": [
+    "carnival_40",
+    "fairy_30",
+    "fairy_31",
+    "frontyard_80",
+    "future_66",
+    "kongfu_44",
+    "lostcity_45",
+    "lunarrainbowmarket_116",
+    "plantagenet_47"
+   ]
+  },
+  "IceageMowers": {
+   "clientKey": null,
+   "levels": 46,
+   "sample": [
+    "iceage_1",
+    "iceage_10",
+    "iceage_11",
+    "iceage_12",
+    "iceage_13",
+    "iceage_14",
+    "iceage_15",
+    "iceage_16",
+    "iceage_18",
+    "iceage_19",
+    "iceage_2",
+    "iceage_20",
+    "iceage_21",
+    "iceage_22",
+    "iceage_23",
+    "iceage_24",
+    "iceage_25",
+    "iceage_26",
+    "iceage_27",
+    "iceage_28"
+   ]
+  },
+  "IceageZombossMowers": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "iceage_46"
+   ]
+  },
+  "Imps": {
+   "clientKey": null,
+   "levels": 3,
+   "sample": [
+    "modern_111",
+    "modern_124",
+    "modern_89"
+   ]
+  },
+  "InitialFogPlacement": {
+   "clientKey": null,
+   "levels": 3,
+   "sample": [
+    "frontyard_157",
+    "frontyard_71",
+    "kongfu_70"
+   ]
+  },
+  "InitialGridItem": {
+   "clientKey": null,
+   "levels": 3,
+   "sample": [
+    "carnival_51",
+    "modern_110",
+    "plantagenet_17"
+   ]
+  },
+  "InitialGridItemPlacement": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "eighties_66",
+    "kongfu_28"
+   ]
+  },
+  "InitialGridItemPlacements": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "kongfu_37"
+   ]
+  },
+  "InitialPlant": {
+   "clientKey": null,
+   "levels": 5,
+   "sample": [
+    "beach_23",
+    "beach_27",
+    "beach_41",
+    "beach_52",
+    "modern_110"
+   ]
+  },
+  "InitialPlantPlacement": {
+   "clientKey": null,
+   "levels": 12,
+   "sample": [
+    "carnival_45",
+    "chinesegarden_24",
+    "chinesegarden_7",
+    "chinesegarden_9",
+    "egypt_19",
+    "frontyard_20",
+    "frontyard_37",
+    "kongfu_70",
+    "lunarrainbowmarket_100",
+    "lunarrainbowmarket_124",
+    "mausoleum_15",
+    "modern_73"
+   ]
+  },
+  "InitialPlantPlacer": {
+   "clientKey": null,
+   "levels": 3,
+   "sample": [
+    "chinesegarden_13",
+    "chinesegarden_18",
+    "chinesegarden_20"
+   ]
+  },
+  "InitialPlantProps": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "lunarrainbowmarket_59"
+   ]
+  },
+  "InitialPlants": {
+   "clientKey": null,
+   "levels": 3,
+   "sample": [
+    "carnival_62",
+    "kongfu_57",
+    "lostcity_59"
+   ]
+  },
+  "InstantCharge": {
+   "clientKey": null,
+   "levels": 12,
+   "sample": [
+    "fairy_29",
+    "frontyard_145",
+    "frontyard_78",
+    "frontyard_83",
+    "kongfu_24",
+    "kongfu_25",
+    "modern_110",
+    "pirate_32",
+    "pirate_38",
+    "pirate_8",
+    "renai_37",
+    "steam_5"
+   ]
+  },
+  "Intro": {
+   "clientKey": null,
+   "levels": 5,
+   "sample": [
+    "frontyard_102",
+    "frontyard_114",
+    "frontyard_121",
+    "frontyard_127",
+    "frontyard_93"
+   ]
+  },
+  "IntroCinemaModule": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "egypt_53"
+   ]
+  },
+  "InvisibleBrainEater": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "carnival_87"
+   ]
+  },
+  "InvisighoulMinigame": {
+   "clientKey": null,
+   "levels": 8,
+   "sample": [
+    "cowboy_11",
+    "frontyard_44",
+    "heian_18",
+    "lunarrainbowmarket_23",
+    "modern_46",
+    "pirate_13",
+    "sky_51",
+    "steam_13"
+   ]
+  },
+  "JamZombiesModule": {
+   "clientKey": null,
+   "levels": 76,
+   "sample": [
+    "beach_67",
+    "carnival_1",
+    "carnival_10",
+    "carnival_11",
+    "carnival_12",
+    "carnival_13",
+    "carnival_14",
+    "carnival_15",
+    "carnival_17",
+    "carnival_19",
+    "carnival_21",
+    "carnival_23",
+    "carnival_24",
+    "carnival_25",
+    "carnival_26",
+    "carnival_28",
+    "carnival_29",
+    "carnival_3",
+    "carnival_30",
+    "carnival_31"
+   ]
+  },
+  "JoustDarkMowers": {
+   "clientKey": null,
+   "levels": 3,
+   "sample": [
+    "plantagenet_20",
+    "plantagenet_21",
+    "plantagenet_22"
+   ]
+  },
+  "JoustModule": {
+   "clientKey": null,
+   "levels": 4,
+   "sample": [
+    "egypt_8",
+    "egypt_9",
+    "plantagenet_20",
+    "plantagenet_21"
+   ]
+  },
+  "JoustPointOfLoss": {
+   "clientKey": null,
+   "levels": 4,
+   "sample": [
+    "egypt_8",
+    "egypt_9",
+    "plantagenet_20",
+    "plantagenet_21"
+   ]
+  },
+  "JoustZombieWinCondition": {
+   "clientKey": null,
+   "levels": 4,
+   "sample": [
+    "plantagenet_20",
+    "plantagenet_21",
+    "plantagenet_22",
+    "plantagenet_23"
+   ]
+  },
+  "KToMK": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "kongfu_34",
+    "kongfu_53"
+   ]
+  },
+  "KillZombies": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "frontyard_10"
+   ]
+  },
+  "KongFuMowers": {
+   "clientKey": null,
+   "levels": 6,
+   "sample": [
+    "kongfu_15",
+    "kongfu_31",
+    "kongfu_36",
+    "kongfu_41",
+    "kongfu_42",
+    "kongfu_52"
+   ]
+  },
+  "KongfuArmracks": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "kongfu_66"
+   ]
+  },
+  "KongfuMowers": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "kongfu_55",
+    "kongfu_64"
+   ]
+  },
+  "LCO": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "lostcity_67"
+   ]
+  },
+  "LandPlacement": {
+   "clientKey": null,
+   "levels": 8,
+   "sample": [
+    "frontyard_105",
+    "frontyard_138",
+    "frontyard_16",
+    "frontyard_24",
+    "frontyard_43",
+    "frontyard_51",
+    "frontyard_65",
+    "frontyard_68"
+   ]
+  },
+  "LastStand": {
+   "clientKey": null,
+   "levels": 73,
+   "sample": [
+    "beach_17",
+    "beach_34",
+    "beach_40",
+    "beach_53",
+    "carnival_31",
+    "carnival_70",
+    "carnival_80",
+    "chinesegarden_19",
+    "chinesegarden_64",
+    "cowboy_21",
+    "cowboy_31",
+    "cowboy_38",
+    "cowboy_7",
+    "dark_17",
+    "dark_29",
+    "dark_8",
+    "dino_25",
+    "dino_32",
+    "egypt_28",
+    "egypt_35"
+   ]
+  },
+  "LastStandSeedBank": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "modern_50"
+   ]
+  },
+  "LeprechaunCoinOverride": {
+   "clientKey": null,
+   "levels": 4,
+   "sample": [
+    "beach_88",
+    "lostcity_47",
+    "plantagenet_40",
+    "sky_54"
+   ]
+  },
+  "LevelDifficultyScaling": {
+   "clientKey": null,
+   "levels": 16,
+   "sample": [
+    "beach_21",
+    "egypt_13",
+    "egypt_8",
+    "egypt_9",
+    "frontyard_175",
+    "mausoleum_1",
+    "mausoleum_2",
+    "mausoleum_28",
+    "mausoleum_40",
+    "pirate_14",
+    "pirate_15",
+    "pirate_16",
+    "plantagenet_20",
+    "plantagenet_21",
+    "plantagenet_22",
+    "plantagenet_23"
+   ]
+  },
+  "LevelEscalation": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "future_64"
+   ]
+  },
+  "LevelEscalationModule": {
+   "clientKey": null,
+   "levels": 127,
+   "sample": [
+    "beach_24",
+    "beach_25",
+    "beach_3",
+    "beach_66",
+    "beach_76",
+    "beach_84",
+    "beach_85",
+    "carnival_2",
+    "carnival_30",
+    "carnival_55",
+    "carnival_87",
+    "carnival_9",
+    "chinesegarden_57",
+    "dark_63",
+    "dark_77",
+    "dino_1",
+    "dino_10",
+    "dino_11",
+    "dino_12",
+    "dino_13"
+   ]
+  },
+  "LevelOfTheDayIntro": {
+   "clientKey": null,
+   "levels": 5,
+   "sample": [
+    "egypt_82",
+    "egypt_83",
+    "egypt_84",
+    "frontyard_173",
+    "frontyard_174"
+   ]
+  },
+  "LevelOfTheDayModule": {
+   "clientKey": null,
+   "levels": 34,
+   "sample": [
+    "beach_90",
+    "beach_91",
+    "beach_92",
+    "beach_93",
+    "carnival_12",
+    "carnival_13",
+    "carnival_61",
+    "carnival_65",
+    "carnival_68",
+    "chinesegarden_37",
+    "cowboy_23",
+    "egypt_82",
+    "egypt_83",
+    "egypt_84",
+    "frontyard_144",
+    "frontyard_171",
+    "frontyard_172",
+    "frontyard_173",
+    "frontyard_174",
+    "frontyard_175"
+   ]
+  },
+  "LevelScoring": {
+   "clientKey": null,
+   "levels": 16,
+   "sample": [
+    "carnival_24",
+    "egypt_10",
+    "egypt_11",
+    "egypt_12",
+    "egypt_13",
+    "egypt_14",
+    "egypt_8",
+    "egypt_82",
+    "egypt_83",
+    "egypt_84",
+    "egypt_9",
+    "pirate_14",
+    "plantagenet_20",
+    "plantagenet_21",
+    "plantagenet_22",
+    "plantagenet_23"
+   ]
+  },
+  "LevelTimer": {
+   "clientKey": null,
+   "levels": 4,
+   "sample": [
+    "dark_50",
+    "lunarrainbowmarket_77",
+    "modern_37",
+    "pirate_50"
+   ]
+  },
+  "LightModule": {
+   "clientKey": null,
+   "levels": 19,
+   "sample": [
+    "plantagenet_10",
+    "plantagenet_11",
+    "plantagenet_12",
+    "plantagenet_13",
+    "plantagenet_14",
+    "plantagenet_15",
+    "plantagenet_16",
+    "plantagenet_17",
+    "plantagenet_18",
+    "plantagenet_25",
+    "plantagenet_31",
+    "plantagenet_37",
+    "plantagenet_39",
+    "plantagenet_42",
+    "plantagenet_43",
+    "plantagenet_44",
+    "plantagenet_45",
+    "plantagenet_47",
+    "plantagenet_49"
+   ]
+  },
+  "LightModule2": {
+   "clientKey": null,
+   "levels": 19,
+   "sample": [
+    "plantagenet_10",
+    "plantagenet_11",
+    "plantagenet_12",
+    "plantagenet_13",
+    "plantagenet_14",
+    "plantagenet_15",
+    "plantagenet_16",
+    "plantagenet_17",
+    "plantagenet_18",
+    "plantagenet_25",
+    "plantagenet_31",
+    "plantagenet_37",
+    "plantagenet_39",
+    "plantagenet_42",
+    "plantagenet_43",
+    "plantagenet_44",
+    "plantagenet_45",
+    "plantagenet_47",
+    "plantagenet_49"
+   ]
+  },
+  "LilypadPlacement": {
+   "clientKey": null,
+   "levels": 50,
+   "sample": [
+    "beach_1",
+    "beach_10",
+    "beach_11",
+    "beach_12",
+    "beach_13",
+    "beach_14",
+    "beach_16",
+    "beach_17",
+    "beach_18",
+    "beach_19",
+    "beach_2",
+    "beach_21",
+    "beach_22",
+    "beach_26",
+    "beach_28",
+    "beach_30",
+    "beach_32",
+    "beach_34",
+    "beach_38",
+    "beach_40"
+   ]
+  },
+  "LineRight": {
+   "clientKey": null,
+   "levels": 5,
+   "sample": [
+    "eighties_51",
+    "eighties_55",
+    "eighties_60",
+    "eighties_62",
+    "eighties_64"
+   ]
+  },
+  "LootOverrideModule": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "modern_110",
+    "pirate_62"
+   ]
+  },
+  "LostCityMowers": {
+   "clientKey": null,
+   "levels": 44,
+   "sample": [
+    "lostcity_1",
+    "lostcity_10",
+    "lostcity_11",
+    "lostcity_12",
+    "lostcity_13",
+    "lostcity_14",
+    "lostcity_15",
+    "lostcity_16",
+    "lostcity_18",
+    "lostcity_19",
+    "lostcity_2",
+    "lostcity_20",
+    "lostcity_21",
+    "lostcity_22",
+    "lostcity_23",
+    "lostcity_24",
+    "lostcity_25",
+    "lostcity_26",
+    "lostcity_27",
+    "lostcity_28"
+   ]
+  },
+  "LostCityMusic": {
+   "clientKey": null,
+   "levels": 5,
+   "sample": [
+    "fairy_30",
+    "future_60",
+    "future_66",
+    "future_70",
+    "lostcity_48"
+   ]
+  },
+  "LunarNewYearMusicModule": {
+   "clientKey": null,
+   "levels": 5,
+   "sample": [
+    "lunarrainbowmarket_31",
+    "lunarrainbowmarket_43",
+    "lunarrainbowmarket_49",
+    "lunarrainbowmarket_91",
+    "lunarrainbowmarket_94"
+   ]
+  },
+  "MagnifyingGrassIntro": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "future_20"
+   ]
+  },
+  "MarketNight": {
+   "clientKey": null,
+   "levels": 36,
+   "sample": [
+    "carnival_30",
+    "lunarrainbowmarket_1",
+    "lunarrainbowmarket_10",
+    "lunarrainbowmarket_102",
+    "lunarrainbowmarket_11",
+    "lunarrainbowmarket_113",
+    "lunarrainbowmarket_12",
+    "lunarrainbowmarket_126",
+    "lunarrainbowmarket_13",
+    "lunarrainbowmarket_14",
+    "lunarrainbowmarket_15",
+    "lunarrainbowmarket_16",
+    "lunarrainbowmarket_17",
+    "lunarrainbowmarket_18",
+    "lunarrainbowmarket_19",
+    "lunarrainbowmarket_2",
+    "lunarrainbowmarket_20",
+    "lunarrainbowmarket_21",
+    "lunarrainbowmarket_22",
+    "lunarrainbowmarket_23"
+   ]
+  },
+  "MarketNightsStage": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "lunarrainbowmarket_66"
+   ]
+  },
+  "MausoleumIcon": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "mausoleum_38"
+   ]
+  },
+  "MausoleumMowers": {
+   "clientKey": null,
+   "levels": 22,
+   "sample": [
+    "mausoleum_10",
+    "mausoleum_11",
+    "mausoleum_12",
+    "mausoleum_13",
+    "mausoleum_14",
+    "mausoleum_16",
+    "mausoleum_17",
+    "mausoleum_18",
+    "mausoleum_19",
+    "mausoleum_20",
+    "mausoleum_21",
+    "mausoleum_4",
+    "mausoleum_41",
+    "mausoleum_43",
+    "mausoleum_45",
+    "mausoleum_49",
+    "mausoleum_51",
+    "mausoleum_53",
+    "mausoleum_6",
+    "mausoleum_7"
+   ]
+  },
+  "MausoleumPalaceMowers": {
+   "clientKey": null,
+   "levels": 21,
+   "sample": [
+    "mausoleum_22",
+    "mausoleum_23",
+    "mausoleum_24",
+    "mausoleum_25",
+    "mausoleum_26",
+    "mausoleum_27",
+    "mausoleum_29",
+    "mausoleum_30",
+    "mausoleum_31",
+    "mausoleum_32",
+    "mausoleum_33",
+    "mausoleum_34",
+    "mausoleum_35",
+    "mausoleum_36",
+    "mausoleum_37",
+    "mausoleum_42",
+    "mausoleum_44",
+    "mausoleum_46",
+    "mausoleum_48",
+    "mausoleum_50"
+   ]
+  },
+  "ModernMowers": {
+   "clientKey": null,
+   "levels": 169,
+   "sample": [
+    "beach_72",
+    "carnival_14",
+    "carnival_40",
+    "carnival_9",
+    "eighties_18",
+    "frontyard_1",
+    "frontyard_10",
+    "frontyard_101",
+    "frontyard_104",
+    "frontyard_107",
+    "frontyard_11",
+    "frontyard_117",
+    "frontyard_122",
+    "frontyard_126",
+    "frontyard_128",
+    "frontyard_132",
+    "frontyard_133",
+    "frontyard_135",
+    "frontyard_138",
+    "frontyard_14"
+   ]
+  },
+  "MountingGravestones": {
+   "clientKey": null,
+   "levels": 3,
+   "sample": [
+    "lunarrainbowmarket_48",
+    "lunarrainbowmarket_82",
+    "lunarrainbowmarket_87"
+   ]
+  },
+  "MountingOthers": {
+   "clientKey": null,
+   "levels": 3,
+   "sample": [
+    "frontyard_68",
+    "lunarrainbowmarket_87",
+    "mausoleum_55"
+   ]
+  },
+  "MountingPlants": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "mausoleum_55"
+   ]
+  },
+  "MountingRails": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "cowboy_20"
+   ]
+  },
+  "MountingSliders": {
+   "clientKey": null,
+   "levels": 3,
+   "sample": [
+    "carnival_26",
+    "future_29",
+    "lunarrainbowmarket_87"
+   ]
+  },
+  "NeedforspeedModule": {
+   "clientKey": null,
+   "levels": 10,
+   "sample": [
+    "eighties_18",
+    "eighties_20",
+    "eighties_27",
+    "eighties_34",
+    "eighties_37",
+    "eighties_39",
+    "eighties_41",
+    "eighties_43",
+    "eighties_45",
+    "eighties_47"
+   ]
+  },
+  "NewWaves": {
+   "clientKey": null,
+   "levels": 1722,
+   "sample": [
+    "beach_1",
+    "beach_10",
+    "beach_11",
+    "beach_12",
+    "beach_13",
+    "beach_14",
+    "beach_15",
+    "beach_16",
+    "beach_17",
+    "beach_18",
+    "beach_19",
+    "beach_2",
+    "beach_20",
+    "beach_21",
+    "beach_22",
+    "beach_23",
+    "beach_24",
+    "beach_25",
+    "beach_26",
+    "beach_27"
+   ]
+  },
+  "NightStageMusic": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "frontyard_80"
+   ]
+  },
+  "NoCooldown": {
+   "clientKey": null,
+   "levels": 3,
+   "sample": [
+    "carnival_5",
+    "lostcity_47",
+    "sky_28"
+   ]
+  },
+  "OverrideMaxSun200": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "carnival_82",
+    "lunarrainbowmarket_3"
+   ]
+  },
+  "OverrideMaxSun275": {
+   "clientKey": null,
+   "levels": 4,
+   "sample": [
+    "carnival_51",
+    "dino_38",
+    "dino_40",
+    "dino_41"
+   ]
+  },
+  "OverrideMaxSun50": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "lunarrainbowmarket_62"
+   ]
+  },
+  "OverrideMaxSun800": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "chinesegarden_38"
+   ]
+  },
+  "PSB": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "fairy_32"
+   ]
+  },
+  "PTP": {
+   "clientKey": null,
+   "levels": 6,
+   "sample": [
+    "chinesegarden_58",
+    "dino_56",
+    "frontyard_112",
+    "frontyard_126",
+    "lostcity_67",
+    "lunarrainbowmarket_109"
+   ]
+  },
+  "PaddedRoomProps": {
+   "clientKey": null,
+   "levels": 3,
+   "sample": [
+    "dark_66",
+    "egypt_49",
+    "egypt_52"
+   ]
+  },
+  "PassageModule": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "frontyard_131"
+   ]
+  },
+  "PenaconyAnim": {
+   "clientKey": null,
+   "levels": 20,
+   "sample": [
+    "sky_26",
+    "sky_37",
+    "sky_38",
+    "sky_39",
+    "sky_40",
+    "sky_41",
+    "sky_42",
+    "sky_43",
+    "sky_44",
+    "sky_45",
+    "sky_47",
+    "sky_48",
+    "sky_49",
+    "sky_50",
+    "sky_51",
+    "sky_52",
+    "sky_53",
+    "sky_55",
+    "sky_56",
+    "sky_57"
+   ]
+  },
+  "PerfumerModule": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "renai_28",
+    "renai_59"
+   ]
+  },
+  "PerkActivator": {
+   "clientKey": null,
+   "levels": 13,
+   "sample": [
+    "beach_21",
+    "dark_32",
+    "dark_49",
+    "frontyard_175",
+    "mausoleum_1",
+    "mausoleum_2",
+    "mausoleum_28",
+    "mausoleum_40",
+    "pirate_14",
+    "pirate_15",
+    "pirate_16",
+    "plantagenet_22",
+    "plantagenet_23"
+   ]
+  },
+  "PingFengs": {
+   "clientKey": null,
+   "levels": 15,
+   "sample": [
+    "chinesegarden_15",
+    "chinesegarden_16",
+    "chinesegarden_17",
+    "chinesegarden_18",
+    "chinesegarden_19",
+    "chinesegarden_21",
+    "chinesegarden_22",
+    "chinesegarden_40",
+    "chinesegarden_45",
+    "chinesegarden_49",
+    "chinesegarden_53",
+    "chinesegarden_55",
+    "chinesegarden_60",
+    "chinesegarden_64",
+    "chinesegarden_69"
+   ]
+  },
+  "PinoconyAnim": {
+   "clientKey": null,
+   "levels": 3,
+   "sample": [
+    "carnival_50",
+    "carnival_61",
+    "carnival_65"
+   ]
+  },
+  "PirateCannonTutorial": {
+   "clientKey": null,
+   "levels": 5,
+   "sample": [
+    "egypt_69",
+    "lunarrainbowmarket_123",
+    "modern_108",
+    "pirate_24",
+    "sky_54"
+   ]
+  },
+  "PirateMowers": {
+   "clientKey": null,
+   "levels": 22,
+   "sample": [
+    "pirate_1",
+    "pirate_12",
+    "pirate_14",
+    "pirate_15",
+    "pirate_16",
+    "pirate_19",
+    "pirate_22",
+    "pirate_23",
+    "pirate_28",
+    "pirate_3",
+    "pirate_36",
+    "pirate_4",
+    "pirate_40",
+    "pirate_42",
+    "pirate_43",
+    "pirate_44",
+    "pirate_5",
+    "pirate_52",
+    "pirate_58",
+    "pirate_59"
+   ]
+  },
+  "PiratePlanks": {
+   "clientKey": null,
+   "levels": 66,
+   "sample": [
+    "egypt_69",
+    "pirate_1",
+    "pirate_10",
+    "pirate_11",
+    "pirate_12",
+    "pirate_13",
+    "pirate_14",
+    "pirate_15",
+    "pirate_16",
+    "pirate_17",
+    "pirate_18",
+    "pirate_19",
+    "pirate_2",
+    "pirate_20",
+    "pirate_21",
+    "pirate_22",
+    "pirate_23",
+    "pirate_25",
+    "pirate_26",
+    "pirate_27"
+   ]
+  },
+  "Placement": {
+   "clientKey": null,
+   "levels": 4,
+   "sample": [
+    "lostcity_54",
+    "muji_10",
+    "muji_20",
+    "muji_4"
+   ]
+  },
+  "PlantCooldownModifier": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "fairy_32",
+    "fairy_39"
+   ]
+  },
+  "PlantFoodGraveStones": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "carnival_48"
+   ]
+  },
+  "PlantPlacement": {
+   "clientKey": null,
+   "levels": 4,
+   "sample": [
+    "beach_5",
+    "frontyard_24",
+    "frontyard_68",
+    "lunarrainbowmarket_55"
+   ]
+  },
+  "PlantagenetDaylightBackground": {
+   "clientKey": null,
+   "levels": 10,
+   "sample": [
+    "plantagenet_15",
+    "plantagenet_16",
+    "plantagenet_17",
+    "plantagenet_18",
+    "plantagenet_25",
+    "plantagenet_31",
+    "plantagenet_37",
+    "plantagenet_42",
+    "plantagenet_45",
+    "plantagenet_49"
+   ]
+  },
+  "PlantagenetMiniGameMusic": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "plantagenet_2"
+   ]
+  },
+  "PlantagenetPart2Background": {
+   "clientKey": null,
+   "levels": 7,
+   "sample": [
+    "plantagenet_10",
+    "plantagenet_11",
+    "plantagenet_12",
+    "plantagenet_13",
+    "plantagenet_14",
+    "plantagenet_44",
+    "plantagenet_47"
+   ]
+  },
+  "PlantagenetSpecialMusic": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "plantagenet_5",
+    "plantagenet_6"
+   ]
+  },
+  "PlantagenetUltimateBattleMusic": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "plantagenet_4"
+   ]
+  },
+  "PlantfoodPurchaseTutorial": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "egypt_3"
+   ]
+  },
+  "PlantfoodTutorial": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "egypt_2"
+   ]
+  },
+  "PlantsLost": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "frontyard_8"
+   ]
+  },
+  "PlantsToDie": {
+   "clientKey": null,
+   "levels": 10,
+   "sample": [
+    "carnival_13",
+    "carnival_30",
+    "carnival_67",
+    "kongfu_7",
+    "kongfu_77",
+    "lunarrainbowmarket_21",
+    "lunarrainbowmarket_86",
+    "memorytour_7",
+    "modern_25",
+    "modern_76"
+   ]
+  },
+  "Pool": {
+   "clientKey": null,
+   "levels": 11,
+   "sample": [
+    "frontyard_106",
+    "frontyard_109",
+    "frontyard_116",
+    "frontyard_124",
+    "frontyard_130",
+    "frontyard_139",
+    "frontyard_144",
+    "frontyard_17",
+    "frontyard_25",
+    "frontyard_30",
+    "frontyard_31"
+   ]
+  },
+  "PoolAndLand": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "frontyard_144",
+    "frontyard_27"
+   ]
+  },
+  "PoolBackground": {
+   "clientKey": null,
+   "levels": 15,
+   "sample": [
+    "frontyard_110",
+    "frontyard_130",
+    "frontyard_138",
+    "frontyard_139",
+    "frontyard_16",
+    "frontyard_24",
+    "frontyard_30",
+    "frontyard_36",
+    "frontyard_43",
+    "frontyard_47",
+    "frontyard_51",
+    "frontyard_55",
+    "frontyard_60",
+    "frontyard_65",
+    "frontyard_68"
+   ]
+  },
+  "PoolModule": {
+   "clientKey": null,
+   "levels": 16,
+   "sample": [
+    "frontyard_110",
+    "frontyard_124",
+    "frontyard_130",
+    "frontyard_138",
+    "frontyard_139",
+    "frontyard_16",
+    "frontyard_24",
+    "frontyard_30",
+    "frontyard_36",
+    "frontyard_43",
+    "frontyard_47",
+    "frontyard_51",
+    "frontyard_55",
+    "frontyard_60",
+    "frontyard_65",
+    "frontyard_68"
+   ]
+  },
+  "PoolModule_3": {
+   "clientKey": null,
+   "levels": 19,
+   "sample": [
+    "frontyard_106",
+    "frontyard_109",
+    "frontyard_116",
+    "frontyard_13",
+    "frontyard_144",
+    "frontyard_152",
+    "frontyard_17",
+    "frontyard_21",
+    "frontyard_25",
+    "frontyard_27",
+    "frontyard_31",
+    "frontyard_33",
+    "frontyard_37",
+    "frontyard_44",
+    "frontyard_48",
+    "frontyard_52",
+    "frontyard_56",
+    "frontyard_61",
+    "frontyard_66"
+   ]
+  },
+  "PoolMusic": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "frontyard_130",
+    "frontyard_139"
+   ]
+  },
+  "PoolSpawner": {
+   "clientKey": null,
+   "levels": 8,
+   "sample": [
+    "frontyard_110",
+    "frontyard_124",
+    "frontyard_130",
+    "frontyard_139",
+    "frontyard_30",
+    "frontyard_47",
+    "frontyard_55",
+    "frontyard_60"
+   ]
+  },
+  "PoolSpawner_3": {
+   "clientKey": null,
+   "levels": 12,
+   "sample": [
+    "frontyard_106",
+    "frontyard_109",
+    "frontyard_116",
+    "frontyard_13",
+    "frontyard_144",
+    "frontyard_152",
+    "frontyard_17",
+    "frontyard_21",
+    "frontyard_25",
+    "frontyard_27",
+    "frontyard_31",
+    "frontyard_33"
+   ]
+  },
+  "PotionSpeed": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "lunarrainbowmarket_81"
+   ]
+  },
+  "PotionToughness": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "lunarrainbowmarket_81"
+   ]
+  },
+  "Potions": {
+   "clientKey": null,
+   "levels": 7,
+   "sample": [
+    "carnival_77",
+    "modern_111",
+    "modern_128",
+    "modern_70",
+    "plantagenet_29",
+    "plantagenet_35",
+    "plantagenet_48"
+   ]
+  },
+  "PowerTileTutorial": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "future_3"
+   ]
+  },
+  "PowerupPurchaseIntro": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "egypt_6"
+   ]
+  },
+  "PresetSeedBank": {
+   "clientKey": null,
+   "levels": 3,
+   "sample": [
+    "chinesegarden_10",
+    "chinesegarden_3",
+    "chinesegarden_43"
+   ]
+  },
+  "ProtectPeanutLevelBasicModule": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "kongfu_34",
+    "kongfu_53"
+   ]
+  },
+  "ProtectThePlant": {
+   "clientKey": null,
+   "levels": 197,
+   "sample": [
+    "beach_14",
+    "beach_38",
+    "beach_47",
+    "beach_49",
+    "beach_66",
+    "beach_79",
+    "beach_80",
+    "beach_82",
+    "beach_88",
+    "carnival_23",
+    "carnival_27",
+    "carnival_40",
+    "carnival_54",
+    "carnival_79",
+    "carnival_81",
+    "carnival_89",
+    "carnival_9",
+    "carnival_92",
+    "chinesegarden_11",
+    "chinesegarden_38"
+   ]
+  },
+  "ProtectThePlant1": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "lostcity_46"
+   ]
+  },
+  "Puddles": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "dark_63",
+    "mausoleum_3"
+   ]
+  },
+  "PvZ1SeedBank": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "carnival_41"
+   ]
+  },
+  "Rail": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "plantagenet_40",
+    "plantagenet_45"
+   ]
+  },
+  "Railcart": {
+   "clientKey": "minecarts",
+   "levels": 5,
+   "sample": [
+    "carnival_46",
+    "carnival_90",
+    "cowboy_30",
+    "kongfu_54",
+    "lunarrainbowmarket_28"
+   ]
+  },
+  "Railcart1": {
+   "clientKey": "minecarts",
+   "levels": 1,
+   "sample": [
+    "kongfu_36"
+   ]
+  },
+  "Rails": {
+   "clientKey": "minecarts",
+   "levels": 101,
+   "sample": [
+    "beach_37",
+    "carnival_10",
+    "carnival_17",
+    "carnival_18",
+    "carnival_23",
+    "carnival_27",
+    "carnival_51",
+    "carnival_80",
+    "carnival_81",
+    "chinesegarden_24",
+    "chinesegarden_56",
+    "chinesegarden_67",
+    "chinesegarden_71",
+    "cowboy_10",
+    "cowboy_11",
+    "cowboy_12",
+    "cowboy_14",
+    "cowboy_17",
+    "cowboy_19",
+    "cowboy_21"
+   ]
+  },
+  "RainAndThunderTrigger": {
+   "clientKey": null,
+   "levels": 3,
+   "sample": [
+    "frontyard_147",
+    "future_60",
+    "lostcity_66"
+   ]
+  },
+  "RainModule": {
+   "clientKey": null,
+   "levels": 15,
+   "sample": [
+    "dino_46",
+    "egypt_60",
+    "egypt_70",
+    "egypt_77",
+    "frontyard_116",
+    "frontyard_31",
+    "frontyard_61",
+    "frontyard_71",
+    "future_30",
+    "future_60",
+    "kongfu_62",
+    "mausoleum_55",
+    "pirate_49",
+    "renai_31",
+    "renai_36"
+   ]
+  },
+  "RainbowMarketMowers": {
+   "clientKey": null,
+   "levels": 33,
+   "sample": [
+    "lunarrainbowmarket_1",
+    "lunarrainbowmarket_10",
+    "lunarrainbowmarket_102",
+    "lunarrainbowmarket_11",
+    "lunarrainbowmarket_113",
+    "lunarrainbowmarket_12",
+    "lunarrainbowmarket_126",
+    "lunarrainbowmarket_13",
+    "lunarrainbowmarket_14",
+    "lunarrainbowmarket_15",
+    "lunarrainbowmarket_16",
+    "lunarrainbowmarket_17",
+    "lunarrainbowmarket_18",
+    "lunarrainbowmarket_19",
+    "lunarrainbowmarket_2",
+    "lunarrainbowmarket_21",
+    "lunarrainbowmarket_22",
+    "lunarrainbowmarket_23",
+    "lunarrainbowmarket_24",
+    "lunarrainbowmarket_25"
+   ]
+  },
+  "RainingSeedsModule": {
+   "clientKey": null,
+   "levels": 6,
+   "sample": [
+    "chinesegarden_26",
+    "chinesegarden_28",
+    "chinesegarden_62",
+    "frontyard_116",
+    "frontyard_71",
+    "mausoleum_55"
+   ]
+  },
+  "RandomSpawner": {
+   "clientKey": null,
+   "levels": 14,
+   "sample": [
+    "dark_66",
+    "egypt_49",
+    "egypt_75",
+    "frontyard_171",
+    "frontyard_172",
+    "kongfu_32",
+    "lunarrainbowmarket_117",
+    "mausoleum_1",
+    "modern_13",
+    "modern_22",
+    "modern_27",
+    "modern_32",
+    "modern_8",
+    "renai_8"
+   ]
+  },
+  "RenaiMiniGameMusic": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "renai_21"
+   ]
+  },
+  "RenaiMowers": {
+   "clientKey": null,
+   "levels": 20,
+   "sample": [
+    "renai_13",
+    "renai_15",
+    "renai_16",
+    "renai_2",
+    "renai_26",
+    "renai_28",
+    "renai_29",
+    "renai_30",
+    "renai_31",
+    "renai_38",
+    "renai_4",
+    "renai_40",
+    "renai_42",
+    "renai_44",
+    "renai_45",
+    "renai_47",
+    "renai_52",
+    "renai_57",
+    "renai_59",
+    "renai_9"
+   ]
+  },
+  "RenaiZombossIntro": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "renai_28",
+    "renai_59"
+   ]
+  },
+  "RenaiZombossModule": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "renai_28",
+    "renai_59"
+   ]
+  },
+  "RollerModule": {
+   "clientKey": null,
+   "levels": 11,
+   "sample": [
+    "renai_38",
+    "renai_42",
+    "renai_45",
+    "renai_47",
+    "renai_50",
+    "renai_52",
+    "renai_54",
+    "renai_55",
+    "renai_56",
+    "renai_57",
+    "renai_58"
+   ]
+  },
+  "RomanMowers": {
+   "clientKey": null,
+   "levels": 4,
+   "sample": [
+    "mausoleum_39",
+    "mausoleum_47",
+    "mausoleum_55",
+    "muji_22"
+   ]
+  },
+  "RoofModule": {
+   "clientKey": null,
+   "levels": 23,
+   "sample": [
+    "frontyard_103",
+    "frontyard_113",
+    "frontyard_125",
+    "frontyard_128",
+    "frontyard_142",
+    "frontyard_153",
+    "frontyard_158",
+    "frontyard_164",
+    "frontyard_18",
+    "frontyard_19",
+    "frontyard_26",
+    "frontyard_32",
+    "frontyard_38",
+    "frontyard_45",
+    "frontyard_49",
+    "frontyard_53",
+    "frontyard_57",
+    "frontyard_62",
+    "frontyard_67",
+    "frontyard_70"
+   ]
+  },
+  "RoofModule2": {
+   "clientKey": null,
+   "levels": 23,
+   "sample": [
+    "frontyard_103",
+    "frontyard_113",
+    "frontyard_125",
+    "frontyard_128",
+    "frontyard_142",
+    "frontyard_153",
+    "frontyard_158",
+    "frontyard_164",
+    "frontyard_18",
+    "frontyard_19",
+    "frontyard_26",
+    "frontyard_32",
+    "frontyard_38",
+    "frontyard_45",
+    "frontyard_49",
+    "frontyard_53",
+    "frontyard_57",
+    "frontyard_62",
+    "frontyard_67",
+    "frontyard_70"
+   ]
+  },
+  "RoofModuleProps": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "frontyard_70"
+   ]
+  },
+  "SB": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "lostcity_66",
+    "plantagenet_45"
+   ]
+  },
+  "SHP": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "lunarrainbowmarket_88",
+    "lunarrainbowmarket_90"
+   ]
+  },
+  "SHUTTLE1": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "frontyard_85"
+   ]
+  },
+  "SHUTTLE2": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "frontyard_85"
+   ]
+  },
+  "SHUTTLE3": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "frontyard_85"
+   ]
+  },
+  "SHUTTLE4": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "frontyard_85"
+   ]
+  },
+  "SZ": {
+   "clientKey": null,
+   "levels": 5,
+   "sample": [
+    "kongfu_12",
+    "kongfu_23",
+    "lunarrainbowmarket_23",
+    "pirate_34",
+    "steam_6"
+   ]
+  },
+  "SandboxEgyptGravestones": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "egypt_47"
+   ]
+  },
+  "SandboxEgyptSeedBank": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "egypt_47"
+   ]
+  },
+  "SandboxIceageSeedBank": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "iceage_51"
+   ]
+  },
+  "SandboxPirateSeedBank": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "pirate_52"
+   ]
+  },
+  "SaveMowers": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "pirate_39",
+    "renai_12"
+   ]
+  },
+  "ScoreTile": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "lostcity_46"
+   ]
+  },
+  "ScoreTiles": {
+   "clientKey": null,
+   "levels": 10,
+   "sample": [
+    "carnival_24",
+    "egypt_10",
+    "egypt_11",
+    "egypt_12",
+    "egypt_13",
+    "egypt_8",
+    "egypt_9",
+    "plantagenet_20",
+    "plantagenet_21",
+    "plantagenet_22"
+   ]
+  },
+  "ScoreTilesAndTraps": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "plantagenet_23"
+   ]
+  },
+  "SeedBank": {
+   "clientKey": null,
+   "levels": 1354,
+   "sample": [
+    "beach_1",
+    "beach_10",
+    "beach_11",
+    "beach_13",
+    "beach_14",
+    "beach_17",
+    "beach_18",
+    "beach_2",
+    "beach_20",
+    "beach_22",
+    "beach_23",
+    "beach_24",
+    "beach_25",
+    "beach_26",
+    "beach_27",
+    "beach_28",
+    "beach_3",
+    "beach_30",
+    "beach_31",
+    "beach_32"
+   ]
+  },
+  "SeedPacketCooldownModule": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "memorytour_1"
+   ]
+  },
+  "SeedPacketHalfTimeModule": {
+   "clientKey": null,
+   "levels": 5,
+   "sample": [
+    "frontyard_41",
+    "lunarrainbowmarket_57",
+    "mausoleum_40",
+    "pirate_50",
+    "plantagenet_23"
+   ]
+  },
+  "SeedPacketPvZ1TimeModule": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "kongfu_66"
+   ]
+  },
+  "SeeingStarsModule": {
+   "clientKey": null,
+   "levels": 3,
+   "sample": [
+    "carnival_4",
+    "carnival_63",
+    "future_67"
+   ]
+  },
+  "ShowFog": {
+   "clientKey": null,
+   "levels": 21,
+   "sample": [
+    "frontyard_116",
+    "frontyard_13",
+    "frontyard_131",
+    "frontyard_140",
+    "frontyard_144",
+    "frontyard_151",
+    "frontyard_163",
+    "frontyard_17",
+    "frontyard_21",
+    "frontyard_25",
+    "frontyard_27",
+    "frontyard_31",
+    "frontyard_33",
+    "frontyard_37",
+    "frontyard_44",
+    "frontyard_48",
+    "frontyard_52",
+    "frontyard_56",
+    "frontyard_61",
+    "frontyard_66"
+   ]
+  },
+  "SimultaneousPlants": {
+   "clientKey": null,
+   "levels": 12,
+   "sample": [
+    "carnival_52",
+    "fairy_30",
+    "fairy_31",
+    "frontyard_80",
+    "future_66",
+    "future_70",
+    "kongfu_40",
+    "kongfu_43",
+    "lostcity_45",
+    "lostcity_48",
+    "lunarrainbowmarket_71",
+    "plantagenet_47"
+   ]
+  },
+  "SixLaneModule": {
+   "clientKey": null,
+   "levels": 17,
+   "sample": [
+    "frontyard_101",
+    "frontyard_112",
+    "frontyard_117",
+    "frontyard_120",
+    "frontyard_122",
+    "frontyard_131",
+    "frontyard_137",
+    "frontyard_140",
+    "frontyard_149",
+    "frontyard_151",
+    "frontyard_156",
+    "frontyard_157",
+    "frontyard_162",
+    "frontyard_163",
+    "frontyard_58",
+    "frontyard_63",
+    "frontyard_71"
+   ]
+  },
+  "SixLanePoolModule": {
+   "clientKey": null,
+   "levels": 12,
+   "sample": [
+    "frontyard_101",
+    "frontyard_117",
+    "frontyard_122",
+    "frontyard_131",
+    "frontyard_140",
+    "frontyard_149",
+    "frontyard_151",
+    "frontyard_156",
+    "frontyard_157",
+    "frontyard_162",
+    "frontyard_163",
+    "frontyard_71"
+   ]
+  },
+  "SkyCityGridItem": {
+   "clientKey": null,
+   "levels": 33,
+   "sample": [
+    "sky_1",
+    "sky_10",
+    "sky_12",
+    "sky_13",
+    "sky_14",
+    "sky_15",
+    "sky_16",
+    "sky_17",
+    "sky_18",
+    "sky_19",
+    "sky_2",
+    "sky_20",
+    "sky_21",
+    "sky_22",
+    "sky_23",
+    "sky_24",
+    "sky_25",
+    "sky_27",
+    "sky_28",
+    "sky_29"
+   ]
+  },
+  "SkyCitySeedBank": {
+   "clientKey": null,
+   "levels": 8,
+   "sample": [
+    "iceage_50",
+    "sky_22",
+    "sky_23",
+    "sky_25",
+    "sky_27",
+    "sky_28",
+    "sky_30",
+    "sky_34"
+   ]
+  },
+  "SkyCityZombieWin": {
+   "clientKey": null,
+   "levels": 15,
+   "sample": [
+    "sky_21",
+    "sky_22",
+    "sky_23",
+    "sky_24",
+    "sky_25",
+    "sky_27",
+    "sky_28",
+    "sky_29",
+    "sky_30",
+    "sky_31",
+    "sky_32",
+    "sky_33",
+    "sky_34",
+    "sky_35",
+    "sky_36"
+   ]
+  },
+  "SkycityBackground": {
+   "clientKey": null,
+   "levels": 36,
+   "sample": [
+    "sky_1",
+    "sky_10",
+    "sky_11",
+    "sky_12",
+    "sky_13",
+    "sky_14",
+    "sky_15",
+    "sky_16",
+    "sky_17",
+    "sky_18",
+    "sky_19",
+    "sky_2",
+    "sky_20",
+    "sky_21",
+    "sky_22",
+    "sky_23",
+    "sky_24",
+    "sky_25",
+    "sky_27",
+    "sky_28"
+   ]
+  },
+  "SkycityMusic": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "sky_54"
+   ]
+  },
+  "SkycityShieldAndHome": {
+   "clientKey": null,
+   "levels": 15,
+   "sample": [
+    "sky_21",
+    "sky_22",
+    "sky_23",
+    "sky_24",
+    "sky_25",
+    "sky_27",
+    "sky_28",
+    "sky_29",
+    "sky_30",
+    "sky_31",
+    "sky_32",
+    "sky_33",
+    "sky_34",
+    "sky_35",
+    "sky_36"
+   ]
+  },
+  "SliderPlacement": {
+   "clientKey": null,
+   "levels": 89,
+   "sample": [
+    "beach_84",
+    "carnival_3",
+    "carnival_4",
+    "carnival_60",
+    "carnival_62",
+    "dark_78",
+    "fairy_10",
+    "fairy_14",
+    "fairy_15",
+    "fairy_17",
+    "fairy_18",
+    "fairy_21",
+    "fairy_22",
+    "fairy_23",
+    "fairy_26",
+    "fairy_44",
+    "fairy_6",
+    "fairy_7",
+    "fairy_8",
+    "fairy_9"
+   ]
+  },
+  "SlowNonDarkPlantCooldown": {
+   "clientKey": null,
+   "levels": 3,
+   "sample": [
+    "chinesegarden_71",
+    "dark_48",
+    "sky_25"
+   ]
+  },
+  "SlowSunDropper": {
+   "clientKey": null,
+   "levels": 13,
+   "sample": [
+    "carnival_37",
+    "carnival_77",
+    "carnival_78",
+    "carnival_81",
+    "frontyard_117",
+    "frontyard_156",
+    "frontyard_72",
+    "frontyard_9",
+    "kongfu_29",
+    "kongfu_82",
+    "lunarrainbowmarket_119",
+    "lunarrainbowmarket_31",
+    "plantagenet_46"
+   ]
+  },
+  "SpawnGravestoneZombiesOnFlagWaves": {
+   "clientKey": null,
+   "levels": 4,
+   "sample": [
+    "carnival_83",
+    "frontyard_144",
+    "frontyard_27",
+    "modern_115"
+   ]
+  },
+  "SpawnHappinessSyntaxEffect": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "frontyard_58"
+   ]
+  },
+  "SpawnerPlacement": {
+   "clientKey": null,
+   "levels": 3,
+   "sample": [
+    "frontyard_124",
+    "frontyard_130",
+    "frontyard_139"
+   ]
+  },
+  "SpawninZombies": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "future_35"
+   ]
+  },
+  "Speakers": {
+   "clientKey": null,
+   "levels": 4,
+   "sample": [
+    "eighties_16",
+    "eighties_17",
+    "eighties_33",
+    "eighties_36"
+   ]
+  },
+  "SpeedyZombies": {
+   "clientKey": null,
+   "levels": 9,
+   "sample": [
+    "dark_71",
+    "dino_57",
+    "egypt_48",
+    "egypt_51",
+    "heian_12",
+    "iceage_55",
+    "modern_37",
+    "modern_45",
+    "sky_27"
+   ]
+  },
+  "SproutOverride": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "dino_51"
+   ]
+  },
+  "SproutPlanting": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "beach_5",
+    "pirate_5"
+   ]
+  },
+  "Stage": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "lostcity_45",
+    "modern_37"
+   ]
+  },
+  "StandardIntro": {
+   "clientKey": null,
+   "levels": 1385,
+   "sample": [
+    "beach_1",
+    "beach_10",
+    "beach_11",
+    "beach_12",
+    "beach_13",
+    "beach_14",
+    "beach_15",
+    "beach_16",
+    "beach_18",
+    "beach_2",
+    "beach_20",
+    "beach_22",
+    "beach_23",
+    "beach_24",
+    "beach_25",
+    "beach_26",
+    "beach_27",
+    "beach_28",
+    "beach_29",
+    "beach_3"
+   ]
+  },
+  "StandardRiftIntro": {
+   "clientKey": null,
+   "levels": 8,
+   "sample": [
+    "beach_21",
+    "dark_32",
+    "dark_49",
+    "frontyard_175",
+    "mausoleum_28",
+    "pirate_14",
+    "pirate_15",
+    "pirate_16"
+   ]
+  },
+  "StarFruit": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "muji_13"
+   ]
+  },
+  "StatuePlacement": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "renai_57"
+   ]
+  },
+  "SteamMiniGameMusic": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "steam_20"
+   ]
+  },
+  "SteamMowers": {
+   "clientKey": null,
+   "levels": 10,
+   "sample": [
+    "steam_14",
+    "steam_17",
+    "steam_18",
+    "steam_20",
+    "steam_22",
+    "steam_26",
+    "steam_33",
+    "steam_34",
+    "steam_35",
+    "steam_36"
+   ]
+  },
+  "SteanMowers": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "steam_25"
+   ]
+  },
+  "Sun": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "egypt_23",
+    "pirate_30"
+   ]
+  },
+  "SunBombs": {
+   "clientKey": null,
+   "levels": 23,
+   "sample": [
+    "carnival_92",
+    "dark_70",
+    "egypt_72",
+    "future_22",
+    "future_27",
+    "future_39",
+    "future_47",
+    "future_51",
+    "future_53",
+    "future_58",
+    "future_6",
+    "future_61",
+    "future_67",
+    "future_69",
+    "kongfu_54",
+    "lunarrainbowmarket_75",
+    "modern_101",
+    "modern_126",
+    "pirate_18",
+    "plantagenet_15"
+   ]
+  },
+  "SunDropper": {
+   "clientKey": null,
+   "levels": 14,
+   "sample": [
+    "dark_70",
+    "egypt_72",
+    "frontyard_38",
+    "future_22",
+    "future_27",
+    "future_39",
+    "future_51",
+    "future_58",
+    "future_61",
+    "future_67",
+    "lunarrainbowmarket_75",
+    "modern_126",
+    "plantagenet_41",
+    "sky_49"
+   ]
+  },
+  "SunGraveStones": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "carnival_48"
+   ]
+  },
+  "SymmetryBondModule": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "carnival_68",
+    "frontyard_126"
+   ]
+  },
+  "TMowers": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "frontyard_80"
+   ]
+  },
+  "TalkwebFog": {
+   "clientKey": null,
+   "levels": 17,
+   "sample": [
+    "frontyard_109",
+    "frontyard_116",
+    "frontyard_13",
+    "frontyard_144",
+    "frontyard_17",
+    "frontyard_21",
+    "frontyard_25",
+    "frontyard_27",
+    "frontyard_31",
+    "frontyard_33",
+    "frontyard_37",
+    "frontyard_44",
+    "frontyard_48",
+    "frontyard_52",
+    "frontyard_56",
+    "frontyard_61",
+    "frontyard_66"
+   ]
+  },
+  "TalkwebPool": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "frontyard_106",
+    "frontyard_152"
+   ]
+  },
+  "TestVaseBreaker": {
+   "clientKey": "vasebreaker",
+   "levels": 1,
+   "sample": [
+    "frontyard_166"
+   ]
+  },
+  "TestingSeedBank": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "beach_68",
+    "egypt_52"
+   ]
+  },
+  "TestingSpawner": {
+   "clientKey": null,
+   "levels": 3,
+   "sample": [
+    "carnival_4",
+    "carnival_63",
+    "egypt_52"
+   ]
+  },
+  "ThunderModule": {
+   "clientKey": null,
+   "levels": 18,
+   "sample": [
+    "chinesegarden_34",
+    "chinesegarden_35",
+    "chinesegarden_36",
+    "chinesegarden_46",
+    "dark_56",
+    "dark_57",
+    "dark_58",
+    "dark_60",
+    "dark_62",
+    "fairy_10",
+    "fairy_12",
+    "fairy_26",
+    "fairy_41",
+    "frontyard_147",
+    "frontyard_66",
+    "kongfu_53",
+    "lostcity_66",
+    "pirate_60"
+   ]
+  },
+  "ThunderModules": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "fairy_17"
+   ]
+  },
+  "ThunderTrigger": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "frontyard_147",
+    "lostcity_66"
+   ]
+  },
+  "Tide": {
+   "clientKey": null,
+   "levels": 77,
+   "sample": [
+    "beach_1",
+    "beach_10",
+    "beach_11",
+    "beach_12",
+    "beach_13",
+    "beach_14",
+    "beach_15",
+    "beach_16",
+    "beach_17",
+    "beach_18",
+    "beach_19",
+    "beach_2",
+    "beach_21",
+    "beach_22",
+    "beach_24",
+    "beach_25",
+    "beach_26",
+    "beach_28",
+    "beach_3",
+    "beach_30"
+   ]
+  },
+  "TonyMowers": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "plantagenet_28",
+    "plantagenet_36"
+   ]
+  },
+  "TrapezeStreetModule": {
+   "clientKey": null,
+   "levels": 30,
+   "sample": [
+    "frontyard_112",
+    "lunarrainbowmarket_10",
+    "lunarrainbowmarket_102",
+    "lunarrainbowmarket_11",
+    "lunarrainbowmarket_12",
+    "lunarrainbowmarket_126",
+    "lunarrainbowmarket_13",
+    "lunarrainbowmarket_14",
+    "lunarrainbowmarket_15",
+    "lunarrainbowmarket_16",
+    "lunarrainbowmarket_17",
+    "lunarrainbowmarket_18",
+    "lunarrainbowmarket_19",
+    "lunarrainbowmarket_2",
+    "lunarrainbowmarket_20",
+    "lunarrainbowmarket_21",
+    "lunarrainbowmarket_22",
+    "lunarrainbowmarket_23",
+    "lunarrainbowmarket_24",
+    "lunarrainbowmarket_25"
+   ]
+  },
+  "Traps": {
+   "clientKey": null,
+   "levels": 6,
+   "sample": [
+    "chinesegarden_48",
+    "future_69",
+    "kongfu_29",
+    "kongfu_41",
+    "kongfu_82",
+    "pirate_65"
+   ]
+  },
+  "Traptile": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "lostcity_46"
+   ]
+  },
+  "TreadmillGeneralZombie3MinModule": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "plantagenet_21"
+   ]
+  },
+  "TriggerPlacement": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "frontyard_67",
+    "frontyard_74"
+   ]
+  },
+  "Tunnels": {
+   "clientKey": null,
+   "levels": 41,
+   "sample": [
+    "mausoleum_10",
+    "mausoleum_11",
+    "mausoleum_12",
+    "mausoleum_13",
+    "mausoleum_14",
+    "mausoleum_15",
+    "mausoleum_16",
+    "mausoleum_17",
+    "mausoleum_18",
+    "mausoleum_19",
+    "mausoleum_20",
+    "mausoleum_21",
+    "mausoleum_22",
+    "mausoleum_23",
+    "mausoleum_25",
+    "mausoleum_26",
+    "mausoleum_27",
+    "mausoleum_29",
+    "mausoleum_30",
+    "mausoleum_31"
+   ]
+  },
+  "TutorialIntro": {
+   "clientKey": null,
+   "levels": 6,
+   "sample": [
+    "frontyard_14",
+    "frontyard_22",
+    "frontyard_28",
+    "frontyard_34",
+    "frontyard_40",
+    "frontyard_41"
+   ]
+  },
+  "TutorialMowers": {
+   "clientKey": null,
+   "levels": 6,
+   "sample": [
+    "carnival_16",
+    "carnival_34",
+    "carnival_35",
+    "frontyard_41",
+    "lunarrainbowmarket_85",
+    "renai_27"
+   ]
+  },
+  "TutorialPeashooterDeath": {
+   "clientKey": null,
+   "levels": 8,
+   "sample": [
+    "egypt_1",
+    "egypt_2",
+    "egypt_3",
+    "frontyard_14",
+    "frontyard_22",
+    "frontyard_28",
+    "frontyard_34",
+    "frontyard_40"
+   ]
+  },
+  "TutorialRails": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "renai_21"
+   ]
+  },
+  "UnrestrictedFusion": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "chinesegarden_37",
+    "frontyard_163"
+   ]
+  },
+  "UnsoddedModule": {
+   "clientKey": null,
+   "levels": 8,
+   "sample": [
+    "frontyard_105",
+    "frontyard_115",
+    "frontyard_118",
+    "frontyard_129",
+    "frontyard_95",
+    "lostcity_20",
+    "lostcity_27",
+    "lostcity_40"
+   ]
+  },
+  "UpsAndDowns": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "lunarrainbowmarket_41"
+   ]
+  },
+  "VaseBreakerArcade": {
+   "clientKey": "vasebreaker",
+   "levels": 46,
+   "sample": [
+    "beach_69",
+    "beach_70",
+    "beach_71",
+    "carnival_66",
+    "carnival_91",
+    "cowboy_33",
+    "cowboy_36",
+    "cowboy_37",
+    "dark_67",
+    "dark_68",
+    "dark_72",
+    "egypt_54",
+    "egypt_57",
+    "egypt_59",
+    "egypt_61",
+    "frontyard_166",
+    "frontyard_167",
+    "frontyard_168",
+    "frontyard_169",
+    "frontyard_170"
+   ]
+  },
+  "VaseBreakerProps": {
+   "clientKey": "vasebreaker",
+   "levels": 46,
+   "sample": [
+    "beach_69",
+    "beach_70",
+    "beach_71",
+    "carnival_66",
+    "carnival_91",
+    "cowboy_33",
+    "cowboy_36",
+    "cowboy_37",
+    "dark_67",
+    "dark_68",
+    "dark_72",
+    "egypt_54",
+    "egypt_57",
+    "egypt_59",
+    "egypt_61",
+    "frontyard_167",
+    "frontyard_168",
+    "frontyard_169",
+    "frontyard_170",
+    "future_37"
+   ]
+  },
+  "VeryFastSunDropper": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "eighties_46",
+    "future_53"
+   ]
+  },
+  "VerySlowSunDropper": {
+   "clientKey": null,
+   "levels": 6,
+   "sample": [
+    "carnival_88",
+    "carnival_90",
+    "kongfu_30",
+    "kongfu_37",
+    "lunarrainbowmarket_31",
+    "pirate_65"
+   ]
+  },
+  "WD": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "pirate_50"
+   ]
+  },
+  "WaveDistributor": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "dark_49",
+    "plantagenet_22"
+   ]
+  },
+  "WaveDuplicator": {
+   "clientKey": null,
+   "levels": 5,
+   "sample": [
+    "carnival_24",
+    "carnival_32",
+    "kongfu_75",
+    "mausoleum_40",
+    "plantagenet_22"
+   ]
+  },
+  "Waves": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "modern_58"
+   ]
+  },
+  "WestMowers": {
+   "clientKey": null,
+   "levels": 26,
+   "sample": [
+    "cowboy_1",
+    "cowboy_11",
+    "cowboy_12",
+    "cowboy_17",
+    "cowboy_2",
+    "cowboy_20",
+    "cowboy_23",
+    "cowboy_24",
+    "cowboy_25",
+    "cowboy_26",
+    "cowboy_27",
+    "cowboy_28",
+    "cowboy_29",
+    "cowboy_3",
+    "cowboy_30",
+    "cowboy_32",
+    "cowboy_35",
+    "cowboy_38",
+    "cowboy_39",
+    "cowboy_4"
+   ]
+  },
+  "WestNightBackgroundEffects": {
+   "clientKey": null,
+   "levels": 11,
+   "sample": [
+    "cowboy_10",
+    "cowboy_12",
+    "cowboy_15",
+    "cowboy_18",
+    "cowboy_21",
+    "cowboy_23",
+    "cowboy_24",
+    "cowboy_25",
+    "cowboy_26",
+    "cowboy_27",
+    "cowboy_28"
+   ]
+  },
+  "WhackAZombieMinigame": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "beach_20"
+   ]
+  },
+  "WhackPuddles": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "beach_20"
+   ]
+  },
+  "WoAiTony": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "lostcity_46"
+   ]
+  },
+  "WorldcupRails": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "renai_21"
+   ]
+  },
+  "Yuanbaos": {
+   "clientKey": null,
+   "levels": 5,
+   "sample": [
+    "lunarrainbowmarket_103",
+    "lunarrainbowmarket_110",
+    "lunarrainbowmarket_122",
+    "lunarrainbowmarket_124",
+    "lunarrainbowmarket_97"
+   ]
+  },
+  "ZCorpMowers": {
+   "clientKey": null,
+   "levels": 39,
+   "sample": [
+    "carnival_1",
+    "carnival_10",
+    "carnival_11",
+    "carnival_12",
+    "carnival_13",
+    "carnival_15",
+    "carnival_17",
+    "carnival_19",
+    "carnival_20",
+    "carnival_21",
+    "carnival_23",
+    "carnival_24",
+    "carnival_25",
+    "carnival_26",
+    "carnival_28",
+    "carnival_29",
+    "carnival_3",
+    "carnival_30",
+    "carnival_31",
+    "carnival_32"
+   ]
+  },
+  "ZP": {
+   "clientKey": null,
+   "levels": 4,
+   "sample": [
+    "frontyard_106",
+    "muji_22",
+    "muji_23",
+    "muji_26"
+   ]
+  },
+  "ZmechGeneralZombie3MinModule": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "plantagenet_22"
+   ]
+  },
+  "ZombieCanCloseThesePeanutsCondition": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "kongfu_53"
+   ]
+  },
+  "ZombieDeathSeedDropModule": {
+   "clientKey": null,
+   "levels": 16,
+   "sample": [
+    "carnival_20",
+    "carnival_28",
+    "carnival_52",
+    "chinesegarden_58",
+    "cowboy_35",
+    "frontyard_101",
+    "frontyard_120",
+    "frontyard_126",
+    "frontyard_146",
+    "frontyard_149",
+    "frontyard_164",
+    "frontyard_165",
+    "frontyard_78",
+    "iceage_70",
+    "muji_30",
+    "pirate_61"
+   ]
+  },
+  "ZombieDistance": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "lostcity_59"
+   ]
+  },
+  "ZombiePortalSpawn": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "carnival_93",
+    "plantagenet_43"
+   ]
+  },
+  "ZombiePotionModule": {
+   "clientKey": null,
+   "levels": 2,
+   "sample": [
+    "plantagenet_15",
+    "plantagenet_17"
+   ]
+  },
+  "ZombiePotions": {
+   "clientKey": null,
+   "levels": 30,
+   "sample": [
+    "carnival_39",
+    "carnival_57",
+    "carnival_63",
+    "dark_11",
+    "dark_20",
+    "dark_27",
+    "dark_31",
+    "dark_32",
+    "dark_35",
+    "dark_71",
+    "eighties_54",
+    "frontyard_15",
+    "future_58",
+    "heian_4",
+    "iceage_52",
+    "iceage_53",
+    "iceage_71",
+    "losantosvice_27",
+    "lunarrainbowmarket_35",
+    "lunarrainbowmarket_67"
+   ]
+  },
+  "ZombieResistances": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "plantagenet_23"
+   ]
+  },
+  "ZombieTime": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "frontyard_75"
+   ]
+  },
+  "ZombieWinCon": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "sky_48"
+   ]
+  },
+  "ZombiesDeadWinCon": {
+   "clientKey": null,
+   "levels": 1698,
+   "sample": [
+    "beach_1",
+    "beach_10",
+    "beach_11",
+    "beach_12",
+    "beach_13",
+    "beach_14",
+    "beach_15",
+    "beach_16",
+    "beach_17",
+    "beach_18",
+    "beach_2",
+    "beach_20",
+    "beach_21",
+    "beach_22",
+    "beach_23",
+    "beach_24",
+    "beach_25",
+    "beach_26",
+    "beach_27",
+    "beach_28"
+   ]
+  },
+  "ZomboniModule": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "frontyard_74"
+   ]
+  },
+  "ZombossBattle": {
+   "clientKey": "boss",
+   "levels": 71,
+   "sample": [
+    "beach_19",
+    "beach_63",
+    "carnival_43",
+    "carnival_93",
+    "chinesegarden_23",
+    "chinesegarden_61",
+    "chinesegarden_65",
+    "chinesegarden_69",
+    "cowboy_2",
+    "cowboy_22",
+    "cowboy_28",
+    "cowboy_29",
+    "dark_24",
+    "dark_25",
+    "dark_55",
+    "dino_37",
+    "dino_42",
+    "egypt_14",
+    "egypt_29",
+    "egypt_37"
+   ]
+  },
+  "ZombossBattle1": {
+   "clientKey": "boss",
+   "levels": 1,
+   "sample": [
+    "fairy_27"
+   ]
+  },
+  "ZombossBattle2": {
+   "clientKey": "boss",
+   "levels": 1,
+   "sample": [
+    "fairy_27"
+   ]
+  },
+  "ZombossIntro": {
+   "clientKey": null,
+   "levels": 58,
+   "sample": [
+    "beach_19",
+    "beach_63",
+    "carnival_43",
+    "carnival_93",
+    "chinesegarden_23",
+    "chinesegarden_61",
+    "chinesegarden_65",
+    "chinesegarden_69",
+    "cowboy_2",
+    "cowboy_22",
+    "cowboy_28",
+    "cowboy_29",
+    "dark_24",
+    "dark_25",
+    "dark_55",
+    "dino_37",
+    "dino_42",
+    "egypt_14",
+    "egypt_29",
+    "egypt_37"
+   ]
+  },
+  "goldtile": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "renai_6"
+   ]
+  },
+  "plantsRollback": {
+   "clientKey": null,
+   "levels": 3,
+   "sample": [
+    "frontyard_117",
+    "frontyard_138",
+    "frontyard_156"
+   ]
+  },
+  "stallias": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "carnival_38"
+   ]
+  },
+  "tutorialGraveStones": {
+   "clientKey": null,
+   "levels": 1,
+   "sample": [
+    "carnival_48"
+   ]
+  }
+ },
+ "nightMismatch": {
+  "count": 13,
+  "sample": [
+   "carnival_30",
+   "dark_52",
+   "dark_53",
+   "dark_54",
+   "dark_56",
+   "dark_57",
+   "dark_58",
+   "dark_59",
+   "dark_60",
+   "dark_61",
+   "dark_62",
+   "plantagenet_47",
+   "renai_12"
+  ]
+ },
+ "totals": {
+  "bossKinds": {
+   "gargantuar": 3,
+   "zomboss": 68
+  },
+  "dataKeys": 2,
+  "flagOnlyKeys": 7,
+  "keys": 15,
+  "levels": 1809,
+  "levelsWithExtra": 1809,
+  "levelsWithoutModules": 4,
+  "metaKeys": 6,
+  "moduleKeys": 8,
+  "nightMismatches": 13,
+  "originalDefinitions": 1809,
+  "originalModuleClasses": 273,
+  "originalModules": 385,
+  "stageVariants": 198,
+  "unknownKeys": 0
+ }
+}

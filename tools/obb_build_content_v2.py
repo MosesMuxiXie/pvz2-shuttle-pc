@@ -23,6 +23,8 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
 from tools import obb_build_content as base  # noqa: E402
+from tools.contentc import plants_merge  # noqa: E402
+from tools.contentc import rails as rail_facts  # noqa: E402
 
 _BASE_LEVEL_TITLE = base._level_title
 
@@ -205,6 +207,213 @@ OBB_DIFFICULTY = {
 }
 
 SPECIAL_FLAGS = ("IsVasebreaker", "IsBeghouled", "IsBowling")
+FLAG_KEYS = ("vasebreaker", "minecarts", "rail", "suppressFlagZombie")
+# `SuppressFlagZombie` sits on the level's WaveManagerProperties object and is a
+# real boolean (true 215 / false 56 over the 1809 shipping levels), so it is
+# derived with "key present" semantics: absent stays absent, false is written.
+SUPPRESS_KEY = "suppressFlagZombie"          # 客户端的键名（camelCase）
+SUPPRESS_FIELD = "SuppressFlagZombie"        # 原版 objdata 上的字段（CamelCase）
+DEFAULT_PATCH_460_9 = ROOT / "native" / "generated" / "patch_460_9.json"
+
+
+def obb_dir() -> Path:
+    """原版表目录：优先 builder 的 ``PKG_DIR``，缺失时退回仓库外的 ``work/obb_packages``。
+
+    ``work/obb_packages`` 是用 ``split_packages.py`` 解出来的中间产物，仓库内不一定
+    有副本；派生 rail/vase 事实时必须能找到它，否则会静默判定「原版没有任何关卡」。
+    """
+    for candidate in (PKG_DIR, rail_facts.DEFAULT_OBB):
+        if candidate.is_dir() and any(candidate.glob("pkg_*_LevelDefinition.json")):
+            return candidate
+    return PKG_DIR
+
+
+def _module_name(raw: object) -> str:
+    """`RTID(DangerRoomIntro@LevelModules)` → `DangerRoomIntro`。
+
+    不能用 ``str.strip("RTID(")``：那是按字符集剥两端，会把 ``DefaultSunDropper``
+    开头的 D 一起吃掉（实测就踩过，得到 ``efaultSunDropper``）。
+    """
+    if not isinstance(raw, str):
+        return ""
+    if "RTID(" in raw:
+        return raw.split("RTID(", 1)[1].split("@", 1)[0]
+    return raw
+
+
+def load_rail_facts(obb_root: Path | None = None) -> dict[str, dict]:
+    """从原版表派生 rail / vase 事实（不看客户端已有标记）。
+
+    `rail` 只在 ``rails.level_verdict`` 判为 functional 时成立
+    （RailcartProperties 带 Railcarts，或 DangerRoomRailcartDesigner 带
+    BaseRailcartCount/Layouts）；decorative / unknown 一律不出标记。
+    `minecarts` 取 ``Railcarts[].Row`` 去重排序后的车道号；DangerRoom 这类
+    「只知道有车、不知道车道」的关只出 rail、不出 minecarts。
+    """
+    facts: dict[str, dict] = {}
+    root = obb_root or obb_dir()
+    for path in sorted(root.glob("pkg_*_LevelDefinition.json")):
+        doc = json.loads(path.read_text(encoding="utf-8-sig"))
+        modules = [_module_name(name) for name in (rail_facts._module_names(doc) or [])]
+        objects: list[dict] = []
+        lanes: set[int] = set()
+        suppress: bool | None = None
+        # 一趟读完：rail 事实只需要类名带 "rail" 的对象，而 suppress 挂在
+        # WaveManagerProperties 上，分开过滤即可共用同一次 JSON 解析。
+        for cls, data in rail_facts._walk(doc):
+            if SUPPRESS_FIELD in data and suppress is None:
+                suppress = _as_bool(data[SUPPRESS_FIELD])
+            if "rail" not in (cls or "").lower():
+                continue
+            objects.append({"class": cls, "fields": sorted(data.keys()), "data": data})
+            for cart in data.get("Railcarts") or []:
+                if isinstance(cart, dict) and cart.get("Row") is not None:
+                    lanes.add(int(cart["Row"]))
+        judged = [dict(obj, verdict=rail_facts.object_verdict(obj)[0]) for obj in objects]
+        facts[rail_facts._package_key(path.name)] = {
+            "modules": modules,
+            "lanes": sorted(lanes),
+            "rail": rail_facts.level_verdict(judged) == "functional",
+            SUPPRESS_KEY: suppress,
+        }
+    return facts
+
+
+def _as_bool(value: object) -> bool:
+    """原版布尔字段偶尔以字符串形式出现（``"true"``/``"false"``），统一归一。"""
+    if isinstance(value, bool):
+        return value
+    if isinstance(value, (int, float)):
+        return bool(value)
+    text = str(value).strip().lower()
+    return text in ("true", "1", "yes")
+
+
+def derive_flags(facts: dict | None) -> dict:
+    """单关 derive：``{vasebreaker: True, rail: True, minecarts: [...], suppressFlagZombie: bool}``。
+
+    缺项即不出标记；``suppressFlagZombie`` 是唯一「值为 false 也要写」的键，
+    因为原版用 false 明确表达「本关不禁旗」，与「根本没这个字段」不是一回事。
+    """
+    if not facts:
+        return {}
+    want: dict[str, object] = {}
+    if any(name in rail_facts.VASE_MODULES for name in facts.get("modules") or ()):
+        want["vasebreaker"] = True
+    if facts.get("rail"):
+        want["rail"] = True
+        lanes = list(facts.get("lanes") or ())
+        if lanes:
+            want["minecarts"] = lanes
+    if facts.get(SUPPRESS_KEY) is not None:
+        want[SUPPRESS_KEY] = bool(facts[SUPPRESS_KEY])
+    return want
+
+
+def apply_rail_flags(level: dict, facts: dict | None) -> None:
+    """把派生事实写进 ``level['extra']``（三个键之外一概不动）。"""
+    want = derive_flags(facts)
+    if not want:
+        return
+    extra = level.setdefault("extra", {})
+    extra.update(want)
+
+
+def load_patch_suppress(patch_path: Path | None = None) -> dict[str, bool]:
+    """从 ``patch_460_9.json`` 的 ``levelFlags`` 读 ``{package: suppressFlagZombie}``。
+
+    这份表由 geometer 的 ``newin4609.py`` 从 460.9 数据编译而来，是本任务之外
+    的独立来源；两边必须逐包一致，否则宁可报错也不许各说各话。
+    """
+    path = patch_path or DEFAULT_PATCH_460_9
+    doc = json.loads(Path(path).read_text(encoding="utf-8"))
+    out: dict[str, bool] = {}
+    for row in doc.get("levelFlags") or []:
+        if not isinstance(row, dict) or SUPPRESS_KEY not in row:
+            continue
+        package = str(row.get("package") or "")
+        if package:
+            out[package] = bool(row[SUPPRESS_KEY])
+    return out
+
+
+def crosscheck_suppress(facts: dict[str, dict], patch_path: Path | None = None) -> list[str]:
+    """把 builder 派生出来的 suppress 集合与 ``patch_460_9.json`` 逐包对照。
+
+    返回差异行（空列表 = 完全一致）。true / false 两个方向都比，避免「总数
+    相同但取值错位」这种假一致。
+    """
+    derived = {package: bool(row[SUPPRESS_KEY])
+               for package, row in facts.items() if row.get(SUPPRESS_KEY) is not None}
+    reference = load_patch_suppress(patch_path)
+    diffs: list[str] = []
+    for package in sorted(set(derived) | set(reference)):
+        mine = derived.get(package)
+        theirs = reference.get(package)
+        if mine != theirs:
+            diffs.append(f"patch4609: {package} derived={mine!r} patch={theirs!r}")
+    if len(derived) != len(reference):
+        diffs.append(f"patch4609: count derived={len(derived)} patch={len(reference)}")
+    return diffs
+
+
+def content_flag_report(levels_dir: Path = LEVELS, obb_root: Path | None = None,
+                        lines: int = 10) -> tuple[dict, list[str]]:
+    """对比 content/levels 上的标记与「从原版重算」的结果。
+
+    返回 (counts, mismatches)；mismatches 是可直接读的 ``id: 差异`` 文本。
+    """
+    facts = load_rail_facts(obb_root)
+    counts = {"levels": 0, "vasebreaker": 0, "minecarts": 0, "rail": 0,
+              "suppressFlag": 0, "suppressFlagTrue": 0, "suppressFlagFalse": 0,
+              "derivedVasebreaker": 0, "derivedMinecarts": 0, "derivedRail": 0,
+              "derivedSuppressFlag": 0, "derivedSuppressFlagTrue": 0,
+              "derivedSuppressFlagFalse": 0}
+    suppress_key = SUPPRESS_KEY
+    mismatches: list[str] = []
+    for path in sorted(levels_dir.glob("*.json")):
+        doc = json.loads(path.read_text(encoding="utf-8"))
+        extra = doc.get("extra") or {}
+        facts_row = facts.get(str(extra.get("package") or "")) or {}
+        want = derive_flags(facts_row)
+        counts["levels"] += 1
+        for key in ("vasebreaker", "minecarts", "rail"):
+            if extra.get(key):
+                counts[key] += 1
+            if want.get(key):
+                counts[f"derived{key.capitalize()}"] += 1
+            have = extra.get(key)
+            if have != want.get(key):
+                mismatches.append(f"{doc.get('id')}: {key} {have!r} -> {want.get(key)!r}")
+        if suppress_key in extra:
+            counts["suppressFlag"] += 1
+            counts["suppressFlag" + ("True" if extra[suppress_key] else "False")] += 1
+        if suppress_key in want:
+            counts["derivedSuppressFlag"] += 1
+            counts["derivedSuppressFlag" + ("True" if want[suppress_key] else "False")] += 1
+        have = extra.get(suppress_key)
+        if have != want.get(suppress_key):
+            mismatches.append(f"{doc.get('id')}: {suppress_key} {have!r} -> {want.get(suppress_key)!r}")
+    mismatches.extend(crosscheck_suppress(facts))
+    return counts, mismatches[: max(1, lines)]
+
+
+
+def build_plants_roster(manual_path: Path | None = None,
+                        pack_path: Path | None = None) -> plants_merge.MergeResult:
+    """构建期植物名册：手工行原样在前 + pack 派生行（``source: "pack"``）在后。
+
+    合并规则与计数都在 `tools/contentc/plants_merge.py` 里，这里只负责把它接到
+    构建流程上——`content/plants.json` 从此是产物，不再是手工维护的文件。
+    """
+    return plants_merge.build(manual_path or plants_merge.DEFAULT_MANUAL,
+                              pack_path or plants_merge.DEFAULT_PACK)
+
+
+def write_plants_roster(result: plants_merge.MergeResult | None = None) -> plants_merge.MergeResult:
+    result = result or build_plants_roster()
+    plants_merge.DEFAULT_MANUAL.write_bytes(plants_merge.render(result.rows))
+    return result
 
 
 def setup_tables():
@@ -383,8 +592,27 @@ def localize_title(od: dict, zh, en) -> str:
     return apply_title_rules(_BASE_LEVEL_TITLE(od, zh, en))
 
 
-def build_levels(zh, en):
-    all_levels = base.load_all_levels()
+def load_all_levels():
+    """读原版关卡对象；`PKG_DIR` 不存在时临时指到 `obb_dir()` 解析出的目录。
+
+    `base.load_all_levels()` 只认模块级 `base.PKG_DIR`，而那个默认路径在本机解析成
+    `<repo>/work/obb_packages`（不存在）。不兜这一下，构建会读到 0 个关卡，接着
+    删掉 content/levels 全部文件再写空 —— 静默清库比数字错更危险。
+    """
+    resolved = obb_dir()
+    if resolved == base.PKG_DIR:
+        return base.load_all_levels()
+    original = base.PKG_DIR
+    base.PKG_DIR = resolved
+    try:
+        return base.load_all_levels()
+    finally:
+        base.PKG_DIR = original
+
+
+def build_levels(zh, en, rail_table: dict | None = None):
+    all_levels = load_all_levels()
+    facts = rail_table if rail_table is not None else load_rail_facts()
     grouped = defaultdict(list)
     unknown = Counter()
     special_counts = Counter()
@@ -416,6 +644,8 @@ def build_levels(zh, en):
                 level = base.synth_level(world, i, pkg_name, obj, zh, en)
                 source = "obb-synth"
             level["extra"]["source"] = source
+            # rail / vasebreaker 一律从原版表派生（手写残留会导致重建即丢失）
+            apply_rail_flags(level, facts.get(str(level["extra"].get("package") or "")))
             stage = level["extra"].get("stage") or ""
             # Boss stages always carry the boss flag, even when the package
             # does not reference a zomboss module directly.
@@ -488,14 +718,56 @@ def build_worldmap_json(worlds) -> dict:
     return {"worlds": out}
 
 
-def main() -> int:
+def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--stars-only", action="store_true",
                     help="only rewrite content/stars.json (levels/worlds untouched)")
     ap.add_argument("--titles-only", action="store_true",
                     help="only localise English titles in existing content/levels/*.json")
-    args = ap.parse_args()
+    ap.add_argument("--content-report", action="store_true",
+                    help="print content/levels flag counts vs the original tables, then exit")
+    ap.add_argument("--plants-only", action="store_true",
+                    help="only rewrite content/plants.json (authored + pack-derived rows)")
+    args = ap.parse_args(argv)
+
+    if args.plants_only:
+        roster = write_plants_roster()
+        rc = roster.counts
+        print(f"plants: {rc['total']} (authored {rc['authored']} + pack {rc['pack']}, "
+              f"conflicts {rc['conflicts']}, packRoster {rc['packRoster']})")
+        return 0
+
+    if args.content_report:
+        counts, mismatches = content_flag_report()
+        parts = [f"levels={counts['levels']}",
+                 f"vasebreaker={counts['vasebreaker']}",
+                 f"minecarts={counts['minecarts']}",
+                 f"rail={counts['rail']}",
+                 f"suppressFlag={counts['suppressFlag']}"
+                 f"(true {counts['suppressFlagTrue']})",
+                 f"derivedVasebreaker={counts['derivedVasebreaker']}",
+                 f"derivedMinecarts={counts['derivedMinecarts']}",
+                 f"derivedRail={counts['derivedRail']}",
+                 f"derivedSuppressFlag={counts['derivedSuppressFlag']}"
+                 f"(true {counts['derivedSuppressFlagTrue']})"]
+        print("content-report: " + " ".join(parts))
+        roster = build_plants_roster()
+        rc = roster.counts
+        on_disk = 0
+        try:
+            on_disk = len(json.loads(plants_merge.DEFAULT_MANUAL.read_text(encoding="utf-8")))
+        except (OSError, ValueError):
+            on_disk = -1
+        print(f"  plants={on_disk} authored={rc['authored']} pack={rc['pack']} "
+              f"conflicts={rc['conflicts']} merged={rc['total']} packRoster={rc['packRoster']}")
+        if mismatches:
+            print(f"mismatches (first {len(mismatches)}):")
+            for line in mismatches:
+                print("  " + line)
+        else:
+            print("mismatches: none")
+        return 0
 
     if args.titles_only:
         changed = 0
