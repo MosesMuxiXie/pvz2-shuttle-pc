@@ -77,6 +77,7 @@ from pathlib import Path
 # to the other compilers (worlds.py owns the repo-root discovery).
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from contentc import rtid, s5scan, worlds  # noqa: E402
+from contentc.portable import portable  # noqa: E402
 
 FORMAT = 1
 GENERATED = "armor-compile-v1"
@@ -742,8 +743,8 @@ def compile_armors(obb_dir: Path | None = None, content_path: Path | None = None
             "armorClassNeedle": ARMOR_CLASS_NEEDLE,
             "zombieTypePackage": ZOMBIE_TYPE_PKG,
             "zombiePropsPackage": ZOMBIE_PROPS_PKG,
-            "content": str(content_path),
-            "obb": str(obb_dir),
+            "content": portable(content_path),
+            "obb": portable(obb_dir),
         },
         "armors": armor_records,
         "zombies": zombies,

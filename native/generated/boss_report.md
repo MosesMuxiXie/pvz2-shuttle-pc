@@ -234,7 +234,7 @@ python tools/contentc/bosses.py --check    # 校验已落盘文件
 
 ## 6. 与 `content/bosses.json` 的对比
 
-来源：`D:/OneDrive/文档/pvz_shuttle/repo/pvz2-shuttle-pc/content/bosses.json`（客户端合成数据）。
+来源：`repo/pvz2-shuttle-pc/content/bosses.json`（客户端合成数据）。
 
 | 世界 | 代表 pack boss | 代表 HP 序列 | 代表 HP 合计 | 该世界全部 mech / 阶段 | 客户端 id | 客户端 HP | 客户端阶段 | HP 差 | 阶段差 |
 |---|---|---|---:|---|---|---:|---:|---:|---:|

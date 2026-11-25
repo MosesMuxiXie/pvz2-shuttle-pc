@@ -21076,6 +21076,6 @@
     "files": 2117,
     "mechProps": "pkg_2112_ZombiePropertySheet.json + level-local @CurrentLevel",
     "mechTypes": "pkg_2115_ZombieType.json",
-    "obb": "D:\\OneDrive\\文档\\pvz_shuttle\\work\\obb_packages"
+    "obb": "work/obb_packages"
   }
 }

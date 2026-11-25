@@ -42026,7 +42026,7 @@
   "canonicalPackage": "pkg_2082_ProjectilePropertySheet.json",
   "canonicalSheet": "ProjectileTypes",
   "embeddedObjclass": "ProjectilePropertySheet",
-  "obb": "D:\\OneDrive\\文档\\pvz_shuttle\\work\\obb_packages"
+  "obb": "work/obb_packages"
  },
  "trajectoryCounts": {
   "arc": 118,

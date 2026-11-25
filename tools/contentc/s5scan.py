@@ -45,6 +45,9 @@ if __package__ in (None, ""):  # allow `python tools/contentc/s5scan.py`
 else:
     from . import worlds  # noqa: E402
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from portable import portable  # noqa: E402
+
 REPO = worlds.REPO
 DEFAULT_OBB = worlds.DEFAULT_OBB
 DEFAULT_PACKAGE_GLOB = "*.json"
@@ -905,7 +908,7 @@ def gaps(obb_dir: Path) -> dict:
     return {
         "format": FORMAT,
         "sources": {
-            "obb": str(obb_dir),
+            "obb": portable(obb_dir),
             "files": manifest.get("files"),
             "packages": manifest.get("packages"),
             "distinctObjclasses": manifest.get("distinctObjclasses"),

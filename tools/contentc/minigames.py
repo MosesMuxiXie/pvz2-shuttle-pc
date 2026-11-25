@@ -43,6 +43,8 @@ import sys
 from collections import Counter
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from portable import portable  # noqa: E402
 ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_LEVELS = ROOT / "content" / "levels"
 DEFAULT_OBB = Path(
@@ -529,8 +531,8 @@ def build(obb_dir: Path, levels_dir: Path):
         "crossChecks": cross,
         "unknowns": unknown_rows,
         "sources": {
-            "obb": str(obb_dir),
-            "levels": str(levels_dir),
+            "obb": portable(obb_dir),
+            "levels": portable(levels_dir),
             "moduleEvidence": "LevelDefinition.Modules[] (pack) — 唯一玩法凭据",
             "idEvidence": "content/levels/*.json extra.package → id",
             "paramEvidence": "关卡包内嵌的 *MinigameProperties / *ChallengeProperties / RailcartProperties",

@@ -97,6 +97,7 @@ from pathlib import Path
 # to the other compilers (worlds.py owns the repo-root discovery).
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from contentc import s5scan, worlds  # noqa: E402
+from contentc.portable import portable  # noqa: E402
 
 FORMAT = 1
 GENERATED = "projectile-compile-v1"
@@ -586,7 +587,7 @@ def compile_projectiles(obb_dir: Path | None = None) -> dict:
             "canonicalPackage": CANONICAL_PKG,
             "canonicalSheet": CANONICAL_SHEET,
             "embeddedObjclass": EMBEDDED_OBJCLASS,
-            "obb": str(obb_dir),
+            "obb": portable(obb_dir),
         },
         "projectiles": records,
     }

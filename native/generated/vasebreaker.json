@@ -8153,8 +8153,8 @@
  "sources": {
   "flag": "content/levels/*.json extra.vasebreaker",
   "levelClass": "LevelDefinition",
-  "levels": "D:\\OneDrive\\文档\\pvz_shuttle\\repo\\pvz2-shuttle-pc\\content\\levels",
-  "obb": "D:\\OneDrive\\文档\\pvz_shuttle\\work\\obb_packages",
+  "levels": "repo/pvz2-shuttle-pc/content/levels",
+  "obb": "work/obb_packages",
   "presetClass": "VaseBreakerPresetProperties"
  },
  "unknowns": [

@@ -253,7 +253,7 @@ synthesized_vasebreaker=42
 | run | tests |
 | --- | --- |
 | audit | 29 |
-| python | 677 |
+| python | 680 |
 | desktop | 38 |
 <!-- /test-counts -->
 ## 恢复轮：护甲接线落地 + 构建环境 blocker（2026-11-23 08:10）

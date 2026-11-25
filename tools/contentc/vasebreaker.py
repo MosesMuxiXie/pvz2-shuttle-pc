@@ -46,6 +46,8 @@ from collections import Counter
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Tuple
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from portable import portable  # noqa: E402
 ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_LEVELS = ROOT / "content" / "levels"
 DEFAULT_OBB = Path(
@@ -462,8 +464,8 @@ def compile_data(levels_dir: Path, obb_dir: Path) -> Dict[str, Any]:
         "format": FORMAT,
         "generated": GENERATED,
         "sources": {
-            "obb": str(obb_dir),
-            "levels": str(levels_dir),
+            "obb": portable(obb_dir),
+            "levels": portable(levels_dir),
             "flag": f"content/levels/*.json extra.{VASE_FLAG}",
             "presetClass": PRESET_CLS,
             "levelClass": LEVEL_CLS,

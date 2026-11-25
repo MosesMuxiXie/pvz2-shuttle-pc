@@ -75,6 +75,7 @@ if str(TOOLS) not in sys.path:
 
 from contentc import s5scan  # noqa: E402
 from contentc import worlds  # noqa: E402
+from contentc.portable import portable  # noqa: E402
 
 REPO = worlds.REPO
 DEFAULT_OBB = worlds.DEFAULT_OBB
@@ -526,7 +527,7 @@ def compile_bosses(obb_dir: Path = DEFAULT_OBB) -> dict:
             "crossWorldMechs": cross_world,
         },
         "sources": {
-            "obb": str(obb_dir),
+            "obb": portable(obb_dir),
             "files": index["files"],
             "battleModule": "ZombossBattleModuleProperties / ZombossRiftBattleModuleProperties",
             "mechTypes": "pkg_2115_ZombieType.json",
@@ -857,7 +858,7 @@ def render_report(data: dict, client_rows: list[dict], client_path: Path = DEFAU
 
     add("## 6. 与 `content/bosses.json` 的对比")
     add("")
-    add("来源：`%s`（客户端合成数据）。" % client_path.as_posix())
+    add("来源：`%s`（客户端合成数据）。" % portable(client_path))
     add("")
     add("| 世界 | 代表 pack boss | 代表 HP 序列 | 代表 HP 合计 | 该世界全部 mech / 阶段 | 客户端 id | 客户端 HP | 客户端阶段 | HP 差 | 阶段差 |")
     add("|---|---|---|---:|---|---|---:|---:|---:|---:|")
