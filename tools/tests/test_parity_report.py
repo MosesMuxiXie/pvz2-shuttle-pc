@@ -16,6 +16,8 @@ sys.path.insert(0, str(REPO))
 
 from tools.parity_report import build_parity_matrix, render_markdown  # noqa: E402
 
+import os
+
 OBB = Path(
     os.environ.get("PVZ2_OBB_DIR") or (REPO.parent.parent / "work" / "obb_packages")
 )

@@ -312,3 +312,19 @@ class CompileTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+# 干净 clone 里没有原版表目录（`work/obb_packages` 不进仓库）：缺目录时整套跳过，
+# 而不是每个用例报 FileNotFoundError。要真跑就设 PVZ2_OBB_DIR 指向解包目录。
+import os as _os
+import unittest as _unittest
+from pathlib import Path as _Path
+
+_obb = _Path(
+    _os.environ.get("PVZ2_OBB_DIR")
+    or (_Path(__file__).resolve().parents[2].parent.parent / "work" / "obb_packages")
+)
+if not _obb.is_dir():
+    for _name, _obj in list(globals().items()):
+        if isinstance(_obj, type) and issubclass(_obj, _unittest.TestCase):
+            setattr(_obj, "__unittest_skip__", True)
+            setattr(_obj, "__unittest_skip_why__", f"缺少原版表目录 {_obb}（设 PVZ2_OBB_DIR）")

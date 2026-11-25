@@ -15,6 +15,8 @@ sys.path.insert(0, str(REPO))
 from tools.contentc.rtid import format_rtid, is_nothing, parse_rtid  # noqa: E402
 from tools.contentc.sheets import SheetIndex, load_sheets, normalize_sheet  # noqa: E402
 
+import os
+
 OBB = Path(
     os.environ.get("PVZ2_OBB_DIR") or (REPO.parent.parent / "work" / "obb_packages")
 )

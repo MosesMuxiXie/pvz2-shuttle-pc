@@ -369,3 +369,14 @@ class CliTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+# 这个模块要靠解出来的美术索引（4.6 GB，不进仓库）：缺了就整类跳过。
+import unittest as _unittest
+from pathlib import Path as _Path
+
+_assets = _Path(__file__).resolve().parents[2].parent.parent / "PvZ2SHUTTLE" / "assets"
+if not _assets.is_dir():
+    for _name, _obj in list(globals().items()):
+        if isinstance(_obj, type) and issubclass(_obj, _unittest.TestCase):
+            setattr(_obj, "__unittest_skip__", True)
+            setattr(_obj, "__unittest_skip_why__", f"缺少美术索引 {_assets}")
