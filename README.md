@@ -100,6 +100,27 @@ exe 自己的参数（`--version` 会打印版本与数据版本）：
 macOS 包为 Windows 交叉组装的通用 `.app`，**未签名、未公证**，首次运行需右键 → 打开；
 或在终端执行 `xattr -dr com.apple.quarantine PvZ2SHUTTLE.app`。
 
+## 原生客户端：从 clone 到能跑
+
+仓库里已经带了**能直接构建运行**的东西：`native/` 源码、`content/`（1809 关数据）、
+`native/generated/`（31 张编译表）、`assets/ui`（中文字体与界面图）。
+
+```bash
+cmake -S native -B build/native -G "Visual Studio 17 2022" -A x64 -DPVZ_ENABLE_DESKTOP=ON
+cmake --build build/native --config Release
+build/native/Release/PvZ2SHUTTLE.exe --menu content --frames 2 --snapshot menu.png
+```
+
+两个**不在仓库里**的前置（体积太大且不随代码分发，缺了不影响构建，只影响对应能力）：
+
+| 前置 | 缺了会怎样 | 怎么补 |
+| --- | --- | --- |
+| `PvZ2SHUTTLE/assets`（约 4.6 GB 美术/音频） | 界面能用，战斗里没有贴图（走占位绘制） | 用 `tools/obb/` 从你自己的 OBB 解出来，设 `PVZ_ASSET_ROOT` 指过去，或放到 exe 同级 `assets/` |
+| `work/obb_packages`（原版表目录，2116 个包） | 测试套件跳过 399 个用例；重新编译 `native/generated/*` 的工具跑不了 | 设 `PVZ2_OBB_DIR` 指向解包目录 |
+
+干净 clone 的测试结论（实测）：不设 `PVZ2_OBB_DIR` → `Ran 630 / OK (skipped=399)`；
+设了 → `Ran 648 / OK (skipped=75)`。全量门禁是 `pwsh -File tools/check_all.ps1`。
+
 ## 从源码运行
 
 仓库**不包含** `assets/`（约 205 MB 的动画/立绘/音轨）以及 APK/OBB/素材原始文件，

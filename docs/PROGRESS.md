@@ -10,8 +10,14 @@
 
 - 版本三元组：游戏 **26.11.1** / 数据 **460.9** / 核心库 **460.11**（`down.pvz2shuttle.cn/manifest.json`）。
   数据包已用官方 `.rsbpatch` 从 460.1 打到 460.9，两跳 MD5 与 manifest 逐字相同。
-- 门禁（静树、严格模式）：`audit 27/27`、`Python 469`、`desktop 36/36`，三项 ledger 一致，
+- 门禁（静树）：`audit 29/29`、`Python 680`、`desktop 38/38`，三项 ledger 一致，
   `[ok] content, build, tests and parity are consistent`，**EXIT=0**。
+- **已进 git 并推送**（`master`，`github.com/MosesMuxiXie/pvz2-shuttle-pc`）：
+  `dcf89cc` 客户端本体（3093 文件）→ `0e26524`/`3964ce1` 产物去绝对路径 →
+  `e8f62cf`/`f35cef2`/`59ccee9` 干净 clone 的前置跳过 →
+  `9d4d670` 确定性戳 → `460d105` content 统一 LF → `dcb4395` portable 尾段回溯。
+  干净 clone 实测：不设 `PVZ2_OBB_DIR` → `Ran 630 / OK (skipped=399)`；
+  设了 → `Ran 648 / OK (skipped=75)`。
 - 32 场景冒烟固定基准，双跑零差异；`--flow` 已能「选关 → 战斗 → 结算 → 写档 → 下一关」闭环。
 
 ## 1. 完成度总表（按系统）
