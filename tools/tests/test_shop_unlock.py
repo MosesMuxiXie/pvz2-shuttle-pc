@@ -71,7 +71,7 @@ class ShippedShopUnlockTests(unittest.TestCase):
         self.assertEqual(self.table["source"], shop_unlock.SOURCE_NAME)
         self.assertEqual(sorted(self.table),
                          ["counts", "format", "generated", "generatedAt", "items", "source"])
-        self.assertRegex(self.table["generatedAt"], r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z$")
+        self.assertRegex(self.table["generatedAt"], r"^sha256:[0-9a-f]{16}$")
 
     def test_585_holds(self) -> None:
         # the task's number has to come out of the file, not out of the task

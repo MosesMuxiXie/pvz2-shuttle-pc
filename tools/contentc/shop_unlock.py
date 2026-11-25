@@ -91,6 +91,7 @@ Honest boundaries
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import re
 import sys
@@ -163,9 +164,15 @@ def world_ids(path: Path) -> dict[str, int | None]:
 
 
 def generated_stamp(source: Path) -> str:
-    """UTC ISO-8601 of the source's mtime — stable, so two runs match byte for byte."""
-    stamp = datetime.fromtimestamp(source.stat().st_mtime, tz=timezone.utc)
-    return stamp.replace(microsecond=0).isoformat().replace("+00:00", "Z")
+    """内容寻址戳：源文件字节的 sha256 前 16 位。
+
+    以前取的是源文件的 **mtime**。mtime 在同一台机器上两次生成确实一致，但 git
+    checkout 不保留 mtime —— 干净 clone 里源文件是「刚检出」的时间，产物里的戳与
+    提交进来的那份不同，`--check` 立刻报「产物过期」。改成按内容算，任何 clone
+    都得到同一个串。
+    """
+    digest = hashlib.sha256(source.read_bytes()).hexdigest()[:16]
+    return f"sha256:{digest}"
 
 
 # --------------------------------------------------------------------------- #

@@ -1,6 +1,6 @@
 # 商店解锁分类（`content/shop.json` → `native/generated/shop_unlock.json`）
 
-由 `tools/contentc/shop_unlock.py` 生成。源 `content/shop.json`（`generatedAt` = 该文件 mtime 的 UTC 时间 `2026-11-10T10:50:18Z`，不是「运行时刻」，所以两次生成逐字节相同）。
+由 `tools/contentc/shop_unlock.py` 生成。源 `content/shop.json`（`generatedAt` = 该文件 mtime 的 UTC 时间 `sha256:dec3ae8a8f29a4a1`，不是「运行时刻」，所以两次生成逐字节相同）。
 
 ```
 python tools/contentc/shop_unlock.py            # 写 json + 本报告

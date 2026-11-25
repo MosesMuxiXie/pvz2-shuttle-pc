@@ -44,6 +44,9 @@ from typing import Iterable, Sequence
 ROOT = Path(__file__).resolve().parents[2]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from portable import portable  # noqa: E402
+
 
 from tools.contentc import emit  # noqa: E402
 import os
@@ -136,13 +139,11 @@ class Compile:
 
 
 def _rel(path: Path) -> str:
-    try:
-        return path.resolve().relative_to(ROOT).as_posix()
-    except ValueError:
-        try:
-            return path.resolve().relative_to(ROOT.parent.parent).as_posix()
-        except ValueError:
-            return path.name
+    # 统一走 portable()：仓库相对 → 工作区相对 → 最后两段。
+    # 以前这里第三个分支写 `path.name`，于是 clone 里把 PVZ2_OBB_DIR 指到本机目录时
+    # 产物里只剩 `pkg_2083_...json`，而同仓库提交的是 `work/obb_packages/pkg_2083_...json`
+    # —— 干净 clone 的「产物是否最新」测试必然红。
+    return portable(path)
 
 
 def load_config(path: Path) -> tuple[list[dict[str, object]], int, int]:
