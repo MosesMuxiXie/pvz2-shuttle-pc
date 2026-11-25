@@ -18,6 +18,7 @@ from __future__ import annotations
 import contextlib
 import io
 import json
+import os
 import re
 import subprocess
 import sys
@@ -31,7 +32,9 @@ if str(REPO) not in sys.path:
 
 from tools.contentc import fusions  # noqa: E402
 
-OBB = REPO.parent.parent / "work" / "obb_packages"
+OBB = Path(
+    os.environ.get("PVZ2_OBB_DIR") or (REPO.parent.parent / "work" / "obb_packages")
+)
 CONTENT = REPO / "content"
 
 # 实测常量：改数据源时必须同步改这里，测试就是用来发现“悄悄变了”的。
@@ -243,3 +246,13 @@ class FusionCliTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
+
+# 干净 clone 里没有 work/obb_packages（原版表目录不进仓库）：缺目录时整套跳过，
+# 而不是每个用例报 FileNotFoundError。想真跑就设 PVZ2_OBB_DIR 指到解包目录。
+if not OBB.is_dir():
+    import unittest as _unittest
+
+    for _name, _obj in list(globals().items()):
+        if isinstance(_obj, type) and issubclass(_obj, _unittest.TestCase):
+            setattr(_obj, "__unittest_skip__", True)
+            setattr(_obj, "__unittest_skip_why__", f"缺少原版表目录 {OBB}（设 PVZ2_OBB_DIR）")
