@@ -16,6 +16,9 @@ import os
 REPO = pathlib.Path(__file__).resolve().parents[2]
 WORKSPACE = REPO.parent.parent
 
+# 尾段回溯时认得的顶层目录：产物里出现的相对串都以这几类开头。
+_TOP_LEVEL = {"work", "content", "native", "tools", "docs", "repo"}
+
 
 def portable(path: os.PathLike[str] | str) -> str:
     """把路径写成工作区相对的 POSIX 串；不在工作区内时退化成最后两段。"""
@@ -29,4 +32,10 @@ def portable(path: os.PathLike[str] | str) -> str:
         except ValueError:
             continue
     parts = resolved.parts
+    # 工作区外的路径（例如在 clone 里把 PVZ2_OBB_DIR 指到另一台机器的工作区）：
+    # 从尾部往上找最后一个已知顶层目录，保证开发树与 clone 得到同一个串
+    # （`work/obb_packages/pkg_x.json`，而不是有时 `obb_packages/pkg_x.json`）。
+    for index in range(len(parts) - 1, max(len(parts) - 4, -1), -1):
+        if parts[index] in _TOP_LEVEL:
+            return pathlib.PurePosixPath(*parts[index:]).as_posix()
     return pathlib.PurePosixPath(*parts[-2:]).as_posix() if len(parts) >= 2 else resolved.name
