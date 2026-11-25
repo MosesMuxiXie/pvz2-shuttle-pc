@@ -54,12 +54,14 @@ class GeneratedArtifactsArePortableTests(unittest.TestCase):
         import sys
 
         sys.path.insert(0, str(REPO / "tools" / "contentc"))
-        from portable import portable, WORKSPACE  # noqa: E402
+        from portable import portable  # noqa: E402
 
         inside = REPO / "native" / "generated"
-        expected = inside.resolve().relative_to(WORKSPACE).as_posix()
-        self.assertEqual(expected, portable(inside))
-        self.assertNotIn(":", portable(inside))
+        # 仓库内优先写仓库相对路径：任何 clone 目录下都得到同一个串。
+        self.assertEqual("native/generated", portable(inside))
+        self.assertEqual("content/levels", portable(REPO / "content" / "levels"))
+        outside = pathlib.Path.home() / "somewhere" / "obb_packages"
+        self.assertEqual("somewhere/obb_packages", portable(outside))
         outside = pathlib.Path.home() / "somewhere" / "obb_packages"
         self.assertEqual("somewhere/obb_packages", portable(outside))
 

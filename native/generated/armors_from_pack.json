@@ -7343,7 +7343,7 @@
   "armorClassNeedle": "ArmorPropertySheet",
   "armorSheet": "ArmorTypes",
   "canonicalPackage": "pkg_0002_ArmorPropertySheetUtils.json",
-  "content": "repo/pvz2-shuttle-pc/content/zombies.json",
+  "content": "content/zombies.json",
   "obb": "work/obb_packages",
   "zombiePropsPackage": "pkg_2112_ZombiePropertySheet.json",
   "zombieTypePackage": "pkg_2115_ZombieType.json"

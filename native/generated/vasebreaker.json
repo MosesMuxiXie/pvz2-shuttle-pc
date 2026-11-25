@@ -8153,7 +8153,7 @@
  "sources": {
   "flag": "content/levels/*.json extra.vasebreaker",
   "levelClass": "LevelDefinition",
-  "levels": "repo/pvz2-shuttle-pc/content/levels",
+  "levels": "content/levels",
   "obb": "work/obb_packages",
   "presetClass": "VaseBreakerPresetProperties"
  },

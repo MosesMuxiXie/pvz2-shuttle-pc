@@ -20,7 +20,10 @@ WORKSPACE = REPO.parent.parent
 def portable(path: os.PathLike[str] | str) -> str:
     """把路径写成工作区相对的 POSIX 串；不在工作区内时退化成最后两段。"""
     resolved = pathlib.Path(path).resolve()
-    for base, prefix in ((WORKSPACE, ""), (REPO, "")):
+    # 先试仓库相对：``content/levels`` 在任何 clone 里都一样，跟工作区布局无关。
+    # 再试工作区相对：开发时 ``work/obb_packages`` 在仓库外的工作区根。
+    # 都不在（例如 clone 里把 PVZ2_OBB_DIR 指到别的机器目录）则只留最后两段。
+    for base in (REPO, WORKSPACE):
         try:
             return (resolved.relative_to(base)).as_posix()
         except ValueError:

@@ -66428,7 +66428,7 @@
  },
  "sources": {
   "idEvidence": "content/levels/*.json extra.package → id",
-  "levels": "repo/pvz2-shuttle-pc/content/levels",
+  "levels": "content/levels",
   "moduleEvidence": "LevelDefinition.Modules[] (pack) — 唯一玩法凭据",
   "obb": "work/obb_packages",
   "paramEvidence": "关卡包内嵌的 *MinigameProperties / *ChallengeProperties / RailcartProperties"
