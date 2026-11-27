@@ -27,6 +27,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 import re
 import sys
 from collections import Counter, defaultdict
@@ -35,7 +36,10 @@ from pathlib import Path
 from typing import Any, Iterable
 
 REPO = Path(__file__).resolve().parents[2]
-DEFAULT_OBB = REPO.parent.parent / "work" / "obb_packages"
+# A clone supplies the pack tree through PVZ2_OBB_DIR (it lives outside the repo).
+DEFAULT_OBB = Path(
+    os.environ.get("PVZ2_OBB_DIR") or (REPO.parent.parent / "work" / "obb_packages")
+)
 DEFAULT_MECHANICS = REPO / "native" / "generated" / "level_mechanics.json"
 DEFAULT_JSON = REPO / "native" / "generated" / "mechanic_entity_resolution.json"
 DEFAULT_REPORT = REPO / "docs" / "reviews" / "2026-11-26-mechanic-entity-resolution.md"
