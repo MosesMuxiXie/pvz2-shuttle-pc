@@ -24,12 +24,17 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 import pathlib
 import sys
 from dataclasses import dataclass, field
 
 REPO = pathlib.Path(__file__).resolve().parents[2]
-DEFAULT_OBB = REPO.parent.parent / "work" / "obb_packages"
+# The pack tree lives outside the repository; a clone gets it via PVZ2_OBB_DIR
+# (same contract as the other content compilers).
+DEFAULT_OBB = pathlib.Path(
+    os.environ.get("PVZ2_OBB_DIR") or (REPO.parent.parent / "work" / "obb_packages")
+)
 DEFAULT_EN = DEFAULT_OBB / "pkg_0231_LawnStringsData.json"
 DEFAULT_ZH = DEFAULT_OBB / "pkg_0232_LawnStringsData.json"
 DEFAULT_JSON = REPO / "native" / "generated" / "lawn_strings.json"

@@ -315,3 +315,16 @@ class NameHygieneTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+# A fresh clone has no pack tree (it lives outside the repository, ~1.4 GB) and no
+# extracted art index; the shipped products are still asserted by the tests that do
+# not need them. Mark the whole module skipped instead of erroring, the same way
+# test_fusions / test_plant_playable do.
+if not (zr.DEFAULT_OBB / "pkg_2115_ZombieType.json").is_file():
+    import unittest as _unittest
+
+    _WHY = "缺少原版表目录 {{}}（设 PVZ2_OBB_DIR）".format(zr.DEFAULT_OBB)
+    for _name, _obj in list(globals().items()):
+        if isinstance(_obj, type) and issubclass(_obj, _unittest.TestCase):
+            setattr(_obj, "__unittest_skip__", True)
+            setattr(_obj, "__unittest_skip_why__", _WHY)

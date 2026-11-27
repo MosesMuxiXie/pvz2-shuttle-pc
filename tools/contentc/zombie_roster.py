@@ -41,6 +41,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 import sys
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -51,7 +52,10 @@ if str(ROOT) not in sys.path:  # allow `python tools/contentc/zombie_roster.py`
 
 from tools.contentc import emit  # noqa: E402
 
-DEFAULT_OBB = ROOT.parent.parent / "work" / "obb_packages"
+# A clone supplies the pack tree through PVZ2_OBB_DIR, like every other compiler.
+DEFAULT_OBB = Path(
+    os.environ.get("PVZ2_OBB_DIR") or (ROOT.parent.parent / "work" / "obb_packages")
+)
 DEFAULT_MECHANICS = ROOT / "native" / "generated" / "level_mechanics.json"
 DEFAULT_MINIGAMES = ROOT / "native" / "generated" / "minigames.json"
 DEFAULT_CLASSES = ROOT / "native" / "generated" / "zombie_classes.json"
