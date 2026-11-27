@@ -12,7 +12,7 @@ public:
     bool available() const override { return false; }
     std::string note() const override { return "audio backend stub: built without SDL (PVZ_ENABLE_DESKTOP=OFF)"; }
 
-    bool playSfx(const std::string&, float) override { return false; }
+    bool playSfx(const std::string&, float, int) override { return false; }
     bool playMusic(const std::string&, bool, float) override { return false; }
     void stopMusic() override {}
     void stopAll() override {}

@@ -86,10 +86,10 @@ public:
     bool available() const override { return available_; }
     std::string note() const override { return note_; }
 
-    bool playSfx(const std::string& sound, float gain) override {
+    bool playSfx(const std::string& sound, float gain, int priority) override {
         if (!available_) return false;
         const AudioClip* clip = load(sound);
-        return clip != nullptr && mixer_.playSfx(*clip, gain);
+        return clip != nullptr && mixer_.playSfx(*clip, gain, priority);
     }
 
     bool playMusic(const std::string& sound, bool loop, float gain) override {

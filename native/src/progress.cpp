@@ -261,6 +261,60 @@ StarOutcome evaluateStars(const std::vector<StarGoal>& goals, const engine::Worl
   return evaluateStars(goals, outcomeOf(world));
 }
 
+bool AudioSettings::operator==(const AudioSettings& other) const {
+  return master == other.master && music == other.music && sfx == other.sfx &&
+         muted == other.muted;
+}
+
+bool AudioSettings::isDefault() const { return *this == AudioSettings{}; }
+
+bool RewardLogEntry::operator==(const RewardLogEntry& other) const {
+  return kind == other.kind && id == other.id && amount == other.amount;
+}
+
+void sortUniqueRewardLog(std::vector<RewardLogEntry>& log) {
+  // Order is (kind, id, amount), the same order `progressToJson` writes them in, so a loaded save
+  // and a freshly landed one serialize to the same bytes.
+  std::sort(log.begin(), log.end(), [](const RewardLogEntry& a, const RewardLogEntry& b) {
+    if (a.kind != b.kind) return a.kind < b.kind;
+    if (a.id != b.id) return a.id < b.id;
+    return a.amount < b.amount;
+  });
+  log.erase(std::unique(log.begin(), log.end()), log.end());
+}
+
+AudioSettings clampAudioSettings(AudioSettings settings) {
+  const auto clamp = [](int value) { return std::clamp(value, 0, 100); };
+  settings.master = clamp(settings.master);
+  settings.music = clamp(settings.music);
+  settings.sfx = clamp(settings.sfx);
+  return settings;
+}
+
+Json audioSettingsJson(const AudioSettings& settings) {
+  const AudioSettings clean = clampAudioSettings(settings);
+  Json json = Json::object();
+  json["master"] = clean.master;
+  json["music"] = clean.music;
+  json["sfx"] = clean.sfx;
+  json["muted"] = clean.muted;
+  return json;
+}
+
+AudioSettings readAudioSettings(const Json& json) {
+  // One member at a time: a save that only remembers `master` keeps its other two defaults rather
+  // than failing as a whole, which is what lets an older file stay readable.
+  AudioSettings settings;
+  if (!json.is_object()) return settings;
+  settings.master = intOr(json, "master", settings.master);
+  settings.music = intOr(json, "music", settings.music);
+  settings.sfx = intOr(json, "sfx", settings.sfx);
+  if (const auto muted = json.find("muted"); muted != json.end() && muted->is_boolean()) {
+    settings.muted = muted->get<bool>();
+  }
+  return clampAudioSettings(settings);
+}
+
 Progress parseProgress(const Json& json, const std::string& origin) {
   if (!json.is_object()) {
     fail(origin, "top level must be an object");
@@ -297,6 +351,12 @@ Progress parseProgress(const Json& json, const std::string& origin) {
         progress.settings.emplace(name, value);
       }
     }
+  }
+  if (const auto audio = json.find("audio"); audio != json.end()) {
+    // A save from before the settings screen simply has no block; a present-but-wrong one (an
+    // array, a string) is ignored the same way, because refusing to load the whole save would
+    // cost the player every star over a volume preference.
+    progress.audio = readAudioSettings(*audio);
   }
   if (const auto purchases = json.find("purchases");
       purchases != json.end() && purchases->is_array()) {
@@ -337,6 +397,47 @@ Progress parseProgress(const Json& json, const std::string& origin) {
     std::sort(progress.trophies.begin(), progress.trophies.end());
     progress.trophies.erase(std::unique(progress.trophies.begin(), progress.trophies.end()),
                             progress.trophies.end());
+  }
+  // `unlockedPlants` and `rewardLog` are the reward-landing fields. A save written before they
+  // existed simply has no such key, and an entry of the wrong shape is skipped rather than
+  // failing the whole save: an old save must stay readable.
+  if (const auto plants = json.find("unlockedPlants");
+      plants != json.end() && plants->is_array()) {
+    for (const Json& entry : *plants) {
+      if (!entry.is_string()) continue;
+      const std::string id = entry.get<std::string>();
+      if (id.empty()) continue;
+      progress.unlockedPlants.push_back(id);
+    }
+    std::sort(progress.unlockedPlants.begin(), progress.unlockedPlants.end());
+    progress.unlockedPlants.erase(
+        std::unique(progress.unlockedPlants.begin(), progress.unlockedPlants.end()),
+        progress.unlockedPlants.end());
+  }
+  // B1 (T90): the per-plant battle levels. A save written before the field existed has no such key,
+  // and one entry of the wrong shape is skipped rather than failing the whole save - the same policy
+  // the two landing fields above follow. An explicit 1 is kept: it is what the player asked for, and
+  // keeping it is what makes load/save/load stable instead of silently dropping keys.
+  if (const auto levels = json.find("plantLevels");
+      levels != json.end() && levels->is_object()) {
+    for (auto entry = levels->begin(); entry != levels->end(); ++entry) {
+      if (!entry.value().is_number_integer() && !entry.value().is_number_unsigned()) continue;
+      const int level = entry.value().get<int>();
+      if (level < 1) continue;
+      progress.plantLevels[entry.key()] = level;
+    }
+  }
+  if (const auto log = json.find("rewardLog"); log != json.end() && log->is_array()) {
+    for (const Json& entry : *log) {
+      if (!entry.is_object()) continue;
+      RewardLogEntry row;
+      row.kind = entry.value("kind", std::string());
+      row.id = entry.value("id", std::string());
+      row.amount = intOr(entry, "amount", 0);
+      if (row.kind.empty() && row.id.empty()) continue;
+      progress.rewardLog.push_back(std::move(row));
+    }
+    sortUniqueRewardLog(progress.rewardLog);
   }
   const auto levels = json.find("levels");
   if (levels != json.end()) {
@@ -420,6 +521,12 @@ Json progressToJson(const Progress& progress) {
     }
     json["settings"] = std::move(settings);
   }
+  if (!progress.audio.isDefault()) {
+    // Written only when the player changed something, for the same reason the counters above are:
+    // a save that never touched the settings screen stays byte-identical, so the existing
+    // whole-file comparisons keep working.
+    json["audio"] = audioSettingsJson(progress.audio);
+  }
   Json purchases = Json::array();
   for (const std::string& id : progress.purchases) {
     purchases.push_back(id);
@@ -437,6 +544,32 @@ Json progressToJson(const Progress& progress) {
       trophies.push_back(id);
     }
     json["trophies"] = std::move(trophies);
+  }
+  // Both landing fields are written only when they hold something, which is what keeps a save
+  // written before they existed byte-identical through a load/save round trip.
+  if (!progress.unlockedPlants.empty()) {
+    Json plants = Json::array();
+    for (const std::string& id : progress.unlockedPlants) {
+      plants.push_back(id);
+    }
+    json["unlockedPlants"] = std::move(plants);
+  }
+  // B1 (T90): written only when a plant actually fights above level 1, for the same reason the
+  // counters above are conditional - a save that never raised one stays byte-identical. The map is
+  // ordered, and a JSON object is emitted in key order, so the bytes do not depend on insertion.
+  if (!progress.plantLevels.empty()) {
+    Json levels = Json::object();
+    for (const auto& [type, level] : progress.plantLevels) {
+      levels[type] = level;
+    }
+    json["plantLevels"] = std::move(levels);
+  }
+  if (!progress.rewardLog.empty()) {
+    Json log = Json::array();
+    for (const RewardLogEntry& entry : progress.rewardLog) {
+      log.push_back(Json{{"kind", entry.kind}, {"id", entry.id}, {"amount", entry.amount}});
+    }
+    json["rewardLog"] = std::move(log);
   }
   if (!progress.lastLevel.empty()) {
     json["lastLevel"] = progress.lastLevel;

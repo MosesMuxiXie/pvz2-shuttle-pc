@@ -7,6 +7,7 @@
 #include "catalog.hpp"
 #include "engine/plantfood.hpp"
 #include "engine/replay.hpp"
+#include "engine/spawn_offsets.hpp" // C4: spawnOffsetsApplied() for --run-level
 #include "flow.hpp"
 #include "progress.hpp"
 #include "rewards.hpp"
@@ -23,6 +24,14 @@
 #include "level_select_view.hpp"
 #include "menu_view.hpp"
 #include "worldmap_view.hpp"
+// A/B/C: the meta screens. Each is a `render*Headless()` call whose JSON the CLI prints verbatim,
+// so a screenshot and a line of text always describe the same frame.
+#include "achievements_view.hpp"
+#include "almanac_view.hpp"
+#include "daily_view.hpp"
+#include "garden_view.hpp"
+#include "settings_view.hpp"
+#include "shop_view.hpp"
 #endif
 #include <iostream>
 #include <vector>
@@ -89,7 +98,19 @@ int run(const std::vector<fs::path>& args) {
                          "directory> --world <id> [--progress <file>] [--assets <dir>] "
                          "[--snapshot <out.png>] [--frames <n>]\n  --flow <content directory> [--pack "
                          "<pack>] [--boards <json>] [--progress <file>] [--script <file>] [--seconds "
-                         "<n>] [--assets <dir>]\n";
+                         "<n>] [--assets <dir>]\n  --almanac <content directory> [--kind plant|zombie] "
+                         "[--index <n>] [--progress <file>] [--assets <dir>] [--snapshot <out.png>] "
+                         "[--frames <n>]\n  --garden <content directory> [--assets <dir>] [--snapshot "
+                         "<out.png>] [--frames <n>]\n  --achievements <content directory> [--progress "
+                         "<file>] [--metagame <json>] [--page <n>] [--assets <dir>] [--snapshot <out.png>] "
+                         "[--frames <n>]\n  --daily <content directory> [--metagame <json>] [--page <n>] "
+                         "[--assets <dir>] [--snapshot <out.png>] [--frames <n>]\n  --rewards-report <content directory> "
+                         "[--progress <file>] [--land-constants] [--land-rift]\n  --settings <content "
+                         "directory> [--progress <file>] [--assets <dir>] [--snapshot <out.png>] "
+                         "[--frames <n>]\n  --shop-screen <content directory> [--progress <file>] "
+                         "[--page <tab>] [--index <row>] [--assets <dir>] [--snapshot <out.png>] "
+                         "[--frames <n>]\n  --menu <content directory> [--progress <file>] [--level "
+                         "<id>] [--snapshot <out.png>] [--frames <n>]\n";
             return 0;
         }
         if (args.size() == 4 && args[1] == "--import-python-save") {
@@ -208,6 +229,9 @@ int run(const std::vector<fs::path>& args) {
             std::optional<int> cols;
             double seconds = 600;
             pvz::engine::WorldOptions worldOptions;
+            // B1 (T90): the plant levels this run asks for, `--set-plant-level id=n` per plant. The
+            // sheet's cap is applied by the world, so this map is the request, not the outcome.
+            std::map<std::string, int> plantLevels;
             const std::string levelId = pvz::pathUtf8(args[3]);
             for (std::size_t i = 4; i < args.size(); ++i) {
                 const auto& flag = pvz::pathUtf8(args[i]);
@@ -238,6 +262,23 @@ int run(const std::vector<fs::path>& args) {
                     // S6.0: fold the finished battle into a save file. Optional on purpose:
                     // without it this command prints exactly what it printed before S6.
                     progressPath = args[++i];
+                } else if (flag == "--set-plant-level" && i + 1 < args.size()) {
+                    // B1 (T90): the one explicit way a plant level reaches this build - no drops, no
+                    // shop, no UI this round. Repeatable, `<plant id>=<level>`. A malformed pair is a
+                    // usage error rather than a silently ignored flag.
+                    const std::string spec = pvz::pathUtf8(args[++i]);
+                    const std::size_t equals = spec.find('=');
+                    if (equals == std::string::npos || equals == 0 || equals + 1 >= spec.size()) {
+                        throw std::runtime_error(
+                            "--set-plant-level takes <plant id>=<level>, got: " + spec);
+                    }
+                    const std::string type = spec.substr(0, equals);
+                    const int requested = std::stoi(spec.substr(equals + 1));
+                    if (requested < 1) {
+                        throw std::runtime_error(
+                            "--set-plant-level needs a level of at least 1, got: " + spec);
+                    }
+                    plantLevels[type] = requested;
                 } else {
                     throw std::runtime_error("unknown --run-level option: " + flag);
                 }
@@ -258,6 +299,7 @@ int run(const std::vector<fs::path>& args) {
             if (cols) level.cols = *cols;
             pvz::engine::Script script;
             if (scriptPath) script = pvz::engine::loadScript(*scriptPath);
+            worldOptions.plantLevels = plantLevels;
             pvz::engine::World world(c, level, script.seed, worldOptions);
             pvz::engine::runScript(world, script, seconds);
             // The boss keys belong to --run-level only, so they are added here instead of in
@@ -275,6 +317,13 @@ int run(const std::vector<fs::path>& args) {
             summary["conveyorCards"] = world.conveyorCards();
             summary["initialPlants"] = static_cast<int>(world.initialPlantsLaid());
             summary["gridItems"] = static_cast<int>(world.gridItemsSpawned());
+            // C4: how many shots this battle spawned from a plant whose `SpawnOffset.y` is
+            // non-zero - i.e. how many projectile draws the view lifts. Printed only when it is
+            // non-zero, so a level without such a plant keeps exactly the keys it had before this
+            // patch (the smoke baseline compares output, not only the state hash).
+            if (const std::size_t lifted = pvz::engine::spawnOffsetsApplied(); lifted > 0) {
+                summary["spawnOffsetsApplied"] = lifted;
+            }
             summary["protectedPlants"] = world.protectedPlantCount();
             summary["protectFailures"] = world.protectFailures();
             // T59: printed only for levels that carry a protect mission, so every other level's
@@ -297,6 +346,47 @@ int run(const std::vector<fs::path>& args) {
                 }
                 summary["mechanicWired"] = std::move(wired);
             }
+            // A1 (T80): the vasebreaker tally, printed only on the levels that opened with vases -
+            // the other ~1760 levels keep exactly the keys they had before this patch.
+            if (world.vasebreaker()) {
+                const pvz::engine::World::VaseTally& tally = world.vaseTally();
+                summary["vasebreaker"] =
+                    pvz::Json{{"total", tally.total},   {"broke", tally.broke},
+                              {"plants", tally.plants}, {"zombies", tally.zombies},
+                              {"collectibles", tally.collectibles}, {"sun", tally.sun}};
+            }
+            // S3/A2: the minecart tally, printed only on the levels that declare a track - the
+            // other levels keep exactly the keys they had before this patch.
+            if (world.railLevel()) {
+                summary["rail"] = pvz::Json{{"carts", static_cast<int>(world.railCarts().size())},
+                                            {"movedCols", static_cast<int>(world.railMovedColumns())},
+                                            {"hits", static_cast<int>(world.railHits())}};
+            }
+            // B1 (T90): what the level request actually became, after the sheet's own cap. Printed
+            // only where something really rose above level 1, so a run without
+            // `--set-plant-level` keeps exactly the keys it had before this patch.
+            if (!world.plantLevelsApplied().empty()) {
+                pvz::Json applied = pvz::Json::object();
+                for (const auto& [type, requested] : world.plantLevelsApplied()) {
+                    applied[type] = requested;
+                }
+                summary["plantLevelsApplied"] = std::move(applied);
+            }
+            // T88: the three mechanics this wave wired, each printed only where the level really
+            // carries it, so the other ~1770 levels keep exactly the keys they had before.
+            if (mechanics != nullptr && !mechanics->events.tide.empty()) {
+                summary["tideColumn"] = world.tideColumn();
+                summary["tideChanges"] = world.tideChanges();
+            }
+            if (mechanics != nullptr && !mechanics->events.frost.empty()) {
+                summary["frostWinds"] = world.frostWinds();
+            }
+            if (mechanics != nullptr && mechanics->hasSunCap()) {
+                summary["sunCap"] = world.sunCap();
+            }
+            if (mechanics != nullptr && mechanics->hasBoardGrid()) {
+                summary["boardGridMarked"] = world.boardGridMarkedCells();
+            }
             pvz::Json unknown = pvz::Json::array();
             for (const auto& [kind, count] : world.mechanicUnknown()) {
                 unknown.push_back(pvz::Json{{"kind", kind}, {"count", count},
@@ -316,6 +406,12 @@ int run(const std::vector<fs::path>& args) {
             if (progressPath) {
                 stars = pvz::loadStarTable(args[2] / "stars.json");
                 progress = pvz::loadProgress(*progressPath);
+                // B1 (T90): the save carries the levels this run actually fought at, so the next
+                // battle keeps them without the flag. Anything the world clamped is written as
+                // clamped - the save must not claim a level the sheet does not have.
+                for (const auto& [type, requested] : world.plantLevelsApplied()) {
+                    progress.plantLevels[type] = requested;
+                }
                 // The key gate is read from the save the player brought in, so clearing egypt_3
                 // unlocks the key rows from the next battle rather than during this one.
                 const bool keyGate = pvz::keysUnlocked(progress);
@@ -343,6 +439,13 @@ int run(const std::vector<fs::path>& args) {
                 }
                 summary["rewardUnmodelled"] = std::move(unmodelledRewards);
                 pvz::addRewardReceipt(summary, rewardGained, pvz::RewardTable::shared());
+                // B2: the rows a battle can never reach — first-clear plant/costume unlocks, rift
+                // payouts, economy constants — are landed in one idempotent pass, so the save owns
+                // the roster the pack ships. Same policy as `--rewards-report` with no opt-in: the
+                // constants are prices and the rift payouts have no rift mode, so neither pays.
+                const pvz::RewardLanding landed =
+                    pvz::landRewards(progress, pvz::RewardTable::shared());
+                pvz::addLandingReceipt(summary, landed);
             }
             std::cout << summary.dump() << '\n';
             if (progressPath) {
@@ -355,6 +458,45 @@ int run(const std::vector<fs::path>& args) {
                                      .count();
                 pvz::saveProgress(*progressPath, progress, now);
                 std::cout << pvz::progressReport(progress, *stars).dump() << '\n';
+            }
+            return 0;
+        }
+        if (args.size() >= 3 && args[1] == "--rewards-report") {
+            // B2: what the shipped reward table still owes a save, and what it cannot pay. The
+            // battle path only settles kill-period loot, the lunch box and the seed bag; the 438
+            // rows counted by `unlandedRows()` are level first-clear rewards, rift payouts, gift
+            // boxes and economy constants. A row does not name the level that grants it, so this is
+            // a table-wide pass, and it is idempotent: the second run reports what it already owned.
+            std::optional<fs::path> progressPath;
+            pvz::LandingOptions landing;
+            for (std::size_t i = 3; i < args.size(); ++i) {
+                const std::string flag = pvz::pathUtf8(args[i]);
+                if (flag == "--progress" && i + 1 < args.size()) {
+                    progressPath = args[++i];
+                } else if (flag == "--land-constants") {
+                    // `constant:CoinsPerKey = 1000` is the price of a key, not 1000 coins. Paying the
+                    // four constant rows needs this explicit ask.
+                    landing.landEconomyConstants = true;
+                } else if (flag == "--land-rift") {
+                    // The 26 rift coin rows belong to a mode this client does not have.
+                    landing.landRiftPayouts = true;
+                } else {
+                    throw std::runtime_error("unknown --rewards-report option: " + flag);
+                }
+            }
+            pvz::Progress progress;
+            if (progressPath) progress = pvz::loadProgress(*progressPath);
+            const pvz::RewardLanding report =
+                pvz::landRewards(progress, pvz::RewardTable::shared(), landing);
+            // stdout keeps the one-line contract object; the census that explains it goes to stderr
+            // so a caller that pipes stdout into a JSON parser never sees two documents.
+            std::cout << report.json().dump() << '\n';
+            std::cerr << "detail: " << report.detail().dump() << '\n';
+            if (progressPath) {
+                const auto now = std::chrono::duration_cast<std::chrono::seconds>(
+                                     std::chrono::system_clock::now().time_since_epoch())
+                                     .count();
+                pvz::saveProgress(*progressPath, progress, now);
             }
             return 0;
         }
@@ -650,6 +792,109 @@ if (args.size() >= 3 && args[1] == "--worldmap-screen") {
             throw std::runtime_error("desktop support is disabled; rebuild with -DPVZ_ENABLE_DESKTOP=ON");
 #endif
         }
+        if (args.size() >= 3 && (args[1] == "--almanac" || args[1] == "--garden" ||
+                                 args[1] == "--achievements" || args[1] == "--daily" ||
+                                 args[1] == "--settings" || args[1] == "--shop-screen")) {
+            // The six meta screens, same contract as every other screen command: one flag, one
+            // headless entry point, one JSON line, optional `--snapshot`. They read the generated
+            // tables through `generatedTable()`, so an installed tree (generated/ next to content/)
+            // and a source checkout (native/generated/) both work.
+            const fs::path content = args[2];
+#ifdef PVZ_ENABLE_DESKTOP
+            const std::string screen = pvz::pathUtf8(args[1]);
+            fs::path assetRoot;
+            fs::path progressPath;
+            fs::path snapshot;
+            fs::path metagame;
+            std::string kind = "plant";
+            int index = 0;
+            int page = 0;
+            int frames = 0;
+            for (std::size_t i = 3; i < args.size(); ++i) {
+                const auto& flag = pvz::pathUtf8(args[i]);
+                const auto value = [&](const char* what) -> fs::path {
+                    if (i + 1 >= args.size())
+                        throw std::runtime_error(std::string(what) + " needs a value");
+                    return args[++i];
+                };
+                if (flag == "--progress") {
+                    progressPath = value("--progress");
+                } else if (flag == "--assets") {
+                    assetRoot = value("--assets");
+                } else if (flag == "--snapshot") {
+                    snapshot = value("--snapshot");
+                } else if (flag == "--frames") {
+                    frames = std::stoi(pvz::pathUtf8(value("--frames")));
+                } else if (flag == "--page") {
+                    page = std::stoi(pvz::pathUtf8(value("--page")));
+                } else if (flag == "--metagame") {
+                    metagame = value("--metagame");
+                } else if (flag == "--kind" && screen == "--almanac") {
+                    kind = pvz::pathUtf8(value("--kind"));
+                } else if (flag == "--index" && screen == "--almanac") {
+                    index = std::stoi(pvz::pathUtf8(value("--index")));
+                } else {
+                    throw std::runtime_error("unknown " + screen + " option: " + flag);
+                }
+            }
+            if (assetRoot.empty()) {
+                for (const fs::path& candidate :
+                     {fs::current_path() / "PvZ2SHUTTLE" / "assets", fs::current_path() / "assets"}) {
+                    if (fs::is_regular_file(candidate / "ui/font_zh.ttc")) {
+                        assetRoot = candidate;
+                        break;
+                    }
+                }
+            }
+            const fs::path table =
+                metagame.empty() ? generatedTable(content, "metagame.json") : metagame;
+            pvz::Json out;
+            if (screen == "--almanac") {
+                out = pvz::renderAlmanacHeadless(content, kind, index, frames, snapshot,
+                                                 progressPath, assetRoot);
+            } else if (screen == "--garden") {
+                out = pvz::renderGardenHeadless(content, frames, snapshot, assetRoot);
+            } else if (screen == "--achievements") {
+                const pvz::meta::AchievementsModel model = fs::is_regular_file(table)
+                                                         ? pvz::meta::AchievementsModel::load(table)
+                                                         : pvz::meta::AchievementsModel::loadShipped();
+                pvz::meta::AchievementsOptions options;
+                options.assetRoot = assetRoot;
+                options.progressFile = progressPath;
+                options.snapshot = snapshot;
+                options.frames = frames;
+                options.page = page;
+                options.metagame = table;
+                out = pvz::meta::renderAchievementsHeadless(model, options);
+            } else if (screen == "--daily") {
+                const pvz::meta::DailyModel model = fs::is_regular_file(table)
+                                                  ? pvz::meta::DailyModel::load(table)
+                                                  : pvz::meta::DailyModel::loadShipped();
+                pvz::meta::DailyOptions options;
+                options.assetRoot = assetRoot;
+                options.snapshot = snapshot;
+                options.frames = frames;
+                options.page = page;
+                out = pvz::meta::renderDailyHeadless(model, options);
+            } else if (screen == "--shop-screen") {
+                // Preview only: `renderShopHeadless` never writes the save, which is what makes it
+                // safe to run in the gate. `--page` picks the tab, `--index` the cursor row. The
+                // screen loads `shop_unlock.json` through `generatedDir()` itself, so there is no
+                // table to pre-check here; a missing one comes back as its own error message.
+                out = pvz::renderShopHeadless(content, progressPath, frames, snapshot, page, index);
+            } else {
+                // Settings: the screen applies the values to the process-wide mixer itself; this
+                // command only reports them. Persisting belongs to `--menu`, which owns a save.
+                const pvz::Progress progress =
+                    progressPath.empty() ? pvz::Progress{} : pvz::loadProgress(progressPath);
+                out = pvz::renderSettingsHeadless(assetRoot, frames, snapshot, progress.audio);
+            }
+            std::cout << out.dump() << '\n';
+            return 0;
+#else
+            throw std::runtime_error("desktop support is disabled; rebuild with -DPVZ_ENABLE_DESKTOP=ON");
+#endif
+        }
         if (args.size() >= 3 && (args[1] == "--menu" || args[1] == "--level-select")) {
             // S4: the two screens that close the chain "menu -> world map -> level list -> battle".
             // Both sit behind the desktop guard for the same reason `--worldmap-screen` does: the
@@ -724,7 +969,71 @@ if (args.size() >= 3 && args[1] == "--worldmap-screen") {
                 options.progressFile = progressPath;
                 options.snapshot = snapshot;
                 options.frames = frames;
-                const pvz::MenuResult result = pvz::runMainMenu(catalog, progress, options);
+                // The menu is a loop, not a one-shot: the meta screens live behind it, and coming
+                // back to the menu is what the player expects after closing the almanac. Headless
+                // runs (`frames > 0`) never enter that loop's screens - they report what Enter
+                // would have picked and stop, which is what the render test asserts.
+                pvz::MenuResult result = pvz::runMainMenu(catalog, progress, options);
+                while (frames == 0) {
+                    if (result.choice == pvz::MenuChoice::almanac) {
+                        pvz::renderAlmanacHeadless(content, "plant", 0, 0, {}, progressPath,
+                                                   assetRoot);
+                    } else if (result.choice == pvz::MenuChoice::garden) {
+                        pvz::renderGardenHeadless(content, 0, {}, assetRoot);
+                    } else if (result.choice == pvz::MenuChoice::achievements ||
+                               result.choice == pvz::MenuChoice::daily) {
+                        const fs::path table = generatedTable(content, "metagame.json");
+                        const bool achievements = result.choice == pvz::MenuChoice::achievements;
+                        if (achievements) {
+                            const pvz::meta::AchievementsModel model =
+                                fs::is_regular_file(table) ? pvz::meta::AchievementsModel::load(table)
+                                                           : pvz::meta::AchievementsModel::loadShipped();
+                            pvz::meta::AchievementsOptions screen;
+                            screen.assetRoot = assetRoot;
+                            screen.progressFile = progressPath;
+                            screen.metagame = table;
+                            pvz::meta::renderAchievementsHeadless(model, screen);
+                        } else {
+                            const pvz::meta::DailyModel model =
+                                fs::is_regular_file(table) ? pvz::meta::DailyModel::load(table)
+                                                           : pvz::meta::DailyModel::loadShipped();
+                            pvz::meta::DailyOptions screen;
+                            screen.assetRoot = assetRoot;
+                            pvz::meta::renderDailyHeadless(model, screen);
+                        }
+                    } else if (result.choice == pvz::MenuChoice::shop) {
+                        // The shop is the second screen that can write the save: `runShop` calls
+                        // `pvz::shop::purchase()` and persists only when a progress path is set.
+                        pvz::ShopScreenOptions screen;
+                        screen.contentRoot = content;
+                        screen.progressFile = progressPath;
+                        screen.assetRoot = assetRoot;
+                        const pvz::Json receipt = pvz::runShop(screen);
+                        if (!progressPath.empty() && receipt.contains("lastResult") &&
+                            !receipt["lastResult"].is_null()) {
+                            // The purchase already wrote the file; re-read so the next menu frame
+                            // shows the new balance instead of the stale one.
+                            progress = pvz::loadProgress(progressPath);
+                        }
+                    } else if (result.choice == pvz::MenuChoice::settings) {
+                        // Settings is the one screen that writes the save: the mixer is already
+                        // live, so the values the player hears are the ones that get stored.
+                        pvz::SettingsOptions screen;
+                        screen.assetRoot = assetRoot;
+                        screen.state.audio = progress.audio;
+                        const pvz::SettingsResult adjusted = pvz::runSettingsScreen(screen);
+                        progress.audio = adjusted.state.audio;
+                        if (!progressPath.empty()) {
+                            const auto now = std::chrono::duration_cast<std::chrono::seconds>(
+                                                 std::chrono::system_clock::now().time_since_epoch())
+                                                 .count();
+                            pvz::saveProgress(progressPath, progress, now);
+                        }
+                    } else {
+                        break;  // continue / world map / quit leave the menu for good
+                    }
+                    result = pvz::runMainMenu(catalog, progress, options);
+                }
                 out["choice"] = pvz::menuChoiceName(result.choice);
                 if (result.choice == pvz::MenuChoice::continueGame) {
                     // "Continue" has to name the level it means; the menu knows the save, not the

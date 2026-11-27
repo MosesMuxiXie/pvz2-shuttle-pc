@@ -145,6 +145,10 @@ def load_zombies(path: Path) -> list[dict]:
     for entry in doc:
         if not isinstance(entry, dict) or "id" not in entry:
             continue
+        # Pack rows (tools/contentc/zombie_roster.py) are derived from the OBB; this
+        # report is about the hand-written roster, so they are not client evidence.
+        if entry.get("source") == "pack":
+            continue
         rows.append(entry)
     return rows
 

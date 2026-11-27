@@ -175,10 +175,19 @@ def load_client(path: Path) -> dict[str, object]:
 
 
 def load_client_plants(path: Path) -> set[str]:
+    """手工名册里的 client id；``source: "pack"`` 的派生行不算「客户端词汇」。
+
+    否则 pack 名会被当成 client id 直接命中，`sourceKind` 会把派生行谎称成
+    人工证据。
+    """
     data = json.loads(path.read_text(encoding="utf-8-sig"))
     if not isinstance(data, list):
         raise ValueError(f"{path.name}: 根必须是数组")
-    return {str(row["id"]) for row in data if isinstance(row, dict) and "id" in row}
+    return {
+        str(row["id"])
+        for row in data
+        if isinstance(row, dict) and "id" in row and row.get("source") != "pack"
+    }
 
 
 def load_mapping(path: Path) -> dict[str, str]:

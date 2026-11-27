@@ -1335,5 +1335,2552 @@
    "royal"
   ],
   "extra": {}
+ },
+ {
+  "id": "atlantis",
+  "behavior": "walk",
+  "family": "walk",
+  "hp": 190,
+  "tags": [
+   "zombie",
+   "pack",
+   "atlantis"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_ATLANTIS_BASIC",
+  "referencedBy": [
+   {
+    "kind": "fish",
+    "level": "beach_23"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_27"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_29"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_31"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_33"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_36"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_39"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_43"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_44"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_45"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_46"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_47"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_49"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_51"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_52"
+   }
+  ],
+  "extra": {
+   "packTypeName": "atlantis",
+   "zombieClass": "ZombieAtlantisBasic",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_ATLANTIS_BASIC",
+   "homeWorld": "atlantis"
+  }
+ },
+ {
+  "id": "atlantis_armor1",
+  "behavior": "walk",
+  "family": "walk",
+  "hp": 190,
+  "tags": [
+   "zombie",
+   "pack",
+   "atlantis"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_ATLANTIS_BASIC",
+  "referencedBy": [
+   {
+    "kind": "fish",
+    "level": "beach_23"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_27"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_29"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_31"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_33"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_36"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_39"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_41"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_43"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_44"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_45"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_46"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_47"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_48"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_49"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_51"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_52"
+   }
+  ],
+  "extra": {
+   "packTypeName": "atlantis_armor1",
+   "zombieClass": "ZombieAtlantisBasic",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_ATLANTIS_BASIC",
+   "homeWorld": "atlantis"
+  }
+ },
+ {
+  "id": "atlantis_armor2",
+  "behavior": "walk",
+  "family": "walk",
+  "hp": 190,
+  "tags": [
+   "zombie",
+   "pack",
+   "atlantis"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_ATLANTIS_BASIC",
+  "referencedBy": [
+   {
+    "kind": "fish",
+    "level": "beach_27"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_29"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_31"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_33"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_36"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_39"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_41"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_43"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_44"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_45"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_46"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_47"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_48"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_49"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_51"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_52"
+   }
+  ],
+  "extra": {
+   "packTypeName": "atlantis_armor2",
+   "zombieClass": "ZombieAtlantisBasic",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_ATLANTIS_BASIC",
+   "homeWorld": "atlantis"
+  }
+ },
+ {
+  "id": "atlantis_basic",
+  "behavior": "walk",
+  "family": "walk",
+  "hp": 190,
+  "tags": [
+   "zombie",
+   "pack",
+   "atlantis"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_ATLANTIS_BASIC",
+  "referencedBy": [
+   {
+    "kind": "fish",
+    "level": "beach_48"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_49"
+   }
+  ],
+  "extra": {
+   "packTypeName": "atlantis",
+   "zombieClass": "ZombieAtlantisBasic",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_ATLANTIS_BASIC",
+   "homeWorld": "atlantis"
+  }
+ },
+ {
+  "id": "atlantis_diver",
+  "behavior": "walk",
+  "family": "walk",
+  "hp": 320,
+  "tags": [
+   "zombie",
+   "pack",
+   "atlantis"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_FAT_DIVE",
+  "referencedBy": [
+   {
+    "kind": "fish",
+    "level": "beach_27"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_29"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_31"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_33"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_36"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_39"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_41"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_43"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_44"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_45"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_46"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_47"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_48"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_49"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_51"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_52"
+   }
+  ],
+  "extra": {
+   "packTypeName": "atlantis_diver",
+   "zombieClass": "ZombieAtlantisDiver",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_FAT_DIVE",
+   "homeWorld": "atlantis"
+  }
+ },
+ {
+  "id": "atlantis_gargantuar",
+  "behavior": "gargantuar",
+  "family": "gargantuar",
+  "hp": 2700,
+  "tags": [
+   "zombie",
+   "pack",
+   "atlantis"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_ATLANTIS_GARGANTUAR",
+  "referencedBy": [
+   {
+    "kind": "fish",
+    "level": "beach_46"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_47"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_48"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_49"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_51"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_52"
+   }
+  ],
+  "extra": {
+   "packTypeName": "atlantis_gargantuar",
+   "zombieClass": "ZombieAtlantisGargantuar",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_ATLANTIS_GARGANTUAR",
+   "homeWorld": "atlantis"
+  }
+ },
+ {
+  "id": "atlantis_land_armor1",
+  "behavior": "walk",
+  "family": "walk",
+  "hp": 190,
+  "tags": [
+   "zombie",
+   "pack",
+   "atlantis"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_ATLANTIS_LAND_BASIC",
+  "referencedBy": [
+   {
+    "kind": "fish",
+    "level": "beach_54"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_55"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_56"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_57"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_58"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_59"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_60"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_61"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_62"
+   }
+  ],
+  "extra": {
+   "packTypeName": "atlantis_land_armor1",
+   "zombieClass": "ZombieAtlantisBasic",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_ATLANTIS_LAND_BASIC",
+   "homeWorld": "atlantis"
+  }
+ },
+ {
+  "id": "atlantis_land_armor2",
+  "behavior": "walk",
+  "family": "walk",
+  "hp": 190,
+  "tags": [
+   "zombie",
+   "pack",
+   "atlantis"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_ATLANTIS_LAND_BASIC",
+  "referencedBy": [
+   {
+    "kind": "fish",
+    "level": "beach_54"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_55"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_56"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_57"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_58"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_59"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_60"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_61"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_62"
+   }
+  ],
+  "extra": {
+   "packTypeName": "atlantis_land_armor2",
+   "zombieClass": "ZombieAtlantisBasic",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_ATLANTIS_LAND_BASIC",
+   "homeWorld": "atlantis"
+  }
+ },
+ {
+  "id": "atlantis_land_basic",
+  "behavior": "walk",
+  "family": "walk",
+  "hp": 190,
+  "tags": [
+   "zombie",
+   "pack",
+   "atlantis"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_ATLANTIS_LAND_BASIC",
+  "referencedBy": [
+   {
+    "kind": "fish",
+    "level": "beach_54"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_55"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_56"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_57"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_58"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_59"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_60"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_61"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_62"
+   }
+  ],
+  "extra": {
+   "packTypeName": "atlantis_land",
+   "zombieClass": "ZombieAtlantisBasic",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_ATLANTIS_LAND_BASIC",
+   "homeWorld": "atlantis"
+  }
+ },
+ {
+  "id": "atlantis_land_gargantuar",
+  "behavior": "gargantuar",
+  "family": "gargantuar",
+  "hp": 2700,
+  "tags": [
+   "zombie",
+   "pack",
+   "atlantis"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_ATLANTIS_LAND_GARGANTUAR",
+  "referencedBy": [
+   {
+    "kind": "fish",
+    "level": "beach_55"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_57"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_58"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_60"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_61"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_62"
+   }
+  ],
+  "extra": {
+   "packTypeName": "atlantis_land_gargantuar",
+   "zombieClass": "ZombieAtlantisGargantuar",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_ATLANTIS_LAND_GARGANTUAR",
+   "homeWorld": "atlantis"
+  }
+ },
+ {
+  "id": "atlantis_rider",
+  "behavior": "walk",
+  "family": "walk",
+  "hp": 190,
+  "tags": [
+   "zombie",
+   "pack",
+   "atlantis"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_LANTERNFISH_RIDER",
+  "referencedBy": [
+   {
+    "kind": "fish",
+    "level": "beach_36"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_39"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_41"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_43"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_44"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_45"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_46"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_47"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_48"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_49"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_51"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_52"
+   }
+  ],
+  "extra": {
+   "packTypeName": "atlantis_rider",
+   "zombieClass": "ZombieAtlantisRider",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_LANTERNFISH_RIDER",
+   "homeWorld": "atlantis"
+  }
+ },
+ {
+  "id": "beach_armor1",
+  "behavior": "walk",
+  "family": "walk",
+  "hp": 190,
+  "tags": [
+   "zombie",
+   "pack",
+   "beach"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_BEACH_BASIC",
+  "referencedBy": [
+   {
+    "kind": "minigame",
+    "level": "beach_20"
+   }
+  ],
+  "extra": {
+   "packTypeName": "beach_armor1",
+   "zombieClass": "ZombieBasic",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_BEACH_BASIC",
+   "homeWorld": "beach"
+  }
+ },
+ {
+  "id": "beach_armor2",
+  "behavior": "walk",
+  "family": "walk",
+  "hp": 190,
+  "tags": [
+   "zombie",
+   "pack",
+   "beach"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_BEACH_BASIC",
+  "referencedBy": [
+   {
+    "kind": "minigame",
+    "level": "beach_20"
+   }
+  ],
+  "extra": {
+   "packTypeName": "beach_armor2",
+   "zombieClass": "ZombieBasic",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_BEACH_BASIC",
+   "homeWorld": "beach"
+  }
+ },
+ {
+  "id": "beach_fem",
+  "behavior": "walk",
+  "family": "walk",
+  "hp": 190,
+  "tags": [
+   "zombie",
+   "pack",
+   "beach"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_BEACH_BASICFEM",
+  "referencedBy": [
+   {
+    "kind": "minigame",
+    "level": "beach_20"
+   }
+  ],
+  "extra": {
+   "packTypeName": "beach_fem",
+   "zombieClass": "ZombieBasic",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_BEACH_BASICFEM",
+   "homeWorld": "beach"
+  }
+ },
+ {
+  "id": "beach_fem_armor1",
+  "behavior": "walk",
+  "family": "walk",
+  "hp": 190,
+  "tags": [
+   "zombie",
+   "pack",
+   "beach"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_BEACH_BASICFEM",
+  "referencedBy": [
+   {
+    "kind": "minigame",
+    "level": "beach_20"
+   }
+  ],
+  "extra": {
+   "packTypeName": "beach_fem_armor1",
+   "zombieClass": "ZombieBasic",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_BEACH_BASICFEM",
+   "homeWorld": "beach"
+  }
+ },
+ {
+  "id": "beach_fem_armor2",
+  "behavior": "walk",
+  "family": "walk",
+  "hp": 190,
+  "tags": [
+   "zombie",
+   "pack",
+   "beach"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_BEACH_BASICFEM",
+  "referencedBy": [
+   {
+    "kind": "minigame",
+    "level": "beach_20"
+   }
+  ],
+  "extra": {
+   "packTypeName": "beach_fem_armor2",
+   "zombieClass": "ZombieBasic",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_BEACH_BASICFEM",
+   "homeWorld": "beach"
+  }
+ },
+ {
+  "id": "beach_imp",
+  "behavior": "walk",
+  "family": "walk",
+  "hp": 190,
+  "tags": [
+   "zombie",
+   "pack",
+   "beach"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_BEACH_IMP_MERMAID",
+  "referencedBy": [
+   {
+    "kind": "spider",
+    "level": "fairy_41"
+   },
+   {
+    "kind": "spider",
+    "level": "modern_110"
+   },
+   {
+    "kind": "minigame",
+    "level": "beach_20"
+   }
+  ],
+  "extra": {
+   "packTypeName": "beach_imp",
+   "zombieClass": "ZombieImp",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_BEACH_IMP_MERMAID",
+   "homeWorld": "beach"
+  }
+ },
+ {
+  "id": "beach_octopus",
+  "behavior": "walk",
+  "family": "walk",
+  "hp": 910,
+  "tags": [
+   "zombie",
+   "pack",
+   "beach"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_BEACH_OCTOPUS",
+  "referencedBy": [
+   {
+    "kind": "minigame",
+    "level": "beach_20"
+   }
+  ],
+  "extra": {
+   "packTypeName": "beach_octopus",
+   "zombieClass": "ZombieBeachOctopus",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_BEACH_OCTOPUS",
+   "homeWorld": "beach"
+  }
+ },
+ {
+  "id": "beach_snorkel",
+  "behavior": "walk",
+  "family": "walk",
+  "hp": 350,
+  "tags": [
+   "zombie",
+   "pack",
+   "beach"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_BEACH_SNORKELER",
+  "referencedBy": [
+   {
+    "kind": "minigame",
+    "level": "beach_20"
+   }
+  ],
+  "extra": {
+   "packTypeName": "beach_snorkel",
+   "zombieClass": "ZombieBeachSnorkel",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_BEACH_SNORKELER",
+   "homeWorld": "beach"
+  }
+ },
+ {
+  "id": "beach_surfer",
+  "behavior": "walk",
+  "family": "walk",
+  "hp": 350,
+  "tags": [
+   "zombie",
+   "pack",
+   "beach"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_BEACH_SURFER",
+  "referencedBy": [
+   {
+    "kind": "minigame",
+    "level": "beach_20"
+   }
+  ],
+  "extra": {
+   "packTypeName": "beach_surfer",
+   "zombieClass": "ZombieBeachSurfer",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_BEACH_SURFER",
+   "homeWorld": "beach"
+  }
+ },
+ {
+  "id": "bighead_imp",
+  "behavior": "walk",
+  "family": "walk",
+  "hp": 190,
+  "tags": [
+   "zombie",
+   "pack",
+   "tutorial"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_BIGHEAD_IMP",
+  "referencedBy": [
+   {
+    "kind": "spider",
+    "level": "modern_37"
+   }
+  ],
+  "extra": {
+   "packTypeName": "bighead_imp",
+   "zombieClass": "ZombieBigHeadImp",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_BIGHEAD_IMP",
+   "homeWorld": "tutorial"
+  }
+ },
+ {
+  "id": "carnie_imp",
+  "behavior": "walk",
+  "family": "walk",
+  "hp": 190,
+  "tags": [
+   "zombie",
+   "pack",
+   "rift2"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_CARNIE_IMP",
+  "referencedBy": [
+   {
+    "kind": "spider",
+    "level": "carnival_92"
+   }
+  ],
+  "extra": {
+   "packTypeName": "carnie_imp",
+   "zombieClass": "ZombieImp",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_CARNIE_IMP",
+   "homeWorld": "rift2"
+  }
+ },
+ {
+  "id": "chinesegarden_imp",
+  "behavior": "walk",
+  "family": "walk",
+  "hp": 190,
+  "tags": [
+   "zombie",
+   "pack",
+   "chinesegarden"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_CHINESE_IMP",
+  "referencedBy": [
+   {
+    "kind": "spider",
+    "level": "carnival_1"
+   },
+   {
+    "kind": "spider",
+    "level": "chinesegarden_10"
+   },
+   {
+    "kind": "spider",
+    "level": "chinesegarden_11"
+   },
+   {
+    "kind": "spider",
+    "level": "chinesegarden_12"
+   },
+   {
+    "kind": "spider",
+    "level": "chinesegarden_13"
+   },
+   {
+    "kind": "spider",
+    "level": "chinesegarden_14"
+   },
+   {
+    "kind": "spider",
+    "level": "chinesegarden_16"
+   },
+   {
+    "kind": "spider",
+    "level": "chinesegarden_17"
+   },
+   {
+    "kind": "spider",
+    "level": "chinesegarden_19"
+   },
+   {
+    "kind": "spider",
+    "level": "chinesegarden_20"
+   },
+   {
+    "kind": "spider",
+    "level": "chinesegarden_21"
+   },
+   {
+    "kind": "spider",
+    "level": "chinesegarden_22"
+   },
+   {
+    "kind": "spider",
+    "level": "chinesegarden_26"
+   },
+   {
+    "kind": "spider",
+    "level": "chinesegarden_28"
+   },
+   {
+    "kind": "spider",
+    "level": "chinesegarden_32"
+   },
+   {
+    "kind": "spider",
+    "level": "chinesegarden_33"
+   },
+   {
+    "kind": "spider",
+    "level": "chinesegarden_34"
+   },
+   {
+    "kind": "spider",
+    "level": "chinesegarden_35"
+   },
+   {
+    "kind": "spider",
+    "level": "chinesegarden_36"
+   },
+   {
+    "kind": "spider",
+    "level": "chinesegarden_37"
+   },
+   {
+    "kind": "spider",
+    "level": "chinesegarden_39"
+   },
+   {
+    "kind": "spider",
+    "level": "chinesegarden_40"
+   },
+   {
+    "kind": "spider",
+    "level": "chinesegarden_41"
+   },
+   {
+    "kind": "spider",
+    "level": "chinesegarden_42"
+   },
+   {
+    "kind": "spider",
+    "level": "chinesegarden_43"
+   },
+   {
+    "kind": "spider",
+    "level": "chinesegarden_45"
+   },
+   {
+    "kind": "spider",
+    "level": "chinesegarden_48"
+   },
+   {
+    "kind": "spider",
+    "level": "chinesegarden_49"
+   },
+   {
+    "kind": "spider",
+    "level": "chinesegarden_50"
+   },
+   {
+    "kind": "spider",
+    "level": "chinesegarden_52"
+   },
+   {
+    "kind": "spider",
+    "level": "chinesegarden_55"
+   },
+   {
+    "kind": "spider",
+    "level": "chinesegarden_6"
+   },
+   {
+    "kind": "spider",
+    "level": "chinesegarden_63"
+   },
+   {
+    "kind": "spider",
+    "level": "chinesegarden_64"
+   },
+   {
+    "kind": "spider",
+    "level": "chinesegarden_68"
+   },
+   {
+    "kind": "spider",
+    "level": "chinesegarden_7"
+   },
+   {
+    "kind": "spider",
+    "level": "chinesegarden_70"
+   },
+   {
+    "kind": "spider",
+    "level": "chinesegarden_8"
+   },
+   {
+    "kind": "spider",
+    "level": "modern_111"
+   },
+   {
+    "kind": "spider",
+    "level": "modern_122"
+   },
+   {
+    "kind": "spider",
+    "level": "modern_89"
+   },
+   {
+    "kind": "spider",
+    "level": "renai_52"
+   }
+  ],
+  "extra": {
+   "packTypeName": "chinesegarden_imp",
+   "zombieClass": "ZombieFutureImp",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_CHINESE_IMP",
+   "homeWorld": "chinesegarden"
+  }
+ },
+ {
+  "id": "cthulhu_jelly_fish",
+  "behavior": "gargantuar",
+  "family": "gargantuar",
+  "hp": 2700,
+  "tags": [
+   "zombie",
+   "pack",
+   "atlantis"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_ATLANTIS_LAND_GARGANTUAR",
+  "referencedBy": [
+   {
+    "kind": "fish",
+    "level": "beach_58"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_59"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_60"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_61"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_62"
+   }
+  ],
+  "extra": {
+   "packTypeName": "atlantis_land_gargantuar",
+   "zombieClass": "ZombieAtlantisGargantuar",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_ATLANTIS_LAND_GARGANTUAR",
+   "homeWorld": "atlantis"
+  }
+ },
+ {
+  "id": "dark_imp_dragon",
+  "behavior": "walk",
+  "family": "walk",
+  "hp": 190,
+  "tags": [
+   "zombie",
+   "pack",
+   "dark"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_DARK_IMP_DRAGON",
+  "referencedBy": [
+   {
+    "kind": "spider",
+    "level": "modern_37"
+   }
+  ],
+  "extra": {
+   "packTypeName": "dark_imp_dragon",
+   "zombieClass": "ZombieFutureImp",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_DARK_IMP_DRAGON",
+   "homeWorld": "dark"
+  }
+ },
+ {
+  "id": "disco_mech",
+  "behavior": "gargantuar",
+  "family": "gargantuar",
+  "hp": 2000,
+  "tags": [
+   "zombie",
+   "pack",
+   "future"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_MECH_DISCO",
+  "referencedBy": [
+   {
+    "kind": "spider",
+    "level": "iceage_50"
+   }
+  ],
+  "extra": {
+   "packTypeName": "disco_mech",
+   "zombieClass": "ZombieMechDisco",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_MECH_DISCO",
+   "homeWorld": "future"
+  }
+ },
+ {
+  "id": "fairy_imp_normal",
+  "behavior": "walk",
+  "family": "walk",
+  "hp": 190,
+  "tags": [
+   "zombie",
+   "pack",
+   "fairy"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_IMP",
+  "referencedBy": [
+   {
+    "kind": "spider",
+    "level": "fairy_12"
+   },
+   {
+    "kind": "spider",
+    "level": "fairy_26"
+   }
+  ],
+  "extra": {
+   "packTypeName": "fairy_imp_normal",
+   "zombieClass": "ZombieImp",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_IMP",
+   "homeWorld": "fairy"
+  }
+ },
+ {
+  "id": "fat_dive",
+  "behavior": "walk",
+  "family": "walk",
+  "hp": 320,
+  "tags": [
+   "zombie",
+   "pack",
+   "atlantis"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_FAT_DIVE",
+  "referencedBy": [
+   {
+    "kind": "fish",
+    "level": "beach_55"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_56"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_57"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_59"
+   }
+  ],
+  "extra": {
+   "packTypeName": "atlantis_diver",
+   "zombieClass": "ZombieAtlantisDiver",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_FAT_DIVE",
+   "homeWorld": "atlantis"
+  }
+ },
+ {
+  "id": "feastivus_imp",
+  "behavior": "walk",
+  "family": "walk",
+  "hp": 190,
+  "tags": [
+   "zombie",
+   "pack",
+   "tutorial"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_FEASTIVUS_IMP",
+  "referencedBy": [
+   {
+    "kind": "spider",
+    "level": "lunarrainbowmarket_75"
+   },
+   {
+    "kind": "spider",
+    "level": "modern_37"
+   }
+  ],
+  "extra": {
+   "packTypeName": "feastivus_imp",
+   "zombieClass": "ZombieImp",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_FEASTIVUS_IMP",
+   "homeWorld": "tutorial"
+  }
+ },
+ {
+  "id": "future_imp",
+  "behavior": "walk",
+  "family": "walk",
+  "hp": 270,
+  "tags": [
+   "zombie",
+   "pack",
+   "future"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_STEAM_IMP",
+  "referencedBy": [
+   {
+    "kind": "spider",
+    "level": "carnival_55"
+   },
+   {
+    "kind": "spider",
+    "level": "fairy_25"
+   },
+   {
+    "kind": "spider",
+    "level": "future_1"
+   },
+   {
+    "kind": "spider",
+    "level": "future_10"
+   },
+   {
+    "kind": "spider",
+    "level": "future_11"
+   },
+   {
+    "kind": "spider",
+    "level": "future_13"
+   },
+   {
+    "kind": "spider",
+    "level": "future_14"
+   },
+   {
+    "kind": "spider",
+    "level": "future_15"
+   },
+   {
+    "kind": "spider",
+    "level": "future_17"
+   },
+   {
+    "kind": "spider",
+    "level": "future_2"
+   },
+   {
+    "kind": "spider",
+    "level": "future_20"
+   },
+   {
+    "kind": "spider",
+    "level": "future_21"
+   },
+   {
+    "kind": "spider",
+    "level": "future_23"
+   },
+   {
+    "kind": "spider",
+    "level": "future_24"
+   },
+   {
+    "kind": "spider",
+    "level": "future_26"
+   },
+   {
+    "kind": "spider",
+    "level": "future_27"
+   },
+   {
+    "kind": "spider",
+    "level": "future_38"
+   },
+   {
+    "kind": "spider",
+    "level": "future_39"
+   },
+   {
+    "kind": "spider",
+    "level": "future_41"
+   },
+   {
+    "kind": "spider",
+    "level": "future_5"
+   },
+   {
+    "kind": "spider",
+    "level": "future_57"
+   },
+   {
+    "kind": "spider",
+    "level": "future_58"
+   },
+   {
+    "kind": "spider",
+    "level": "future_59"
+   },
+   {
+    "kind": "spider",
+    "level": "future_9"
+   },
+   {
+    "kind": "spider",
+    "level": "lunarrainbowmarket_48"
+   },
+   {
+    "kind": "spider",
+    "level": "lunarrainbowmarket_75"
+   },
+   {
+    "kind": "spider",
+    "level": "modern_89"
+   },
+   {
+    "kind": "spider",
+    "level": "plantagenet_21"
+   },
+   {
+    "kind": "spider",
+    "level": "steam_10"
+   },
+   {
+    "kind": "spider",
+    "level": "steam_11"
+   },
+   {
+    "kind": "spider",
+    "level": "steam_21"
+   },
+   {
+    "kind": "spider",
+    "level": "steam_24"
+   },
+   {
+    "kind": "spider",
+    "level": "steam_29"
+   },
+   {
+    "kind": "spider",
+    "level": "steam_3"
+   },
+   {
+    "kind": "spider",
+    "level": "steam_30"
+   },
+   {
+    "kind": "spider",
+    "level": "steam_36"
+   },
+   {
+    "kind": "spider",
+    "level": "steam_4"
+   },
+   {
+    "kind": "spider",
+    "level": "steam_5"
+   },
+   {
+    "kind": "spider",
+    "level": "steam_9"
+   }
+  ],
+  "extra": {
+   "packTypeName": "future_imp",
+   "zombieClass": "ZombieFutureImp",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_STEAM_IMP",
+   "homeWorld": "future"
+  }
+ },
+ {
+  "id": "future_imp_ori",
+  "behavior": "walk",
+  "family": "walk",
+  "hp": 270,
+  "tags": [
+   "zombie",
+   "pack",
+   "future"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_GARGANTUAR_IMP",
+  "referencedBy": [
+   {
+    "kind": "spider",
+    "level": "carnival_11"
+   },
+   {
+    "kind": "spider",
+    "level": "future_29"
+   },
+   {
+    "kind": "spider",
+    "level": "future_47"
+   }
+  ],
+  "extra": {
+   "packTypeName": "future_imp_ori",
+   "zombieClass": "ZombieFutureImp",
+   "popAnim": "POPANIM_ZOMBIE_GARGANTUAR_IMP",
+   "homeWorld": "future"
+  }
+ },
+ {
+  "id": "giant_hermit_crab",
+  "behavior": "gargantuar",
+  "family": "gargantuar",
+  "hp": 2700,
+  "tags": [
+   "zombie",
+   "pack",
+   "atlantis"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_ATLANTIS_LAND_GARGANTUAR",
+  "referencedBy": [
+   {
+    "kind": "fish",
+    "level": "beach_55"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_56"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_57"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_60"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_61"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_62"
+   }
+  ],
+  "extra": {
+   "packTypeName": "atlantis_land_gargantuar",
+   "zombieClass": "ZombieAtlantisGargantuar",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_ATLANTIS_LAND_GARGANTUAR",
+   "homeWorld": "atlantis"
+  }
+ },
+ {
+  "id": "heian_ninja",
+  "behavior": "walk",
+  "family": "walk",
+  "hp": 190,
+  "tags": [
+   "zombie",
+   "pack",
+   "heian"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_HEIAN_NINJA",
+  "referencedBy": [
+   {
+    "kind": "spider",
+    "level": "carnival_46"
+   },
+   {
+    "kind": "spider",
+    "level": "heian_14"
+   },
+   {
+    "kind": "spider",
+    "level": "heian_16"
+   },
+   {
+    "kind": "spider",
+    "level": "heian_22"
+   },
+   {
+    "kind": "spider",
+    "level": "heian_25"
+   },
+   {
+    "kind": "spider",
+    "level": "heian_5"
+   },
+   {
+    "kind": "spider",
+    "level": "heian_8"
+   },
+   {
+    "kind": "spider",
+    "level": "kongfu_15"
+   }
+  ],
+  "extra": {
+   "packTypeName": "heian_ninja",
+   "zombieClass": "ZombieIceAgeHunter",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_HEIAN_NINJA",
+   "homeWorld": "heian"
+  }
+ },
+ {
+  "id": "hermitcrab",
+  "tags": [
+   "creature",
+   "pack",
+   "atlantis"
+  ],
+  "source": "pack",
+  "objclass": "CreatureType",
+  "creatureClass": "FishHermitCrab",
+  "popAnim": "POPANIM_PLANT_FISHS_FISH_HERMITCRAB",
+  "referencedBy": [
+   {
+    "kind": "fish_creature",
+    "level": "beach_31"
+   },
+   {
+    "kind": "fish_creature",
+    "level": "beach_33"
+   },
+   {
+    "kind": "fish_creature",
+    "level": "beach_36"
+   },
+   {
+    "kind": "fish_creature",
+    "level": "beach_39"
+   },
+   {
+    "kind": "fish_creature",
+    "level": "beach_41"
+   },
+   {
+    "kind": "fish_creature",
+    "level": "beach_43"
+   },
+   {
+    "kind": "fish_creature",
+    "level": "beach_44"
+   },
+   {
+    "kind": "fish_creature",
+    "level": "beach_45"
+   },
+   {
+    "kind": "fish_creature",
+    "level": "beach_46"
+   },
+   {
+    "kind": "fish_creature",
+    "level": "beach_47"
+   },
+   {
+    "kind": "fish_creature",
+    "level": "beach_48"
+   },
+   {
+    "kind": "fish_creature",
+    "level": "beach_49"
+   },
+   {
+    "kind": "fish_creature",
+    "level": "beach_51"
+   },
+   {
+    "kind": "fish_creature",
+    "level": "beach_52"
+   },
+   {
+    "kind": "fish_creature",
+    "level": "beach_54"
+   }
+  ],
+  "extra": {
+   "packTypeName": "hermitcrab",
+   "popAnim": "POPANIM_PLANT_FISHS_FISH_HERMITCRAB",
+   "homeWorld": "atlantis"
+  }
+ },
+ {
+  "id": "hero_impfinity",
+  "behavior": "walk",
+  "family": "walk",
+  "hp": 190,
+  "tags": [
+   "zombie",
+   "pack",
+   "modern"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_HEROES_IMPFINITY",
+  "referencedBy": [
+   {
+    "kind": "spider",
+    "level": "memorytour_10"
+   },
+   {
+    "kind": "spider",
+    "level": "modern_37"
+   }
+  ],
+  "extra": {
+   "packTypeName": "hero_impfinity",
+   "zombieClass": "ZombieFutureImp",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_HEROES_IMPFINITY",
+   "homeWorld": "modern"
+  }
+ },
+ {
+  "id": "iceage_imp",
+  "behavior": "walk",
+  "family": "walk",
+  "hp": 190,
+  "tags": [
+   "zombie",
+   "pack",
+   "beach"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_ICEAGE_IMP",
+  "referencedBy": [
+   {
+    "kind": "spider",
+    "level": "iceage_60"
+   },
+   {
+    "kind": "spider",
+    "level": "iceage_67"
+   }
+  ],
+  "extra": {
+   "packTypeName": "iceage_imp",
+   "zombieClass": "ZombieImp",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_ICEAGE_IMP",
+   "homeWorld": "beach"
+  }
+ },
+ {
+  "id": "inkfish",
+  "tags": [
+   "creature",
+   "pack",
+   "atlantis"
+  ],
+  "source": "pack",
+  "objclass": "CreatureType",
+  "creatureClass": "FishBase",
+  "popAnim": "POPANIM_PLANT_FISHS_FISH_INKFISH",
+  "referencedBy": [
+   {
+    "kind": "fish_creature",
+    "level": "beach_54"
+   }
+  ],
+  "extra": {
+   "packTypeName": "inkfish",
+   "popAnim": "POPANIM_PLANT_FISHS_FISH_INKFISH",
+   "homeWorld": "atlantis"
+  }
+ },
+ {
+  "id": "jellyfish",
+  "tags": [
+   "creature",
+   "pack",
+   "atlantis"
+  ],
+  "source": "pack",
+  "objclass": "CreatureType",
+  "creatureClass": "FishJellyfish",
+  "popAnim": "POPANIM_PLANT_FISHS_FISH_JELLYFISH",
+  "referencedBy": [
+   {
+    "kind": "fish_creature",
+    "level": "beach_43"
+   },
+   {
+    "kind": "fish_creature",
+    "level": "beach_44"
+   },
+   {
+    "kind": "fish_creature",
+    "level": "beach_45"
+   },
+   {
+    "kind": "fish_creature",
+    "level": "beach_46"
+   },
+   {
+    "kind": "fish_creature",
+    "level": "beach_47"
+   },
+   {
+    "kind": "fish_creature",
+    "level": "beach_48"
+   },
+   {
+    "kind": "fish_creature",
+    "level": "beach_51"
+   },
+   {
+    "kind": "fish_creature",
+    "level": "beach_52"
+   }
+  ],
+  "extra": {
+   "packTypeName": "jellyfish",
+   "popAnim": "POPANIM_PLANT_FISHS_FISH_JELLYFISH",
+   "homeWorld": "atlantis"
+  }
+ },
+ {
+  "id": "kongfu_imp",
+  "behavior": "walk",
+  "family": "walk",
+  "hp": 190,
+  "tags": [
+   "zombie",
+   "pack",
+   "kongfu"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_KONGFU_IMP",
+  "referencedBy": [
+   {
+    "kind": "spider",
+    "level": "kongfu_24"
+   }
+  ],
+  "extra": {
+   "packTypeName": "kongfu_imp",
+   "zombieClass": "ZombieImp",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_KONGFU_IMP",
+   "homeWorld": "kongfu"
+  }
+ },
+ {
+  "id": "kongfu_selfexplode",
+  "behavior": "walk",
+  "family": "walk",
+  "hp": 340,
+  "tags": [
+   "zombie",
+   "pack",
+   "kongfu"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_KONGFU_SELFEXPLODE",
+  "referencedBy": [
+   {
+    "kind": "spider",
+    "level": "kongfu_38"
+   }
+  ],
+  "extra": {
+   "packTypeName": "kongfu_selfexplode",
+   "zombieClass": "ZombieModernSuperfanImp",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_KONGFU_SELFEXPLODE",
+   "homeWorld": "kongfu"
+  }
+ },
+ {
+  "id": "krill",
+  "tags": [
+   "creature",
+   "pack",
+   "atlantis"
+  ],
+  "source": "pack",
+  "objclass": "CreatureType",
+  "creatureClass": "FishBase",
+  "popAnim": "POPANIM_PLANT_FISHS_FISH_KRILL",
+  "referencedBy": [
+   {
+    "kind": "fish_creature",
+    "level": "beach_54"
+   },
+   {
+    "kind": "fish_creature",
+    "level": "beach_56"
+   },
+   {
+    "kind": "fish_creature",
+    "level": "beach_57"
+   },
+   {
+    "kind": "fish_creature",
+    "level": "beach_59"
+   },
+   {
+    "kind": "fish_creature",
+    "level": "beach_60"
+   },
+   {
+    "kind": "fish_creature",
+    "level": "beach_61"
+   },
+   {
+    "kind": "fish_creature",
+    "level": "beach_62"
+   }
+  ],
+  "extra": {
+   "packTypeName": "krill",
+   "popAnim": "POPANIM_PLANT_FISHS_FISH_KRILL",
+   "homeWorld": "atlantis"
+  }
+ },
+ {
+  "id": "lanternfish_rider",
+  "behavior": "walk",
+  "family": "walk",
+  "hp": 190,
+  "tags": [
+   "zombie",
+   "pack",
+   "atlantis"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_LANTERNFISH_RIDER",
+  "referencedBy": [
+   {
+    "kind": "fish",
+    "level": "beach_60"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_61"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_62"
+   }
+  ],
+  "extra": {
+   "packTypeName": "atlantis_rider",
+   "zombieClass": "ZombieAtlantisRider",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_LANTERNFISH_RIDER",
+   "homeWorld": "atlantis"
+  }
+ },
+ {
+  "id": "lostcity_relichunter_veteran",
+  "behavior": "gargantuar",
+  "family": "gargantuar",
+  "hp": 10,
+  "tags": [
+   "zombie",
+   "pack",
+   "lostcity"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_LOSTCITY_RELICHUNTER_VETERAN",
+  "referencedBy": [
+   {
+    "kind": "spider",
+    "level": "iceage_45"
+   },
+   {
+    "kind": "spider",
+    "level": "lostcity_38"
+   },
+   {
+    "kind": "spider",
+    "level": "lostcity_40"
+   }
+  ],
+  "extra": {
+   "packTypeName": "lostcity_relichunter_veteran",
+   "zombieClass": "ZombieCakeTank",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_LOSTCITY_RELICHUNTER_VETERAN",
+   "homeWorld": "lostcity"
+  }
+ },
+ {
+  "id": "lunar_superfanimp",
+  "behavior": "walk",
+  "family": "walk",
+  "hp": 270,
+  "tags": [
+   "zombie",
+   "pack",
+   "tutorial"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_LNY_SUPERFAN_ZOMBIE",
+  "referencedBy": [
+   {
+    "kind": "spider",
+    "level": "lunarrainbowmarket_79"
+   }
+  ],
+  "extra": {
+   "packTypeName": "lunar_superfanimp",
+   "zombieClass": "ZombieModernSuperfanImp",
+   "popAnim": "POPANIM_ZOMBIE_LNY_SUPERFAN_ZOMBIE",
+   "homeWorld": "tutorial"
+  }
+ },
+ {
+  "id": "modern_superfanimp",
+  "behavior": "walk",
+  "family": "walk",
+  "hp": 270,
+  "tags": [
+   "zombie",
+   "pack",
+   "modern"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_MODERN_SUPERFAN",
+  "referencedBy": [
+   {
+    "kind": "spider",
+    "level": "frontyard_81"
+   },
+   {
+    "kind": "spider",
+    "level": "frontyard_99"
+   },
+   {
+    "kind": "spider",
+    "level": "lunarrainbowmarket_78"
+   }
+  ],
+  "extra": {
+   "packTypeName": "modern_superfanimp",
+   "zombieClass": "ZombieModernSuperfanImp",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_MODERN_SUPERFAN",
+   "homeWorld": "modern"
+  }
+ },
+ {
+  "id": "poseidon_assistant",
+  "behavior": "summon",
+  "family": "summon",
+  "hp": 550,
+  "tags": [
+   "zombie",
+   "pack",
+   "atlantis"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_POSEIDON_ASSISTANT",
+  "referencedBy": [
+   {
+    "kind": "fish",
+    "level": "beach_54"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_56"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_57"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_58"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_59"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_60"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_61"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_62"
+   }
+  ],
+  "extra": {
+   "packTypeName": "atlantis_poseidon",
+   "zombieClass": "ZombieAtlantisPoseidon",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_POSEIDON_ASSISTANT",
+   "homeWorld": "atlantis"
+  }
+ },
+ {
+  "id": "priest",
+  "behavior": "walk",
+  "family": "walk",
+  "hp": 400,
+  "tags": [
+   "zombie",
+   "pack",
+   "atlantis"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_PRIEST",
+  "referencedBy": [
+   {
+    "kind": "fish",
+    "level": "beach_54"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_55"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_57"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_60"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_61"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_62"
+   }
+  ],
+  "extra": {
+   "packTypeName": "atlantis_priest",
+   "zombieClass": "ZombieAtlantisBasic",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_PRIEST",
+   "homeWorld": "atlantis"
+  }
+ },
+ {
+  "id": "pufferfish",
+  "tags": [
+   "creature",
+   "pack",
+   "atlantis"
+  ],
+  "source": "pack",
+  "objclass": "CreatureType",
+  "creatureClass": "FishBase",
+  "popAnim": "POPANIM_PLANT_FISHS_FISH_PUFFERFISH",
+  "referencedBy": [
+   {
+    "kind": "fish_creature",
+    "level": "beach_54"
+   },
+   {
+    "kind": "fish_creature",
+    "level": "beach_60"
+   },
+   {
+    "kind": "fish_creature",
+    "level": "beach_61"
+   },
+   {
+    "kind": "fish_creature",
+    "level": "beach_62"
+   }
+  ],
+  "extra": {
+   "packTypeName": "pufferfish",
+   "popAnim": "POPANIM_PLANT_FISHS_FISH_PUFFERFISH",
+   "homeWorld": "atlantis"
+  }
+ },
+ {
+  "id": "roman_imp",
+  "behavior": "walk",
+  "family": "walk",
+  "hp": 270,
+  "tags": [
+   "zombie",
+   "pack",
+   "rift1a"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_ROMAN_IMP",
+  "referencedBy": [
+   {
+    "kind": "spider",
+    "level": "memorytour_10"
+   },
+   {
+    "kind": "spider",
+    "level": "modern_111"
+   },
+   {
+    "kind": "spider",
+    "level": "modern_89"
+   },
+   {
+    "kind": "spider",
+    "level": "muji_21"
+   },
+   {
+    "kind": "spider",
+    "level": "plantagenet_46"
+   }
+  ],
+  "extra": {
+   "packTypeName": "roman_imp",
+   "zombieClass": "ZombieRomanImp",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_ROMAN_IMP",
+   "homeWorld": "rift1a"
+  }
+ },
+ {
+  "id": "seaurchinpitcher",
+  "behavior": "walk",
+  "family": "walk",
+  "hp": 500,
+  "tags": [
+   "zombie",
+   "pack",
+   "atlantis"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_SEAURCHINPITCHER",
+  "referencedBy": [
+   {
+    "kind": "fish",
+    "level": "beach_54"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_56"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_59"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_60"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_61"
+   },
+   {
+    "kind": "fish",
+    "level": "beach_62"
+   }
+  ],
+  "extra": {
+   "packTypeName": "atlantis_pitcher",
+   "zombieClass": "ZombieAtlantisBasic",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_SEAURCHINPITCHER",
+   "homeWorld": "atlantis"
+  }
+ },
+ {
+  "id": "skycity_twinsplane",
+  "behavior": "gargantuar",
+  "family": "gargantuar",
+  "hp": 1200,
+  "tags": [
+   "zombie",
+   "pack",
+   "skycity"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_SKYCITY_TWINSPLANE",
+  "referencedBy": [
+   {
+    "kind": "spider",
+    "level": "iceage_50"
+   }
+  ],
+  "extra": {
+   "packTypeName": "skycity_twinsplane",
+   "zombieClass": "ZombieGargantuar",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_SKYCITY_TWINSPLANE",
+   "homeWorld": "skycity"
+  }
+ },
+ {
+  "id": "starfish",
+  "tags": [
+   "creature",
+   "pack",
+   "atlantis"
+  ],
+  "source": "pack",
+  "objclass": "CreatureType",
+  "creatureClass": "FishBase",
+  "popAnim": "POPANIM_PLANT_FISHS_FISH_STARFISH",
+  "referencedBy": [
+   {
+    "kind": "fish_creature",
+    "level": "beach_54"
+   },
+   {
+    "kind": "fish_creature",
+    "level": "beach_60"
+   },
+   {
+    "kind": "fish_creature",
+    "level": "beach_61"
+   },
+   {
+    "kind": "fish_creature",
+    "level": "beach_62"
+   }
+  ],
+  "extra": {
+   "packTypeName": "starfish",
+   "popAnim": "POPANIM_PLANT_FISHS_FISH_STARFISH",
+   "homeWorld": "atlantis"
+  }
+ },
+ {
+  "id": "swordfish",
+  "tags": [
+   "creature",
+   "pack",
+   "atlantis"
+  ],
+  "source": "pack",
+  "objclass": "CreatureType",
+  "creatureClass": "FishSwordfish",
+  "popAnim": "POPANIM_PLANT_FISHS_FISH_SWORDFISH",
+  "referencedBy": [
+   {
+    "kind": "fish_creature",
+    "level": "beach_47"
+   },
+   {
+    "kind": "fish_creature",
+    "level": "beach_48"
+   },
+   {
+    "kind": "fish_creature",
+    "level": "beach_49"
+   },
+   {
+    "kind": "fish_creature",
+    "level": "beach_51"
+   },
+   {
+    "kind": "fish_creature",
+    "level": "beach_52"
+   },
+   {
+    "kind": "fish_creature",
+    "level": "beach_54"
+   }
+  ],
+  "extra": {
+   "packTypeName": "swordfish",
+   "popAnim": "POPANIM_PLANT_FISHS_FISH_SWORDFISH",
+   "homeWorld": "atlantis"
+  }
+ },
+ {
+  "id": "tutorial_imp",
+  "behavior": "walk",
+  "family": "walk",
+  "hp": 190,
+  "tags": [
+   "zombie",
+   "pack",
+   "tutorial"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_TUTORIAL_IMP",
+  "referencedBy": [
+   {
+    "kind": "spider",
+    "level": "frontyard_62"
+   },
+   {
+    "kind": "spider",
+    "level": "frontyard_70"
+   }
+  ],
+  "extra": {
+   "packTypeName": "tutorial_imp",
+   "zombieClass": "ZombieImp",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_TUTORIAL_IMP",
+   "homeWorld": "tutorial"
+  }
+ },
+ {
+  "id": "west_bullrider",
+  "behavior": "walk",
+  "family": "walk",
+  "hp": 190,
+  "tags": [
+   "zombie",
+   "pack",
+   "cowboy"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_WEST_BULLRIDER",
+  "referencedBy": [
+   {
+    "kind": "spider",
+    "level": "modern_37"
+   }
+  ],
+  "extra": {
+   "packTypeName": "west_bullrider",
+   "zombieClass": "ZombieImp",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_WEST_BULLRIDER",
+   "homeWorld": "cowboy"
+  }
+ },
+ {
+  "id": "zcorp_imp",
+  "behavior": "walk",
+  "family": "walk",
+  "hp": 1100,
+  "tags": [
+   "zombie",
+   "pack",
+   "rift1b"
+  ],
+  "source": "pack",
+  "objclass": "ZombieType",
+  "popAnim": "POPANIM_ZOMBIE_ZOMBIE_CORPORATE_GARGANTUAR",
+  "referencedBy": [
+   {
+    "kind": "spider",
+    "level": "lunarrainbowmarket_53"
+   }
+  ],
+  "extra": {
+   "packTypeName": "zcorp_imp",
+   "zombieClass": "ZombieZCorpImp",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_CORPORATE_GARGANTUAR",
+   "homeWorld": "rift1b"
+  }
  }
 ]

@@ -413,6 +413,7 @@ def build_plants_roster(manual_path: Path | None = None,
 def write_plants_roster(result: plants_merge.MergeResult | None = None) -> plants_merge.MergeResult:
     result = result or build_plants_roster()
     plants_merge.DEFAULT_MANUAL.write_bytes(plants_merge.render(result.rows))
+    plants_merge.DEFAULT_BLOCKED.write_bytes(plants_merge.render_blocked(result.blocked))
     return result
 
 
@@ -735,6 +736,7 @@ def main(argv: list[str] | None = None) -> int:
         roster = write_plants_roster()
         rc = roster.counts
         print(f"plants: {rc['total']} (authored {rc['authored']} + pack {rc['pack']}, "
+              f"playable {rc['playable']}, blocked {rc['blocked']}, "
               f"conflicts {rc['conflicts']}, packRoster {rc['packRoster']})")
         return 0
 
@@ -760,6 +762,7 @@ def main(argv: list[str] | None = None) -> int:
         except (OSError, ValueError):
             on_disk = -1
         print(f"  plants={on_disk} authored={rc['authored']} pack={rc['pack']} "
+              f"playable={rc['playable']} blocked={rc['blocked']} "
               f"conflicts={rc['conflicts']} merged={rc['total']} packRoster={rc['packRoster']}")
         if mismatches:
             print(f"mismatches (first {len(mismatches)}):")

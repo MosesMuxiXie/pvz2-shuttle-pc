@@ -1,4 +1,5 @@
 #pragma once
+#include <array>
 #include <cstddef>
 #include <filesystem>
 #include <string>
@@ -23,6 +24,19 @@ struct GameEventSound {
     std::string fallback;
     std::string note;
 };
+
+/// Sfx priority per engine event, fed to `AudioMixer::playSfx`.
+///
+/// 0 = default, 1 = hit / projectile, 2 = wave / flourish, 3 = player-facing UI. The mixer evicts
+/// the lowest priority first (then the earliest start), so a burst of 40 pea hits cannot push the
+/// wave horn or the shovel click out of the pool. Only events that actually play something carry a
+/// level; an unwired event stays 0 and never reaches the mixer at all.
+struct SfxPriority {
+    std::string_view event;
+    int priority;
+};
+
+extern const std::array<SfxPriority, 16> kEventPriorities;
 
 struct EventBinding {
     std::string event;    ///< canonical name the game code dispatches
@@ -72,6 +86,8 @@ public:
     /// (deliberately silent) and also when the name is unknown; callers must report both
     /// instead of substituting a sample of their own.
     std::string soundForEngineEvent(std::string_view event) const;
+    /// Level for `event` from `kEventPriorities`; 0 (default) when the event has no level.
+    int priorityForEngineEvent(std::string_view event) const;
     /// BGM track for a world name (`frontyard`, `menu`, ...); empty when unknown.
     std::string music(std::string_view world, bool intro = false) const;
     const std::vector<EventBinding>& bindings() const { return bindings_; }

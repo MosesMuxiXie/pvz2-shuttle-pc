@@ -51,7 +51,11 @@ int main(int argc, char** argv) {
         check(argc == 4, "expected content, fixture and rules-pack roots");
         const auto catalog = loadCatalog(fs::path(argv[1]));
         const auto s = catalog.summary();
-        check(s.worlds == 26 && s.plants == 147 && s.zombies == 55 && s.levels == 1809,
+        // A9b (t105) grew the zombie roster from the 55 authored rows to 111 by
+        // appending the 56 ids the mechanics actually reference (spider rain imps,
+        // the atlantis fish, the whack-a-zombie set). Plants moved the same way in
+        // B5 (147 authored + 262 pack rows = 409).
+        check(s.worlds == 26 && s.plants == 409 && s.zombies == 111 && s.levels == 1809,
               "real catalog counts");
         check(s.original == 1646 && s.synthesized == 163 && s.unknownSource == 0, "source counts");
         // T53 made the three level flags builder output, so the counts moved:
@@ -68,7 +72,7 @@ int main(int argc, char** argv) {
         check(rules.rules != nullptr, "rules pack loaded: " + rules.rulesNote);
         check(rules.rules->plants.size() == 339 && rules.rules->zombies.size() == 1127, "pack counts");
         check(rules.rulesNote.rfind("rules=pack", 0) == 0, "rules note names the pack");
-        check(rules.levels.size() == 1809 && rules.plants.size() == 147, "JSON registries stay");
+        check(rules.levels.size() == 1809 && rules.plants.size() == 409, "JSON registries stay");
 
         // A pack that was asked for but cannot be read is a hard error. Falling back
         // to JSON here used to let a typo in --pack run a whole session on tuning

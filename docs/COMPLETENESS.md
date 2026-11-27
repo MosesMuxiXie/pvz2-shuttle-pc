@@ -24,13 +24,13 @@
 | 2 | 模拟内核 | **70%** | 60 Hz 定步、种子可溯源、32 场景双跑同哈希；啃食/子弹/推车/波次/阳光/冷却/卡组/棋盘尺寸都通 | 关卡模块全未实现（`extra` 解析为 0）、无元素/养料/融合/Boss、关卡内植物等级成长未接 |
 | 3 | 行为族 | **55%** | 植物 11 族 339/339 判定、僵尸 6 族 183/183 判定，族函数全部落地 | 26 处兜底常量（无包内证据）、`support` 空实现、37 株无 Actions、刺/咬/大砸为简化模型 |
 | 4 | 元素 / 养料 / 融合 / Boss | **25%** | 数据侧全部编译：融合 85 对、养料 293 行（147 时长 / 185 次数 / 6 动作）、Boss 50 个 / 155 可上场阶段；运行时仍然为零 | 元素须纯 authored；四模块运行时未写；无 UI |
-| 5 | 战斗表现 | **30%** | DragonBones 5.5 运行时 + PopAnim→DragonBones 转换器；battle_view 可交互截图 | 内容植物 111/147 有旧美术、7 株走新提取、**29 株缺**；僵尸新美术 0；无粒子/阴影/死亡动画 |
+| 5 | 战斗表现 | **30%** | DragonBones 5.5 运行时 + PopAnim→DragonBones 转换器；battle_view 可交互截图 | 内容植物 **134/409 命中美术、275 株缺**（`PvZ2SHUTTLE.exe --art-audit content`，2026-11-26 读数）；僵尸新美术 0；无粒子/阴影/死亡动画 |
 | 6 | 音频 | **0%** | `assets/audio` 有 67 个音频文件 | **C++ 侧没有任何音频子系统**（无 SDL_audio/Mixer 引用） |
 | 7 | UI 与流程 | **10%** | 启动图 + 战斗 HUD（中文） | 无主菜单/世界地图/选卡/图鉴/商店/花园/设置/结算/暂停菜单/关卡介绍 |
 | 8 | 进度与存档 | **30%** | 只读迁移 Python 存档；`native/src/progress.{hpp,cpp}` 已进 CMake 并通过 `progress` 用例（星章表 1809 关 / 5427 目标 + 原子存档 + 不回退合并 + 非 ASCII 路径） | 未接 UI/世界地图/商店；4 类星章目标引擎无计数器；钥匙/解锁未写档 |
 | 9 | 关卡变体与特殊地形 | **10%** | 1809 关都能 headless 跑完 | Boss 71 关无 Boss、砸罐子 45 关按普通关跑、矿车 10 关无矿车、45 小游戏/无尽/传送门/潮汐/氧气全无 |
 | 10 | 平台与发布 | **20%** | Windows x64 可构建可跑 | 无安装程序、无便携包；macOS 未构建未验证 |
-| 11 | 工具链与门禁 | **85%** | `check_all`（audit+desktop 双配置）+ 三份基线 + 32 场景冒烟 + 263 Python 例 + 13/18 C++ 例 | 无性能/内存预算门禁、无 CI、美术覆盖率未进门禁 |
+| 11 | 工具链与门禁 | **85%** | `check_all`（audit+desktop 双配置）+ 三份基线 + 32 场景冒烟 + **891 Python 例** + ctest **audit 36 / desktop 38** 项（`python -m unittest discover -s tools/tests -p "test_*.py"` → `Ran 891 tests`；`ctest --test-dir build/native -N` / `build/desktop-gate` → 36 / 38） | 无性能/内存预算门禁、无 CI、美术覆盖率未进门禁 |
 | 12 | 联网与服务 | **5%** | 仅 Python 版有版本查询 | C++ 侧完全没有 |
 
 **加权（按玩家可见面，权重见 §3.12）：约 35%。** 这不是"完成 35% 的工作量"，而是"玩家能看到的原版体验覆盖 35%"——数据与内核的地基比这个数字高。
@@ -57,7 +57,7 @@
 
 **缺陷**
 - **C1（high）** 46 个 stage / 368 关未映射（RiftStage 37、ChildStage 30、AprilFoolsStage 28 等周年庆/裂隙/深渊）——不影响 26 世界，但"完整复刻"目标里这些关是空的。
-- **C2（high）** 包内 295 株植物 / 1107 个僵尸行**没有任何客户端 id**（`vamporcini`、`bombardmint`、`seashroom`、`plantern`、`camel_*`、`*_veteran`…）。真正目标是 339/1127，客户端只有 147/55，缺口要靠"补全名册"（美术 + 定义）填。
+- **C2（high）** 包内 295 株植物 / 1107 个僵尸行**原本没有任何客户端 id**（`vamporcini`、`bombardmint`、`seashroom`、`plantern`、`camel_*`、`*_veteran`…）。真正目标是 339/1127，客户端名册现为 **409 行 = 手工 147 + pack 派生 262**（t83，其中 262 株就是从这 295 株里补进来的），仍在外面的 pack 植物 **33 株**（`plant_blocked.json` 的 pack-only 部分）、僵尸 1107 行。
 - **C3（medium）** 客户端 103 株植物在 pack 里不存在（`twinsunflower`、`gatling`、`iris`、`snowlotus`…）：有的是换皮复用（`rosemary→spearmint`），有的确实没数据 → 需人工裁决"保留/合并/删除"。
 - **C4（medium）** `content/bosses.json` 26 条 HP 是 8000→13200 等差数列、phases 三档全同，**与 pack 的 258 阶段真实 HP 无一相符**（S5 正在用 `bosses_from_pack.json` 替换）。
 
@@ -118,12 +118,12 @@
 
 - `dragonbones.cpp`（21.7 KB）：5.5 骨架平移/旋转/缩放、缓动、蒙皮、affine 贴图、动画通道叠加（不是替换）。
 - `tools/obb_art.py`：PopAnim（magic `0xBAF01954` v6）→ DragonBones 转换，单 base 可复现（四文件 sha 稳定）；4×4 子块颜色精度（alpha 精确）。
-- `--art-audit`（t14）：content 147 株 → **111 旧美术 / 7 新提取 / 29 缺**；pack 339 株 → 106 新提取 / 233 缺；僵尸 0（提取未到 ZOMBIE 批）。
+- `--art-audit`（t14 口径；2026-11-26 复跑见 C19/C20）：content 147 株 → **111 旧美术 / 7 新提取 / 29 缺**；pack 339 株 → 106 新提取 / 233 缺；僵尸 0（提取未到 ZOMBIE 批）。
 
 **缺陷**
-- **C19（high）** 29 株内容植物无任何美术（含 deck 引用 top3：`potatochip` 117 次、`begonia` 114 次、`missiletoast` 110 次）。
-- **C20（high）** 147 株里只有 31 套独立模型（80 株换皮，`GatlingPeaPLANT` 被 11 株共用）→ 独立形象覆盖 31/147≈21%。
-- **C21（medium）** 提取到 218/1087 base（`pending 867`，仍在 PLANT 批），2 个 base 因 **ASTC 块压缩（fmt 161/162，约 95 个子组）** 失败——要补需另写 ASTC 解码器。
+- **C19（high）** 29 株内容植物无任何美术（含 deck 引用 top3：`potatochip` 117 次、`begonia` 114 次、`missiletoast` 110 次）；按 409 行名册复跑后是 **275 株缺**（`--art-audit content`：webHit 134）。
+- **C20（high）** 147 株里只有 31 套独立模型（80 株换皮，`GatlingPeaPLANT` 被 11 株共用）→ 独立形象覆盖 31/147≈21%（手工行口径，未按 409 行重算）。
+- **C21（medium）** 当时提取到 218/1087 base（`pending 867`，仍在 PLANT 批），2 个 base 因 **ASTC 块压缩（fmt 161/162，约 95 个子组）** 失败；2026-11-26 的索引已是 **1135 base / ok 1134 / failed 0 / skipped 1**（C61）。
 - **C22（medium）** 无死亡淡出以外的表现：无粒子、无阴影（`ShadowOffset` 未用）、无受击闪白、无种植/铲除动画、无旗帜波特效。
 
 ### 2.6 音频 — 0%
@@ -234,7 +234,7 @@ ative-desktop\Release\PvZ2SHUTTLE.exe` 可跑（desktop 17/17）。
 **Boss 关口径复核（2026-11-20 23:05）**：原版 1809 关里有 `ZombossBattle` 模块的恰 **71 关**，与客户端 `extra.boss` 的 71 关**数量一致**；但用 `*BossStage` 命名只覆盖 **18 关**——即大多数 Boss 战嵌在普通 stage 里（如 `PirateBossStage` 只 1 关，`EgyptNightsBossStage` 2 关）。所以统计 Boss 关必须按 `ZombossBattle` 模块，不能按 stage 名。
 ### 2.17 OBB 美术提取进度（2026-11-20 23:05 快照）
 
-`tools/obb_art.py` 全量批在跑（1087 个可提取 base）：**ok=543 / failed=10 / pending=534**，PLANT 374 个已全部跑完、ZOMBIE 已落盘 179。产物 `PvZ2SHUTTLE/assets/db/shuttle/<base>/`（skeleton/atlas/texture/meta 四件套）+ 实时索引 `index.json`（每 base 原子重写：`items/counts/failures/progress`）。
+`tools/obb_art.py` 全量批（t16 口径）：当时在跑 1087 个可提取 base，**ok=543 / failed=10 / pending=534**，PLANT 374 个已全部跑完、ZOMBIE 已落盘 179；2026-11-26 的索引已是 **1135 base / ok 1134 / failed 0 / skipped 1**（C61）。产物 `PvZ2SHUTTLE/assets/db/shuttle/<base>/`（skeleton/atlas/texture/meta 四件套）+ 实时索引 `index.json`（每 base 原子重写：`items/counts/failures/progress`）。
 
 - **popAnim 连接率已修**：pack 的命名是「类前缀 + 类型名」，僵尸会出现**重复前缀**（`ZOMBIEAFBALDGROUP → POPANIM_ZOMBIE_ZOMBIE_AF_BALD`）；原先只在"未带前缀"时补前缀，导致僵尸全为 null。加"已带前缀则再叠一层"候选并 `--reindex`（只重算 index，不重解包）后：**ZOMBIE 179 项中 115 连上、PLANT 364 项中 277 连上**；余下的是 pack 内确实没有同名非生物资源（tile/mower/effect/场景），按设计留 `popAnim: null`。
 - **缺陷 C40（low）**：10 个 base 因 PTX 用 ASTC 块压缩（fmt 162 = ASTC 6x6、fmt 161 = ASTC 5x5）未能解出：`PLANTELECTRICPEEL`、`PLANTFIRESHROOM`、`PLANTICESHROOM`、`PLANTIMPATIENSSHOOTER`、`PLANTLEMON`、`PLANTMANGOSTEEN`、`PLANTNARCISSUSSHOOTER`、`PLANTPINKSTARFRUIT`、`PLANTPRIMALPEASHOOTER`、`PLANTSTALLIADAHLIA`。它们全部落在 `index.json` 的 `failures[]` 带原因串，不静默丢；补法是要么写 ASTC 解码器，要么接受这 10 株走缺省美术。
@@ -823,7 +823,7 @@ T54 接线后 `native/src/rewards.{hpp,cpp}`（挂 `pvz_progress`，失败抛 `r
 | C6 | high | 内核 | 植物等级成长未接 | S6 |
 | C7/C16/C17 | high | 玩法 | 元素运行时为零；养料/融合引擎已落地（§2.18）但养料无掉落货币、桌面无交互 | S5→S6 |
 | C11 | high | 行为族 | `support` 空实现 | S5 |
-| C19/C20 | high | 表现 | 29 株缺美术；独立形象仅 31/147 | S4/S8 |
+| C19/C20 | high | 表现 | **275 株缺美术**（`--art-audit content`：409 行里 webHit 134）；独立形象仅 31/147（该比例是手工行口径，未按 409 行重算） | S4/S8 |
 | C25 | 部分已修 | 存档 | `Progress` 已有星章（`stars`/`goals`）、金币、种子、购买记录、`lastLevel` continue 指针，原子写、损坏不覆盖；**未做**存档版本迁移策略；钥匙来源只有 `egypt_3` 通关一条，且世界门只花 1 把（C46） | S6 余下部分 |
 | C28/C29 | high | 发布 | 无安装包；macOS 未构建 | S8 |
 | C1/C2 | high | 数据 | 368 关未映射；1107 僵尸无客户端 id；24 个 Boss mech 无关卡放置 | S7/S9 |
@@ -841,7 +841,7 @@ T54 接线后 `native/src/rewards.{hpp,cpp}`（挂 `pvz_progress`，失败抛 `r
 | C52 | low | 音频 | **部分已修**（T49）：已有 `--volume 0..100` 与 `--mute-bgm/--mute-sfx`、BGM 0.75 s 交叉淡入。仍缺：8 voice、最近邻重采样（无插值）、无独立音量滑杆 UI。 |
 | C54 | low | 引擎 | **已修（2026-11-25）**：旧 `simulation.cpp` 的 `Battle` 保留（`engine::World` 已是主路径，但 `--simulate` 与 `simulation_test` 还用它做小规模自检），拒绝方式改成**可枚举**：新增 `Battle::unsupportedRules(level)` 返回「不支持的规则」清单（world / synthesized / 四条 extra 标记 / 棋盘尺寸），构造函数只抛出清单里的第一条。CLI `--simulate <content> [level id]` 现在支持指定关卡：干净关（`frontyard_1`）→ `{"level":"frontyard_1","simulated":true,…}` exit 0；Boss 关（`beach_19`）→ `{"level":"beach_19","simulated":false,"unsupported":["world 'beach'","synthesized levels","level rule 'boss'"]}` **exit 2**，不再抛异常、也不再可能假装跑过。`simulation_test` 新增两条断言（boss 关按规则名被拒、干净关清单为空）。 |
 | C56 | high | 经济 | **已修（2026-11-25）**：`loot_binding.json` 补齐 1809 关的 `lootKey`/`presentTable`/`danger`/`noLoot`，13 张悬空表按「不发 + `presentTableMissing`」处理。原始缺口描述：掉落的**逐关绑定**缺失：`rewards_from_pack.json` 只有 per-key / per-table 计数，没有「关卡→LootConfig」「关卡→PresentTable」映射（`content/levels/*.json` 无 `loot` 字段，`content.pack` 里 `PresentTable` 命中 0）。后果：`lootKey` 一律 `default`（47 个 danger/whack/NoLoot 关按 default 结算）、present 表按世界名推导 + `egypt_normal_01` 回落、13 张悬空表 68 关拿不到午餐盒 |
-| C57 | medium（已部分收口） | 数据（460.9） | **460.9 新增数据有人读、但消费者只接上一半**：`SuppressFlagZombie` 已建进 `patch_460_9.json` 与 `content/levels/*.json`（271 关）+ 引擎抑制与计数（t64/t65，CLI 有 `flagSuppressed`）；仍无消费者的是 `RlConfig`（Roguelike：ChoiceCount/EliteEvery/EliteChance/EliteDamageBonusPct…，17 字段只有数据）、`ThymedEventSchedule` 新增 3 组事件（timespaceechoes_0003/0004/0009，445 个关卡引用，只有数据）、`EffectElementReactionGroup_1536/_768/_Common` 三组美术（880,640 B 未解压进美术库）。这三样在复刻口径里应视为「未实现」而不是「已对齐」。 |
+| C57 | medium（已部分收口） | 数据（460.9） | **460.9 新增数据有人读、但消费者只接上一半**：`SuppressFlagZombie` 已建进 `patch_460_9.json` 与 `content/levels/*.json`（271 关）+ 引擎抑制与计数（t64/t65：`native/src/engine/world.cpp:69-77` 读 `extra.suppressFlagZombie`、`world.cpp:167-180` 丢旗标波并发 `flag_wave_suppressed`、`native/src/main.cpp:288-290` 出 `flagSuppressed`）；仍无消费者的是 `RlConfig`（Roguelike：ChoiceCount/EliteEvery/EliteChance/EliteDamageBonusPct…，17 字段只有数据，缺 Roguelike 运行层，最小接线点 `native/src/flow.cpp:10` / `flow.cpp:59`）、`ThymedEventSchedule` 新增 3 组事件（timespaceechoes_0003/0004/0009，445 个关卡引用，只有数据，缺日历层 + 活动关卡池，接线点 `native/src/worldmap.cpp:232`）。`EffectElementReactionGroup_1536/_768/_Common` 三组美术已由 C61 提取（美术索引 1135 base / ok 1134 / failed 0），不再是缺口。剩下这两样在复刻口径里应视为「未实现」而不是「已对齐」。 |
 | C58 | low | 工具链确定性 | **已修（2026-11-25）**：三处戳全部改成内容寻址 —— `rewards.generated_stamp()` 现在把读到的 10 个包按「包名 + 字节」喂进 sha256，返回 `sha256:<16 hex>`；`spawn_offsets.generated_stamp(source)` 改成源表字节的 `sha256:<16 hex>`；`worlds.gate_timestamp()` 改名 `gate_stamp()`，返回 `pkg_2107_WorldData.json` 的 `sha256:<16 hex>`。此前它们分别取「包 mtime 最大值」「表 mtime」「表 mtime」，所以把同一份 OBB 重新解包（每次版本升级都会）就 churn 一遍产物。三条测试同步改断言（`^sha256:[0-9a-f]{16}$` + 与生成器函数互校），重生成后 `rewards…=sha256:30ec5ddd121d9bb8`、`spawn_offsets…=sha256:ad0fa20ca73aa95b`、`world_gates…=sha256:b1f61cd5ef86dedb`。 |
 | C59 | low | 最新版对齐 | 核心库 460.11 新增的客户端玩法（`RogueModule` 肉鸽 155 条字符串、`SlotMachineModule`、`AciditySubsystem`、`VoidDragonNasaSubsystem`）在 460.9 数据包里**没有对应数据**（0 命中），属「有实现无数据」；我们的复刻只到 460.9 数据 + 460.1 行为，不反推这些玩法。元素反应与 `GridItemIceHole/FireWall` 的数据在包里但未编译未接线。 |
 | C55 | medium | 内容数据 | **已取证（t56）**：`egypt_74` 5 条保护目标落在 3 个格子、`mustProtectCount=4`，但它在引擎里是**零容错而非必输**（判负只在植物死亡路径）。全库 5 关 `must > 去重格子`、11 关 `placed < must`，其中 6 关 `placed==0` 保护判定空转 → t58 加 `protect_capacity_shortfall` 事件。另：`extract_protect` 只取第一个模块（`lostcity_46` 少 7 株，t57 修）、`failWhenProtectedPlantDies=true` 是客户端默认值（加标注） |
@@ -878,7 +878,7 @@ T54 接线后 `native/src/rewards.{hpp,cpp}`（挂 `pvz_progress`，失败抛 `r
 - 门禁：无声→有声（至少 1 首 BGM + 6 类音效）、安装包在干净机器可跑、macOS 实测。
 
 ### S9（可选）：补齐名册与联网边界
-- 1107 个 pack-only 僵尸 + 295 个 pack-only 植物 的名册补全（美术 + 定义），368 关未映射 stage 的接入，README 明确"不实现联网"。
+- 1107 个 pack-only 僵尸 + 仍有 33 株 pack-only 植物（原 295 株里 262 株已由 t83 补进名册）的名册补全（美术 + 定义），368 关未映射 stage 的接入，README 明确"不实现联网"。
 
 ---
 
@@ -919,15 +919,16 @@ ative\Release\PvZ2SHUTTLE.exe --art-audit content --pack native\generated\conten
 `docs/PROGRESS.md` 的 21 条按 P0/P1/P2 三档推进；本轮把其中能靠**数据 + 接线**完成的全部做完，
 剩下的都是「原版没数据」或「需要新运行层」的硬骨头，逐条落在这里。
 
-### 新增数据表（六份，均已进 `check_all`）
+### 新增数据表（七份，均已进 `check_all`）
 
 | 产物 | 尺寸 | 内容 | 门禁步骤 |
 | --- | --- | --- | --- |
-| `native/generated/vasebreaker.json` | 186,116 B | 砸罐子 **47 关** / 1435 罐（僵尸 788 / 植物 617 / 收集物 30），真实类名 `VaseBreakerPresetProperties`（46 条 / 46 包）；逐罐 row/col、逐罐 sun、`timeLimit` 原版**没有** → null + `unknowns`；`frontyard_166` 是无尽 | `vasebreaker --check`（21.9 s） |
-| `native/generated/minigames.json` | 1,222,781 B | **813 关**挂玩法模块、20 kind（16 minigame + 4 variant）、1019 次；vasebreaker 47 / rail 196 / laststand 73 / beghouled 11 / whack 1 / joust 4 / conveyor 332 / tide 77 / protecttheplant 197 | `minigames --check`（36.5 s） |
+| `native/generated/vasebreaker.json` | 186,021 B | 砸罐子 **47 关** / 1435 罐（僵尸 788 / 植物 617 / 收集物 30），真实类名 `VaseBreakerPresetProperties`（46 条 / 46 包）；逐罐 row/col、逐罐 sun、`timeLimit` 原版**没有** → null + `unknowns`；`frontyard_166` 是无尽 | `vasebreaker --check`（21.9 s） |
+| `native/generated/minigames.json` | 1,222,686 B | **813 关**挂玩法模块、20 kind（16 minigame + 4 variant）、1019 次；vasebreaker 47 / rail 196 / laststand 73 / beghouled 11 / whack 1 / joust 4 / conveyor 332 / tide 77 / protecttheplant 197 | `minigames --check`（36.5 s） |
 | `native/generated/loot_binding.json` | 537,332 B | **1809 关**逐关绑定 `lootKey`(default 1762 / danger 13 / whack 1 / null 33)、`presentTable`(level 1635 / default 174)、悬空表 12 名 13 条 68 次引用 | `loot binding --check`（7.3 s） |
-| `native/generated/metagame.json` | 730,277 B | 图鉴 植物 **167** + 僵尸 **428**（= 595；旧「169」多算了 `AlmanacDLHandler`/`HotUIAlmanacVerticalListProperties`）、花园掉落 65 + Zen 4/4 表 + 盆 12、任务 240（69 带 `CompletionAwards`）+ 每日 11、成就 53（**全 serverOnly**） | `metagame --check` |
-| `native/generated/plant_playable.json` | 200,236 B | pack 名册 339 判可玩性：**293 可玩**（42 同名 + 251 新增候选）、**46 阻断**（缺成本 23 = null 2 + cost 0 21；缺美术 26；两者都缺 3） | `plant playable --check` |
+| `native/generated/metagame.json` | 732,730 B | 图鉴 植物 **167** + 僵尸 **428**（= 595；旧「169」多算了 `AlmanacDLHandler`/`HotUIAlmanacVerticalListProperties`）、花园掉落 65 + Zen 4/4 表 + 盆 12、任务 240（69 带 `CompletionAwards`）+ 每日 11、成就 53（**全 serverOnly**） | `metagame --check` |
+| `native/generated/plant_playable.json` | 200,287 B | pack 名册 339 判可玩性：**304 可玩**（42 同名 + 262 新增候选）、**35 阻断**（缺成本 23 = null 2 + cost 0 21；缺美术 15；两者都缺 3） | `plant playable --check` |
+| `native/generated/plant_blocked.json` | 9,893 B | 35 条阻断逐条 id / framework / cost / family / `blockers` / 中文 `reason` / `inRoster` / `inPackRoster`（缺成本 23 / 缺美术 15 / 两者 3；pack-only 33 + 手工行 2） | `plant playable --check`（与上一行同一次运行比对） |
 | `native/generated/plant_levels.json` | 821,708 B | 权威表 `pkg_2069_PlantLevelStats`（325 行 / 323 株）→ **133 株可升级**，byLevelCount {1:190,2:36,3:20,4:5,10:68,15:1,20:3}；`levelXPNonMonotonic` 113、`ragged` 40；`PlantUpgrade*` objclass 全库 0 → 无通用升级表 | `plant levels --check` |
 
 口径要点（都踩过坑，写下来免得重犯）：
@@ -960,8 +961,11 @@ ative\Release\PvZ2SHUTTLE.exe --art-audit content --pack native\generated\conten
 1. **植物名册 147 → 339 不可达**：147 条里只有 44 条与原版同名（另 1 条 `fireflerry` ↔ `firefly` 是改名同一植物，
    cost 225 / hp 2671 逐项相同），85 条是融合、14 条 Plantagenet、3 条自创（gatling/twinsunflower/umbrellaleaf）；
   **「147 ⊂ 339」不成立**，共享同一植物的只有 **45/147 = 30%**。并集 442 条会让 20 个写死 147/44/295 的用例同时红，
-  且 102 条手工植物在原版没有任何行可对照。结论：**维持 147**，`plants_merge.py` 留作显式工具（幂等、冲突手工胜），
-  新增候选走 `plant_playable.json`（293 / 46）。
+  且 102 条手工植物在原版没有任何行可对照。**2026-11-26 改判（t83）**：旧口径（只留手工行）作废——名册写成
+  **409 行 = 手工 147 + pack 派生 262**（派生行逐条 `source:"pack"`，字段映射沿用 `expand.py` 的 `fieldSources`），
+  35 条阻断单独留在 `native/generated/plant_blocked.json`（缺成本 23 / 缺美术 15 / 两者 3）；
+  `--content-report` 现读 `plants=409 authored=147 pack=262 playable=304 blocked=35 conflicts=44 packRoster=339`，
+  见 `docs/reviews/2026-11-26-plant-roster-293.md`。
 2. **`spider` / `fish.fishes[]`**：content/zombies.json 55 条与 content.pack 1127 条都没有 spider 实体
    （只有 `ZombieGeneralZmechSpiderRainPhase*Action` 这类 boss 动作名），hermitcrab 同理 → 不凭动作名造实体。
 3. **`rlConfig` / `thymeEvents` 无消费者**（C57 的一半）：前者缺 Roguelike 运行层（最小接线点 `flow.cpp:10`/`flow.cpp:59`），
@@ -974,8 +978,8 @@ ative\Release\PvZ2SHUTTLE.exe --art-audit content --pack native\generated\conten
 
 | 编号 | 级别 | 领域 | 内容 |
 | --- | --- | --- | --- |
-| C61 | medium | 美术 | 小写 `_Common` base 全库 **48 个，其中 46 个带纹理页、合计 61,345,792 B，索引命中 0** —— 含整个**亚特兰蒂斯**世界（`WorldMap_Atlantis` 15.0 MB、`Environment_Atlantis`、`Submarine_Atlantis`、`TideWave_Atlantis`）与宇宙植物线（PlantCosmicMushroom/Nut/Pea/VoidDragon/DarkMatterDragonfruit/Levitater/Cornucopia）。修 `Subgroup.base()` 认 `_common` 后 `bases_total` 预期 1087 → **1133**，45 个现有解码器就能吃（fmt162×27 / fmt151×11 / fmt161×6 / fmt150×1） |
-| C62 | low | 经济 | `plant` 293 + `xp` 14 + `trophy` 18 等 438 行掉落「发不出去」不是实现缺口而是**数据缺口**：`first:`/`replay:` 行在客户端资产里没有关卡坐标（`content/levels/*.json` 的 extra grep `worldtrophy|unlock_plant|FirstReward` 命中 0），要真发得重建 OBB 侧绑定（形状类似 `loot_binding`） |
+| C61 | **已修（2026-11-26）** | 美术 | 小写 `_Common` base 原来被 `Subgroup.base()` 漏掉，索引命中 0 —— 含整个**亚特兰蒂斯**世界（`WorldMap_Atlantis` 15.0 MB）与宇宙植物线。修法：后缀剥离改大小写不敏感，且必须 `_common`（data）+ `_1536`/`_768`（image）**配对成功**才归并，否则保留全名；名字查找全部大小写不敏感，孪生 stem 塌缩成一个 base。**实测 `bases_total` 1087 → 1135（+48，不是早先预估的 1133）**：`PLANTDOOMBELL`/`PlantRepeater` 也有纹理页，只是页名 stem 大小写不同（`PlantDoombell_1536`/`PLANTREPEATER_1536`），凑 1133 会丢掉两条真实资产。`ok/failed/skipped = 1132/2/1`，磁盘 4,340 → 4,528 文件、4,413,075,128 → 4,843,198,589 B（+430,123,461，与 47 个新 base 字节和相等），`--art-audit` 0 mismatch。新增 failed 是 `EffectElementReactionGroup` 卡在 fmt160（转 C62）。334 个「结尾像后缀但配不上」的子组保留全名，行为未变 |
+| C62 | low | 经济 | `plant` 293 + `xp` 14 + `trophy` 18 等 438 行掉落「发不出去」不是实现缺口而是**数据缺口**：`first:`/`replay:` 行在客户端资产里没有关卡坐标（`content/levels/*.json` 的 extra grep `worldtrophy|unlock_plant|FirstReward` 命中 0），要真发得重建 OBB 侧绑定（形状类似 `loot_binding`）。注：这里的 `plant 293` 是**掉落行数**（`rewards_from_pack.json` 的 `byKind.plant`），与植物名册 409 无关 |
 | C63 | low | 商店 | `{coins}`/`{gems}` 产物行出厂全是 gem/mint 计价（先被币种拒，只有夹具能走通）；开关型 setting 出厂 0 行；gem/mint 消费侧未开放 → `unmodelledCurrency` 保持 479 |
 | C64 | low | 音频 | `playSfx(priority)` 形参就位但 `AudioRuntime` 一律传缺省 0，运行时等价「最早的先被砍」；分层（波次号角 > 命中 > 弹幕）要事件表带权重 |
 
@@ -983,3 +987,71 @@ ative\Release\PvZ2SHUTTLE.exe --art-audit content --pack native\generated\conten
 
 t76 报告 `worldmap_test` 报 `0xC0000005`。在静树门禁构建里直接跑 `build/desktop-gate/Release/worldmap_test.exe content`
 → `worldmap tests passed`、exit 0；desktop 38/38 全绿。判定为并行改窗期间的旧构建产物，未登记为缺陷。
+
+## 2.35 A/B/C 补齐轮（2026-11-26 / 27）
+
+上一轮把「没有实现/未完成」列成 A（玩法本体）/ B（经济元游戏）/ C（表现层）三组 14 条，本轮全部落地并接线。
+口径与前几轮相同：**产物 + 引擎消费者 + 反向探针 + 门禁读数**四件齐才算完成，缺一件就写进「明确不做」。
+
+### 交付表
+
+| 编号 | 内容 | 产物 | 引擎/界面消费者 | 验收 |
+| --- | --- | --- | --- | --- |
+| A1 | 砸罐子玩法 | `native/generated/vasebreaker.json`（186,116 B） | `native/src/engine/vase.{hpp,cpp}`、`World::breakVase`、`vase_test` 11 段 | 47 关里 **46 关真摆罐可玩**（`frontyard_166` 无 preset → 降级普通关并发 `vase_unavailable`）；audit `#30 vase` 通过 |
+| A2 | 铁轨玩法 | content `extra.rail` 192 关 | `native/src/engine/rail.{hpp,cpp}`、`RailCartEntity`、`battle_view` 车绘制、`rail_test` 7 段 | `cowboy_1 --seconds 20` → `"rail":{"carts":1,"hits":0,"movedCols":8}`；`frontyard_1` 无 rail 键 |
+| A3 | 小游戏开局参数 | `native/generated/minigame_rules.json`（41,496 B） | 逐 kind 参数已可查（`column`/`invisighoul` 阻断） | 20 种玩法 **18 可玩 / 2 阻断**，critical 参数 34/36 |
+| A4 | boardGrid / mutators / 事件 | content + `level_extra_rules.json` | `LevelMechanicsTable`、`mechanicUnknown` 从 **446 关降到 293 关** | `beach_2` 潮汐随波到达、银行上限 400 两条探针 |
+| A4a | 机制规则表 | `native/generated/level_extra_rules.json`（359,996 B） | boardGrid 49 / mutators 21 / night 187 / frost 64 / tide 60 / strength 60 | 22 例测试；`BoardGridMapProps` 的 0/1 语义**原版无说明 → 只搬进 World，不据此阻断种植** |
+| A5 | 保护目标同格叠加 | `PlantEntity::stackDepth` | `kMaxProtectStack=8`、`requiredProtectedPlants()=min(sheet,placed)` | 11 关 `protectCapacityShortfall` 全部 false（`egypt_74` 5/4 也补齐） |
+| A6 | 逐关可玩性底账 | `native/generated/level_playability.json`（1,394,571 B） | 决定后续工单排序 | **playable 1340 / 1809**，`inEngine 1225`；排序 night 187 → spider 118 → frost 64 → tide 60 → strength 60 → boardGrid 49 → mutators 21 |
+| A7 | 关卡徽标 + 世界地图角标 | `level_badges`、`MetagameCounts` | level select 详情面板 `badges`、worldmap 右下 `图鉴 167+428 · 花园 65`、已通关世界打勾 | **846/1809 关有徽标**；两张截图 |
+| A9 | 机制实体取证 | `native/generated/mechanic_entity_resolution.json`（20,343 B） | 纠正「spider 没有实体」的误判 | spider 23/23 命中 `pkg_2115_ZombieType`、fish 7/7 命中 `pkg_0013_CreatureType`、unscheduled 125 条全 orphan |
+| A9b | 僵尸/生物名册 | `native/generated/zombie_roster.json`（51,732 B） | `content/zombies.json` 55 → **111** 行 | 57 个被点名 id 全解析、冲突 1（`beach`）、unresolved 0 |
+| B1 | 植物等级进战斗 | `native/generated/plant_levels.json`（821,708 B） | `engine/plant_levels.{hpp,cpp}`、`plantStatsOf()` 单出口、`Progress::plantLevels`、`--set-plant-level` | **133 株 = 106 守卫生效 / 20 被拒 / 7 pack-only**；补丁前后 exe stdout 逐字节相同 |
+| B2 | 掉落第二波 | `rewards_from_pack.json` | `Progress::unlockedPlants`/`costumes`/`rewardLog`、`--land-constants`/`--land-rift` 开关 | 438 行 → **315 落地 / 123 显式不落地**；coin 30 行前提不成立（4 行是商店价格、26 行是 rift），默认一分不发 |
+| B3 | 图鉴 + 花园 | `metagame.json` | `almanac_view.{hpp,cpp}`、`garden_view.{hpp,cpp}`、`--almanac`/`--garden` | 植物 167 / 僵尸 428 / 掉落 65 / 盆 12 / Zen 4 |
+| B4 | 成就 + 每日 | `metagame.json` | `achievements_view`、`daily_view`、`--achievements`/`--daily` | 53 条成就**全 serverOnly**、daily 11 条（payable 5） |
+| B5 | 商店屏 | `shop_unlock.json`（585 行） | `shop_layout.{hpp,cpp}`、`shop_view.{hpp,cpp}`、`--shop-screen` | 585 行五页划分、**可购买 72**、每行拒绝原因逐字对账 |
+| B6 | 本地化表 | `native/generated/lawn_strings.json`（2,877,130 B） | `native/src/loc.{hpp,cpp}` 的 `load`/`resolve`（zh→en→fallback） | **19,055 键**（both 19,052 / enOnly 3）；`ACHIEVE_ALL_IN_JEST_TITLE` → 向我开炮 |
+| C1 | `_Common` base | 美术索引 1135 base | `tools/obb_art.py` 的配对归并 + `--art-audit` | 4,528 文件 / 4,845,237,832 B / **0 mismatch**（+430,123,461 B） |
+| C2 | fmt160 解码 | `texture_alpha.png` 两张 | `PTX_TEXEL_BYTES`/`PTX_BLOCK`/`infer_ptx_dims()` | 1024² 354,390 B、2048² 1,561,156 B；**仍只有亮度没有颜色**（七种解释已排除） |
+| C3 | 音频优先级 + 设置屏 | `Progress::audio` | `kEventPriorities` 16 条四级表、`settings_view`、`runSettingsScreen`、`--settings` | 探针「铲子必须 rank 3」，audit 34/34 |
+| C4 | `spawnOffset.y` | `native/generated/spawn_offsets.json` | `engine/spawn_offsets.{hpp,cpp}`、`WorldOptions::spawnOffsets`、`spawn_offset_test` | 桌面 ctest 含 `spawn_offset`；`--run-level` 出 `spawnOffsetApplied` |
+
+### 队长接线（界面与 CLI）
+
+| 位置 | 改动 |
+| --- | --- |
+| `native/src/menu_view.hpp/.cpp` | 菜单 **3 → 9 项**（继续游戏/世界地图/图鉴/花园/成就/每日挑战/设置/商店/退出），`MenuChoice` 同步；行几何 132 + 8×58 + 48 = 644；`menu_render_test` 的 `items == 3` 断言同步为 9 |
+| `native/src/main.cpp` | 六屏分派加 `--almanac`/`--garden`/`--achievements`/`--daily`/`--settings`/`--shop-screen`；`--menu` 改成循环（开屏 → 返回菜单），设置写回 `progress.audio`；帮助文本同步 |
+| `native/CMakeLists.txt` | `pvz_launcher` 补五个视图源；**`PVZ_ENABLE_DESKTOP=1` 从只挂 exe 改成 `PUBLIC`**（原来 `render*Headless` 在 launcher 里被 `#ifdef` 编空 → `LNK2019` 八处） |
+
+### 本轮修的真问题（都记了证据）
+
+1. **`settings` 屏提示行压在标签行盒里**：截图可见「←→ 每次 5%」压住标签；提示行改到 `rect.y + 74`、字号 15。
+2. **`settings_render_test` 在中文路径下读不到快照**：`IMG_Load(file.string().c_str())` 是 ANSI 窄串 → 改 `IMG_Load(pvz::pathUtf8(file).c_str())`。
+3. **`progress_test` 用 5×9 默认棋盘跑 beach_23**：测试不传 `board_sizes.json`，而生产会传 → 测试补 `CatalogOptions` + `generatedDir()`。
+4. **`catalog_test` 的 `zombies == 55` 过期**：名册已 111。
+5. **`--shop-screen` 我误加了「必须有 shop.json」的前置检查**：实际 `shop_view.cpp` 自己找 `shop_unlock.json`。
+6. **`battle-snapshot` 不是字节稳定的**：首帧 `dt` 吃进资源加载耗时，同一构建 6 次渲染 5 个不同 sha256 → 截图基线把它标 `UNSTABLE`，只渲染不判红。
+
+### 明确不做（本轮复核后仍不做）
+
+- **元素反应美术只有亮度**：七种解释已排除（1 B/texel 各 tile 布局、半尺寸 RGBA8、4 B/texel 八种字节序/RGB565、2 B/texel 四种、fmt150 对调、4 交织平面）；线索是 4 字节周期反相（lag2 −0.78 / lag4 +0.85）与四平面两两相关 +0.81…+0.94。
+- **spider 的拍数与 fish 的生物实体**：数据侧已进名册（A9b），但引擎侧仍记 `mechanicUnknown`——spider 行只有 `spiderCount`（无实体 pool），鱼需要 `CreatureEntity` 而不是 `ZombieEntity`。
+- **`boardGrid` 的 0/1 语义**：原版 `BoardGridMapProps.Values` 无字段说明，只搬进 World 供查询/计数，不用来阻断种植。
+- **`coin` 30 行掉落**：4 行是商店价格、26 行是 rift（客户端无入口），默认不发，需显式开关。
+
+### 复现命令
+
+```
+cmake --build build\desktop-gate --config Release
+build\desktop-gate\Release\PvZ2SHUTTLE.exe --menu content --frames 2 --snapshot menu.png
+build\desktop-gate\Release\PvZ2SHUTTLE.exe --shop-screen content --page buyable --frames 2 --snapshot shop.png
+python tools/contentc/level_playability.py --check
+python tools/contentc/minigame_rules.py --check
+python tools/contentc/level_extra_rules.py --check
+python tools/contentc/mechanic_entity_resolution.py --check
+python tools/snapshot_baseline.py --check --exe build\desktop-gate\Release\PvZ2SHUTTLE.exe
+python tools/smoke_rebaseline.py --check --exe build\desktop-gate\Release\PvZ2SHUTTLE.exe
+```

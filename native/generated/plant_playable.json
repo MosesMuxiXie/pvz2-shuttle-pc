@@ -1,30 +1,19 @@
 {
  "blockers": {
   "no-art": [
-   "apsarlotus",
-   "aquaweed",
    "bitpeashooter",
    "blastspinnercocoon",
-   "bubblecoral",
-   "cornucopia",
    "dandelion",
-   "doombell",
    "escaperoot",
    "explodeovine",
    "fusiongatling",
    "headbutterlettuce",
    "imppear_teto",
-   "kelpguard",
-   "levitater",
    "littleguy",
    "littlerepeater",
    "minishroom",
    "noctarinecloud",
-   "oxygenalgae",
-   "phatbeet",
    "rabbagepult",
-   "repeater1",
-   "seaderris",
    "slingpea",
    "sweetpotato"
   ],
@@ -58,23 +47,23 @@
  "counts": {
   "artViaAnimation": 0,
   "artViaContent": 44,
-  "artViaFramework": 269,
+  "artViaFramework": 280,
   "artViaRoster": 0,
-  "blocked": 46,
-  "blockedArtOnly": 23,
+  "blocked": 35,
+  "blockedArtOnly": 12,
   "blockedAuthored": 2,
   "blockedBoth": 3,
   "blockedCostOnly": 20,
   "blockerKinds": 3,
   "hasPackRow": 339,
-  "missingArt": 26,
+  "missingArt": 15,
   "missingCost": 23,
   "missingCostNull": 2,
   "missingCostZero": 21,
   "missingFamily": 0,
-  "playable": 293,
+  "playable": 304,
   "playableAuthored": 42,
-  "playableNew": 251,
+  "playableNew": 262,
   "sameAsAuthored": 44,
   "total": 339
  },
@@ -89,7 +78,9 @@
   "ambershroom",
   "appeasemint",
   "applemortar",
+  "apsarlotus",
   "aquavine",
+  "aquaweed",
   "armamint",
   "bamboospartan",
   "banana",
@@ -115,6 +106,7 @@
   "boomflower",
   "bowlingbulb",
   "bramblebush",
+  "bubblecoral",
   "buduhboom",
   "burnade",
   "buttercup",
@@ -141,11 +133,13 @@
   "coldsnapdragon",
   "concealmint",
   "containmint",
+  "cornucopia",
   "cranjelly",
   "darktwinsunflower",
   "dartichoke",
   "dazeychain",
   "desireflower",
+  "doombell",
   "doomshroom",
   "draftodil",
   "draftodil1",
@@ -219,6 +213,7 @@
   "jackolantern",
   "jalapeno",
   "jasmine",
+  "kelpguard",
   "kernelpult",
   "kernelpult1",
   "kiwibeast",
@@ -226,6 +221,7 @@
   "laser_bean",
   "lavaguava",
   "lemonaider",
+  "levitater",
   "lightningreed",
   "lilypad",
   "longmalily",
@@ -252,6 +248,7 @@
   "oakshooter_barrage",
   "olivepit",
   "olivepit1",
+  "oxygenalgae",
   "paradoxpult",
   "parsnip",
   "parsnip1",
@@ -262,6 +259,7 @@
   "pepperpult",
   "perfumeshroom",
   "phantasmagnolia",
+  "phatbeet",
   "phatbeet1",
   "plantain",
   "plantern",
@@ -292,10 +290,12 @@
   "redstinger",
   "reinforcemint",
   "repeater",
+  "repeater1",
   "rheumnobile",
   "rhubarbarian",
   "sapfling",
   "sapfling1",
+  "seaderris",
   "seaflora",
   "seapotatomine",
   "seashooter",
@@ -384,7 +384,9 @@
   "ambershroom",
   "appeasemint",
   "applemortar",
+  "apsarlotus",
   "aquavine",
+  "aquaweed",
   "armamint",
   "bamboospartan",
   "banana",
@@ -406,6 +408,7 @@
   "boomflower",
   "bowlingbulb",
   "bramblebush",
+  "bubblecoral",
   "buduhboom",
   "burnade",
   "buttercup",
@@ -429,11 +432,13 @@
   "coldsnapdragon",
   "concealmint",
   "containmint",
+  "cornucopia",
   "cranjelly",
   "darktwinsunflower",
   "dartichoke",
   "dazeychain",
   "desireflower",
+  "doombell",
   "doomshroom",
   "draftodil",
   "draftodil1",
@@ -500,12 +505,14 @@
   "inferno2",
   "intensivecarrot",
   "jackolantern",
+  "kelpguard",
   "kernelpult1",
   "kiwibeast",
   "kiwibeast_deprecated",
   "laser_bean",
   "lavaguava",
   "lemonaider",
+  "levitater",
   "lightningreed",
   "lilypad",
   "longmalily",
@@ -529,6 +536,7 @@
   "oakshooter_barrage",
   "olivepit",
   "olivepit1",
+  "oxygenalgae",
   "parsnip",
   "parsnip1",
   "peanut",
@@ -537,6 +545,7 @@
   "pepperpult",
   "perfumeshroom",
   "phantasmagnolia",
+  "phatbeet",
   "phatbeet1",
   "plantain",
   "plantern",
@@ -564,10 +573,12 @@
   "pyrevine2",
   "redstinger",
   "reinforcemint",
+  "repeater1",
   "rheumnobile",
   "rhubarbarian",
   "sapfling",
   "sapfling1",
+  "seaderris",
   "seaflora",
   "seashooter",
   "shadowpeashooter",
@@ -806,26 +817,24 @@
    "sameAsAuthored": false
   },
   {
-   "artName": null,
-   "artSource": null,
-   "blockers": [
-    "no-art"
-   ],
+   "artName": "PlantApsarlotus",
+   "artSource": "pack-framework",
+   "blockers": [],
    "cost": 200,
    "evidence": [
     "cost=200 (content.pack)",
     "family=support rule=R19-support/no-attack",
-    "art index 无匹配 base，content/plants.json 也没有 art"
+    "art 命中 PlantApsarlotus（pack-framework）"
    ],
    "family": "support",
    "familyRule": "R19-support/no-attack",
    "framework": "PlantApsarlotus",
-   "hasArt": false,
+   "hasArt": true,
    "hasCost": true,
    "hasFamily": true,
    "hasPackRow": true,
    "id": "apsarlotus",
-   "playable": false,
+   "playable": true,
    "rosterKind": "emitted",
    "sameAsAuthored": false
   },
@@ -852,26 +861,24 @@
    "sameAsAuthored": false
   },
   {
-   "artName": null,
-   "artSource": null,
-   "blockers": [
-    "no-art"
-   ],
+   "artName": "PlantAquaWeed",
+   "artSource": "pack-framework",
+   "blockers": [],
    "cost": 300,
    "evidence": [
     "cost=300 (content.pack)",
     "family=support rule=R19-support/no-attack",
-    "art index 无匹配 base，content/plants.json 也没有 art"
+    "art 命中 PlantAquaWeed（pack-framework）"
    ],
    "family": "support",
    "familyRule": "R19-support/no-attack",
    "framework": "PlantAquaWeed",
-   "hasArt": false,
+   "hasArt": true,
    "hasCost": true,
    "hasFamily": true,
    "hasPackRow": true,
    "id": "aquaweed",
-   "playable": false,
+   "playable": true,
    "rosterKind": "emitted",
    "sameAsAuthored": false
   },
@@ -1479,26 +1486,24 @@
    "sameAsAuthored": false
   },
   {
-   "artName": null,
-   "artSource": null,
-   "blockers": [
-    "no-art"
-   ],
+   "artName": "PlantBubbleCoral",
+   "artSource": "pack-framework",
+   "blockers": [],
    "cost": 250,
    "evidence": [
     "cost=250 (content.pack)",
     "family=shoot rule=R17-shoot/projectile",
-    "art index 无匹配 base，content/plants.json 也没有 art"
+    "art 命中 PlantBubbleCoral（pack-framework）"
    ],
    "family": "shoot",
    "familyRule": "R17-shoot/projectile",
    "framework": "PlantBubbleCoral",
-   "hasArt": false,
+   "hasArt": true,
    "hasCost": true,
    "hasFamily": true,
    "hasPackRow": true,
    "id": "bubblecoral",
-   "playable": false,
+   "playable": true,
    "rosterKind": "emitted",
    "sameAsAuthored": false
   },
@@ -2102,26 +2107,24 @@
    "sameAsAuthored": false
   },
   {
-   "artName": null,
-   "artSource": null,
-   "blockers": [
-    "no-art"
-   ],
+   "artName": "PlantCornucopia",
+   "artSource": "pack-framework",
+   "blockers": [],
    "cost": 250,
    "evidence": [
     "cost=250 (content.pack)",
     "family=support rule=R19-support/no-attack",
-    "art index 无匹配 base，content/plants.json 也没有 art"
+    "art 命中 PlantCornucopia（pack-framework）"
    ],
    "family": "support",
    "familyRule": "R19-support/no-attack",
    "framework": "PlantCornucopia",
-   "hasArt": false,
+   "hasArt": true,
    "hasCost": true,
    "hasFamily": true,
    "hasPackRow": true,
    "id": "cornucopia",
-   "playable": false,
+   "playable": true,
    "rosterKind": "emitted",
    "sameAsAuthored": false
   },
@@ -2284,26 +2287,24 @@
    "sameAsAuthored": false
   },
   {
-   "artName": null,
-   "artSource": null,
-   "blockers": [
-    "no-art"
-   ],
+   "artName": "PLANTDOOMBELL",
+   "artSource": "pack-framework",
+   "blockers": [],
    "cost": 75,
    "evidence": [
     "cost=75 (content.pack)",
     "family=wall rule=R10-wall/no-actions-high-hp",
-    "art index 无匹配 base，content/plants.json 也没有 art"
+    "art 命中 PLANTDOOMBELL（pack-framework）"
    ],
    "family": "wall",
    "familyRule": "R10-wall/no-actions-high-hp",
    "framework": "PlantDoombell",
-   "hasArt": false,
+   "hasArt": true,
    "hasCost": true,
    "hasFamily": true,
    "hasPackRow": true,
    "id": "doombell",
-   "playable": false,
+   "playable": true,
    "rosterKind": "emitted",
    "sameAsAuthored": false
   },
@@ -4187,26 +4188,24 @@
    "sameAsAuthored": true
   },
   {
-   "artName": null,
-   "artSource": null,
-   "blockers": [
-    "no-art"
-   ],
+   "artName": "PlantKelpGuard",
+   "artSource": "pack-framework",
+   "blockers": [],
    "cost": 200,
    "evidence": [
     "cost=200 (content.pack)",
     "family=wall rule=R11-wall/defensive-name",
-    "art index 无匹配 base，content/plants.json 也没有 art"
+    "art 命中 PlantKelpGuard（pack-framework）"
    ],
    "family": "wall",
    "familyRule": "R11-wall/defensive-name",
    "framework": "PlantKelpGuard",
-   "hasArt": false,
+   "hasArt": true,
    "hasCost": true,
    "hasFamily": true,
    "hasPackRow": true,
    "id": "kelpguard",
-   "playable": false,
+   "playable": true,
    "rosterKind": "emitted",
    "sameAsAuthored": false
   },
@@ -4390,26 +4389,24 @@
    "sameAsAuthored": false
   },
   {
-   "artName": null,
-   "artSource": null,
-   "blockers": [
-    "no-art"
-   ],
+   "artName": "PlantLevitater",
+   "artSource": "pack-framework",
+   "blockers": [],
    "cost": 50,
    "evidence": [
     "cost=50 (content.pack)",
     "family=support rule=R19-support/no-attack",
-    "art index 无匹配 base，content/plants.json 也没有 art"
+    "art 命中 PlantLevitater（pack-framework）"
    ],
    "family": "support",
    "familyRule": "R19-support/no-attack",
    "framework": "PlantLevitater",
-   "hasArt": false,
+   "hasArt": true,
    "hasCost": true,
    "hasFamily": true,
    "hasPackRow": true,
    "id": "levitater",
-   "playable": false,
+   "playable": true,
    "rosterKind": "emitted",
    "sameAsAuthored": false
   },
@@ -5182,26 +5179,24 @@
    "sameAsAuthored": false
   },
   {
-   "artName": null,
-   "artSource": null,
-   "blockers": [
-    "no-art"
-   ],
+   "artName": "PlantOxygenAlgae",
+   "artSource": "pack-framework",
+   "blockers": [],
    "cost": 50,
    "evidence": [
     "cost=50 (content.pack)",
     "family=produce rule=R01-produce/sun-action",
-    "art index 无匹配 base，content/plants.json 也没有 art"
+    "art 命中 PlantOxygenAlgae（pack-framework）"
    ],
    "family": "produce",
    "familyRule": "R01-produce/sun-action",
    "framework": "PlantOxygenAlgae",
-   "hasArt": false,
+   "hasArt": true,
    "hasCost": true,
    "hasFamily": true,
    "hasPackRow": true,
    "id": "oxygenalgae",
-   "playable": false,
+   "playable": true,
    "rosterKind": "emitted",
    "sameAsAuthored": false
   },
@@ -5428,26 +5423,24 @@
    "sameAsAuthored": false
   },
   {
-   "artName": null,
-   "artSource": null,
-   "blockers": [
-    "no-art"
-   ],
+   "artName": "PlantRepeater",
+   "artSource": "pack-framework",
+   "blockers": [],
    "cost": 200,
    "evidence": [
     "cost=200 (content.pack)",
     "family=shoot rule=R17-shoot/projectile",
-    "art index 无匹配 base，content/plants.json 也没有 art"
+    "art 命中 PlantRepeater（pack-framework）"
    ],
    "family": "shoot",
    "familyRule": "R17-shoot/projectile",
    "framework": "PlantRepeater",
-   "hasArt": false,
+   "hasArt": true,
    "hasCost": true,
    "hasFamily": true,
    "hasPackRow": true,
    "id": "phatbeet",
-   "playable": false,
+   "playable": true,
    "rosterKind": "emitted",
    "sameAsAuthored": false
   },
@@ -6188,26 +6181,24 @@
    "sameAsAuthored": true
   },
   {
-   "artName": null,
-   "artSource": null,
-   "blockers": [
-    "no-art"
-   ],
+   "artName": "PlantRepeater",
+   "artSource": "pack-framework",
+   "blockers": [],
    "cost": 200,
    "evidence": [
     "cost=200 (content.pack)",
     "family=shoot rule=R17-shoot/projectile",
-    "art index 无匹配 base，content/plants.json 也没有 art"
+    "art 命中 PlantRepeater（pack-framework）"
    ],
    "family": "shoot",
    "familyRule": "R17-shoot/projectile",
    "framework": "PlantRepeater",
-   "hasArt": false,
+   "hasArt": true,
    "hasCost": true,
    "hasFamily": true,
    "hasPackRow": true,
    "id": "repeater1",
-   "playable": false,
+   "playable": true,
    "rosterKind": "emitted",
    "sameAsAuthored": false
   },
@@ -6300,26 +6291,24 @@
    "sameAsAuthored": false
   },
   {
-   "artName": null,
-   "artSource": null,
-   "blockers": [
-    "no-art"
-   ],
+   "artName": "PlantSeaderris",
+   "artSource": "pack-framework",
+   "blockers": [],
    "cost": 75,
    "evidence": [
     "cost=75 (content.pack)",
     "family=instant rule=R07-instant/flagged",
-    "art index 无匹配 base，content/plants.json 也没有 art"
+    "art 命中 PlantSeaderris（pack-framework）"
    ],
    "family": "instant",
    "familyRule": "R07-instant/flagged",
    "framework": "PlantSeaderris",
-   "hasArt": false,
+   "hasArt": true,
    "hasCost": true,
    "hasFamily": true,
    "hasPackRow": true,
    "id": "seaderris",
-   "playable": false,
+   "playable": true,
    "rosterKind": "emitted",
    "sameAsAuthored": false
   },

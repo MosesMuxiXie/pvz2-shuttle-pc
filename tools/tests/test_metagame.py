@@ -94,7 +94,11 @@ class TestContentCross(unittest.TestCase):
     def test_zombie_intersection(self) -> None:
         cross = PAYLOAD["cross"]
         zombies = {row["id"] for row in PAYLOAD["almanac"]["zombies"]}
-        expected = zombies & set(mg.content_ids(REPO / "content" / "zombies.json"))
+        # 只比手写行：source=="pack" 是从原版派生的镜像（tools/contentc/zombie_roster.py），
+        # 拿它和图鉴交集会把「原版自己有」算成「客户端命中」。
+        expected = zombies & set(
+            mg.content_ids(REPO / "content" / "zombies.json", skip_pack=True)
+        )
         self.assertEqual(cross["almanacZombiesInContent"], len(expected))
 
     def test_unmatched_content_ids_are_listed(self) -> None:

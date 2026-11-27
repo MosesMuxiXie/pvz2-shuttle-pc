@@ -557,7 +557,11 @@ def generate(pack_path: Path = DEFAULT_PACK, obb_dir: Path | None = DEFAULT_OBB,
     pack = load_json(pack_path)
     projectiles, sheets, obb_state = load_obb(obb_dir)
     plants = build_plants(pack, projectiles, sheets)
-    labels = {p["id"]: str(p.get("behavior") or "") for p in load_json(content_dir / "plants.json")}
+    labels = {
+        p["id"]: str(p.get("behavior") or "")
+        for p in load_json(content_dir / "plants.json")
+        if p.get("source") != "pack"  # 派生行的 behavior 就来自本表，不能当监督标签
+    }
 
     entries = []
     rule_counts: Counter[str] = Counter()

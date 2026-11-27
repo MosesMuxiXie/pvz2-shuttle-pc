@@ -120,15 +120,16 @@ class DeckReportTest(unittest.TestCase):
         )
 
     def test_registry_coverage_is_reported_honestly(self) -> None:
-        self.assertEqual(self.report.registry_total, 147)
+        # 注册表 409 = 手工 147 + 262 条 pack 派生行（`source: "pack"`）。
+        self.assertEqual(self.report.registry_total, 409)
         self.assertEqual(
             self.report.registry_actor + self.report.registry_png + self.report.registry_none,
-            147,
+            409,
         )
         self.assertLess(self.report.distinct_actors, self.report.registry_actor)
         self.assertIn("独立 actor", self.text)
         # 全部缺模型植物（不只是 deck 引用的那些）必须一条不落
-        self.assertEqual(len(self.report.missing_all), 147 - self.report.registry_actor)
+        self.assertEqual(len(self.report.missing_all), 409 - self.report.registry_actor)
         self.assertEqual(
             len(self.report.missing_all),
             self.report.registry_png + self.report.registry_none,

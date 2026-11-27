@@ -456,7 +456,9 @@ def load_content(path: Path) -> list[dict]:
         doc = json.load(handle)
     if isinstance(doc, dict):
         doc = doc.get("zombies") or []
-    return [row for row in doc if isinstance(row, dict)]
+    # `source == "pack"` rows are the pack mirror from zombie_roster.py: they were
+    # derived *from* the pack, so comparing them back would be circular.
+    return [row for row in doc if isinstance(row, dict) and row.get("source") != "pack"]
 
 
 def _world_from_art(art: object) -> str | None:

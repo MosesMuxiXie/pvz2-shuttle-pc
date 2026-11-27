@@ -112,12 +112,15 @@ class AudioRuntime {
     /// The last 64 sound names handed to the backend, oldest first: a test can name what played.
     const std::vector<std::string>& playedLog() const { return playedLog_; }
     const std::vector<std::string>& silentEvents() const { return silentEvents_; }
+    /// The level handed to the last `playSfx` - the observation hook the priority test reads, so it
+    /// can prove the table's number reached the mixer instead of only existing in the table.
+    int lastSfxPriority() const { return lastSfxPriority_; }
     const std::string& musicName() const { return musicName_; }
     /// Non-null only in `live` mode; the desktop test reads `mixedFrames()` from it.
     AudioBackend* backend() const { return backend_.get(); }
 
   private:
-    void start(const std::string& sound, float gain);
+    void start(const std::string& sound, float gain, int priority = 0);
     void remember(const std::string& sound);
 
     AudioMode mode_;
@@ -128,6 +131,7 @@ class AudioRuntime {
     AudioCounters counters_{};
     std::vector<std::string> playedLog_;
     std::vector<std::string> silentEvents_;
+    int lastSfxPriority_ = 0;
     std::string musicName_;
     std::string statusNote_;
     std::uint64_t lastTick_ = 0;

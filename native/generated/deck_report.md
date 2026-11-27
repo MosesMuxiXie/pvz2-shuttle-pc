@@ -7,7 +7,7 @@
 | 项 | 路径 | 数量 |
 |---|---|---|
 | 关卡 | `content/levels/*.json` | 1809 |
-| 植物注册表 | `content/plants.json` | 442 |
+| 植物注册表 | `content/plants.json` | 409 |
 | 美术库 actor 总数 | `PvZ2SHUTTLE/assets/db/MANIFEST.json` | 72 |
 | 植物用到的独立 actor | （同上） | 31 |
 
@@ -33,15 +33,15 @@
 - `png`：植物 `art` 是 `<assets>` 下真实存在的 png，只能静态贴图，动不了。
 - `none`：两者都没有，只能画色块。
 
-全部 442 株植物：`actor` 136 / `png` 36 / `none` 270；但独立 actor 只有 31 个——136 株“有模型”里大量是同一套骨骼换皮，真正的独立模型数是后者。
+全部 409 株植物：`actor` 134 / `png` 36 / `none` 239；但独立 actor 只有 31 个——134 株“有模型”里大量是同一套骨骼换皮，真正的独立模型数是后者。
 
 ## 模型复用（一个 actor 顶多株植物）
 
-美术库里共 72 个 actor，植物只用到其中 31 个；136 株“有模型”的植物分布在这 31 套骨骼上，其中 105 株没有独占模型。下表只列被 2 株以上植物共用的 actor（按株数降序）。
+美术库里共 72 个 actor，植物只用到其中 31 个；134 株“有模型”的植物分布在这 31 套骨骼上，其中 103 株没有独占模型。下表只列被 2 株以上植物共用的 actor（按株数降序）。
 
 | actor | 植物数 | 植物 id |
 |---|---|---|
-| `plants/SunflowerPLANT` | 14 | `birthsunflower`、`darktwinsunflower`、`fused_birthsunflower`、`fused_darktwinsunflower`、`fused_darktwinsunflower_2`、`fused_primalsunflower`、`fused_reinforcemint`、`fused_reinforcemint_2`、`fused_suntower`、`marigold`、`oxygenalgae`、`primalsunflower`、`reinforcemint`、`sunflower` |
+| `plants/SunflowerPLANT` | 13 | `birthsunflower`、`darktwinsunflower`、`fused_birthsunflower`、`fused_darktwinsunflower`、`fused_darktwinsunflower_2`、`fused_primalsunflower`、`fused_reinforcemint`、`fused_reinforcemint_2`、`fused_suntower`、`oxygenalgae`、`primalsunflower`、`reinforcemint`、`sunflower` |
 | `plants/GatlingPeaPLANT` | 12 | `fused_fusiongatling`、`fused_fusiongatling_2`、`fused_fusiongatling_3`、`fused_fusiongatling_4`、`fused_fusiongatling_5`、`fused_hollyknight`、`fused_hollyknight_2`、`fused_megagatling`、`fused_megagatling_2`、`fused_punkshocker`、`gatling`、`hollyknight` |
 | `plants/WallnutPLANT` | 12 | `fused_chardguard`、`fused_chardguard_2`、`fused_endurian`、`fused_endurian_2`、`fused_explodeonut1`、`fused_explodeonut1_2`、`fused_gumnut`、`fused_powervine`、`fused_powervine_2`、`primalwallnut`、`unused_46`、`wallnut` |
 | `plants/KernelPultPLANT` | 11 | `fused_hollybarrierleaf`、`fused_hollybarrierleaf_2`、`fused_lemonaider`、`fused_lemonaider_2`、`fused_magnetshroom`、`fused_magnetshroom_2`、`hollybarrierleaf`、`kernelpult`、`kernelpult1`、`lemonaider`、`unused_45` |
@@ -60,7 +60,6 @@
 | `plants/SnowPeaPLANT` | 3 | `fused_snowpea`、`fused_snowpea_2`、`snowpea` |
 | `plants/SplitPeaPLANT` | 3 | `fused_shadowpeashooter`、`fused_shadowpeashooter_2`、`splitpea` |
 | `plants/BloomerangPLANT` | 2 | `bloomerang`、`bloomerang1` |
-| `plants/MagnifyingGrassPLANT` | 2 | `magnifyinggrass`、`minigame_music` |
 | `plants/StarFruitPLANT` | 2 | `starfruit`、`starfruit_barrage` |
 | `plants/TorchwoodPLANT` | 2 | `citron`、`torchwood` |
 
@@ -134,9 +133,9 @@ deck 引用到 41 株植物，其中 13 株没有骨骼模型：它们只能出�
 
 ## 结论
 
-1. **有模型不等于有形象。** 147 株植物里 136 株（31%）能挂到骨骼模型上，但这 136 株只用了 31 套 actor——独立形象只覆盖 31/442（7%），105 株是换皮。另外 36 株只有一张静态 png，270 株连图都没有。
-2. **本轮真正被玩到的只有 41 株。** 1809 关的 deck 一共 7194 个槽位，去重后只引用 41 株植物；其中 28 株（68%）有骨骼模型，13 株只有静态图，0 株无美术。也就是说：现有关卡能跑起来的部分，本质上是“少数几株植物反复出现”，美术缺口集中在少数新世界植物上，而不是均匀分布在 147 株里。
-3. **对“完整复刻”的含义。** 行为族这一侧是齐的（41/41 株 deck 植物都有已实现的 behavior 族），真正的短板是表现层：没有骨骼模型的植物在引擎里只能当静态贴图或色块，补多少行为代码都换不来它的动作演出。若目标是 1809 关全部可玩到“看起来对”，必须先把 deck 实际引用的缺模型植物补齐，而不是去铺满 147 株。
+1. **有模型不等于有形象。** 注册表 409 株植物里 134 株（33%）能挂到骨骼模型上，但这 134 株只用了 31 套 actor——独立形象只覆盖 31/409（8%），103 株是换皮。另外 36 株只有一张静态 png，239 株连图都没有。
+2. **本轮真正被玩到的只有 41 株。** 1809 关的 deck 一共 7194 个槽位，去重后只引用 41 株植物；其中 28 株（68%）有骨骼模型，13 株只有静态图，0 株无美术。也就是说：现有关卡能跑起来的部分，本质上是“少数几株植物反复出现”，美术缺口集中在少数新世界植物上，而不是均匀分布在 409 株里。
+3. **对“完整复刻”的含义。** 行为族这一侧是齐的（41/41 株 deck 植物都有已实现的 behavior 族），真正的短板是表现层：没有骨骼模型的植物在引擎里只能当静态贴图或色块，补多少行为代码都换不来它的动作演出。若目标是 1809 关全部可玩到“看起来对”，必须先把 deck 实际引用的缺模型植物补齐，而不是去铺满注册表里的每一株。
 
 建议先补的 id（按 deck 引用频次 top 20；含 deck 未引用的植物，其次数为 0）：
 
@@ -163,6 +162,6 @@ deck 引用到 41 株植物，其中 13 株没有骨骼模型：它们只能出�
 | 19 | `appeasemint` | 0 | instant | none |
 | 20 | `applemortar` | 0 | lob | none |
 
-缺模型的植物一共 306 株（其中 13 株被 deck 引用），补的顺序建议照这张表的次数走：前几株（`potatochip`、`begonia`、`missiletoast`）占了缺模型引用的大头，先把它们做成 actor，比按世界顺序铺开的收益高得多。
+缺模型的植物一共 275 株（其中 13 株被 deck 引用），补的顺序建议照这张表的次数走：前几株（`potatochip`、`begonia`、`missiletoast`）占了缺模型引用的大头，先把它们做成 actor，比按世界顺序铺开的收益高得多。
 
-（其余 286 株未列出的缺模型植物不影响 1809 关的可玩性，可最后补。）
+（其余 255 株未列出的缺模型植物不影响 1809 关的可玩性，可最后补。）

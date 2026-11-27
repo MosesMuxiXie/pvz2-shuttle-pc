@@ -66,9 +66,12 @@ def check_content():
 
     zombie_ids: set[str] = set()
     if isinstance(zombies, list):
-        if len(zombies) != 55:
-            warn(f"zombies.json 数量 {len(zombies)}（期望 55）")
-        for z in zombies:
+        # `source == "pack"` rows come from zombie_roster.py: they are pack mirrors
+        # with no name_zh/art, so the hand-written field contract does not apply.
+        authored_zombies = [z for z in zombies if isinstance(z, dict) and z.get("source") != "pack"]
+        if len(authored_zombies) != 55:
+            warn(f"zombies.json 手写行 {len(authored_zombies)}（期望 55，另有 {len(zombies) - len(authored_zombies)} 条 pack 派生行）")
+        for z in authored_zombies:
             for key in ("id", "name_zh", "hp", "speed", "art"):
                 if key not in z:
                     err(f"zombie {z.get('id')} 缺少字段 {key}")

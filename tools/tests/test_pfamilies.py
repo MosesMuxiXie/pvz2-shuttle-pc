@@ -119,7 +119,13 @@ class PlantFamiliesTests(unittest.TestCase):
 
     def test_labelled_plants_match_the_content_behaviour_field(self):
         content = json.loads((CONTENT / "plants.json").read_text(encoding="utf-8"))
-        labels = {plant["id"]: plant["behavior"] for plant in content if plant.get("behavior")}
+        # 只看手工行：`source: "pack"` 的派生行，behavior 本来就抄自本表的判定，
+        # 当监督标签会造成循环论证（`pfamilies.py` 自己也排除它们）。
+        labels = {
+            plant["id"]: plant["behavior"]
+            for plant in content
+            if plant.get("behavior") and plant.get("source") != "pack"
+        }
         compared = 0
         for plant_id, behaviour in labels.items():
             entry = self.entries.get(plant_id)

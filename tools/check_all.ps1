@@ -300,6 +300,12 @@ try {
     # 所以改数据必须重跑对应编译器，不会静默漂移。
     Step 'vasebreaker' { python tools/contentc/vasebreaker.py --check }
     Step 'minigames' { python tools/contentc/minigames.py --check }
+    # 20 种玩法的开局参数与可玩判定（18 可玩 / column+invisighoul 参数对象是空 {}）。
+    # 依赖 minigames.json 与 level_mechanics.json，两者一改这里就会报过期。
+    Step 'minigame rules' { python tools/contentc/minigame_rules.py --check }
+    # 逐关可玩性底账（1809 关 × 机制 × 玩法）：读上面四份表 + content/levels 的 extra 开关，
+    # 逐关判「有没有 data-only 机制 / 有没有被阻断的玩法」。任何一份上游表变了这里就会报过期。
+    Step 'level playability' { python tools/contentc/level_playability.py --check }
     Step 'loot binding' { python tools/contentc/loot_binding.py --check }
 
     # 元游戏（图鉴/花园/任务/成就）、可玩植物子集（339 判 293 可玩）、植物等级（323 株 / 133 可升级）
@@ -307,6 +313,43 @@ try {
     Step 'metagame' { python tools/contentc/metagame.py --check }
     Step 'plant playable' { python tools/contentc/plant_playable.py --check }
     Step 'plant levels' { python tools/contentc/plant_levels.py --check }
+
+    # 其余数据编译器（t101 补齐）。这些表一直有编译器和产物，却没有门禁：产物变旧时
+    # `check_all` 依旧绿，本轮就发生过两次。括号里是 2026-11-26 温跑实测的 --check 耗时；
+    # 冷跑要再加解释器启动与 OneDrive 读盘（最重的 level_extra_rules 冷跑 15.7 s、内部
+    # 计算 5.8 s）。新增编译器时必须同时在这里加 Step，`tools/tests/test_gate_coverage.py`
+    # 会把「产物有、Step 没有」直接判红并点名。
+    Step 'level extra rules' { python tools/contentc/level_extra_rules.py --check }   # 5.5 s
+    Step 'lawn strings' { python tools/contentc/loc.py --check }                       # 2.6 s
+    Step 'level modules' { python tools/contentc/levelextra.py --check }               # 3.2 s
+    Step 'elements' { python tools/contentc/elements_authored.py --check }             # 0.7 s
+    Step 'bosses' { python tools/contentc/bosses.py --check }                          # 3.1 s
+    Step 'projectiles' { python tools/contentc/projectiles.py --check }                # 4.1 s
+    Step 'fusions' { python tools/contentc/fusions.py --check }                        # 0.6 s
+    Step 'plant roster' { python tools/contentc/expand.py --check }                    # 0.5 s
+    Step 'plant food' { python tools/contentc/plantfood.py --check }                   # 0.5 s
+    Step 'plant families json' { python tools/contentc/pfamilies.py --check }          # 0.6 s
+    Step 'plant merge' { python tools/contentc/plants_merge.py --check }               # 1.7 s
+    Step 'shop unlock' { python tools/contentc/shop_unlock.py --check }                # 3.2 s
+    Step 'spawn offsets' { python tools/contentc/spawn_offsets.py --check }            # 1.4 s
+    Step 'patch 460.9' { python tools/contentc/newin4609.py --check }                  # 4.0 s
+    Step 'rails' { python tools/contentc/rails.py --check }                            # 4.4 s
+    Step 'zombie family gaps' { python tools/contentc/zgaps.py --check }               # 0.8 s
+    # 截图基线只守表本身（九场景的命令行与历史 hash 都在里面）。真正出图比对要一个带五块
+    # meta 屏的桌面 exe，门禁不替它挑 exe，所以这里只做 --list 的解析与自洽校验；出图比对
+    # 走 `python tools/snapshot_baseline.py --check --from <report>`，由人按需执行。
+    Step 'snapshot baseline' { python tools/snapshot_baseline.py --list }               # 0.4 s
+    # 交接中的表：artifex 的 mechanic_entity_resolution 还没落地。文件不在时打印 skip 并把
+    # $LASTEXITCODE 归零 —— Step 只看 exit code，上一条命令留下的非零值会把 skip 判成失败。
+    # 文件落地后这一条自动变成真门禁，不需要再改这里。
+    Step 'mechanic entity resolution' {
+        if (Test-Path 'tools/contentc/mechanic_entity_resolution.py') {
+            python tools/contentc/mechanic_entity_resolution.py --check
+        } else {
+            Write-Host '[skip] tools/contentc/mechanic_entity_resolution.py has not landed yet' -ForegroundColor Yellow
+            $global:LASTEXITCODE = 0
+        }
+    }
 
     # The count is captured from unittest's own summary line so the ledger check below
     # compares two measurements instead of two opinions.

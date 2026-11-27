@@ -5,9 +5,9 @@
 #include "text.hpp"
 
 #include <algorithm>
-#include <array>
 #include <stdexcept>
 #include <string>
+#include <vector>
 
 namespace pvz {
 namespace {
@@ -52,7 +52,7 @@ void border(SDL_Renderer* renderer, const SDL_FRect& rect, SDL_Color color) {
 
 // Moves the cursor over the enabled items only. A disabled entry is skipped rather than landed on:
 // the alternative is a cursor that stops on something Enter cannot do.
-int step(const std::array<Item, 3>& items, int from, int direction) {
+int step(const std::vector<Item>& items, int from, int direction) {
     int index = from;
     for (int guard = 0; guard < static_cast<int>(items.size()); ++guard) {
         index = (index + direction + static_cast<int>(items.size())) %
@@ -68,6 +68,12 @@ const char* menuChoiceName(MenuChoice choice) {
     switch (choice) {
         case MenuChoice::continueGame: return "continue";
         case MenuChoice::worldMap: return "worldmap";
+        case MenuChoice::almanac: return "almanac";
+        case MenuChoice::garden: return "garden";
+        case MenuChoice::achievements: return "achievements";
+        case MenuChoice::daily: return "daily";
+        case MenuChoice::settings: return "settings";
+    case MenuChoice::shop: return "shop";
         case MenuChoice::quit: return "quit";
     }
     return "quit";
@@ -96,17 +102,27 @@ MenuResult runMainMenu(const Catalog& catalog, const Progress& progress,
     const bool hasAttempt = !progress.levels.empty();
 
     MenuResult result;
-    result.items = 3;
     result.continued = hasAttempt;
     result.stars = progress.totalStars();
     result.keys = progress.keys;
     result.cleared = progress.clearedLevels();
 
-    const std::array<Item, 3> items{{
+    // Nine entries, fixed order: the two that walk into the game first, then the browsable tables,
+    // then the shop and the settings, then the way out. `items` is a vector rather than an array
+    // because the count is a UI decision that changed twice (three -> eight -> nine); every loop
+    // below already keys off `items.size()`.
+    const std::vector<Item> items{
         {"继续游戏", MenuChoice::continueGame, hasAttempt},
         {"世界地图", MenuChoice::worldMap, true},
+        {"图鉴", MenuChoice::almanac, true},
+        {"花园", MenuChoice::garden, true},
+        {"成就", MenuChoice::achievements, true},
+        {"每日挑战", MenuChoice::daily, true},
+        {"设置", MenuChoice::settings, true},
+        {"商店", MenuChoice::shop, true},
         {"退出", MenuChoice::quit, true},
-    }};
+    };
+    result.items = static_cast<int>(items.size());
 
     const bool headless = options.frames > 0;
     sdl::Display display(headless, "PvZ 2 SHUTTLE - Main menu");
@@ -129,9 +145,11 @@ MenuResult runMainMenu(const Catalog& catalog, const Progress& progress,
 
     constexpr float kItemX = 400.0f;
     constexpr float kItemW = 480.0f;
-    constexpr float kItemH = 88.0f;
-    constexpr float kItemY = 232.0f;
-    constexpr float kItemStep = 112.0f;
+    // Nine rows: 132 + 8*58 + 48 = 644, clear of the footer at 648. The three-row layout used
+    // 88 px boxes at 112 px steps; the boxes shrank twice as the meta screens and the shop landed.
+    constexpr float kItemH = 48.0f;
+    constexpr float kItemY = 132.0f;
+    constexpr float kItemStep = 58.0f;
 
     bool running = true;
     int frame = 0;
@@ -205,11 +223,11 @@ MenuResult runMainMenu(const Catalog& catalog, const Progress& progress,
             if (isSelected) border(renderer, rect, palette.accent);
 
             const SDL_Color inkColor = items[i].enabled ? palette.ink : palette.muted;
-            text.draw(rect.x + 28, rect.y + 26, 30, inkColor, items[i].label);
+            text.draw(rect.x + 28, rect.y + 16, 26, inkColor, items[i].label);
             if (!items[i].enabled) {
                 // Says *why* it cannot be picked: a greyed-out "continue" with no reason reads as
                 // a bug rather than as "you have not played yet".
-                text.draw(rect.x + 28 + text.width(items[i].label, 30) + 16, rect.y + 34, 18,
+                text.draw(rect.x + 28 + text.width(items[i].label, 26) + 16, rect.y + 20, 16,
                           palette.warn, "没有可继续的存档");
             }
         }

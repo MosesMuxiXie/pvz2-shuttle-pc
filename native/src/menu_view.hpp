@@ -24,9 +24,20 @@ namespace pvz {
 /// What the player picked. `continueGame` is only reachable when the save has something to
 /// continue; otherwise the menu starts on 世界地图 so a fresh install cannot "continue" into a
 /// game that does not exist.
+///
+/// The second half (`almanac` … `settings`) are the meta screens added with A/B/C: the menu is the
+/// only place that knows they exist, so each one needs a value here and a branch in `main.cpp`.
+/// They never touch the battle clock — `runMainMenu` returns, the caller opens the screen, and the
+/// menu is shown again when it closes.
 enum class MenuChoice {
     continueGame,
     worldMap,
+    almanac,
+    garden,
+    achievements,
+    daily,
+    settings,
+    shop,
     quit,
 };
 
@@ -58,7 +69,7 @@ struct MenuOptions {
 
 struct MenuResult {
     MenuChoice choice = MenuChoice::quit;
-    /// How many items the menu drew (3) and which one the cursor sat on.
+    /// How many items the menu drew (8) and which one the cursor sat on.
     int items = 0;
     int selected = 0;
     /// Whether 继续游戏 was selectable. False on a save with no attempts at all.

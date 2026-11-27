@@ -118,8 +118,13 @@ def read_rows(path: Path) -> list[dict[str, str]]:
 
 
 def client_ids(name: str) -> list[str]:
+    """名册里的**客户端行** id。
+
+    `source: "pack"` 的派生行是原版表自己的条目（名册只是把它抄进来），
+    `mapping.py` 不算它们，这里也必须排除，否则「客户端独有」会凭空多 251 条。
+    """
     with (CONTENT / name).open(encoding="utf-8-sig") as handle:
-        return [row["id"] for row in json.load(handle)]
+        return [row["id"] for row in json.load(handle) if row.get("source") != "pack"]
 
 
 class MappingOutputTest(unittest.TestCase):

@@ -79,6 +79,20 @@ struct SeedDropRow {
     int amount = 1;
 };
 
+/// One shipped row whose family this client cannot settle, kept whole so the landing pass can
+/// decide per row instead of per kind. `readTable` used to keep only the per-kind counts, which is
+/// enough for a receipt but cannot tell a `first:unlock_plant:aloe` row (landable) from a
+/// `constant:CoinsPerKey` row (a shop price, not a payout) — both are `kind` values the client has
+/// no settlement path for.
+struct UnlandedRow {
+    std::string id;          ///< `first:unlock_plant:aloe` / `constant:CoinsPerKey` / `rift-boss:a0:d0:0:coins`
+    std::string kind;        ///< `plant`, `cosmetic`, `coin`, `note`, ...
+    std::string param;       ///< the plant / costume id the row names, empty when it names none
+    std::string rewardType;  ///< `unlock_plant`, `unlock_costume`, `worldtrophy`, ...
+    std::string constant;    ///< the `GamePropertySheet` field name on a constant row, else empty
+    int amount = 0;          ///< the row's amount when it carries one (0 for most unlock rows)
+};
+
 /// `rewards_from_pack.json`, parsed. Fails loudly: a missing or malformed table is an error,
 /// because a silent zero would make every battle pay nothing and look normal.
 class RewardTable {
@@ -96,6 +110,8 @@ public:
     /// replay rewards, rift rewards, gift boxes, constants), by `kind`, sorted. `readTable`
     /// used to drop them silently; the census is what lets the receipt say so.
     const std::map<std::string, int>& unlandedRows() const { return unlanded; }
+    /// The same rows, one record each, in file order. This is what `landRewards` walks.
+    const std::vector<UnlandedRow>& unlandedDetail() const { return unlandedRowsDetail; }
     std::size_t coinLootRows() const;
     std::size_t keyLootRows() const;
 
@@ -114,6 +130,7 @@ public:
     std::vector<std::string> danglingPresentTables;
     std::vector<std::string> worldKeys;
     std::map<std::string, int> unlanded;  ///< kind -> rows of an unmodelled family
+    std::vector<UnlandedRow> unlandedRowsDetail;  ///< the same rows, one record each
 };
 
 /// One `kind` the client cannot pay out, with how many rows asked for it.
@@ -195,5 +212,84 @@ void addRewardReceipt(Json& summary, const RewardDelta& gained, const RewardTabl
 
 /// Whether the save has cleared `egypt_3`, the gate the key rows name in `EnabledAfter`.
 bool keysUnlocked(const Progress& progress);
+
+// ---------------------------------------------------------------------------------------------
+// Reward landing: what to do with the 438 rows the battle path never reaches.
+//
+// `settleRewards` pays what a finished battle produces (kill-period loot, the lunch box, the seed
+// bag). The rest of the table is level first-clear and replay rewards, rift payouts, gift boxes and
+// economy constants. A row does not name the level that grants it (the compiler aggregated 293
+// plant rows into `levels: 1`), so no battle can say "this row is mine" — landing is therefore a
+// table-wide pass, and it is idempotent: landing twice changes nothing the second time.
+//
+// What each family does, and why (the reason strings are what `--rewards-report` counts):
+//
+//   * `plant` (293, `unlock_plant:<plant>`) -> `Progress::unlockedPlants`. This is ownership, and
+//     the pack says exactly which plant each row names.
+//   * `cosmetic` (22, `unlock_costume:<id>`) -> `Progress::costumes`, the field the shop already
+//     writes for `payload.costume_id`.
+//   * `coin` (30) is **not one family**, and the difference is the reason this pass exists:
+//       - `constant:<GamePropertySheet field>` (4 rows: `CoinsPerKey` 1000, `KeysPerCostume` 10,
+//         `LawnMowerPurchasePriceInCoins` 2000, `SeedSlotRentalCost` 2000) are *shop prices*, not
+//         payouts. The generated table says so itself in `unknowns.whyZeroCounted`. Paying them
+//         would mint 5010 coins for owning nothing; they are reported as `prices` instead and only
+//         paid when `LandingOptions::landEconomyConstants` asks for the literal reading.
+//       - `rift-boss:*` / `rift-clear:*` (26 rows, 23600 coins in total) are real payouts of a mode
+//         this client does not have (no rift progression, no rift level list). They are reported as
+//         `rift_unreachable` and only paid when `LandingOptions::landRiftPayouts` asks for it.
+//   * everything else (`pinata` 18, `trophy` 18, `xp` 14, `note` 11, `collectable` 9, `powerup` 6,
+//     `gem` 6, `none` 5, `upgrade` 3, `star` 1, `giftbox` 1, `gadget` 1) is recorded in
+//     `Progress::rewardLog` and counted as `reward_unmodelled{kind}`: note, not payout.
+enum class LandingRule {
+    paidPlant,        ///< unlockedPlants grew (or already held it)
+    paidCostume,      ///< costumes grew (or already held it)
+    paidCoins,        ///< coins grew
+    alreadyOwned,     ///< a plant or costume the save already had; nothing changed
+    priceConstant,    ///< an economy constant: a price, not a payout
+    riftUnreachable,  ///< a rift payout with no rift mode to earn it in
+    unmodelled,       ///< recorded in the reward log only
+};
+
+struct LandingOptions {
+    /// Pay the four `constant:` rows into `coins`. Off by default: they are prices.
+    bool landEconomyConstants = false;
+    /// Pay the 26 rift coin rows into `coins`. Off by default: the client cannot earn them.
+    bool landRiftPayouts = false;
+};
+
+/// What one landing pass did. Every count is "rows", not coins, except `coins`.
+struct RewardLanding {
+    int landed = 0;    ///< rows this pass handled: new plants/costumes, coins, already-owned rows
+    int unlanded = 0;  ///< rows that stayed out of the save, whatever the reason
+    int alreadyOwned = 0;  ///< rows whose plant/costume the save already had: handled, no change
+    int planted = 0;   ///< plant rows that were new to the save
+    int costumed = 0;  ///< costume rows that were new to the save
+    int coins = 0;     ///< coins actually paid
+    int logged = 0;    ///< entries appended to `Progress::rewardLog`
+    int plantsTotal = 0;    ///< `Progress::unlockedPlants` size after the pass
+    int costumesTotal = 0;  ///< `Progress::costumes` size after the pass
+    std::vector<std::string> unlockedPlants;  ///< plants this pass added, sorted
+    std::vector<std::string> costumes;        ///< costumes this pass added, sorted
+    std::map<std::string, int> byKind;        ///< kind -> rows still unlanded, sorted
+    std::map<std::string, int> byReason;      ///< reason -> rows, sorted
+    std::map<std::string, long long> prices;  ///< constant field -> value, never paid silently
+
+    /// The single-line report `--rewards-report` prints, and exactly the six keys the contract
+    /// names: `landed`, `unlanded`, `byKind`, `unlockedPlants`, `costumes`, `coins`.
+    Json json() const;
+
+    /// The census behind that line: why rows stayed out (`reasons`), the economy constants it read
+    /// rather than paid (`prices`), and the roster sizes after the pass.
+    Json detail() const;
+};
+
+/// Folds every row the battle path does not reach into `progress`. Idempotent, order-stable, and
+/// silent about failures: a row whose `param` is empty lands nothing and is counted instead.
+RewardLanding landRewards(Progress& progress, const RewardTable& table,
+                          const LandingOptions& options = {});
+
+/// Adds `unlockedPlantsGained` to a `--run-level` summary, and only when the pass actually
+/// unlocked something: a run on a save that already owns the roster must not grow a new key.
+void addLandingReceipt(Json& summary, const RewardLanding& landing);
 
 }  // namespace pvz

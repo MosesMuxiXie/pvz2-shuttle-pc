@@ -64,7 +64,7 @@ pvz_warnings(pvz_audio_core)
 
 # art_index.cpp is the SDL-free half of the asset layer: the desktop cache and the
 # `--art-audit` CLI both resolve artwork through it, so it belongs to the shared target.
-add_library(pvz_catalog src/catalog.cpp src/art_index.cpp src/worldmap.cpp)
+add_library(pvz_catalog src/catalog.cpp src/art_index.cpp src/worldmap.cpp src/loc.cpp)
 target_include_directories(pvz_catalog PUBLIC src)
 target_link_libraries(pvz_catalog PUBLIC nlohmann_json::nlohmann_json pvz_content)
 pvz_warnings(pvz_catalog)
@@ -83,11 +83,15 @@ add_library(pvz_engine
     src/engine/projectile_table.cpp
     src/engine/armor.cpp
 src/engine/mechanics.cpp
+    src/engine/rail.cpp
+    src/engine/vase.cpp
     src/engine/registry.cpp
     src/engine/zombie_family.cpp
     src/engine/plant_family.cpp
     src/engine/plantfood.cpp
+    src/engine/plant_levels.cpp
     src/engine/fusion.cpp
+    src/engine/spawn_offsets.cpp
     src/engine/boss.cpp
     src/engine/replay.cpp)
 target_include_directories(pvz_engine PUBLIC src PRIVATE generated)
@@ -238,6 +242,14 @@ if(BUILD_TESTING)
         "${PVZ_CONTENT_PACK}")
     set_tests_properties(audio_runtime PROPERTIES TIMEOUT 180)
 
+    # T85: the settings model and the save block. No SDL: the screen is settings_view.cpp, this is
+    # the part with rules (keys, clamping, persistence), so it runs in the audit configuration.
+    add_executable(settings_test tests/settings_test.cpp)
+    target_link_libraries(settings_test PRIVATE pvz_audio_core pvz_progress)
+    pvz_warnings(settings_test)
+    add_test(NAME settings COMMAND settings_test "${PVZ_TEST_ASSETS}" "${PVZ_TEST_TEMP}")
+    set_tests_properties(settings PROPERTIES TIMEOUT 120)
+
     # Star goals and the progress save file. The scripts directory holds the replay
     # that wins beach_23, so the evaluation path runs against a real victory.
     add_executable(progress_test tests/progress_test.cpp)
@@ -245,6 +257,34 @@ if(BUILD_TESTING)
     pvz_warnings(progress_test)
     add_test(NAME progress COMMAND progress_test "${PVZ_TEST_CONTENT}" "${PVZ_TEST_TEMP}" "${CMAKE_CURRENT_SOURCE_DIR}/tests/scripts")
     set_tests_properties(progress PROPERTIES TIMEOUT 180)
+
+    # B4: the achievements screen. Its data is `generated/metagame.json` (53 rows, all
+    # serverOnly), its one derivable number is a save's star total per world, and the picture is
+    # asserted in the desktop block below - the audit build only checks the model and the JSON.
+    add_executable(achievements_test tests/achievements_test.cpp src/achievements_view.cpp)
+    target_link_libraries(achievements_test PRIVATE pvz_catalog pvz_progress pvz_engine)
+    pvz_warnings(achievements_test)
+    add_test(NAME achievements COMMAND achievements_test "${PVZ_TEST_TEMP}")
+    set_tests_properties(achievements PROPERTIES TIMEOUT 120)
+
+    # B4: the daily challenges screen. Same table, 11 rows; the only schedule field is
+    # `params.Disabled`, which the test proves by loading a scratch sheet with one closed row.
+    add_executable(daily_test tests/daily_test.cpp src/daily_view.cpp src/achievements_view.cpp)
+    target_link_libraries(daily_test PRIVATE pvz_catalog pvz_progress pvz_engine)
+    pvz_warnings(daily_test)
+    add_test(NAME daily COMMAND daily_test "${PVZ_TEST_TEMP}")
+    set_tests_properties(daily PROPERTIES TIMEOUT 120)
+
+    # B6: the compiled localisation table (`generated/lawn_strings.json`, 2.9 MB) and the resolve
+    # order. `loc.cpp` has no SDL and no engine dependency - it takes a content root - so this runs
+    # in the audit configuration and the assertions are about real shipped text (ACHIEVE_ALL_IN_JEST
+    # resolves to 向我开炮, which is proof the file was read rather than transcribed).
+    add_executable(loc_test tests/loc_test.cpp src/loc.cpp)
+    target_include_directories(loc_test PRIVATE src)
+    target_link_libraries(loc_test PRIVATE nlohmann_json::nlohmann_json)
+    pvz_warnings(loc_test)
+    add_test(NAME loc COMMAND loc_test "${PVZ_TEST_CONTENT}" "${PVZ_TEST_TEMP}")
+    set_tests_properties(loc PROPERTIES TIMEOUT 120)
 
     # T46: two turns of the S4 loop against one save. The point is the seam between the screens,
     # not the combat, so the levels run with the empty script and the test looks at the save.
@@ -294,6 +334,15 @@ if(BUILD_TESTING)
     add_test(NAME armor COMMAND armor_test "${PVZ_TEST_CONTENT}" "${PVZ_CONTENT_PACK}" "${PVZ_TEST_TEMP}")
     set_tests_properties(armor PROPERTIES TIMEOUT 180)
 
+    # C4 spawn offsets: the plant-action SpawnOffset table, the proof that its `y` is a drawing
+    # height rather than a zombie landing row, and the applied-offset tally `--run-level` prints.
+    add_executable(spawn_offset_test tests/spawn_offset_test.cpp)
+    target_link_libraries(spawn_offset_test PRIVATE pvz_engine)
+    pvz_warnings(spawn_offset_test)
+    add_test(NAME spawn_offset COMMAND spawn_offset_test
+             "${CMAKE_CURRENT_SOURCE_DIR}/generated/spawn_offsets.json" "${PVZ_TEST_TEMP}")
+    set_tests_properties(spawn_offset PROPERTIES TIMEOUT 120)
+
     # T50 drag-to-plant: the drag state machine is SDL-free on purpose, so the four behaviours that
     # matter (legal drop, refused drop, one plant per drag, no card) are driven with plain numbers
     # against a real engine::World — no window, no assets, audit configuration.
@@ -310,6 +359,32 @@ if(BUILD_TESTING)
     pvz_warnings(mechanics_test)
     add_test(NAME mechanics COMMAND mechanics_test "${PVZ_TEST_CONTENT}" "${PVZ_CONTENT_PACK}" "${PVZ_TEST_TEMP}")
     set_tests_properties(mechanics PROPERTIES TIMEOUT 180)
+
+    # S3/A2: the minecart track. Which levels declare it, how many carts each carries, planting on a
+    # cart, one `rail_move` per column entered, the crush, and the `rail` off switch.
+    add_executable(rail_test tests/rail_test.cpp)
+    target_link_libraries(rail_test PRIVATE pvz_engine)
+    pvz_warnings(rail_test)
+    add_test(NAME rail COMMAND rail_test "${PVZ_TEST_CONTENT}" "${PVZ_CONTENT_PACK}" "${PVZ_TEST_TEMP}")
+    set_tests_properties(rail PROPERTIES TIMEOUT 180)
+
+    # A1 (T80): the vasebreaker arcade. The table, the cell layout the sheet leaves open, opening a
+    # vase of each class, the "no seed bank" refusal and the win condition are all driven against
+    # real content levels, so the mode is exercised the way a player reaches it.
+    add_executable(vase_test tests/vase_test.cpp)
+    target_link_libraries(vase_test PRIVATE pvz_engine)
+    pvz_warnings(vase_test)
+    add_test(NAME vase COMMAND vase_test "${PVZ_TEST_CONTENT}" "${PVZ_CONTENT_PACK}" "${PVZ_TEST_TEMP}")
+    set_tests_properties(vase PROPERTIES TIMEOUT 180)
+
+    # B1 (T90): the plant level ladder. Reads `generated/plant_levels.json` directly and then drives a
+    # real board, so the absolute numbers, the sheet's cap, the identity guard and the save round trip
+    # are all exercised against the shipped data rather than a stub table.
+    add_executable(plant_level_test tests/plant_level_test.cpp)
+    target_link_libraries(plant_level_test PRIVATE pvz_engine pvz_progress)
+    pvz_warnings(plant_level_test)
+    add_test(NAME plant_level COMMAND plant_level_test "${PVZ_TEST_CONTENT}" "${PVZ_CONTENT_PACK}")
+    set_tests_properties(plant_level PROPERTIES TIMEOUT 120)
 
     # T55: reward settlement - kill periods, the lunch box (including the 13 dangling present
     # tables), the four world keys and their egypt3 gate, seed bags, and the kinds the save has
@@ -340,13 +415,30 @@ endif()
 if(PVZ_ENABLE_DESKTOP)
     include(cmake/DesktopDependencies.cmake)
     add_library(pvz_launcher src/launcher.cpp src/battle_view.cpp src/worldmap_view.cpp
-                src/menu_view.cpp src/level_select_view.cpp src/drag_plant.cpp src/assets.cpp
+                src/menu_view.cpp src/level_select_view.cpp src/almanac_view.cpp src/garden_view.cpp
+                src/level_badges.cpp
+                # B4/B5/C3: the screens the menu opens. B4 left `achievements_view.cpp` and
+                # `daily_view.cpp` out of this list (its tests linked the .cpp directly), and C3
+                # did the same for `settings_view.cpp`; main.cpp dispatches to all three, so the
+                # link line has to carry them. `shop_layout.cpp` is the SDL-free half of the shop
+                # (tabs, paging, refusal sentences), `shop_view.cpp` is what the 商店 row opens.
+                src/achievements_view.cpp src/daily_view.cpp src/settings_view.cpp
+                src/shop_layout.cpp src/shop_view.cpp
+                src/drag_plant.cpp src/assets.cpp
                 src/actor_view.cpp src/dragonbones.cpp src/text.cpp)
     # pvz_engine: the battle view drives `engine::World`, not the legacy `Battle`.
-    target_link_libraries(pvz_launcher PUBLIC pvz_catalog pvz_simulation pvz_engine pvz_audio_core SDL3::SDL3
-                                     SDL3_image::SDL3_image)
+    # T86: the almanac screen reads the save itself (`renderAlmanacHeadless` takes a `--progress`
+    # path), so the launcher library now needs pvz_progress rather than only the executable.
+    target_link_libraries(pvz_launcher PUBLIC pvz_catalog pvz_simulation pvz_engine pvz_audio_core
+                                     pvz_progress SDL3::SDL3 SDL3_image::SDL3_image)
     target_link_libraries(pvz_launcher PRIVATE freetype)
     pvz_warnings(pvz_launcher)
+    # The define has to sit on the library as well, not only on the executable: four of the
+    # screens (`achievements_view.cpp`, `daily_view.cpp`, and the shop/settings heads) keep
+    # their entry points inside `#ifdef PVZ_ENABLE_DESKTOP`, so without this the CLI links
+    # against translation units that were compiled to nothing. The render tests each carry
+    # the define themselves, which is exactly why this stayed green while the CLI broke.
+    target_compile_definitions(pvz_launcher PUBLIC PVZ_ENABLE_DESKTOP=1)
     target_link_libraries(PvZ2SHUTTLE PRIVATE pvz_launcher)
     target_compile_definitions(PvZ2SHUTTLE PRIVATE PVZ_ENABLE_DESKTOP=1)
 
@@ -447,6 +539,66 @@ set_tests_properties(audio_device PROPERTIES TIMEOUT 600 SKIP_RETURN_CODE 77)
     pvz_warnings(level_select_render_test)
     add_test(NAME level_select COMMAND level_select_render_test "${PVZ_TEST_CONTENT}"
         "${PVZ_TEST_ASSETS}" "${PVZ_TEST_TEMP}")
+    # T86: the two meta-game browsers over `native/generated/metagame.json`. They read the compiled
+    # table rather than the OBB, and their entry points are the same `render*Headless()` functions
+    # the `--almanac` / `--garden` flags will call, so these tests never go through main.cpp.
+    add_executable(almanac_render_test tests/almanac_test.cpp)
+    target_link_libraries(almanac_render_test PRIVATE pvz_launcher pvz_progress)
+    pvz_warnings(almanac_render_test)
+    add_test(NAME almanac_render COMMAND almanac_render_test "${PVZ_TEST_CONTENT}"
+        "${PVZ_TEST_ASSETS}" "${PVZ_TEST_TEMP}")
+    add_executable(garden_render_test tests/garden_test.cpp)
+    target_link_libraries(garden_render_test PRIVATE pvz_launcher)
+    pvz_warnings(garden_render_test)
+    add_test(NAME garden_render COMMAND garden_render_test "${PVZ_TEST_CONTENT}"
+        "${PVZ_TEST_ASSETS}" "${PVZ_TEST_TEMP}")
+    # B4: the achievements and daily screens draw through their own `render*Headless()` entry
+    # points, so these two tests compile the view source directly (the same shape as
+    # `battle_drag_test`) instead of going through main.cpp - the captain wires the CLI later.
+    add_executable(achievements_render_test tests/achievements_test.cpp src/achievements_view.cpp)
+    target_compile_definitions(achievements_render_test PRIVATE PVZ_ENABLE_DESKTOP=1)
+    target_link_libraries(achievements_render_test PRIVATE pvz_launcher pvz_progress pvz_catalog
+        pvz_engine)
+    pvz_warnings(achievements_render_test)
+    add_test(NAME achievements_render COMMAND achievements_render_test "${PVZ_TEST_ASSETS}"
+        "${PVZ_TEST_TEMP}")
+    add_executable(daily_render_test tests/daily_test.cpp src/daily_view.cpp
+        src/achievements_view.cpp)
+    target_compile_definitions(daily_render_test PRIVATE PVZ_ENABLE_DESKTOP=1)
+    target_link_libraries(daily_render_test PRIVATE pvz_launcher pvz_progress pvz_catalog
+        pvz_engine)
+    pvz_warnings(daily_render_test)
+    add_test(NAME daily_render COMMAND daily_render_test "${PVZ_TEST_ASSETS}" "${PVZ_TEST_TEMP}")
+    set_tests_properties(almanac_render garden_render PROPERTIES TIMEOUT 120)
+    # A7: the badge table behind the level list's "玩法" line. Pure data, no SDL: the test builds its
+    # own two-table fixture in the temp directory, so it also pins the truncation and the
+    # "missing tables are not a crash" rule that the screen depends on.
+    add_executable(level_badges_test tests/level_badges_test.cpp)
+    target_link_libraries(level_badges_test PRIVATE pvz_launcher)
+    pvz_warnings(level_badges_test)
+    add_test(NAME level_badges COMMAND level_badges_test "${PVZ_TEST_TEMP}")
+    # T85: the settings screen itself. Its source lives in the executable, not in pvz_launcher, so
+    # the desktop library keeps the file list it had; only a test target is added.
+    add_executable(settings_render_test tests/settings_render_test.cpp src/settings_view.cpp)
+    target_link_libraries(settings_render_test PRIVATE pvz_launcher pvz_progress pvz_audio_core)
+    pvz_warnings(settings_render_test)
+    add_test(NAME settings_render COMMAND settings_render_test "${PVZ_TEST_ASSETS}" "${PVZ_TEST_TEMP}")
+    set_tests_properties(settings_render PROPERTIES TIMEOUT 120)
+    # B5: the same shop test with SDL on, so the two screenshots and the missing-font refusal are
+    # exercised in the desktop configuration. It compiles `text.cpp` and the view sources directly
+    # instead of linking `pvz_launcher`: this screen owns its one snapshot helper, so the test does
+    # not depend on the rest of the launcher (and the executable keeps the file list the captain
+    # left it with).
+    add_executable(shop_render_test tests/shop_ui_test.cpp src/shop_layout.cpp src/shop_view.cpp
+        src/text.cpp)
+    target_compile_definitions(shop_render_test PRIVATE PVZ_ENABLE_DESKTOP=1)
+    target_include_directories(shop_render_test PRIVATE ${FREETYPE_INCLUDE_DIRS})
+    target_link_libraries(shop_render_test PRIVATE SDL3::SDL3 SDL3_image::SDL3_image freetype
+        pvz_shop pvz_progress pvz_catalog pvz_engine)
+    pvz_warnings(shop_render_test)
+    add_test(NAME shop_render COMMAND shop_render_test "${PVZ_TEST_CONTENT}"
+        "${CMAKE_CURRENT_SOURCE_DIR}/generated/shop_unlock.json" "${PVZ_TEST_TEMP}")
+    set_tests_properties(shop_render PROPERTIES TIMEOUT 120)
     endif()
 elseif(BUILD_TESTING)
     pvz_failure_test(cli_desktop_disabled --launcher-smoke unused "PVZ_ENABLE_DESKTOP")
@@ -459,6 +611,16 @@ target_link_libraries(shop_test PRIVATE pvz_shop)
 add_test(NAME shop COMMAND shop_test "${PVZ_TEST_CONTENT}"
     "${CMAKE_CURRENT_SOURCE_DIR}/generated/shop_unlock.json" "${PVZ_TEST_TEMP}")
 set_tests_properties(shop PROPERTIES TIMEOUT 120)
+
+# B5: the shop screen's data half (`shop_layout.cpp`, no SDL) plus the pure entry point in
+# `shop_view.cpp`. Both compile here in the audit build so their no-desktop paths stay honest - the
+# captain adds the two sources to the executable when wiring `--shop-screen`.
+add_executable(shop_ui_test tests/shop_ui_test.cpp src/shop_layout.cpp src/shop_view.cpp)
+target_link_libraries(shop_ui_test PRIVATE pvz_shop pvz_progress pvz_catalog pvz_engine)
+pvz_warnings(shop_ui_test)
+add_test(NAME shop_ui COMMAND shop_ui_test "${PVZ_TEST_CONTENT}"
+    "${CMAKE_CURRENT_SOURCE_DIR}/generated/shop_unlock.json" "${PVZ_TEST_TEMP}")
+set_tests_properties(shop_ui PROPERTIES TIMEOUT 120)
 
 set_tests_properties(${pvz_tests} PROPERTIES TIMEOUT 120)
 endif()

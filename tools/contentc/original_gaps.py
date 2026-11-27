@@ -544,7 +544,13 @@ def load_client(content_dir: Path) -> ClientTables:
         _load_json(path) for path in sorted((content_dir / "levels").glob("*.json"))
     ]
     plants = doc("plants.json", [])
-    zombies = doc("zombies.json", [])
+    # `source == "pack"` rows are the pack mirror written by zombie_roster.py; the
+    # gap table reports the hand-written roster only, so they never enter the join.
+    zombies = [
+        row
+        for row in doc("zombies.json", [])
+        if not (isinstance(row, dict) and row.get("source") == "pack")
+    ]
     shop = doc("shop.json", {})
     worlds = doc("worlds.json", [])
     stars = doc("stars.json", {})

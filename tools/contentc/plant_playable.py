@@ -154,7 +154,8 @@ def load_families(path: Path) -> dict[str, dict]:
 
 
 def load_authored(path: Path) -> dict[str, dict]:
-    return {row["id"]: row for row in _read_json(path)}
+    """手工名册的行（``source: "pack"`` 的派生行不算——否则判定会自我引用）。"""
+    return {row["id"]: row for row in _read_json(path) if row.get("source") != "pack"}
 
 
 def _cost_verdict(pack_row: dict | None) -> tuple[bool, object]:
@@ -400,13 +401,18 @@ def load_patch_facts(path: Path | None = None, levels_dir: Path | None = None) -
 def roster_inclusion(
     manual_path: Path | None = None, pack_path: Path | None = None
 ) -> dict:
-    """`content/plants.json` 的 147 条落在 pack 339 条名册里的哪几类。
+    """`content/plants.json` 的**手工行**落在 pack 339 条名册里的哪几类。
+
+    名册现在是 147 手工 + N 条 pack 派生行；派生行本身就是从这份名册抄出去的，
+    把它们一起算进来只会得到「都包含」的假结论（t75 定案针对的是 147 条手工行），
+    所以这里只取 ``source != "pack"`` 的行。
 
     只有两种情况算「同一植物」：id 完全相等；或者名字近似（归一化后共同前缀 ≥6 字符）
     **且** 成本与血量同时相等。后者是经验判据——单看 (cost, hp) 不行，103 条里 90 条
     都能撞上某个原版行（多数植物 hp=300、成本是 25 的倍数），只有名字也对得上才算证据。
     """
-    manual = _read_json(manual_path or DEFAULT_CONTENT)
+    manual = [row for row in _read_json(manual_path or DEFAULT_CONTENT)
+              if row.get("source") != "pack"]
     pack_rows = _read_json(pack_path or DEFAULT_PACK).get("plants") or []
     pack_by_id = {row["id"]: row for row in pack_rows}
     pack_ids = set(pack_by_id)

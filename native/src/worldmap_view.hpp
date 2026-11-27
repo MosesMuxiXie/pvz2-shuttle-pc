@@ -29,6 +29,22 @@ struct WorldMapScreenOptions {
     int frames = 0;
 };
 
+/// How many entries the meta screens hold, read from `metagame.json` (A7).
+///
+/// The world map is where a player looks for "what else is there", so it is the honest place to say
+/// how big the almanac and the garden are. A checkout without the generated table simply has no such
+/// line: `loaded` stays false and the screen draws nothing.
+struct MetagameCounts {
+    int plants = 0;   ///< `almanac.counts.plants`
+    int zombies = 0;  ///< `almanac.counts.zombies`
+    int drops = 0;    ///< `garden.counts.collectables`
+    bool loaded = false;
+    std::string note;  ///< why nothing loaded; empty on success
+};
+
+/// Reads `metagame.json` from `generatedDir`. Never throws.
+MetagameCounts loadMetagameCounts(const std::filesystem::path& generatedDir);
+
 /// What the screen decided. `entered` is the world id the player confirmed, empty when they quit.
 struct WorldMapScreenResult {
     int worlds = 0;
@@ -40,9 +56,17 @@ struct WorldMapScreenResult {
     std::string selectedWorld;
     std::string enteredWorld;
     std::string enteredLevel;
+    /// Worlds every level of which is cleared (the same number as `completed`, named for the JSON:
+    /// `clearedWorlds`).
+    int clearedWorlds = 0;
+    MetagameCounts metagame;
 };
 
 WorldMapScreenResult runWorldMapScreen(const Catalog& catalog, const map::WorldMap& map,
                                        const WorldMapScreenOptions& options);
+
+/// The `--worldmap-screen` payload as one object: the world counts plus the almanac/garden entry
+/// line, so the CLI cannot print one without the other.
+Json worldMapScreenJson(const WorldMapScreenResult& result);
 
 }  // namespace pvz

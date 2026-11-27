@@ -4,6 +4,7 @@
 #include <cmath>
 #include <cstdint>
 #include <fstream>
+#include <set>
 #include <stdexcept>
 #include <utility>
 
@@ -169,11 +170,22 @@ RewardTable readTable(const std::filesystem::path& path) {
             continue;
         }
 
-        // Everything left is a family this client cannot settle: `first:`/`replay:` level
-        // rewards (the compiler aggregated them without the level they belong to), rift
-        // first-clear/zomboss rows, gift-box openings and the per-world constants. Counting them
-        // by kind is what stops 438 of the 575 rows from being invisible.
-        if (!kind.empty()) ++table.unlanded[kind];
+        // Everything left is a family this client cannot settle on the battle path: `first:`/`replay:`
+        // level rewards (the compiler aggregated them without the level they belong to), rift
+        // first-clear/zomboss rows, gift-box openings and the per-world constants. Counting them by
+        // kind is what stops 438 of the 575 rows from being invisible; keeping the row itself is
+        // what lets `landRewards` decide per row instead of per kind.
+        if (!kind.empty()) {
+            ++table.unlanded[kind];
+            UnlandedRow row;
+            row.id = id;
+            row.kind = kind;
+            row.param = stringOr(entry, "param");
+            row.rewardType = stringOr(entry, "rewardType");
+            row.constant = stringOr(entry, "constant");
+            row.amount = intOr(entry, "amount", 0);
+            table.unlandedRowsDetail.push_back(std::move(row));
+        }
     }
 
     if (const auto dangling = root.find("danglingPresentTables");
@@ -464,6 +476,179 @@ void addRewardReceipt(Json& summary, const RewardDelta& gained, const RewardTabl
 bool keysUnlocked(const Progress& progress) {
     const LevelRecord* egypt = progress.find("egypt_3");
     return egypt != nullptr && egypt->cleared;
+}
+
+namespace {
+
+/// The family a compiled row id names. The id shape is the only field that distinguishes "this is
+/// a shop price" from "this is a payout" (`constant:CoinsPerKey` vs `rift-boss:a0:d0:0:coins`), so
+/// the landing rules key off it rather than off `kind`.
+std::string idFamily(const std::string& id) {
+    const std::size_t colon = id.find(':');
+    if (colon == std::string::npos) return {};
+    return id.substr(0, colon);
+}
+
+}  // namespace
+
+RewardLanding landRewards(Progress& progress, const RewardTable& table,
+                          const LandingOptions& options) {
+    RewardLanding landing;
+
+    // Sets so "already owned" is answerable in log time and the vectors stay sorted after the pass.
+    std::set<std::string> plants(progress.unlockedPlants.begin(), progress.unlockedPlants.end());
+    std::set<std::string> costumes(progress.costumes.begin(), progress.costumes.end());
+    std::vector<std::string> paidPlants;
+    std::vector<std::string> paidCostumes;
+
+    for (const UnlandedRow& row : table.unlandedDetail()) {
+        const std::string family = idFamily(row.id);
+        const bool rift = family.rfind("rift-", 0) == 0;
+
+        // `constant:` rows are `GamePropertySheet` values, not payouts: `CoinsPerKey = 1000` means a
+        // key costs 1000 coins and `StarsPerCostume = 20` means a costume costs 20 stars. The
+        // generated table says so itself in `unknowns.whyZeroCounted`. Recording the price is the
+        // honest read; paying a coin constant needs an explicit ask, and a star price can never be
+        // paid into a coin counter, so it stays recorded even when the coin constants are paid.
+        if (family == "constant") {
+            landing.prices[row.constant.empty() ? row.id : row.constant] = row.amount;
+            if (options.landEconomyConstants && row.kind == "coin") {
+                progress.coins += row.amount;
+                landing.coins += row.amount;
+                ++landing.landed;
+                ++landing.byReason["price_paid"];
+            } else {
+                ++landing.unlanded;
+                ++landing.byKind[row.kind];
+                ++landing.byReason["price_constant"];
+                progress.rewardLog.push_back(RewardLogEntry{row.kind, row.id, row.amount});
+                ++landing.logged;
+            }
+            continue;
+        }
+
+        // Rows that name a plant: `first:unlock_plant:<plant>`. This is ownership of a plant the
+        // roster may offer, which is why it lands in `unlockedPlants` and not in `seeds`.
+        if (row.kind == "plant") {
+            if (row.param.empty()) {
+                ++landing.unlanded;
+                ++landing.byKind[row.kind];
+                ++landing.byReason["no_param"];
+                progress.rewardLog.push_back(RewardLogEntry{row.kind, row.id, row.amount});
+                ++landing.logged;
+                continue;
+            }
+            if (plants.count(row.param) != 0) {
+                ++landing.landed;
+                ++landing.alreadyOwned;
+                ++landing.byReason["already_owned"];
+                continue;
+            }
+            plants.insert(row.param);
+            paidPlants.push_back(row.param);
+            ++landing.landed;
+            ++landing.planted;
+            continue;
+        }
+
+        if (row.kind == "cosmetic") {
+            if (row.param.empty()) {
+                ++landing.unlanded;
+                ++landing.byKind[row.kind];
+                ++landing.byReason["no_param"];
+                progress.rewardLog.push_back(RewardLogEntry{row.kind, row.id, row.amount});
+                ++landing.logged;
+                continue;
+            }
+            if (costumes.count(row.param) != 0) {
+                ++landing.landed;
+                ++landing.alreadyOwned;
+                ++landing.byReason["already_owned"];
+                continue;
+            }
+            costumes.insert(row.param);
+            paidCostumes.push_back(row.param);
+            ++landing.landed;
+            ++landing.costumed;
+            continue;
+        }
+
+        if (row.kind == "coin" && rift) {
+            // A real payout of a mode this client does not have: no rift progression, no rift level
+            // list, so nothing can earn it. Paying it during an ordinary battle would mint coins.
+            if (options.landRiftPayouts) {
+                progress.coins += row.amount;
+                landing.coins += row.amount;
+                ++landing.landed;
+                ++landing.byReason["rift_paid"];
+            } else {
+                ++landing.unlanded;
+                ++landing.byKind[row.kind];
+                ++landing.byReason["rift_payout"];
+                progress.rewardLog.push_back(RewardLogEntry{row.kind, row.id, row.amount});
+                ++landing.logged;
+            }
+            continue;
+        }
+
+        // Everything else is recorded, never paid. A rift row here (gems, plant XP) is separated from
+        // the rest so the report can say "this needs the rift mode" rather than "this has no shape".
+        const char* reason = rift ? "rift_payout" : "unmodelled";
+        ++landing.unlanded;
+        ++landing.byKind[row.kind];
+        ++landing.byReason[reason];
+        progress.rewardLog.push_back(RewardLogEntry{row.kind, row.id, row.amount});
+        ++landing.logged;
+    }
+
+    progress.unlockedPlants.assign(plants.begin(), plants.end());
+    progress.costumes.assign(costumes.begin(), costumes.end());
+    sortUniqueRewardLog(progress.rewardLog);
+
+    std::sort(paidPlants.begin(), paidPlants.end());
+    std::sort(paidCostumes.begin(), paidCostumes.end());
+    landing.unlockedPlants = std::move(paidPlants);
+    landing.costumes = std::move(paidCostumes);
+    landing.plantsTotal = static_cast<int>(progress.unlockedPlants.size());
+    landing.costumesTotal = static_cast<int>(progress.costumes.size());
+    return landing;
+}
+
+Json RewardLanding::json() const {
+    Json kinds = Json::object();
+    for (const auto& [kind, count] : byKind) kinds[kind] = count;
+    // `nlohmann::json` sorts object keys, so this line is alphabetical rather than in contract order.
+    // These are exactly the six keys the contract names; the census that explains them lives in
+    // `detail()`, which `--rewards-report` prints to stderr so stdout stays one parseable line.
+    return Json{{"landed", landed},
+                {"unlanded", unlanded},
+                {"byKind", std::move(kinds)},
+                {"unlockedPlants", static_cast<int>(unlockedPlants.size())},
+                {"costumes", static_cast<int>(costumes.size())},
+                {"coins", coins}};
+}
+
+Json RewardLanding::detail() const {
+    Json reasons = Json::object();
+    for (const auto& [reason, count] : byReason) reasons[reason] = count;
+    Json priceMap = Json::object();
+    for (const auto& [field, value] : prices) priceMap[field] = value;
+    return Json{{"alreadyOwned", alreadyOwned},
+                {"logged", logged},
+                {"plantsTotal", plantsTotal},
+                {"costumesTotal", costumesTotal},
+                {"landedPlants", static_cast<int>(unlockedPlants.size())},
+                {"landedCostumes", static_cast<int>(costumes.size())},
+                {"reasons", std::move(reasons)},
+                {"prices", std::move(priceMap)}};
+}
+
+void addLandingReceipt(Json& summary, const RewardLanding& landing) {
+    // Only when the pass actually unlocked something: a save that already owns the roster must not
+    // grow a key, which is what keeps the `--run-level` summary stable across repeated runs.
+    if (!landing.unlockedPlants.empty()) {
+        summary["unlockedPlantsGained"] = static_cast<int>(landing.unlockedPlants.size());
+    }
 }
 
 }  // namespace pvz

@@ -107,11 +107,12 @@ class MeasuredFactsTest(unittest.TestCase):
         self.rows = {(row["entity"], row["field"]): row for row in self.data["tables"]}
 
     def test_plants_cost_matches_pack_cost(self):
+        """名册 409 行 = 手工 147 + 262 条 pack 派生行；只有 44 条能按 id 关联回原版。"""
         row = self.rows[("plants", "Cost")]
         self.assertEqual(row["clientField"], "cost")
-        self.assertEqual(row["records"], 147)
+        self.assertEqual(row["records"], 409)
         self.assertEqual(row["mapped"], 44)
-        self.assertEqual(row["clientOnly"], 103)
+        self.assertEqual(row["clientOnly"], 365)
         self.assertEqual(row["agree"], 42)
 
     def test_zombies_hitpoints_matches_pack_hitpoints(self):
@@ -145,11 +146,12 @@ class MeasuredFactsTest(unittest.TestCase):
         self.assertEqual(self.data["counts"]["joinedWorldClientLevels"], 1432)
 
     def test_projectiles_have_no_name_overlap(self):
+        """名册扩到 409 后多了 139 个弹道名，但真正能对上原版 ClassName 的只有 2 个。"""
         row = self.rows[("projectiles", "ClassName")]
-        self.assertEqual(row["records"], 11)
-        self.assertEqual(row["mapped"], 0)
-        self.assertEqual(row["clientOnly"], 11)
-        self.assertEqual(row["packOnly"], 131)
+        self.assertEqual(row["records"], 150)
+        self.assertEqual(row["mapped"], 2)
+        self.assertEqual(row["clientOnly"], 148)
+        self.assertEqual(row["packOnly"], 129)
 
     def test_stars_entries_are_counted(self):
         row = self.rows[("stars", "Challenges")]

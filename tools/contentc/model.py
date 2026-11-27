@@ -335,14 +335,18 @@ def compute_overlap(pack: dict, content_dir: Path) -> dict:
     the behaviour batches, not an error list.
     """
 
-    def ids_of(name: str) -> set[str]:
+    def ids_of(name: str, skip_pack: bool = False) -> set[str]:
         path = content_dir / name
         if not path.is_file():
             return set()
         raw = json.loads(path.read_text(encoding="utf-8"))
         if isinstance(raw, dict):
             raw = raw.get("items") or raw.get("plants") or raw.get("zombies") or []
-        return {item["id"] for item in raw if isinstance(item, dict) and "id" in item}
+        return {
+            item["id"]
+            for item in raw
+            if isinstance(item, dict) and "id" in item and not (skip_pack and item.get("source") == "pack")
+        }
 
     def report(pack_ids: set[str], content_ids: set[str]) -> dict:
         return {
@@ -356,7 +360,7 @@ def compute_overlap(pack: dict, content_dir: Path) -> dict:
 
     return {
         "plants": report({item["id"] for item in pack["plants"]}, ids_of("plants.json")),
-        "zombies": report({item["id"] for item in pack["zombies"]}, ids_of("zombies.json")),
+        "zombies": report({item["id"] for item in pack["zombies"]}, ids_of("zombies.json", skip_pack=True)),
     }
 
 

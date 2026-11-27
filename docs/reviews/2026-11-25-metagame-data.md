@@ -110,7 +110,7 @@
 
 - 不在 `PlantType` 的图鉴条目 17 条：`aquavine`、`beansprout`、`blazeleaf`、`cornfetti`、`electricpeel`、`flattenedshroom`、`frostbonnet`、`guardshroom`、`hammeruit`、`haystack`、`kelpguard`、`minishroom`、`seashroom`、`sweetheartsnare`、`tileturnip`、`ultomato1`、`znakelily`。
 - 无名字键的植物：`minishroom`（U3）。
-- 与客户端内容交集：`content/plants.json` 147 条命中 27 条，`content/zombies.json` 55 条命中 19 条。交集小是原版事实：content 侧是客户端自建名册（含 `fused_*` 融合体），未命中的 id 全列在 JSON 的 `cross` 段，本层不替它们编图鉴。
+- 与客户端内容交集：`content/plants.json` 409 条命中 147 条，`content/zombies.json` 55 条命中 19 条。交集小是原版事实：content 侧是客户端自建名册（含 `fused_*` 融合体），未命中的 id 全列在 JSON 的 `cross` 段，本层不替它们编图鉴。
 
 ## 四、花园（`garden`）
 

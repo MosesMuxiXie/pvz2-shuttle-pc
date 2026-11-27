@@ -11,7 +11,7 @@
 
 数据来源（全部只读）：
   - content/levels/*.json            1809 关，字段 deck / sun / waves / flags / seed_bank
-  - content/plants.json              147 条客户端植物（id / behavior / art）
+  - content/plants.json              植物注册表（手工 147 行 + 251 条 pack 派生行 = 398）
   - <assets>/db/MANIFEST.json        DragonBones actor 清单（读 ["actors"]）
   - <assets>/art/**/*.png            静态美术（客户端 art 字段里的 png 路径）
   - native/src/engine/registry.cpp   plantFamilies() 的 11 个行为族（本文件里是常量镜像）
@@ -559,7 +559,8 @@ def render_report(report: DeckReport) -> str:
     actor_pct = 100.0 * report.registry_actor / total_plants
     deck_pct = 100.0 * total.with_actor / (total.plants or 1)
     add(
-        f"1. **有模型不等于有形象。** 147 株植物里 {report.registry_actor} 株（{actor_pct:.0f}%）"
+        f"1. **有模型不等于有形象。** 注册表 {report.registry_total} 株植物里 {report.registry_actor} 株"
+        f"（{actor_pct:.0f}%）"
         f"能挂到骨骼模型上，但这 {report.registry_actor} 株只用了 {report.distinct_actors} 套 actor——"
         f"独立形象只覆盖 {report.distinct_actors}/{report.registry_total}"
         f"（{100.0 * report.distinct_actors / total_plants:.0f}%），"
@@ -571,14 +572,14 @@ def render_report(report: DeckReport) -> str:
         f"去重后只引用 {total.plants} 株植物；其中 {total.with_actor} 株（{deck_pct:.0f}%）有骨骼模型，"
         f"{total.with_png} 株只有静态图，{total.without_art} 株无美术。"
         "也就是说：现有关卡能跑起来的部分，本质上是“少数几株植物反复出现”，"
-        "美术缺口集中在少数新世界植物上，而不是均匀分布在 147 株里。"
+        f"美术缺口集中在少数新世界植物上，而不是均匀分布在 {report.registry_total} 株里。"
     )
     add(
         "3. **对“完整复刻”的含义。** 行为族这一侧是齐的（"
         f"{total.with_family}/{total.plants} 株 deck 植物都有已实现的 behavior 族），"
         "真正的短板是表现层：没有骨骼模型的植物在引擎里只能当静态贴图或色块，"
         "补多少行为代码都换不来它的动作演出。若目标是 1809 关全部可玩到“看起来对”，"
-        "必须先把 deck 实际引用的缺模型植物补齐，而不是去铺满 147 株。"
+        "必须先把 deck 实际引用的缺模型植物补齐，而不是去铺满注册表里的每一株。"
     )
     add("")
     add(f"建议先补的 id（按 deck 引用频次 top {TOP_MISSING}；含 deck 未引用的植物，其次数为 0）：")

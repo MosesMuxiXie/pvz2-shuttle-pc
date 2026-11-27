@@ -1,6 +1,9 @@
 #include "worldmap.hpp"
 
+#include "loc.hpp"  // B6b: world names the content list does not carry
+
 #include <algorithm>
+#include <cctype>
 #include <fstream>
 #include <limits>
 #include <stdexcept>
@@ -37,6 +40,12 @@ std::string text(const Json& object, const char* key) {
     const Json* value = member(object, key);
     if (!value || !value->is_string()) return {};
     return value->get<std::string>();
+}
+
+std::string upper(const std::string& value) {
+    std::string out = value;
+    for (char& c : out) c = static_cast<char>(std::toupper(static_cast<unsigned char>(c)));
+    return out;
 }
 
 int number(const Json& object, const char* key) {
@@ -175,6 +184,23 @@ WorldMap WorldMap::load(const std::filesystem::path& contentDir,
                 world.nameEn = found->second.second;
             }
         }
+    }
+
+    // B6b: `content/worlds.json` names the 26 worlds this build ships, and it stays the first
+    // source - the table below only fills what it left blank, so a hand-written name_zh can never be
+    // overwritten by guessing. The original strings live under `ALM_<WORLD>` (the almanac world
+    // heading) and, for a few worlds, under the bare upper-case id; `name_key` is tried last because
+    // the content file invents `world.<id>.name` and the table has no such row. Still nothing and
+    // `worldmap_view` prints the id, exactly as before.
+    const loc::Strings strings = loc::load(contentDir.string());
+    for (WorldInfo& world : map.worlds_) {
+        if (!world.nameZh.empty()) continue;
+        const std::string id = upper(world.id);
+        std::string resolved = loc::resolve(strings, "ALM_" + id, std::string());
+        if (resolved.empty()) resolved = loc::resolve(strings, id, std::string());
+        if (resolved.empty() && !world.nameKey.empty())
+            resolved = loc::resolve(strings, world.nameKey, std::string());
+        world.nameZh = resolved;
     }
 
     for (std::size_t i = 0; i < map.worlds_.size(); ++i) {

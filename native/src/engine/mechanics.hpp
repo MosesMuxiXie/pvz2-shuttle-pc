@@ -8,12 +8,14 @@
 // of green, because the run still finished and still reported a status.
 //
 // This header stays SDL-free so the audit build, the engine and the view all read one table.
-// The kernel does not implement three of the eight modules yet (events, mutators, boardGrid);
-// those are *named and counted* rather than silently dropped, because a level that quietly lost
-// its tide is indistinguishable from a level that never had one. The special spawners
-// (`spawners.grid/portal/storm/ground/dino/beach/fish`) are wired since T66; `spawners.spider`
-// and the creature entries of `spawners.fish` stay counted because the kernel has no creature
-// entity to place.
+// T88 wired the Events module's two documented kinds (tide changes and frost winds), the
+// board-grid mask (as data - its codes carry no documented meaning) and the one mutator that
+// states a rule (`maxSunOverride`). What is still *named and counted* rather than silently
+// dropped: `spawners.spider`, the `fish` creature entries, the mutator challenge wrappers
+// (`LevelTimer`, `KillZombies1`...), and any row whose wave the sheet left empty. A level that
+// quietly lost its tide is indistinguishable from a level that never had one, which is why the
+// counts exist.
+// The special spawners (`spawners.grid/portal/storm/ground/dino/beach/fish`) are wired since T66.
 #pragma once
 #include <cstddef>
 #include <filesystem>
@@ -128,6 +130,61 @@ struct SpawnerSpec {
     bool empty() const { return rows.empty(); }
 };
 
+/// One tide change of the level's Events module (`TidalChangeWaveActionProps`): at `wave` the
+/// waterline moves to `column`. The sheet's `ChangeType` is carried verbatim because only
+/// `absolute` names a destination the kernel can honour; a relative type would have to know the
+/// waterline it starts from, which no shipped row names.
+struct TideChange {
+    int wave = 0;
+    int column = 0;
+    std::string changeType;
+};
+
+/// One frost wind (`FrostWindWaveActionProps.Winds[]`): at `wave` the wind blows over `rows`.
+/// The sheet's `Row` is `-1` for "every row", which is stored as a literal -1 entry here.
+struct FrostWind {
+    int wave = 0;
+    std::vector<int> rows;
+    std::string direction;
+};
+
+/// `BoardGridMapProps.Values`: the level's 5x9 cell-code matrix.
+///
+/// The sheet documents no meaning for the codes (`tools/contentc/level_extra_rules.py` R02 says
+/// so in as many words: "0/1 的含义原版没有字段说明"), and every one of the 49 shipped levels has
+/// exactly one map at 5x9 - the board never changes shape. So the kernel carries the matrix as
+/// data (`cells`, `marked` = the cells whose code is 1) and exposes it for later rules; it does
+/// **not** turn a code into "planting is refused here", because that would be an invented rule
+/// that the sheet cannot contradict.
+struct BoardGridSpec {
+    std::string alias;
+    int width = 0;
+    int height = 0;
+    std::vector<std::vector<int>> cells;
+    bool empty() const { return cells.empty(); }
+    /// How many cells carry the code 1.
+    int marked() const;
+};
+
+/// The Events module split into the two kinds the sheet gives semantics for.
+struct EventsSpec {
+    std::vector<TideChange> tide;
+    std::vector<FrostWind> frost;
+    bool empty() const { return tide.empty() && frost.empty(); }
+};
+
+/// `LevelMutator*` objects. Only one shape says what it does to the game: `maxSunOverride` caps
+/// the sun bank. The `LevelMutatorModuleProperties` rows are mission wrappers (`LevelTimer`,
+/// `KillZombies1`, `PlantsLost2`...) - challenge objectives, not global modifiers - so they stay
+/// counted as unknown instead of being read as a multiplier the sheet never gave.
+struct MutatorSpec {
+    /// `LevelMutatorMaxSunProps.maxSunOverride`: the bank may not hold more than this. 0 = no cap.
+    int maxSun = 0;
+    /// Rows that are challenge wrappers rather than a modifier (counted, not applied).
+    int challengeRows = 0;
+    bool empty() const { return maxSun == 0 && challengeRows == 0; }
+};
+
 /// A mechanic the level declares that the kernel does not implement, with how many instances
 /// the level asked for (one Events module == 1, four beach spawner entries == 4). Kept as a
 /// count rather than a bool so `--run-level` can show "this level has 9 unimplemented tide
@@ -148,6 +205,11 @@ struct LevelMechanics {
     /// T66: the special spawner rows this level declares, one spec per kind present, sorted by
     /// kind. Only wired kinds appear; an unwired kind (spider) stays in `unknownMechanics`.
     std::vector<SpawnerSpec> spawners;
+    /// T88: the Events module (tide + frost wind), the board mask and the sun cap. Kinds inside
+    /// these modules that the sheet gives no semantics for stay in `unknownMechanics`.
+    EventsSpec events;
+    BoardGridSpec boardGrid;
+    MutatorSpec mutators;
     /// Kinds present in the sheet that this kernel does not run. Sorted by kind.
     std::vector<UnknownMechanic> unknownMechanics;
 
@@ -156,6 +218,9 @@ struct LevelMechanics {
     bool hasGravestones() const { return !gravestones.empty(); }
     bool hasSpawners() const;
     const SpawnerSpec* spawner(SpawnerKind kind) const;
+    bool hasEvents() const { return !events.empty(); }
+    bool hasBoardGrid() const { return !boardGrid.empty(); }
+    bool hasSunCap() const { return mutators.maxSun > 0; }
     /// True when the level declares nothing this kernel would have to skip.
     bool fullyCovered() const { return unknownMechanics.empty(); }
 };
@@ -191,6 +256,10 @@ class LevelMechanicsTable {
     std::size_t withProtect() const { return withProtect_; }
     std::size_t withGravestones() const { return withGravestones_; }
     std::size_t withUnknown() const { return withUnknown_; }
+    /// T88: levels with tide/frost rows, with a board mask, and with a sun cap.
+    std::size_t withEvents() const { return withEvents_; }
+    std::size_t withBoardGrid() const { return withBoardGrid_; }
+    std::size_t withSunCap() const { return withSunCap_; }
     /// Levels that declare at least one row of this spawner kind (`spawners.grid` etc.), counted
     /// over the whole sheet. Zero for `spider`, which never leaves `unknownMechanics`.
     std::size_t withSpawners(SpawnerKind kind) const;
@@ -204,6 +273,9 @@ class LevelMechanicsTable {
     std::size_t withProtect_ = 0;
     std::size_t withGravestones_ = 0;
     std::size_t withUnknown_ = 0;
+    std::size_t withEvents_ = 0;
+    std::size_t withBoardGrid_ = 0;
+    std::size_t withSunCap_ = 0;
 };
 
 } // namespace pvz::engine

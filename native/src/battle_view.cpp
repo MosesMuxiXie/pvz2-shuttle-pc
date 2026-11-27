@@ -5,6 +5,7 @@
 #include "content/model.hpp" // the pack lookups need the complete ContentPack, not catalog.hpp's fwd decl
 #include "drag_plant.hpp"    // T50: drag-to-plant state machine (SDL-free, unit tested)
 #include "engine/armor.hpp"  // S5.11: armor layer -> gear armature
+#include "engine/spawn_offsets.hpp" // C4: SpawnOffset.y -> projectile draw height
 #include "sdl_support.hpp"
 #include "text.hpp"
 #include <algorithm>
@@ -114,7 +115,17 @@ std::string localized(const std::string& code) {
         return "场上的植物太多了。";
     if (code.rfind("unknown plant", 0) == 0)
         return "这里还没有这种植物。";
+    if (code == "cart occupied")
+        return "这辆车上已经有一株植物了。";
+    if (code == "no cart")
+        return "这里没有铁轨车。";
     return code;
+}
+/// S3/A2: a cell that holds a minecart takes the plant *on* the cart, and the cart carries it.
+/// Both the click path and the drag path plant through here so the two never diverge.
+std::string plantCard(engine::World& world, const std::string& type, int row, int col) {
+    if (world.cartAt(row, col) != nullptr) return world.plantOnCart(type, row, col);
+    return world.plant(type, row, col);
 }
 std::string statusText(const std::string& status) {
     if (status == "playing")
@@ -183,7 +194,7 @@ class BattleScene {
         }
         plantShoot_["peashooter"] =
             firstAnimation(assets_, plantModel("peashooter"), {"Shoot", "Idle", "Idle1"});
-        message_ = "先点一张卡，再点草坪格子。";
+        message_ = starterHint();
         previousNs_ = SDL_GetTicksNS();
         // A screenshot run attaches in `headless` mode, which never opens a device: the pixels
         // below stay byte-identical whether or not this build has a sound card.
@@ -200,10 +211,19 @@ class BattleScene {
         selected_ = -1;
         shovel_ = false;
         drag_.cancel();
-        message_ = "先点一张卡，再点草坪格子。";
+        message_ = starterHint();
         // A fresh world starts a fresh event stream, so the old cursor would skip its first wave.
         audioCursor_ = 0;
     }
+
+    /// What the prompt line says before the first click. A vasebreaker board has no seed bank, so
+    /// the "pick a card" wording would point at something that is not there.
+    std::string starterHint() const {
+        return vaseLevel() ? "敲开草坪上的罐子，看看里面是什么。" : "先点一张卡，再点草坪格子。";
+    }
+
+    /// True while this scene is playing a vasebreaker board.
+    bool vaseLevel() const { return world_->vasebreaker(); }
 
     /// The scripted demo the smoke test renders: three plants, all suns collected, 1800 ticks.
     void runDemo() {
@@ -262,10 +282,30 @@ class BattleScene {
             }
         // T50: the cell under the pointer while a card is being dragged.
         drawDragPreview();
+        // A1 (T80): the vases. Drawn only in vasebreaker mode, so a normal battle frame is byte for
+        // byte what it was - the headless screenshot comparison pins that.
+        for (const auto& vase : snap.vases) {
+            const SDL_FRect box{boardX + static_cast<float>(vase.col) * cellW + 20.0f,
+                                boardY + static_cast<float>(vase.row) * cellH + 16.0f, cellW - 40.0f,
+                                cellH - 32.0f};
+            color(r, 158, 104, 52, 235);
+            sdl::require(SDL_RenderFillRect(r, &box), "draw vase");
+            color(r, 92, 54, 24, 255);
+            sdl::require(SDL_RenderRect(r, &box), "draw vase rim");
+            const SDL_FRect neck{box.x + box.w * 0.22f, box.y - 8.0f, box.w * 0.56f, 12.0f};
+            color(r, 158, 104, 52, 235);
+            sdl::require(SDL_RenderFillRect(r, &neck), "draw vase neck");
+        }
         const float seconds = static_cast<float>(snap.tick) / 60.0f;
         for (const auto& p : snap.plants) {
-            const float anchorX = boardX + (static_cast<float>(p.col) + 0.5f) * cellW;
-            const float anchorY = boardY + (static_cast<float>(p.row) + 1.0f) * cellH - 14.0f;
+            // C55: the protect sheet can stack plants on one cell (`lostcity_45` seven of them), so
+            // each one is lifted by its depth instead of being drawn on top of the others. Depth 0
+            // stays exactly where it always was, which is why every level without a stack renders
+            // byte-identically.
+            const float lift = static_cast<float>(p.stackDepth) * 11.0f;
+            const float sideStep = static_cast<float>(p.stackDepth) * 7.0f;
+            const float anchorX = boardX + (static_cast<float>(p.col) + 0.5f) * cellW + sideStep;
+            const float anchorY = boardY + (static_cast<float>(p.row) + 1.0f) * cellH - 14.0f - lift;
             circle(r, anchorX, anchorY + 2, 30, SDL_Color{12, 26, 12, 70});
             ActorPose pose;
             pose.model = plantModel(p.type);
@@ -343,11 +383,31 @@ class BattleScene {
                  static_cast<float>(52.0 * std::clamp(remaining / total, 0.0, 1.0)), 5,
                  SDL_Color{226, 82, 62, 255});
         }
-        for (const auto& shot : snap.shots) {
+        // C4: `SpawnOffset.y` is the vertical muzzle offset the sheet gives a plant's action
+        // (art pixels; 116 make one lawn row). `ShotView` carries no owner, so this loop reads
+        // the live `ShotEntity` list - the same vector `snapshot()` projects - to reach it.
+        // Only the drawing moves: the kernel's `row` is untouched, so every recorded state hash
+        // stays where it was. A launch height taller than the lawn is clamped into the board
+        // instead of drawing over the HUD (`DandelionDefault` declares -1000 px, -8.6 rows).
+        const engine::SpawnOffsets& offsets = engine::SpawnOffsets::shared();
+        std::map<engine::EntityId, std::string> plantTypeById;
+        for (const auto& plant : snap.plants) plantTypeById.emplace(plant.id, plant.type);
+        const float shotTop = boardY + 12.0f;
+        const float shotBottom =
+            boardY + static_cast<float>(snap.rows > 0 ? snap.rows : 5) * cellH - 12.0f;
+        for (const auto& shot : world_->shots()) {
+            if (!shot.alive) continue;
+            float lift = 0.0f;
+            const auto owner = plantTypeById.find(shot.owner);
+            if (owner != plantTypeById.end()) {
+                lift = static_cast<float>(offsets.launchYPixels(owner->second) *
+                                          (cellH / offsets.pxPerRow()));
+            }
             ActorPose pose;
             pose.model = "db/projectiles/Pea0PRJ";
             pose.x = boardX + static_cast<float>(shot.x) * cellW;
-            pose.y = boardY + (static_cast<float>(shot.row) + 0.62f) * cellH;
+            pose.y = std::clamp(boardY + (static_cast<float>(shot.row) + 0.62f) * cellH + lift,
+                                shotTop, shotBottom);
             pose.scale = 0.55f;
             pose.seconds = seconds;
             if (drawActor(r, assets_, pose) == 0)
@@ -362,6 +422,16 @@ class BattleScene {
                 circle(r, x - 14, y + 10, 7, SDL_Color{34, 34, 34, 255});
                 circle(r, x + 14, y + 10, 7, SDL_Color{34, 34, 34, 255});
             }
+        // S3/A2: the minecart. No cart model ships with the pack, so it draws as a steel box on
+        // four wheels in the cart's own row; the plant riding it is drawn by the plants loop.
+        for (const auto& cart : snap.carts) {
+            const float x = boardX + static_cast<float>(cart.x) * cellW,
+                        y = boardY + (static_cast<float>(cart.row) + 0.74f) * cellH;
+            rect(r, x - 26, y - 16, 52, 24, SDL_Color{104, 112, 124, 255});
+            rect(r, x - 26, y + 4, 52, 7, SDL_Color{64, 70, 80, 255});
+            circle(r, x - 13, y + 15, 6, SDL_Color{26, 26, 28, 255});
+            circle(r, x + 13, y + 15, 6, SDL_Color{26, 26, 28, 255});
+        }
         for (const auto& sun : snap.suns) {
             const float x = boardX + static_cast<float>(sun.x) * cellW;
             const float y = boardY + static_cast<float>(sun.y) * cellH;
@@ -379,7 +449,12 @@ class BattleScene {
         const SDL_FRect sunIcon{16, 22, 62, 62};
         sdl::require(SDL_RenderTexture(r, sunArt_.get(), nullptr, &sunIcon), "draw sun counter icon");
         text_.draw(86, 26, 34, cream, std::to_string(snap.sun));
-        const std::size_t count = deck_.size();
+        // A1 (T80): a vasebreaker board has no seed bank - the engine refuses every plant call
+        // with "no seed bank" - so the strip would only offer cards that cannot be played. It is
+        // drawn empty and a hint takes its place. `count` is the only thing the loop below keys
+        // off, so an ordinary level keeps the identical strip and its frame stays byte for byte.
+        const bool vaseBoard = vaseLevel();
+        const std::size_t count = vaseBoard ? 0 : deck_.size();
         const float step = cardStep(count), body = cardBody(count);
         for (std::size_t i = 0; i < count; ++i) {
             const auto& card = deck_[i];
@@ -429,8 +504,14 @@ class BattleScene {
                                    std::to_string((remaining + 59) / 60) + "s");
             }
         }
-        text_.draw(748, 18, 18, cream,
-                   "第 " + std::to_string(snap.wave) + " / " + std::to_string(snap.waves) + " 波");
+        if (vaseBoard) {
+            text_.draw(200, 26, 26, cream, "砸罐子");
+            text_.draw(200, 62, 15, SDL_Color{206, 220, 198, 255},
+                       "点草坪上的罐子把它敲开 · 里面可能是僵尸、植物卡或道具");
+        }
+        if (!vaseBoard)
+            text_.draw(748, 18, 18, cream,
+                       "第 " + std::to_string(snap.wave) + " / " + std::to_string(snap.waves) + " 波");
         text_.draw(748, 46, 16, SDL_Color{206, 220, 198, 255},
                    "剩余僵尸 " + std::to_string(snap.zombies.size()) + " · 阳光 " + std::to_string(snap.sun));
         text_.draw(748, 72, 15, SDL_Color{184, 198, 176, 255},
@@ -463,7 +544,8 @@ class BattleScene {
                                                              : "僵尸吃掉了你的脑子";
             text_.drawCentered(640, 280, 38, SDL_Color{245, 228, 168, 255}, title);
             const std::string subtitle =
-                !started_ ? "点击卡组种植 · 初始阳光来自关卡"
+                !started_ ? (vaseBoard ? "敲开所有罐子 · 清空后且场上没有僵尸就过关"
+                                       : "点击卡组种植 · 初始阳光来自关卡")
                 : world_->paused() ? "按空格或点击暂停按钮继续。"
                 : snap.status == "won" ? "按 R 重开一局，不保存进度。"
                                        : "按 R 重试，不保存进度。";
@@ -619,7 +701,7 @@ class BattleScene {
         const std::string& id = deck_[static_cast<std::size_t>(card)];
         const int planted = drag_.release(cell, ui::dragRulesFor(*world_, catalog_, id, cell));
         if (planted >= 0) {
-            const std::string reason = world_->plant(deck_[static_cast<std::size_t>(planted)], cell.row, cell.col);
+            const std::string reason = plantCard(*world_, deck_[static_cast<std::size_t>(planted)], cell.row, cell.col);
             message_ = localized(reason);
             if (reason.empty()) selected_ = -1;
             return;
@@ -757,10 +839,32 @@ class BattleScene {
         }
         const int col = int(std::floor((x - boardX) / cellW)), row = int(std::floor((y - boardY) / cellH));
         if (col >= 0 && col < world_->cols() && row >= 0 && row < world_->rows()) {
-            if (shovel_)
+            // A1 (T80): on a vasebreaker board a tap opens the vase instead of planting. A card a
+            // plant vase handed over is played by tapping a cell next to the vase it came from; the
+            // mode has no seed bank, so there is nothing else a lawn tap could mean.
+            if (world_->vasebreaker()) {
+                if (world_->vaseAt(row, col) != nullptr) {
+                    const engine::World::VaseBreak broken = world_->breakVase(row, col);
+                    if (!broken.ok) {
+                        message_ = "这里没有罐子。";
+                    } else if (broken.kind == "zombie") {
+                        message_ = "罐子里是僵尸！";
+                    } else if (broken.kind == "plant") {
+                        message_ = "得到一张植物卡，点它旁边的格子种下。";
+                    } else if (broken.kind == "sun") {
+                        message_ = "+" + std::to_string(broken.sun) + " 阳光。";
+                    } else {
+                        message_ = "捡到一个道具：" + broken.value;
+                    }
+                } else if (!world_->vaseCards().empty()) {
+                    message_ = localized(world_->plantVaseCard(world_->vaseCards().size() - 1, row, col));
+                } else {
+                    message_ = "这里没有罐子。";
+                }
+            } else if (shovel_)
                 message_ = world_->shovel(row, col) ? "已铲除，不返还阳光。" : "这里没有植物。";
             else if (selected_ >= 0 && selected_ < static_cast<int>(count)) {
-                const std::string reason = world_->plant(deck_[static_cast<std::size_t>(selected_)], row, col);
+                const std::string reason = plantCard(*world_, deck_[static_cast<std::size_t>(selected_)], row, col);
                 message_ = localized(reason);
                 if (reason.empty())
                     selected_ = -1;

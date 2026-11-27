@@ -81,6 +81,53 @@ struct LevelRecord {
   bool operator==(const LevelRecord& other) const;
 };
 
+/// The three volume buses the settings screen exposes, plus the global mute switch.
+///
+/// Percentages are integers 0..100 so the save file and the screen agree without rounding, and
+/// `master` is the same number `--volume` sets: the mixer still multiplies master x bus x gain x
+/// fade, the save just remembers what the player picked. `muted` is the `M` key, not a fourth
+/// volume, because "silence everything now" must not destroy the three picks.
+struct AudioSettings {
+  int master = 100;
+  int music = 100;
+  int sfx = 100;
+  bool muted = false;
+
+  bool operator==(const AudioSettings& other) const;
+  bool operator!=(const AudioSettings& other) const { return !(*this == other); }
+  bool isDefault() const;
+};
+
+/// Clamps every bus into 0..100. A save written by hand (or a future slider that can overshoot)
+/// is never allowed to hand the mixer a gain above 1.
+AudioSettings clampAudioSettings(AudioSettings settings);
+
+/// `{master, music, sfx, muted}` - the exact shape the settings screen prints and the save
+/// stores. Kept next to `Progress` because the file, not the screen, is the source of truth.
+Json audioSettingsJson(const AudioSettings& settings);
+
+/// Reads an `audio` block. Missing or malformed members fall back to the defaults one by one, so
+/// a save that only remembers `master` keeps working; this is what makes older saves readable.
+AudioSettings readAudioSettings(const Json& json);
+
+/// One reward row the save took note of without acting on it.
+///
+/// The shipped table carries 438 rows this client cannot pay out (see `rewards.hpp`). Writing
+/// them into `Progress::rewardLog` is what keeps "the pack asked for this" answerable after the
+/// fact: it is a record, not a payout, and the caller must not read it as owning anything.
+struct RewardLogEntry {
+  std::string kind;  ///< the row's `kind` column: `note`, `pinata`, `xp`, `trophy`, ...
+  std::string id;    ///< the compiled row id, so the entry can be traced back to the sheet
+  int amount = 0;    ///< the row's amount when it carries one, 0 otherwise
+
+  bool operator==(const RewardLogEntry& other) const;
+  bool operator!=(const RewardLogEntry& other) const { return !(*this == other); }
+};
+
+/// Sorts by (kind, id, amount) and drops duplicates. Landing the same table twice must not grow
+/// the log, so this is the canonical form both the parser and the landing pass produce.
+void sortUniqueRewardLog(std::vector<RewardLogEntry>& log);
+
 struct Progress {
   int version = 1;
   std::int64_t updated = 0;
@@ -114,6 +161,9 @@ struct Progress {
   /// `setting` names a resource counter (mints/event_energy/sprouts) is refused instead of
   /// being stored here - those are inventories, not preferences.
   std::map<std::string, Json> settings;
+  /// The settings screen's own state. A separate field, not an entry in `settings`: those are shop
+  /// switches keyed by row id, and overloading them would let a shop row rename a volume.
+  AudioSettings audio;
   /// Shop rows already bought, sorted. Currency is spent by `purchase()` in shop.cpp; this
   /// list is what makes "already owned" answerable across sessions.
   std::vector<std::string> purchases;
@@ -126,10 +176,25 @@ struct Progress {
   /// grants it (the compiler aggregated them: `levels: 1|2|4`), so nothing can fill this yet.
   /// The field and its fold exist so the save shape is fixed.
   std::vector<std::string> trophies;
+  /// Plants unlocked by a `first:unlock_plant:<plant>` reward row, sorted and unique. The pack
+  /// ships 293 such rows and a row does not name the level that grants it (the compiler
+  /// aggregated them: `levels: 1`), so this list records ownership, not "the level that gave it".
+  /// Separate from `seeds`: a seed is a plantable packet you can buy, an unlock is a plant the
+  /// roster may now offer at all.
+  std::vector<std::string> unlockedPlants;
+  /// Rows the shipped table carries that this client records but cannot act on, sorted and unique
+  /// by (kind, id, amount). See `RewardLogEntry` and `rewards.hpp`.
+  std::vector<RewardLogEntry> rewardLog;
   /// The last level the player finished, win or lose. The menu needs one fact to answer
   /// "continue": without it, "继续游戏" could only guess from `levels` and would restart the
   /// earliest unfinished world instead of the one being played.
   std::string lastLevel;
+  /// B1 (T90): the battle level each plant fights at, `plant type -> level`. Absent means 1, which is
+  /// what every save written before this field existed says by saying nothing - so a default save
+  /// stays byte-identical through a round trip. `std::map` gives the sorted, one-entry-per-plant
+  /// shape for free; the sheet's own cap is applied by `engine::clampPlantLevel` at the point a
+  /// battle reads it, not here, because a save must not need the generated tree to load.
+  std::map<std::string, int> plantLevels;
   std::map<std::string, LevelRecord> levels;
 
   int totalStars() const;

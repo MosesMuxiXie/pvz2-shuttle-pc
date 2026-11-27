@@ -441,6 +441,82 @@ void testVoiceStealing() {
                 pvz::AudioMixer::kMaxVoices);
 }
 
+/// ⑩ Event priorities (T85): the table grades at least twelve engine events, the four levels mean
+/// what the header says, and the level reaches the mixer instead of dying in the runtime. A UI click
+/// fired while the pool is full of bullet sounds must survive, which is the whole point of grading.
+void testPriority(const pvz::AudioCatalog& catalog, const pvz::EventMap& events) {
+    // The table itself: sizes, known rows, and every graded event must also have a sound. A row
+    // that plays nothing would be a grade the mixer never sees.
+    check(pvz::kEventPriorities.size() == 16,
+          "the priority table must hold 16 rows, got " +
+              std::to_string(pvz::kEventPriorities.size()));
+    std::size_t graded = 0;
+    for (const auto& row : pvz::kEventPriorities) {
+        check(row.priority >= 0 && row.priority <= 3,
+              "priority of `" + std::string(row.event) + "` must be 0..3, got " +
+                  std::to_string(row.priority));
+        if (row.priority > 0) ++graded;
+        check(!events.soundForEngineEvent(row.event).empty(),
+              "graded event `" + std::string(row.event) + "` has no sound to play");
+    }
+    check(graded >= 12, "at least twelve events must be graded, got " + std::to_string(graded));
+
+    const auto levelOf = [&](const char* event) { return events.priorityForEngineEvent(event); };
+    check(levelOf("shovelled") == 3, "the shovel is a player action and must rank 3");
+    check(levelOf("input_rejected") == 3, "a refused input must rank 3");
+    check(levelOf("wave_spawn") == 2, "the wave horn must rank 2");
+    check(levelOf("shot_hit") == 1, "bullet impacts must rank 1");
+    check(levelOf("shot_fired") == 1, "firing must rank 1");
+    check(levelOf("planted") == 0, "planting has no grade and must fall back to 0");
+    check(levelOf("nothing_like_this") == 0, "an unknown event must rank 0");
+
+    // End to end: the runtime reports the level it handed to the backend.
+    pvz::AudioRuntime runtime(catalog, pvz::AudioMode::muted);
+    const auto event = [](const char* name, std::uint64_t tick) {
+        return nlohmann::json::array(
+            {{{"tick", tick}, {"type", name}, {"details", nlohmann::json::object()}}});
+    };
+    runtime.consume(event("shovelled", 1), 0);
+    check(runtime.lastSfxPriority() == 3,
+          "a shovelled event must reach the runtime as priority 3, got " +
+              std::to_string(runtime.lastSfxPriority()));
+    runtime.consume(event("shot_fired", 2), 0);
+    check(runtime.lastSfxPriority() == 1,
+          "a shot_fired event must reach the runtime as priority 1, got " +
+              std::to_string(runtime.lastSfxPriority()));
+
+    // The mixer: a pool full of bullet sounds must lose one of them to a UI sound, and never lose
+    // the music. This is the specific promise the grading was added for.
+    pvz::AudioMixer mixer;
+    std::vector<pvz::AudioClip> pool;
+    pool.reserve(24);
+    const auto clipNamed = [&](const std::string& name) -> const pvz::AudioClip& {
+        pool.push_back(pvz::AudioClip{});
+        pvz::AudioClip& clip = pool.back();
+        clip.name = name;
+        clip.sampleRate = pvz::AudioMixer::kSampleRate;
+        clip.channels = 1;
+        clip.samples.assign(256, 0.2F);
+        return clip;
+    };
+    check(mixer.playMusic(clipNamed("theme"), true, 1.0F), "the theme should start");
+    for (int i = 0; i < static_cast<int>(pvz::AudioMixer::kMaxVoices); ++i) {
+        mixer.playSfx(clipNamed("bullet" + std::to_string(i)), 1.0F, 1);
+    }
+    check(mixer.playSfx(clipNamed("ui_click"), 1.0F, 3), "a UI sound must be admitted");
+    const auto names = mixer.activeSfxNames();
+    check(std::find(names.begin(), names.end(), "ui_click") != names.end(),
+          "the UI sound must survive a steal against a full pool of bullet sounds");
+    check(mixer.activeSfx() == pvz::AudioMixer::kMaxVoices,
+          "the pool must stay full, got " + std::to_string(mixer.activeSfx()));
+    check(mixer.musicName() == "theme", "grading must never cost the music voice");
+
+    std::printf("priority: %zu rows, %zu graded, shovelled=%d shot_hit=%d wave_spawn=%d "
+                "planted=%d, ui survives a full pool\n",
+                pvz::kEventPriorities.size(), graded, levelOf("shovelled"), levelOf("shot_hit"),
+                levelOf("wave_spawn"), levelOf("planted"));
+}
+
 /// ⑩ Independent bus volumes: `--music-volume` and `--sfx-volume` scale one bus each, and the
 /// other bus must not move when one of them changes. Every measurement restarts the clip, so the
 /// two peaks always cover the same 10 ms of source material and the comparison is like for like.
@@ -875,6 +951,7 @@ int wmain(int argc, wchar_t** argv) {
         testInterpolation();
         testVoiceStealing();
         testBusVolumes(catalog);
+        testPriority(catalog, events);
         testVolume(catalog);
         testCrossfade();
         testAudioOptions(assets);

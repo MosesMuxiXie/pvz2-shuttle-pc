@@ -1,0 +1,442 @@
+{
+ "counts": {
+  "authored": 2,
+  "both": 3,
+  "missingArt": 15,
+  "missingCost": 23,
+  "missingFamily": 0,
+  "packOnly": 33,
+  "total": 35
+ },
+ "format": 1,
+ "marker": "plant-blocked-v1",
+ "rows": [
+  {
+   "blockers": [
+    "no-art"
+   ],
+   "cost": 100,
+   "family": "shoot",
+   "framework": "PlantMiniPeashooter",
+   "id": "bitpeashooter",
+   "inPackRoster": true,
+   "inRoster": false,
+   "reason": "缺美术：art index 没有匹配 base，content 也没有 art"
+  },
+  {
+   "blockers": [
+    "no-cost",
+    "no-art"
+   ],
+   "cost": null,
+   "family": "instant",
+   "framework": "BlastSpinnerCocoon",
+   "id": "blastspinnercocoon",
+   "inPackRoster": true,
+   "inRoster": false,
+   "reason": "缺成本：原版 Cost 缺失或为 0，开局无法定价；缺美术：art index 没有匹配 base，content 也没有 art"
+  },
+  {
+   "blockers": [
+    "no-cost"
+   ],
+   "cost": 0,
+   "family": "instant",
+   "framework": "PlantPeppermint",
+   "id": "chrysantheautumn",
+   "inPackRoster": true,
+   "inRoster": false,
+   "reason": "缺成本：原版 Cost 缺失或为 0，开局无法定价"
+  },
+  {
+   "blockers": [
+    "no-cost"
+   ],
+   "cost": 0,
+   "family": "shoot",
+   "framework": "PlantPrimalPeashooter",
+   "id": "cutebubuseed",
+   "inPackRoster": true,
+   "inRoster": false,
+   "reason": "缺成本：原版 Cost 缺失或为 0，开局无法定价"
+  },
+  {
+   "blockers": [
+    "no-art"
+   ],
+   "cost": 200,
+   "family": "shoot",
+   "framework": "PlantAcidLemon",
+   "id": "dandelion",
+   "inPackRoster": true,
+   "inRoster": false,
+   "reason": "缺美术：art index 没有匹配 base，content 也没有 art"
+  },
+  {
+   "blockers": [
+    "no-cost"
+   ],
+   "cost": 0,
+   "family": "produce",
+   "framework": "PlantEnlightenmint",
+   "id": "enlightenmint1",
+   "inPackRoster": true,
+   "inRoster": false,
+   "reason": "缺成本：原版 Cost 缺失或为 0，开局无法定价"
+  },
+  {
+   "blockers": [
+    "no-art"
+   ],
+   "cost": 175,
+   "family": "shoot",
+   "framework": "PlantCNIceShroom",
+   "id": "escaperoot",
+   "inPackRoster": true,
+   "inRoster": false,
+   "reason": "缺美术：art index 没有匹配 base，content 也没有 art"
+  },
+  {
+   "blockers": [
+    "no-art"
+   ],
+   "cost": 225,
+   "family": "shoot",
+   "framework": "PlantCNFireShroom",
+   "id": "explodeovine",
+   "inPackRoster": true,
+   "inRoster": false,
+   "reason": "缺美术：art index 没有匹配 base，content 也没有 art"
+  },
+  {
+   "blockers": [
+    "no-art"
+   ],
+   "cost": 300,
+   "family": "shoot",
+   "framework": "PlantFusionGatling",
+   "id": "fusiongatling",
+   "inPackRoster": true,
+   "inRoster": false,
+   "reason": "缺美术：art index 没有匹配 base，content 也没有 art"
+  },
+  {
+   "blockers": [
+    "no-cost"
+   ],
+   "cost": 0,
+   "family": "produce",
+   "framework": "PlantGoldbloom",
+   "id": "goldbloom",
+   "inPackRoster": true,
+   "inRoster": false,
+   "reason": "缺成本：原版 Cost 缺失或为 0，开局无法定价"
+  },
+  {
+   "blockers": [
+    "no-cost"
+   ],
+   "cost": 0,
+   "family": "instant",
+   "framework": "PlantGraveBuster",
+   "id": "gravebuster",
+   "inPackRoster": true,
+   "inRoster": false,
+   "reason": "缺成本：原版 Cost 缺失或为 0，开局无法定价"
+  },
+  {
+   "blockers": [
+    "no-art"
+   ],
+   "cost": 175,
+   "family": "lob",
+   "framework": "PlantHeadbutterLettuce",
+   "id": "headbutterlettuce",
+   "inPackRoster": true,
+   "inRoster": false,
+   "reason": "缺美术：art index 没有匹配 base，content 也没有 art"
+  },
+  {
+   "blockers": [
+    "no-cost"
+   ],
+   "cost": 0,
+   "family": "instant",
+   "framework": "PlantHotPotato",
+   "id": "hotpotato",
+   "inPackRoster": true,
+   "inRoster": false,
+   "reason": "缺成本：原版 Cost 缺失或为 0，开局无法定价"
+  },
+  {
+   "blockers": [
+    "no-cost"
+   ],
+   "cost": 0,
+   "family": "instant",
+   "framework": "PlantIceburg",
+   "id": "iceburg",
+   "inPackRoster": true,
+   "inRoster": true,
+   "reason": "缺成本：原版 Cost 缺失或为 0，开局无法定价"
+  },
+  {
+   "blockers": [
+    "no-cost"
+   ],
+   "cost": null,
+   "family": "support",
+   "framework": "PlantImitater",
+   "id": "imitater",
+   "inPackRoster": true,
+   "inRoster": false,
+   "reason": "缺成本：原版 Cost 缺失或为 0，开局无法定价"
+  },
+  {
+   "blockers": [
+    "no-cost",
+    "no-art"
+   ],
+   "cost": 0,
+   "family": "instant",
+   "framework": "PlantImpPearTeto",
+   "id": "imppear_teto",
+   "inPackRoster": true,
+   "inRoster": false,
+   "reason": "缺成本：原版 Cost 缺失或为 0，开局无法定价；缺美术：art index 没有匹配 base，content 也没有 art"
+  },
+  {
+   "blockers": [
+    "no-cost"
+   ],
+   "cost": 0,
+   "family": "instant",
+   "framework": "PlantLilyPad",
+   "id": "land",
+   "inPackRoster": true,
+   "inRoster": false,
+   "reason": "缺成本：原版 Cost 缺失或为 0，开局无法定价"
+  },
+  {
+   "blockers": [
+    "no-cost",
+    "no-art"
+   ],
+   "cost": 0,
+   "family": "support",
+   "framework": "PlantLittleGuy",
+   "id": "littleguy",
+   "inPackRoster": true,
+   "inRoster": false,
+   "reason": "缺成本：原版 Cost 缺失或为 0，开局无法定价；缺美术：art index 没有匹配 base，content 也没有 art"
+  },
+  {
+   "blockers": [
+    "no-art"
+   ],
+   "cost": 200,
+   "family": "shoot",
+   "framework": "PlantLittleRepeater",
+   "id": "littlerepeater",
+   "inPackRoster": true,
+   "inRoster": false,
+   "reason": "缺美术：art index 没有匹配 base，content 也没有 art"
+  },
+  {
+   "blockers": [
+    "no-cost"
+   ],
+   "cost": 0,
+   "family": "produce",
+   "framework": "PlantMarigold",
+   "id": "marigold",
+   "inPackRoster": true,
+   "inRoster": false,
+   "reason": "缺成本：原版 Cost 缺失或为 0，开局无法定价"
+  },
+  {
+   "blockers": [
+    "no-cost"
+   ],
+   "cost": 0,
+   "family": "instant",
+   "framework": "PlantHypnoShroom",
+   "id": "midi",
+   "inPackRoster": true,
+   "inRoster": false,
+   "reason": "缺成本：原版 Cost 缺失或为 0，开局无法定价"
+  },
+  {
+   "blockers": [
+    "no-cost"
+   ],
+   "cost": 0,
+   "family": "support",
+   "framework": "PlantMagnifyingGrass",
+   "id": "minigame_music",
+   "inPackRoster": true,
+   "inRoster": false,
+   "reason": "缺成本：原版 Cost 缺失或为 0，开局无法定价"
+  },
+  {
+   "blockers": [
+    "no-art"
+   ],
+   "cost": 175,
+   "family": "shoot",
+   "framework": "PlantMiniShroom",
+   "id": "minishroom",
+   "inPackRoster": true,
+   "inRoster": false,
+   "reason": "缺美术：art index 没有匹配 base，content 也没有 art"
+  },
+  {
+   "blockers": [
+    "no-art"
+   ],
+   "cost": 150,
+   "family": "instant",
+   "framework": "PlantNoctarineCloud",
+   "id": "noctarinecloud",
+   "inPackRoster": true,
+   "inRoster": false,
+   "reason": "缺美术：art index 没有匹配 base，content 也没有 art"
+  },
+  {
+   "blockers": [
+    "no-cost"
+   ],
+   "cost": 0,
+   "family": "shoot",
+   "framework": "PlantSnapdragon",
+   "id": "old_sushi",
+   "inPackRoster": true,
+   "inRoster": false,
+   "reason": "缺成本：原版 Cost 缺失或为 0，开局无法定价"
+  },
+  {
+   "blockers": [
+    "no-cost"
+   ],
+   "cost": 0,
+   "family": "instant",
+   "framework": "PlantPotatomine",
+   "id": "potatochip",
+   "inPackRoster": true,
+   "inRoster": true,
+   "reason": "缺成本：原版 Cost 缺失或为 0，开局无法定价"
+  },
+  {
+   "blockers": [
+    "no-cost"
+   ],
+   "cost": 0,
+   "family": "shoot",
+   "framework": "PlantPuffshroom",
+   "id": "puffshroom",
+   "inPackRoster": true,
+   "inRoster": false,
+   "reason": "缺成本：原版 Cost 缺失或为 0，开局无法定价"
+  },
+  {
+   "blockers": [
+    "no-art"
+   ],
+   "cost": 275,
+   "family": "lob",
+   "framework": "PlantRaCabbagepult",
+   "id": "rabbagepult",
+   "inPackRoster": true,
+   "inRoster": false,
+   "reason": "缺美术：art index 没有匹配 base，content 也没有 art"
+  },
+  {
+   "blockers": [
+    "no-cost"
+   ],
+   "cost": 0,
+   "family": "shoot",
+   "framework": "PlantSeashroom",
+   "id": "seashroom",
+   "inPackRoster": true,
+   "inRoster": false,
+   "reason": "缺成本：原版 Cost 缺失或为 0，开局无法定价"
+  },
+  {
+   "blockers": [
+    "no-art"
+   ],
+   "cost": 225,
+   "family": "lob",
+   "framework": "PlantArmamintPeashooter",
+   "id": "slingpea",
+   "inPackRoster": true,
+   "inRoster": false,
+   "reason": "缺美术：art index 没有匹配 base，content 也没有 art"
+  },
+  {
+   "blockers": [
+    "no-cost"
+   ],
+   "cost": 0,
+   "family": "support",
+   "framework": "PlantGarlic",
+   "id": "specialgarlic",
+   "inPackRoster": true,
+   "inRoster": false,
+   "reason": "缺成本：原版 Cost 缺失或为 0，开局无法定价"
+  },
+  {
+   "blockers": [
+    "no-cost"
+   ],
+   "cost": 0,
+   "family": "instant",
+   "framework": "PlantStallia",
+   "id": "stallia",
+   "inPackRoster": true,
+   "inRoster": false,
+   "reason": "缺成本：原版 Cost 缺失或为 0，开局无法定价"
+  },
+  {
+   "blockers": [
+    "no-cost"
+   ],
+   "cost": 0,
+   "family": "shoot",
+   "framework": "PlantPuffshroom",
+   "id": "sushi",
+   "inPackRoster": true,
+   "inRoster": false,
+   "reason": "缺成本：原版 Cost 缺失或为 0，开局无法定价"
+  },
+  {
+   "blockers": [
+    "no-art"
+   ],
+   "cost": 275,
+   "family": "lob",
+   "framework": "PlantCabbagepultCanSink",
+   "id": "sweetpotato",
+   "inPackRoster": true,
+   "inRoster": false,
+   "reason": "缺美术：art index 没有匹配 base，content 也没有 art"
+  },
+  {
+   "blockers": [
+    "no-cost"
+   ],
+   "cost": 0,
+   "family": "instant",
+   "framework": "PlantPowerPlant",
+   "id": "tileturnip",
+   "inPackRoster": true,
+   "inRoster": false,
+   "reason": "缺成本：原版 Cost 缺失或为 0，开局无法定价"
+  }
+ ],
+ "sources": {
+  "pack": "native/generated/plants_from_pack.json",
+  "playable": "native/generated/plant_playable.json"
+ }
+}

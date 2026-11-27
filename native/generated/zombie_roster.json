@@ -1,0 +1,2725 @@
+{
+ "added": [
+  {
+   "creatureClass": null,
+   "family": "walk",
+   "homeWorld": "atlantis",
+   "hp": 190,
+   "hpSource": "ZombieAtlantisDefault",
+   "id": "atlantis",
+   "isBasicZombie": true,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_ATLANTIS_BASIC",
+   "referencedBy": [
+    {
+     "kind": "fish",
+     "level": "beach_23"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_27"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_29"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_31"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_33"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_36"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_39"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_43"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_44"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_45"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_46"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_47"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_49"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_51"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_52"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 15,
+    "fish_creature": 0,
+    "minigame": 0,
+    "spider": 0
+   },
+   "source": "pack",
+   "typeName": "atlantis",
+   "zombieClass": "ZombieAtlantisBasic"
+  },
+  {
+   "creatureClass": null,
+   "family": "walk",
+   "homeWorld": "atlantis",
+   "hp": 190,
+   "hpSource": "ZombieAtlantisArmor1Default",
+   "id": "atlantis_armor1",
+   "isBasicZombie": true,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_ATLANTIS_BASIC",
+   "referencedBy": [
+    {
+     "kind": "fish",
+     "level": "beach_23"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_27"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_29"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_31"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_33"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_36"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_39"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_41"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_43"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_44"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_45"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_46"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_47"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_48"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_49"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_51"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_52"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 17,
+    "fish_creature": 0,
+    "minigame": 0,
+    "spider": 0
+   },
+   "source": "pack",
+   "typeName": "atlantis_armor1",
+   "zombieClass": "ZombieAtlantisBasic"
+  },
+  {
+   "creatureClass": null,
+   "family": "walk",
+   "homeWorld": "atlantis",
+   "hp": 190,
+   "hpSource": "ZombieAtlantisArmor2Default",
+   "id": "atlantis_armor2",
+   "isBasicZombie": true,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_ATLANTIS_BASIC",
+   "referencedBy": [
+    {
+     "kind": "fish",
+     "level": "beach_27"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_29"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_31"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_33"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_36"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_39"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_41"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_43"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_44"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_45"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_46"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_47"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_48"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_49"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_51"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_52"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 16,
+    "fish_creature": 0,
+    "minigame": 0,
+    "spider": 0
+   },
+   "source": "pack",
+   "typeName": "atlantis_armor2",
+   "zombieClass": "ZombieAtlantisBasic"
+  },
+  {
+   "creatureClass": null,
+   "family": "walk",
+   "homeWorld": "atlantis",
+   "hp": 190,
+   "hpSource": "ZombieAtlantisDefault",
+   "id": "atlantis_basic",
+   "isBasicZombie": true,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_ATLANTIS_BASIC",
+   "referencedBy": [
+    {
+     "kind": "fish",
+     "level": "beach_48"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_49"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 2,
+    "fish_creature": 0,
+    "minigame": 0,
+    "spider": 0
+   },
+   "source": "pack",
+   "typeName": "atlantis",
+   "zombieClass": "ZombieAtlantisBasic"
+  },
+  {
+   "creatureClass": null,
+   "family": "walk",
+   "homeWorld": "atlantis",
+   "hp": 320,
+   "hpSource": "ZombieAtlantisDiverDefault",
+   "id": "atlantis_diver",
+   "isBasicZombie": null,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_FAT_DIVE",
+   "referencedBy": [
+    {
+     "kind": "fish",
+     "level": "beach_27"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_29"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_31"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_33"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_36"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_39"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_41"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_43"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_44"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_45"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_46"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_47"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_48"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_49"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_51"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_52"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 16,
+    "fish_creature": 0,
+    "minigame": 0,
+    "spider": 0
+   },
+   "source": "pack",
+   "typeName": "atlantis_diver",
+   "zombieClass": "ZombieAtlantisDiver"
+  },
+  {
+   "creatureClass": null,
+   "family": "gargantuar",
+   "homeWorld": "atlantis",
+   "hp": 2700,
+   "hpSource": "ZombieAtlantisGargantuar",
+   "id": "atlantis_gargantuar",
+   "isBasicZombie": null,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_ATLANTIS_GARGANTUAR",
+   "referencedBy": [
+    {
+     "kind": "fish",
+     "level": "beach_46"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_47"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_48"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_49"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_51"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_52"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 6,
+    "fish_creature": 0,
+    "minigame": 0,
+    "spider": 0
+   },
+   "source": "pack",
+   "typeName": "atlantis_gargantuar",
+   "zombieClass": "ZombieAtlantisGargantuar"
+  },
+  {
+   "creatureClass": null,
+   "family": "walk",
+   "homeWorld": "atlantis",
+   "hp": 190,
+   "hpSource": "ZombieAtlantisArmor1LandDefault",
+   "id": "atlantis_land_armor1",
+   "isBasicZombie": true,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_ATLANTIS_LAND_BASIC",
+   "referencedBy": [
+    {
+     "kind": "fish",
+     "level": "beach_54"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_55"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_56"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_57"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_58"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_59"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_60"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_61"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_62"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 9,
+    "fish_creature": 0,
+    "minigame": 0,
+    "spider": 0
+   },
+   "source": "pack",
+   "typeName": "atlantis_land_armor1",
+   "zombieClass": "ZombieAtlantisBasic"
+  },
+  {
+   "creatureClass": null,
+   "family": "walk",
+   "homeWorld": "atlantis",
+   "hp": 190,
+   "hpSource": "ZombieAtlantisArmor2LandDefault",
+   "id": "atlantis_land_armor2",
+   "isBasicZombie": true,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_ATLANTIS_LAND_BASIC",
+   "referencedBy": [
+    {
+     "kind": "fish",
+     "level": "beach_54"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_55"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_56"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_57"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_58"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_59"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_60"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_61"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_62"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 9,
+    "fish_creature": 0,
+    "minigame": 0,
+    "spider": 0
+   },
+   "source": "pack",
+   "typeName": "atlantis_land_armor2",
+   "zombieClass": "ZombieAtlantisBasic"
+  },
+  {
+   "creatureClass": null,
+   "family": "walk",
+   "homeWorld": "atlantis",
+   "hp": 190,
+   "hpSource": "ZombieAtlantisLandDefault",
+   "id": "atlantis_land_basic",
+   "isBasicZombie": true,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_ATLANTIS_LAND_BASIC",
+   "referencedBy": [
+    {
+     "kind": "fish",
+     "level": "beach_54"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_55"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_56"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_57"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_58"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_59"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_60"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_61"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_62"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 9,
+    "fish_creature": 0,
+    "minigame": 0,
+    "spider": 0
+   },
+   "source": "pack",
+   "typeName": "atlantis_land",
+   "zombieClass": "ZombieAtlantisBasic"
+  },
+  {
+   "creatureClass": null,
+   "family": "gargantuar",
+   "homeWorld": "atlantis",
+   "hp": 2700,
+   "hpSource": "ZombieAtlantisGargantuarLand",
+   "id": "atlantis_land_gargantuar",
+   "isBasicZombie": null,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_ATLANTIS_LAND_GARGANTUAR",
+   "referencedBy": [
+    {
+     "kind": "fish",
+     "level": "beach_55"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_57"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_58"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_60"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_61"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_62"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 6,
+    "fish_creature": 0,
+    "minigame": 0,
+    "spider": 0
+   },
+   "source": "pack",
+   "typeName": "atlantis_land_gargantuar",
+   "zombieClass": "ZombieAtlantisGargantuar"
+  },
+  {
+   "creatureClass": null,
+   "family": "walk",
+   "homeWorld": "atlantis",
+   "hp": 190,
+   "hpSource": "ZombieAtlantisRiderDefault",
+   "id": "atlantis_rider",
+   "isBasicZombie": null,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_LANTERNFISH_RIDER",
+   "referencedBy": [
+    {
+     "kind": "fish",
+     "level": "beach_36"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_39"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_41"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_43"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_44"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_45"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_46"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_47"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_48"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_49"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_51"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_52"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 12,
+    "fish_creature": 0,
+    "minigame": 0,
+    "spider": 0
+   },
+   "source": "pack",
+   "typeName": "atlantis_rider",
+   "zombieClass": "ZombieAtlantisRider"
+  },
+  {
+   "creatureClass": null,
+   "family": "walk",
+   "homeWorld": "beach",
+   "hp": 190,
+   "hpSource": "ZombieBeachArmor1Default",
+   "id": "beach_armor1",
+   "isBasicZombie": true,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_BEACH_BASIC",
+   "referencedBy": [
+    {
+     "kind": "minigame",
+     "level": "beach_20"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 0,
+    "fish_creature": 0,
+    "minigame": 1,
+    "spider": 0
+   },
+   "source": "pack",
+   "typeName": "beach_armor1",
+   "zombieClass": "ZombieBasic"
+  },
+  {
+   "creatureClass": null,
+   "family": "walk",
+   "homeWorld": "beach",
+   "hp": 190,
+   "hpSource": "ZombieBeachArmor2Default",
+   "id": "beach_armor2",
+   "isBasicZombie": true,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_BEACH_BASIC",
+   "referencedBy": [
+    {
+     "kind": "minigame",
+     "level": "beach_20"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 0,
+    "fish_creature": 0,
+    "minigame": 1,
+    "spider": 0
+   },
+   "source": "pack",
+   "typeName": "beach_armor2",
+   "zombieClass": "ZombieBasic"
+  },
+  {
+   "creatureClass": null,
+   "family": "walk",
+   "homeWorld": "beach",
+   "hp": 190,
+   "hpSource": "ZombieBeachDefault",
+   "id": "beach_fem",
+   "isBasicZombie": null,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_BEACH_BASICFEM",
+   "referencedBy": [
+    {
+     "kind": "minigame",
+     "level": "beach_20"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 0,
+    "fish_creature": 0,
+    "minigame": 1,
+    "spider": 0
+   },
+   "source": "pack",
+   "typeName": "beach_fem",
+   "zombieClass": "ZombieBasic"
+  },
+  {
+   "creatureClass": null,
+   "family": "walk",
+   "homeWorld": "beach",
+   "hp": 190,
+   "hpSource": "ZombieBeachArmor1Default",
+   "id": "beach_fem_armor1",
+   "isBasicZombie": null,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_BEACH_BASICFEM",
+   "referencedBy": [
+    {
+     "kind": "minigame",
+     "level": "beach_20"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 0,
+    "fish_creature": 0,
+    "minigame": 1,
+    "spider": 0
+   },
+   "source": "pack",
+   "typeName": "beach_fem_armor1",
+   "zombieClass": "ZombieBasic"
+  },
+  {
+   "creatureClass": null,
+   "family": "walk",
+   "homeWorld": "beach",
+   "hp": 190,
+   "hpSource": "ZombieBeachArmor2Default",
+   "id": "beach_fem_armor2",
+   "isBasicZombie": null,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_BEACH_BASICFEM",
+   "referencedBy": [
+    {
+     "kind": "minigame",
+     "level": "beach_20"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 0,
+    "fish_creature": 0,
+    "minigame": 1,
+    "spider": 0
+   },
+   "source": "pack",
+   "typeName": "beach_fem_armor2",
+   "zombieClass": "ZombieBasic"
+  },
+  {
+   "creatureClass": null,
+   "family": "walk",
+   "homeWorld": "beach",
+   "hp": 190,
+   "hpSource": "ZombieBeachImpDefault",
+   "id": "beach_imp",
+   "isBasicZombie": null,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_BEACH_IMP_MERMAID",
+   "referencedBy": [
+    {
+     "kind": "spider",
+     "level": "fairy_41"
+    },
+    {
+     "kind": "spider",
+     "level": "modern_110"
+    },
+    {
+     "kind": "minigame",
+     "level": "beach_20"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 0,
+    "fish_creature": 0,
+    "minigame": 1,
+    "spider": 2
+   },
+   "source": "pack",
+   "typeName": "beach_imp",
+   "zombieClass": "ZombieImp"
+  },
+  {
+   "creatureClass": null,
+   "family": "walk",
+   "homeWorld": "beach",
+   "hp": 910,
+   "hpSource": "ZombieBeachOctopus",
+   "id": "beach_octopus",
+   "isBasicZombie": null,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_BEACH_OCTOPUS",
+   "referencedBy": [
+    {
+     "kind": "minigame",
+     "level": "beach_20"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 0,
+    "fish_creature": 0,
+    "minigame": 1,
+    "spider": 0
+   },
+   "source": "pack",
+   "typeName": "beach_octopus",
+   "zombieClass": "ZombieBeachOctopus"
+  },
+  {
+   "creatureClass": null,
+   "family": "walk",
+   "homeWorld": "beach",
+   "hp": 350,
+   "hpSource": "ZombieBeachSnorkel",
+   "id": "beach_snorkel",
+   "isBasicZombie": null,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_BEACH_SNORKELER",
+   "referencedBy": [
+    {
+     "kind": "minigame",
+     "level": "beach_20"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 0,
+    "fish_creature": 0,
+    "minigame": 1,
+    "spider": 0
+   },
+   "source": "pack",
+   "typeName": "beach_snorkel",
+   "zombieClass": "ZombieBeachSnorkel"
+  },
+  {
+   "creatureClass": null,
+   "family": "walk",
+   "homeWorld": "beach",
+   "hp": 350,
+   "hpSource": "ZombieBeachSurfer",
+   "id": "beach_surfer",
+   "isBasicZombie": true,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_BEACH_SURFER",
+   "referencedBy": [
+    {
+     "kind": "minigame",
+     "level": "beach_20"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 0,
+    "fish_creature": 0,
+    "minigame": 1,
+    "spider": 0
+   },
+   "source": "pack",
+   "typeName": "beach_surfer",
+   "zombieClass": "ZombieBeachSurfer"
+  },
+  {
+   "creatureClass": null,
+   "family": "walk",
+   "homeWorld": "tutorial",
+   "hp": 190,
+   "hpSource": "ZombieTutorialImpDefault",
+   "id": "bighead_imp",
+   "isBasicZombie": null,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_BIGHEAD_IMP",
+   "referencedBy": [
+    {
+     "kind": "spider",
+     "level": "modern_37"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 0,
+    "fish_creature": 0,
+    "minigame": 0,
+    "spider": 1
+   },
+   "source": "pack",
+   "typeName": "bighead_imp",
+   "zombieClass": "ZombieBigHeadImp"
+  },
+  {
+   "creatureClass": null,
+   "family": "walk",
+   "homeWorld": "rift2",
+   "hp": 190,
+   "hpSource": "ZombieCarnieImpDefault",
+   "id": "carnie_imp",
+   "isBasicZombie": null,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_CARNIE_IMP",
+   "referencedBy": [
+    {
+     "kind": "spider",
+     "level": "carnival_92"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 0,
+    "fish_creature": 0,
+    "minigame": 0,
+    "spider": 1
+   },
+   "source": "pack",
+   "typeName": "carnie_imp",
+   "zombieClass": "ZombieImp"
+  },
+  {
+   "creatureClass": null,
+   "family": "walk",
+   "homeWorld": "chinesegarden",
+   "hp": 190,
+   "hpSource": "ZombieWaterImpDefault",
+   "id": "chinesegarden_imp",
+   "isBasicZombie": null,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_CHINESE_IMP",
+   "referencedBy": [
+    {
+     "kind": "spider",
+     "level": "carnival_1"
+    },
+    {
+     "kind": "spider",
+     "level": "chinesegarden_10"
+    },
+    {
+     "kind": "spider",
+     "level": "chinesegarden_11"
+    },
+    {
+     "kind": "spider",
+     "level": "chinesegarden_12"
+    },
+    {
+     "kind": "spider",
+     "level": "chinesegarden_13"
+    },
+    {
+     "kind": "spider",
+     "level": "chinesegarden_14"
+    },
+    {
+     "kind": "spider",
+     "level": "chinesegarden_16"
+    },
+    {
+     "kind": "spider",
+     "level": "chinesegarden_17"
+    },
+    {
+     "kind": "spider",
+     "level": "chinesegarden_19"
+    },
+    {
+     "kind": "spider",
+     "level": "chinesegarden_20"
+    },
+    {
+     "kind": "spider",
+     "level": "chinesegarden_21"
+    },
+    {
+     "kind": "spider",
+     "level": "chinesegarden_22"
+    },
+    {
+     "kind": "spider",
+     "level": "chinesegarden_26"
+    },
+    {
+     "kind": "spider",
+     "level": "chinesegarden_28"
+    },
+    {
+     "kind": "spider",
+     "level": "chinesegarden_32"
+    },
+    {
+     "kind": "spider",
+     "level": "chinesegarden_33"
+    },
+    {
+     "kind": "spider",
+     "level": "chinesegarden_34"
+    },
+    {
+     "kind": "spider",
+     "level": "chinesegarden_35"
+    },
+    {
+     "kind": "spider",
+     "level": "chinesegarden_36"
+    },
+    {
+     "kind": "spider",
+     "level": "chinesegarden_37"
+    },
+    {
+     "kind": "spider",
+     "level": "chinesegarden_39"
+    },
+    {
+     "kind": "spider",
+     "level": "chinesegarden_40"
+    },
+    {
+     "kind": "spider",
+     "level": "chinesegarden_41"
+    },
+    {
+     "kind": "spider",
+     "level": "chinesegarden_42"
+    },
+    {
+     "kind": "spider",
+     "level": "chinesegarden_43"
+    },
+    {
+     "kind": "spider",
+     "level": "chinesegarden_45"
+    },
+    {
+     "kind": "spider",
+     "level": "chinesegarden_48"
+    },
+    {
+     "kind": "spider",
+     "level": "chinesegarden_49"
+    },
+    {
+     "kind": "spider",
+     "level": "chinesegarden_50"
+    },
+    {
+     "kind": "spider",
+     "level": "chinesegarden_52"
+    },
+    {
+     "kind": "spider",
+     "level": "chinesegarden_55"
+    },
+    {
+     "kind": "spider",
+     "level": "chinesegarden_6"
+    },
+    {
+     "kind": "spider",
+     "level": "chinesegarden_63"
+    },
+    {
+     "kind": "spider",
+     "level": "chinesegarden_64"
+    },
+    {
+     "kind": "spider",
+     "level": "chinesegarden_68"
+    },
+    {
+     "kind": "spider",
+     "level": "chinesegarden_7"
+    },
+    {
+     "kind": "spider",
+     "level": "chinesegarden_70"
+    },
+    {
+     "kind": "spider",
+     "level": "chinesegarden_8"
+    },
+    {
+     "kind": "spider",
+     "level": "modern_111"
+    },
+    {
+     "kind": "spider",
+     "level": "modern_122"
+    },
+    {
+     "kind": "spider",
+     "level": "modern_89"
+    },
+    {
+     "kind": "spider",
+     "level": "renai_52"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 0,
+    "fish_creature": 0,
+    "minigame": 0,
+    "spider": 42
+   },
+   "source": "pack",
+   "typeName": "chinesegarden_imp",
+   "zombieClass": "ZombieFutureImp"
+  },
+  {
+   "creatureClass": null,
+   "family": "gargantuar",
+   "homeWorld": "atlantis",
+   "hp": 2700,
+   "hpSource": "ZombieAtlantisGargantuarLand",
+   "id": "cthulhu_jelly_fish",
+   "isBasicZombie": null,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_ATLANTIS_LAND_GARGANTUAR",
+   "referencedBy": [
+    {
+     "kind": "fish",
+     "level": "beach_58"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_59"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_60"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_61"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_62"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 5,
+    "fish_creature": 0,
+    "minigame": 0,
+    "spider": 0
+   },
+   "source": "pack",
+   "typeName": "atlantis_land_gargantuar",
+   "zombieClass": "ZombieAtlantisGargantuar"
+  },
+  {
+   "creatureClass": null,
+   "family": "walk",
+   "homeWorld": "dark",
+   "hp": 190,
+   "hpSource": "ZombieDarkImpDragonDefault",
+   "id": "dark_imp_dragon",
+   "isBasicZombie": null,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_DARK_IMP_DRAGON",
+   "referencedBy": [
+    {
+     "kind": "spider",
+     "level": "modern_37"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 0,
+    "fish_creature": 0,
+    "minigame": 0,
+    "spider": 1
+   },
+   "source": "pack",
+   "typeName": "dark_imp_dragon",
+   "zombieClass": "ZombieFutureImp"
+  },
+  {
+   "creatureClass": null,
+   "family": "gargantuar",
+   "homeWorld": "future",
+   "hp": 2000,
+   "hpSource": "ZombieMechDisco",
+   "id": "disco_mech",
+   "isBasicZombie": null,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_MECH_DISCO",
+   "referencedBy": [
+    {
+     "kind": "spider",
+     "level": "iceage_50"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 0,
+    "fish_creature": 0,
+    "minigame": 0,
+    "spider": 1
+   },
+   "source": "pack",
+   "typeName": "disco_mech",
+   "zombieClass": "ZombieMechDisco"
+  },
+  {
+   "creatureClass": null,
+   "family": "walk",
+   "homeWorld": "fairy",
+   "hp": 190,
+   "hpSource": "ZombieTutorialImpDefault",
+   "id": "fairy_imp_normal",
+   "isBasicZombie": null,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_FAIRY_TALE_IMP",
+   "referencedBy": [
+    {
+     "kind": "spider",
+     "level": "fairy_12"
+    },
+    {
+     "kind": "spider",
+     "level": "fairy_26"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 0,
+    "fish_creature": 0,
+    "minigame": 0,
+    "spider": 2
+   },
+   "source": "pack",
+   "typeName": "fairy_imp_normal",
+   "zombieClass": "ZombieImp"
+  },
+  {
+   "creatureClass": null,
+   "family": "walk",
+   "homeWorld": "atlantis",
+   "hp": 320,
+   "hpSource": "ZombieAtlantisDiverDefault",
+   "id": "fat_dive",
+   "isBasicZombie": null,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_FAT_DIVE",
+   "referencedBy": [
+    {
+     "kind": "fish",
+     "level": "beach_55"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_56"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_57"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_59"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 4,
+    "fish_creature": 0,
+    "minigame": 0,
+    "spider": 0
+   },
+   "source": "pack",
+   "typeName": "atlantis_diver",
+   "zombieClass": "ZombieAtlantisDiver"
+  },
+  {
+   "creatureClass": null,
+   "family": "walk",
+   "homeWorld": "tutorial",
+   "hp": 190,
+   "hpSource": "ZombieTutorialImpDefault",
+   "id": "feastivus_imp",
+   "isBasicZombie": null,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_FEASTIVUS_IMP",
+   "referencedBy": [
+    {
+     "kind": "spider",
+     "level": "lunarrainbowmarket_75"
+    },
+    {
+     "kind": "spider",
+     "level": "modern_37"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 0,
+    "fish_creature": 0,
+    "minigame": 0,
+    "spider": 2
+   },
+   "source": "pack",
+   "typeName": "feastivus_imp",
+   "zombieClass": "ZombieImp"
+  },
+  {
+   "creatureClass": null,
+   "family": "walk",
+   "homeWorld": "future",
+   "hp": 270,
+   "hpSource": "ZombieSteamImpDefault",
+   "id": "future_imp",
+   "isBasicZombie": null,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_STEAM_IMP",
+   "referencedBy": [
+    {
+     "kind": "spider",
+     "level": "carnival_55"
+    },
+    {
+     "kind": "spider",
+     "level": "fairy_25"
+    },
+    {
+     "kind": "spider",
+     "level": "future_1"
+    },
+    {
+     "kind": "spider",
+     "level": "future_10"
+    },
+    {
+     "kind": "spider",
+     "level": "future_11"
+    },
+    {
+     "kind": "spider",
+     "level": "future_13"
+    },
+    {
+     "kind": "spider",
+     "level": "future_14"
+    },
+    {
+     "kind": "spider",
+     "level": "future_15"
+    },
+    {
+     "kind": "spider",
+     "level": "future_17"
+    },
+    {
+     "kind": "spider",
+     "level": "future_2"
+    },
+    {
+     "kind": "spider",
+     "level": "future_20"
+    },
+    {
+     "kind": "spider",
+     "level": "future_21"
+    },
+    {
+     "kind": "spider",
+     "level": "future_23"
+    },
+    {
+     "kind": "spider",
+     "level": "future_24"
+    },
+    {
+     "kind": "spider",
+     "level": "future_26"
+    },
+    {
+     "kind": "spider",
+     "level": "future_27"
+    },
+    {
+     "kind": "spider",
+     "level": "future_38"
+    },
+    {
+     "kind": "spider",
+     "level": "future_39"
+    },
+    {
+     "kind": "spider",
+     "level": "future_41"
+    },
+    {
+     "kind": "spider",
+     "level": "future_5"
+    },
+    {
+     "kind": "spider",
+     "level": "future_57"
+    },
+    {
+     "kind": "spider",
+     "level": "future_58"
+    },
+    {
+     "kind": "spider",
+     "level": "future_59"
+    },
+    {
+     "kind": "spider",
+     "level": "future_9"
+    },
+    {
+     "kind": "spider",
+     "level": "lunarrainbowmarket_48"
+    },
+    {
+     "kind": "spider",
+     "level": "lunarrainbowmarket_75"
+    },
+    {
+     "kind": "spider",
+     "level": "modern_89"
+    },
+    {
+     "kind": "spider",
+     "level": "plantagenet_21"
+    },
+    {
+     "kind": "spider",
+     "level": "steam_10"
+    },
+    {
+     "kind": "spider",
+     "level": "steam_11"
+    },
+    {
+     "kind": "spider",
+     "level": "steam_21"
+    },
+    {
+     "kind": "spider",
+     "level": "steam_24"
+    },
+    {
+     "kind": "spider",
+     "level": "steam_29"
+    },
+    {
+     "kind": "spider",
+     "level": "steam_3"
+    },
+    {
+     "kind": "spider",
+     "level": "steam_30"
+    },
+    {
+     "kind": "spider",
+     "level": "steam_36"
+    },
+    {
+     "kind": "spider",
+     "level": "steam_4"
+    },
+    {
+     "kind": "spider",
+     "level": "steam_5"
+    },
+    {
+     "kind": "spider",
+     "level": "steam_9"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 0,
+    "fish_creature": 0,
+    "minigame": 0,
+    "spider": 39
+   },
+   "source": "pack",
+   "typeName": "future_imp",
+   "zombieClass": "ZombieFutureImp"
+  },
+  {
+   "creatureClass": null,
+   "family": "walk",
+   "homeWorld": "future",
+   "hp": 270,
+   "hpSource": "ZombieFutureImpDefault",
+   "id": "future_imp_ori",
+   "isBasicZombie": null,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_GARGANTUAR_IMP",
+   "referencedBy": [
+    {
+     "kind": "spider",
+     "level": "carnival_11"
+    },
+    {
+     "kind": "spider",
+     "level": "future_29"
+    },
+    {
+     "kind": "spider",
+     "level": "future_47"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 0,
+    "fish_creature": 0,
+    "minigame": 0,
+    "spider": 3
+   },
+   "source": "pack",
+   "typeName": "future_imp_ori",
+   "zombieClass": "ZombieFutureImp"
+  },
+  {
+   "creatureClass": null,
+   "family": "gargantuar",
+   "homeWorld": "atlantis",
+   "hp": 2700,
+   "hpSource": "ZombieAtlantisGargantuarLand",
+   "id": "giant_hermit_crab",
+   "isBasicZombie": null,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_ATLANTIS_LAND_GARGANTUAR",
+   "referencedBy": [
+    {
+     "kind": "fish",
+     "level": "beach_55"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_56"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_57"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_60"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_61"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_62"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 6,
+    "fish_creature": 0,
+    "minigame": 0,
+    "spider": 0
+   },
+   "source": "pack",
+   "typeName": "atlantis_land_gargantuar",
+   "zombieClass": "ZombieAtlantisGargantuar"
+  },
+  {
+   "creatureClass": null,
+   "family": "walk",
+   "homeWorld": "heian",
+   "hp": 190,
+   "hpSource": "ZombieHeianNinjaDefault",
+   "id": "heian_ninja",
+   "isBasicZombie": null,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_HEIAN_NINJA",
+   "referencedBy": [
+    {
+     "kind": "spider",
+     "level": "carnival_46"
+    },
+    {
+     "kind": "spider",
+     "level": "heian_14"
+    },
+    {
+     "kind": "spider",
+     "level": "heian_16"
+    },
+    {
+     "kind": "spider",
+     "level": "heian_22"
+    },
+    {
+     "kind": "spider",
+     "level": "heian_25"
+    },
+    {
+     "kind": "spider",
+     "level": "heian_5"
+    },
+    {
+     "kind": "spider",
+     "level": "heian_8"
+    },
+    {
+     "kind": "spider",
+     "level": "kongfu_15"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 0,
+    "fish_creature": 0,
+    "minigame": 0,
+    "spider": 8
+   },
+   "source": "pack",
+   "typeName": "heian_ninja",
+   "zombieClass": "ZombieIceAgeHunter"
+  },
+  {
+   "creatureClass": "FishHermitCrab",
+   "family": null,
+   "homeWorld": "atlantis",
+   "hp": null,
+   "hpSource": null,
+   "id": "hermitcrab",
+   "isBasicZombie": null,
+   "objclass": "CreatureType",
+   "popAnim": "POPANIM_PLANT_FISHS_FISH_HERMITCRAB",
+   "referencedBy": [
+    {
+     "kind": "fish_creature",
+     "level": "beach_31"
+    },
+    {
+     "kind": "fish_creature",
+     "level": "beach_33"
+    },
+    {
+     "kind": "fish_creature",
+     "level": "beach_36"
+    },
+    {
+     "kind": "fish_creature",
+     "level": "beach_39"
+    },
+    {
+     "kind": "fish_creature",
+     "level": "beach_41"
+    },
+    {
+     "kind": "fish_creature",
+     "level": "beach_43"
+    },
+    {
+     "kind": "fish_creature",
+     "level": "beach_44"
+    },
+    {
+     "kind": "fish_creature",
+     "level": "beach_45"
+    },
+    {
+     "kind": "fish_creature",
+     "level": "beach_46"
+    },
+    {
+     "kind": "fish_creature",
+     "level": "beach_47"
+    },
+    {
+     "kind": "fish_creature",
+     "level": "beach_48"
+    },
+    {
+     "kind": "fish_creature",
+     "level": "beach_49"
+    },
+    {
+     "kind": "fish_creature",
+     "level": "beach_51"
+    },
+    {
+     "kind": "fish_creature",
+     "level": "beach_52"
+    },
+    {
+     "kind": "fish_creature",
+     "level": "beach_54"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 0,
+    "fish_creature": 15,
+    "minigame": 0,
+    "spider": 0
+   },
+   "source": "pack",
+   "typeName": "hermitcrab",
+   "zombieClass": null
+  },
+  {
+   "creatureClass": null,
+   "family": "walk",
+   "homeWorld": "modern",
+   "hp": 190,
+   "hpSource": "ZombieHeroImpfinity",
+   "id": "hero_impfinity",
+   "isBasicZombie": null,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_HEROES_IMPFINITY",
+   "referencedBy": [
+    {
+     "kind": "spider",
+     "level": "memorytour_10"
+    },
+    {
+     "kind": "spider",
+     "level": "modern_37"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 0,
+    "fish_creature": 0,
+    "minigame": 0,
+    "spider": 2
+   },
+   "source": "pack",
+   "typeName": "hero_impfinity",
+   "zombieClass": "ZombieFutureImp"
+  },
+  {
+   "creatureClass": null,
+   "family": "walk",
+   "homeWorld": "beach",
+   "hp": 190,
+   "hpSource": "ZombieIceageImpDefault",
+   "id": "iceage_imp",
+   "isBasicZombie": null,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_ICEAGE_IMP",
+   "referencedBy": [
+    {
+     "kind": "spider",
+     "level": "iceage_60"
+    },
+    {
+     "kind": "spider",
+     "level": "iceage_67"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 0,
+    "fish_creature": 0,
+    "minigame": 0,
+    "spider": 2
+   },
+   "source": "pack",
+   "typeName": "iceage_imp",
+   "zombieClass": "ZombieImp"
+  },
+  {
+   "creatureClass": "FishBase",
+   "family": null,
+   "homeWorld": "atlantis",
+   "hp": null,
+   "hpSource": null,
+   "id": "inkfish",
+   "isBasicZombie": null,
+   "objclass": "CreatureType",
+   "popAnim": "POPANIM_PLANT_FISHS_FISH_INKFISH",
+   "referencedBy": [
+    {
+     "kind": "fish_creature",
+     "level": "beach_54"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 0,
+    "fish_creature": 1,
+    "minigame": 0,
+    "spider": 0
+   },
+   "source": "pack",
+   "typeName": "inkfish",
+   "zombieClass": null
+  },
+  {
+   "creatureClass": "FishJellyfish",
+   "family": null,
+   "homeWorld": "atlantis",
+   "hp": null,
+   "hpSource": null,
+   "id": "jellyfish",
+   "isBasicZombie": null,
+   "objclass": "CreatureType",
+   "popAnim": "POPANIM_PLANT_FISHS_FISH_JELLYFISH",
+   "referencedBy": [
+    {
+     "kind": "fish_creature",
+     "level": "beach_43"
+    },
+    {
+     "kind": "fish_creature",
+     "level": "beach_44"
+    },
+    {
+     "kind": "fish_creature",
+     "level": "beach_45"
+    },
+    {
+     "kind": "fish_creature",
+     "level": "beach_46"
+    },
+    {
+     "kind": "fish_creature",
+     "level": "beach_47"
+    },
+    {
+     "kind": "fish_creature",
+     "level": "beach_48"
+    },
+    {
+     "kind": "fish_creature",
+     "level": "beach_51"
+    },
+    {
+     "kind": "fish_creature",
+     "level": "beach_52"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 0,
+    "fish_creature": 8,
+    "minigame": 0,
+    "spider": 0
+   },
+   "source": "pack",
+   "typeName": "jellyfish",
+   "zombieClass": null
+  },
+  {
+   "creatureClass": null,
+   "family": "walk",
+   "homeWorld": "kongfu",
+   "hp": 190,
+   "hpSource": "ZombieKongfuImpDefault",
+   "id": "kongfu_imp",
+   "isBasicZombie": null,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_KONGFU_IMP",
+   "referencedBy": [
+    {
+     "kind": "spider",
+     "level": "kongfu_24"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 0,
+    "fish_creature": 0,
+    "minigame": 0,
+    "spider": 1
+   },
+   "source": "pack",
+   "typeName": "kongfu_imp",
+   "zombieClass": "ZombieImp"
+  },
+  {
+   "creatureClass": null,
+   "family": "walk",
+   "homeWorld": "kongfu",
+   "hp": 340,
+   "hpSource": "ZombieSelfExplodeDefault",
+   "id": "kongfu_selfexplode",
+   "isBasicZombie": null,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_KONGFU_SELFEXPLODE",
+   "referencedBy": [
+    {
+     "kind": "spider",
+     "level": "kongfu_38"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 0,
+    "fish_creature": 0,
+    "minigame": 0,
+    "spider": 1
+   },
+   "source": "pack",
+   "typeName": "kongfu_selfexplode",
+   "zombieClass": "ZombieModernSuperfanImp"
+  },
+  {
+   "creatureClass": "FishBase",
+   "family": null,
+   "homeWorld": "atlantis",
+   "hp": null,
+   "hpSource": null,
+   "id": "krill",
+   "isBasicZombie": null,
+   "objclass": "CreatureType",
+   "popAnim": "POPANIM_PLANT_FISHS_FISH_KRILL",
+   "referencedBy": [
+    {
+     "kind": "fish_creature",
+     "level": "beach_54"
+    },
+    {
+     "kind": "fish_creature",
+     "level": "beach_56"
+    },
+    {
+     "kind": "fish_creature",
+     "level": "beach_57"
+    },
+    {
+     "kind": "fish_creature",
+     "level": "beach_59"
+    },
+    {
+     "kind": "fish_creature",
+     "level": "beach_60"
+    },
+    {
+     "kind": "fish_creature",
+     "level": "beach_61"
+    },
+    {
+     "kind": "fish_creature",
+     "level": "beach_62"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 0,
+    "fish_creature": 7,
+    "minigame": 0,
+    "spider": 0
+   },
+   "source": "pack",
+   "typeName": "krill",
+   "zombieClass": null
+  },
+  {
+   "creatureClass": null,
+   "family": "walk",
+   "homeWorld": "atlantis",
+   "hp": 190,
+   "hpSource": "ZombieAtlantisRiderDefault",
+   "id": "lanternfish_rider",
+   "isBasicZombie": null,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_LANTERNFISH_RIDER",
+   "referencedBy": [
+    {
+     "kind": "fish",
+     "level": "beach_60"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_61"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_62"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 3,
+    "fish_creature": 0,
+    "minigame": 0,
+    "spider": 0
+   },
+   "source": "pack",
+   "typeName": "atlantis_rider",
+   "zombieClass": "ZombieAtlantisRider"
+  },
+  {
+   "creatureClass": null,
+   "family": "gargantuar",
+   "homeWorld": "lostcity",
+   "hp": 10,
+   "hpSource": "ZombieLostCityRelicHunterVeteran",
+   "id": "lostcity_relichunter_veteran",
+   "isBasicZombie": null,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_LOSTCITY_RELICHUNTER_VETERAN",
+   "referencedBy": [
+    {
+     "kind": "spider",
+     "level": "iceage_45"
+    },
+    {
+     "kind": "spider",
+     "level": "lostcity_38"
+    },
+    {
+     "kind": "spider",
+     "level": "lostcity_40"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 0,
+    "fish_creature": 0,
+    "minigame": 0,
+    "spider": 3
+   },
+   "source": "pack",
+   "typeName": "lostcity_relichunter_veteran",
+   "zombieClass": "ZombieCakeTank"
+  },
+  {
+   "creatureClass": null,
+   "family": "walk",
+   "homeWorld": "tutorial",
+   "hp": 270,
+   "hpSource": "ZombieLunarSuperfanImpDefault",
+   "id": "lunar_superfanimp",
+   "isBasicZombie": null,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_LNY_SUPERFAN_ZOMBIE",
+   "referencedBy": [
+    {
+     "kind": "spider",
+     "level": "lunarrainbowmarket_79"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 0,
+    "fish_creature": 0,
+    "minigame": 0,
+    "spider": 1
+   },
+   "source": "pack",
+   "typeName": "lunar_superfanimp",
+   "zombieClass": "ZombieModernSuperfanImp"
+  },
+  {
+   "creatureClass": null,
+   "family": "walk",
+   "homeWorld": "modern",
+   "hp": 270,
+   "hpSource": "ZombieModernSuperfanImpDefault",
+   "id": "modern_superfanimp",
+   "isBasicZombie": null,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_MODERN_SUPERFAN",
+   "referencedBy": [
+    {
+     "kind": "spider",
+     "level": "frontyard_81"
+    },
+    {
+     "kind": "spider",
+     "level": "frontyard_99"
+    },
+    {
+     "kind": "spider",
+     "level": "lunarrainbowmarket_78"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 0,
+    "fish_creature": 0,
+    "minigame": 0,
+    "spider": 3
+   },
+   "source": "pack",
+   "typeName": "modern_superfanimp",
+   "zombieClass": "ZombieModernSuperfanImp"
+  },
+  {
+   "creatureClass": null,
+   "family": "summon",
+   "homeWorld": "atlantis",
+   "hp": 550,
+   "hpSource": "ZombieAtlantisPoseidonDefault",
+   "id": "poseidon_assistant",
+   "isBasicZombie": null,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_POSEIDON_ASSISTANT",
+   "referencedBy": [
+    {
+     "kind": "fish",
+     "level": "beach_54"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_56"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_57"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_58"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_59"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_60"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_61"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_62"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 8,
+    "fish_creature": 0,
+    "minigame": 0,
+    "spider": 0
+   },
+   "source": "pack",
+   "typeName": "atlantis_poseidon",
+   "zombieClass": "ZombieAtlantisPoseidon"
+  },
+  {
+   "creatureClass": null,
+   "family": "walk",
+   "homeWorld": "atlantis",
+   "hp": 400,
+   "hpSource": "ZombieAtlantisPriestDefault",
+   "id": "priest",
+   "isBasicZombie": null,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_PRIEST",
+   "referencedBy": [
+    {
+     "kind": "fish",
+     "level": "beach_54"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_55"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_57"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_60"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_61"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_62"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 6,
+    "fish_creature": 0,
+    "minigame": 0,
+    "spider": 0
+   },
+   "source": "pack",
+   "typeName": "atlantis_priest",
+   "zombieClass": "ZombieAtlantisBasic"
+  },
+  {
+   "creatureClass": "FishBase",
+   "family": null,
+   "homeWorld": "atlantis",
+   "hp": null,
+   "hpSource": null,
+   "id": "pufferfish",
+   "isBasicZombie": null,
+   "objclass": "CreatureType",
+   "popAnim": "POPANIM_PLANT_FISHS_FISH_PUFFERFISH",
+   "referencedBy": [
+    {
+     "kind": "fish_creature",
+     "level": "beach_54"
+    },
+    {
+     "kind": "fish_creature",
+     "level": "beach_60"
+    },
+    {
+     "kind": "fish_creature",
+     "level": "beach_61"
+    },
+    {
+     "kind": "fish_creature",
+     "level": "beach_62"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 0,
+    "fish_creature": 4,
+    "minigame": 0,
+    "spider": 0
+   },
+   "source": "pack",
+   "typeName": "pufferfish",
+   "zombieClass": null
+  },
+  {
+   "creatureClass": null,
+   "family": "walk",
+   "homeWorld": "rift1a",
+   "hp": 270,
+   "hpSource": "ZombieRomanImp",
+   "id": "roman_imp",
+   "isBasicZombie": null,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_ROMAN_IMP",
+   "referencedBy": [
+    {
+     "kind": "spider",
+     "level": "memorytour_10"
+    },
+    {
+     "kind": "spider",
+     "level": "modern_111"
+    },
+    {
+     "kind": "spider",
+     "level": "modern_89"
+    },
+    {
+     "kind": "spider",
+     "level": "muji_21"
+    },
+    {
+     "kind": "spider",
+     "level": "plantagenet_46"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 0,
+    "fish_creature": 0,
+    "minigame": 0,
+    "spider": 5
+   },
+   "source": "pack",
+   "typeName": "roman_imp",
+   "zombieClass": "ZombieRomanImp"
+  },
+  {
+   "creatureClass": null,
+   "family": "walk",
+   "homeWorld": "atlantis",
+   "hp": 500,
+   "hpSource": "ZombieAtlantisPitcherDefault",
+   "id": "seaurchinpitcher",
+   "isBasicZombie": null,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_SEAURCHINPITCHER",
+   "referencedBy": [
+    {
+     "kind": "fish",
+     "level": "beach_54"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_56"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_59"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_60"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_61"
+    },
+    {
+     "kind": "fish",
+     "level": "beach_62"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 6,
+    "fish_creature": 0,
+    "minigame": 0,
+    "spider": 0
+   },
+   "source": "pack",
+   "typeName": "atlantis_pitcher",
+   "zombieClass": "ZombieAtlantisBasic"
+  },
+  {
+   "creatureClass": null,
+   "family": "gargantuar",
+   "homeWorld": "skycity",
+   "hp": 1200,
+   "hpSource": "ZombieSkyCityTwinsPlane",
+   "id": "skycity_twinsplane",
+   "isBasicZombie": null,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_SKYCITY_TWINSPLANE",
+   "referencedBy": [
+    {
+     "kind": "spider",
+     "level": "iceage_50"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 0,
+    "fish_creature": 0,
+    "minigame": 0,
+    "spider": 1
+   },
+   "source": "pack",
+   "typeName": "skycity_twinsplane",
+   "zombieClass": "ZombieGargantuar"
+  },
+  {
+   "creatureClass": "FishBase",
+   "family": null,
+   "homeWorld": "atlantis",
+   "hp": null,
+   "hpSource": null,
+   "id": "starfish",
+   "isBasicZombie": null,
+   "objclass": "CreatureType",
+   "popAnim": "POPANIM_PLANT_FISHS_FISH_STARFISH",
+   "referencedBy": [
+    {
+     "kind": "fish_creature",
+     "level": "beach_54"
+    },
+    {
+     "kind": "fish_creature",
+     "level": "beach_60"
+    },
+    {
+     "kind": "fish_creature",
+     "level": "beach_61"
+    },
+    {
+     "kind": "fish_creature",
+     "level": "beach_62"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 0,
+    "fish_creature": 4,
+    "minigame": 0,
+    "spider": 0
+   },
+   "source": "pack",
+   "typeName": "starfish",
+   "zombieClass": null
+  },
+  {
+   "creatureClass": "FishSwordfish",
+   "family": null,
+   "homeWorld": "atlantis",
+   "hp": null,
+   "hpSource": null,
+   "id": "swordfish",
+   "isBasicZombie": null,
+   "objclass": "CreatureType",
+   "popAnim": "POPANIM_PLANT_FISHS_FISH_SWORDFISH",
+   "referencedBy": [
+    {
+     "kind": "fish_creature",
+     "level": "beach_47"
+    },
+    {
+     "kind": "fish_creature",
+     "level": "beach_48"
+    },
+    {
+     "kind": "fish_creature",
+     "level": "beach_49"
+    },
+    {
+     "kind": "fish_creature",
+     "level": "beach_51"
+    },
+    {
+     "kind": "fish_creature",
+     "level": "beach_52"
+    },
+    {
+     "kind": "fish_creature",
+     "level": "beach_54"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 0,
+    "fish_creature": 6,
+    "minigame": 0,
+    "spider": 0
+   },
+   "source": "pack",
+   "typeName": "swordfish",
+   "zombieClass": null
+  },
+  {
+   "creatureClass": null,
+   "family": "walk",
+   "homeWorld": "tutorial",
+   "hp": 190,
+   "hpSource": "ZombieTutorialImpDefault",
+   "id": "tutorial_imp",
+   "isBasicZombie": null,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_TUTORIAL_IMP",
+   "referencedBy": [
+    {
+     "kind": "spider",
+     "level": "frontyard_62"
+    },
+    {
+     "kind": "spider",
+     "level": "frontyard_70"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 0,
+    "fish_creature": 0,
+    "minigame": 0,
+    "spider": 2
+   },
+   "source": "pack",
+   "typeName": "tutorial_imp",
+   "zombieClass": "ZombieImp"
+  },
+  {
+   "creatureClass": null,
+   "family": "walk",
+   "homeWorld": "cowboy",
+   "hp": 190,
+   "hpSource": "ZombieBullRiderDefault",
+   "id": "west_bullrider",
+   "isBasicZombie": null,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_WEST_BULLRIDER",
+   "referencedBy": [
+    {
+     "kind": "spider",
+     "level": "modern_37"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 0,
+    "fish_creature": 0,
+    "minigame": 0,
+    "spider": 1
+   },
+   "source": "pack",
+   "typeName": "west_bullrider",
+   "zombieClass": "ZombieImp"
+  },
+  {
+   "creatureClass": null,
+   "family": "walk",
+   "homeWorld": "rift1b",
+   "hp": 1100,
+   "hpSource": "ZombieZCorpImp",
+   "id": "zcorp_imp",
+   "isBasicZombie": null,
+   "objclass": "ZombieType",
+   "popAnim": "POPANIM_ZOMBIE_ZOMBIE_CORPORATE_GARGANTUAR",
+   "referencedBy": [
+    {
+     "kind": "spider",
+     "level": "lunarrainbowmarket_53"
+    }
+   ],
+   "referencedCounts": {
+    "fish": 0,
+    "fish_creature": 0,
+    "minigame": 0,
+    "spider": 1
+   },
+   "source": "pack",
+   "typeName": "zcorp_imp",
+   "zombieClass": "ZombieZCorpImp"
+  }
+ ],
+ "authored": [
+  "basic",
+  "conehead",
+  "buckethead",
+  "flag",
+  "mummy",
+  "mummy_armor1",
+  "mummy_armor2",
+  "pirate",
+  "pirate_armor1",
+  "cowboy",
+  "cowboy_armor1",
+  "future",
+  "future_armor1",
+  "dark",
+  "dark_armor1",
+  "beach",
+  "iceage",
+  "lostcity",
+  "kongfu",
+  "eighties",
+  "gargantuar",
+  "football",
+  "newspaper",
+  "pole_vaulter",
+  "garden_zombie",
+  "garden_cone",
+  "garden_bucket",
+  "garden_flag",
+  "garden_poet",
+  "garden_umbrella",
+  "garden_imp",
+  "garden_gargantuar",
+  "garden_cuju",
+  "garden_drummer",
+  "gang_zombie",
+  "gang_cone",
+  "gang_bucket",
+  "gang_flag",
+  "gang_molotov",
+  "gang_ozloc",
+  "gang_carl",
+  "gang_gargantuar",
+  "gang_imp",
+  "market_clockwork",
+  "market_armor1",
+  "market_armor2",
+  "market_mechanic",
+  "market_trapeze",
+  "royal_zombie",
+  "royal_flag",
+  "royal_noblewoman",
+  "royal_winetasting",
+  "royal_chef_gargantuar",
+  "imp_maid",
+  "royal_princess"
+ ],
+ "conflicts": [
+  {
+   "id": "beach",
+   "kinds": [
+    "minigame"
+   ],
+   "reason": "content/zombies.json 已有同 id 的手工行；保留手工行，不追加 pack 行"
+  }
+ ],
+ "counts": {
+  "added": 56,
+  "authored": 55,
+  "byFamily": {
+   "gargantuar": 7,
+   "summon": 1,
+   "walk": 41
+  },
+  "byKind": {
+   "fish": 18,
+   "fish_creature": 7,
+   "minigame": 9,
+   "spider": 23
+  },
+  "byObjclass": {
+   "CreatureType": 7,
+   "ZombieType": 49
+  },
+  "conflicts": 1,
+  "referenced": 57,
+  "total": 111,
+  "unresolved": 0,
+  "withHp": 49,
+  "withoutHp": 7
+ },
+ "format": 1,
+ "generated": null,
+ "inputs": {
+  "classes": {
+   "bytes": 64130,
+   "sha256": "ca46e13fd7197d1ba239553244a25459782395116181b9f6b0bbd7c1f85daf9a"
+  },
+  "creatureTypes": {
+   "bytes": 6995,
+   "sha256": "18f5bc97a24f9a5e60a0969b7049154ae62e067ce4ceb1781b1dacceecd1f120"
+  },
+  "mechanics": {
+   "bytes": 4827308,
+   "sha256": "0e7e6d68e0f2b537b1efb7f0dc64f6cb133bdb0994a878283faf769c11a78eee"
+  },
+  "minigames": {
+   "bytes": 1222686,
+   "sha256": "3d32716c55204246ea146728f09a7a28412377ad7b6ad82e22e416a6bc07e08b"
+  },
+  "zombieProperties": {
+   "bytes": 1691832,
+   "sha256": "667a9d4536d88bed06e484adc2d6f2e98e51972fb83d158ad16eb1b977bf2c4a"
+  },
+  "zombieTypes": {
+   "bytes": 674628,
+   "sha256": "ca8680faf673b6a7f8bbdf94bb65b7d8de6e4b7dfa968d372a7db2f3631f6776"
+  },
+  "zombies": {
+   "bytes": 70468,
+   "sha256": "4724b7bf159ee86d4679fbcbce6da21609926a23d5d5bf234f3d36fdef668bfb"
+  }
+ },
+ "marker": "zombie-roster-v1",
+ "references": {
+  "fish": {
+   "ids": 18,
+   "levels": 26
+  },
+  "fish_creature": {
+   "ids": 7,
+   "levels": 21
+  },
+  "minigame": {
+   "ids": 10,
+   "levels": 1
+  },
+  "spider": {
+   "ids": 23,
+   "levels": 115
+  }
+ },
+ "sources": {
+  "classes": "native/generated/zombie_classes.json",
+  "content": "content/zombies.json",
+  "creatureTypes": "work/obb_packages/pkg_0013_CreatureType.json",
+  "mechanics": "native/generated/level_mechanics.json",
+  "minigames": "native/generated/minigames.json",
+  "obb": "work/obb_packages",
+  "zombieProperties": "work/obb_packages/pkg_2112_ZombiePropertySheet.json",
+  "zombieTypes": "work/obb_packages/pkg_2115_ZombieType.json"
+ },
+ "unresolved": []
+}

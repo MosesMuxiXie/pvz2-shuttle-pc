@@ -6,7 +6,9 @@
 #include "fusion.hpp"
 #include "mechanics.hpp"
 #include "plantfood.hpp"
+#include "rail.hpp"
 #include "tuning.hpp"
+#include "vase.hpp"
 #include <map>
 #include <random>
 #include <set>
@@ -35,9 +37,25 @@ struct WorldOptions {
     /// plays as an ordinary level, which is the pre-S5.13 behaviour and what the reverse probe and
     /// a baseline comparison use.
     bool mechanics = true;
+    /// S3/A2: the minecart track. On by default, because the plan comes from the level's own
+    /// `extra` and a rail level without its carts is not the level. Off means no cart is laid, no
+    /// `rail_*` event is emitted and no `rail` key appears in `--run-level`.
+    bool rail = true;
     /// S5.8 (next task) drives elements; declared here so the call site does not have to
     /// change again when that lands.
     bool elements = false;
+    /// A1 (T80): the vasebreaker arcade. On by default. The mode itself is chosen by the level's own
+    /// `extra.vasebreaker` flag, so switching this off replays such a level as an ordinary seed-bank
+    /// level - which is what the reverse probe and a pre-A1 baseline comparison need.
+    bool vasebreaker = true;
+    /// A1 (T80): table override for tests, which need a level whose vases they wrote themselves
+    /// (the shipped table has no sun vase). Null means "the process-wide table".
+    const VaseTable* vaseTable = nullptr;
+    /// B1 (T90): the plant levels this battle fights at, as `plant type -> level`. Empty is the
+    /// ordinary case and means every plant at level 1, which is what keeps a run without
+    /// `--set-plant-level` byte-identical. The sheet's own cap is applied at construction, so a save
+    /// asking for level 99 cannot walk off the ladder once per shot.
+    std::map<std::string, int> plantLevels;
 };
 
 /// What a feed does to one plant, as the view needs to read it.
@@ -67,6 +85,10 @@ struct BossState {
 class World {
   public:
     static constexpr double stepSeconds = tuning::kStepSeconds;
+    /// C55: the most plants a protect mission may stack on one cell. The sheet itself never goes
+    /// past seven (`lostcity_45` puts seven targets on (4,3)), so this bound never truncates
+    /// shipped data; it exists so a corrupt pack cannot ask for a thousand plants on one square.
+    static constexpr int kMaxProtectStack = 8;
 
     World(const Catalog& catalog, const LevelDefinition& level, std::uint32_t seed = 1,
           const WorldOptions& options = {});
@@ -156,17 +178,35 @@ class World {
     /// Protect targets the sheet lists on a cell that already holds one (egypt_74 lists three on
     /// one cell). They are reported, never silently dropped.
     int unplacedProtectedPlants() const { return unplacedProtectedPlants_; }
+    /// The plants standing on one cell, innermost first. A cell can carry more than one because the
+    /// sheet stacks protect targets on the same square (`egypt_74` three times on (2,3),
+    /// `lostcity_45` seven on (4,3), `sky_31` one tallnut on each of five cells that already hold a
+    /// plant). `plantAt()` returns the *last* entry - the outermost plant, the one a zombie eats
+    /// first - so this list is the only way to see the ones underneath. Empty for a free cell.
+    std::vector<PlantEntity*> protectStackAt(int row, int col);
+    /// C55: the deepest stack the sheet itself uses (7 on `lostcity_45`). The kernel honours the
+    /// sheet up to `kMaxProtectStack`, so this is a report number, not a limit.
+    int deepestProtectStack() const;
     /// How many of them the sheet requires to survive: 0 when the mission cannot be lost this way.
+    ///
+    /// C55: clamped to the plants that actually stand. A sheet that asks for more survivors than
+    /// its own board can hold used to make the level unwinnable (`egypt_74` asked four of three);
+    /// now the board is filled by stacking and, only when even a full stack of
+    /// `kMaxProtectStack` per cell cannot reach the ask, the requirement drops to `placed` and
+    /// `protectClamped()` says so.
     int requiredProtectedPlants() const;
+    /// The number the sheet itself asked for, before any clamping (for the report and the CLI).
+    int requestedProtectedPlants() const;
+    /// True when the requirement had to be clamped because the board could not hold it. Levels in
+    /// this state are winnable but zero-tolerance: every target must survive.
+    bool protectClamped() const { return protectClamped_; }
     /// How many targets the mission asks for but the opening board could not hold, i.e.
     /// `requiredProtectedPlants() - protectedPlantCount()` when that is positive, else 0.
     ///
-    /// T59: eleven protect missions list more targets than their own board can carry
-    /// (`egypt_74` lists five on three cells) and six of those place none at all
-    /// (`carnival_79`, `carnival_81`, `chinesegarden_57`, `frontyard_53`, `lostcity_67`,
-    /// `sky_31`). Such a mission is still winnable - it is simply zero-tolerance - but for the
-    /// six with no targets the death path can never fire, so the gap has to be countable
-    /// somewhere. It is reported at level start as `protect_capacity_shortfall`.
+    /// T59 reported the eleven missions whose board could not hold every target. C55 fixed the
+    /// cause (one plant per cell) rather than the report: the sheet's own stacks now land, so this
+    /// is 0 on all 1809 shipped levels and only becomes positive for a board that is blocked by
+    /// grid items.
     int protectCapacityShortfall() const { return protectCapacityShortfall_; }
     /// Living protected plants right now - the number `requiredProtectedPlants()` is judged against.
     int aliveProtectedPlants() const;
@@ -191,6 +231,86 @@ class World {
     /// is non-empty (the other 1500 levels keep their exact output keys).
     const std::map<std::string, int>& spawnerSpawned() const { return spawnerSpawned_; }
     bool spawnerLevel() const { return mechanics_ != nullptr && mechanics_->hasSpawners(); }
+
+    // --- T88: Events module, board mask and mutators ---------------------------------------
+    /// The waterline column the Events module last moved to (0 = the sheet never moved it).
+    /// `tide_changed` carries the wave and the type; this is the state the view/CLI can read.
+    int tideColumn() const { return tideColumn_; }
+    /// How many tide changes have been applied (one per `TidalChange` row whose wave arrived).
+    int tideChanges() const { return static_cast<int>(tideWaves_.size()); }
+    /// How many frost winds have blown (`FrostWindWaveActionProps.Winds[]` rows).
+    int frostWinds() const { return static_cast<int>(frostWaves_.size()); }
+    /// `LevelMutatorMaxSunProps.maxSunOverride`; 0 means the level does not cap the bank.
+    int sunCap() const { return sunCap_; }
+    /// The board mask of `BoardGridMapProps.Values` as the level declared it. The sheet gives the
+    /// codes no meaning, so this is data: `boardGridMarkedCells()` counts the cells whose code is
+    /// not 0, and nothing in the kernel turns a code into "planting is refused here".
+    int boardGridMarkedCells() const { return boardGridMarked_; }
+    bool boardGridMarked(int row, int col) const;
+    /// Which layout is loaded. -1 = the level declares no mask.
+    int boardGridIndex() const { return boardGridIndex_; }
+    /// Load layout `index` of the mask. Every one of the 49 shipped levels has exactly one 5x9
+    /// map, so index 0 is the only one that exists; anything else is refused and recorded as
+    /// `board_grid_rejected` instead of pretending the board changed shape.
+    bool applyBoardGrid(int index);
+
+    // ---- vasebreaker (A1 / T80) -------------------------------------------
+    /// True when this level opened as a vasebreaker board: no seed bank, no sky sun, no wave
+    /// director, and a lawn full of vases.
+    bool vasebreaker() const { return vasebreaker_; }
+    /// Vases still standing. A broken one leaves the list on the next `reap()`.
+    const std::vector<VaseEntity>& vases() const { return vases_; }
+    const VaseEntity* vaseAt(int row, int col) const;
+    int vasesUnplaced() const { return vasesUnplaced_; }
+    /// What one smashed vase did, for the view and for the tests: `ok == false` means there was no
+    /// vase on that cell (which also makes a second tap on the same cell a no-op).
+    struct VaseBreak {
+        bool ok = false;
+        std::string kind;  // zombie | plant | collectible | sun
+        std::string value; // the id the sheet named
+        int sun = 0;       // sun this vase paid, zero for the other three classes
+    };
+    VaseBreak breakVase(int row, int col);
+    /// Everything the run did with vases, as `--run-level` prints it.
+    struct VaseTally {
+        int total = 0;
+        int broke = 0;
+        int plants = 0;
+        int zombies = 0;
+        int collectibles = 0;
+        int sun = 0;
+    };
+    const VaseTally& vaseTally() const { return vaseTally_; }
+    /// Cards picked out of a plant vase, each remembering the vase it came from: the card is only
+    /// playable on that cell or an orthogonal neighbour.
+    struct VaseCard {
+        std::string plant;
+        int row = 0;
+        int col = 0;
+    };
+    const std::vector<VaseCard>& vaseCards() const { return vaseCards_; }
+    /// Plant a card a plant vase handed over. Empty string == planted; otherwise the reason.
+    std::string plantVaseCard(std::size_t index, int row, int col);
+
+    // ---- rail carts (S3/A2) ------------------------------------------------
+    /// True when the level itself declares a track (`extra.rail`), whether or not it carries a
+    /// cart: 192 levels do, and `cowboy_41`/`cowboy_42` declare one with no cart at all. This is
+    /// the gate `--run-level` uses for the `rail` key, so those two still report `carts: 0`.
+    bool railLevel() const { return railDeclared_; }
+    /// The carts on the lawn, in declaration order. A broken cart leaves the list.
+    const std::vector<RailCartEntity>& railCarts() const { return carts_; }
+    /// `rail_move` events emitted so far: one per column entered, not one per tick.
+    std::size_t railMovedColumns() const { return railMoved_; }
+    /// Zombies the carts crushed (`rail_hit` events).
+    std::size_t railHits() const { return railHits_; }
+    /// The cart standing on a cell, or null. `plant()` refuses that cell; `plantOnCart` is the only
+    /// way to put something there.
+    RailCartEntity* cartAt(int row, int col);
+    /// Plant `type` on the cart standing on (row, col). Same gates as `plant()` minus the
+    /// cell-occupied check the cart itself causes, and the plant is linked to the cart so every
+    /// column the cart enters carries it along. Returns the empty string on success, otherwise the
+    /// refusal (`no cart`, `cart occupied`, `not-in-deck`, `cooling down`, `not enough sun`).
+    std::string plantOnCart(const std::string& type, int row, int col);
 
     // ---- queries ----------------------------------------------------------
     const std::string& status() const { return status_; }
@@ -277,7 +397,7 @@ class World {
     EntityId spawnShot(int row, double x, double damage, const std::string& projectileType,
                        int pierce = 0, double splash = 0, double slow = 0, EntityId owner = 0);
     EntityId spawnSun(double x, int row, int value);
-    void addSunToBank(int value) { sun_ += value; }
+    void addSunToBank(int value);
     /// Presentation-only event (audio/visual hooks). Same stream as vent, exposed so the
     /// projectile step can report a hit without making vent public. Never hashed.
     void emitEffect(const std::string& type, Json details = Json::object()) { event(type, std::move(details)); }
@@ -291,6 +411,18 @@ class World {
     /// Plant type lookup that prefers the rules pack over the JSON registry.
     const PlantDefinition* findPlant(const std::string& type) const;
     const ZombieDefinition* findZombie(const std::string& type) const;
+
+    // ---- plant levels (B1 / T90) -------------------------------------------
+    /// The level this battle fights `type` at, after the sheet's own cap. 1 when nothing asked for
+    /// a level, which is every run without `--set-plant-level`.
+    int plantLevel(const std::string& type) const;
+    /// What the request actually became: `plant type -> clamped level`, only entries above 1.
+    /// `--run-level` prints exactly this and nothing else, so a plain run keeps its old key set.
+    const std::map<std::string, int>& plantLevelsApplied() const { return plantLevelsApplied_; }
+    /// `type`'s damage at its level, or `current` unchanged where the sheet has no checked column.
+    /// Lives here rather than in the shot code so a normal shot and a plantfood burst cannot
+    /// disagree about what the same plant hits for.
+    double levelDamage(const std::string& type, double current) const;
 
   private:
     /// A spawn requested from inside the zombie loop, replayed after the loop ends.
@@ -324,6 +456,15 @@ class World {
     void tickWaves();
     void reap();
     void resolveOutcome();
+
+    // ---- rail carts (S3/A2) ------------------------------------------------
+    /// Lay this level's carts. Reads the generated table first (empty today) and falls back to
+    /// `LevelDefinition::extra`; a level without `extra.rail` lays nothing and never opens the
+    /// generated file, which is what keeps the other 1617 levels byte-identical.
+    void layRailCarts();
+    /// Advance the carts, crush what they run into, and let a parked cart stop the row.
+    void tickRail();
+    void derailCart(RailCartEntity& cart, const char* reason);
 
     // ---- T66 special spawners ---------------------------------------------
     /// Queue every spawner row the sheet keyed to `wave`. Called right after the director has
@@ -374,6 +515,12 @@ class World {
     /// Plant one card that came off the belt. No sun, no recharge - the belt is the economy - but
     /// the card has to be in the hand.
     std::string plantFromConveyor(const std::string& type, int row, int col);
+
+    // ---- vasebreaker (A1 / T80) -------------------------------------------
+    /// Lay the level's vases down. The sheet gives a count per content type and a column band, never
+    /// a cell, so the cells are drawn from that band by `vaseRng_` and a band too small for the count
+    /// spills onto the rest of the board rather than dropping vases.
+    void layVases();
 
     const Catalog& catalog_;
     LevelDefinition level_;
@@ -431,8 +578,12 @@ class World {
     int protectedPlants_ = 0;
     int protectFailures_ = 0;
     int unplacedProtectedPlants_ = 0;
-    /// T59: targets the mission asked for minus the ones the opening board could hold. Zero for
-    /// every mission whose board is big enough, which is 275 of the 286 protect levels.
+    /// C55: what the sheet asked for, and whether the board had to be clamped to what it holds.
+    int protectRequested_ = 0;
+    bool protectClamped_ = false;
+    /// T59: targets the mission asked for minus the ones the opening board could hold. Zero on
+    /// every shipped level after C55 (the stacks land), positive only when grid items block the
+    /// cells the sheet names.
     int protectCapacityShortfall_ = 0;
     /// T66: `extra.suppressFlagZombie` read once at construction (missing key = false).
     bool suppressFlagZombie_ = false;
@@ -462,11 +613,53 @@ class World {
     /// Waves a portal already redirected: one portal opens once, however many zombies walk
     /// through it in that wave's spread window.
     std::set<std::size_t> portalWavesServed_;
+
+    // --- T88 ---------------------------------------------------------------------------------
+    /// Tide changes and frost winds handed to `applyWaveEvents` so far, by wave.
+    std::vector<int> tideWaves_;
+    std::vector<int> frostWaves_;
+    int tideColumn_ = 0;
+    /// The last wave whose Events rows ran. `tickWaves` asks every tick, so the guard keeps a
+    /// single tide change and a single wind per wave instead of one per tick.
+    int eventsServedWave_ = 0;
+    /// Non-zero when the level's `maxSunOverride` caps the bank; every sun gain clamps to it.
+    int sunCap_ = 0;
+    /// The loaded board mask. Kept as data (see `boardGridMarked`).
+    std::vector<std::vector<int>> boardGridCells_;
+    int boardGridMarked_ = 0;
+    int boardGridIndex_ = -1;
+    /// The Events module of the wave that just landed.
+    void applyWaveEvents(int wave);
+
+    /// A1 (T80) vasebreaker. The table is process-wide; `vaseSpec_` is this level's row, null on
+    /// every level that does not carry `extra.vasebreaker` (or when the option is off).
+    const VaseTable* vaseTable_ = nullptr;
+    const VaseSpec* vaseSpec_ = nullptr;
+    bool vasebreaker_ = false;
+    std::vector<VaseEntity> vases_;
+    std::vector<VaseCard> vaseCards_;
+    VaseTally vaseTally_;
+    /// Vases the board could not hold. Zero for the shipped data - the widest level needs 30 cells
+    /// of a 45-cell board - but a table that asks for more must say so instead of dropping them.
+    int vasesUnplaced_ = 0;
+    /// Which cells the band hands to which vase must not consume the wave RNG, for the same reason
+    /// the belt has its own generator.
+    std::mt19937 vaseRng_;
     std::vector<PlantEntity> plants_;
-    std::vector<ZombieEntity> zombies_;
-    std::vector<ShotEntity> shots_;
+    std::vector<ZombieEntity> zombies_;    std::vector<ShotEntity> shots_;
     std::vector<SunEntity> suns_;
+    /// B1 (T90). `plantLevels_` is the clamped request (a plant the sheet does not know is capped
+    /// at 1, i.e. dropped to the default), `plantLevelsApplied_` is the same map without the 1s,
+    /// which is what the CLI prints. Both are filled at construction so no read has to re-clamp.
+    std::map<std::string, int> plantLevels_;
+    std::map<std::string, int> plantLevelsApplied_;
     std::vector<MowerEntity> mowers_;
+    /// S3/A2. `railDeclared_` is read from `extra.rail` at construction; the table pointer is only
+    /// resolved for a level that declares a track, so 1617 levels never touch the generated file.
+    bool railDeclared_ = false;
+    const RailTable* railTable_ = nullptr;
+    std::vector<RailCartEntity> carts_;
+    std::size_t railMoved_ = 0, railHits_ = 0;
     Director director_;
     Json events_ = Json::array();
 };

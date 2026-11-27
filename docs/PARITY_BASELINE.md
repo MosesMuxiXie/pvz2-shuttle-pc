@@ -25,17 +25,19 @@
 
 ```
 worlds=26
-plants=147
+plants=409
 zombies=55
 levels=1809
 original=1646
 synthesized=163
 unknown_source=0
-vasebreaker=45
-synthesized_vasebreaker=42
+vasebreaker=47
+synthesized_vasebreaker=44
 ```
 
-退出码 0。原始输出保存在 `build/audit_content.txt`。
+退出码 0。原始输出保存在 `build/audit_content.txt`。读数按 2026-11-26 复跑刷新：
+`plants=409` = 手工 147 + pack 派生 262（t83），`vasebreaker=47` 是 T53 派生后的口径
+（旧读数 147 / 45 / 42 已作废；复现 `PvZ2SHUTTLE.exe --audit-content content`）。
 
 ## 原版数据规模（`work/obb_packages/`）
 
@@ -252,9 +254,9 @@ synthesized_vasebreaker=42
 
 | run | tests |
 | --- | --- |
-| audit | 29 |
-| python | 680 |
-| desktop | 38 |
+| audit | 38 |
+| python | 925 |
+| desktop | 54 |
 <!-- /test-counts -->
 ## 恢复轮：护甲接线落地 + 构建环境 blocker（2026-11-23 08:10）
 
@@ -524,3 +526,26 @@ desktop **38**，三项 ledger 一致，`[ok] content, build, tests and parity a
 `native/`、`tools/`（含 `contentc/`、`tests/`、`package.ps1`、`rsbpatch.py`）、`docs/`（含 53 篇 review 与全部计划）、
 `content/levels/*.json` 全在其中。`.gitignore` 只忽略 `build/ dist/ *.exe *.zip assets/ *.obb`，
 所以 20.2 MB 就是可提交体量（最大单件 `level_mechanics.json` 4.60 MB）。**未执行 commit**：等所有者决定。
+
+
+## 名册 409 与可玩 304（2026-11-26）
+
+名册口径在本轮从 147 走到 409，中间报过 293 可玩 / 46 阻断（美术索引重建前）与 304 可玩 / 35 阻断（重建后）。
+**当前值只有一个来源：产物本身，不许手算。**
+
+| 读数 | 值 | 命令 |
+| --- | --- | --- |
+| `content/plants.json` | **409 行** = 手工 147 + pack 派生 262 | `python tools/obb_build_content_v2.py --content-report` → `plants=409 authored=147 pack=262 playable=304 blocked=35 conflicts=44 merged=409 packRoster=339` |
+| `native/generated/plant_playable.json` | 可玩 **304**（42 同名 + 262 新增）、阻断 **35**（缺成本 23 / 缺美术 15 / 两者 3） | `python tools/contentc/plant_playable.py --check` |
+| `native/generated/plant_blocked.json` | **35 条**，带中文 `reason`、`inRoster`、`inPackRoster` | `--check` 同一次运行比对（两文件一起校验） |
+| `native/generated/level_playability.json` | `levels=1809 playable=1340 dataOnly=454 minigame=16 both=1 inEngine=1225` | `python -c "import json;d=json.load(open('native/generated/level_playability.json',encoding='utf-8'));print(d['counts'])"` |
+| 美术索引 | **1135 base / ok 1134 / failed 0 / skipped 1** | `PvZ2SHUTTLE/assets/db/shuttle/index.json` 的 `counts` |
+| 内容植物命中美术 | **134 / 409，缺 275** | `PvZ2SHUTTLE.exe --art-audit content` 的 `contentPlants` |
+| 卡组注册表覆盖 | **134 / 409**（deck 实际引用 41 株） | `python tools/contentc/decks.py` → `registry=134/409` |
+| 测试例数 | 见文首 `<!-- test-counts -->` 块（audit 36 / Python 891 / desktop 38） | `ctest --test-dir build/native -N`、`python -m unittest discover -s tools/tests -p "test_*.py"` |
+
+| run | tests |
+| --- | --- |
+| audit | 38 |
+| python | 925 |
+| desktop | 54 |

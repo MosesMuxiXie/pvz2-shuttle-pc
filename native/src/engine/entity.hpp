@@ -1,6 +1,7 @@
 #pragma once
 #include "armor.hpp"            // ArmorLayerState: per-zombie armor layers in sheet order
 #include "projectile_table.hpp" // Trajectory carried by every shot
+#include "vase.hpp"             // VaseContent: what a vasebreaker vase holds
 #include <cstdint>
 #include <string>
 #include <vector>
@@ -53,6 +54,11 @@ struct PlantEntity {
     /// S5.13 `protectThePlant`: the level fails the moment this plant dies. Set on the plants a
     /// protect mission places, never on anything the player bought.
     bool protectedPlant = false;
+    /// C55: how many plants stand *under* this one on the same cell. 0 is the plant the level laid
+    /// first (a lilypad, a flowerpot, a plain peashooter); higher numbers were stacked on top by the
+    /// protect sheet, and are the ones a zombie eats first - see `World::plantAt` and
+    /// `World::protectStackAt`.
+    int stackDepth = 0;
 };
 
 /// S5.13 grid items: what a level puts on a cell that is not a plant - a gravestone, a puddle, a
@@ -64,6 +70,19 @@ struct GridItemEntity {
     std::string type;
     int row = 0, col = 0;
     double hp = 0, maxHp = 0;
+    bool alive = true;
+};
+
+/// A1 (T80) vasebreaker: one vase standing on a cell. Like a grid item it occupies the cell and is
+/// not a plant, but it is not a wall either - it holds something and is opened by a tap, not by
+/// damage. `payload` is the id the sheet named (zombie type, plant type, collectable type); it is
+/// empty only for a sun vase.
+struct VaseEntity {
+    EntityId id = 0;
+    int row = 0, col = 0;
+    VaseContent content = VaseContent::zombie;
+    std::string payload;
+    int amount = 0; // sun a sun vase pays; 0 for every other class
     bool alive = true;
 };
 
@@ -139,6 +158,26 @@ struct MowerEntity {
     int state = 0; // 0 ready, 1 moving, 2 spent
 };
 
+/// A2 (S3): one minecart. The cart is not a `PlantEntity` and not a `GridItemEntity`: it carries a
+/// plant instead of being eaten like one, and it moves, which a grid item never does. `col` is the
+/// integer cell it stands on; `x` is the continuous left edge (one column per unit) so the view and
+/// the hash can see a cart between cells.
+struct RailCartEntity {
+    EntityId id = 0;
+    int row = 0;
+    int col = 0;
+    double x = 0.0;
+    double hp = 0, maxHp = 0;
+    bool alive = true;
+    /// Parked at the end of its row, or broken. A derailed cart stops moving and blocks the row.
+    bool derailed = false;
+    /// The plant riding on the cart, or 0. It follows every column the cart enters.
+    EntityId plant = 0;
+    /// Zombies this cart already crushed while standing in its current column. Cleared on every
+    /// column change, so a cart crushes each zombie once per cell instead of once per tick.
+    std::vector<EntityId> crushed;
+};
+
 /// Value copy handed to views and to the hash. Kept close to the legacy
 /// `Battle*` structures so S4 can migrate the view without reshaping data.
 struct PlantView {
@@ -148,6 +187,9 @@ struct PlantView {
     double hp, maxHp;
     std::uint64_t born;
     int busyTicks; // ticks until the first ready action, 0 when idle
+    /// C55: 0 for the plant at the bottom of a cell, 1+ for the ones the protect sheet stacked on
+    /// it. The renderer offsets by it so a stack of seven (`lostcity_45`) is seven visible plants.
+    int stackDepth = 0;
 };
 struct ZombieView {
     EntityId id;
@@ -173,6 +215,26 @@ struct MowerView {
     double x;
     int state;
 };
+/// A2 (S3): a cart as the view needs it. `x` is the left edge in columns; `col` is the cell.
+struct RailCartView {
+    EntityId id;
+    int row;
+    int col;
+    double x;
+    double hp, maxHp;
+    bool derailed;
+    EntityId plant;
+};
+
+/// A1 (T80): what the view needs to draw a vase. The content is deliberately not shown - the whole
+/// point of the mode is that the player cannot see inside - but the id is kept so a debug overlay
+/// can print it.
+struct VaseView {
+    EntityId id;
+    int row;
+    int col;
+    std::string content;
+};
 
 struct Snapshot {
     std::string level;
@@ -190,6 +252,10 @@ struct Snapshot {
     std::vector<ShotView> shots;
     std::vector<SunView> suns;
     std::vector<MowerView> mowers;
+    std::vector<RailCartView> carts;
+    /// A1: empty on every level that is not a vasebreaker level, which is why adding it cannot
+    /// change a normal battle frame.
+    std::vector<VaseView> vases;
 };
 
 } // namespace pvz::engine

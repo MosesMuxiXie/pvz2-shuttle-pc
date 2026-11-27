@@ -99,7 +99,10 @@ int main(int argc, char** argv) {
         options.snapshot = root / "menu-fresh.png";
         const pvz::Progress fresh;
         const pvz::MenuResult freshResult = pvz::runMainMenu(catalog, fresh, options);
-        check(freshResult.items == 3, "the menu must draw three items, got " +
+        // Nine rows since the meta screens and the shop landed: 继续游戏 / 世界地图 / 图鉴 / 花园 /
+        // 成就 / 每日挑战 / 设置 / 商店 / 退出. The count is asserted rather than derived from the
+        // view because a row silently disappearing is exactly the regression this catches.
+        check(freshResult.items == 9, "the menu must draw nine items, got " +
                                           std::to_string(freshResult.items));
         check(!freshResult.continued, "an empty save cannot continue a game");
         check(freshResult.selected == 1,

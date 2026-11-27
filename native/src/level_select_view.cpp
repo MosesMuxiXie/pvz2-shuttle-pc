@@ -1,10 +1,13 @@
 #include "level_select_view.hpp"
 
 #include "audio/audio_runtime.hpp"
+#include "engine/plantfood.hpp"  // engine::generatedDir(): where minigames/level_mechanics live
+#include "level_badges.hpp"
 #include "sdl_support.hpp"
 #include "text.hpp"
 
 #include <algorithm>
+#include <cctype>
 #include <cmath>
 #include <stdexcept>
 #include <string>
@@ -29,6 +32,9 @@ struct Palette {
     SDL_Color rowCleared = rgb(30, 46, 40);
     SDL_Color ink = rgb(238, 238, 226);
     SDL_Color muted = rgb(150, 164, 168);
+    // A7: the badge chips need a third tone between `muted` and the panel floor, otherwise the
+    // "·" separators are as loud as the chips they separate.
+    SDL_Color dim = rgb(92, 104, 110);
     SDL_Color accent = rgb(150, 216, 96);
     SDL_Color warn = rgb(226, 168, 96);
 };
@@ -46,6 +52,58 @@ void border(SDL_Renderer* renderer, const SDL_FRect& rect, SDL_Color color) {
 std::string starText(int stars) {
     if (stars <= 0) return "-";
     return std::string(static_cast<std::size_t>(stars), '*') + " " + std::to_string(stars);
+}
+
+// A chip is `label` or `label×N` (rail) and the truncation marker is `+N`. The trailing digits are
+// the count, not part of the label, so `铁轨×2` has to map back to the `铁轨` dictionary row before the
+// chip can be asked whether its mechanic is wired. `×` is two bytes wide in UTF-8, hence the
+// explicit tail comparison instead of a plain character test.
+std::string chipLabel(const std::string& chip) {
+    std::size_t end = chip.size();
+    while (end > 0 && std::isdigit(static_cast<unsigned char>(chip[end - 1]))) --end;
+    if (end == chip.size() || end == 0) return chip;
+    const std::string head = chip.substr(0, end);
+    if (head.size() >= 2 && head.compare(head.size() - 2, 2, "\xC3\x97") == 0)
+        return head.substr(0, head.size() - 2);
+    const char mark = head.back();
+    if (mark == 'x' || mark == '*' || mark == '+') return head.substr(0, head.size() - 1);
+    return chip;
+}
+
+bool chipWired(const std::string& chip) {
+    const std::string kind = badgeKindOfLabel(chipLabel(chip));
+    return !kind.empty() && badgeWired(kind);
+}
+
+// Draws the chips left to right, breaking on a chip boundary (a chip is never cut in half) and
+// colouring each chip by its own `wired` flag: a mechanic the simulation does not run yet gets the
+// muted colour plus a `（未接入）` suffix, so "the level has a vasebreaker board" and "you can play it
+// here" are two visibly different statements. Returns the y below the last line.
+float drawChips(TextRenderer& text, float x, float y, float right,
+                const std::vector<std::string>& chips, const Palette& palette) {
+    constexpr int kSize = 18;
+    const float dotWidth = text.width("·", kSize);
+    float cursor = x;
+    bool firstOnLine = true;
+    for (const std::string& chip : chips) {
+        const bool wired = chipWired(chip);
+        const std::string shown = wired ? chip : chip + "（未接入）";
+        const float width = text.width(shown, kSize);
+        const float advance = firstOnLine ? 0.0f : dotWidth + 8.0f;
+        if (!firstOnLine && cursor + advance + width > right) {
+            cursor = x;
+            y += 26;
+            firstOnLine = true;
+        }
+        if (!firstOnLine) {
+            text.draw(cursor, y, kSize, palette.dim, "·");
+            cursor += advance;
+        }
+        text.draw(cursor, y, kSize, wired ? palette.accent : palette.muted, shown);
+        cursor += width;
+        firstOnLine = false;
+    }
+    return y + 26;
 }
 
 // The list is built once, from the catalog and the save, so the picture and the JSON row set are
@@ -90,6 +148,11 @@ LevelSelectResult runLevelSelect(const Catalog& catalog, const Progress& progres
     for (const LevelSelectRow& row : result.rows) {
         if (row.cleared) ++result.cleared;
     }
+
+    // A7: the level's own gameplay, from the two generated tables. Loaded once — re-reading 4.8 MB
+    // of `level_mechanics.json` per frame would be absurd — and tolerant of a checkout whose content
+    // tools have not run yet: no tables means no badge line, never a crash.
+    const LevelBadges badges = loadBadges(engine::generatedDir());
 
     const bool headless = options.frames > 0;
     sdl::Display display(headless, "PvZ 2 SHUTTLE - Levels");
@@ -202,6 +265,15 @@ LevelSelectResult runLevelSelect(const Catalog& catalog, const Progress& progres
                 text.draw(rect.x + 90, rect.y + 6, 20, palette.ink, row.id);
                 const std::string stars = starText(row.stars);
                 text.draw(rect.x + 420, rect.y + 8, 18, palette.accent, stars);
+                // A7: how many chips the detail panel will spell out for this row. A marker rather
+                // than the chips themselves: a 32-pixel row cannot hold five Chinese labels.
+                if (badges.loaded) {
+                    const std::size_t count = badgesOf(badges, row.id).size();
+                    if (count > 0) {
+                        text.draw(rect.x + 540, rect.y + 8, 16, palette.muted,
+                                  "玩法 " + std::to_string(count));
+                    }
+                }
                 const std::string state = row.cleared ? "已通关" : "未通关";
                 text.draw(rect.x + kListW - 12 - text.width(state, 18), rect.y + 8, 18,
                           row.cleared ? palette.accent : palette.muted, state);
@@ -252,6 +324,21 @@ LevelSelectResult runLevelSelect(const Catalog& catalog, const Progress& progres
             text.draw(864, y, 20, row.cleared ? palette.accent : palette.muted,
                       row.cleared ? "已通关" : "未通关");
             y += 40;
+            // A7: what makes this level different from the one above it. `badges.loaded` false means
+            // the generated tables are missing, and then the panel says nothing at all instead of
+            // claiming the level has no mechanics.
+            if (badges.loaded) {
+                const std::vector<std::string> chips = badgesFor(badges, row.id);
+                text.draw(864, y, 18, palette.muted, "玩法");
+                y += 26;
+                if (chips.empty()) {
+                    text.draw(864, y, 18, palette.muted, "无特殊机制");
+                    y += 26;
+                } else {
+                    y = drawChips(text, 864, y, 864 + 352.0f, chips, palette);
+                }
+                y += 14;
+            }
             text.draw(864, y, 18, palette.ink, "回车开始这一关");
         } else {
             text.draw(864, 140, 20, palette.warn, "没有可选的关卡");
@@ -268,6 +355,15 @@ LevelSelectResult runLevelSelect(const Catalog& catalog, const Progress& progres
         } else {
             result.selectedLevel.clear();
         }
+        // The chips belong to whichever level the panel is describing, so they are recomputed with
+        // the selection and never go stale between a key press and the snapshot.
+        if (result.levels > 0) {
+            result.badges = badgesFor(badges, result.rows[static_cast<std::size_t>(selected)].id);
+            result.badgeLine = badgeLine(result.badges);
+        } else {
+            result.badges.clear();
+            result.badgeLine.clear();
+        }
 
         if (!options.snapshot.empty()) saveScreenSnapshot(renderer, options.snapshot);
         sdl::require(SDL_RenderPresent(renderer), "present level list");
@@ -277,6 +373,30 @@ LevelSelectResult runLevelSelect(const Catalog& catalog, const Progress& progres
     }
 
     return result;
+}
+
+Json levelSelectJson(const LevelSelectResult& result) {
+    Json out;
+    out["world"] = result.world;
+    out["levels"] = result.levels;
+    out["cleared"] = result.cleared;
+    out["selected"] = result.selectedLevel;
+    // B6b: every chip answers "is this mechanic wired?" so a UI (and a test) can tell 砸罐子 (the
+    // simulation runs it) from 三消 (the original data has it, this build does not). The chip order is
+    // `LevelSelectResult.badges`, which is already rank-sorted; this writer never reorders.
+    out["badges"] = Json::array();
+    for (const std::string& chip : result.badges) {
+        Json item = Json::object();
+        item["label"] = chip;
+        const std::string kind = badgeKindOfLabel(chipLabel(chip));
+        if (!kind.empty()) item["kind"] = kind;
+        item["wired"] = !kind.empty() && badgeWired(kind);
+        // `+N` is the "there are more" marker, not a mechanic: it has no label of its own and nothing
+        // to wire, so it is flagged instead of pretending to be a badge.
+        if (chipLabel(chip).empty() && !chip.empty()) item["marker"] = true;
+        out["badges"].push_back(std::move(item));
+    }
+    return out;
 }
 
 }  // namespace pvz

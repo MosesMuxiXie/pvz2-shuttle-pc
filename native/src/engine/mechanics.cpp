@@ -353,6 +353,150 @@ void readGravestones(const Json& parent, std::vector<GravestoneWave>& out, int& 
     }
 }
 
+/// T88: the Events module. Two kinds carry a meaning the kernel can honour - a tide change names
+/// a destination column at a wave (`ChangeType: absolute` in every shipped row) and a frost wind
+/// names a wave plus the rows it blows over (`Row: -1` = every row). Anything the sheet left
+/// without a wave is counted instead of being run at a guessed wave.
+void readEvents(const Json& level, EventsSpec& out, std::vector<UnknownMechanic>& unknown) {
+    const auto push = [&unknown](std::string kind, int count) {
+        if (count <= 0) return;
+        for (auto& entry : unknown) {
+            if (entry.kind != kind) continue;
+            entry.count += count;
+            return;
+        }
+        unknown.push_back(UnknownMechanic{std::move(kind), count});
+    };
+    const auto found = level.find("events");
+    if (found == level.end() || !found->is_object()) return;
+
+    if (const auto tide = found->find("tide"); tide != found->end() && tide->is_array()) {
+        for (const Json& row : *tide) {
+            if (!row.is_object()) continue;
+            const int wave = intOr(row, "wave", 0);
+            const int amount = intOr(row, "changeAmount", 0);
+            const std::string type = stringOr(row, "changeType");
+            if (wave <= 0) {
+                push("events.tide.unscheduled", 1);
+                continue;
+            }
+            // Only an absolute change names a column. A relative one would have to know the
+            // waterline it starts from, which no shipped row states, so it is counted.
+            if (type != "absolute") {
+                push("events.tide.relative", 1);
+                continue;
+            }
+            out.tide.push_back(TideChange{wave, amount, type});
+        }
+        std::sort(out.tide.begin(), out.tide.end(),
+                  [](const TideChange& a, const TideChange& b) {
+                      if (a.wave != b.wave) return a.wave < b.wave;
+                      return a.column < b.column;
+                  });
+    }
+
+    if (const auto frost = found->find("frost"); frost != found->end() && frost->is_array()) {
+        for (const Json& row : *frost) {
+            if (!row.is_object()) continue;
+            const int wave = intOr(row, "wave", 0);
+            FrostWind wind;
+            wind.wave = wave;
+            if (const auto winds = row.find("winds"); winds != row.end() && winds->is_array()) {
+                for (const Json& entry : *winds) {
+                    if (!entry.is_object()) continue;
+                    const int windRow = intOr(entry, "row", -1);
+                    if (windRow < -1) continue;
+                    const std::string direction = stringOr(entry, "direction");
+                    if (wind.direction.empty()) wind.direction = direction;
+                    if (std::find(wind.rows.begin(), wind.rows.end(), windRow) == wind.rows.end()) {
+                        wind.rows.push_back(windRow);
+                    }
+                }
+            }
+            if (wave <= 0) {
+                push("events.frost.unscheduled", 1);
+                continue;
+            }
+            if (wind.rows.empty()) {
+                push("events.frost.empty", 1);
+                continue;
+            }
+            std::sort(wind.rows.begin(), wind.rows.end());
+            out.frost.push_back(std::move(wind));
+        }
+        std::sort(out.frost.begin(), out.frost.end(),
+                  [](const FrostWind& a, const FrostWind& b) { return a.wave < b.wave; });
+    }
+}
+
+/// T88: `BoardGridMapProps.Values`, carried as data. A mask whose shape is not the sheet's 5x9
+/// would be a different board than the level's own rows/cols, so it is counted rather than
+/// applied.
+void readBoardGrid(const Json& level, BoardGridSpec& out, std::vector<UnknownMechanic>& unknown) {
+    const auto found = level.find("boardGrid");
+    if (found == level.end() || !found->is_object()) return;
+    BoardGridSpec spec;
+    spec.alias = stringOr(*found, "alias");
+    spec.width = intOr(*found, "width", 0);
+    spec.height = intOr(*found, "height", 0);
+    const auto rows = found->find("rows");
+    if (rows == found->end() || !rows->is_array()) {
+        unknown.push_back({"boardGrid.malformed", 1});
+        return;
+    }
+    for (const Json& row : *rows) {
+        if (!row.is_array()) {
+            unknown.push_back({"boardGrid.malformed", 1});
+            return;
+        }
+        std::vector<int> cells;
+        cells.reserve(row.size());
+        for (const Json& cell : row) {
+            cells.push_back(cell.is_number_integer() ? cell.get<int>() : 0);
+        }
+        spec.cells.push_back(std::move(cells));
+    }
+    const int height = static_cast<int>(spec.cells.size());
+    const int width = spec.cells.empty() ? 0 : static_cast<int>(spec.cells.front().size());
+    if (height <= 0 || width <= 0 || (spec.height > 0 && spec.height != height) ||
+        (spec.width > 0 && spec.width != width)) {
+        unknown.push_back({"boardGrid.malformed", 1});
+        return;
+    }
+    spec.height = height;
+    spec.width = width;
+    out = std::move(spec);
+}
+
+/// T88: the mutators. `LevelMutatorMaxSunProps.maxSunOverride` states a rule - the sun bank may
+/// not hold more than N - and is applied. `LevelMutatorModuleProperties` / `...TableProps` rows
+/// are mission wrappers (`LevelTimer`, `KillZombies1`, `PlantsLost2`...) with no modifier in
+/// them, so they are counted as unknown instead of being read as a multiplier the sheet never
+/// gave. There is no speed/health/damage/sun-production multiplier anywhere in the 21 levels.
+void readMutators(const Json& level, MutatorSpec& out, std::vector<UnknownMechanic>& unknown) {
+    const auto found = level.find("mutators");
+    if (found == level.end() || !found->is_array()) return;
+    int wrappers = 0;
+    for (const Json& row : *found) {
+        if (!row.is_object()) continue;
+        if (const auto cap = row.find("maxSunOverride"); cap != row.end() && cap->is_number_integer()) {
+            const int value = cap->get<int>();
+            if (value > 0) out.maxSun = std::max(out.maxSun, value);
+            continue;
+        }
+        ++wrappers;
+    }
+    out.challengeRows = wrappers;
+    if (wrappers > 0) {
+        for (auto& entry : unknown) {
+            if (entry.kind != "mutators") continue;
+            entry.count += wrappers;
+            return;
+        }
+        unknown.push_back({"mutators", wrappers});
+    }
+}
+
 /// Present-but-unimplemented modules. `spawners.jittered` is the ordinary wave source and is
 /// covered, `spawners.gravestone` has its own reader, and the seven spawner kinds T66 wires are
 /// read by `readSpawners` - only the kinds that are left (`spawners.spider`, and anything the
@@ -369,15 +513,10 @@ void readUnknowns(const Json& level, std::vector<UnknownMechanic>& out) {
         }
         out.push_back(UnknownMechanic{std::move(kind), count});
     };
-    if (const auto found = level.find("events"); found != level.end() && found->is_object()) {
-        push("events", 1);
-    }
-    if (const auto found = level.find("mutators"); found != level.end() && found->is_array()) {
-        push("mutators", static_cast<int>(found->size()));
-    }
-    if (const auto found = level.find("boardGrid"); found != level.end() && found->is_object()) {
-        push("boardGrid", 1);
-    }
+    // T88: `events`, `mutators` and `boardGrid` are no longer counted here - `readEvents`,
+    // `readMutators` and `readBoardGrid` run them, and each counts only the part of its module
+    // that the sheet left without semantics (an untimed row, a challenge wrapper, a malformed
+    // mask). What is left in this function is the spawner kinds the kernel cannot place.
     if (const auto spawners = level.find("spawners"); spawners != level.end() && spawners->is_object()) {
         for (auto it = spawners->begin(); it != spawners->end(); ++it) {
             const std::string kind = it.key();
@@ -418,6 +557,9 @@ LevelMechanics parseLevel(const std::string& id, const Json& level) {
     readProtect(level, mechanics.protect);
     readGravestones(level, mechanics.gravestones, unpositionedGravestones);
     readSpawners(level, mechanics.spawners, mechanics.unknownMechanics);
+    readEvents(level, mechanics.events, mechanics.unknownMechanics);
+    readBoardGrid(level, mechanics.boardGrid, mechanics.unknownMechanics);
+    readMutators(level, mechanics.mutators, mechanics.unknownMechanics);
     if (unpositionedGravestones > 0) {
         mechanics.unknownMechanics.push_back({"spawners.gravestone.unpositioned", unpositionedGravestones});
     }
@@ -431,8 +573,17 @@ LevelMechanics parseLevel(const std::string& id, const Json& level) {
 
 // Resolved outside the anonymous namespace: the helpers above are file-local, this is part of the
 // type the rest of the engine sees.
-int ProtectSpec::requiredSurvivors() const {
-    if (plants.empty()) return 0;
+int BoardGridSpec::marked() const {
+    int count = 0;
+    for (const std::vector<int>& row : cells) {
+        for (const int code : row) {
+            if (code != 0) ++count;
+        }
+    }
+    return count;
+}
+
+int ProtectSpec::requiredSurvivors() const {    if (plants.empty()) return 0;
     // A mission that does not fail on a protected death keeps the plants as set dressing
     // (`failWhenProtectedPlantDies` is the sheet's own switch, and all 286 missions set it).
     if (!failWhenProtectedPlantDies) return 0;
@@ -460,7 +611,14 @@ MechanicTier mechanicTierFor(const std::string& kind) {
                                      "spawners.ground",
                                      "spawners.dino",
                                      "spawners.beach",
-                                     "spawners.fish"};
+                                     "spawners.fish",
+                                     // T88: the Events module's two documented kinds, the board
+                                     // mask (carried as data) and the one mutator that states a
+                                     // rule. Everything else in those modules stays unknown.
+                                     "events.tide",
+                                     "events.frost",
+                                     "boardGrid",
+                                     "mutators.maxSun"};
     for (const char* name : kCovered) {
         if (kind == name) return MechanicTier::covered;
     }
@@ -539,6 +697,9 @@ LevelMechanicsTable LevelMechanicsTable::load(const std::filesystem::path& path)
         if (!mechanics.initialGridItems.empty()) ++table.withInitialGridItems_;
         if (mechanics.hasProtect()) ++table.withProtect_;
         if (mechanics.hasGravestones()) ++table.withGravestones_;
+        if (mechanics.hasEvents()) ++table.withEvents_;
+        if (mechanics.hasBoardGrid()) ++table.withBoardGrid_;
+        if (mechanics.hasSunCap()) ++table.withSunCap_;
         for (const SpawnerSpec& spec : mechanics.spawners) {
             if (!spec.empty()) ++table.spawnerLevels_[spec.kind];
         }

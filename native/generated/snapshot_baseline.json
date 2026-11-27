@@ -1,0 +1,80 @@
+{
+ "exe": "build/desktop-gate/Release/PvZ2SHUTTLE.exe",
+ "format": "pvz2-shuttle/snapshot-baseline@1",
+ "generated": "snapshot-baseline@1",
+ "scenes": {
+  "achievements": {
+   "bytes": 55564,
+   "command": "build/desktop-gate/Release/PvZ2SHUTTLE.exe --achievements content --assets ../../PvZ2SHUTTLE/assets --frames 3 --snapshot build/snapshots/achievements.png",
+   "height": 720,
+   "note": "成就页第 0 页；metagame.json 缺失时用 shipped 模型",
+   "sha256": "93ceea1e1770b6d06952804f0617c5189196f0006d23c5fc964540fa05ffe3c6",
+   "width": 1280
+  },
+  "almanac": {
+   "bytes": 106400,
+   "command": "build/desktop-gate/Release/PvZ2SHUTTLE.exe --almanac content --assets ../../PvZ2SHUTTLE/assets --frames 3 --snapshot build/snapshots/almanac.png",
+   "height": 720,
+   "note": "图鉴植物页首屏",
+   "sha256": "8dca6c55a275634fb5e978c78d52d71889745a42ec45f1b9af41ae591c16006d",
+   "width": 1280
+  },
+  "battle-snapshot": {
+   "bytes": 1585046,
+   "command": "build/desktop-gate/Release/PvZ2SHUTTLE.exe --battle-snapshot content ../../PvZ2SHUTTLE/assets build/snapshots/battle-snapshot.png",
+   "height": 720,
+   "note": "战斗首帧（--battle-snapshot 的第三参数是资源根，不是关卡 id）（实时推进：跨进程不稳定，不参与 --check 门禁，见 UNSTABLE）",
+   "sha256": "3fbf8848dadd94e9f40ef7992dd3dea9829e40020bbb33aa603795f9dfbfd4ec",
+   "stable": false,
+   "width": 1280
+  },
+  "daily": {
+   "bytes": 102449,
+   "command": "build/desktop-gate/Release/PvZ2SHUTTLE.exe --daily content --assets ../../PvZ2SHUTTLE/assets --frames 3 --snapshot build/snapshots/daily.png",
+   "height": 720,
+   "note": "每日挑战页第 0 页",
+   "sha256": "a828e23ee5182ccb6a105a2ab27d21beae53b0254833a50d4b8060e66be8b2af",
+   "width": 1280
+  },
+  "garden": {
+   "bytes": 112022,
+   "command": "build/desktop-gate/Release/PvZ2SHUTTLE.exe --garden content --assets ../../PvZ2SHUTTLE/assets --frames 3 --snapshot build/snapshots/garden.png",
+   "height": 720,
+   "note": "花园场景；植物列表来自存档",
+   "sha256": "8704170f9d1e7e424a58af1e79620e44beb0d5327b37c178348796717c00cebd",
+   "width": 1280
+  },
+  "level-select": {
+   "bytes": 93815,
+   "command": "build/desktop-gate/Release/PvZ2SHUTTLE.exe --level-select content --world egypt --assets ../../PvZ2SHUTTLE/assets --frames 3 --snapshot build/snapshots/level-select.png",
+   "height": 720,
+   "note": "埃及关卡列表；关卡徽章与已通关标记影响像素",
+   "sha256": "4ea63fc0f3f64b786ed4423c23f81f48acb62dfb16410022b084adf13e29d4e8",
+   "width": 1280
+  },
+  "menu": {
+   "bytes": 43630,
+   "command": "build/desktop-gate/Release/PvZ2SHUTTLE.exe --menu content --assets ../../PvZ2SHUTTLE/assets --frames 3 --snapshot build/snapshots/menu.png",
+   "height": 720,
+   "note": "S4 主菜单一帧；菜单项从 3 项增到 8 项后 rect 位置整体变化",
+   "sha256": "8bc2a933988a9e6030a910037a4b4945db9af94941ecb374aac90b7c2a261d5a",
+   "width": 1280
+  },
+  "settings": {
+   "bytes": 40015,
+   "command": "build/desktop-gate/Release/PvZ2SHUTTLE.exe --settings content --assets ../../PvZ2SHUTTLE/assets --frames 3 --snapshot build/snapshots/settings.png",
+   "height": 720,
+   "note": "设置页；音量滑块的默认值来自存档，空存档走默认",
+   "sha256": "c3b3b0718621a5c752eeefc8346db1804ca73d04ba50ac4e0c8bbf8c00c47873",
+   "width": 1280
+  },
+  "worldmap-screen": {
+   "bytes": 120465,
+   "command": "build/desktop-gate/Release/PvZ2SHUTTLE.exe --worldmap-screen content --assets ../../PvZ2SHUTTLE/assets --frames 3 --snapshot build/snapshots/worldmap-screen.png",
+   "height": 720,
+   "note": "世界地图：选中世界与星数来自存档，默认空存档",
+   "sha256": "dfc07d8da44cbdea06a572eea31f9746d8f1203410530777aefcdd83160861c4",
+   "width": 1280
+  }
+ }
+}

@@ -1,11 +1,13 @@
 #include "worldmap_view.hpp"
 
 #include "audio/audio_runtime.hpp"
+#include "engine/plantfood.hpp"  // engine::generatedDir(): where metagame.json lives
 #include "progress.hpp"
 #include "sdl_support.hpp"
 #include "text.hpp"
 
 #include <algorithm>
+#include <fstream>
 #include <string>
 #include <vector>
 
@@ -125,6 +127,48 @@ void saveSnapshot(SDL_Renderer* renderer, const std::filesystem::path& path) {
 
 }  // namespace
 
+MetagameCounts loadMetagameCounts(const std::filesystem::path& generatedDir) {
+    MetagameCounts counts;
+    if (generatedDir.empty()) {
+        counts.note = "generated directory not found (set PVZ_GENERATED_DIR or run from the repository root)";
+        return counts;
+    }
+    const auto file = generatedDir / "metagame.json";
+    std::ifstream in(file);
+    if (!in) {
+        counts.note = pathUtf8(file) + ": cannot open";
+        return counts;
+    }
+    Json doc;
+    try {
+        in >> doc;
+    } catch (const std::exception& error) {
+        counts.note = pathUtf8(file) + ": " + error.what();
+        return counts;
+    }
+    if (!doc.is_object()) {
+        counts.note = pathUtf8(file) + ": top level is not an object";
+        return counts;
+    }
+    // Each number is read through `find`, so a table that lost one block still contributes the
+    // other: the line then says what is known instead of disappearing as a whole.
+    const auto numberAt = [](const Json& root, const char* block, const char* key) -> int {
+        const auto outer = root.find(block);
+        if (outer == root.end() || !outer->is_object()) return 0;
+        const auto inner = outer->find("counts");
+        if (inner == outer->end() || !inner->is_object()) return 0;
+        const auto value = inner->find(key);
+        if (value == inner->end() || !value->is_number()) return 0;
+        return static_cast<int>(value->get<double>());
+    };
+    counts.plants = numberAt(doc, "almanac", "plants");
+    counts.zombies = numberAt(doc, "almanac", "zombies");
+    counts.drops = numberAt(doc, "garden", "collectables");
+    counts.loaded = counts.plants > 0 || counts.zombies > 0 || counts.drops > 0;
+    if (!counts.loaded) counts.note = pathUtf8(file) + ": no almanac or garden counts";
+    return counts;
+}
+
 WorldMapScreenResult runWorldMapScreen(const Catalog& catalog, const map::WorldMap& map,
                                        const WorldMapScreenOptions& options) {
     const auto fontFile = options.assetRoot / "ui/font_zh.ttc";
@@ -148,6 +192,9 @@ WorldMapScreenResult runWorldMapScreen(const Catalog& catalog, const map::WorldM
     result.worlds = static_cast<int>(map.worlds().size());
     result.stars = progress.totalStars();
     result.keys = progress.keys;
+    // A7: how much there is to look at beyond the levels. Read once; a checkout without the table
+    // keeps the line off the screen instead of failing.
+    result.metagame = loadMetagameCounts(engine::generatedDir());
 
     // One status per world, computed once: the screen must show exactly what the model says, and
     // recomputing it per frame would let the two drift.
@@ -161,6 +208,9 @@ WorldMapScreenResult runWorldMapScreen(const Catalog& catalog, const map::WorldM
         if (status.state == WorldState::available) ++result.unlocked;
         if (status.state == WorldState::completed) ++result.completed;
     }
+    // `completed` already means "every level of this world is cleared"; the JSON calls that number
+    // `clearedWorlds`, so it gets its own field instead of relying on the reader knowing that.
+    result.clearedWorlds = result.completed;
 
     // Two columns of thirteen keeps all 26 worlds on one screen without scrolling; the original
     // map scrolls, but a scrollbar would hide worlds behind an interaction the screen cannot test.
@@ -263,8 +313,11 @@ WorldMapScreenResult runWorldMapScreen(const Catalog& catalog, const map::WorldM
                 text.draw(row.x + row.w - 12 - text.width(requirement, 18), row.y + 9, 18, palette.warn,
                           requirement);
             } else if (status.state == WorldState::completed) {
-                text.draw(row.x + row.w - 12 - text.width("已通关", 18), row.y + 9, 18, palette.accent,
-                          "已通关");
+                // A7: a check mark on the world itself, so a finished world reads at a glance and
+                // not only in the right-hand panel.
+                const std::string done = "✓ 已通关";
+                text.draw(row.x + row.w - 12 - text.width(done, 18), row.y + 9, 18, palette.accent,
+                          done);
             }
         }
 
@@ -317,6 +370,14 @@ WorldMapScreenResult runWorldMapScreen(const Catalog& catalog, const map::WorldM
         // The hint lives outside the panel: inside, it was wider than the panel and got clipped.
         text.draw(40, 676, 18, palette.muted,
                   "↑↓ 选择 · ←→ 翻列 · 回车进入 · Esc 退出");
+        // A7: the way in to the two catalogue screens, stated as sizes so it also says how much is
+        // behind the door. Right-aligned because the hint on the left already owns the row.
+        if (result.metagame.loaded) {
+            const std::string entry = "图鉴 " + std::to_string(result.metagame.plants) + "+" +
+                                      std::to_string(result.metagame.zombies) + " · 花园 " +
+                                      std::to_string(result.metagame.drops);
+            text.draw(kWidth - 40 - text.width(entry, 18), 676, 18, palette.accent, entry);
+        }
 
         if (!options.snapshot.empty()) saveSnapshot(renderer, options.snapshot);
         sdl::require(SDL_RenderPresent(renderer), "present world map");
@@ -330,6 +391,22 @@ WorldMapScreenResult runWorldMapScreen(const Catalog& catalog, const map::WorldM
     result.enteredWorld = enteredWorld;
     result.enteredLevel = enteredLevel;
     return result;
+}
+
+Json worldMapScreenJson(const WorldMapScreenResult& result) {
+    Json out;
+    out["worlds"] = result.worlds;
+    out["unlocked"] = result.unlocked;
+    out["completed"] = result.completed;
+    out["stars"] = result.stars;
+    out["keys"] = result.keys;
+    out["selected"] = result.selectedWorld;
+    out["entered"] = result.enteredWorld;
+    out["level"] = result.enteredLevel;
+    out["clearedWorlds"] = result.clearedWorlds;
+    out["almanac"] = Json{{"plants", result.metagame.plants}, {"zombies", result.metagame.zombies}};
+    out["garden"] = Json{{"drops", result.metagame.drops}};
+    return out;
 }
 
 }  // namespace pvz

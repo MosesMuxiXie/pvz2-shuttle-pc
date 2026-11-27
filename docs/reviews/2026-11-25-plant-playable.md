@@ -4,10 +4,10 @@
 
 ## 结论摘要
 
-1. 原版 `PlantType` 名册 339 条，按四条判据逐条判定后 **293 条可玩、46 条被阻断**。
-2. 293 条可玩里，42 条已经手工写进 `content/plants.json`（同名，不是新增），**251 条是真正的新增候选**。
-3. 阻断原因：缺成本 **23** 条（cost 为 null 2 条、为 0 21 条）、缺族 **0** 条、缺美术 **26** 条；其中 3 条同时缺成本与美术。
-4. 所以**答案不是 339**：44 条同名已在名册（不产生新增），46 条被数据阻断（23 + 26 − 3）。本评估只读，`content/**` 一行未改。
+1. 原版 `PlantType` 名册 339 条，按四条判据逐条判定后 **304 条可玩、35 条被阻断**。
+2. 304 条可玩里，42 条已经手工写进 `content/plants.json`（同名，不是新增），**262 条是真正的新增候选**。
+3. 阻断原因：缺成本 **23** 条（cost 为 null 2 条、为 0 21 条）、缺族 **0** 条、缺美术 **15** 条；其中 3 条同时缺成本与美术。
+4. 所以**答案不是 339**：44 条同名已在名册（不产生新增），46 条被数据阻断（23 + 15 − 3）。本评估只读，`content/**` 一行未改。
 
 ## 一、判据与数据源
 
@@ -15,22 +15,22 @@
 | --- | --- | --- | --- |
 | `hasCost` | `cost` 存在且 > 0（原版把 `SunCost` 编进 `cost`，`properties` 里没有 `SunCost` 键） | `native/generated/content.pack` | 316/339 |
 | `hasFamily` | `family` 非空；包内 `plants[].families` 只作交叉证据（多数为空） | `native/generated/plant_families.json` | 339/339 |
-| `hasArt` | base 去 `shuttle_` 前缀后与 framework/art/popAnim/animRig 归一比较，或 content 已有 art | `PvZ2SHUTTLE/assets/db/shuttle/index.json`（1085 base） | 313/339 |
+| `hasArt` | base 去 `shuttle_` 前缀后与 framework/art/popAnim/animRig 归一比较，或 content 已有 art | `PvZ2SHUTTLE/assets/db/shuttle/index.json`（1085 base） | 324/339 |
 | `hasPackRow` / `sameAsAuthored` | 339 条都来自 `content.pack`（`hasPackRow` 恒真）；44 条与手工名册同名 | `content.pack` + `content/plants.json` | 339/44 |
 
-美术命中来源：content `44`、framework `269`、动画名 `0`、roster.art `0`。
+美术命中来源：content `44`、framework `280`、动画名 `0`、roster.art `0`。
 
 ## 二、结果分布
 
 | 分类 | 条数 | 说明 |
 | --- | --- | --- |
 | roster 总数 | 339 | 295 条 pack 行 + 44 条 skipped_existing |
-| 可玩 | 293 | 三条判据全过 |
+| 可玩 | 304 | 三条判据全过 |
 | 其中已在手工名册 | 42 | 同名行，不产生新增 |
-| 其中新增候选 | 251 | 可并进 `content/plants.json` 的那批 |
-| 被阻断 | 46 | 至少一条判据没过 |
+| 其中新增候选 | 262 | 可并进 `content/plants.json` 的那批 |
+| 被阻断 | 35 | 至少一条判据没过 |
 | 仅缺成本 | 20 | cost 为 null 或 0 |
-| 仅缺美术 | 23 | art index 与 content 都没有 |
+| 仅缺美术 | 12 | art index 与 content 都没有 |
 | 成本+美术都缺 | 3 | 两条判据同时不过 |
 
 ## 三、按 blocker 分组清单
@@ -63,34 +63,23 @@
 | sushi | 0 | PlantPuffshroom |
 | tileturnip | 0 | PlantPowerPlant |
 
-### 3.2 缺美术（26）
+### 3.2 缺美术（15）
 
 | id | framework |
 | --- | --- |
-| apsarlotus | PlantApsarlotus |
-| aquaweed | PlantAquaWeed |
 | bitpeashooter | PlantMiniPeashooter |
 | blastspinnercocoon | BlastSpinnerCocoon |
-| bubblecoral | PlantBubbleCoral |
-| cornucopia | PlantCornucopia |
 | dandelion | PlantAcidLemon |
-| doombell | PlantDoombell |
 | escaperoot | PlantCNIceShroom |
 | explodeovine | PlantCNFireShroom |
 | fusiongatling | PlantFusionGatling |
 | headbutterlettuce | PlantHeadbutterLettuce |
 | imppear_teto | PlantImpPearTeto |
-| kelpguard | PlantKelpGuard |
-| levitater | PlantLevitater |
 | littleguy | PlantLittleGuy |
 | littlerepeater | PlantLittleRepeater |
 | minishroom | PlantMiniShroom |
 | noctarinecloud | PlantNoctarineCloud |
-| oxygenalgae | PlantOxygenAlgae |
-| phatbeet | PlantRepeater |
 | rabbagepult | PlantRaCabbagepult |
-| repeater1 | PlantRepeater |
-| seaderris | PlantSeaderris |
 | slingpea | PlantArmamintPeashooter |
 | sweetpotato | PlantCabbagepultCanSink |
 
@@ -106,8 +95,8 @@
 
 - **44 条同名**：`begonia`、`birdofparadise`、`bloomerang` … 已经在手工名册里，把它们再算一遍只会得到重复 id，不是新增内容。同名行里 42 条判据全过，剩下 2 条本身缺成本（`iceburg`、`potatochip`，cost 为 0）。
 - **23 条缺成本**：原版 `cost` 为 null（2 条，如 `blastspinnercocoon`、`imitater`）或 0（21 条，如 `marigold`、`puffshroom`、`gravebuster`）——这些是未启用/活动/测试行，没有阳光价格就没有可玩性。
-- **26 条缺美术**：`PvZ2SHUTTLE` 的 1085 个 shuttle base 里找不到对应framework（如 `apsarlotus`、`cornucopia`、`bubblecoral`），content 也没有 art，没有骨架/贴图就画不出来。
-- 算术：339 − 44（同名不新增）= 295 条候选；候选里 251 条判据全过、44 条被阻断（23 + 26 − 3 − 2 条同名阻断）；再算上同名里 42 条可玩，可玩总量 = 42 + 251 = 293。
+- **15 条缺美术**：`PvZ2SHUTTLE` 的 1085 个 shuttle base 里找不到对应framework（如 `apsarlotus`、`cornucopia`、`bubblecoral`），content 也没有 art，没有骨架/贴图就画不出来。
+- 算术：339 − 44（同名不新增）= 295 条候选；候选里 262 条判据全过、33 条被阻断（23 + 15 − 3 − 2 条同名阻断）；再算上同名里 42 条可玩，可玩总量 = 42 + 262 = 304。
 
 ## 五、若要把新增候选并进 `content/plants.json`，需要动哪些模块
 

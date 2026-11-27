@@ -98,17 +98,18 @@
 ### 1.1 阶段状态（2026-11-25 实测）
 
 > 活的剩余清单在 [`docs/PROGRESS.md`](../../PROGRESS.md)：按 P0/P1/P2 分了 21 条，带量化与门禁红线。
-> 本节只保留阶段级结论。当前读数：audit **27** / Python **469** / desktop **36**，静树严格模式 EXIT=0。
+> 本节只保留阶段级结论。当前读数（2026-11-26 实测）：ctest audit **36** / Python **891** / desktop **38**，
+> 台账块见 `docs/PARITY_BASELINE.md` 的 `<!-- test-counts -->`。
 
 | 阶段 | 状态 | 已落地 | 未做 / 缺口 | 证据 |
 | --- | --- | --- | --- | --- |
-| **S0 基线固化** | ✅ 完成 | `docs/PARITY_BASELINE.md`、`tools/parity_report.py`、`docs/PARITY_MATRIX.md`、`tools/check_all.ps1`（树动 → exit 2、构建重试带 `-Clean`、`-UpdateLedger`、`__pycache__` 不进树指纹） | — | 门禁静树 EXIT=0：audit 27/27、Python 469、desktop 36/36，台账三项一致 |
-| **S1 内容编译** | ✅ 完成 | 12 张主表 → `content.pack`（339 植物 / 1127 僵尸）、`coverage.json`、`id_mapping.csv`。**数据包已对齐最新版 460.9**（460.1→460.2→460.9 走官方 `.rsbpatch`，MD5 与 manifest 逐字相同；`tools/rsbpatch.py` + oracle `tools/emulate_rsb.py`） | 295 植物 / 1107 僵尸在客户端侧没有 id（`id_mapping.csv` 已逐条列出）；460.9 新增的 `RlConfig` / `ThymedEventSchedule` 只有数据无消费者（C57 部分） | `Catalog::rules` 优先读 pack，坏包显式抛错；§2.32–§2.33 |
+| **S0 基线固化** | ✅ 完成 | `docs/PARITY_BASELINE.md`、`tools/parity_report.py`、`docs/PARITY_MATRIX.md`、`tools/check_all.ps1`（树动 → exit 2、构建重试带 `-Clean`、`-UpdateLedger`、`__pycache__` 不进树指纹） | — | 台账三项（`audit 36` / `Python 891` / `desktop 38`）与实测一致；最近一次全绿读数是 2026-11-25 的 EXIT=0 |
+| **S1 内容编译** | ✅ 完成 | 12 张主表 → `content.pack`（339 植物 / 1127 僵尸）、`coverage.json`、`id_mapping.csv`。**数据包已对齐最新版 460.9**（460.1→460.2→460.9 走官方 `.rsbpatch`，MD5 与 manifest 逐字相同；`tools/rsbpatch.py` + oracle `tools/emulate_rsb.py`） | 33 株 pack-only 植物（`plant_blocked.json`）、1107 僵尸行在客户端侧没有 id（`id_mapping.csv` 已逐条列出）；植物名册现为 409 行 = 手工 147 + pack 派生 262；460.9 新增的 `RlConfig` / `ThymedEventSchedule` 只有数据无消费者（C57 部分） | `Catalog::rules` 优先读 pack，坏包显式抛错；§2.32–§2.33 |
 | **S2 引擎内核** | ✅ 完成 | `native/src/engine/*`（world/director/registry/action_runner/projectile/replay/rewards）、32 场景冒烟 | — | `engine_smoke.json` 32 场景双跑零差异 |
 | **S3 战斗覆盖** | ✅ 完成 | 11 植物族（339/339）、183 僵尸族、护甲 102（接线 91）、弹道 602（接线 593）、养料 293、融合 85、Boss 50/155 阶段、元素 `authored` 默认关；**关卡机制五类接线**（传送带 348/350、初始植物 272、初始物件 583/690、墓碑 353、保护 286） | `spawnOffset.y` 只有数据、渲染不用；rail 192 关标记齐但引擎不消费（矩阵「铁轨」wired=0） | §2.13–§2.19、§2.25、§2.30；`mechanics_test` 8 段；矩阵「关卡机制」wired=903 |
 | **S4 元游戏与界面** | ✅ 闭环 | 启动器、战斗视图、`--play-script`、`--worldmap-screen`、`--shop`、`--progress`、`--menu`、`--level-select`、`--flow`（选关→战斗→结算→写档→下一关）、**拖动连续种植**（`drag_plant.*`） | 图鉴 / 花园 / 设置未做 | §2.20、§2.23、§2.24；`--flow` 两轮实测 |
-| **S5 美术与音频** | ✅ 有声有音量 | OBB **1085/1087** base（ASTC 5x5/6x6 解码 10 条）、`art_index` + `--art-audit`；音频 65 sounds（65 解码 / 4487.9 s）、22/40 引擎事件接通、四屏都 `pump()`、`--volume 0..100` + `--mute-bgm/--mute-sfx` + BGM 0.75 s 交叉淡入、minimp3 | 混音器 8 voice / 最近邻 / 无独立滑杆 UI（C52）；`UI_ALWAYSLOADED` 尺寸缺声明不修 | §2.26、§2.27；真设备 `146944 mixed frames`；`peak(0)=0.000000` |
-| **S6 存档/经济/进度** | ✅ 完成 | 星章 5427（`beach_23` 如实 2 星）、世界地图 26/97 门、商店 585（可买 21、种子真发放、`one_time` 生效）、`--progress` 原子写、**掉落闭环**（金币按击杀周期 / 8 条钥匙 / 36 张午餐盒 / 76 条种子包，13 张悬空表不发）、`Progress::seeds`/`purchases` | 逐关 LootConfig/PresentTable 绑定缺失（C56）；keys=1 就能开 25 个世界（C46）；花园 UI 未做 | §2.20–§2.24、§2.31；矩阵「掉落」575/575/130；C35/C46/C48/C56 |
+| **S5 美术与音频** | ✅ 有声有音量 | OBB **1134/1135** base（ASTC 5x5/6x6 解码 10 条；`assets/db/shuttle/index.json` 实测 `bases_total 1135 / ok 1134 / failed 0 / skipped 1`）、`art_index` + `--art-audit`（content 409 行命中 134、缺 275）；音频 65 sounds（65 解码 / 4487.9 s）、22/40 引擎事件接通、四屏都 `pump()`、`--volume 0..100` + `--mute-bgm/--mute-sfx` + BGM 0.75 s 交叉淡入、minimp3 | 混音器 8 voice / 最近邻 / 无独立滑杆 UI（C52）；`UI_ALWAYSLOADED` 尺寸缺声明不修 | §2.26、§2.27；真设备 `146944 mixed frames`；`peak(0)=0.000000` |
+| **S6 存档/经济/进度** | ✅ 完成 | 星章 5427（`beach_23` 如实 2 星）、世界地图 26/97 门、商店 585（可买 **72**、种子真发放、`one_time` 生效）、`--progress` 原子写、**掉落闭环**（金币按击杀周期 / 8 条钥匙 / 36 张午餐盒 / 76 条种子包，13 张悬空表不发）、`Progress::seeds`/`purchases` | 逐关 LootConfig/PresentTable 绑定缺失（C56）；keys=1 就能开 25 个世界（C46）；花园 UI 未做 | §2.20–§2.24、§2.31；矩阵「掉落」575/575/130；C35/C46/C48/C56 |
 | **S7 平台交付** | ⬜ 未开始 | 计划已成文 `2026-11-24-packaging.md`（7 件事 + 4 条门禁 + 明确不做） | CMake `install()`、版本号单一来源、资源/存档查找顺序、LICENSES、README、`tools/package.ps1`；macOS 无机器只能标「未实测」 | 目前只有 `build/*/Release/PvZ2SHUTTLE.exe` |
 | **S8 联网与收尾** | ⬜ 未开始 | 离线可用（默认不发请求） | HTTPS 版本查询/公告、证书校验、无网降级测试 | 原版联网面本来就只有版本查询 |
 

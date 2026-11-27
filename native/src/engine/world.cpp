@@ -1,9 +1,11 @@
 #include "world.hpp"
 #include "../content/model.hpp"
 #include "action_runner.hpp"
+#include "plant_levels.hpp"
 #include "projectile.hpp"
 #include "registry.hpp"
 #include "plant_family.hpp"
+#include "spawn_offsets.hpp"
 #include "zombie_family.hpp"
 #include <algorithm>
 #include <cmath>
@@ -44,6 +46,14 @@ const ArmorTable& armorTable() {
     static const ArmorTable& table = ArmorTable::shared();
     return table;
 }
+/// C4: the plant-action `SpawnOffset` table, resolved once per process for the same reason as
+/// the armor sheet above - `world.hpp` is outside this task's write scope, so there is no
+/// `WorldOptions` switch and no member pointer, only this accessor, loaded from the constructor
+/// so a broken file fails at load rather than on the first shot.
+const SpawnOffsets& spawnOffsetsTable() {
+    static const SpawnOffsets& table = SpawnOffsets::shared();
+    return table;
+}
 } // namespace
 
 World::World(const Catalog& catalog, const LevelDefinition& level, std::uint32_t seed,
@@ -54,6 +64,18 @@ World::World(const Catalog& catalog, const LevelDefinition& level, std::uint32_t
     // quietly feeding nothing at tick 900.
     if (options_.plantfood) plantFood_ = &PlantFoodTable::shared();
     if (options_.fusion) fusion_ = &FusionTable::shared();
+    // B1 (T90): the save's plant levels, clamped once here so nothing downstream has to re-check a
+    // ladder it does not own. A plant the sheet has no row for keeps level 1, which is also why an
+    // empty request (every ordinary run) leaves both maps empty.
+    for (const auto& [type, requested] : options_.plantLevels) {
+        const int clamped = clampPlantLevel(type, requested);
+        plantLevels_[type] = clamped;
+        if (clamped > 1) plantLevelsApplied_[type] = clamped;
+    }
+    // C4: resolve the spawn-offset table here (fail early on a broken generated file) and start
+    // this battle's applied-offset tally at zero, so `--run-level` prints its own battle's count.
+    (void)spawnOffsetsTable();
+    resetSpawnOffsetsApplied();
     rows_ = clampInt(level.rows > 0 ? level.rows : 5, 1, 8);
     cols_ = clampInt(level.cols > 0 ? level.cols : 9, 1, 12);
     sun_ = level.sun;
@@ -74,6 +96,30 @@ World::World(const Catalog& catalog, const LevelDefinition& level, std::uint32_t
     if (level_.extra.is_object()) {
         const auto it = level_.extra.find("suppressFlagZombie");
         if (it != level_.extra.end() && it->is_boolean()) suppressFlagZombie_ = it->get<bool>();
+    }
+    // A1 (T80): forty-seven levels say `extra.vasebreaker: true` in content, and the generated vase
+    // table has exactly those forty-seven keys. The flag is the level's own, so
+    // `WorldOptions::vasebreaker = false` replays such a level as an ordinary seed-bank level,
+    // which is what the reverse probe and a pre-A1 baseline comparison need. A level whose row has
+    // no vases at all (`frontyard_166`, the one preset the client ships without) stays an ordinary
+    // level instead of being declared won on tick 1 with an empty lawn.
+    bool vaseLevel = false;
+    if (level_.extra.is_object()) {
+        const auto it = level_.extra.find("vasebreaker");
+        if (it != level_.extra.end() && it->is_boolean() && it->get<bool>()) vaseLevel = true;
+    }
+    if (options_.vasebreaker && vaseLevel) {
+        vaseTable_ = options_.vaseTable != nullptr ? options_.vaseTable : &VaseTable::shared();
+        vaseSpec_ = vaseTable_->find(level_.id);
+        if (vaseSpec_ != nullptr && !vaseSpec_->empty()) {
+            vasebreaker_ = true;
+            vaseRng_.seed(seed_ ^ 0x51ed270bu);
+        } else {
+            // Named, not dropped: the level carries the arcade flag but the sheet has no vases for
+            // it, so it plays as an ordinary level and the run says why.
+            event("vase_unavailable", Json{{"level", level_.id}, {"reason", "no vase preset"},
+                                           {"table", vaseTable_->size()}});
+        }
     }
     // S5.8: resolve the boss before the first tick. A level whose marker names a world the
     // sheet has no boss for must say so once, at load, rather than looking like an ordinary
@@ -107,7 +153,28 @@ World::World(const Catalog& catalog, const LevelDefinition& level, std::uint32_t
         // T66: spawner rows draw their own rows/columns; keeping that off `rng_` means adding a
         // storm to a level cannot change which rows its ordinary waves picked.
         spawnerRng_.seed(seed_ ^ 0x85ebca6bu);
-        layInitialField();
+        // A1: a vasebreaker board has no seed bank and no opening plants - the lawn is vases - so
+        // the initial field is skipped rather than layered under them.
+        if (!vasebreaker_) layInitialField();
+        // T88: the mutator that states a rule. `LevelMutatorMaxSunProps.maxSunOverride` caps the
+        // sun bank (275 on carnival_51, 50 on lunarrainbowmarket_62, ...). It is applied here, once,
+        // and every sun gain clamps to it in `addSunToBank`.
+        if (mechanics_ != nullptr && mechanics_->hasSunCap()) {
+            sunCap_ = mechanics_->mutators.maxSun;
+            event("sun_cap_active", Json{{"level", level_.id}, {"cap", sunCap_}});
+            // Seven of the eight levels with a cap open with more sun in `content` than the cap
+            // allows (carnival_51 starts at 550 with a 275 cap). A bank above its own maximum is a
+            // contradiction, so the opening bank is clamped too - and said out loud, because a
+            // silent 550-to-275 rewrite is exactly the kind of drop this stage exists to stop.
+            if (sun_ > sunCap_) {
+                const std::int64_t opening = sun_;
+                sun_ = sunCap_;
+                event("sun_capped", Json{{"level", level_.id}, {"from", opening}, {"to", sun_}});
+            }
+        }
+        // T88: the board mask. Carried as data - see `BoardGridSpec`; loading layout 0 is the only
+        // thing the sheet allows, since all 49 levels ship a single 5x9 map.
+        if (mechanics_ != nullptr && mechanics_->hasBoardGrid()) applyBoardGrid(0);
         // Anything this level declares that the kernel does not run is named once, with how many
         // instances were skipped. A silent drop is how 350 conveyor levels played as seed-bank
         // levels for a whole stage: the run still finished, so nothing ever looked broken.
@@ -122,8 +189,176 @@ World::World(const Catalog& catalog, const LevelDefinition& level, std::uint32_t
     }
     event("level_start", Json{{"world", level_.world}, {"rows", rows_}, {"cols", cols_},
                               {"waves", director_.waveCount()}, {"seed", seed_}});
+    // S3/A2: lay this level's minecarts. A level whose `extra` says nothing about a track never
+    // touches the generated rail table, which is what keeps every non-rail level byte-identical.
+    if (options_.rail) layRailCarts();
+    // The vases go down after `level_start` so the event stream reads "the level began, then the
+    // board was covered" - and because `layVases` reports its own `vase_field_laid` line.
+    if (vasebreaker_) layVases();
 }
 
+// ------------------------------------------------------------- rail carts -----
+void World::layRailCarts() {
+    if (!level_.extra.is_object()) return;
+    const auto rail = level_.extra.find("rail");
+    if (rail == level_.extra.end() || !rail->is_boolean() || !rail->get<bool>()) return;
+    railDeclared_ = true;
+    std::vector<int> rows;
+    // The generated sheet is where a future mechanics compiler would put `RailcartProperties`
+    // rows. The shipped table has none for any level, so this is a no-op today and the `content`
+    // half below is what actually runs - see RailTable's comment.
+    railTable_ = &RailTable::shared();
+    const RailRow* generated = railTable_->find(level_.id);
+    if (generated != nullptr) rows = generated->rows;
+    if (rows.empty()) {
+        const auto carts = level_.extra.find("minecarts");
+        if (carts != level_.extra.end() && carts->is_array()) {
+            for (const Json& entry : *carts) {
+                if (!entry.is_number_integer()) continue;
+                const int row = entry.get<int>();
+                if (row >= 0 && row < rows_) rows.push_back(row);
+            }
+        }
+    }
+    std::vector<int> unique;
+    for (const int row : rows) {
+        if (std::find(unique.begin(), unique.end(), row) == unique.end()) unique.push_back(row);
+    }
+    for (const int row : unique) {
+        RailCartEntity cart;
+        cart.id = nextId_++;
+        cart.row = row;
+        // Neither the starting column nor the track length is in the client data
+        // (`extra.minecarts` is rows only), so every cart starts on the left edge and drives
+        // right. Kernel fallback, not pack data.
+        cart.col = 0;
+        cart.x = 0.0;
+        cart.hp = cart.maxHp = tuning::kRailCartHitPoints;
+        carts_.push_back(cart);
+    }
+    if (!unique.empty()) {
+        event("rail_carts", Json{{"level", level_.id},
+                                 {"carts", unique.size()},
+                                 {"rows", unique},
+                                 {"source", generated != nullptr ? "level_mechanics.json" : "content extra"}});
+    }
+}
+
+void World::tickRail() {
+    if (carts_.empty()) return;
+    const double dt = stepSeconds;
+    for (auto& cart : carts_) {
+        if (!cart.alive) continue;
+        // The riding plant died or was dug up: the cart is empty again.
+        if (cart.plant != 0 && plantById(cart.plant) == nullptr) cart.plant = 0;
+        if (!cart.derailed) {
+            const int before = cart.col;
+            cart.x += tuning::kRailSpeedColumnsPerSecond * dt;
+            int col = static_cast<int>(std::floor(cart.x));
+            if (col > cols_ - 1) {
+                col = cols_ - 1;
+                cart.x = static_cast<double>(col);
+            }
+            if (col != before) {
+                cart.col = col;
+                cart.crushed.clear();
+                ++railMoved_;
+                event("rail_move", Json{{"cart", cart.id}, {"row", cart.row}, {"col", cart.col}});
+                // The plant rides along: its cell is the cart's cell from now on.
+                if (cart.plant != 0) {
+                    if (PlantEntity* riding = plantById(cart.plant)) riding->col = cart.col;
+                }
+            }
+            if (cart.col >= cols_ - 1) derailCart(cart, "row-end");
+        }
+        // Crush whatever stands in the cart's cell - once per zombie per cell, so a cart that sits
+        // still does not deal its damage sixty times a second.
+        for (auto& zombie : zombies_) {
+            if (!zombie.alive || zombie.row != cart.row) continue;
+            const double centre = static_cast<double>(cart.col) + 0.5;
+            if (std::abs(zombie.x - centre) > tuning::kRailCrushReachColumns) continue;
+            if (std::find(cart.crushed.begin(), cart.crushed.end(), zombie.id) != cart.crushed.end()) continue;
+            cart.crushed.push_back(zombie.id);
+            ++railHits_;
+            event("rail_hit", Json{{"cart", cart.id}, {"zombie", zombie.id},
+                                   {"damage", tuning::kRailCrushDamage}});
+            damageZombie(zombie.id, tuning::kRailCrushDamage, false, true);
+        }
+        // A parked cart is a wall: nothing walks through it while it stands there. Only a zombie
+        // that is one cell behind the cart is stopped - one already past it stays past it.
+        if (cart.derailed) {
+            const double face = static_cast<double>(cart.col) + 1.0;
+            for (auto& zombie : zombies_) {
+                if (!zombie.alive || zombie.row != cart.row) continue;
+                if (zombie.x >= face || zombie.x < face - 1.0) continue;
+                zombie.x = face;
+                cart.hp -= zombie.eatDps * dt;
+            }
+        }
+        if (cart.hp <= 0.0) {
+            cart.hp = 0.0;
+            derailCart(cart, "broken");
+            cart.alive = false;
+        }
+    }
+    // A broken cart leaves the lawn; its plant stays where it stood.
+    carts_.erase(std::remove_if(carts_.begin(), carts_.end(),
+                                [](const RailCartEntity& cart) { return !cart.alive; }),
+                 carts_.end());
+}
+
+void World::derailCart(RailCartEntity& cart, const char* reason) {
+    if (cart.derailed) return;
+    cart.derailed = true;
+    cart.x = static_cast<double>(cart.col);
+    event("rail_derailed", Json{{"cart", cart.id}, {"row", cart.row}, {"col", cart.col},
+                                {"reason", reason}});
+}
+
+RailCartEntity* World::cartAt(int row, int col) {
+    for (auto& cart : carts_) {
+        if (cart.alive && cart.row == row && cart.col == col) return &cart;
+    }
+    return nullptr;
+}
+
+std::string World::plantOnCart(const std::string& type, int row, int col) {
+    if (finished()) return "level finished";
+    if (!inBounds(row, col)) return "cell out of bounds";
+    RailCartEntity* cart = cartAt(row, col);
+    if (cart == nullptr) return "no cart";
+    if (cart->plant != 0) return "cart occupied";
+    const auto it = catalog_.plants.find(type);
+    const content::PlantType* packed = catalog_.rules ? catalog_.rules->findPlant(type) : nullptr;
+    if (it == catalog_.plants.end() && packed == nullptr) return "unknown plant: " + type;
+    if (plants_.size() >= static_cast<std::size_t>(tuning::kMaxPlants)) return "too many plants";
+    if (conveyorLevel()) {
+        const auto card = std::find(conveyorCards_.begin(), conveyorCards_.end(), type);
+        if (card == conveyorCards_.end()) return "not on the conveyor";
+        conveyorCards_.erase(card);
+        PlantEntity plant = constructPlant(type, row, col, false);
+        plants_.push_back(plant);
+        cart->plant = plant.id;
+        event("planted", Json{{"type", type}, {"row", row}, {"col", col}, {"id", plant.id},
+                              {"cart", cart->id}, {"conveyor", true}});
+        refillConveyor();
+        return {};
+    }
+    if (!level_.deck.empty() &&
+        std::find(level_.deck.begin(), level_.deck.end(), type) == level_.deck.end()) {
+        return "not-in-deck";
+    }
+    if (cooldown(type) > tick_) return "cooling down";
+    const PlantStats stats = plantStatsOf(type);
+    if (static_cast<double>(sun_) < stats.cost) return "not enough sun";
+    PlantEntity plant = constructPlant(type, row, col);
+    cooldowns_[type] = tick_ + ticksOf(stats.recharge);
+    plants_.push_back(plant);
+    cart->plant = plant.id;
+    event("planted", Json{{"type", type}, {"row", row}, {"col", col}, {"id", plant.id},
+                          {"cart", cart->id}});
+    return {};
+}
 // ------------------------------------------------------------------ time -----
 void World::advance(double seconds) {
     // A NaN/Inf `dt` used to poison `accumulator_` permanently: every later call then
@@ -152,14 +387,20 @@ void World::advance(double seconds) {
 void World::step() {
     if (finished()) return;
     ++tick_;
-    tickWaves();
-    tickSpawners();
-    tickSkySun();
+    // A1 (T80): a vasebreaker level has no wave director and no sky sun - its zombies come out of the
+    // vases. Running the director anyway would also make "clear every vase" unreachable, because
+    // `allSpawned()` cannot be true while the level is still dealing waves it will never use.
+    if (!vasebreaker_) {
+        tickWaves();
+        tickSpawners();
+        tickSkySun();
+    }
     tickPlants();
     tickZombies();
     stepShots(*this);
     tickSuns();
     tickMowers();
+    tickRail();
     reap();
     resolveOutcome();
 }
@@ -214,14 +455,95 @@ void World::tickWaves() {
     spawnGravestonesForWave(director_.spawnedWaves());
     // T66: the special spawner rows of the wave that just landed.
     scheduleSpawnersForWave(static_cast<int>(director_.spawnedWaves()));
+    // T88: the Events module of the wave that just landed - the tide moves and the frost wind
+    // blows. Both are wave-triggered rows, so they belong here and not in a timer.
+    applyWaveEvents(static_cast<int>(director_.spawnedWaves()));
     // The boss arrives after the last scheduled wave has been handed to the spawner. Doing it
     // here (not in the constructor) keeps a boss level's first 20 seconds identical to a
     // normal level, which is what the shipped recordings show.
     trySpawnBoss();
 }
 
-void World::tickSkySun() {
-    skySunTimer_ += stepSeconds;
+// ------------------------------------------------------ T88: Events + mask + mutators -----
+
+void World::applyWaveEvents(int wave) {
+    if (mechanics_ == nullptr || wave <= 0) return;
+    // The tide moved 1285 times in a 60 s run before this guard existed: `tickWaves` asks on every
+    // tick, and a wave is "already spawned" for hundreds of ticks. One wave, one wind, one change.
+    if (wave <= eventsServedWave_) return;
+    eventsServedWave_ = wave;
+    for (const TideChange& change : mechanics_->events.tide) {
+        if (change.wave != wave) continue;
+        tideColumn_ = change.column;
+        tideWaves_.push_back(wave);
+        // The sheet gives `ChangeAmount` + `ChangeType: absolute`: the waterline *is* that column
+        // from this wave on. The kernel has no water to drown anything in, so the state and the
+        // event are the mechanic - inventing drowning damage would be a rule the sheet never
+        // stated.
+        event("tide_changed", Json{{"level", level_.id}, {"wave", wave}, {"column", tideColumn_},
+                                   {"type", change.changeType}});
+    }
+    for (const FrostWind& wind : mechanics_->events.frost) {
+        if (wind.wave != wave) continue;
+        int pushed = 0;
+        for (ZombieEntity& zombie : zombies_) {
+            if (!zombie.alive) continue;
+            if (!wind.rows.empty() &&
+                std::find(wind.rows.begin(), wind.rows.end(), zombie.row) == wind.rows.end() &&
+                std::find(wind.rows.begin(), wind.rows.end(), -1) == wind.rows.end()) {
+                continue;
+            }
+            // The sheet names a direction and a row, never a distance - `kFrostWindPushColumns`
+            // is the one fallback this mechanic needs (see tuning.hpp).
+            zombie.x += wind.direction == "left" ? -tuning::kFrostWindPushColumns
+                                                 : tuning::kFrostWindPushColumns;
+            if (zombie.x < 0.0) zombie.x = 0.0;
+            ++pushed;
+        }
+        frostWaves_.push_back(wave);
+        event("frost_wind", Json{{"level", level_.id}, {"wave", wave}, {"rows", wind.rows},
+                                 {"direction", wind.direction}, {"pushed", pushed}});
+    }
+}
+
+bool World::applyBoardGrid(int index) {
+    if (mechanics_ == nullptr || !mechanics_->hasBoardGrid()) return false;
+    // All 49 shipped levels declare exactly one 5x9 map; `tools/contentc/level_extra_rules.py`
+    // counts `boardGridMultiMapLevels` and no level has two. So there is no second layout to
+    // switch to, and refusing is the honest answer - the alternative would be to pretend the
+    // board changed shape when the sheet only ever carried one mask.
+    if (index != 0) {
+        event("board_grid_rejected", Json{{"level", level_.id}, {"index", index},
+                                          {"layouts", 1}});
+        return false;
+    }
+    const BoardGridSpec& spec = mechanics_->boardGrid;
+    boardGridCells_ = spec.cells;
+    boardGridMarked_ = spec.marked();
+    boardGridIndex_ = 0;
+    event("board_grid_applied", Json{{"level", level_.id}, {"index", 0}, {"width", spec.width},
+                                     {"height", spec.height}, {"marked", boardGridMarked_},
+                                     {"alias", spec.alias}});
+    return true;
+}
+
+bool World::boardGridMarked(int row, int col) const {
+    if (row < 0 || col < 0) return false;
+    if (static_cast<std::size_t>(row) >= boardGridCells_.size()) return false;
+    const std::vector<int>& cells = boardGridCells_[static_cast<std::size_t>(row)];
+    if (static_cast<std::size_t>(col) >= cells.size()) return false;
+    return cells[static_cast<std::size_t>(col)] != 0;
+}
+
+void World::addSunToBank(int value) {
+    sun_ += value;
+    // `LevelMutatorMaxSunProps.maxSunOverride`: the bank may not hold more than the cap. Clamping
+    // (rather than refusing the pick-up) keeps the sun where the player can see it, which is what
+    // the modifier means: the level caps what you can bank, not what you can collect.
+    if (sunCap_ > 0 && sun_ > sunCap_) sun_ = sunCap_;
+}
+
+void World::tickSkySun() {    skySunTimer_ += stepSeconds;
     const double threshold = firstSkySunSpawned_ ? tuning::kSkySunIntervalSeconds : tuning::kFirstSkySunSeconds;
     if (skySunTimer_ + 1e-9 < threshold) return;
     // Subtract instead of zeroing: zeroing silently loses the overshoot and makes
@@ -278,15 +600,19 @@ void World::tickZombies() {
             // 1.15 columns and never get close enough to hop. Jumpers therefore only take a
             // target at contact distance; every other family keeps the long reach.
             const double reach = zombie.family == "jump" ? tuning::kEatStartCols : tuning::kEatRangeCols;
+            // C55: within reach, eat the plant on top of the stack first. Ties (two plants at the
+            // same depth cannot happen on one cell) fall back to the earlier plant, so the order is
+            // deterministic regardless of insertion history.
+            PlantEntity* reachable = nullptr;
             for (auto& plant : plants_) {
                 if (!plant.alive || plant.row != zombie.row) continue;
                 if (plant.family == "spike") continue; // walk-over plants never block a zombie
                 const double centre = centerOf(plant.col);
                 if (centre <= zombie.x + tuning::kEatStartCols && centre >= zombie.x - reach) {
-                    target = &plant;
-                    break;
+                    if (reachable == nullptr || plant.stackDepth > reachable->stackDepth) reachable = &plant;
                 }
             }
+            target = reachable;
         }
         if (target) {
             zombie.state = ZombieState::eating;
@@ -404,6 +730,11 @@ void World::reap() {
     gridItems_.erase(std::remove_if(gridItems_.begin(), gridItems_.end(),
                                     [](const GridItemEntity& item) { return !item.alive; }),
                      gridItems_.end());
+    // A1: a smashed vase leaves at once, for the same reason a broken gravestone does - the cell has
+    // to be free on the tick the player opened it, and "every vase is gone" is the win condition.
+    vases_.erase(std::remove_if(vases_.begin(), vases_.end(),
+                                [](const VaseEntity& vase) { return !vase.alive; }),
+                 vases_.end());
     // Corpses linger for `kZombieDeathFadeSeconds` so the view can play a death
     // animation; every gameplay loop skips `!alive`, so this is cosmetic only.
     const std::uint64_t fadeTicks = ticksOf(tuning::kZombieDeathFadeSeconds);
@@ -424,6 +755,16 @@ void World::reap() {
 
 void World::resolveOutcome() {
     if (finished()) return;
+    // A1 (T80): the vasebreaker win condition. Everything the level holds has to be smashed and the
+    // zombies the vases let out have to be gone; a leak still ends the run through the ordinary
+    // `lost` path in `tickZombies`, which is why that branch is not repeated here.
+    if (vasebreaker_) {
+        if (!vases_.empty() || !pendingSpawns_.empty() || !zombies_.empty()) return;
+        status_ = "won";
+        event("level_won", Json{{"tick", tick_}, {"spawned", spawned_}, {"killed", killed_},
+                                {"vases", vaseTally_.broke}});
+        return;
+    }
     // `allSpawned()` already implies the director's cursor passed the last tick;
     // the old extra `tick_ + flush < lastTick` guard could never be true and only
     // looked like a rule. What still has to drain is the deferred spawn queue and
@@ -442,18 +783,49 @@ World::PlantStats World::plantStatsOf(const std::string& type) const {
         stats.cost = static_cast<double>(it->second.cost);
         stats.hp = it->second.hp > 0 ? it->second.hp : 300.0;
         stats.recharge = it->second.cooldown > 0 ? it->second.cooldown : 5.0;
-        return stats;
+    } else {
+        // The pack knows 339 original types while content names 147: a pack-only type still has
+        // a cost, a hitpoint total and a recharge, so resolve them from the sheet.
+        const content::PlantType* packed = catalog_.rules ? catalog_.rules->findPlant(type) : nullptr;
+        if (packed == nullptr) return stats;
+        stats.cost = packed->cost.value_or(100.0);
+        stats.hp = packed->hitpoints.value_or(300.0);
+        stats.recharge = packed->packetCooldown.value_or(5.0);
+        if (stats.hp <= 0) stats.hp = 300.0;
+        if (stats.recharge <= 0) stats.recharge = 5.0;
     }
-    // The pack knows 339 original types while content names 147: a pack-only type still has
-    // a cost, a hitpoint total and a recharge, so resolve them from the sheet.
-    const content::PlantType* packed = catalog_.rules ? catalog_.rules->findPlant(type) : nullptr;
-    if (packed == nullptr) return stats;
-    stats.cost = packed->cost.value_or(100.0);
-    stats.hp = packed->hitpoints.value_or(300.0);
-    stats.recharge = packed->packetCooldown.value_or(5.0);
-    if (stats.hp <= 0) stats.hp = 300.0;
-    if (stats.recharge <= 0) stats.recharge = 5.0;
+    // B1 (T90): the sheet's per-level ladder, applied AFTER the lookup above and only through the
+    // identity guard inside `leveledValue`. The guard compares the ladder's level-1 value with the
+    // number just resolved, so at level 1 every column is rejected by construction and a run without
+    // `--set-plant-level` returns exactly what it returned before this patch.
+    const int level = plantLevel(type);
+    if (level > 1) {
+        if (const auto hp = leveledValue(type, "Hitpoints", level, stats.hp)) stats.hp = *hp;
+        if (const auto cost = leveledValue(type, "Cost", level, stats.cost)) stats.cost = *cost;
+        if (const auto recharge = leveledValue(type, "PacketCooldown", level, stats.recharge)) {
+            stats.recharge = *recharge;
+        }
+    }
     return stats;
+}
+
+int World::plantLevel(const std::string& type) const {
+    const auto found = plantLevels_.find(type);
+    return found == plantLevels_.end() ? 1 : found->second;
+}
+
+double World::levelDamage(const std::string& type, double current) const {
+    const int level = plantLevel(type);
+    if (level <= 1 || current <= 0.0) return current;
+    const PlantLevelRow* row = PlantLevelTable::shared().find(type);
+    if (row == nullptr || row->damageStat.empty()) return current;
+    // The same identity guard the stats use: only the column that reproduces today's pack damage at
+    // level 1 is allowed to move it. This is also what makes the call idempotent - a slot that
+    // already carries a levelled number fails the check and is left alone rather than scaled twice.
+    const std::optional<double> base = row->value(row->damageStat, 1);
+    if (!base.has_value() || *base != current) return current;
+    const std::optional<double> value = row->value(row->damageStat, level);
+    return value.has_value() ? *value : current;
 }
 
 PlantEntity World::constructPlant(const std::string& type, int row, int col, bool chargeSun) {
@@ -516,12 +888,35 @@ PlantEntity World::constructPlant(const std::string& type, int row, int col, boo
 // ------------------------------------------------------- level mechanics (S5.13) ---
 void World::layInitialField() {
     if (mechanics_ == nullptr) return;
-    const auto place = [this](const InitialPlant& placement, bool isProtected) {
+    // C55: how many plants already stand on a cell. The sheet stacks protect targets on one square
+    // (`egypt_74` three on (2,3), `lostcity_45` seven on (4,3)) and also places them on cells its
+    // own `initialPlants` filled (`sky_31` puts a tallnut on five cells that already hold a
+    // jalapeno or a bombardmint). Counting instead of looking for "the" plant is the whole fix.
+    const auto stackAt = [this](int row, int col) {
+        int depth = 0;
+        for (const auto& plant : plants_) {
+            if (plant.row == row && plant.col == col) ++depth;
+        }
+        return depth;
+    };
+    const auto place = [this, &stackAt](const InitialPlant& placement, bool isProtected) {
         if (!inBounds(placement.gridY, placement.gridX)) return;
-        if (plantAt(placement.gridY, placement.gridX) != nullptr ||
-            gridItemAt(placement.gridY, placement.gridX) != nullptr) {
-            // A target the sheet places on a taken cell (`egypt_74` stacks three on one cell) cannot
-            // be laid twice: say so instead of pretending the board holds it.
+        if (gridItemAt(placement.gridY, placement.gridX) != nullptr) {
+            // A gravestone or a puddle is not a plant: nothing may stand on it, protect target or
+            // not. This is the only remaining reason a protect target goes unplaced.
+            if (isProtected) {
+                ++unplacedProtectedPlants_;
+                event("protect_plant_unplaced", Json{{"level", level_.id},
+                                                     {"plant", placement.plant},
+                                                     {"row", placement.gridY},
+                                                     {"col", placement.gridX}});
+            }
+            return;
+        }
+        const int depth = stackAt(placement.gridY, placement.gridX);
+        // The level's own `initialPlants` keep the old rule - one plant per cell - so no non-protect
+        // level changes shape. Only the protect sheet may stack, and only up to the bound.
+        if ((!isProtected && depth > 0) || depth >= kMaxProtectStack) {
             if (isProtected) {
                 ++unplacedProtectedPlants_;
                 event("protect_plant_unplaced", Json{{"level", level_.id},
@@ -533,6 +928,7 @@ void World::layInitialField() {
         }
         PlantEntity plant = constructPlant(placement.plant, placement.gridY, placement.gridX, false);
         plant.protectedPlant = isProtected;
+        plant.stackDepth = depth;
         plants_.push_back(plant);
         ++initialPlantsLaid_;
         if (isProtected) ++protectedPlants_;
@@ -543,20 +939,51 @@ void World::layInitialField() {
     // The protect mission's targets are part of the opening board even when `initialPlants` did
     // not name them (`beach_14` names them in both, `dark_*` levels often only here).
     for (const InitialPlant& placement : mechanics_->protect.plants) place(placement, true);
-    // T59: the sheet can ask for more survivors than its own board can carry. `egypt_74` lists
-    // five targets on three cells, and six missions (`carnival_79`, `carnival_81`,
-    // `chinesegarden_57`, `frontyard_53`, `lostcity_67`, `sky_31`) list targets that land on no
-    // cell at all because the level's board or its `initialGridItems` filled them first. Those
-    // six are the reason this check exists: with `protectedPlants_ == 0` the death path in
-    // `damagePlant` can never run, so the mission silently passes no matter what the player does.
-    // Reporting the gap does not change the rules - `egypt_74` stays winnable when all three
-    // targets survive - it only makes the missing capacity visible and countable.
-    const int mustProtect = mechanics_->protect.requiredSurvivors();
-    if (mustProtect > 0 && protectedPlants_ < mustProtect) {
-        protectCapacityShortfall_ = mustProtect - protectedPlants_;
+    // C55: a sheet may still ask for more survivors than its list holds. Fill the gap by stacking
+    // more of the same protect plants on the cells the sheet already chose, in board order, until
+    // the ask is met or every chosen cell is at `kMaxProtectStack`. Only when even that cannot reach
+    // the ask does the requirement get clamped - and then it is reported, not silently relaxed.
+    protectRequested_ = mechanics_->protect.requiredSurvivors();
+    if (protectRequested_ > protectedPlants_) {
+        bool grew = true;
+        while (protectedPlants_ < protectRequested_ && grew) {
+            grew = false;
+            for (int row = 0; row < rows_ && protectedPlants_ < protectRequested_; ++row) {
+                for (int col = 0; col < cols_ && protectedPlants_ < protectRequested_; ++col) {
+                    if (gridItemAt(row, col) != nullptr) continue;
+                    const PlantEntity* deepest = nullptr;
+                    int depth = 0;
+                    for (const auto& plant : plants_) {
+                        if (plant.row != row || plant.col != col) continue;
+                        ++depth;
+                        if (plant.protectedPlant) deepest = &plant;
+                    }
+                    if (deepest == nullptr || depth >= kMaxProtectStack) continue;
+                    PlantEntity extra = constructPlant(deepest->type, row, col, false);
+                    extra.protectedPlant = true;
+                    extra.stackDepth = depth;
+                    plants_.push_back(extra);
+                    ++initialPlantsLaid_;
+                    ++protectedPlants_;
+                    grew = true;
+                    event("protect_plant_stacked",
+                          Json{{"type", extra.type}, {"row", row}, {"col", col},
+                               {"depth", depth}, {"id", extra.id}});
+                }
+            }
+        }
+    }
+    // T59's report, kept: the gap is now zero on every shipped level (C55 lands the sheet's own
+    // stacks) and only reappears on a board whose cells are blocked by grid items.
+    if (protectRequested_ > protectedPlants_) {
+        protectCapacityShortfall_ = protectRequested_ - protectedPlants_;
+        protectClamped_ = true;
+        event("protect_requirement_clamped", Json{{"level", level_.id},
+                                                  {"must", protectRequested_},
+                                                  {"placed", protectedPlants_}});
         event("protect_capacity_shortfall", Json{{"level", level_.id},
                                                  {"placed", protectedPlants_},
-                                                 {"must", mustProtect},
+                                                 {"must", protectRequested_},
                                                  {"delta", protectCapacityShortfall_}});
     }
     for (const GridItemPlacement& placement : mechanics_->initialGridItems) {
@@ -776,6 +1203,10 @@ std::string World::plant(const std::string& type, int row, int col) {
     // hand can be played - so a script that planted with sun still works (nothing is charged),
     // while planting something the belt never dealt is refused instead of being silently free.
     if (conveyorLevel()) return plantFromConveyor(type, row, col);
+    // A1 (T80): a vasebreaker board has no seed bank either. The only plants that reach the lawn are
+    // the ones a plant vase hands over (`plantVaseCard`), so buying is refused instead of quietly
+    // charging sun for a card the mode does not have.
+    if (vasebreaker_) return "no seed bank";
     // The level deck is the authority on what may be planted; the legacy kernel
     // returned "not-in-deck" here and dropping that check let scripts and UI plant
     // anything at all, which also makes a replay's legality unverifiable.
@@ -786,6 +1217,10 @@ std::string World::plant(const std::string& type, int row, int col) {
     if (plantAt(row, col)) return "cell occupied";
     // A grid item (gravestone, puddle) blocks the cell just like a plant does.
     if (gridItemAt(row, col) != nullptr) return "cell occupied";
+    // S3/A2: a rail cart holds exactly one plant and the cell is the cart's. Planting into it
+    // goes through `plantOnCart` (the view and the tests use that), so a plain `plant` on a cart
+    // cell is refused instead of stacking a second plant on the same cell.
+    if (cartAt(row, col) != nullptr) return "cell occupied";
     if (cooldown(type) > tick_) return "cooling down";
 
     const PlantStats stats = plantStatsOf(type);
@@ -827,7 +1262,7 @@ bool World::shovel(int row, int col) {
 bool World::collect(EntityId id) {
     for (auto it = suns_.begin(); it != suns_.end(); ++it) {
         if (it->id != id) continue;
-        sun_ += it->value;
+        addSunToBank(it->value);
         event("sun_collected", Json{{"id", id}, {"value", it->value}});
         suns_.erase(it);
         return true;
@@ -1131,6 +1566,17 @@ bool World::spawnZombie(const std::string& type, int row) {
 }
 
 bool World::spawnZombieAt(const std::string& type, int row, double x) {
+    // C4: the shipped `spawn_offsets.json` has no row-keyed rows (its 487 rows are plant-action
+    // muzzle heights - see `spawn_offsets.hpp`), so this is 0 for every row and the landing row
+    // is exactly the one the spawner asked for. The call stays so the decision is executable and
+    // unit-tested rather than a comment, and the event fires only if a future table ever does
+    // move a row.
+    const int adjustedRow = row + spawnOffsetsTable().rowAdjustmentForZombie(row);
+    if (adjustedRow != row) {
+        event("zombie_spawn_offset",
+              Json{{"row", adjustedRow}, {"x", x}, {"y", adjustedRow - row}});
+    }
+    row = adjustedRow;
     if (row < 0 || row >= rows_) return false;
     if (zombies_.size() >= static_cast<std::size_t>(tuning::kMaxZombies)) return false;
     const auto it = catalog_.zombies.find(type);
@@ -1230,10 +1676,38 @@ bool World::inBounds(int row, int col) const {
 }
 
 PlantEntity* World::plantAt(int row, int col) {
+    // C55: a cell can hold a stack, and the plant on top is the one a zombie meets first. Returning
+    // the outermost keeps `plantAt()` meaning "the plant standing here" for every caller that only
+    // wants one (occupancy checks, shovel, drag-and-drop) while the rest stay reachable through
+    // `protectStackAt()`.
+    PlantEntity* outermost = nullptr;
     for (auto& plant : plants_) {
-        if (plant.alive && plant.row == row && plant.col == col) return &plant;
+        if (!plant.alive || plant.row != row || plant.col != col) continue;
+        if (outermost == nullptr || plant.stackDepth > outermost->stackDepth) outermost = &plant;
     }
-    return nullptr;
+    return outermost;
+}
+
+std::vector<PlantEntity*> World::protectStackAt(int row, int col) {
+    std::vector<PlantEntity*> stack;
+    for (auto& plant : plants_) {
+        if (plant.row == row && plant.col == col) stack.push_back(&plant);
+    }
+    std::stable_sort(stack.begin(), stack.end(), [](const PlantEntity* a, const PlantEntity* b) {
+        return a->stackDepth < b->stackDepth;
+    });
+    return stack;
+}
+
+int World::deepestProtectStack() const {
+    std::map<std::pair<int, int>, int> perCell;
+    int deepest = 0;
+    for (const auto& plant : plants_) {
+        if (!plant.protectedPlant) continue;
+        const int depth = ++perCell[{plant.row, plant.col}];
+        deepest = std::max(deepest, depth);
+    }
+    return deepest;
 }
 
 PlantEntity* World::plantById(EntityId id) {
@@ -1286,7 +1760,8 @@ void World::damagePlant(EntityId id, double amount) {
     // threshold - and `egypt_56` lists fifteen with a threshold of zero, which is a mission that
     // cannot be lost this way at all.
     if (plant->protectedPlant && mechanics_ != nullptr && status_ != "lost") {
-        const int required = mechanics_->protect.requiredSurvivors();
+        // C55: judge by the total, with the threshold clamped to what the board holds.
+        const int required = requiredProtectedPlants();
         const int alive = aliveProtectedPlants();
         if (required > 0 && alive < required) {
             ++protectFailures_;
@@ -1302,6 +1777,14 @@ void World::damagePlant(EntityId id, double amount) {
 }
 
 int World::requiredProtectedPlants() const {
+    if (mechanics_ == nullptr) return 0;
+    // C55: never ask for more survivors than actually stand. On every shipped level the stacks now
+    // reach the sheet's own number, so this is the sheet's value; it only differs on a board whose
+    // cells are blocked by grid items, where `protectClamped()` says the level is zero-tolerance.
+    return std::min(mechanics_->protect.requiredSurvivors(), protectedPlants_);
+}
+
+int World::requestedProtectedPlants() const {
     return mechanics_ != nullptr ? mechanics_->protect.requiredSurvivors() : 0;
 }
 
@@ -1435,6 +1918,13 @@ EntityId World::spawnShot(int row, double x, double damage, const std::string& p
     shot.slow = slow;
     shot.owner = owner;
     shot.projectileType = projectileType;
+    // C4: count this shot when its plant declares a vertical spawn offset (`SpawnOffset.y`).
+    // The number itself is the view's business - `ShotEntity` has no height and the kernel
+    // integrates columns only - but the tally is what `--run-level` prints as
+    // `spawnOffsetsApplied`, so "every shot in this level is lifted" and "none is" differ.
+    if (const PlantEntity* shooter = plantById(owner); shooter != nullptr) {
+        noteSpawnOffsetApplied(spawnOffsetsTable().launchYPixels(shooter->type));
+    }
     shot.speed = tuning::kShotSpeedColsPerSec;
     shot.hitRadius = tuning::kShotHitRadius;
     shot.splashRadius = tuning::kShotSplashRadiusCols;
@@ -1568,6 +2058,17 @@ std::uint64_t World::hash() const {
         for (const auto& card : conveyorCards_) out << card << ',';
         out << ';' << conveyorRng_;
     }
+    // A1 (T80): which vases are still standing is the whole state of a vasebreaker board, and the
+    // generator decides which cells the level's remaining vases would take, so both are hashed -
+    // only on a vasebreaker level, which keeps every other baseline byte-identical.
+    if (vasebreaker_) {
+        for (const auto& vase : vases_) {
+            out << 'V' << vase.id << ',' << vase.row << ',' << vase.col << ','
+                << static_cast<int>(vase.content) << ',' << vase.payload << ',' << vase.amount << ';';
+        }
+        for (const auto& card : vaseCards_) out << 'K' << card.plant << ',' << card.row << ',' << card.col << ';';
+        out << 'Q' << vaseRng_;
+    }
     // Fusion changes what stands on the lawn, so the count belongs in the hash; it is only
     // mixed in once something fused, which keeps pre-S5 baselines byte-identical.
     if (fusions_ > 0) out << 'G' << fusions_ << ';';
@@ -1603,6 +2104,12 @@ std::uint64_t World::hash() const {
     for (const auto& mower : mowers_) {
         out << 'M' << mower.row << ',' << quantize(mower.x) << ',' << mower.state << ';';
     }
+    // S3/A2: a cart's cell, position and rider decide what can happen next. Written only when a
+    // level has carts, so every non-rail baseline keeps its old hash byte for byte.
+    for (const auto& cart : carts_) {
+        out << 'X' << cart.id << ',' << cart.row << ',' << cart.col << ',' << quantize(cart.x) << ','
+            << quantize(cart.hp) << ',' << cart.plant << ',' << (cart.derailed ? 1 : 0) << ';';
+    }
     // The generator's state is the only record of future random draws; without it
     // two worlds that will pick different rows can hash the same.
     out << 'R' << rng_;
@@ -1627,6 +2134,7 @@ Snapshot World::snapshot() const {
     for (const auto& plant : plants_) {
         PlantView view{plant.id, plant.type, plant.family, plant.row, plant.col, plant.hp, plant.maxHp,
                        plant.born, 0};
+        view.stackDepth = plant.stackDepth;
         for (const auto& slot : plant.slots) view.busyTicks = std::max(view.busyTicks, slot.remainingTicks);
         snap.plants.push_back(view);
     }
@@ -1646,7 +2154,161 @@ Snapshot World::snapshot() const {
     }
     snap.mowers.reserve(mowers_.size());
     for (const auto& mower : mowers_) snap.mowers.push_back(MowerView{mower.row, mower.x, mower.state});
+    snap.vases.reserve(vases_.size());
+    for (const auto& vase : vases_) {
+        snap.vases.push_back(VaseView{vase.id, vase.row, vase.col, vaseContentName(vase.content)});
+    }
+    snap.carts.reserve(carts_.size());
+    for (const auto& cart : carts_) {
+        snap.carts.push_back(RailCartView{cart.id, cart.row, cart.col, cart.x, cart.hp, cart.maxHp,
+                                          cart.derailed, cart.plant});
+    }
     return snap;
+}
+
+// ----------------------------------------------------------- vasebreaker (A1) ---
+void World::layVases() {
+    if (vaseSpec_ == nullptr || vaseSpec_->empty()) return;
+    const int lowColumn = std::max(0, vaseSpec_->minColumn);
+    const int highColumn = vaseSpec_->maxColumn < 0 ? cols_ - 1 : std::min(cols_ - 1, vaseSpec_->maxColumn);
+    const auto excluded = [this](int row, int col) {
+        for (const auto& cell : vaseSpec_->excluded) {
+            if (cell.first == row && cell.second == col) return true;
+        }
+        return false;
+    };
+    std::vector<std::pair<int, int>> band;
+    std::vector<std::pair<int, int>> spill;
+    for (int row = 0; row < rows_; ++row) {
+        for (int col = 0; col < cols_; ++col) {
+            if (excluded(row, col)) continue;
+            if (col >= lowColumn && col <= highColumn) {
+                band.emplace_back(row, col);
+            } else {
+                spill.emplace_back(row, col);
+            }
+        }
+    }
+    // All 459 entries of the shipped sheet carry `row: null, col: null`: the level says how many
+    // vases hold each content type and which columns they may stand in, never which cell. So the
+    // cells are drawn from that band with the level's own generator. This is a deterministic
+    // inference (one seed per level), not a reading of the sheet - see the report.
+    const auto shuffle = [](std::vector<std::pair<int, int>>& cells, std::mt19937& rng) {
+        for (std::size_t i = cells.size(); i > 1; --i) {
+            const std::size_t pick = static_cast<std::size_t>(rng() % i);
+            std::swap(cells[i - 1], cells[pick]);
+        }
+    };
+    shuffle(band, vaseRng_);
+    shuffle(spill, vaseRng_);
+    std::vector<std::pair<int, int>> cells = band;
+    cells.insert(cells.end(), spill.begin(), spill.end());
+
+    std::size_t cursor = 0;
+    for (const VaseEntry& entry : vaseSpec_->entries) {
+        for (int i = 0; i < entry.count; ++i) {
+            if (cursor >= cells.size()) {
+                // Four levels list more vases than their own column band holds (`egypt_57` asks for
+                // 30 in a three-column band that fits 15), which is why the spill list exists; if
+                // even the whole board runs out, the remainder is counted and named, never dropped.
+                ++vasesUnplaced_;
+                event("vase_unplaced", Json{{"level", level_.id},
+                                            {"content", vaseContentName(entry.content)},
+                                            {"value", entry.id}});
+                continue;
+            }
+            VaseEntity vase;
+            vase.id = nextId_++;
+            vase.row = cells[cursor].first;
+            vase.col = cells[cursor].second;
+            vase.content = entry.content;
+            vase.payload = entry.id;
+            if (vase.content == VaseContent::sun) vase.amount = kVaseSunValue;
+            ++cursor;
+            vases_.push_back(vase);
+        }
+    }
+    vaseTally_.total = static_cast<int>(vases_.size());
+    event("vase_field_laid", Json{{"level", level_.id},
+                                  {"vases", vaseTally_.total},
+                                  {"columns", Json::array({lowColumn, highColumn})},
+                                  {"unplaced", vasesUnplaced_}});
+}
+
+const VaseEntity* World::vaseAt(int row, int col) const {
+    for (const auto& vase : vases_) {
+        if (vase.alive && vase.row == row && vase.col == col) return &vase;
+    }
+    return nullptr;
+}
+
+World::VaseBreak World::breakVase(int row, int col) {
+    VaseBreak result;
+    if (finished()) return result;
+    const auto it = std::find_if(vases_.begin(), vases_.end(), [row, col](const VaseEntity& vase) {
+        return vase.alive && vase.row == row && vase.col == col;
+    });
+    // Nothing on that cell - including a second tap on a vase already smashed. The tap is a no-op
+    // rather than a second payout, which is what makes the mode's economy honest.
+    if (it == vases_.end()) return result;
+    const VaseEntity vase = *it;
+    it->alive = false;
+    result.ok = true;
+    result.kind = vaseContentName(vase.content);
+    result.value = vase.payload;
+    ++vaseTally_.broke;
+    switch (vase.content) {
+    case VaseContent::zombie: {
+        ++vaseTally_.zombies;
+        // The vase's own row is the only placement the level carries: the sheet never says where a
+        // vase zombie walks in from, so it enters on that row at the vase's column.
+        const bool spawned = spawnZombieAt(vase.payload, vase.row, centerOf(vase.col));
+        if (!spawned) {
+            event("vase_zombie_rejected", Json{{"level", level_.id}, {"zombie", vase.payload},
+                                               {"row", vase.row}, {"col", vase.col}});
+        }
+        event("vase_spawn_zombie", Json{{"zombie", vase.payload}, {"row", vase.row}, {"col", vase.col}});
+        break;
+    }
+    case VaseContent::plant:
+        ++vaseTally_.plants;
+        vaseCards_.push_back(VaseCard{vase.payload, vase.row, vase.col});
+        event("vase_pickup", Json{{"kind", "plant"}, {"value", vase.payload},
+                                  {"row", vase.row}, {"col", vase.col}});
+        break;
+    case VaseContent::collectible:
+        ++vaseTally_.collectibles;
+        // The only collectable the shipped sheet names is `plantfood`, which is not sun; it is
+        // reported as a pickup and counted, not converted into a currency the sheet never gave.
+        event("vase_pickup", Json{{"kind", "collectible"}, {"value", vase.payload}, {"sun", 0}});
+        break;
+    case VaseContent::sun:
+        ++vaseTally_.sun;
+        result.sun = vase.amount > 0 ? vase.amount : kVaseSunValue;
+        addSunToBank(result.sun);
+        event("vase_pickup", Json{{"kind", "sun"}, {"value", vase.payload}, {"sun", result.sun}});
+        break;
+    }
+    event("vase_broken", Json{{"row", row}, {"col", col}, {"kind", result.kind}, {"value", result.value}});
+    return result;
+}
+
+std::string World::plantVaseCard(std::size_t index, int row, int col) {
+    if (finished()) return "level finished";
+    if (index >= vaseCards_.size()) return "no such vase card";
+    const VaseCard card = vaseCards_[index];
+    if (!inBounds(row, col)) return "cell out of bounds";
+    // The card belongs to the vase it came out of: the arcade hands the player a plant for the cell
+    // right next to the broken vase, so anything further is refused instead of teleporting greenery.
+    if (std::abs(row - card.row) + std::abs(col - card.col) > 1) return "too far from its vase";
+    if (plantAt(row, col) != nullptr) return "cell occupied";
+    if (gridItemAt(row, col) != nullptr) return "cell occupied";
+    PlantEntity plant = constructPlant(card.plant, row, col, false);
+    plants_.push_back(plant);
+    vaseCards_.erase(vaseCards_.begin() + static_cast<std::ptrdiff_t>(index));
+    event("planted", Json{{"type", card.plant}, {"row", row}, {"col", col}, {"id", plant.id},
+                          {"vase", true}});
+    return {};
 }
 
 } // namespace pvz::engine

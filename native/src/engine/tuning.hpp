@@ -80,6 +80,22 @@ inline constexpr double kGridItemHitPoints = 300.0; // fallback: tuning constant
 // sheet only weights the plants, it never says how many are visible.
 inline constexpr int kConveyorHandSize = 6; // fallback: tuning constant, no pack evidence
 
+// Rail carts (S3/A2). The pack says where a cart stands (`RailcartProperties` Column/Row) and how
+// many a DangerRoom level wants (`BaseRailcartCount`), but it carries no speed, no hit points and
+// no crush damage: `rails_report.json` has 204 levels with a rail object and none of them states a
+// per-second number. These four are fallbacks, chosen so a cart crosses one column in two seconds
+// and survives roughly half a minute of a single zombie chewing on it.
+inline constexpr double kRailSpeedColumnsPerSecond = 0.5; // fallback: tuning constant, no pack evidence
+inline constexpr double kRailCrushDamage = 1000.0;        // fallback: tuning constant, no pack evidence
+inline constexpr double kRailCrushReachColumns = 0.55;    // fallback: one cart cell, no pack evidence
+inline constexpr double kRailCartHitPoints = 3000.0;      // fallback: tuning constant, no pack evidence
+
+// T88: frost wind. `FrostWindWaveActionProps.Winds[]` names a direction and a row (and only
+// those two), so how far the wind carries a zombie is not in the sheet. Half a column: far enough
+// that a wind row visibly moves the horde back, short enough that it cannot undo a whole wave.
+// This is the one place a T88 number comes from tuning rather than from the sheet.
+inline constexpr double kFrostWindPushColumns = 0.5; // fallback: tuning constant, no pack evidence
+
 // Hard caps so a malformed level can never hang the kernel in CI
 inline constexpr int kMaxZombies = 400;
 inline constexpr int kMaxShots = 800;

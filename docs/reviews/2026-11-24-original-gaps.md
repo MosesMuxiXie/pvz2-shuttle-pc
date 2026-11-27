@@ -1,6 +1,6 @@
 # 原版 ↔ 客户端字段级差距盘点（2026-11-24）
 
-**一句话结论**：12 个实体里能逐字段对上的只有 **13075** 处；原版有值、客户端没有字段的有 **793** 处，客户端自创字段 **12210** 处；13 个子系统里 **7** 个是原版有、客户端整块没有。
+**一句话结论**：12 个实体里能逐字段对上的只有 **13081** 处；原版有值、客户端没有字段的有 **787** 处，客户端自创字段 **14216** 处；13 个子系统里 **7** 个是原版有、客户端整块没有。
 
 本次盘点扫描原版 **2116** 张 pkg 表（其中关卡定义 1809 个文件 / 41218 个对象），客户端读 `content/*.json` 与 1809 个关卡文件。
 
@@ -18,12 +18,12 @@
 
 | 实体 | 客户端字段 | 原版字段 | 关联数 | mapped | packOnly | clientOnly | agree |
 |---|---|---|---|---|---|---|---|
-| plants | cost | Cost | 147 | 44 | 0 | 103 | 42 |
-| plants | hp | Hitpoints | 147 | 44 | 0 | 103 | 42 |
-| plants | almanac_no | IntegerID | 147 | 44 | 0 | 103 | 1 |
-| plants | cooldown | PacketCooldown | 147 | 44 | 0 | 103 | 40 |
-| plants | plantfood | PlantFoodDurationSeconds | 147 | 17 | 6 | 118 | 1 |
-| plants | art | PopAnim | 147 | 44 | 0 | 103 | 0 |
+| plants | cost | Cost | 409 | 44 | 0 | 365 | 42 |
+| plants | hp | Hitpoints | 409 | 44 | 0 | 365 | 42 |
+| plants | almanac_no | IntegerID | 409 | 44 | 0 | 103 | 1 |
+| plants | cooldown | PacketCooldown | 409 | 44 | 0 | 365 | 40 |
+| plants | plantfood | PlantFoodDurationSeconds | 409 | 17 | 6 | 380 | 1 |
+| plants | art | PopAnim | 409 | 44 | 0 | 126 | 0 |
 | zombies | armor | ArmorType | 55 | 0 | 0 | 16 | 0 |
 | zombies | eat_dps | EatDPS | 55 | 28 | 0 | 27 | 24 |
 | zombies | hp | Hitpoints | 55 | 28 | 0 | 27 | 28 |
@@ -48,14 +48,14 @@
 | armor | armature | ArmorLayers | 16 | 1 | 27 | 7 | 0 |
 | armor | art | ArmorType | 16 | 2 | 34 | 14 | 0 |
 | armor | hp | BaseHealth | 16 | 2 | 34 | 14 | 0 |
-| projectiles | plants | BaseDamage | 11 | 0 | 127 | 11 | 0 |
-| projectiles | projectile | ClassName | 11 | 0 | 131 | 11 | 0 |
-| projectiles | plants | CollisionFlags | 11 | 0 | 130 | 11 | 0 |
+| projectiles | plants | BaseDamage | 150 | 2 | 125 | 148 | 0 |
+| projectiles | projectile | ClassName | 150 | 2 | 129 | 148 | 0 |
+| projectiles | plants | CollisionFlags | 150 | 2 | 128 | 148 | 0 |
 | bosses | id | ZombossMechType | 26 | 0 | 71 | 26 | 0 |
 | bosses | hp | ZombossPhaseCount | 26 | 0 | 71 | 26 | 0 |
 | bosses | phases | ZombossPhases | 26 | 0 | 71 | 26 | 0 |
-| plantfood | plantfood | PlantFoodDurationSeconds | 147 | 17 | 6 | 118 | 1 |
-| plantfood | plantfood | PlantFoodPlayCount | 147 | 14 | 6 | 121 | 11 |
+| plantfood | plantfood | PlantFoodDurationSeconds | 409 | 17 | 6 | 380 | 1 |
+| plantfood | plantfood | PlantFoodPlayCount | 409 | 14 | 6 | 383 | 11 |
 | fusion | ingredients | FusionPlant | 85 | 85 | 0 | 0 | 0 |
 | fusion | result | ResultPlant | 85 | 85 | 0 | 0 | 0 |
 | fusion | ingredients | SourcePlant | 85 | 85 | 0 | 0 | 0 |
@@ -98,18 +98,18 @@
 | levels | seed_bank | 1019 | 原版 PresetPlantList 在这些记录上无值（含原版没有该对象的情形） |
 | stars | stars | 859 | 原版 Challenges 在这些记录上无值（含原版没有该对象的情形） |
 | shop | one_time | 584 | 原版 IsOneTimePurchase 在这些记录上无值（含原版没有该对象的情形） |
+| plantfood | plantfood | 383 | 原版 PlantFoodPlayCount 在这些记录上无值（含原版没有该对象的情形） |
+| plantfood | plantfood | 380 | 原版 PlantFoodDurationSeconds 在这些记录上无值（含原版没有该对象的情形） |
+| plants | plantfood | 380 | 原版 PlantFoodDurationSeconds 在这些记录上无值（含原版没有该对象的情形） |
+| plants | cost | 365 | 原版 Cost 在这些记录上无值（含原版没有该对象的情形） |
+| plants | hp | 365 | 原版 Hitpoints 在这些记录上无值（含原版没有该对象的情形） |
+| plants | cooldown | 365 | 原版 PacketCooldown 在这些记录上无值（含原版没有该对象的情形） |
 | levels | waves | 223 | 原版 WaveCount 在这些记录上无值（含原版没有该对象的情形） |
 | waves | waves | 161 | 原版 Waves 在这些记录上无值（含原版没有该对象的情形） |
-| plantfood | plantfood | 121 | 原版 PlantFoodPlayCount 在这些记录上无值（含原版没有该对象的情形） |
-| plantfood | plantfood | 118 | 原版 PlantFoodDurationSeconds 在这些记录上无值（含原版没有该对象的情形） |
-| plants | plantfood | 118 | 原版 PlantFoodDurationSeconds 在这些记录上无值（含原版没有该对象的情形） |
-| plants | cost | 103 | 原版 Cost 在这些记录上无值（含原版没有该对象的情形） |
-| plants | hp | 103 | 原版 Hitpoints 在这些记录上无值（含原版没有该对象的情形） |
-| plants | almanac_no | 103 | 原版 IntegerID 在这些记录上无值（含原版没有该对象的情形） |
-| plants | cooldown | 103 | 原版 PacketCooldown 在这些记录上无值（含原版没有该对象的情形） |
-| plants | art | 103 | 原版 PopAnim 在这些记录上无值（含原版没有该对象的情形） |
-| waves | waves | 95 | 原版 WaveManagerProps 在这些记录上无值（含原版没有该对象的情形） |
-| levels | extra.level_number | 32 | 原版 LevelNumber 在这些记录上无值（含原版没有该对象的情形） |
+| projectiles | plants | 148 | 原版 BaseDamage 在这些记录上无值（含原版没有该对象的情形） |
+| projectiles | projectile | 148 | 原版 ClassName 在这些记录上无值（含原版没有该对象的情形） |
+| projectiles | plants | 148 | 原版 CollisionFlags 在这些记录上无值（含原版没有该对象的情形） |
+| plants | art | 126 | 原版 PopAnim 在这些记录上无值（含原版没有该对象的情形） |
 
 - 商品：客户端 585 件、原版 565 件，`sku` 对齐后 **20** 件是客户端自创（`source` 标 legacy）。
 - 定价：原版 `Price` 565 件里 **561** 件是 0、其余 4 件是 99999；客户端 `price`/`price_gems`/`price_mints` 是自创数值，不能从原版抄。

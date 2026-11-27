@@ -174,12 +174,20 @@ def load_pack(path: Path) -> list[dict[str, object]]:
 
 
 def load_content(path: Path) -> dict[str, dict[str, object]]:
-    """读 content/plants.json，按 id 索引。"""
+    """读 content/plants.json 的**手工行**，按 id 索引。
+
+    派生行（``source == "pack"``）必须排除：本工具的输出正是那些行的来源，
+    把它们算成「content 已经有」会让名册一合并就自我清空。
+    """
 
     data = json.loads(path.read_text(encoding="utf-8-sig"))
     if not isinstance(data, list):
         raise ValueError(f"{path.name}: 根必须是数组")
-    return {str(row["id"]): row for row in data if isinstance(row, dict) and "id" in row}
+    return {
+        str(row["id"]): row
+        for row in data
+        if isinstance(row, dict) and "id" in row and row.get("source") != "pack"
+    }
 
 
 def load_families(path: Path) -> dict[str, dict[str, object]]:

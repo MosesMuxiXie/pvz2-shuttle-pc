@@ -776,18 +776,27 @@ def build_achievements(english, chinese):
     return {"entries": entries, "counts": counts, "serverOnly": True}
 
 
-def content_ids(path: Path) -> list[str]:
-    """``content/*.json`` 里每条记录的 ``id``（客户端自建名册）。"""
+def content_ids(path: Path, skip_pack: bool = False) -> list[str]:
+    """``content/*.json`` 里每条记录的 ``id``（客户端自建名册）。
+
+    ``skip_pack`` 时跳过 ``source == "pack"`` 的派生行（``zombie_roster.py`` 写进去的
+    pack 镜像）——它们不是客户端自有条目，算进图鉴交叉核对会自我循环。
+    """
     if not path.is_file():
         return []
     payload = _load(path)
     rows = payload if isinstance(payload, list) else payload.get("items") or []
-    return [row["id"] for row in rows if isinstance(row, dict) and isinstance(row.get("id"), str)]
+    return [
+        row["id"]
+        for row in rows
+        if isinstance(row, dict) and isinstance(row.get("id"), str)
+        and not (skip_pack and row.get("source") == "pack")
+    ]
 
 
 def build_content_cross(almanac, plants_path: Path, zombies_path: Path) -> dict:
     plant_ids = content_ids(plants_path)
-    zombie_ids = content_ids(zombies_path)
+    zombie_ids = content_ids(zombies_path, skip_pack=True)
     almanac_plants = {row["id"] for row in almanac["plants"]}
     almanac_zombies = {row["id"] for row in almanac["zombies"]}
     return {

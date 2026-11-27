@@ -151,14 +151,14 @@ void testAuditCounters(const pvz::Catalog& catalog, const std::filesystem::path&
           "content plant counters must add up: web " + std::to_string(plants.webHit) +
               " + shuttle " + std::to_string(plants.shuttleHit) + " + missing " +
               std::to_string(plants.missing) + " != " + std::to_string(plants.total));
-    // Eight content plants share the `plants/SunflowerPLANT` art key (the sunflower family), so a
-    // single fixture folder legitimately serves eight rows.
-    check(plants.webHit == 8, "eight content plants share the fixture's web art, got " +
-                                  std::to_string(plants.webHit));
+    // Thirteen content plants share the `plants/SunflowerPLANT` art key (the sunflower family,
+    // widened by the pack-derived rows), so a single fixture folder legitimately serves them.
+    check(plants.webHit == 13, "thirteen content plants share the fixture's web art, got " +
+                                   std::to_string(plants.webHit));
     check(plants.shuttleHit == 1, "exactly one content plant resolves through the index, got " +
                                       std::to_string(plants.shuttleHit));
-    check(plants.missing == plants.total - 9, "everything else must be counted missing, got " +
-                                                  std::to_string(plants.missing));
+    check(plants.missing == plants.total - 14, "everything else must be counted missing, got " +
+                                                   std::to_string(plants.missing));
 
     const auto& zombies = audit.contentZombies;
     check(zombies.total == static_cast<int>(catalog.zombies.size()),

@@ -122,7 +122,7 @@ NOT_DERIVED: dict[str, tuple[str, str]] = {
     "融合": ("pending", "熔合对没有族实现通道，需 fusions 表接线后才能推导"),
     "Boss": ("not-applicable", "Boss 是僵尸 class 的子集，可跑已在「僵尸」行计入"),
     "砸罐子": ("not-applicable", "小游戏关卡不是可玩单位"),
-    "铁轨": ("pending", "rail 是关卡机制：引擎零消费（`grep rail native/src` 只命中标记），接线后才能谈可跑"),
+    "铁轨": ("pending", "rail 已接线（A2：车体移动/碾压/掉落/车格种植，`rail_test` 7 段 + `--run-level` 的 rail 读数），可跑要等 192 关的胜率实测"),
     "小游戏": ("not-applicable", "小游戏关卡不是可玩单位"),
     "关卡模块": ("pending", "模块是关卡的一层标签，可跑要看机制接线后的胜负，不按标签累加"),
     "关卡机制": ("pending", "数据已编译、T51 接线了五类（传送带/初始植物/初始物件/保护植物/墓碑·抖动波），可跑仍要看机制后胜率"),

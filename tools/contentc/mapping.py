@@ -245,6 +245,8 @@ def load_client(content_dir: Path, spec: Side) -> list[ClientEntry]:
     for row in rows:
         if not isinstance(row, dict):
             continue
+        if row.get("source") == "pack":
+            continue  # 派生行：id 与原版同名，不是独立证据
         client_id = _text(row.get("id"))
         if not client_id:
             continue

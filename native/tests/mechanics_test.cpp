@@ -25,8 +25,11 @@ namespace {
 namespace fs = std::filesystem;
 using pvz::Catalog;
 using pvz::engine::GridItemEntity;
+using pvz::engine::InitialPlant;
+using pvz::engine::LevelMechanics;
 using pvz::engine::LevelMechanicsTable;
 using pvz::engine::MechanicTier;
+using pvz::engine::PlantEntity;
 using pvz::engine::World;
 
 [[noreturn]] void fail(const std::string& message) { throw std::runtime_error(message); }
@@ -129,7 +132,14 @@ void testTableShape() {
     // 446 levels still carry something the kernel cannot honour: the modules it never modelled
     // (tide strength, mutators, board grids) plus the spawner rows whose wave or zombie type the
     // sheet does not name. Wiring the generators took this from 868 to 446 instead of hiding them.
-    check(table.withUnknown() == 446, "levels with an unwired mechanic, got " + std::to_string(table.withUnknown()));
+    // T88 took this from 446 to 293: the tide (60), the frost wind (64), the board mask (49) and
+    // the eight sun caps stopped being gaps, and the challenge wrappers (13) and the spider rains
+    // (118) - plus the two long-standing partials, `initialGridItems.unresolved` and
+    // `spawners.gravestone.unpositioned` - are what is left.
+    check(table.withUnknown() == 293, "levels with an unwired mechanic, got " + std::to_string(table.withUnknown()));
+    check(table.withEvents() == 123, "levels with an Events module, got " + std::to_string(table.withEvents()));
+    check(table.withBoardGrid() == 49, "levels with a board mask, got " + std::to_string(table.withBoardGrid()));
+    check(table.withSunCap() == 8, "levels with a sun cap, got " + std::to_string(table.withSunCap()));
     // `slots` and `changes[].add` are both card sources: lostcity_67 only has the latter, so a
     // reader that stops at `slots` silently loses every card in that level.
     const auto* belt = table.find("beach_12");
@@ -285,22 +295,33 @@ void testProtectThresholds(const Catalog& catalog) {
         check(world.protectFailures() == 1, "the failure must be counted once");
     }
     {
-        // 4 of 5 on paper, but `egypt_74` lists five targets on three cells ((3,2) three times),
-        // so only three can stand. The sheet still asks for four: the mission is unwinnable by
-        // data, which is reported (`protect_plant_unplaced`) instead of being quietly relaxed.
+        // 4 of 5 on paper, and five targets on three cells ((2,3) three deep). C55 made the stack
+        // real: all five stand, so the sheet's four-of-five can actually be satisfied - the mission
+        // used to be unwinnable because a second plant was refused on a taken cell.
         World world(catalog, catalog.levels.at("egypt_74"), 81);
-        check(world.protectedPlantCount() == 3,
-              "egypt_74 stacks three targets on one cell, so three stand, got " +
+        check(world.protectedPlantCount() == 5,
+              "egypt_74 lists five targets, so five must stand, got " +
                   std::to_string(world.protectedPlantCount()));
-        check(world.unplacedProtectedPlants() == 2,
-              "two of the five targets have no cell, got " + std::to_string(world.unplacedProtectedPlants()));
-        check(countEvents(world, "protect_plant_unplaced") == 2, "each dropped target must be reported");
+        check(world.unplacedProtectedPlants() == 0,
+              "no target may be dropped now that a cell can carry a stack, got " +
+                  std::to_string(world.unplacedProtectedPlants()));
+        check(countEvents(world, "protect_plant_unplaced") == 0, "nothing was dropped, so nothing is reported");
+        check(world.protectStackAt(2, 3).size() == 3, "three targets must share cell (2,3), got " +
+                                                          std::to_string(world.protectStackAt(2, 3).size()));
+        check(world.deepestProtectStack() == 3, "the deepest stack here is three, got " +
+                                                    std::to_string(world.deepestProtectStack()));
         check(world.requiredProtectedPlants() == 4,
               "egypt_74 requires four, got " + std::to_string(world.requiredProtectedPlants()));
+        check(world.requestedProtectedPlants() == 4, "the sheet still asks for four");
+        check(!world.protectClamped(), "a board that can hold every target must not be clamped");
         auto ids = protectedIds(world);
         world.damagePlant(ids[0], 1.0e6);
+        check(world.status() == "playing",
+              "four of five surviving still satisfies the mission, got: " + world.status());
+        ids = protectedIds(world);
+        world.damagePlant(ids[0], 1.0e6);
         check(world.status() == "lost",
-              "three targets cannot satisfy a four-of-five mission, got: " + world.status());
+              "dropping to three must lose a four-of-five mission, got: " + world.status());
     }
     {
         // 0 of 15: the plants are the level's scenery. Killing all of them must change nothing,
@@ -319,50 +340,223 @@ void testProtectThresholds(const Catalog& catalog) {
     }
 }
 
-// 2f. T59: a mission may ask for more targets than its own board can hold. That is not a rule
-// change - `egypt_74` stays winnable while all three of its targets stand - it is a capacity
-// report. The six missions that place no target at all need it most: with nothing on the lawn the
-// death path in `damagePlant` can never fire, so without this event the mission would pass no
-// matter what the player did, and nothing in the output would say so.
-void testProtectCapacityShortfall(const Catalog& catalog) {
+// 2g. C55: one cell, several protect targets. `lostcity_45` puts seven of its eight targets on
+// (4,3) and `egypt_74` three on (2,3); `sky_31` puts one on each of five cells its own
+// `initialPlants` already filled. The stack is the fix for T59's eleven unwinnable missions, so the
+// order inside it has to be an observable contract, not an implementation detail: the innermost
+// plant is the one planted first and the outermost one is what a zombie meets first.
+void testProtectStackOnOneCell(const Catalog& catalog) {
     {
-        World world(catalog, catalog.levels.at("egypt_74"), 90);
-        check(countEvents(world, "protect_capacity_shortfall") == 1,
-              "egypt_74 must report that its board cannot hold every target");
-        check(world.protectCapacityShortfall() == 1,
-              "egypt_74 is one target short, got " + std::to_string(world.protectCapacityShortfall()));
-        const auto& payload = firstEvent(world, "protect_capacity_shortfall");
-        check(payload.value("placed", -1) == 3,
-              "three targets must stand, got " + std::to_string(payload.value("placed", -1)));
-        check(payload.value("must", -1) == 4, "the mission must ask for four, got " +
-                                                  std::to_string(payload.value("must", -1)));
-        check(payload.value("delta", -1) == 1, "the gap must be one, got " +
-                                                   std::to_string(payload.value("delta", -1)));
-        check(world.status() == "playing", "a short mission must still start playing");
+        World world(catalog, catalog.levels.at("lostcity_45"), 70);
+        const auto stack = world.protectStackAt(4, 3);
+        check(stack.size() == 7, "lostcity_45 must stack seven targets on (4,3), got " +
+                                     std::to_string(stack.size()));
+        check(world.protectedPlantCount() == 8, "all eight targets must stand, got " +
+                                                    std::to_string(world.protectedPlantCount()));
+        for (std::size_t i = 0; i < stack.size(); ++i) {
+            check(stack[i] != nullptr && stack[i]->stackDepth == static_cast<int>(i),
+                  "the stack must be ordered innermost-first at index " + std::to_string(i));
+            check(stack[i]->protectedPlant, "every plant in a protect stack is a protect target");
+        }
+        check(world.deepestProtectStack() == 7, "seven deep is the deepest stack in the shipped data");
+        check(world.plantAt(4, 3) == stack.back(), "plantAt must answer with the outermost plant");
+        check(world.plantAt(0, 2) != nullptr && world.plantAt(0, 2)->stackDepth == 0,
+              "the singleton target on (0,2) is the only plant there");
+        // Each plant in the stack is separately damageable: kill the middle one and the other six
+        // must be untouched.
+        const auto* middle = stack[3];
+        const auto middleId = middle->id;
+        world.damagePlant(middleId, 1.0e6);
+        check(world.aliveProtectedPlants() == 7, "one of eight dead must leave seven, got " +
+                                                    std::to_string(world.aliveProtectedPlants()));
+        std::size_t stillStanding = 0;
+        for (const auto* plant : world.protectStackAt(4, 3)) {
+            if (plant->alive) ++stillStanding;
+        }
+        check(stillStanding == 6, "six of the seven on (4,3) must still stand, got " +
+                                      std::to_string(stillStanding));
+        check(world.plantAt(4, 3) != nullptr && world.plantAt(4, 3)->id != middleId,
+              "killing a middle plant must leave the outermost one on top");
+    }
+    {
+        // The missions whose targets land on cells the level's own plants filled. A lilypad can hold a
+        // bloomerang, a flowerpot a melonpult, so these cannot be solved by upgrading the existing
+        // plant in place - the target has to be a second plant on the same square. Which cell that is
+        // comes from the sheet: guessing coordinates here is how this test first went red.
+        const char* levels[] = {"carnival_81", "chinesegarden_57", "frontyard_53", "lostcity_67",
+                                "sky_31"};
+        for (const char* levelId : levels) {
+            const LevelMechanics* mechanics = LevelMechanicsTable::shared().find(levelId);
+            check(mechanics != nullptr, std::string(levelId) + " must carry a mechanics row");
+            if (mechanics == nullptr) continue;
+            int row = -1;
+            int col = -1;
+            for (const auto& target : mechanics->protect.plants) {
+                const bool own = std::any_of(
+                    mechanics->initialPlants.begin(), mechanics->initialPlants.end(),
+                    [&target](const InitialPlant& plant) {
+                        return plant.gridY == target.gridY && plant.gridX == target.gridX;
+                    });
+                if (own) {
+                    row = target.gridY;
+                    col = target.gridX;
+                    break;
+                }
+            }
+            check(row >= 0, std::string(levelId) +
+                                " must name a protect target on a cell its own plants already filled");
+            if (row < 0) continue;
+            World world(catalog, catalog.levels.at(levelId), 71);
+            const auto stack = world.protectStackAt(row, col);
+            check(stack.size() >= 2, std::string(levelId) + " must hold its target on top of the level's plant");
+            const PlantEntity* bottom = stack.front();
+            const PlantEntity* top = stack.back();
+            check(!bottom->protectedPlant, std::string(levelId) + "'s own plant is not the target");
+            check(top->protectedPlant, std::string(levelId) + "'s target stands above it");
+            check(top->stackDepth > bottom->stackDepth, std::string(levelId) + " must order the stack");
+        }
+    }
+}
 
-        // The report must not become a loss: with the waves gone, three standing targets win.
-        World survivor(catalog, clearedWaves(catalog, "egypt_74"), 90);
-        for (int i = 0; i < 30; ++i) survivor.step();
-        check(survivor.status() == "won",
-              "egypt_74 must stay winnable while its three targets stand, got: " + survivor.status());
+// 2h. C55: the loss rule counts plants, not cells. Before the stack existed the two were the same
+// number; now a mission that keeps four of five has to survive losing one plant out of a cell that
+// carries three, and losing the plant *under* one must count the same as losing the one on top.
+void testProtectDeathCountsEveryPlant(const Catalog& catalog) {
+    {
+        World world(catalog, catalog.levels.at("egypt_74"), 72);
+        check(world.requiredProtectedPlants() == 4, "this mission requires four of five");
+        // Kill the innermost plant of the three-deep stack: the count must drop to four and the
+        // mission must keep playing, even though the cell still shows a plant.
+        auto stack = world.protectStackAt(2, 3);
+        check(stack.size() == 3, "the cell must carry three before the kill");
+        world.damagePlant(stack.front()->id, 1.0e6);
+        check(world.aliveProtectedPlants() == 4, "four of five must remain alive, got " +
+                                                     std::to_string(world.aliveProtectedPlants()));
+        check(world.status() == "playing",
+              "losing the plant under the stack must not end a four-of-five mission, got: " + world.status());
+        check(world.plantAt(2, 3) != nullptr && world.plantAt(2, 3)->alive,
+              "the cell must still hold a living plant after the innermost one dies");
+        world.damagePlant(world.plantAt(2, 3)->id, 1.0e6);
+        check(world.aliveProtectedPlants() == 3, "three must be left, got " +
+                                                     std::to_string(world.aliveProtectedPlants()));
+        check(world.status() == "lost",
+              "three cannot satisfy four, so the mission must be lost, got: " + world.status());
+        check(world.protectFailures() == 1, "the loss must be counted once, got " +
+                                                std::to_string(world.protectFailures()));
     }
     {
-        // carnival_79 lists protect targets that land on no cell at all: the mission protects
-        // nothing, and before T59 that fact appeared nowhere.
-        World world(catalog, catalog.levels.at("carnival_79"), 91);
-        check(world.protectedPlantCount() == 0,
-              "carnival_79 places no protect target, got " + std::to_string(world.protectedPlantCount()));
-        check(world.requiredProtectedPlants() > 0,
-              "carnival_79 still asks for survivors, got " + std::to_string(world.requiredProtectedPlants()));
-        check(countEvents(world, "protect_capacity_shortfall") == 1,
-              "carnival_79 must report that it can protect nothing");
-        check(world.protectCapacityShortfall() == world.requiredProtectedPlants(),
-              "with nothing placed the gap must be the whole mission, got " +
+        // A stack that loses only its outer plants keeps the mission alive: `lostcity_45` needs all
+        // eight, so killing the outermost must lose it at once - the opposite probe to the case
+        // above, and the one that pins "count plants" against "count cells with a plant left".
+        World world(catalog, catalog.levels.at("lostcity_45"), 73);
+        check(world.requiredProtectedPlants() == 8, "lostcity_45 requires all eight");
+        world.damagePlant(world.plantAt(4, 3)->id, 1.0e6);
+        check(world.aliveProtectedPlants() == 7, "seven must be left");
+        check(world.status() == "lost", "a mission that requires all eight must end on the first death");
+    }
+}
+
+// 2i. C55's defensive half. `requiredProtectedPlants()` is `min(sheet, placed)`, so no mission can
+// ask for more survivors than its board holds - that invariant is what makes the eleven T59
+// missions winnable by construction. On shipped data the clamp never has to fire (the stacks reach
+// the sheet's own number), which this case pins: every protect level reports no shortfall and is
+// not clamped. A future pack whose cells are all blocked by grid items would flip both, and these
+// two assertions are what would notice.
+void testProtectRequirementNeverExceedsTheBoard(const Catalog& catalog) {
+    const LevelMechanicsTable& table = LevelMechanicsTable::shared();
+    int protectLevels = 0;
+    int clamped = 0;
+    int shortCount = 0;
+    for (const auto& [id, level] : catalog.levels) {
+        const LevelMechanics* mechanics = table.find(id);
+        if (mechanics == nullptr || mechanics->protect.plants.empty()) continue;
+        World world(catalog, level, 74);
+        ++protectLevels;
+        check(world.requiredProtectedPlants() <= world.protectedPlantCount(),
+              id + ": the requirement must never exceed the plants that stand");
+        check(world.requestedProtectedPlants() == mechanics->protect.requiredSurvivors(),
+              id + ": the request must report the sheet's own number");
+        if (world.protectClamped()) ++clamped;
+        if (world.protectCapacityShortfall() != 0) ++shortCount;
+        check(world.protectCapacityShortfall() == 0,
+              id + ": every shipped protect level must hold its targets, short by " +
                   std::to_string(world.protectCapacityShortfall()));
-        check(world.status() == "playing", "an empty protect mission must not fail the level by itself");
+    }
+    check(protectLevels == 286, "286 levels carry protect targets, got " + std::to_string(protectLevels));
+    check(clamped == 0, "no shipped level may be clamped, got " + std::to_string(clamped));
+    check(shortCount == 0, "no shipped level may report a shortfall, got " + std::to_string(shortCount));
+}
+
+// 2j. The eleven T59 missions, one by one, must initialise without throwing and must end up with
+// their targets standing. This is deliberately a loop over the named levels: a regression that
+// makes one of them throw takes the whole suite down with a message that names the level.
+void testProtectLevelsInitialize(const Catalog& catalog) {
+    struct Case {
+        const char* level;
+        int must;
+        int placed;
+    } cases[] = {
+        {"carnival_23", 6, 6},  {"carnival_79", 1, 1},  {"carnival_81", 3, 3},
+        {"chinesegarden_57", 3, 3}, {"egypt_74", 4, 5}, {"frontyard_51", 6, 6},
+        {"frontyard_53", 2, 2}, {"lostcity_45", 8, 8}, {"lostcity_67", 1, 1},
+        {"sky_31", 5, 5},       {"sky_46", 10, 10},
+    };
+    for (const Case& one : cases) {
+        World world(catalog, catalog.levels.at(one.level), 75);
+        check(world.requestedProtectedPlants() == one.must,
+              std::string(one.level) + " must ask for " + std::to_string(one.must) + ", got " +
+                  std::to_string(world.requestedProtectedPlants()));
+        check(world.protectedPlantCount() == one.placed,
+              std::string(one.level) + " must place " + std::to_string(one.placed) + ", got " +
+                  std::to_string(world.protectedPlantCount()));
+        check(world.requiredProtectedPlants() == one.must,
+              std::string(one.level) + " must require " + std::to_string(one.must) + ", got " +
+                  std::to_string(world.requiredProtectedPlants()));
+        check(!world.protectClamped(), std::string(one.level) + " must not be clamped");
+        check(world.unplacedProtectedPlants() == 0,
+              std::string(one.level) + " must not drop a target, dropped " +
+                  std::to_string(world.unplacedProtectedPlants()));
+    }
+}
+
+
+// (one plant per cell) instead of the report. The report itself stays: it now fires only on a board
+// whose cells are blocked by grid items, which no shipped level has, so what this case pins down is
+// that the eleven are *quiet* and every one of them can actually be won.
+void testProtectCapacityShortfall(const Catalog& catalog) {
+    const char* eleven[] = {"carnival_23", "carnival_79", "carnival_81", "chinesegarden_57",
+                            "egypt_74",    "frontyard_51", "frontyard_53", "lostcity_45",
+                            "lostcity_67", "sky_31",       "sky_46"};
+    for (const char* id : eleven) {
+        World world(catalog, catalog.levels.at(id), 90);
+        check(world.protectedPlantCount() > 0, std::string(id) + " must have its targets standing");
+        check(world.protectCapacityShortfall() == 0,
+              std::string(id) + " must not be short after C55, got " +
+                  std::to_string(world.protectCapacityShortfall()));
+        check(countEvents(world, "protect_capacity_shortfall") == 0,
+              std::string(id) + " must not report a shortfall any more");
+        check(countEvents(world, "protect_requirement_clamped") == 0,
+              std::string(id) + " must not be clamped: its cells can hold every target");
+        check(world.requiredProtectedPlants() <= world.protectedPlantCount(),
+              std::string(id) + " must never ask for more survivors than stand");
+        check(world.status() == "playing", std::string(id) + " must start playing");
     }
     {
-        // beach_88 lists five and needs four: enough cells, so no report.
+        // The one that used to protect nothing: `carnival_79` lists its single target on a cell the
+        // level's own pvine1 stood on. It now stacks on top of it instead of being dropped.
+        World world(catalog, catalog.levels.at("carnival_79"), 91);
+        check(world.protectedPlantCount() == 1,
+              "carnival_79 must protect its one target, got " + std::to_string(world.protectedPlantCount()));
+        check(world.protectStackAt(0, 0).size() == 2, "the target stands on top of the level's own plant");
+        check(world.plantAt(0, 0) != nullptr && world.plantAt(0, 0)->stackDepth == 1,
+              "the protect target is the outermost plant on (0,0)");
+        check(world.requiredProtectedPlants() == 1, "one of one must survive");
+        world.damagePlant(protectedIds(world).at(0), 1.0e6);
+        check(world.status() == "lost", "losing the only target must lose the mission, got: " + world.status());
+    }
+    {
+        // beach_88 lists five and needs four: enough cells, so no report - the guard against a
+        // zero gap being mistaken for a shortfall.
         World world(catalog, catalog.levels.at("beach_88"), 92);
         check(countEvents(world, "protect_capacity_shortfall") == 0,
               "beach_88 has enough cells and must not report a shortfall");
@@ -370,14 +564,11 @@ void testProtectCapacityShortfall(const Catalog& catalog) {
               "beach_88 must report no gap, got " + std::to_string(world.protectCapacityShortfall()));
     }
     {
-        // beach_14 lists exactly as many targets as it requires (five of five). The board fits them
-        // all, so the gap is zero - and a gap of zero must not be reported as a shortfall either,
-        // which is what keeps `<` from drifting into `<=` unnoticed.
+        // beach_14 lists exactly as many targets as it requires (five of five) and fits them all.
         World world(catalog, catalog.levels.at("beach_14"), 93);
         check(world.protectedPlantCount() == world.requiredProtectedPlants(),
               "beach_14 places exactly as many targets as it requires");
-        check(countEvents(world, "protect_capacity_shortfall") == 0,
-              "an exact fit is not a shortfall");
+        check(countEvents(world, "protect_capacity_shortfall") == 0, "an exact fit is not a shortfall");
         check(world.protectCapacityShortfall() == 0,
               "an exact fit must report a zero gap, got " + std::to_string(world.protectCapacityShortfall()));
     }
@@ -430,17 +621,18 @@ void testSuppressFlagZombie(const Catalog& catalog) {
 // 3. An unwired mechanic is counted, named and graded - and does not stop the level.
 void testUnknownMechanicsAreCounted(const Catalog& catalog) {
     {
-        // beach_10 declares a tide, which this round does not run.
+        // T88: beach_10's tide is wired now, so it must report a clean sheet and actually move
+        // the waterline when its waves land (TidalChange rows at waves 2..9, column = the wave).
         World world(catalog, catalog.levels.at("beach_10"), 76);
         const auto& unknown = world.mechanicUnknown();
-        check(!unknown.empty(), "beach_10 must report its unwired mechanics");
-        check(unknown.count("events") == 1, "beach_10's tide must be counted under events");
+        check(unknown.empty(), "beach_10's tide is wired, kinds left: " + std::to_string(unknown.size()));
         check(world.mechanicUnknownKinds() == unknown.size(), "the kind count must match the map");
-        check(world.mechanicUnknownInstances() == 1, "one instance for one module");
-        check(pvz::engine::mechanicTierFor("events") == MechanicTier::unknown, "events is not wired yet");
-        check(countEvents(world, "mechanic_unknown") == 1, "the gap must be in the event log");
+        check(world.mechanicUnknownInstances() == 0, "no instances left on a wired tide level");
+        check(pvz::engine::mechanicTierFor("events.tide") == MechanicTier::covered, "the tide is wired");
+        check(pvz::engine::mechanicTierFor("spawners.spider") == MechanicTier::unknown,
+              "a spider rain is still unwired: no spider exists in content or the pack");
         for (int step = 0; step < 60; ++step) world.step();
-        check(world.status() == "playing", "an unwired mechanic must not stop the level");
+        check(world.status() == "playing", "a wired mechanic must not stop the level");
     }
     {
         // jittered spawners are the ordinary wave path, so they are `covered`, not `unknown`: a
@@ -453,7 +645,10 @@ void testUnknownMechanicsAreCounted(const Catalog& catalog) {
         // The wired ones are covered too, even though the kernel did read them.
         check(pvz::engine::mechanicTierFor("conveyor") == MechanicTier::covered, "the belt is wired");
         check(pvz::engine::mechanicTierFor("protectThePlant") == MechanicTier::covered, "protect is wired");
-        check(pvz::engine::mechanicTierFor("boardGrid") == MechanicTier::unknown, "the mold grid is not wired");
+        check(pvz::engine::mechanicTierFor("boardGrid") == MechanicTier::covered,
+              "the board mask is carried as data since T88");
+        check(pvz::engine::mechanicTierFor("mutators.maxSun") == MechanicTier::covered,
+              "the sun cap is wired since T88");
     }
     {
         // A level with nothing beyond its waves has an empty sheet entry.
@@ -527,18 +722,185 @@ void testSpawnersLandOnTheLawn(const Catalog& catalog) {
     check(plain.spawnerSpawned().empty(), "a level without special spawners must report no arrivals");
 }
 
+// T88-1: the tide is a wave-triggered row, not a timer. beach_2 states two absolute changes:
+// column 6 on wave 1, column 3 on wave 2.
+void testTideFollowsTheWaves(const Catalog& catalog) {
+    World world(catalog, catalog.levels.at("beach_2"), 88);
+    check(world.tideChanges() == 0, "the waterline must not move before a wave lands");
+    check(world.tideColumn() == 0, "no tide yet, column=" + std::to_string(world.tideColumn()));
+    const std::uint64_t cap = world.tick() + 20000;
+    while (world.wave() < 2 && world.status() == "playing" && world.tick() < cap) world.step();
+    std::vector<int> columns;
+    for (const auto& entry : world.events()) {
+        if (entry.value("type", std::string{}) != "tide_changed") continue;
+        columns.push_back(entry.value("details", pvz::Json::object()).value("column", -1));
+    }
+    check(!columns.empty(), "beach_2's tide must arrive with its waves");
+    check(world.tideChanges() == static_cast<int>(columns.size()),
+          "tideChanges must match the log: " + std::to_string(world.tideChanges()) + " vs " +
+              std::to_string(columns.size()));
+    check(world.tideColumn() == columns.back(), "the state must be the last change applied");
+    check(columns.front() == 6,
+          "wave 1 sets the waterline to column 6, got " + std::to_string(columns.front()));
+}
+
+/// A zombie on `row` at the far right, as a probe for wind and for row placement.
+double rowX(const World& world, int row) {
+    for (const auto& zombie : world.zombies()) {
+        if (zombie.alive && zombie.row == row) return zombie.x;
+    }
+    return -1.0;
+}
+
+// T88-2: a frost wind pushes the zombies standing on its rows. iceage_25's wave 1 names rows
+// 0/2/3/4 and never row 1, so row 1 is the control.
+void testFrostWindPushesItsRows(const Catalog& catalog) {
+    World world(catalog, catalog.levels.at("iceage_25"), 89);
+    world.spawnZombieAt("basic", 0, 4.0);
+    world.spawnZombieAt("basic", 1, 4.0);
+    double row0Before = rowX(world, 0);
+    double row1Before = rowX(world, 1);
+    check(row0Before > 0.0 && row1Before > 0.0, "both probes must be on the lawn");
+    const std::uint64_t cap = world.tick() + 20000;
+    while (world.wave() < 1 && world.status() == "playing" && world.tick() < cap) {
+        row0Before = rowX(world, 0);
+        row1Before = rowX(world, 1);
+        world.step();
+    }
+    check(world.frostWinds() >= 1, "iceage_25's wave 1 must blow a wind");
+    check(world.frostWinds() == static_cast<int>(countEvents(world, "frost_wind")),
+          "frostWinds must match the log");
+    const pvz::Json wind = firstEvent(world, "frost_wind");
+    check(wind.value("direction", std::string{}) == "right", "the wind blows right");
+    check(wind.value("pushed", 0) >= 1, "the wind must push at least the row 0 probe");
+    const double row0After = rowX(world, 0);
+    const double row1After = rowX(world, 1);
+    check(row0After > row0Before,
+          "the wind must carry row 0's zombie right: " + std::to_string(row0Before) + " -> " +
+              std::to_string(row0After));
+    check(row1After <= row1Before,
+          "row 1 is not in the wind and must only walk left: " + std::to_string(row1Before) + " -> " +
+              std::to_string(row1After));
+}
+
+// T88-3: `LevelMutatorMaxSunProps.maxSunOverride` caps the bank. carnival_82 states 200 and its
+// content opens at 550, so the opening bank is clamped too - and says so.
+void testSunCapStopsTheBank(const Catalog& catalog) {
+    World world(catalog, catalog.levels.at("carnival_82"), 90);
+    check(world.sunCap() == 200, "carnival_82's cap, got " + std::to_string(world.sunCap()));
+    check(world.sun() == 200,
+          "an opening bank above its own cap must be clamped, got " + std::to_string(world.sun()));
+    check(countEvents(world, "sun_capped") == 1, "the clamp must be logged, not silent");
+    check(world.plant("sunflower", 2, 0).empty(), "the first sunflower must plant");
+    // A second card of the same kind has to wait out its recharge, so step past it rather than
+    // asserting twice in one tick.
+    for (int tick = 0; tick < 700; ++tick) world.step();
+    // (2,1) is an initial cabbagepult in this level, so the second cell is (2,2); picking an
+    // occupied cell would fail on `cell occupied` and never exercise the recharge at all.
+    check(world.plant("sunflower", 2, 2).empty(), "the second sunflower must plant after its recharge");
+    std::int64_t peak = world.sun();
+    std::size_t collected = 0;
+    for (int step = 0; step < 6000; ++step) {
+        world.step();
+        for (const auto& sun : world.suns()) {
+            if (world.collect(sun.id)) {
+                ++collected;
+                peak = std::max(peak, world.sun());
+            }
+        }
+        peak = std::max(peak, world.sun());
+    }
+    check(collected > 0, "the sunflowers must produce something to collect");
+    check(peak <= 200, "the bank must never pass the cap, peaked at " + std::to_string(peak));
+    check(world.sun() == 200, "the run must end at the cap, got " + std::to_string(world.sun()));
+}
+
+// T88-4: the board mask is carried as data. The sheet gives its 0/1 codes no meaning, so the
+// kernel loads them, counts them, and refuses to invent a second layout.
+void testBoardGridMaskIsCarried(const Catalog& catalog) {
+    World world(catalog, catalog.levels.at("beach_94"), 91);
+    const pvz::engine::LevelMechanics* spec = LevelMechanicsTable::shared().find("beach_94");
+    check(spec != nullptr && spec->hasBoardGrid(), "beach_94 must carry a board mask");
+    int marked = 0;
+    for (const auto& row : spec->boardGrid.cells) {
+        for (const int cell : row) {
+            if (cell != 0) ++marked;
+        }
+    }
+    check(world.boardGridIndex() == 0, "layout 0 must be loaded");
+    check(world.boardGridMarkedCells() == marked,
+          "the mask must be carried whole: " + std::to_string(world.boardGridMarkedCells()) + " vs " +
+              std::to_string(marked));
+    check(marked > 0, "beach_94's mask must mark something");
+    check(world.boardGridMarked(0, 0) == (spec->boardGrid.cells[0][0] != 0),
+          "a cell's code must come straight from the sheet");
+    check(!world.applyBoardGrid(1), "a level with one layout must refuse layout 1");
+    check(countEvents(world, "board_grid_rejected") == 1, "the refusal must be logged");
+    check(world.boardGridIndex() == 0, "a refused layout must not change the board");
+    // And the codes are not a rule. beach_94 carries a belt (so does most of the mold family), so
+    // the planting probe uses carnival_7: same "mold" mask, an ordinary seed bank, so a marked cell
+    // can actually be used and a refusal would mean the mask had been turned into a rule.
+    World bank(catalog, catalog.levels.at("carnival_7"), 96);
+    check(bank.boardGridIndex() == 0 && bank.boardGridMarkedCells() > 0,
+          "carnival_7 must carry a mask too");
+    std::pair<int, int> target{-1, -1};
+    for (int row = 0; row < bank.rows() && target.first < 0; ++row) {
+        for (int col = 0; col < bank.cols(); ++col) {
+            if (!bank.boardGridMarked(row, col)) continue;
+            if (bank.plantAt(row, col) != nullptr || bank.gridItemAt(row, col) != nullptr) continue;
+            target = {row, col};
+            break;
+        }
+    }
+    check(target.first >= 0, "the mask must leave at least one free marked cell");
+    const std::string refusal =
+        bank.plant(catalog.levels.at("carnival_7").deck.front(), target.first, target.second);
+    check(refusal.empty(),
+          "a marked cell must still take a plant - the codes have no meaning in the sheet, refused: " +
+              refusal);
+    check(bank.plantAt(target.first, target.second) != nullptr, "the plant must be on the lawn");
+}
+
+// T88-5: what is left unwired is exactly what the report says is left.
+void testWiringLeavesOnlyTheDocumentedGaps(const Catalog& catalog) {
+    World tide(catalog, catalog.levels.at("beach_2"), 92);
+    check(tide.mechanicUnknown().count("events.tide") == 0, "the tide is wired");
+    check(tide.mechanicUnknown().empty(),
+          "beach_2 must be clean, kinds left: " + std::to_string(tide.mechanicUnknown().size()));
+    World wrapper(catalog, catalog.levels.at("beach_21"), 93);
+    check(wrapper.mechanicUnknown().count("mutators") == 1,
+          "a challenge wrapper is not a modifier and must stay counted");
+    World spider(catalog, catalog.levels.at("carnival_1"), 94);
+    check(spider.mechanicUnknown().count("spawners.spider") > 0,
+          "a spider rain has no zombie to place and must stay counted");
+    World mask(catalog, catalog.levels.at("beach_94"), 95);
+    check(mask.mechanicUnknown().count("boardGrid") == 0, "a carried mask is not a gap");
+}
+
 void run(const fs::path& content, const fs::path& pack) {
     pvz::CatalogOptions options;
     options.contentPack = pack;
     const Catalog catalog = pvz::loadCatalog(content, options);
     check(!catalog.levels.empty(), "the content must carry levels for the mechanics tests");
     testTableShape();
+    // T88: the Events module, the board mask and the sun cap. These run early because they are
+    // self-contained (one level each) and because the protect-stack block below exercises the
+    // overlay rules that the same `plantAt` feeds.
+    testTideFollowsTheWaves(catalog);
+    testFrostWindPushesItsRows(catalog);
+    testSunCapStopsTheBank(catalog);
+    testBoardGridMaskIsCarried(catalog);
+    testWiringLeavesOnlyTheDocumentedGaps(catalog);
     testConveyorNeedsNoSun(catalog);
     testInitialPlantsAreLaid(catalog);
     testGridItemsBlockAndBreak(catalog);
     testProtectMission(catalog);
     testProtectThresholds(catalog);
     testProtectCapacityShortfall(catalog);
+    testProtectStackOnOneCell(catalog);
+    testProtectDeathCountsEveryPlant(catalog);
+    testProtectRequirementNeverExceedsTheBoard(catalog);
+    testProtectLevelsInitialize(catalog);
     testSuppressFlagZombie(catalog);
     testSpawnersLandOnTheLawn(catalog);
     testUnknownMechanicsAreCounted(catalog);

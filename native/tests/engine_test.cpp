@@ -184,9 +184,10 @@ void testTwentySixWorlds(const Catalog& catalog, const fs::path& tempRoot) {
 void testPackOnlyPlant(const Catalog& catalog) {
     check(plantFamilyCount() == 339, "the plant family table must cover all 339 original types");
 
-    // The shipped content JSON names 147 plants; everything else can only come
-    // from the pack. Pick a cheap type and prove it can live on the lawn.
-    const std::string id = "ailmint";
+    // The shipped content JSON names 409 plants (147 hand-written + 262 pack rows); the 35 types
+    // the roster could not take can only come from the pack. Pick one of those and prove it can
+    // live on the lawn.
+    const std::string id = "bitpeashooter";
     check(catalog.plants.find(id) == catalog.plants.end(), id + " must be pack-only, not in content JSON");
     check(catalog.rules != nullptr && catalog.rules->findPlant(id) != nullptr, id + " must exist in the pack");
 

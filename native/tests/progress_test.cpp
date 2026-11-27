@@ -84,7 +84,10 @@ void testStarEvaluation(const Catalog& catalog, const fs::path& content, const f
   const auto outcome = evaluateStars(*goals, *world);
   check(outcome.passed.size() == 3, "every goal must be evaluated");
   check(outcome.passed[0], "beat must pass after a win");
-  check(outcome.passed[1], "no mower was used, so the mower goal must pass");
+  check(outcome.passed[1],
+        "no mower was used, so the mower goal must pass (mowersLeft " +
+            std::to_string(world->mowersLeft()) + " of " + std::to_string(world->rows()) +
+            ", mowerKills " + std::to_string(world->mowerKills()) + ")");
   // beach_23 ships one zombie but its kill goal asks for ten: the goal is
   // unreachable by the content itself, so a clean win must award two stars, and
   // the model has to say so instead of quietly rounding up.
@@ -256,11 +259,13 @@ void testBattleOutcomeAdapter(const Catalog& catalog, const fs::path& content,
   check(outcome.sunSpent == 500, "five peashooters must have cost 500 sun, got " +
                                      std::to_string(outcome.sunSpent));
   check(outcome.sun == 50, "beach_23 starts at 550 sun and spends 500, got " + std::to_string(outcome.sun));
-  check(outcome.mowersLeft == 5, "beach_23 must still hold five mowers, got " +
-                                     std::to_string(outcome.mowersLeft));
+  // The board now matches production (six rows), so the script keeps six charges.
+  check(outcome.mowersLeft == world->rows(), "beach_23 must hold one mower per row, got " +
+                                                std::to_string(outcome.mowersLeft));
   check(outcome.plantsLost == 0, "the reference script must not lose a plant");
-  check(outcome.zombiesKilled == 1, "the level spawns one zombie, got " +
-                                        std::to_string(outcome.zombiesKilled));
+  // One wave zombie plus the one the fish spawner drops (t66 wired that spawner).
+  check(outcome.zombiesKilled == 2, "the level spawns two zombies, got " +
+                                       std::to_string(outcome.zombiesKilled));
 
   // The save lives under a non-ASCII directory, the shape a Chinese install would use.
   const auto dir = freshDir(temp, u8"S6 进度");
@@ -391,7 +396,18 @@ int wmain(int argc, wchar_t** argv) {
     const fs::path content(argv[1]);
     const fs::path temp(argv[2]);
     const fs::path scripts(argv[3]);
-    const auto catalog = loadCatalog(content);
+    // Production opens every battle through `--run-level`, which fills in
+    // native/generated/board_sizes.json so the 6-row beach/modern boards exist.
+    // Without it the reference scripts run on a default 5x9 lawn, and a spawner
+    // zombie that production has a row for ends up somewhere the script never
+    // defends. Ask the same table here, or the fixture measures a board the game
+    // never plays.
+    CatalogOptions options;
+    const fs::path generated = pvz::engine::generatedDir();
+    if (!generated.empty() && fs::is_regular_file(generated / "board_sizes.json")) {
+        options.boardSizes = generated / "board_sizes.json";
+    }
+    const auto catalog = loadCatalog(content, options);
 
     testStarTable(content);
     testStarEvaluation(catalog, content, scripts);

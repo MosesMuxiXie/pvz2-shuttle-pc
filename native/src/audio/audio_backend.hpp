@@ -21,7 +21,7 @@ public:
     /// Why the backend is silent (`no SDL`, `SDL_OpenAudioDeviceStream: ...`), empty when it plays.
     virtual std::string note() const = 0;
 
-    virtual bool playSfx(const std::string& sound, float gain = 1.0F) = 0;
+    virtual bool playSfx(const std::string& sound, float gain = 1.0F, int priority = 0) = 0;
     virtual bool playMusic(const std::string& sound, bool loop = true, float gain = 1.0F) = 0;
     virtual void stopMusic() = 0;
     virtual void stopAll() = 0;

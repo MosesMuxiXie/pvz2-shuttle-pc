@@ -2,8 +2,8 @@
 """可玩植物子集评估（`tools/contentc/plant_playable.py`）的回归测试。
 
 这些用例钉的是**实测数字**：原版 `PlantType` 名册 339 条（295 条 pack 行 + 44 条同名
-skipped_existing），按「成本 > 0 / 有族 / 有美术」三条判据逐条判，293 条可玩
-（42 条已在手工名册 + 251 条新增候选），46 条被阻断（缺成本 23、缺美术 26、两者都缺 3）。
+skipped_existing），按「成本 > 0 / 有族 / 有美术」三条判据逐条判，304 条可玩
+（42 条已在手工名册 + 262 条新增候选），35 条被阻断（缺成本 23、缺美术 15、两者都缺 3）。
 """
 from __future__ import annotations
 
@@ -21,15 +21,17 @@ sys.path.insert(0, str(REPO))
 from tools.contentc import plant_playable as pp  # noqa: E402
 
 TOTAL = 339
-PLAYABLE = 293
-PLAYABLE_NEW = 251
+# 2026-11-26：美术索引由资产流水线重建（bases 1087 → 1135），多认出 11 条，
+# 可玩 293 → 304、新增 251 → 262、阻断 46 → 35（缺美术 26 → 15）。
+PLAYABLE = 304
+PLAYABLE_NEW = 262
 PLAYABLE_AUTHORED = 42
-BLOCKED = 46
+BLOCKED = 35
 MISSING_COST = 23
 MISSING_COST_NULL = 2
 MISSING_COST_ZERO = 21
 MISSING_FAMILY = 0
-MISSING_ART = 26
+MISSING_ART = 15
 BOTH = 3
 SAME_AS_AUTHORED = 44
 AUTHORED_BLOCKED = 2
@@ -113,13 +115,15 @@ class BlockerTest(unittest.TestCase):
             self.assertFalse(rows[rid]["hasCost"])
             self.assertIn("no-cost", rows[rid]["blockers"])
 
-    def test_art_blockers_are_twenty_six(self):
+    def test_art_blockers_are_fifteen(self):
+        """美术索引重建后只剩 15 条缺美术（原 26；apsarlotus/bubblecoral 等已被认到）。"""
         payload = built()
         ids = payload["blockers"]["no-art"]
         self.assertEqual(len(ids), MISSING_ART)
-        self.assertIn("apsarlotus", ids)
-        self.assertIn("cornucopia", ids)
-        self.assertIn("bubblecoral", ids)
+        self.assertNotIn("apsarlotus", ids)
+        self.assertIn("bitpeashooter", ids)
+        self.assertIn("dandelion", ids)
+        self.assertIn("minishroom", ids)
         rows = {row["id"]: row for row in payload["rows"]}
         for rid in ids:
             self.assertFalse(rows[rid]["hasArt"])
@@ -162,9 +166,15 @@ class AuthoredOverlapTest(unittest.TestCase):
         self.assertEqual(same, skipped)
 
     def test_new_playable_never_repeats_an_authored_id(self):
+        """`playableNew` 不能与**手工行**重合。
+
+        名册里另有 pack 派生行（`source: "pack"`）——那正是本评估的产出去向，
+        再次合并时它们本来就该出现在 `playableNew` 里，所以不能算「手工已有」。
+        """
         payload = built()
         content = json.loads(pp.DEFAULT_CONTENT.read_text(encoding="utf-8"))
-        authored = {row["id"] for row in content}
+        authored = {row["id"] for row in content if row.get("source") != "pack"}
+        self.assertEqual(len(authored), 147)
         new = set(payload["playableNew"])
         self.assertEqual(len(new), PLAYABLE_NEW)
         self.assertEqual(new & authored, set())
@@ -232,7 +242,7 @@ class RenderTest(unittest.TestCase):
             "## 九、边界",
             "44 条同名",
             "缺美术",
-            "251 条判据全过",
+            "262 条判据全过",
         ):
             self.assertIn(token, report)
         self.assertNotIn("（无）\n\n（无）", report)
@@ -357,7 +367,7 @@ class CliTest(unittest.TestCase):
             self.assertEqual(code, 0)
             self.assertFalse(json_path.exists())
             self.assertFalse(report_path.exists())
-            self.assertIn("playable=293", buffer.getvalue())
+            self.assertIn("playable=304", buffer.getvalue())
 
     def test_missing_input_exits_two(self):
         buffer = io.StringIO()

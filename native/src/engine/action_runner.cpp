@@ -128,6 +128,11 @@ double packDamage(World& world, const PlantEntity& plant, const ActionSlot& slot
     } else if (const auto* def = world.findPlant(plant.type); def != nullptr && def->damage > 0) {
         damage = def->damage;
     }
+    // B1 (T90): the sheet's per-level damage, applied to the number the pack just gave us. The
+    // identity guard inside `levelDamage` rejects everything at level 1, so this line cannot move a
+    // default run; it is also idempotent, which is why it is safe to reach it from both the shot and
+    // the explode path below.
+    damage = world.levelDamage(plant.type, damage);
     if (plant.plantFoodTicks > 0) damage *= tuning::kPlantFoodDamageScale;
     return damage;
 }

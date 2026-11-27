@@ -595,6 +595,255 @@ void testKeysUnlockedGate() {
   check(!keysUnlocked(progress), "an attempted but uncleared egypt_3 keeps the gate shut");
 }
 
+/// 438 rows the battle path cannot reach; 293 of them name a plant. Landing writes those plants into
+/// `unlockedPlants` (ownership), not into `seeds` (a plantable packet), and a second pass changes
+/// nothing: the roster is a set.
+///
+/// 293 rows are not 293 plants: 244 are `first:unlock_plant:<plant>` and 49 are
+/// `replay:unlock_plant:<plant>` naming a plant the first-clear row already granted. So `landed`
+/// counts rows (293) while the roster grows by the 244 distinct ids and the 49 repeats report as
+/// `already_owned`.
+void testPlantUnlocksLand() {
+  const RewardTable& table = RewardTable::shared();
+  Progress progress;
+  const RewardLanding first = landRewards(progress, table);
+
+  check(first.planted == 244, "244 distinct plants must land, got " +
+                                  std::to_string(first.planted));
+  check(first.alreadyOwned == 56,
+        "49 replay plant rows + 7 repeated costume rows are already owned, got " +
+            std::to_string(first.alreadyOwned));
+  check(progress.unlockedPlants.size() == 244,
+        "the save must own 244 plants, got " + std::to_string(progress.unlockedPlants.size()));
+  check(std::is_sorted(progress.unlockedPlants.begin(), progress.unlockedPlants.end()),
+        "unlockedPlants stays sorted");
+  const auto has = [&progress](const std::string& id) {
+    return std::binary_search(progress.unlockedPlants.begin(), progress.unlockedPlants.end(), id);
+  };
+  check(has("ailmint") && has("akee1") && has("aloe"),
+        "three sampled rows from the table must be owned after landing");
+  check(first.unlockedPlants.size() == 244, "the report lists the plants this pass added");
+  check(progress.seeds.empty(), "an unlock is not a seed: the seed bag stays untouched");
+
+  const RewardLanding again = landRewards(progress, table);
+  check(again.planted == 0 && again.unlockedPlants.empty(),
+        "a second pass unlocks nothing, got " + std::to_string(again.planted));
+  check(again.alreadyOwned == 315, "every plant and costume row is already owned on pass two, got " +
+                                       std::to_string(again.alreadyOwned));
+  check(progress.unlockedPlants.size() == 244, "the roster does not grow on a second pass");
+
+  std::cout << "plants: 293 rows -> " << progress.unlockedPlants.size()
+            << " owned (landed " << first.landed << ", already owned " << first.alreadyOwned
+            << "), second pass planted " << again.planted << " alreadyOwned " << again.alreadyOwned
+            << "\n";
+}
+
+/// The 30 coin rows are three families, and paying the wrong two would mint money:
+///   * 4 `constant:` rows are `GamePropertySheet` prices (`CoinsPerKey = 1000` = a key costs 1000);
+///   * 26 `rift-boss:` / `rift-clear:` rows are payouts of a mode this client does not have;
+///   * the 10 `present:...:coinpack_medium` rows are the lunch box, already paid by `settleRewards`.
+/// The default pays none of the first two, and each opt-in pays exactly its family.
+void testCoinFamiliesDoNotMintCoins() {
+  const RewardTable& table = RewardTable::shared();
+  const int constants = 5010;  // 1000 + 10 + 2000 + 2000
+  const int rift = 23600;      // 3 x 5200 from rift-boss + 8000 from rift-clear
+
+  Progress progress;
+  const RewardLanding plain = landRewards(progress, table);
+  check(progress.coins == 0 && plain.coins == 0,
+        "the default pass must not pay a price or a rift payout, got " +
+            std::to_string(progress.coins));
+  check(plain.prices.at("CoinsPerKey") == 1000 && plain.prices.at("KeysPerCostume") == 10 &&
+            plain.prices.at("LawnMowerPurchasePriceInCoins") == 2000 &&
+            plain.prices.at("SeedSlotRentalCost") == 2000 &&
+            plain.prices.at("StarsPerCostume") == 20,
+        "the five economy constants are reported as prices, got " + plain.json().dump());
+  check(plain.byReason.at("price_constant") == 5,
+        "4 coin prices + the star price, got " +
+            std::to_string(plain.byReason.at("price_constant")));
+  check(plain.byKind.at("star") == 1,
+        "StarsPerCostume = 20 is a star price and can never be paid into coins, got " +
+            plain.json().dump());
+  check(plain.byReason.at("rift_payout") == 54,
+        "26 rift coin + 5 gem + 9 pinata + 14 xp rows, got " +
+            std::to_string(plain.byReason.at("rift_payout")));
+
+  LandingOptions payConstants;
+  payConstants.landEconomyConstants = true;
+  Progress constantSave;
+  const RewardLanding paid = landRewards(constantSave, table, payConstants);
+  check(constantSave.coins == constants,
+        "the opt-in pays exactly the four coin constants (" + std::to_string(constants) +
+            "), got " + std::to_string(constantSave.coins));
+  check(paid.coins == constants && paid.byReason.at("price_paid") == 4,
+        "the report names the four paid constants, got " + paid.json().dump());
+
+  LandingOptions payRift;
+  payRift.landRiftPayouts = true;
+  Progress riftSave;
+  const RewardLanding riftPaid = landRewards(riftSave, table, payRift);
+  check(riftSave.coins == rift,
+        "the rift opt-in pays the 26 rift coin rows (" + std::to_string(rift) + "), got " +
+            std::to_string(riftSave.coins));
+  check(riftPaid.coins == rift && riftPaid.byReason.at("rift_paid") == 26,
+        "the report names the 26 paid rift rows, got " + riftPaid.json().dump());
+  check(riftPaid.byReason.at("rift_payout") == 28,
+        "the gem, pinata and xp rift rows stay recorded, got " + riftPaid.json().dump());
+
+  std::cout << "coins: default 0, constants opt-in " << constantSave.coins << ", rift opt-in "
+            << riftSave.coins << ", prices " << plain.prices.size() << "\n";
+}
+
+/// 22 `unlock_costume:<id>` rows land in `costumes`, the field the shop already writes for
+/// `payload.costume_id`, so ownership has one home. Like the plant rows they repeat: 15 distinct
+/// costumes, 7 duplicates.
+void testCostumesLand() {
+  const RewardTable& table = RewardTable::shared();
+  Progress progress;
+  const RewardLanding landing = landRewards(progress, table);
+  check(landing.costumed == 15, "15 distinct costumes must land, got " +
+                                    std::to_string(landing.costumed));
+  check(progress.costumes.size() == 15, "the save owns 15 costumes, got " +
+                                            std::to_string(progress.costumes.size()));
+  check(landing.byReason.at("already_owned") == 56,
+        "7 costume rows + 49 plant rows repeat an id, got " +
+            std::to_string(landing.byReason.at("already_owned")));
+  check(std::binary_search(progress.costumes.begin(), progress.costumes.end(),
+                           std::string("539-idle")),
+        "539-idle is one of the sampled rows and must be owned");
+  check(std::is_sorted(progress.costumes.begin(), progress.costumes.end()) &&
+            std::adjacent_find(progress.costumes.begin(), progress.costumes.end()) ==
+                progress.costumes.end(),
+        "costumes stay sorted and unique");
+}
+
+/// Rows with no settlement path are recorded, not paid: `rewardLog` grows by one entry per row, the
+/// currency counters do not move, and landing twice does not duplicate the log.
+void testNoteOnlyRowsAreLogged() {
+  const RewardTable& table = RewardTable::shared();
+  Progress progress;
+  progress.coins = 7;
+  progress.keys = 3;
+  const RewardLanding landing = landRewards(progress, table);
+  check(progress.coins == 7 && progress.keys == 3,
+        "a record is not a payout: coins and keys stay put");
+  check(landing.logged == 123, "every unlanded row is logged once, got " +
+                                   std::to_string(landing.logged));
+  check(progress.rewardLog.size() == 123, "the log holds 123 entries, got " +
+                                              std::to_string(progress.rewardLog.size()));
+
+  const bool hasNote = std::any_of(progress.rewardLog.begin(), progress.rewardLog.end(),
+                                   [](const RewardLogEntry& entry) {
+                                     return entry.kind == "note" && entry.id == "first:note:note_beach";
+                                   });
+  check(hasNote, "the note_beach row must be in the log");
+  check(std::is_sorted(progress.rewardLog.begin(), progress.rewardLog.end(),
+                       [](const RewardLogEntry& a, const RewardLogEntry& b) {
+                         if (a.kind != b.kind) return a.kind < b.kind;
+                         if (a.id != b.id) return a.id < b.id;
+                         return a.amount < b.amount;
+                       }),
+        "the log is sorted by (kind, id, amount)");
+
+  const std::size_t before = progress.rewardLog.size();
+  landRewards(progress, table);
+  check(progress.rewardLog.size() == before,
+        "a second pass must not duplicate the log, got " +
+            std::to_string(progress.rewardLog.size()));
+}
+
+/// A save written before the landing fields existed loads with empty vectors, lands normally, and
+/// then writes both keys. A duplicated id or log entry collapses on load.
+void testOldSaveLandsAndRoundTrips(const fs::path& temp) {
+  const fs::path path = temp / "rewards_landing_roundtrip.json";
+  Json old = Json::object();
+  old["coins"] = 11;
+  old["seeds"] = Json::array({"wallnut"});
+  const Progress before = parseProgress(old, "rewards_test");
+  check(before.unlockedPlants.empty() && before.rewardLog.empty(),
+        "an old save has no landing fields");
+
+  Progress landed = before;
+  landRewards(landed, RewardTable::shared());
+  saveProgress(path, landed, 1'700'000'000);
+  const Progress back = loadProgress(path);
+  check(back.unlockedPlants == landed.unlockedPlants && back.unlockedPlants.size() == 244,
+        "unlockedPlants survives save/load");
+  check(back.rewardLog.size() == landed.rewardLog.size() && back.rewardLog == landed.rewardLog,
+        "rewardLog survives save/load");
+  check(back.coins == 11 && back.seeds == std::vector<std::string>({"wallnut"}),
+        "landing leaves the counters and seeds it did not touch alone");
+
+  const Json json = progressToJson(landed);
+  check(json.contains("unlockedPlants") && json.contains("rewardLog"),
+        "both keys are written once they hold something");
+  check(!progressToJson(Progress{}).contains("unlockedPlants"),
+        "a save that never landed anything keeps the older byte shape");
+
+  Json duplicated = json;
+  duplicated["unlockedPlants"] = Json::array({"aloe", "ailmint", "aloe"});
+  duplicated["rewardLog"] = Json::array(
+      {Json{{"kind", "note"}, {"id", "b"}, {"amount", 0}},
+       Json{{"kind", "note"}, {"id", "b"}, {"amount", 0}},
+       Json{{"kind", "note"}, {"id", "a"}, {"amount", 2}}});
+  const Progress loaded = parseProgress(duplicated, "rewards_test");
+  check(loaded.unlockedPlants == std::vector<std::string>({"ailmint", "aloe"}),
+        "unlockedPlants is a set: duplicates collapse and the order is sorted");
+  check(loaded.rewardLog.size() == 2 && loaded.rewardLog.front().id == "a",
+        "rewardLog is a set ordered by (kind, id, amount)");
+}
+
+/// The report line `--rewards-report` prints: the six contract keys, a `byKind` census that adds up,
+/// and a closure a reviewer can recompute (landed + unlanded = the 438 counted rows).
+void testReportShape() {
+  Progress progress;
+  const RewardLanding landing = landRewards(progress, RewardTable::shared());
+  const Json report = landing.json();
+  for (const char* key : {"landed", "unlanded", "byKind", "unlockedPlants", "costumes", "coins"}) {
+    check(report.contains(key), std::string("the report must carry `") + key + "`, got " +
+                                    report.dump());
+  }
+  check(report.size() == 6, "the contract names exactly six keys, got " + report.dump());
+  check(report["landed"] == 315, "293 plants + 22 costumes, got " + report.dump());
+  check(report["unlanded"] == 123, "438 - 315, got " + report.dump());
+  check(report["unlockedPlants"] == 244 && report["costumes"] == 15,
+        "the report counts the ids it landed, got " + report.dump());
+  check(report["coins"] == 0, "the default pass pays no coins, got " + report.dump());
+  int byKindTotal = 0;
+  for (const auto& [kind, count] : landing.byKind) byKindTotal += count;
+  check(byKindTotal == landing.unlanded,
+        "byKind is the same census as unlanded, got " + std::to_string(byKindTotal));
+  check(landing.landed + landing.unlanded ==
+            static_cast<int>(RewardTable::shared().unlandedDetail().size()),
+        "landed + unlanded must equal the 438 rows the table counts");
+  check(report.dump().find('\n') == std::string::npos, "the report is a single line");
+  const Json detail = landing.detail();
+  check(detail.contains("reasons") && detail.contains("prices") &&
+            detail["reasons"]["unmodelled"] == 64 && detail["reasons"]["price_constant"] == 5 &&
+            detail["reasons"]["rift_payout"] == 54,
+        "the detail census explains the 123 rows, got " + detail.dump());
+  check(detail.size() == 8, "the detail block carries its own eight keys, got " + detail.dump());
+  std::cout << "report: " << report.dump() << "\n";
+  std::cout << "detail: " << detail.dump() << "\n";
+}
+
+/// `unlockedPlantsGained` is a `--run-level` key only when the pass unlocked something: a save that
+/// already owns the roster must not grow a key.
+void testLandingReceiptIsConditional() {
+  Progress fresh;
+  const RewardLanding first = landRewards(fresh, RewardTable::shared());
+  Json summary = Json::object();
+  addLandingReceipt(summary, first);
+  check(summary["unlockedPlantsGained"] == 244,
+        "the first settle reports the plants it unlocked, got " + summary.dump());
+
+  const RewardLanding second = landRewards(fresh, RewardTable::shared());
+  Json repeat = Json::object();
+  addLandingReceipt(repeat, second);
+  check(!repeat.contains("unlockedPlantsGained"),
+        "a second settle adds no key, got " + repeat.dump());
+}
+
 }  // namespace
 
 int wmain(int argc, wchar_t** argv) {
@@ -621,6 +870,13 @@ int wmain(int argc, wchar_t** argv) {
     testNewSaveFieldsRoundTrip();
     testSeedBagReachesTheReceipt(catalog);
     testKeysUnlockedGate();
+    testPlantUnlocksLand();
+    testCoinFamiliesDoNotMintCoins();
+    testCostumesLand();
+    testNoteOnlyRowsAreLogged();
+    testOldSaveLandsAndRoundTrips(fs::path(argv[2]));
+    testReportShape();
+    testLandingReceiptIsConditional();
 
     std::cout << "rewards tests passed\n";
     return 0;

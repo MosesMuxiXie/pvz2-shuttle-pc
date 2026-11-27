@@ -76,11 +76,12 @@ std::string AudioRuntime::note() const {
 
 void AudioRuntime::remember(const std::string& sound) { pushUnique(playedLog_, sound); }
 
-void AudioRuntime::start(const std::string& sound, float gain) {
+void AudioRuntime::start(const std::string& sound, float gain, int priority) {
     remember(sound);
+    lastSfxPriority_ = priority;
     if (!enabled()) return;
     ++counters_.playSfxCalls;
-    (void)backend_->playSfx(sound, gain);
+    (void)backend_->playSfx(sound, gain, priority);
 }
 
 void AudioRuntime::playMusicForWorld(const std::string& world, bool intro) {
@@ -104,7 +105,9 @@ void AudioRuntime::playMenuMusic() {
 
 void AudioRuntime::playClick() {
     ++counters_.sfxRequests;
-    start("sfx_click", 0.7F);
+    // Level 3: a cursor move is the one sound the player asked for directly, so a full mix must
+    // never eat it.
+    start("sfx_click", 0.7F, 3);
 }
 
 void AudioRuntime::stopMusic() {
@@ -194,7 +197,7 @@ std::size_t AudioRuntime::consume(const nlohmann::json& events, std::size_t curs
         tickTypes_.insert(name);
         ++counters_.eventsMapped;
         ++counters_.sfxRequests;
-        start(sound, 1.0F);
+        start(sound, 1.0F, events_.priorityForEngineEvent(name));
     }
     return events.size();
 }

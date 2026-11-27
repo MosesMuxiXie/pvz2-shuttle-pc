@@ -1,7 +1,7 @@
 {
  "counts": {
   "agree": 1380,
-  "clientOnly": 12210,
+  "clientOnly": 14216,
   "clientWorlds": 26,
   "entities": 12,
   "joinedWorldClientLevels": 1432,
@@ -9,8 +9,8 @@
   "levelFiles": 1809,
   "levelJoins": 1809,
   "levelObjects": 41218,
-  "mapped": 13075,
-  "packOnly": 793,
+  "mapped": 13081,
+  "packOnly": 787,
   "packOnlyFieldCount": 36,
   "packOnlyFieldTop": [
    {
@@ -76,7 +76,7 @@
   ],
   "packWorlds": 46,
   "plantJoinedToPack": 44,
-  "plantJoins": 147,
+  "plantJoins": 409,
   "plantTypeNames": 339,
   "plantTypes": 339,
   "sheetsScanned": 2116,
@@ -1137,12 +1137,12 @@
   {
    "agree": 1,
    "clientField": "plantfood",
-   "clientOnly": 118,
+   "clientOnly": 380,
    "entity": "plantfood",
    "field": "PlantFoodDurationSeconds",
    "mapped": 17,
    "packOnly": 6,
-   "records": 147,
+   "records": 409,
    "samples": [
     {
      "client": "peashooter",
@@ -1169,12 +1169,12 @@
   {
    "agree": 11,
    "clientField": "plantfood",
-   "clientOnly": 121,
+   "clientOnly": 383,
    "entity": "plantfood",
    "field": "PlantFoodPlayCount",
    "mapped": 14,
    "packOnly": 6,
-   "records": 147,
+   "records": 409,
    "samples": [
     {
      "client": "sunflower",
@@ -1201,12 +1201,12 @@
   {
    "agree": 42,
    "clientField": "cost",
-   "clientOnly": 103,
+   "clientOnly": 365,
    "entity": "plants",
    "field": "Cost",
    "mapped": 44,
    "packOnly": 0,
-   "records": 147,
+   "records": 409,
    "samples": [
     {
      "client": "peashooter",
@@ -1233,12 +1233,12 @@
   {
    "agree": 42,
    "clientField": "hp",
-   "clientOnly": 103,
+   "clientOnly": 365,
    "entity": "plants",
    "field": "Hitpoints",
    "mapped": 44,
    "packOnly": 0,
-   "records": 147,
+   "records": 409,
    "samples": [
     {
      "client": "peashooter",
@@ -1270,7 +1270,7 @@
    "field": "IntegerID",
    "mapped": 44,
    "packOnly": 0,
-   "records": 147,
+   "records": 409,
    "samples": [
     {
      "client": "peashooter",
@@ -1297,12 +1297,12 @@
   {
    "agree": 40,
    "clientField": "cooldown",
-   "clientOnly": 103,
+   "clientOnly": 365,
    "entity": "plants",
    "field": "PacketCooldown",
    "mapped": 44,
    "packOnly": 0,
-   "records": 147,
+   "records": 409,
    "samples": [
     {
      "client": "peashooter",
@@ -1329,12 +1329,12 @@
   {
    "agree": 1,
    "clientField": "plantfood",
-   "clientOnly": 118,
+   "clientOnly": 380,
    "entity": "plants",
    "field": "PlantFoodDurationSeconds",
    "mapped": 17,
    "packOnly": 6,
-   "records": 147,
+   "records": 409,
    "samples": [
     {
      "client": "peashooter",
@@ -1361,12 +1361,12 @@
   {
    "agree": 0,
    "clientField": "art",
-   "clientOnly": 103,
+   "clientOnly": 126,
    "entity": "plants",
    "field": "PopAnim",
    "mapped": 44,
    "packOnly": 0,
-   "records": 147,
+   "records": 409,
    "samples": [
     {
      "client": "peashooter",
@@ -1393,35 +1393,62 @@
   {
    "agree": 0,
    "clientField": "plants",
-   "clientOnly": 11,
+   "clientOnly": 148,
    "entity": "projectiles",
    "field": "BaseDamage",
-   "mapped": 0,
-   "packOnly": 127,
-   "records": 11,
-   "samples": []
+   "mapped": 2,
+   "packOnly": 125,
+   "records": 150,
+   "samples": [
+    {
+     "client": "magicvineprojectile",
+     "pack": "1000"
+    },
+    {
+     "client": "periplocacalophyllaprojectile",
+     "pack": "40"
+    }
+   ]
   },
   {
    "agree": 0,
    "clientField": "projectile",
-   "clientOnly": 11,
+   "clientOnly": 148,
    "entity": "projectiles",
    "field": "ClassName",
-   "mapped": 0,
-   "packOnly": 131,
-   "records": 11,
-   "samples": []
+   "mapped": 2,
+   "packOnly": 129,
+   "records": 150,
+   "samples": [
+    {
+     "client": "magicvineprojectile",
+     "pack": "MagicVineProjectile"
+    },
+    {
+     "client": "periplocacalophyllaprojectile",
+     "pack": "PeriplocaCalophyllaProjectile"
+    }
+   ]
   },
   {
    "agree": 0,
    "clientField": "plants",
-   "clientOnly": 11,
+   "clientOnly": 148,
    "entity": "projectiles",
    "field": "CollisionFlags",
-   "mapped": 0,
-   "packOnly": 130,
-   "records": 11,
-   "samples": []
+   "mapped": 2,
+   "packOnly": 128,
+   "records": 150,
+   "samples": [
+    {
+     "client": "magicvineprojectile",
+     "pack": "[\"griditems\", \"ground_zombies\", \"off_ground_zombies\"]"
+    },
+    {
+     "client": "periplocacalophyllaprojectile",
+     "pack": "[\"griditems\", \"ground_zombies\", \"off_ground_zombies\"]"
+    }
+   ]
   },
   {
    "agree": 1,

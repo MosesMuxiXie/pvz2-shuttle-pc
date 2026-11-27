@@ -320,11 +320,41 @@ std::string EventMap::fallbackFor(std::string_view event) const {
     return binding == nullptr ? std::string{} : binding->fallback;
 }
 
+const std::array<SfxPriority, 16> kEventPriorities{{
+    // 3 - player-facing UI: the answer to something the player just did.
+    {"shovelled", 3},
+    {"input_rejected", 3},
+    {"time_budget_exceeded", 3},
+    {"action_unknown", 3},
+    // 2 - wave and flourish: heard once per wave or once per level, must survive a bullet storm.
+    {"wave_spawn", 2},
+    {"level_won", 2},
+    {"level_lost", 2},
+    {"mower_triggered", 2},
+    {"boss_spawn", 2},
+    {"boss_died", 2},
+    // 1 - hits and projectiles: the bulk of the mix, first to be thinned when the pool fills.
+    {"shot_fired", 1},
+    {"shot_hit", 1},
+    {"armor_absorbed", 1},
+    {"armor_blocked", 1},
+    {"armor_broken", 1},
+    {"boss_fire", 1},
+}};
+
 std::string EventMap::soundForEngineEvent(std::string_view event) const {
     const std::string name(event);
     for (const auto& entry : gameEvents_)
         if (entry.event == name) return entry.sound;
     return {};
+}
+
+int EventMap::priorityForEngineEvent(std::string_view event) const {
+    for (const auto& entry : kEventPriorities)
+        if (entry.event == event) return entry.priority;
+    // No level means "ordinary": planting, sun pickups and the diagnostic events all take the
+    // default, so an event the table has never heard of can never claim to be urgent.
+    return 0;
 }
 
 std::string EventMap::music(std::string_view world, bool intro) const {

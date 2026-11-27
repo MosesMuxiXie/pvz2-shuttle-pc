@@ -196,6 +196,10 @@ Catalog loadCatalog(const fs::path& contentRoot, const CatalogOptions& options) 
         PlantDefinition d;
         d.id = id(j, p);
         d.name = text(j, "name_zh", p);
+        // 派生行（source="pack"）没有中文名；退回英文名，再退回 id，
+        // 这样 HUD 显示 "Banana" 而不是空标签或裸 id。
+        if (d.name.empty())
+            d.name = text(j, "name_en", p, d.id);
         d.behavior = text(j, "behavior", p, "shoot");
         d.art = text(j, "art", p);
         d.cost = integer(j, "cost", p, 100);
