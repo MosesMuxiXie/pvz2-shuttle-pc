@@ -344,7 +344,7 @@ if __name__ == "__main__":
 # extracted art index; the shipped products are still asserted by the tests that do
 # not need them. Mark the whole module skipped instead of erroring, the same way
 # test_fusions / test_plant_playable do.
-if not L.DEFAULT_EN.is_file() and L.DEFAULT_ZH.is_file():
+if not (L.DEFAULT_EN.is_file() and L.DEFAULT_ZH.is_file()):
     import unittest as _unittest
 
     _WHY = "缺少原版表目录 {{}}（设 PVZ2_OBB_DIR）".format(L.DEFAULT_OBB)
